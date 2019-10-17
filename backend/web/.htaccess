@@ -1,0 +1,14 @@
+Options +SymlinksIfOwnerMatch
+#Options +FollowSymLinks
+IndexIgnore */*
+
+php_value error_reporting 0
+
+RewriteEngine on
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index.php
