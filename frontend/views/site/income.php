@@ -13,6 +13,49 @@
 			<div class="service-info__content-image"><img data-src="/img/services/1.jpg" alt="Комплект Дохід" data-srcset="/img/services/1_m.jpg 1024w, /img/services/1.jpg 1366w"></div>
 		</div>
 	</section>
+
+    <section class="section service-miscount">
+        <div class="service-miscount__content">
+            <div class="service-miscount__content-calculation">
+                <div class="title">
+                    <h2><?= BaseController::getMessage('254') ?></h2>
+                </div>
+                <div class="description"><?= BaseController::getMessage('257') ?></div>
+                <div class="calculation-form">
+                    <div class="form-group">
+                        <label for="house"><?= BaseController::getMessage('258') ?>
+                            <div>
+                                <input class="js-range-slider" id="income-house" type="text" name="house" data-min="0" data-max="5000"
+                                       data-step="100" data-hide-min-max="true" data-from="200" data-thumbwidth="20">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="power"><?= BaseController::getMessage('260') ?>
+                            <div>
+                                <input class="js-range-slider" id="income-power" type="text" name="power" data-min="5" data-max="35"
+                                       data-step="2.5" data-hide-min-max="true" data-from="30" data-thumbwidth="20">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="result">
+                    <?= BaseController::getMessage('261') ?>
+                    <span><span class="result-value"></span></span>
+                </div>
+                <div class="income">
+                    <?= BaseController::getMessage('262') ?>
+                    <span class="income-value"></span>
+                    <?= BaseController::getMessage('264') ?>
+                </div>
+            </div>
+            <div class="service-miscount__content-graphic">
+                <span class="service-miscount__content-graphic__title"><?= BaseController::getMessage('265') ?><p><?= BaseController::getMessage('267') ?></p></span>
+                <canvas id="income-graphic"></canvas>
+            </div>
+        </div>
+    </section>
+
 	<section class="section service-equipment" id="equipment">
 		<div class="service-equipment__content">
 			<div class="service-equipment__content-image service-image">
@@ -89,47 +132,6 @@
     <!-- start work -->
     <?= $this->render('../section/_work.php'); ?>
     <!-- end work -->
-    	<section class="section service-miscount">
-		<div class="service-miscount__content">
-			<div class="service-miscount__content-calculation">
-				<div class="title">
-					<h2><?= BaseController::getMessage('254') ?></h2>
-				</div>
-				<div class="description"><?= BaseController::getMessage('257') ?></div>
-				<div class="calculation-form">
-					<div class="form-group">
-						<label for="house"><?= BaseController::getMessage('258') ?>
-							<div>
-								<input class="js-range-slider" id="income-house" type="text" name="house" data-min="0" data-max="5000"
-									data-step="100" data-hide-min-max="true" data-from="200" data-thumbwidth="20">
-							</div>
-						</label>
-					</div>
-					<div class="form-group">
-						<label for="power"><?= BaseController::getMessage('260') ?>
-							<div>
-								<input class="js-range-slider" id="income-power" type="text" name="power" data-min="5" data-max="35"
-									data-step="2.5" data-hide-min-max="true" data-from="30" data-thumbwidth="20">
-							</div>
-						</label>
-					</div>
-				</div>
-				<div class="result">
-                    <?= BaseController::getMessage('261') ?>
-					<span><span class="result-value"></span></span>
-				</div>
-				<div class="income">
-                    <?= BaseController::getMessage('262') ?>
-					<span class="income-value"></span>
-                    <?= BaseController::getMessage('264') ?>
-				</div>
-			</div>
-			<div class="service-miscount__content-graphic">
-				<span class="service-miscount__content-graphic__title"><?= BaseController::getMessage('265') ?><p><?= BaseController::getMessage('267') ?></p></span>
-				<canvas id="income-graphic"></canvas>
-			</div>
-		</div>
-	</section>
 
 	<section class="section service-types">
 		<div class="service-types__content">
