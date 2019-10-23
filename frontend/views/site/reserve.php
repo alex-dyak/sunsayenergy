@@ -19,96 +19,7 @@
         </div>
     </section>
     <!-- end info -->
-    <!-- start equipments -->
-    <section class="section service-equipment" id="equipment">
-        <div class="service-equipment__content">
-            <div class="service-equipment__content-image service-image">
-                <img data-src="/img/reserve/2_1.jpg" alt="Обладнання" data-srcset="/img/reserve/2_1_m.jpg 1024w, /img/reserve/2_1.jpg 1366w">
-            </div>
-            <div class="service-equipment__content-info">
-                <div class="title">
-                    <h2><?= BaseController::getMessage('91') ?></h2>
-                </div>
-                <div class="tabs tabs-equipment">
-                    <div class="tabs__list">
-                        <div class="tabs__list-item active" data-tab="1" data-image-desktop="/img/reserve/2_1.jpg" data-image-srcset="/img/reserve/2_1_m.jpg 1024w, /img/reserve/2_1.jpg 1366w">
-                            <span><?= BaseController::getMessage('92') ?></span>
-                        </div>
-                        <div class="tabs__list-item" data-tab="2" data-image-desktop="/img/reserve/2_2.jpg" data-image-srcset="/img/reserve/2_2_m.jpg 1024w, /img/reserve/2_2.jpg 1366w">
-                            <span><?= BaseController::getMessage('93') ?></span>
-                        </div>
-                        <div class="tabs__list-item" data-tab="3" data-image-desktop="/img/reserve/2_3.jpg" data-image-srcset="/img/reserve/2_3_m.jpg 1024w, /img/reserve/2_3.jpg 1366w">
-                            <span><?= BaseController::getMessage('94') ?></span>
-                        </div>
-                        <div class="tabs__list-item" data-tab="4" data-image-desktop="/img/reserve/2_4.jpg" data-image-srcset="/img/reserve/2_4_m.jpg 1024w, /img/reserve/2_4.jpg 1366w">
-                            <span><?= BaseController::getMessage('95') ?></span>
-                        </div>
-                    </div>
-                    <div class="tabs__content">
-                        <div class="tabs__content-item active" data-id="1">
-                            <div class="message"><?= BaseController::getMessage('96') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
-                        </div>
-                        <div class="tabs__content-item" data-id="2">
-                            <div class="message"><?= BaseController::getMessage('99') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
-                        </div>
-                        <div class="tabs__content-item" data-id="3">
-                            <div class="message"><?= BaseController::getMessage('102') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
-                        </div>
-                        <div class="tabs__content-item" data-id="4">
-                            <div class="message"><?= BaseController::getMessage('103') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-equipment">
-                    <div class="slider-equipment__list">
-                        <div class="slider-equipment__list-item"><span><?= BaseController::getMessage('92') ?></span></div>
-                        <div class="slider-equipment__list-item"><span><?= BaseController::getMessage('93') ?></span></div>
-                        <div class="slider-equipment__list-item"><span><?= BaseController::getMessage('94') ?></span></div>
-                        <div class="slider-equipment__list-item"><span><?= BaseController::getMessage('95') ?></span></div>
-                    </div>
-                    <div class="slider-equipment__content">
-                        <div class="slider-equipment__content-item">
-                            <div class="message"><?= BaseController::getMessage('96') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
-                            <div class="image">
-                                <img data-src="/img/reserve/2_1.jpg" alt="Обладнання" data-srcset="/img/reserve/2_1_m.jpg 1024w, /img/reserve/2_1.jpg 1366w">
-                            </div>
-                        </div>
-                        <div class="slider-equipment__content-item">
-                            <div class="message"><?= BaseController::getMessage('99') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
-                            <div class="image">
-                                <img data-src="/img/reserve/2_2.jpg" alt="Обладнання" data-srcset="/img/reserve/2_2_m.jpg 1024w, /img/reserve/2_2.jpg 1366w">
-                            </div>
-                        </div>
-                        <div class="slider-equipment__content-item">
-                            <div class="message"><?= BaseController::getMessage('102') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
-                            <div class="image">
-                                <img data-src="/img/reserve/2_3.jpg" alt="Обладнання" data-srcset="/img/reserve/2_3_m.jpg 1024w, /img/reserve/2_3.jpg 1366w">
-                            </div>
-                        </div>
-                        <div class="slider-equipment__content-item">
-                            <div class="message"><?= BaseController::getMessage('103') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
-                            <div class="image">
-                                <img data-src="/img/reserve/2_4.jpg" alt="Обладнання" data-srcset="/img/reserve/2_4_m.jpg 1024w, /img/reserve/2_4.jpg 1366w">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end equipments -->
-    <!-- start work -->
-    <?= $this->render('../section/_work.php'); ?>
-    <!-- end work -->
-        <!-- start miscount -->
+    <!-- start miscount -->
     <section class="section service-miscount">
         <div class="service-miscount__content">
             <div class="service-miscount__content-calculation">
@@ -203,6 +114,95 @@
         </div>
     </section>
     <!-- end miscount -->
+    <!-- start equipments -->
+    <section class="section service-equipment" id="equipment">
+        <div class="service-equipment__content">
+            <div class="service-equipment__content-image service-image">
+                <img data-src="/img/reserve/2_1.jpg" alt="Обладнання" data-srcset="/img/reserve/2_1_m.jpg 1024w, /img/reserve/2_1.jpg 1366w">
+            </div>
+            <div class="service-equipment__content-info">
+                <div class="title">
+                    <h2><?= BaseController::getMessage('91') ?></h2>
+                </div>
+                <div class="tabs tabs-equipment">
+                    <div class="tabs__list">
+                        <div class="tabs__list-item active" data-tab="1" data-image-desktop="/img/reserve/2_1.jpg" data-image-srcset="/img/reserve/2_1_m.jpg 1024w, /img/reserve/2_1.jpg 1366w">
+                            <span><?= BaseController::getMessage('92') ?></span>
+                        </div>
+                        <div class="tabs__list-item" data-tab="2" data-image-desktop="/img/reserve/2_2.jpg" data-image-srcset="/img/reserve/2_2_m.jpg 1024w, /img/reserve/2_2.jpg 1366w">
+                            <span><?= BaseController::getMessage('93') ?></span>
+                        </div>
+                        <div class="tabs__list-item" data-tab="3" data-image-desktop="/img/reserve/2_3.jpg" data-image-srcset="/img/reserve/2_3_m.jpg 1024w, /img/reserve/2_3.jpg 1366w">
+                            <span><?= BaseController::getMessage('94') ?></span>
+                        </div>
+                        <div class="tabs__list-item" data-tab="4" data-image-desktop="/img/reserve/2_4.jpg" data-image-srcset="/img/reserve/2_4_m.jpg 1024w, /img/reserve/2_4.jpg 1366w">
+                            <span><?= BaseController::getMessage('95') ?></span>
+                        </div>
+                    </div>
+                    <div class="tabs__content">
+                        <div class="tabs__content-item active" data-id="1">
+                            <div class="message"><?= BaseController::getMessage('96') ?></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                        </div>
+                        <div class="tabs__content-item" data-id="2">
+                            <div class="message"><?= BaseController::getMessage('99') ?></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                        </div>
+                        <div class="tabs__content-item" data-id="3">
+                            <div class="message"><?= BaseController::getMessage('102') ?></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                        </div>
+                        <div class="tabs__content-item" data-id="4">
+                            <div class="message"><?= BaseController::getMessage('103') ?></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-equipment">
+                    <div class="slider-equipment__list">
+                        <div class="slider-equipment__list-item"><span><?= BaseController::getMessage('92') ?></span></div>
+                        <div class="slider-equipment__list-item"><span><?= BaseController::getMessage('93') ?></span></div>
+                        <div class="slider-equipment__list-item"><span><?= BaseController::getMessage('94') ?></span></div>
+                        <div class="slider-equipment__list-item"><span><?= BaseController::getMessage('95') ?></span></div>
+                    </div>
+                    <div class="slider-equipment__content">
+                        <div class="slider-equipment__content-item">
+                            <div class="message"><?= BaseController::getMessage('96') ?></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="image">
+                                <img data-src="/img/reserve/2_1.jpg" alt="Обладнання" data-srcset="/img/reserve/2_1_m.jpg 1024w, /img/reserve/2_1.jpg 1366w">
+                            </div>
+                        </div>
+                        <div class="slider-equipment__content-item">
+                            <div class="message"><?= BaseController::getMessage('99') ?></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="image">
+                                <img data-src="/img/reserve/2_2.jpg" alt="Обладнання" data-srcset="/img/reserve/2_2_m.jpg 1024w, /img/reserve/2_2.jpg 1366w">
+                            </div>
+                        </div>
+                        <div class="slider-equipment__content-item">
+                            <div class="message"><?= BaseController::getMessage('102') ?></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="image">
+                                <img data-src="/img/reserve/2_3.jpg" alt="Обладнання" data-srcset="/img/reserve/2_3_m.jpg 1024w, /img/reserve/2_3.jpg 1366w">
+                            </div>
+                        </div>
+                        <div class="slider-equipment__content-item">
+                            <div class="message"><?= BaseController::getMessage('103') ?></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="image">
+                                <img data-src="/img/reserve/2_4.jpg" alt="Обладнання" data-srcset="/img/reserve/2_4_m.jpg 1024w, /img/reserve/2_4.jpg 1366w">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end equipments -->
+    <!-- start work -->
+    <?= $this->render('../section/_work.php'); ?>
+    <!-- end work -->
     <!-- start service -->
     <section class="section service-types">
         <div class="service-types__content">
