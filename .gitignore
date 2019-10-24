@@ -33,3 +33,12 @@ phpunit.phar
 
 # vagrant runtime
 /.vagrant
+
+#robots
+robots.txt
+
+# none files
+frontend/web/none
+
+# htaccess
+.htaccess
