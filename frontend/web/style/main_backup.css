@@ -5478,7 +5478,7 @@ h2 {
 
 @media (max-width: 1024px) {
 	.service-miscount {
-		padding: 0 15px;
+		padding: 0 15px 40px;
 	}
 
 	.service-miscount__content {
