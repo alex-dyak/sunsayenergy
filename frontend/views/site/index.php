@@ -11,7 +11,7 @@
                 <div class="electrostation__description">
                     <?= BaseController::getMessage('17') ?>
                 </div>
-                <div class="electrostation__button"><a class="btn btn-primary"
+                <div class="button"><a class="btn btn-primary"
                                                        href="#connect"><?= BaseController::getMessage('18') ?></a></div>
             </div>
             <div class="electrostation__contact">
