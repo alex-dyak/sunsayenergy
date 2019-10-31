@@ -16,13 +16,12 @@
             </div>
             <div class="electrostation__contact">
                 <div class="phone"><a class="binct-phone-number-1" href="tel:<?= $contacts->phone ?>" target="_blank"><?= $contacts->phone ?></a></div>
-                <div class="address"><?= $contacts->address ?></div>
             </div>
             <div class="electrostation__switch">
-			<a <?= (Yii::$app->language=='ua')?'class="active"':''   ?> href="/<?= \frontend\components\UrlTrimLang::widget() ?>">UA</a>
-			<!--<a <?/*= (Yii::$app->language=='en')?'class="active"':''   */?>  href="/en/<?/*= \frontend\components\UrlTrimLang::widget() */?>">EN</a>-->
-			<a <?= (Yii::$app->language=='ru')?'class="active"':''   ?>  href="/ru/<?= \frontend\components\UrlTrimLang::widget() ?>">RU</a>
-		</div>
+                <a <?= (Yii::$app->language=='ua')?'class="active"':''   ?> href="/<?= \frontend\components\UrlTrimLang::widget() ?>">UA</a>
+                <!--<a <?/*= (Yii::$app->language=='en')?'class="active"':''   */?>  href="/en/<?/*= \frontend\components\UrlTrimLang::widget() */?>">EN</a>-->
+                <a <?= (Yii::$app->language=='ru')?'class="active"':''   ?>  href="/ru/<?= \frontend\components\UrlTrimLang::widget() ?>">RU</a>
+            </div>
             <div class="electrostation__house">
                 <svg id="electroBack" width="949" height="1239.6">
                     <path id="electroFrom" fill="#ffd100" fill-rule="evenodd" d="M1718.4,0l-948,0"></path>
