@@ -12,7 +12,7 @@
                     <?= BaseController::getMessage('17') ?>
                 </div>
                 <div class="electrostation__button"><a class="btn btn-primary"
-                                                       href="#info"><?= BaseController::getMessage('18') ?></a></div>
+                                                       href="#info"><?= BaseController::getMessage('402') ?></a></div>
             </div>
             <div class="electrostation__contact">
                 <div class="phone"><a class="binct-phone-number-1" href="tel:<?= $contacts->phone ?>" target="_blank"><?= $contacts->phone ?></a></div>
