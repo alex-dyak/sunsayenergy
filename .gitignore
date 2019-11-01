@@ -39,6 +39,7 @@ robots.txt
 
 # none files
 frontend/web/none
+backend/web/none
 
 # htaccess
 .htaccess
