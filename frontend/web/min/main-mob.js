@@ -10,3 +10,12 @@ function animateType(e,t,n){n=n;(t=Snap(e).select(t)).animate({d:n},500,mina.lin
 window.googleMapsScriptLoaded=function(){$(window).trigger("googleMapsScriptLoaded")},function(i,e){"use strict";var n=i(e),o=i("body"),a=n.height(),t=0,r=function(i,e){var n=null;return function(){var o=this,a=arguments;clearTimeout(n),n=setTimeout(function(){e.apply(o,a)},i)}},s=function(i,e){var n,o;return function(){var a=this,t=arguments,r=+new Date;n&&n+i>r?(clearTimeout(o),o=setTimeout(function(){n=r,e.apply(a,t)},i)):(n=r,e.apply(a,t))}},c=!1,l=!1,g=i([]),p=function(){t=n.scrollTop(),g.each(function(){var e=i(this),n=e.data("options");if(e.offset().top-t>1*a)return!0;if(!c&&!l){var r={callback:"googleMapsScriptLoaded",signed_in:n.signed_in};n.key&&(r.key=n.key),n.libraries&&(r.libraries=n.libraries),n.language&&(r.language=n.language),n.region&&(r.region=n.region),o.append('<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&'+i.param(r)+'"><\/script>'),l=!0}if(!c)return!0;var s=new google.maps.Map(this,{zoom:15});!1!==n.callback&&n.callback(this,s),g=g.not(e)})};n.on("googleMapsScriptLoaded",function(){c=!0,p()}).on("scroll",s(500,p)).on("resize",r(1e3,function(){a=n.height(),p()})),i.fn.lazyLoadGoogleMaps=function(e){return e=i.extend({key:!1,libraries:!1,signed_in:!1,language:!1,region:!1,callback:!1},e),this.each(function(){var n=i(this);n.data("options",e),g=g.add(n)}),p(),this.debounce=r,this.throttle=s,this}}(jQuery,window,document);
 
 
+$('.mobile-contact').click(function (e) {
+    e.preventDefault();
+    var contactList = $(this).find('.mobile-contact-list');
+    if (!contactList.hasClass('show-block')) {
+        contactList.addClass('show-block');
+    } else {
+        contactList.removeClass('show-block');
+    }
+})
