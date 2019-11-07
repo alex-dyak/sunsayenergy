@@ -155,6 +155,33 @@ class SiteController extends BaseController
             '/types-of-solar-power-plants',
             '/about',
             '/project',
+            '/project/category/network',
+            '/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-martusivka',
+            '/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-gatne',
+            '/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-nove',
+            '/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-lebedivka',
+            '/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-ivankiv',
+            '/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-marhalivka',
+            '/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-vishen-ki',
+            '/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-plyuti',
+            '/ru/project/category/network',
+            '/ru/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-ivankiv',
+            '/ru/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-martusivka',
+            '/ru/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-lebedivka',
+            '/ru/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-gatne',
+            '/ru/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-marhalivka',
+            '/ru/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-plyuti',
+            '/ru/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-nove',
+            '/ru/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-vishen-ki',
+            '/en/project/category/network',
+            '/en/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-ivankiv',
+            '/en/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-nove',
+            '/en/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-vishen-ki',
+            '/en/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-martusivka',
+            '/en/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-gatne',
+            '/en/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-plyuti',
+            '/en/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-marhalivka',
+            '/en/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-lebedivka',
         ];
 
         ob_start();
@@ -164,6 +191,16 @@ class SiteController extends BaseController
                 <loc><?= $host ?></loc>
                 <changefreq>always</changefreq>
                 <priority>1.0</priority>
+            </url>
+            <url>
+                <loc><?= $host.'/ru/' ?></loc>
+                <changefreq>always</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url>
+                <loc><?= $host.'/en/' ?></loc>
+                <changefreq>always</changefreq>
+                <priority>0.8</priority>
             </url>
 
             <?php foreach ($static_link as $item): ?>
