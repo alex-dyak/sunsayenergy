@@ -17,6 +17,9 @@ use Yii;
  * @property string $link_linkedin
  * @property string $link_viber
  * @property string $link_mail
+ * @property string $mobile_1
+ * @property string $mobile_2
+ * @property string $mobile_3
  */
 class Contact extends \yii\db\ActiveRecord
 {
