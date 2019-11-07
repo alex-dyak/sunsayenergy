@@ -34,7 +34,7 @@ class Contact extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['phone', 'email', 'address', 'address_ru', 'address_en', 'link_fb', 'link_linkedin', 'link_viber', 'link_mail'], 'string', 'max' => 255],
+            [['phone', 'email', 'address', 'address_ru', 'address_en', 'link_fb', 'link_linkedin', 'link_viber', 'link_mail', 'mobile_1', 'mobile_2', 'mobile_3'], 'string', 'max' => 255],
             [['phone', 'email', 'address', 'address_ru', 'address_en'], 'required'],
             [['email'], 'email'],
         ];
@@ -71,6 +71,9 @@ class Contact extends \yii\db\ActiveRecord
             'link_linkedin' => 'Посилання Linkedin',
             'link_viber' => 'Посилання Viber',
             'link_mail' => 'Посилання Mail',
+            'mobile_1' => 'Моб. Телефон',
+            'mobile_2' => 'Моб. Телефон',
+            'mobile_3' => 'Моб. Телефон',
         ];
     }
 
