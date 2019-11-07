@@ -127,9 +127,9 @@ $contacts = \backend\models\Contact::getContact();
 		<div class="mobile-contact">
 			<a href="#contact-opener"><img data-src="/img/icon/phone.svg" width="19" alt=""> <?= BaseController::getMessage('8') ?></a>
 			<ul class="mobile-contact-list">
-				<li><a href="tel:+380443345010">+38 044 334 50 10</a></li>
-				<li><a href="tel:+380673345010">+38 067 334 50 10</a></li>
-				<li><a href="tel:+380503345010">+38 050 334 50 10</a></li>
+				<li><a href="tel:<?= $contacts->phone; ?>"><?= $contacts->phone; ?></a></li>
+				<li><a href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a></li>
+				<li><a href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a></li>
 			</ul>
 		</div>
 		<div id="nav-icon">
