@@ -165,16 +165,6 @@ class SiteController extends BaseController
                 <changefreq>always</changefreq>
                 <priority>1.0</priority>
             </url>
-            <url>
-                <loc><?= $host.'/ru' ?></loc>
-                <changefreq>always</changefreq>
-                <priority>0.8</priority>
-            </url>
-            <url>
-                <loc><?= $host.'/en' ?></loc>
-                <changefreq>always</changefreq>
-                <priority>0.8</priority>
-            </url>
 
             <?php foreach ($static_link as $item): ?>
                 <url>
