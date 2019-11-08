@@ -5,8 +5,8 @@
         <!-- start top information -->
         <section class="section electrostation">
             <div class="electrostation__info">
-                <div class="electrostation__title">
-                    <h1><?= BaseController::getMessage('16') ?></h1>
+                <div class="electrostation__title line-title">
+                    <h1><span><?= BaseController::getMessage('16') ?></span></h1>
                 </div>
                 <div class="electrostation__description">
                     <?= BaseController::getMessage('17') ?>
@@ -38,6 +38,9 @@
                     </picture>
                 
             </div>
+			<div class="electrostation__house-mobile">
+				<img class="img-responsive" data-src="/img/house-mobile.png" alt="Дом">
+			</div>
         </section>
         <!-- end top information -->
 
