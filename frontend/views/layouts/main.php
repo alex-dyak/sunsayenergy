@@ -128,8 +128,8 @@ $contacts = \backend\models\Contact::getContact();
 			<a href="#contact-opener"><img data-src="/img/icon/phone.svg" width="19" alt=""> <?= BaseController::getMessage('8') ?></a>
 			<ul class="mobile-contact-list">
 				<li><a class="binct-phone-number-1" href="tel:<?= $contacts->phone; ?>"><?= $contacts->phone; ?></a></li>
-				<li><a class="binct-phone-number-2" href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a></li>
-				<li><a class="binct-phone-number-3" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a></li>
+				<li><a class="" href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a></li>
+				<li><a class="" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a></li>
 			</ul>
 		</div>
 		<div id="nav-icon">
