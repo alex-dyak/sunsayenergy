@@ -1,6 +1,5 @@
 <?php use frontend\controllers\BaseController; ?>
 
-<?= Yii::$app->controller->route; ?>
 <main class="page-container">
     <!-- start info -->
     <section class="section service-info">
