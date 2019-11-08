@@ -16,7 +16,7 @@
                     </ul>
                 </div>
                 <div class="price"><?= BaseController::getMessage('385') ?> <span><?= BaseController::getMessage('387') ?></span> <?= BaseController::getMessage('386') ?></div>
-                <div class="button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/income']); ?>"><?= BaseController::getMessage('100') ?></a></div>
+                <div class="button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']); ?>"><?= BaseController::getMessage('100') ?></a></div>
             </div>
             <div class="complex__content-list__item">
                 <div class="title"><a href="#"><span><?= BaseController::getMessage('388') ?></span></a></div>
@@ -28,7 +28,7 @@
                     </ul>
                 </div>
                 <div class="price"><?= BaseController::getMessage('385') ?> <span><?= BaseController::getMessage('392') ?></span> <?= BaseController::getMessage('386') ?></div>
-                <div class="button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/reserve']); ?>"><?= BaseController::getMessage('100') ?></a></div>
+                <div class="button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"><?= BaseController::getMessage('100') ?></a></div>
             </div>
             <div class="complex__content-list__item">
                 <div class="title"><a href="#"><span><?= BaseController::getMessage('393') ?></span></a></div>
@@ -40,7 +40,7 @@
                     </ul>
                 </div>
                 <div class="price"><?= BaseController::getMessage('385') ?> <span><?= BaseController::getMessage('397') ?></span> <?= BaseController::getMessage('386') ?></div>
-                <div class="button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/comfort']); ?>"><?= BaseController::getMessage('100') ?></a></div>
+                <div class="button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>"><?= BaseController::getMessage('100') ?></a></div>
             </div>
         </div>
     </div>

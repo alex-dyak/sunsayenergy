@@ -93,7 +93,7 @@
                             <div class="type-item__content-title"><span><span><?= BaseController::getMessage('26') ?></span></span></div>
                             <div class="type-item__content-text"><?= BaseController::getMessage('27') ?>
                             </div>
-                            <div class="type-item__content-button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="type-item__content-button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                         </div>
                     </div>
                     <div class="type__content-list__item" data-type="network">
@@ -107,7 +107,7 @@
                             <div class="type-item__content-title"><span><span><?= BaseController::getMessage('28') ?></span></span></div>
                             <div class="type-item__content-text"><?= BaseController::getMessage('29') ?>
                             </div>
-                            <div class="type-item__content-button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="type-item__content-button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                         </div>
                     </div>
                     <div class="type__content-list__item" data-type="hybrid">
@@ -121,7 +121,7 @@
                             <div class="type-item__content-title"><span><span><?= BaseController::getMessage('30') ?></span></span></div>
                             <div class="type-item__content-text"><?= BaseController::getMessage('31') ?>
                             </div>
-                            <div class="type-item__content-button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="type-item__content-button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                         </div>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                     <h2 class="title"><?= BaseController::getMessage('54') ?></h2>
                     <div class="description"><?= BaseController::getMessage('55') ?>
                     </div>
-                    <div class="button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/green']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                    <div class="button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                 </div>
             </div>
         </section>
