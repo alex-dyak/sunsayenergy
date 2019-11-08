@@ -1,0 +1,14 @@
+<svg
+	baseProfile="full" version="1.2"
+	width="442" height="533"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<mask id="acquaintance" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
+			<path fill="#ffd100" fill-rule="evenodd" d="M959.411,2665.34s-15.424,306.55,214.319,298.6,228.61-203.8,225.8-286.73c-3.31-97.86-107.76-292.15-265.13-234.13S959.411,2610.34,959.411,2665.34Z" transform="translate(-959.188 -2432.47)"/>
+		</mask>
+	</defs>
+
+	<image xlink:href="work1.png" width="470" height="674" mask="url(#acquaintance)"></image>
+
+</svg>
