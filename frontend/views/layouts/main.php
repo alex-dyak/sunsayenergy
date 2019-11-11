@@ -420,25 +420,28 @@ $contacts = \backend\models\Contact::getContact();
 <div class="request-popup">
     <div class="request-popup__container">
         <div class="request-content">
-            <div class="request-title">
-                <h2><?= BaseController::getMessage('364') ?></h2>
+            <div class="request-title line-title">
+                <h2><span><?= BaseController::getMessage('364') ?></span></h2>
             </div>
-            <div class="request-question" data-post-url="index.html"><?= BaseController::getMessage('365') ?>
+            <form class="request-question" data-post-url="index.html">
+<!--				--><?//= BaseController::getMessage('365') ?>
                 <input class="custom-field" type="text" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
-                <?= BaseController::getMessage('367') ?>
-                <select class="custom-field custom-select" name="consultation">
-                    <option data-type="request_consultation" value="Консультація" selected><?= BaseController::getMessage('368') ?></option>
-                    <option data-type="request_measurement" value="Розрахунок встановлення СЕС"><?= BaseController::getMessage('369') ?></option>
-                    <option data-type="request_installation" value="Встановлення СЕС"><?= BaseController::getMessage('370') ?></option>
-                </select>.
-                <?= BaseController::getMessage('371') ?>
-                <input class="custom-field" type="text" name="phone" placeholder="+380"><?= BaseController::getMessage('372') ?>
+<!--                --><?//= BaseController::getMessage('367') ?>
+<!--                <select class="custom-field custom-select" name="consultation">-->
+<!--                    <option data-type="request_consultation" value="Консультація" selected>--><?//= BaseController::getMessage('368') ?><!--</option>-->
+<!--                    <option data-type="request_measurement" value="Розрахунок встановлення СЕС">--><?//= BaseController::getMessage('369') ?><!--</option>-->
+<!--                    <option data-type="request_installation" value="Встановлення СЕС">--><?//= BaseController::getMessage('370') ?><!--</option>-->
+<!--                </select>.-->
+<!--                --><?//= BaseController::getMessage('371') ?>
+                <input class="custom-field" type="text" name="phone" placeholder="+380">
+<!--				--><?//= BaseController::getMessage('372') ?>
                 <input class="custom-field" type="text" name="email" placeholder="youremail@mail.com">
+				<textarea class="custom-field" name="question" id="question" rows="5" placeholder=""></textarea>
                 <div class="request-button">
                     <button class="btn btn-primary request-popup-btn"><?= BaseController::getMessage('14') ?></button>
                     <span class="form-compelete"><?= BaseController::getMessage('374') ?></span>
                 </div>
-            </div>
+            </form>
         </div>
         <div class="request-content-image">
             <?php if ( !BaseController::is_mobile()  ): ?>
