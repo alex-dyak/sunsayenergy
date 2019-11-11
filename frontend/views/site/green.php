@@ -33,8 +33,8 @@
           </div>
           <div class="legislation__content-info__description"><?= BaseController::getMessage('104') ?></div>
           <div class="legislation__content-info__more">
-            <a class="btn btn-secondary" href="/pdf/Закон.pdf" target="_blank" download><?= BaseController::getMessage('105') ?></a>
-            <a class="btn btn-secondary" href="/pdf/Тарифи.pdf" target="_blank" download><?= BaseController::getMessage('106') ?></a></div>
+            <a class="btn btn-secondary" href="/pdf/law.pdf" target="_blank" download><?= BaseController::getMessage('105') ?></a>
+            <a class="btn btn-secondary" href="/pdf/rate.pdf" target="_blank" download><?= BaseController::getMessage('106') ?></a></div>
         </div>
       </div>
     </section>
