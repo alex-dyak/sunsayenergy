@@ -92,7 +92,7 @@ class SiteController extends BaseController
             $model = new Request();
             $model->sendBitrix($post['name'], $post['phone'], $post['email'], $post['type']);
             //TODO: переименовать метод
-            Request::subscribeEsputnik($post['email'], $post['esputnik'], $post['name'], $post['phone']);
+            Request::subscribeEsputnik($post['email'], "request_measurement", $post['name'], $post['phone']);
             //TODO: Вынести эту дрянь в модель
             $model->name = $post['name'];
             $model->email = $post['email'];
