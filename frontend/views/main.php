@@ -71,7 +71,7 @@ header('Last-Modified: '. $LastModified);
     <!--  End Preconnecting  -->
     <link rel="canonical" href="https://sunsayenergy.com<?= \yii\helpers\Url::to(); ?>" />
 
-    <link rel="alternate" hreflang="x-default" href="https://sunsayenergy.com<?= \yii\helpers\Url::to(); ?>" />
+    <link rel="alternate" hreflang="uk" href="https://sunsayenergy.com<?= \yii\helpers\Url::to(); ?>" />
     <link rel="alternate" hreflang="ru" href="https://sunsayenergy.com/ru<?= \yii\helpers\Url::to(); ?>" />
     <link rel="alternate" hreflang="en" href="https://sunsayenergy.com/en<?= \yii\helpers\Url::to(); ?>" />
 
