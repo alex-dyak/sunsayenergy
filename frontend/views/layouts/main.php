@@ -436,7 +436,7 @@ $contacts = \backend\models\Contact::getContact();
                 <input class="custom-field" type="text" name="phone" placeholder="+380">
 <!--				--><?//= BaseController::getMessage('372') ?>
                 <input class="custom-field" type="text" name="email" placeholder="youremail@mail.com">
-				<textarea class="custom-field" name="question" id="question" rows="5" placeholder=""></textarea>
+				<textarea class="custom-field" name="question" id="question" rows="5" placeholder="<?= BaseController::getMessage('403') ?>"></textarea>
                 <div class="request-button">
                     <button class="btn btn-primary request-popup-btn"><?= BaseController::getMessage('14') ?></button>
                     <span class="form-compelete"><?= BaseController::getMessage('374') ?></span>
