@@ -72,8 +72,8 @@ header('Last-Modified: '. $LastModified);
     <link rel="canonical" href="https://sunsayenergy.com<?= \yii\helpers\Url::to(); ?>" />
 
     <link rel="alternate" hreflang="x-default" href="https://sunsayenergy.com/" />
-    <link rel="alternate" hreflang="ru" href="https://sunsayenergy.com/ru" />
-    <link rel="alternate" hreflang="en" href="https://sunsayenergy.com/en" />
+    <link rel="alternate" hreflang="ru" href="https://sunsayenergy.com/ru/" />
+    <link rel="alternate" hreflang="en" href="https://sunsayenergy.com/en/" />
 
 
 </head>
@@ -115,17 +115,17 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
                     <a class="navbar__list-item <?= (Yii::$app->controller->route == 'site/income' || Yii::$app->controller->route == 'site/reserve' || Yii::$app->controller->route == 'site/comfort') ? 'active-menu' : '' ?>"
                        data-popup="services"><span><?= BaseController::getMessage('1') ?></span></a>
                     <div class="navbar__list-item-dropdown" data-dropdown="services">
-                        <a href="<?= \yii\helpers\Url::to(['/income']) ?>"
+                        <a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?>"
                            class="<?= (Yii::$app->controller->route == 'site/income') ? 'active-menu' : ''; ?>"><span><span><?= BaseController::getMessage('2') ?></span></span></a>
-                        <a href="<?= \yii\helpers\Url::to(['/reserve']); ?>"
-                           class="<?= (Yii::$app->controller->route == 'site/reserve') ? 'active-menu' : ''; ?>"><span><span><?= BaseController::getMessage('3') ?></span></span></a>
-                        <a href="<?= \yii\helpers\Url::to(['/comfort']); ?>"
+                        <a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"
+                           class="<?= (Yii::$app->controller->route == 'site/solar-power-for-backup-power') ? 'active-menu' : ''; ?>"><span><span><?= BaseController::getMessage('3') ?></span></span></a>
+                        <a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>"
                            class="<?= (Yii::$app->controller->route == 'site/comfort') ? 'active-menu' : ''; ?>"><span><span><?= BaseController::getMessage('4') ?></span></span></a>
                     </div>
                 </div>
                  <a class="navbar__list-item" href="<?= \yii\helpers\Url::to(['/project']); ?>"><span><?= BaseController::getMessage('320') ?></span></a>
                 <a class="navbar__list-item <?= (Yii::$app->controller->route == 'site/green') ? 'active-menu' : ''; ?>"
-                   href="<?= \yii\helpers\Url::to(['/green']); ?>"><span><?= BaseController::getMessage('5') ?></span></a>
+                   href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><span><?= BaseController::getMessage('5') ?></span></a>
                 <a class="navbar__list-item <?= (Yii::$app->controller->route == 'technology/technology' || Yii::$app->controller->route == 'technology/nine' || Yii::$app->controller->route == 'technology/detailed') ? 'active-menu' : ''; ?>"
                    href="<?= \yii\helpers\Url::to(['/technology']); ?>"><span><?= BaseController::getMessage('6') ?></span></a>
                 <a class="navbar__list-item <?= (Yii::$app->controller->route == 'site/about') ? 'active-menu' : ''; ?>"
@@ -161,17 +161,17 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
                        class="navbar-item-link <?= (Yii::$app->controller->route == 'site/income' || Yii::$app->controller->route == 'site/reserve' || Yii::$app->controller->route == 'site/comfort') ? 'active-menu' : '' ?>"
                        data-popup="services"><span><?= BaseController::getMessage('1') ?></span></a>
                     <div class="navbar-item-dropdown">
-                        <a href="<?= \yii\helpers\Url::to(['/income']); ?>"
+                        <a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']); ?>"
                            class="<?= (Yii::$app->controller->route == 'site/income') ? 'active-menu' : ''; ?>"><span><?= BaseController::getMessage('2') ?></span></a><br/>
-                        <a href="<?= \yii\helpers\Url::to(['/reserve']); ?>"
+                        <a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"
                            class="<?= (Yii::$app->controller->route == 'site/reserve') ? 'active-menu' : ''; ?>"><span><?= BaseController::getMessage('3') ?></span></a><br/>
-                        <a href="<?= \yii\helpers\Url::to(['/comfort']); ?>"
+                        <a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>"
                            class="<?= (Yii::$app->controller->route == 'site/comfort') ? 'active-menu' : ''; ?>"><span><?= BaseController::getMessage('4') ?></span></a>
                     </div>
                 </div>
                 
                 <div class="navbar-item"><a href="<?= \yii\helpers\Url::to(['/project']); ?>"><?= BaseController::getMessage('320') ?></a></div>
-                <div class="navbar-item"><a href="<?= \yii\helpers\Url::to(['/green']); ?>"
+                <div class="navbar-item"><a href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"
                                             class="<?= (Yii::$app->controller->route == 'site/green') ? 'active-menu' : ''; ?>"><span><?= BaseController::getMessage('5') ?></span></a>
                 </div>
                 <div class="navbar-item"><a href="<?= \yii\helpers\Url::to(['/technology']); ?>"
@@ -324,9 +324,9 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
                     <div class="footer__content-info__item">
                         <div class="title"><?= BaseController::getMessage('1') ?></div>
                         <ul>
-                            <li><a href="<?= \yii\helpers\Url::to(['/income']); ?>"><span><?= BaseController::getMessage('2') ?></span></a></li>
-                            <li><a href="<?= \yii\helpers\Url::to(['/reserve']); ?>"><span><?= BaseController::getMessage('3') ?></span></a></li>
-                            <li><a href="<?= \yii\helpers\Url::to(['/comfort']); ?>"><span><?= BaseController::getMessage('4') ?></span></a></li>
+                            <li><a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']); ?>"><span><?= BaseController::getMessage('2') ?></span></a></li>
+                            <li><a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"><span><?= BaseController::getMessage('3') ?></span></a></li>
+                            <li><a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>"><span><?= BaseController::getMessage('4') ?></span></a></li>
                         </ul>
                     </div>
                     <div class="footer__content-info__item">
@@ -339,7 +339,7 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
                     <div class="footer__content-info__item">
                         <div class="title"><?= BaseController::getMessage('12') ?></div>
                         <ul>
-                            <li><a href="<?= \yii\helpers\Url::to(['/green']); ?>"><span><?= BaseController::getMessage('5') ?></span></a></li>
+                            <li><a href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><span><?= BaseController::getMessage('5') ?></span></a></li>
                             <!-- <li><a href="#"><span>Корисна інформація</span></a></li>-->
                             <li><a href="<?= \yii\helpers\Url::to(['/technology']); ?>"><span><?= BaseController::getMessage('6') ?></span></a></li>
                         </ul>
@@ -375,25 +375,28 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
 <div class="request-popup">
     <div class="request-popup__container">
         <div class="request-content">
-            <div class="request-title">
-                <h2><?= BaseController::getMessage('364') ?></h2>
+            <div class="request-title line-title">
+                <h2><span><?= BaseController::getMessage('364') ?></span></h2>
             </div>
-            <div class="request-question" data-post-url="index.html"><?= BaseController::getMessage('365') ?>
+            <form class="request-question" data-post-url="index.html">
+                <!--				--><?//= BaseController::getMessage('365') ?>
                 <input class="custom-field" type="text" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
-                <?= BaseController::getMessage('367') ?>
-                <select class="custom-field custom-select" name="consultation">
-                    <option data-type="request_consultation" value="Консультація" selected><?= BaseController::getMessage('368') ?></option>
-                    <option data-type="request_measurement" value="Розрахунок встановлення СЕС"><?= BaseController::getMessage('369') ?></option>
-                    <option data-type="request_installation" value="Встановлення СЕС"><?= BaseController::getMessage('370') ?></option>
-                </select>.
-                <?= BaseController::getMessage('371') ?>
-                <input class="custom-field" type="text" name="phone" placeholder="+380"><?= BaseController::getMessage('372') ?>
+                <!--                --><?//= BaseController::getMessage('367') ?>
+                <!--                <select class="custom-field custom-select" name="consultation">-->
+                <!--                    <option data-type="request_consultation" value="Консультація" selected>--><?//= BaseController::getMessage('368') ?><!--</option>-->
+                <!--                    <option data-type="request_measurement" value="Розрахунок встановлення СЕС">--><?//= BaseController::getMessage('369') ?><!--</option>-->
+                <!--                    <option data-type="request_installation" value="Встановлення СЕС">--><?//= BaseController::getMessage('370') ?><!--</option>-->
+                <!--                </select>.-->
+                <!--                --><?//= BaseController::getMessage('371') ?>
+                <input class="custom-field" type="text" name="phone" placeholder="+380">
+                <!--				--><?//= BaseController::getMessage('372') ?>
                 <input class="custom-field" type="text" name="email" placeholder="youremail@mail.com">
+                <textarea class="custom-field" name="question" id="question" rows="5" placeholder="<?= BaseController::getMessage('403') ?>"></textarea>
                 <div class="request-button">
                     <button class="btn btn-primary request-popup-btn"><?= BaseController::getMessage('14') ?></button>
                     <span class="form-compelete"><?= BaseController::getMessage('374') ?></span>
                 </div>
-            </div>
+            </form>
         </div>
         <div class="request-content-image"><img src="/img/connect.png" alt=""></div>
     </div>

@@ -64,8 +64,8 @@ $contacts = \backend\models\Contact::getContact();
     <link rel="canonical" href="https://sunsayenergy.com<?= \yii\helpers\Url::to(); ?>" />
 
     <link rel="alternate" hreflang="x-default" href="https://sunsayenergy.com/" />
-    <link rel="alternate" hreflang="ru" href="https://sunsayenergy.com/ru" />
-    <link rel="alternate" hreflang="en" href="https://sunsayenergy.com/en" />
+    <link rel="alternate" hreflang="ru" href="https://sunsayenergy.com/ru/" />
+    <link rel="alternate" hreflang="en" href="https://sunsayenergy.com/en/" />
 
 
 </head>
@@ -91,17 +91,17 @@ $contacts = \backend\models\Contact::getContact();
                     <a class="navbar__list-item <?= (Yii::$app->controller->route == 'site/income' || Yii::$app->controller->route == 'site/reserve' || Yii::$app->controller->route == 'site/comfort') ? 'active-menu' : '' ?>"
                        data-popup="services"><span><?= BaseController::getMessage('1') ?></span></a>
                     <div class="navbar__list-item-dropdown" data-dropdown="services">
-                        <a href="<?= \yii\helpers\Url::to(['/income']) ?>"
+                        <a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?>"
                            class="<?= (Yii::$app->controller->route == 'site/income') ? 'active-menu' : ''; ?>"><span><span><?= BaseController::getMessage('2') ?></span></span></a>
-                        <a href="<?= \yii\helpers\Url::to(['/reserve']); ?>"
+                        <a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"
                            class="<?= (Yii::$app->controller->route == 'site/reserve') ? 'active-menu' : ''; ?>"><span><span><?= BaseController::getMessage('3') ?></span></span></a>
-                        <a href="<?= \yii\helpers\Url::to(['/comfort']); ?>"
+                        <a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>"
                            class="<?= (Yii::$app->controller->route == 'site/comfort') ? 'active-menu' : ''; ?>"><span><span><?= BaseController::getMessage('4') ?></span></span></a>
                     </div>
                 </div>
                  <a class="navbar__list-item" href="<?= \yii\helpers\Url::to(['/project']); ?>"><span><?= BaseController::getMessage('320') ?></span></a>
                 <a class="navbar__list-item <?= (Yii::$app->controller->route == 'site/green') ? 'active-menu' : ''; ?>"
-                   href="<?= \yii\helpers\Url::to(['/green']); ?>"><span><?= BaseController::getMessage('5') ?></span></a>
+                   href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><span><?= BaseController::getMessage('5') ?></span></a>
                 <a class="navbar__list-item <?= (Yii::$app->controller->route == 'technology/technology' || Yii::$app->controller->route == 'technology/nine' || Yii::$app->controller->route == 'technology/detailed') ? 'active-menu' : ''; ?>"
                    href="<?= \yii\helpers\Url::to(['/technology']); ?>"><span><?= BaseController::getMessage('6') ?></span></a>
                 <a class="navbar__list-item <?= (Yii::$app->controller->route == 'site/about') ? 'active-menu' : ''; ?>"
@@ -148,17 +148,17 @@ $contacts = \backend\models\Contact::getContact();
                        class="navbar-item-link <?= (Yii::$app->controller->route == 'site/income' || Yii::$app->controller->route == 'site/reserve' || Yii::$app->controller->route == 'site/comfort') ? 'active-menu' : '' ?>"
                        data-popup="services"><span><?= BaseController::getMessage('1') ?></span></a>
                     <div class="navbar-item-dropdown">
-                        <a href="<?= \yii\helpers\Url::to(['/income']); ?>"
+                        <a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']); ?>"
                            class="<?= (Yii::$app->controller->route == 'site/income') ? 'active-menu' : ''; ?>"><span><?= BaseController::getMessage('2') ?></span></a><br/>
-                        <a href="<?= \yii\helpers\Url::to(['/reserve']); ?>"
+                        <a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"
                            class="<?= (Yii::$app->controller->route == 'site/reserve') ? 'active-menu' : ''; ?>"><span><?= BaseController::getMessage('3') ?></span></a><br/>
-                        <a href="<?= \yii\helpers\Url::to(['/comfort']); ?>"
+                        <a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>"
                            class="<?= (Yii::$app->controller->route == 'site/comfort') ? 'active-menu' : ''; ?>"><span><?= BaseController::getMessage('4') ?></span></a>
                     </div>
                 </div>
                 
                 <div class="navbar-item"><a href="<?= \yii\helpers\Url::to(['/project']); ?>"><?= BaseController::getMessage('320') ?></a></div>
-                <div class="navbar-item"><a href="<?= \yii\helpers\Url::to(['/green']); ?>"
+                <div class="navbar-item"><a href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"
                                             class="<?= (Yii::$app->controller->route == 'site/green') ? 'active-menu' : ''; ?>"><span><?= BaseController::getMessage('5') ?></span></a>
                 </div>
                 <div class="navbar-item"><a href="<?= \yii\helpers\Url::to(['/technology']); ?>"
@@ -369,9 +369,9 @@ $contacts = \backend\models\Contact::getContact();
                     <div class="footer__content-info__item">
                         <div class="title"><?= BaseController::getMessage('1') ?></div>
                         <ul>
-                            <li><a href="<?= \yii\helpers\Url::to(['/income']); ?>"><span><?= BaseController::getMessage('2') ?></span></a></li>
-                            <li><a href="<?= \yii\helpers\Url::to(['/reserve']); ?>"><span><?= BaseController::getMessage('3') ?></span></a></li>
-                            <li><a href="<?= \yii\helpers\Url::to(['/comfort']); ?>"><span><?= BaseController::getMessage('4') ?></span></a></li>
+                            <li><a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']); ?>"><span><?= BaseController::getMessage('2') ?></span></a></li>
+                            <li><a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"><span><?= BaseController::getMessage('3') ?></span></a></li>
+                            <li><a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>"><span><?= BaseController::getMessage('4') ?></span></a></li>
                         </ul>
                     </div>
                     <div class="footer__content-info__item">
@@ -384,7 +384,7 @@ $contacts = \backend\models\Contact::getContact();
                     <div class="footer__content-info__item">
                         <div class="title"><?= BaseController::getMessage('12') ?></div>
                         <ul>
-                            <li><a href="<?= \yii\helpers\Url::to(['/green']); ?>"><span><?= BaseController::getMessage('5') ?></span></a></li>
+                            <li><a href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><span><?= BaseController::getMessage('5') ?></span></a></li>
                             <!-- <li><a href="#"><span>Корисна інформація</span></a></li>-->
                             <li><a href="<?= \yii\helpers\Url::to(['/technology']); ?>"><span><?= BaseController::getMessage('6') ?></span></a></li>
                         </ul>
@@ -436,7 +436,7 @@ $contacts = \backend\models\Contact::getContact();
                 <input class="custom-field" type="text" name="phone" placeholder="+380">
 <!--				--><?//= BaseController::getMessage('372') ?>
                 <input class="custom-field" type="text" name="email" placeholder="youremail@mail.com">
-				<textarea class="custom-field" name="question" id="question" rows="5" placeholder=""></textarea>
+				<textarea class="custom-field" name="question" id="question" rows="5" placeholder="<?= BaseController::getMessage('403') ?>"></textarea>
                 <div class="request-button">
                     <button class="btn btn-primary request-popup-btn"><?= BaseController::getMessage('14') ?></button>
                     <span class="form-compelete"><?= BaseController::getMessage('374') ?></span>

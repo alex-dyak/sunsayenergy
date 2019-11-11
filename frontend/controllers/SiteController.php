@@ -155,6 +155,15 @@ class SiteController extends BaseController
             '/types-of-solar-power-plants',
             '/about',
             '/project',
+            '/project/category/network',
+            '/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-martusivka',
+            '/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-gatne',
+            '/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-nove',
+            '/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-lebedivka',
+            '/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-ivankiv',
+            '/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-marhalivka',
+            '/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-vishen-ki',
+            '/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-plyuti',
         ];
 
         ob_start();
@@ -166,12 +175,12 @@ class SiteController extends BaseController
                 <priority>1.0</priority>
             </url>
             <url>
-                <loc><?= $host.'/ru' ?></loc>
+                <loc><?= $host.'/ru/' ?></loc>
                 <changefreq>always</changefreq>
                 <priority>0.8</priority>
             </url>
             <url>
-                <loc><?= $host.'/en' ?></loc>
+                <loc><?= $host.'/en/' ?></loc>
                 <changefreq>always</changefreq>
                 <priority>0.8</priority>
             </url>
