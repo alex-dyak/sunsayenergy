@@ -251,25 +251,30 @@
     <section class="section connect" id="connect">
 		<div class="connect__content">
 			<div class="connect__content-info">
-				<div class="connect__content-title">
-					<h2><?= BaseController::getMessage('364') ?></h2>
+				<div class="connect__content-title line-title">
+					<h2><span><?= BaseController::getMessage('364') ?></span></h2>
 				</div>
-				<div class="connect__content-question" data-post-url="index.html">
-					<div class="message"><?= BaseController::getMessage('365') ?>
+				<form class="connect__content-question" data-post-url="index.html">
+					<div class="message">
+<!--						--><?//= BaseController::getMessage('365') ?>
 						<input class="custom-field" type="text" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
-						<?= BaseController::getMessage('367') ?>
-						<select class="custom-field custom-select" id="consultation" name="consultation">
-							<option data-type="request_consultation" value="Консультація"><?= BaseController::getMessage('368') ?></option>
-							<option data-type="request_measurement" value="Розрахунок встановлення СЕС"><?= BaseController::getMessage('369') ?></option>
-                            <option data-type="request_installation" value="Підключення комплекту Комфорт" selected><?= BaseController::getMessage('290') ?></option>
-						</select>.
-						<?= BaseController::getMessage('371') ?>
+<!--						--><?//= BaseController::getMessage('367') ?>
+<!--						<select class="custom-field custom-select" id="consultation" name="consultation">-->
+<!--							<option data-type="request_consultation" value="Консультація">--><?//= BaseController::getMessage('368') ?><!--</option>-->
+<!--							<option data-type="request_measurement" value="Розрахунок встановлення СЕС">--><?//= BaseController::getMessage('369') ?><!--</option>-->
+<!--                            <option data-type="request_installation" value="Підключення комплекту Комфорт" selected>--><?//= BaseController::getMessage('290') ?><!--</option>-->
+<!--						</select>.-->
+<!--						--><?//= BaseController::getMessage('371') ?>
 						<input class="custom-field" id="phone" type="text" name="phone" placeholder="+380">
-						<?= BaseController::getMessage('372') ?>
+<!--						--><?//= BaseController::getMessage('372') ?>
 						<input class="custom-field" type="text" name="email" placeholder="youremail@mail.com">
-						<div class="connect__content-button"><button class="btn connect-btn btn-primary"><?= BaseController::getMessage('14') ?></button><span class="form-compelete"><?= BaseController::getMessage('374') ?></span></div>
+						<textarea class="custom-field" name="question" id="question" rows="5" placeholder=""></textarea>
+						<div class="connect__content-button">
+							<button class="btn connect-btn btn-primary"><?= BaseController::getMessage('14') ?></button>
+							<span class="form-compelete"><?= BaseController::getMessage('374') ?></span>
+						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 			<div class="connect__content-image"><img data-src="/img/connect.jpg" alt=""></div>
 		</div>
