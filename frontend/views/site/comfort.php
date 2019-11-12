@@ -97,22 +97,22 @@
                         <div class="tabs__content-item active" data-id="1">
                             <div class="message"><?= BaseController::getMessage('150') ?>
                             </div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#standalone']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#standalone']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                         </div>
                         <div class="tabs__content-item" data-id="2">
                             <div class="message"><?= BaseController::getMessage('156') ?>
                             </div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#standalone']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#standalone']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                         </div>
                         <div class="tabs__content-item" data-id="3">
                             <div class="message"><?= BaseController::getMessage('164') ?>
                             </div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#standalone']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#standalone']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                         </div>
                         <div class="tabs__content-item" data-id="4">
                             <div class="message"><?= BaseController::getMessage('170') ?>
                             </div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#standalone']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#standalone']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                         <div class="slider-equipment__content-item">
                             <div class="message"><?= BaseController::getMessage('150') ?>
                             </div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#standalone']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#standalone']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                             <div class="image">
                                 <img data-src="/img/comfort/2_1.jpg" alt="Обладнання"
                                      data-srcset="/img/comfort/2_1_m.jpg 1024w, /img/comfort/2_1.jpg 1366w">
@@ -136,7 +136,7 @@
                         <div class="slider-equipment__content-item">
                             <div class="message"><?= BaseController::getMessage('156') ?>
                             </div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#standalone']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#standalone']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                             <div class="image">
                                 <img data-src="/img/comfort/2_2.jpg" alt="Обладнання"
                                      data-srcset="/img/comfort/2_2_m.jpg 1024w, /img/comfort/2_2.jpg 1366w">
@@ -145,7 +145,7 @@
                         <div class="slider-equipment__content-item">
                             <div class="message"><?= BaseController::getMessage('164') ?>
                             </div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#standalone']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#standalone']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                             <div class="image">
                                 <img data-src="/img/comfort/2_3.jpg" alt="Обладнання"
                                      data-srcset="/img/comfort/2_3_m.jpg 1024w, /img/comfort/2_3.jpg 1366w">
@@ -154,7 +154,7 @@
                         <div class="slider-equipment__content-item">
                             <div class="message"><?= BaseController::getMessage('170') ?>
                             </div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types/#standalone']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#standalone']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                             <div class="image">
                                 <img data-src="/img/comfort/2_4.jpg" alt="Обладнання"
                                      data-srcset="/img/comfort/2_4_m.jpg 1024w, /img/comfort/2_4.jpg 1366w">
