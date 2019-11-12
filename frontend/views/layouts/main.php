@@ -385,7 +385,6 @@ $contacts = \backend\models\Contact::getContact();
                         <div class="title"><?= BaseController::getMessage('12') ?></div>
                         <ul>
                             <li><a href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><span><?= BaseController::getMessage('5') ?></span></a></li>
-                            <!-- <li><a href="#"><span>Корисна інформація</span></a></li>-->
                             <li><a href="<?= \yii\helpers\Url::to(['/technology']); ?>"><span><?= BaseController::getMessage('6') ?></span></a></li>
                         </ul>
                     </div>
@@ -397,10 +396,6 @@ $contacts = \backend\models\Contact::getContact();
                         <button class="btn btn-subscribe btn-secondary"><?= BaseController::getMessage('14') ?></button>
                     </div>
                 </div>
-
-
-
-
 
                 <div class="footer__content-info__language">
                      <ul>
@@ -452,7 +447,6 @@ $contacts = \backend\models\Contact::getContact();
 <?php if ( 0 && Yii::$app->controller->route != 'site/green' && Yii::$app->controller->route != 'site/types' && Yii::$app->controller->route != 'technology/technology' && Yii::$app->controller->route != 'technology/nine' && Yii::$app->controller->route != 'technology/detailed'): ?>
     <?php $projects = \backend\models\Project::find()->all(); ?>
 
-
     <!-- start example popup -->
     <div class="popup">
         <div class="popup__container">
@@ -477,8 +471,6 @@ $contacts = \backend\models\Contact::getContact();
 <div class="backgroundfade" style="display:none;"></div>
 <!-- end fade dropdown -->
 
-
-
 <script>var cb = function() {
 	var l = document.createElement('link'); l.rel = 'stylesheet';
 	l.href = '/min/all.min.css';
@@ -489,7 +481,6 @@ $contacts = \backend\models\Contact::getContact();
 	if (raf) raf(cb);
 	else window.addEventListener('load', cb);</script>
 
-<!--<script src="/js/defer_plus.min.js"></script>-->
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
 
 <?php if ( BaseController::is_mobile()  ): ?>
@@ -501,89 +492,44 @@ $contacts = \backend\models\Contact::getContact();
 
 
 <script>deferimg('img[data-src],picture,video,audio', 100, 'lazied', function (img) {
-                    img.onload = function (e) {
-                        if ( img.className == 'check-slick lazied' ){
-                        	if ($('.example__content-list.slick-slider').length ){
-                        		console.log($('.example__content-list.slick-slider'));
-                        		$('.example__content-list').slick("refresh");
-                        	}
-                        	if ($('.project-info__slider-nav.slick-slider').length ){
-                    			$('.project-info__slider-nav').slick("refresh");
-					        	$('.project-info__slider-nav .slick-list').css('height',$('.project-info__slider-nav .slick-list').height()-3+'px');
-                        	}
-                        	$('.check-slick').removeClass('check-slick');
-                        }
-                    }
-                });</script>
-
-<!-- <script>deferimg('img[data-src],picture,video,audio');</script> -->
+    img.onload = function (e) {
+        if ( img.className == 'check-slick lazied' ){
+            if ($('.example__content-list.slick-slider').length ){
+                console.log($('.example__content-list.slick-slider'));
+                $('.example__content-list').slick("refresh");
+            }
+            if ($('.project-info__slider-nav.slick-slider').length ){
+                $('.project-info__slider-nav').slick("refresh");
+                $('.project-info__slider-nav .slick-list').css('height',$('.project-info__slider-nav .slick-list').height()-3+'px');
+            }
+            $('.check-slick').removeClass('check-slick');
+        }
+    }
+});
+</script>
 
 <script type="text/javascript">
     deferstyle('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
 </script>
 
-<!-- <script type="text/javascript" src="https://unpkg.com/default-passive-events@1.0.10/dist/index.js"></script> -->
+<script>
+    defer(function() {
+        (function(w,d,u){
 
+            var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
 
+            var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 
-<!-- <link rel="stylesheet" href="/style/lib/normalize.css">
-<link rel="stylesheet" href="/style/lib/slick-theme.css">
-<link rel="stylesheet" href="/style/lib/slick.css">
-<link rel="stylesheet" href="/style/main.css"> -->
+        })(window,document,'https://cdn.bitrix24.ua/b9504081/crm/site_button/loader_1_2svhj8.js');
 
+        (function(d, w, s) {
+          var widgetHash = 'sx43cntzz2qzbf66eje1', ctw = d.createElement(s); ctw.type = 'text/javascript'; ctw.async = true;
+          ctw.src = '//widgets.binotel.com/calltracking/widgets/'+ widgetHash +'.js';
+          var sn = d.getElementsByTagName(s)[0]; sn.parentNode.insertBefore(ctw, sn);
+          })(document, window, 'script');
 
-<!-- <link rel="stylesheet" href="/min/all.min.css"> -->
-
-
-<!-- <script src="/js/lib/jquery.min.js"></script>
-<script src="/js/lib/jquery.maskedinput.js"></script>
-<script src="/js/lib/slick.min.js"></script>
-<script src="/js/lib/snap.svg-min.js"></script>
-<script src="/js/lib/TweenMax.min.js"></script>
-<script src="/js/lib/ScrollMagic.min.js"></script>
-<script src="/js/lib/animation.gsap.min.js"></script>
-<script src="/js/googlemap.js"></script>
-<script src="/js/onclickanimation.js"></script>
-<script src="/js/onscrollanimation.js"></script>
-<?php //<script src="/js/popup.js"></script> ?>
-<script src="/js/sendquestion.js"></script>
-<script src="/js/slider.js?v=3"></script>
-<script src="/js/types.js"></script>
-<script src="/js/app.js"></script> 
-<script src="https://osvaldas.info/examples/lazy-loading-google-maps/jquery.lazy-load-google-maps.min.js"></script> -->
-
-<?php 
-// <!-- <script src="/js/onclickanimation.js"></script>
-// <script src="/js/onscrollanimation.js"></script> -->
-// <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=AIzaSyB35Exje6kOhzSsEsUTg3V09ot0HILL-Qk&amp;callback=initMap"></script> -->
-
-
-//  -->
-?>
-
-<?php if ( BaseController::is_mobile() == 0  ): ?>
-    <script>
-        defer(function() {
-            (function(w,d,u){
-
-                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
-
-                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-
-            })(window,document,'https://cdn.bitrix24.ua/b9504081/crm/site_button/loader_1_2svhj8.js');
-
-            (function(d, w, s) {
-              var widgetHash = 'sx43cntzz2qzbf66eje1', ctw = d.createElement(s); ctw.type = 'text/javascript'; ctw.async = true;
-              ctw.src = '//widgets.binotel.com/calltracking/widgets/'+ widgetHash +'.js';
-              var sn = d.getElementsByTagName(s)[0]; sn.parentNode.insertBefore(ctw, sn);
-              })(document, window, 'script');
-
-        }, 2000);
-    </script>
-<?php endif; ?>
-
-
-
+    }, 2000);
+</script>
 
 <script>
     defer(function() {
@@ -592,16 +538,6 @@ $contacts = \backend\models\Contact::getContact();
 </script>
 
 <?php $this->endBody() ?>
-
-	<script type="text/javascript">
-		if ($(window).width() <= 768) {
-			(function(d, w, s) {
-				var widgetHash = 'sx43cntzz2qzbf66eje1', ctw = d.createElement(s); ctw.type = 'text/javascript'; ctw.async = true;
-				ctw.src = '//widgets.binotel.com/calltracking/widgets/'+ widgetHash +'.js';
-				var sn = d.getElementsByTagName(s)[0]; sn.parentNode.insertBefore(ctw, sn);
-			})(document, window, 'script');
-		}
-	</script>
 </body>
 </html>
 <?php $this->endPage() ?>
