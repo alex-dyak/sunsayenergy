@@ -63,9 +63,15 @@ $contacts = \backend\models\Contact::getContact();
     <!--  End Preconnecting  -->
     <link rel="canonical" href="https://sunsayenergy.com<?= \yii\helpers\Url::to(); ?>" />
 
-    <link rel="alternate" hreflang="uk" href="https://sunsayenergy.com<?= \yii\helpers\Url::to(); ?>" />
-    <link rel="alternate" hreflang="ru" href="https://sunsayenergy.com/ru<?= \yii\helpers\Url::to(); ?>" />
-    <link rel="alternate" hreflang="en" href="https://sunsayenergy.com/en<?= \yii\helpers\Url::to(); ?>" />
+    <?php
+    $request_uri = $_SERVER['REQUEST_URI'];
+    $lang_array = ['/ru', '/en'];
+    $final_uri = str_replace($lang_array, '', $request_uri);
+    ?>
+
+    <link rel="alternate" hreflang="uk" href="https://sunsayenergy.com<?= $final_uri; ?>" />
+    <link rel="alternate" hreflang="ru" href="https://sunsayenergy.com/ru<?= $final_uri; ?>" />
+    <link rel="alternate" hreflang="en" href="https://sunsayenergy.com/en<?= $final_uri; ?>" />
 
 
 </head>
