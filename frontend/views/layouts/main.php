@@ -67,10 +67,12 @@ $contacts = \backend\models\Contact::getContact();
     <link rel="alternate" hreflang="ru" href="https://sunsayenergy.com/ru<?= \yii\helpers\Url::to(); ?>" />
     <link rel="alternate" hreflang="en" href="https://sunsayenergy.com/en<?= \yii\helpers\Url::to(); ?>" />
 
+	<link rel="stylesheet" href="/min/all.min.css">
+
 
 </head>
 
-<body style="opacity:0;" <?php if ( BaseController::is_mobile()  ): ?> class="mobile" <?php endif; ?>>
+<body style="opacity:1;" <?php if ( BaseController::is_mobile()  ): ?> class="mobile" <?php endif; ?>>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript>
@@ -480,10 +482,10 @@ $contacts = \backend\models\Contact::getContact();
 
 
 <script>var cb = function() {
-	var l = document.createElement('link'); l.rel = 'stylesheet';
-	l.href = '/min/all.min.css';
-	var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-	};
+	// var l = document.createElement('link'); l.rel = 'stylesheet';
+	// l.href = '/min/all.min.css';
+	// var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+	// };
 	var raf = requestAnimationFrame || mozRequestAnimationFrame ||
 	webkitRequestAnimationFrame || msRequestAnimationFrame;
 	if (raf) raf(cb);
