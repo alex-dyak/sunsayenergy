@@ -81,15 +81,15 @@
 					<div class="tabs__content">
 						<div class="tabs__content-item active" data-id="1">
 							<div class="message"><?= BaseController::getMessage('208') ?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
 						</div>
 						<div class="tabs__content-item" data-id="2">
 							<div class="message"><?= BaseController::getMessage('210') ?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
 						</div>
 						<div class="tabs__content-item" data-id="3">
 							<div class="message"><?= BaseController::getMessage('212') ?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
 						</div>
 					</div>
 				</div>
@@ -102,7 +102,7 @@
 					<div class="slider-equipment__content">
 						<div class="slider-equipment__content-item">
 							<div class="message"><?= BaseController::getMessage('208') ?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
 							<div class="image">
 								<img data-src="/img/services/2_1.jpg" alt="Обладнання"
 								data-srcset="/img/services/2_1_m.jpg 1024w, /img/services/2_1.jpg 1366w">
@@ -110,7 +110,7 @@
 						</div>
 						<div class="slider-equipment__content-item">
 							<div class="message"><?= BaseController::getMessage('210') ?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
 							<div class="image">
 								<img data-src="/img/services/2_2.jpg" alt="Обладнання"
 								data-srcset="/img/services/2_2_m.jpg 1024w, /img/services/2_2.jpg 1366w">
@@ -118,7 +118,7 @@
 						</div>
 						<div class="slider-equipment__content-item">
 							<div class="message"><?= BaseController::getMessage('212') ?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
 							<div class="image">
 								<img data-src="/img/services/2_3.jpg" alt="Обладнання"
 								data-srcset="/img/services/2_3_m.jpg 1024w, /img/services/2_3.jpg 1366w">

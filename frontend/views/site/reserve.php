@@ -141,19 +141,19 @@
                     <div class="tabs__content">
                         <div class="tabs__content-item active" data-id="1">
                             <div class="message"><?= BaseController::getMessage('96') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                         </div>
                         <div class="tabs__content-item" data-id="2">
                             <div class="message"><?= BaseController::getMessage('99') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                         </div>
                         <div class="tabs__content-item" data-id="3">
                             <div class="message"><?= BaseController::getMessage('102') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                         </div>
                         <div class="tabs__content-item" data-id="4">
                             <div class="message"><?= BaseController::getMessage('103') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                         </div>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                     <div class="slider-equipment__content">
                         <div class="slider-equipment__content-item">
                             <div class="message"><?= BaseController::getMessage('96') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                             <div class="image">
                                 <img data-src="/img/reserve/2_1.jpg" alt="Обладнання" data-srcset="/img/reserve/2_1_m.jpg 1024w, /img/reserve/2_1.jpg 1366w">
                             </div>
@@ -181,14 +181,14 @@
                         </div>
                         <div class="slider-equipment__content-item">
                             <div class="message"><?= BaseController::getMessage('102') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                             <div class="image">
                                 <img data-src="/img/reserve/2_3.jpg" alt="Обладнання" data-srcset="/img/reserve/2_3_m.jpg 1024w, /img/reserve/2_3.jpg 1366w">
                             </div>
                         </div>
                         <div class="slider-equipment__content-item">
                             <div class="message"><?= BaseController::getMessage('103') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                             <div class="image">
                                 <img data-src="/img/reserve/2_4.jpg" alt="Обладнання" data-srcset="/img/reserve/2_4_m.jpg 1024w, /img/reserve/2_4.jpg 1366w">
                             </div>
