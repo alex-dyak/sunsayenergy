@@ -1,6 +1,23 @@
-<?php use frontend\controllers\BaseController; ?>
+<?php
+use frontend\controllers\BaseController;
+use yii\widgets\Breadcrumbs;
 
+$this->params['breadcrumbs'][] = [
+    'template' => "<li>{link}</li>\n",
+    'label' => BaseController::getMessage('320'),
+    'url' => ['/project'],
+];
+
+$this->params['breadcrumbs'][] = [
+    'template' => "<li><b>{link}</b></li>\n",
+    'label' => BaseController::getMessage('322'),
+];
+?>
 <main class="page-container project-category">
+    <?php echo Breadcrumbs::widget([
+        'homeLink' => ['label' => BaseController::getMessage('404'), 'url' => Yii::$app->homeUrl],
+        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+    ]); ?>
     <section class="section project">
         <div class="project__content">
             <div class="project__content-title">

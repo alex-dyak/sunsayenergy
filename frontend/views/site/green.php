@@ -1,5 +1,17 @@
-<?php use frontend\controllers\BaseController; ?>
-<main class="page-container">
+<?php
+use frontend\controllers\BaseController;
+use yii\widgets\Breadcrumbs;
+
+$this->params['breadcrumbs'][] = [
+    'template' => "<li><b>{link}</b></li>\n",
+    'label' => BaseController::getMessage('5'),
+];
+?>
+    <main class="page-container">
+        <?php echo Breadcrumbs::widget([
+            'homeLink' => ['label' => BaseController::getMessage('404'), 'url' => Yii::$app->homeUrl],
+            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+        ]); ?>
     <section class="section why">
       <div class="greenwhy__content">
         <div class="greenwhy__content-info">

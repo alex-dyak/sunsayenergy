@@ -1,6 +1,23 @@
-<?php use frontend\controllers\BaseController; ?>
-<?php /*$this->title=$article->title;  */?>
+<?php
+use frontend\controllers\BaseController;
+use yii\widgets\Breadcrumbs;
+
+$this->params['breadcrumbs'][] = [
+    'template' => "<li>{link}</li>\n",
+    'label' => BaseController::getMessage('6'),
+    'url' => ['/technology']
+];
+$this->params['breadcrumbs'][] = [
+    'template' => "<li><b>{link}</b></li>\n",
+    'label' => $article->title,
+];
+?>
+
 <main class="page-container">
+    <?php echo Breadcrumbs::widget([
+        'homeLink' => ['label' => BaseController::getMessage('404'), 'url' => Yii::$app->homeUrl],
+        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+    ]); ?>
     <section class="section blog-page">
         <div class="blog-page__image">
             <picture>
