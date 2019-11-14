@@ -174,7 +174,7 @@
                         </div>
                         <div class="slider-equipment__content-item">
                             <div class="message"><?= BaseController::getMessage('99') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants/#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
                             <div class="image">
                                 <img data-src="/img/reserve/2_2.jpg" alt="Обладнання" data-srcset="/img/reserve/2_2_m.jpg 1024w, /img/reserve/2_2.jpg 1366w">
                             </div>
