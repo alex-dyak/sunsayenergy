@@ -72,10 +72,8 @@ $contacts = \backend\models\Contact::getContact();
     <link rel="alternate" hreflang="uk" href="https://sunsayenergy.com<?= $final_uri; ?>" />
     <link rel="alternate" hreflang="ru" href="https://sunsayenergy.com/ru<?= $final_uri; ?>" />
     <link rel="alternate" hreflang="en" href="https://sunsayenergy.com/en<?= $final_uri; ?>" />
-
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="/min/all.min.css">
-
-
 </head>
 
 <body style="opacity:1;" <?php if ( BaseController::is_mobile()  ): ?> class="mobile" <?php endif; ?>>
@@ -90,7 +88,7 @@ $contacts = \backend\models\Contact::getContact();
 <?php $this->beginBody() ?>
 <header class="header <?= (Yii::$app->controller->route == 'site/index') ? '' : 'header__background' ?>">
     <div class="header__logotype">
-        <a href="<?= \yii\helpers\Url::to(['/']); ?>"><img class="img-responsive" data-src="/img/logo.svg" alt="sunsay energy"></a>
+        <a href="<?= \yii\helpers\Url::to(['/']); ?>"><img class="img-responsive" src="/img/logo.svg" alt="sunsay energy"></a>
     </div>
     <div class="header__navbar">
         <nav class="navbar">
@@ -132,7 +130,7 @@ $contacts = \backend\models\Contact::getContact();
     <div class="header-request-back"><img data-src="/img/icon/arrow-back.png" alt=""></div>
 	<div class="header__mobile-top-block">
 		<div class="mobile-contact">
-			<a href="#contact-opener"><img data-src="/img/icon/phone.svg" width="19" alt=""> <?= BaseController::getMessage('8') ?></a>
+			<a href="#contact-opener"><img src="/img/icon/phone.svg" width="19" alt=""> <?= BaseController::getMessage('8') ?></a>
 			<ul class="mobile-contact-list">
 				<li><a class="binct-phone-number-1" href="tel:<?= $contacts->phone; ?>"><?= $contacts->phone; ?></a></li>
 				<li><a class="" href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a></li>
@@ -141,13 +139,13 @@ $contacts = \backend\models\Contact::getContact();
 		</div>
 		<div id="nav-icon">
 			<span>Меню</span>
-			<img data-src="/img/icon/Menu.svg" alt="">
+			<img src="/img/icon/Menu.svg" alt="">
 		</div>
 	</div>
     <div class="navbar-mobile">
         <div class="navbar-mobile-container">
             <div class="navbar-list-top">
-                <div class="navbar-logotype"><a href="<?= \yii\helpers\Url::to(['/']); ?>"><img data-src="/img/logo.svg" alt=""></a></div>
+                <div class="navbar-logotype"><a href="<?= \yii\helpers\Url::to(['/']); ?>"><img src="/img/logo.svg" alt=""></a></div>
                 <div class="navbar-close"><img data-src="/img/icon/Close.svg" alt=""></div>
             </div>
             <div class="navbar-list">
@@ -514,10 +512,6 @@ $contacts = \backend\models\Contact::getContact();
         }
     }
 });
-</script>
-
-<script type="text/javascript">
-    deferstyle('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
 </script>
 
 <script>
