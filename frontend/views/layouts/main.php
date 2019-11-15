@@ -72,10 +72,8 @@ $contacts = \backend\models\Contact::getContact();
     <link rel="alternate" hreflang="uk" href="https://sunsayenergy.com<?= $final_uri; ?>" />
     <link rel="alternate" hreflang="ru" href="https://sunsayenergy.com/ru<?= $final_uri; ?>" />
     <link rel="alternate" hreflang="en" href="https://sunsayenergy.com/en<?= $final_uri; ?>" />
-
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="/min/all.min.css">
-
-
 </head>
 
 <body style="opacity:1;" <?php if ( BaseController::is_mobile()  ): ?> class="mobile" <?php endif; ?>>
@@ -514,10 +512,6 @@ $contacts = \backend\models\Contact::getContact();
         }
     }
 });
-</script>
-
-<script type="text/javascript">
-    deferstyle('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
 </script>
 
 <script>
