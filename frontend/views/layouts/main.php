@@ -101,21 +101,29 @@ $contacts = \backend\models\Contact::getContact();
                     <a class="navbar__list-item <?= (Yii::$app->controller->route == 'site/income' || Yii::$app->controller->route == 'site/reserve' || Yii::$app->controller->route == 'site/comfort') ? 'active-menu' : '' ?>"
                        data-popup="services"><span><?= BaseController::getMessage('1') ?></span></a>
                     <div class="navbar__list-item-dropdown" data-dropdown="services">
-                        <a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?>"
+                        <a <?=  Yii::$app->request->url == \yii\helpers\Url::to(['/solar-power-station-for-income']) ? '' : 'href="' . \yii\helpers\Url::to(['/solar-power-station-for-income']) . '"' ?>
                            class="<?= (Yii::$app->controller->route == 'site/income') ? 'active-menu' : ''; ?>"><span><span><?= BaseController::getMessage('2') ?></span></span></a>
-                        <a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"
+                        <a <?=  Yii::$app->request->url == \yii\helpers\Url::to(['/solar-power-for-backup-power']) ? '' : 'href="' . \yii\helpers\Url::to(['/solar-power-for-backup-power']) . '"' ?>
                            class="<?= (Yii::$app->controller->route == 'site/reserve') ? 'active-menu' : ''; ?>"><span><span><?= BaseController::getMessage('3') ?></span></span></a>
-                        <a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>"
+                        <a <?=  Yii::$app->request->url == \yii\helpers\Url::to(['/solar-power-for-autonomous-power']) ? '' : 'href="' . \yii\helpers\Url::to(['/solar-power-for-autonomous-power']) . '"' ?>
                            class="<?= (Yii::$app->controller->route == 'site/comfort') ? 'active-menu' : ''; ?>"><span><span><?= BaseController::getMessage('4') ?></span></span></a>
                     </div>
                 </div>
-                 <a class="navbar__list-item" href="<?= \yii\helpers\Url::to(['/project']); ?>"><span><?= BaseController::getMessage('320') ?></span></a>
+                 <a class="navbar__list-item" <?=  Yii::$app->request->url == \yii\helpers\Url::to(['/project']) ? '' : 'href="' . \yii\helpers\Url::to(['/project']) . '"' ?>
+                     <span><?= BaseController::getMessage('320') ?></span>
+                 </a>
                 <a class="navbar__list-item <?= (Yii::$app->controller->route == 'site/green') ? 'active-menu' : ''; ?>"
-                   href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><span><?= BaseController::getMessage('5') ?></span></a>
+                    <?=  Yii::$app->request->url == \yii\helpers\Url::to(['/green-tariff']) ? '' : 'href="' . \yii\helpers\Url::to(['/green-tariff']) . '"' ?>>
+                    <span><?= BaseController::getMessage('5') ?></span>
+                </a>
                 <a class="navbar__list-item <?= (Yii::$app->controller->route == 'technology/technology' || Yii::$app->controller->route == 'technology/nine' || Yii::$app->controller->route == 'technology/detailed') ? 'active-menu' : ''; ?>"
-                   href="<?= \yii\helpers\Url::to(['/technology']); ?>"><span><?= BaseController::getMessage('6') ?></span></a>
+	                <?=  Yii::$app->request->url == \yii\helpers\Url::to(['/technology']) ? '' : 'href="' . \yii\helpers\Url::to(['/technology']) . '"' ?>>
+                    <span><?= BaseController::getMessage('6') ?></span>
+                </a>
                 <a class="navbar__list-item <?= (Yii::$app->controller->route == 'site/about') ? 'active-menu' : ''; ?>"
-                   href="<?= \yii\helpers\Url::to(['/about']); ?>"><span><?= BaseController::getMessage('7') ?></span></a>
+		            <?=  Yii::$app->request->url == \yii\helpers\Url::to(['/about']) ? '' : 'href="' . \yii\helpers\Url::to(['/about']) . '"' ?>>
+                    <span><?= BaseController::getMessage('7') ?></span>
+                </a>
             </div>
             <div class="navbar__right">
                 <a class="navbar__right-item" href="#contact"><span><?= BaseController::getMessage('8') ?></span></a>
