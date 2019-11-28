@@ -125,8 +125,7 @@ $contacts = \backend\models\Contact::getContact();
 							</strong>
 						</li>
 						<li class="dropdown-wrapper">
-                  <span><?= BaseController::getMessage('1') ?> <i class="icon-angle-down"></i>
-                  </span>
+                  			<span><?= BaseController::getMessage('1') ?> <i class="icon-angle-down"></i></span>
 							<ul class="dropdown header-drop-list">
 								<li class="<?= (Yii::$app->controller->route == 'site/income') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?>"><?= BaseController::getMessage('2') ?></a></li>
 								<li class="<?= (Yii::$app->controller->route == 'site/reserve') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"><?= BaseController::getMessage('3') ?></a></li>
@@ -160,7 +159,6 @@ $contacts = \backend\models\Contact::getContact();
 					</ul>
 				</nav>
 			</div>
->>>>>>> new-header
 		</div>
 	</header>
 	<div class="to-top-block" id="to_top_block">
