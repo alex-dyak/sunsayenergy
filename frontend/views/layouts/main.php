@@ -104,7 +104,7 @@ $contacts = \backend\models\Contact::getContact();
 						</ul>
 					</div>
 					<div id="nav-opener">
-						<span>Меню</span>
+						<span><?= BaseController::getMessage('405') ?></span>
 						<i class="icon-menu"></i>
 						<i class="icon-close"></i>
 					</div>
@@ -112,7 +112,7 @@ $contacts = \backend\models\Contact::getContact();
 				<strong class="main-logo">
 					<a href="<?= \yii\helpers\Url::to(['/']); ?>">
 						<img src="/img/logo.svg" width="184" alt="sunsay energy">
-						<span class="logo-text">Сонячні електростанції</span>
+						<span class="logo-text"><?= BaseController::getMessage('406') ?></span>
 					</a>
 				</strong>
 				<nav class="header-nav">
@@ -133,14 +133,14 @@ $contacts = \backend\models\Contact::getContact();
 								<li class="<?= (Yii::$app->controller->route == 'site/comfort') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>"><?= BaseController::getMessage('4') ?></a></li>
 							</ul>
 						</li>
-						<li class="subnav">Інформація</li>
+						<li class="subnav"><?= BaseController::getMessage('12') ?></li>
 						<li class="<?= (Yii::$app->controller->route == 'site/green') ? 'active' : ''; ?>">
 							<a href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><?= BaseController::getMessage('5') ?></a>
 						</li>
 						<li class="<?= (Yii::$app->controller->route == 'technology/technology') ? 'active' : ''; ?>">
 							<a href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('6') ?></a>
 						</li>
-						<li class="subnav">Компанія</li>
+						<li class="subnav"><?= BaseController::getMessage('11') ?></li>
 						<li class="<?= (Yii::$app->controller->route == 'site/project') ? 'active' : ''; ?>">
 							<a href="<?= \yii\helpers\Url::to(['/project']); ?>"><?= BaseController::getMessage('320') ?></a>
 						</li>
