@@ -3,26 +3,47 @@
     <main class="page-container">
 
         <!-- start top information -->
-        <section class="section electrostation">
+		<section class="electrostation-section">
+			<div class="info-wrapper">
+				<div class="container">
+					<div class="text-block">
+						<h1 class="line-title"><span><?= BaseController::getMessage('16') ?></span></h1>
+						<p><?= BaseController::getMessage('17') ?></p>
+						<a class="button btn-lg" href="#connect"><?= BaseController::getMessage('402') ?></a>
+					</div>
+					<div class="img-block">
+						<picture>
+							<source media="(min-width: 1280px)" srcset="img/header_house.png">
+							<source media="(min-width: 768px)" srcset="img/house-tablet.png">
+							<img src="img/house-mobile.png">
+						</picture>
+					</div>
+					<div class="adv-banner" id="adv-banner">
+						<a class="close-banner" href="#">
+							<i class="icon-close-bold"></i>
+						</a>
+						<strong class="title">АКЦІЯ! До 25.12.2019</strong>
+						<p>Оформлюємо збільшення потужності підключення будинку</p>
+						<strong class="title">за -50% вартості!</strong>
+					</div>
+				</div>
+			</div>
+		</section>
+     <!--   <section class="section electrostation">
             <div class="electrostation__info">
                 <div class="electrostation__title line-title">
-                    <h1><span><?= BaseController::getMessage('16') ?></span></h1>
+                    <h1><span><?/*= BaseController::getMessage('16') */?></span></h1>
                 </div>
                 <div class="electrostation__description">
-                    <?= BaseController::getMessage('17') ?>
+                    <?/*= BaseController::getMessage('17') */?>
                 </div>
                 <div class="electrostation__button"><a class="btn btn-primary"
-                                                       href="#connect"><?= BaseController::getMessage('402') ?></a></div>
+                                                       href="#connect"><?/*= BaseController::getMessage('402') */?></a></div>
             </div>
             <div class="electrostation__contact">
-                <div class="phone"><a class="binct-phone-number-1" href="tel:<?= $contacts->phone ?>" target="_blank"><?= $contacts->phone ?></a></div>
-                <div class="address"><?= $contacts->address ?></div>
+                <div class="phone"><a class="binct-phone-number-1" href="tel:<?/*= $contacts->phone */?>" target="_blank"><?/*= $contacts->phone */?></a></div>
+                <div class="address"><?/*= $contacts->address */?></div>
             </div>
-            <div class="electrostation__switch">
-			<a <?= (Yii::$app->language=='ua')?'class="active"':''   ?> href="/<?= \frontend\components\UrlTrimLang::widget() ?>">UA</a>
-			<!--<a <?/*= (Yii::$app->language=='en')?'class="active"':''   */?>  href="/en/<?/*= \frontend\components\UrlTrimLang::widget() */?>">EN</a>-->
-			<a <?= (Yii::$app->language=='ru')?'class="active"':''   ?>  href="/ru/<?= \frontend\components\UrlTrimLang::widget() ?>">RU</a>
-		</div>
             <div class="electrostation__house">
                 <svg id="electroBack" width="949" height="1239.6">
                     <path id="electroFrom" fill="#ffd100" fill-rule="evenodd" d="M1718.4,0l-948,0"></path>
@@ -31,17 +52,17 @@
                       <source media="(min-width: 800px)" data-srcset="/img/header_house_1100w.webp" type="image/webp">
                       <source media="(max-width: 799px)" data-srcset="/img/header_house_350w.webp" type="image/webp">
                       <source media="(min-width: 800px)" data-srcset="/img/header_house_1100w.png" type="image/png">
-                      <source media="(max-width: 799px)" data-srcset="/img/header_house_350w.png" type="image/png">
+                      <source media="(max-width: 799px)" data-srcset="/img/header_house_350w.png" type="image/png"> -->
                       <!-- <source data-srcset="/img/header_house_350w.webp 440w, /img/header_house_1100w.webp 900w" sizes="90w" type="image/webp" >
                       <source data-srcset="/img/header_house_350w.png 350w, /img/header_house_1100w.png 1100w" sizes="90w" type="image/png">  -->
-                      <img class="electrostation__house-img" data-src="/img/header_house_1100w.png" alt="">
-                    </picture>
+<!--                     <img class="electrostation__house-img" data-src="/img/header_house_1100w.png" alt="">-->
+<!--                    </picture>-->
                 
-            </div>
-			<div class="electrostation__house-mobile">
+<!--            </div>-->
+			<!-- <div class="electrostation__house-mobile">
 				<img class="img-responsive" data-src="/img/house-mobile.png" alt="Дом">
 			</div>
-        </section>
+        </section>-->
         <!-- end top information -->
 
         <!-- start info -->
