@@ -15,7 +15,7 @@
 						<picture>
 							<source media="(min-width: 1280px)" srcset="/img/header_house.png">
 							<source media="(min-width: 768px)" srcset="/img/house-tablet.png">
-							<img src="/img/house-mobile.png">
+							<img alt="Дом с панелями" src="/img/house-mobile.png">
 						</picture>
 					</div>
 					<div class="adv-banner" id="adv-banner">
