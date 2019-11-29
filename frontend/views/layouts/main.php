@@ -146,7 +146,7 @@ $contacts = \backend\models\Contact::getContact();
 						<li class="<?= (Yii::$app->controller->route == 'site/about') ? 'active' : ''; ?>">
 							<a href="<?= \yii\helpers\Url::to(['/about']); ?>"><?= BaseController::getMessage('7') ?></a>
 						</li>
-						<li class="<?= (Yii::$app->controller->route == 'site/income') ? 'active' : ''; ?>">
+						<li>
 							<a href="#contact"><?= BaseController::getMessage('8') ?></a>
 						</li>
 						<li class="btn-wrap">
