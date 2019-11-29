@@ -111,7 +111,8 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 				<strong class="main-logo">
 					<a href="<?= \yii\helpers\Url::to(['/']); ?>">
-						<img src="/img/logo.svg" width="184" alt="sunsay energy">
+						<img class="logo-def" src="/img/logo.svg" width="184" alt="sunsay energy">
+						<img class="logo-white" src="/img/logo-navbar.svg" width="184" alt="sunsay energy">
 						<span class="logo-text"><?= BaseController::getMessage('406') ?></span>
 					</a>
 				</strong>
