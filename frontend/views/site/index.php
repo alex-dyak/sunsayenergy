@@ -13,7 +13,7 @@
 					</div>
 					<div class="img-block">
 						<picture>
-							<source media="(min-width: 1280px)" srcset="/img/header_house.png">
+							<source media="(min-width: 1280px)" srcset="/img/house.png">
 							<source media="(min-width: 768px)" srcset="/img/house-tablet.png">
 							<img alt="Дом с панелями" src="/img/house-mobile.png">
 						</picture>
