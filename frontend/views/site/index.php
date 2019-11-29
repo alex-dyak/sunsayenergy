@@ -22,9 +22,9 @@
 						<a class="close-banner" href="#">
 							<i class="icon-close-bold"></i>
 						</a>
-						<strong class="title">АКЦІЯ! До 25.12.2019</strong>
-						<p>Оформлюємо збільшення потужності підключення будинку</p>
-						<strong class="title">за -50% вартості!</strong>
+						<strong class="title"><?= BaseController::getMessage('407') ?></strong>
+						<p><?= BaseController::getMessage('408') ?></p>
+						<strong class="title"><?= BaseController::getMessage('409') ?></strong>
 					</div>
 				</div>
 			</div>
