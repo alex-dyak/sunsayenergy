@@ -101,6 +101,16 @@ $contacts = \backend\models\Contact::getContact();
 							<li><a class="binct-phone-number-1" href="tel:<?= $contacts->phone; ?>"><?= $contacts->phone; ?></a></li>
 							<li><a class="" href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a></li>
 							<li><a class="" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a></li>
+							<li class="address-list">
+								<i class="icon-envelope"></i>
+								<a href="mailto:hello@sunsayenergy.com">
+									hello@sunsayenergy.com
+								</a>
+							</li>
+							<li class="address-list">
+								<i class="icon-pin"></i>
+								<address>м. Київ, вул. Машинобудівна, 41</address>
+							</li>
 						</ul>
 					</div>
 					<div id="nav-opener">
