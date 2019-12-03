@@ -77,7 +77,7 @@ $contacts = \backend\models\Contact::getContact();
 <!--	<link rel="stylesheet" href="/min/header.css">-->
 </head>
 
-<body style="opacity:1;" <?php if ( BaseController::is_mobile()  ): ?> class="mobile" <?php endif; ?>>
+<body style="opacity:1;" class="<?php if ( BaseController::is_mobile()  ): ?> mobile <?php endif; ?> <?= (Yii::$app->language=='ru')?'lang-ru':''?>">
 
 <!-- Google Tag Manager (noscript) -->
 <noscript>
@@ -136,8 +136,7 @@ $contacts = \backend\models\Contact::getContact();
 							</strong>
 						</li>
 						<li class="dropdown-wrapper">
-                  <span><?= BaseController::getMessage('1') ?> <i class="icon-angle-down"></i>
-                  </span>
+                  			<span><?= BaseController::getMessage('1') ?> <i class="icon-angle-down"></i></span>
 							<ul class="dropdown header-drop-list">
 								<li class="<?= (Yii::$app->controller->route == 'site/income') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?>"><?= BaseController::getMessage('2') ?></a></li>
 								<li class="<?= (Yii::$app->controller->route == 'site/reserve') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"><?= BaseController::getMessage('3') ?></a></li>
@@ -181,6 +180,7 @@ $contacts = \backend\models\Contact::getContact();
 		</div>
 		<a href="#" id="to-top-link"><i class="icon-angle-top"></i></a>
 	</div>
+
 <?= $content ?>
 <?php if (Yii::$app->controller->route != 'site/error'): ?>
     <!-- start footer -->
@@ -307,23 +307,37 @@ $contacts = \backend\models\Contact::getContact();
                     <div class="footer__content-info__item">
                         <div class="title"><?= BaseController::getMessage('1') ?></div>
                         <ul>
-                            <li><a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']); ?>"><span><?= BaseController::getMessage('2') ?></span></a></li>
-                            <li><a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"><span><?= BaseController::getMessage('3') ?></span></a></li>
-                            <li><a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>"><span><?= BaseController::getMessage('4') ?></span></a></li>
+                            <li>
+                                <a <?=  Yii::$app->request->url == \yii\helpers\Url::to(['/solar-power-station-for-income']) ? '' : 'href="' . \yii\helpers\Url::to(['/solar-power-station-for-income']) . '"' ?>>
+                                    <span><?= BaseController::getMessage('2') ?></span></a></li>
+                            <li>
+                                <a <?=  Yii::$app->request->url == \yii\helpers\Url::to(['/solar-power-for-backup-power']) ? '' : 'href="' . \yii\helpers\Url::to(['/solar-power-for-backup-power']) . '"' ?>>
+                                    <span><?= BaseController::getMessage('3') ?></span></a></li>
+                            <li>
+                                <a <?=  Yii::$app->request->url == \yii\helpers\Url::to(['/solar-power-for-autonomous-power']) ? '' : 'href="' . \yii\helpers\Url::to(['/solar-power-for-autonomous-power']) . '"' ?>>
+                                    <span><?= BaseController::getMessage('4') ?></span></a></li>
                         </ul>
                     </div>
                     <div class="footer__content-info__item">
                         <div class="title"><?= BaseController::getMessage('11') ?></div>
                         <ul>
-                             <li><a href="<?= \yii\helpers\Url::to(['/project']); ?>"><span><?= BaseController::getMessage('320') ?></span></a></li>
-                            <li><a href="<?= \yii\helpers\Url::to(['/about']); ?>"><span><?= BaseController::getMessage('7') ?></span></a></li>
+                             <li>
+                                 <a <?=  Yii::$app->request->url == \yii\helpers\Url::to(['/project']) ? '' : 'href="' . \yii\helpers\Url::to(['/project']) . '"' ?>>
+                                     <span><?= BaseController::getMessage('320') ?></span></a></li>
+                            <li>
+                                <a <?= Yii::$app->request->url == \yii\helpers\Url::to(['/about']) ? '' : 'href="' . \yii\helpers\Url::to(['/about']) . '"' ?>>
+                                    <span><?= BaseController::getMessage('7') ?></span></a></li>
                         </ul>
                     </div>
                     <div class="footer__content-info__item">
                         <div class="title"><?= BaseController::getMessage('12') ?></div>
                         <ul>
-                            <li><a href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><span><?= BaseController::getMessage('5') ?></span></a></li>
-                            <li><a href="<?= \yii\helpers\Url::to(['/technology']); ?>"><span><?= BaseController::getMessage('6') ?></span></a></li>
+                            <li>
+                                <a <?= Yii::$app->request->url == \yii\helpers\Url::to(['/green-tariff']) ? '' : 'href="' . \yii\helpers\Url::to(['/green-tariff']) . '"' ?>>
+                                    <span><?= BaseController::getMessage('5') ?></span></a></li>
+                            <li>
+                                <a <?= Yii::$app->request->url == \yii\helpers\Url::to(['/technology']) ? '' : 'href="' . \yii\helpers\Url::to(['/technology']) . '"' ?>>
+                                    <span><?= BaseController::getMessage('6') ?></span></a></li>
                         </ul>
                     </div>
                 </div>
