@@ -48,7 +48,7 @@ $(document).ready(function(){
             div.removeClass("show-block");
         }
         if (!header.is(e.target) && header.has(e.target).length === 0) {
-            header.removeClass("nav-active");
+            $('body').removeClass("nav-active");
         }
     });
 
