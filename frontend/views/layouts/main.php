@@ -77,7 +77,7 @@ $contacts = \backend\models\Contact::getContact();
 <!--	<link rel="stylesheet" href="/min/header.css">-->
 </head>
 
-<body style="opacity:1;" <?php if ( BaseController::is_mobile()  ): ?> class="mobile" <?php endif; ?>>
+<body style="opacity:1;" class="<?php if ( BaseController::is_mobile()  ): ?> mobile <?php endif; ?> <?= (Yii::$app->language=='ru')?'lang-ru':''?>">
 
 <!-- Google Tag Manager (noscript) -->
 <noscript>

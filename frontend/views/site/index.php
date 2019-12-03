@@ -29,41 +29,6 @@
 				</div>
 			</div>
 		</section>
-     <!--   <section class="section electrostation">
-            <div class="electrostation__info">
-                <div class="electrostation__title line-title">
-                    <h1><span><?/*= BaseController::getMessage('16') */?></span></h1>
-                </div>
-                <div class="electrostation__description">
-                    <?/*= BaseController::getMessage('17') */?>
-                </div>
-                <div class="electrostation__button"><a class="btn btn-primary"
-                                                       href="#connect"><?/*= BaseController::getMessage('402') */?></a></div>
-            </div>
-            <div class="electrostation__contact">
-                <div class="phone"><a class="binct-phone-number-1" href="tel:<?/*= $contacts->phone */?>" target="_blank"><?/*= $contacts->phone */?></a></div>
-                <div class="address"><?/*= $contacts->address */?></div>
-            </div>
-            <div class="electrostation__house">
-                <svg id="electroBack" width="949" height="1239.6">
-                    <path id="electroFrom" fill="#ffd100" fill-rule="evenodd" d="M1718.4,0l-948,0"></path>
-                </svg>
-                <picture>
-                      <source media="(min-width: 800px)" data-srcset="/img/header_house_1100w.webp" type="image/webp">
-                      <source media="(max-width: 799px)" data-srcset="/img/header_house_350w.webp" type="image/webp">
-                      <source media="(min-width: 800px)" data-srcset="/img/header_house_1100w.png" type="image/png">
-                      <source media="(max-width: 799px)" data-srcset="/img/header_house_350w.png" type="image/png"> -->
-                      <!-- <source data-srcset="/img/header_house_350w.webp 440w, /img/header_house_1100w.webp 900w" sizes="90w" type="image/webp" >
-                      <source data-srcset="/img/header_house_350w.png 350w, /img/header_house_1100w.png 1100w" sizes="90w" type="image/png">  -->
-<!--                     <img class="electrostation__house-img" data-src="/img/header_house_1100w.png" alt="">-->
-<!--                    </picture>-->
-                
-<!--            </div>-->
-			<!-- <div class="electrostation__house-mobile">
-				<img class="img-responsive" data-src="/img/house-mobile.png" alt="Дом">
-			</div>
-        </section>-->
-        <!-- end top information -->
 
         <!-- start info -->
         <section class="section info" id="info">
@@ -73,7 +38,7 @@
                     <div class="description">
                         <?= BaseController::getMessage('20') ?>
                     </div>
-                    <div class="image"><img data-src="/img/info/1.jpg" alt="Незалежність"></div>
+                    <div class="image"><img src="/img/info/1.jpg" alt="Незалежність"></div>
                 </div>
                 <div class="info__list-item">
                     <h2 class="title"><span><span> <?= BaseController::getMessage('21') ?></span></span></h2>
@@ -96,7 +61,7 @@
             <picture>
               <source media="(min-width: 500px)" data-srcset="/img/type.jpg" type="image/jpg">
               <source media="(max-width: 499px)" data-srcset="/img/type_m.jpg" type="image/jpg">
-              <img class="section__type--image" data-src="/img/type.jpg">
+              <img class="section__type--image" src="/img/type.jpg">
             </picture>
             <div class="type__content">
                 <div class="type__content-title">
@@ -157,7 +122,7 @@
         <section class="section rate">
             <div class="rate__content">
                 <div class="rate__content-image"><img data-srcset="/img/m_green.jpg 1024w, /img/green.jpg 1366w"
-                                                      data-src="/img/green.jpg" alt="Зелений тариф"></div>
+                                                      src="/img/green.jpg" alt="Зелений тариф"></div>
                 <div class="rate__content-info">
                     <h2 class="title"><?= BaseController::getMessage('54') ?></h2>
                     <div class="description"><?= BaseController::getMessage('55') ?>
@@ -178,8 +143,6 @@
         <?= $this->render('../section/_connect.php'); ?>
         <!-- end connect -->
     </main>
-
-    
 
 <?php
 // $this->registerJsFile('/js/index.js', ['position' => \yii\web\View::POS_END]);
