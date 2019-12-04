@@ -4,8 +4,8 @@
 
         <!-- start top information -->
 		<section class="electrostation-section">
-			<div class="info-wrapper">
-				<div class="container">
+			<div class="container">
+				<div class="info-wrapper">
 					<div class="text-block">
 						<h1 class="line-title"><span><?= BaseController::getMessage('16') ?></span></h1>
 						<p><?= BaseController::getMessage('17') ?></p>
@@ -13,7 +13,7 @@
 					</div>
 					<div class="img-block">
 						<picture>
-							<source media="(min-width: 1280px)" srcset="/img/house.png">
+							<source media="(min-width: 1280px)" srcset="/img/house-desktop.png">
 							<source media="(min-width: 768px)" srcset="/img/house-tablet.png">
 							<img alt="Дом с панелями" src="/img/house-mobile-2.png">
 						</picture>
@@ -27,6 +27,7 @@
 						<strong class="title"><?= BaseController::getMessage('409') ?></strong>
 					</div>
 				</div>
+				<div class="bg-block"></div>
 			</div>
 		</section>
 
