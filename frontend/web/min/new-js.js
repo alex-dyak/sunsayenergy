@@ -60,7 +60,7 @@ $(document).ready(function(){
 
     $(document).on('click', '.adv-banner', function () {
         event.preventDefault();
-        $('html,body').animate({scrollTop:$('#connect').offset().top - 60},500);
+        $('html,body').animate({scrollTop:$('#connect').offset().top},500);
         $(this).hide();
     });
 });
