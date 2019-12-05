@@ -103,13 +103,13 @@ $contacts = \backend\models\Contact::getContact();
 							<li><a class="" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a></li>
 							<li class="address-list">
 								<i class="icon-envelope"></i>
-								<a href="mailto:hello@sunsayenergy.com">
-									hello@sunsayenergy.com
+								<a href="mailto:<?= $contacts->email ?>">
+                                    <?= $contacts->email ?>
 								</a>
 							</li>
 							<li class="address-list">
 								<i class="icon-pin"></i>
-								<address>м. Київ, вул. Машинобудівна, 41</address>
+								<address><?= $contacts->address ?></address>
 							</li>
 						</ul>
 					</div>
