@@ -16,7 +16,7 @@ class TechnologyController extends BaseController
 {
     public function actionTechnology()
     {
-        $articles = Blog::findAll(['visible'=>1]);
+        $articles = Blog::find()->orderBy(['id' => SORT_DESC, 'visible'=>1])->all();
         $this->setMeta(self::getTitle('technology'), self::getDescription('technology'));
         return $this->render('technology', compact('articles'));
     }
