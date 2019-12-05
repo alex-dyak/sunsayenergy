@@ -60,8 +60,6 @@ $(document).ready(function(){
 
     $(document).on('click', '.adv-banner', function () {
         event.preventDefault();
-        console.log($('#connect').offset().top);
-        console.log($('#connect').offset().top - $(this).height());
         if ($(window).width() <= '1279') {
             $('html,body').scrollTop($('#connect').offset().top);
         } else {
