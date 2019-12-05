@@ -39,7 +39,7 @@
                         <source media="(max-width: 799px)" data-srcset="/img/work/m_1.jpg" type="image/jpg">
                         <source media="(min-width: 800px)" data-srcset="/img/work/1.webp" type="image/webp">
                         <source media="(max-width: 799px)" data-srcset="/img/work/m_1.webp" type="image/webp">
-                        <img data-src="/img/work/1.jpg" alt="">
+                        <img src="/img/work/1.jpg" alt="">
                     </picture> 
                 </div>
             </div>
