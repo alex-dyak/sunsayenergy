@@ -60,7 +60,13 @@ $(document).ready(function(){
 
     $(document).on('click', '.adv-banner', function () {
         event.preventDefault();
-        $('html,body').animate({scrollTop:$('#connect').offset().top},500);
+        console.log($('#connect').offset().top);
+        console.log($('#connect').offset().top - $(this).height());
+        if ($(window).width() <= '1279') {
+            $('html,body').scrollTop($('#connect').offset().top);
+        } else {
+            $('html,body').animate({scrollTop:$('#connect').offset().top - 60},500);
+        }
         $(this).hide();
     });
 });
@@ -85,4 +91,8 @@ $(window).scroll(function() {
         $("#to_top_block").removeClass('visible');
     }
     scrollPrev = scrolled;
+});
+
+$( window ).resize(function() {
+    $( "#log" ).append( "<div>Handler for .resize() called.</div>" );
 });
