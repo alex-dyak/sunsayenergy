@@ -97,13 +97,13 @@ $contacts = \backend\models\Contact::getContact();
 							<li><a class="" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a></li>
 							<li class="address-list">
 								<i class="icon-envelope"></i>
-								<a href="mailto:hello@sunsayenergy.com">
-									hello@sunsayenergy.com
+								<a href="mailto:<?= $contacts->email ?>">
+                                    <?= $contacts->email ?>
 								</a>
 							</li>
 							<li class="address-list">
 								<i class="icon-pin"></i>
-								<address>м. Київ, вул. Машинобудівна, 41</address>
+								<address><?= $contacts->address ?></address>
 							</li>
 						</ul>
 					</div>
@@ -123,7 +123,7 @@ $contacts = \backend\models\Contact::getContact();
 				<nav class="header-nav">
 					<strong class="nav-logo">
 						<a href="<?= \yii\helpers\Url::to(['/']); ?>">
-							<img data-src="/img/logo-navbar.svg" width="148" alt="sunsay energy">
+							<img src="/img/logo-navbar.svg" width="148" alt="sunsay energy">
 						</a>
 					</strong>
 					<ul class="nav-list">
@@ -154,7 +154,7 @@ $contacts = \backend\models\Contact::getContact();
 						</li>
 					</ul>
 					<div class="btn-wrap">
-						<a class="button header-btn" href="#" data-toggle="modal" data-modal-id="#modal-order"><?= BaseController::getMessage('9') ?></a>
+						<a class="button header-btn" href="#" id="order-form"><?= BaseController::getMessage('9') ?></a>
 					</div>
 					<ul class="language-switch">
 						<li><a <?= (Yii::$app->language=='ua')?'class="active"':''   ?>  href="/<?= \frontend\components\UrlTrimLang::widget() ?>">UA</a></li>

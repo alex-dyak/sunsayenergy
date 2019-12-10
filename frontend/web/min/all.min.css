@@ -6738,11 +6738,17 @@ a:not([class]):hover {
 @media only screen and (min-width:1280px) {
 	.electrostation-section .text-block {
 		text-align: left;
-		width: 48%;
+		width: 46%;
 		max-width: 100%;
 		font-size: 18px;
 		line-height: 2.2;
-		margin: 0 0 40px
+		margin: 0
+	}
+}
+
+@media only screen and (min-width:1366px) {
+	.electrostation-section .text-block {
+		width: 45%
 	}
 }
 
@@ -6836,13 +6842,18 @@ a:not([class]):hover {
 @media only screen and (min-width:1280px) {
 	.electrostation-section .img-block {
 		margin: 0;
-		width: 50%
+		width: 52%
+	}
+}
+
+@media only screen and (min-width:1366px) {
+	.electrostation-section .img-block {
+		width: 54%
 	}
 }
 
 @media only screen and (min-width:1440px) {
 	.electrostation-section .img-block {
-		margin: 0;
 		width: 57%
 	}
 }
@@ -6955,7 +6966,8 @@ a:not([class]):hover {
 
 .adv-banner p {
 	text-decoration: underline;
-	margin-bottom: 5px
+	margin-bottom: 5px;
+	cursor: pointer
 }
 
 .adv-banner strong {
@@ -7092,7 +7104,6 @@ a:not([class]):hover {
 	color: #999;
 	font-weight: 400
 }
-
 .custom-field:focus {
 	outline: 2px solid #ffd100;
 	box-shadow: none

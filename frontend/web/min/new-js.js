@@ -67,14 +67,30 @@ $(document).ready(function(){
         return false;
     })
 
-    $(document).on('click', '.adv-banner', function () {
+    $(document).on('click', '#order-form', function () {
+        event.preventDefault();
+        if ($(window).width() <= '1279') {
+            $('html,body').scrollTop($('#connect').offset().top);
+            $('body').removeClass("nav-active");
+        } else {
+            $('html,body').animate({scrollTop:$('#connect').offset().top - 60},500);
+        }
+    });
+
+    $(document).on('click', '.adv-banner p', function () {
         event.preventDefault();
         if ($(window).width() <= '1279') {
             $('html,body').scrollTop($('#connect').offset().top);
         } else {
             $('html,body').animate({scrollTop:$('#connect').offset().top - 60},500);
         }
-        $(this).hide();
+
+        $('.adv-banner').hide();
+    });
+
+    $(document).on('click', '.adv-banner .close-banner', function () {
+        event.preventDefault();
+        $('.adv-banner').hide(300);
     });
 
     $(document).on('click', '.open-close-opener', function () {
