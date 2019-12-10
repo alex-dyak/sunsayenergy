@@ -296,7 +296,7 @@ $this->params['breadcrumbs'][] = [
 					<textarea class="custom-field" name="question" id="question" rows="5" placeholder="<?= BaseController::getMessage('403') ?>"></textarea>
 					<div class="connect__content-button">
 						<button class="btn connect-btn btn-primary"><?= BaseController::getMessage('14') ?></button>
-						<span class="form-compelete"><?= BaseController::getMessage('374') ?></span>
+						<div class="form-compelete"><?= BaseController::getMessage('374') ?></div>
 					</div>
 				</div>
 			</form>
