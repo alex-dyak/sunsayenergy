@@ -16,7 +16,7 @@
 						<button class="btn connect-btn btn-primary">
 							<?= BaseController::getMessage('14') ?>
 						</button>
-						<span class="form-compelete"><?= BaseController::getMessage('374') ?></span>
+						<div class="form-compelete"><?= BaseController::getMessage('374') ?></div>
 					</div>
 				</div>
 			</form>

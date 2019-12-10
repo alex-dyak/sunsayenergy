@@ -90,6 +90,10 @@ img {
 	border-style: none
 }
 
+p {
+	margin: 0 0 10px;
+}
+
 button,
 input,
 optgroup,
@@ -5263,26 +5267,9 @@ iframe {
 
 .form-compelete {
 	display: none;
-	margin-left: 30px
-}
-
-@media (max-width:1536px) {
-	.form-compelete {
-		font-size: 1rem
-	}
-}
-
-@media (max-width:768px) {
-	.form-compelete {
-		margin-left: 0;
-		margin-top: 30px
-	}
-}
-
-@media (max-width:420px) {
-	.form-compelete {
-		font-size: .875rem
-	}
+	font-size: 16px;
+	padding: 15px 10px;
+	text-align: center;
 }
 
 .error {
@@ -5637,54 +5624,57 @@ iframe {
 .icon-close-bold:before,
 .icon-close:before,
 .icon-envelope:before,
+.icon-facebook:before,
+.icon-linkedin:before,
 .icon-menu:before,
 .icon-phone:before,
-.icon-pin:before {
-	font-family: Icons;
+.icon-pin:before,
+.icon-viber:before {
+	font-family: "Icons";
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 400;
+	font-weight: normal;
 	text-decoration: none;
-	text-transform: none
-}
+	text-transform: none;
+	vertical-align: top }
 
 .icon-angle-down:before {
-	content: '\E001'
-}
+	content: '\E001'; }
 
 .icon-angle-right:before {
-	content: '\E002'
-}
+	content: '\E002'; }
 
 .icon-angle-top:before {
-	content: '\E003'
-}
+	content: '\E003'; }
 
 .icon-close-bold:before {
-	content: '\E004'
-}
+	content: '\E004'; }
 
 .icon-close:before {
-	content: '\E005'
-}
+	content: '\E005'; }
 
 .icon-envelope:before {
-	content: '\E006'
-}
+	content: '\E006'; }
+
+.icon-facebook:before {
+	content: '\E007'; }
+
+.icon-linkedin:before {
+	content: '\E008'; }
 
 .icon-menu:before {
-	content: '\E007'
-}
+	content: '\E009'; }
 
 .icon-phone:before {
-	content: '\E008'
-}
+	content: '\E00A'; }
 
 .icon-pin:before {
-	content: '\E009'
-}
+	content: '\E00B'; }
+
+.icon-viber:before {
+	content: '\E00C'; }
 
 img {
 	vertical-align: middle
@@ -5736,16 +5726,32 @@ header ul {
 
 [class^=icon-] {
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 	line-height: 1;
 	font-style: normal
 }
 
 body.no-overflow {
-	overflow: hidden!important
+	overflow: hidden!important;
+	position: relative;
 }
 
-a.button {
+body:after {
+	transition: background .3s linear;
+}
+
+body.no-overflow .overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 990;
+	background: rgba(0, 0, 0, 0.28);
+}
+
+a.button,
+button.button{
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
@@ -6616,7 +6622,7 @@ a:not([class]):hover {
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 999;
+	z-index: 99;
 	font-size: 18px;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -7049,8 +7055,7 @@ a:not([class]):hover {
 	}
 }
 
-.connect__content-question .custom-field,
-.request-question .custom-field {
+.custom-field {
 	display: block;
 	border: 1px solid #b7d3f7;
 	border-radius: 1px;
@@ -7083,36 +7088,25 @@ a:not([class]):hover {
 	resize: none
 }
 
-.connect__content-question .custom-field::-webkit-input-placeholder,
-.request-question .custom-field::-webkit-input-placeholder {
+.custom-field::-webkit-input-placeholder {
 	color: #c7c7c7
 }
-
-.connect__content-question .custom-field::-moz-placeholder,
-.request-question .custom-field::-moz-placeholder {
+ .custom-field::-moz-placeholder {
 	color: #c7c7c7
 }
-
-.connect__content-question .custom-field:-ms-input-placeholder,
-.request-question .custom-field:-ms-input-placeholder {
+.custom-field:-ms-input-placeholder {
 	color: #c7c7c7
 }
-
-.connect__content-question .custom-field:-moz-placeholder,
-.request-question .custom-field:-moz-placeholder {
+.custom-field:-moz-placeholder {
 	color: #c7c7c7
 }
-
-.connect__content-question .custom-field:focus,
-.request-question .custom-field:focus {
-	outline: 2px solid #ffd100;
-	box-shadow: none
-}
-
-.connect__content-question .custom-field:placeholder,
-.request-question .custom-field:placeholder {
+ .custom-field:placeholder {
 	color: #999;
 	font-weight: 400
+}
+.custom-field:focus {
+	outline: 2px solid #ffd100;
+	box-shadow: none
 }
 
 .connect__content-question .custom-select {
@@ -7150,8 +7144,8 @@ a:not([class]):hover {
 	}
 }
 
-
 /* new footer styles */
+
 .bottom-contact-list {
 	list-style: none;
 	margin: 0;
