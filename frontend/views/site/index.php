@@ -18,14 +18,14 @@
 							<img alt="Дом с панелями" src="/img/house-mobile-2.png">
 						</picture>
 					</div>
-					<div class="adv-banner" id="adv-banner">
+				<!--	<div class="adv-banner" id="adv-banner">
 						<a class="close-banner" href="#">
 							<i class="icon-close-bold"></i>
 						</a>
-						<strong class="title"><?= BaseController::getMessage('407') ?></strong>
-						<p><?= BaseController::getMessage('408') ?></p>
-						<strong class="title"><?= BaseController::getMessage('409') ?></strong>
-					</div>
+						<strong class="title"><?/*= BaseController::getMessage('407') */?></strong>
+						<p><?/*= BaseController::getMessage('408') */?></p>
+						<strong class="title"><?/*= BaseController::getMessage('409') */?></strong>
+					</div>-->
 				</div>
 				<div class="bg-block"></div>
 			</div>
