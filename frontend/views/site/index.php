@@ -39,19 +39,19 @@
                     <div class="description">
                         <?= BaseController::getMessage('20') ?>
                     </div>
-                    <div class="image"><img src="/img/info/1.jpg" alt="Незалежність"></div>
+                    <div class="image"><img src="/img/info/1.webp" alt="Незалежність"></div>
                 </div>
                 <div class="info__list-item">
                     <h2 class="title"><span><span> <?= BaseController::getMessage('21') ?></span></span></h2>
                     <div class="description"><?= BaseController::getMessage('22') ?>
                     </div>
-                    <div class="image"><img src="/img/info/2.jpg" alt="Заробіток"></div>
+                    <div class="image"><img data-src="/img/info/2.webp" alt="Заробіток"></div>
                 </div>
                 <div class="info__list-item">
                     <h2 class="title"><span><span><?= BaseController::getMessage('23') ?></span></span></h2>
                     <div class="description"><?= BaseController::getMessage('24') ?>
                     </div>
-                    <div class="image"><img src="/img/info/3.jpg" alt="Іноваційність"></div>
+                    <div class="image"><img data-src="/img/info/3.webp" alt="Іноваційність"></div>
                 </div>
             </div>
         </section>
@@ -62,7 +62,7 @@
             <picture>
               <source media="(min-width: 500px)" data-srcset="/img/type.jpg" type="image/jpg">
               <source media="(max-width: 499px)" data-srcset="/img/type_m.jpg" type="image/jpg">
-              <img class="section__type--image" src="/img/type.jpg">
+              <img class="section__type--image" data-src="/img/type.jpg">
             </picture>
             <div class="type__content">
                 <div class="type__content-title">
@@ -122,8 +122,8 @@
         <!-- start rate -->
         <section class="section rate">
             <div class="rate__content">
-                <div class="rate__content-image"><img srcset="/img/m_green.jpg 1024w, /img/green.jpg 1366w"
-                                                      src="/img/green.jpg" alt="Зелений тариф"></div>
+                <div class="rate__content-image"><img data-srcset="/img/m_green.webp 1024w, /img/green.webp 1366w"
+                                                      data-src="/img/green.webp" alt="Зелений тариф"></div>
                 <div class="rate__content-info">
                     <h2 class="title"><?= BaseController::getMessage('54') ?></h2>
                     <div class="description"><?= BaseController::getMessage('55') ?>
