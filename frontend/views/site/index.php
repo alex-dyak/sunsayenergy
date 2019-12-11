@@ -13,9 +13,9 @@
 					</div>
 					<div class="img-block">
 						<picture>
-							<source media="(min-width: 1280px)" srcset="/img/house-desktop.webp">
-							<source media="(min-width: 768px)" srcset="/img/house-tablet.webp">
-							<img alt="Дом с панелями" src="/img/house-mobile-2.webp">
+							<source media="(min-width: 1280px)" srcset="/img/house-desktop.png">
+							<source media="(min-width: 768px)" srcset="/img/house-tablet.png">
+							<img alt="Дом с панелями" src="/img/house-mobile-2.png">
 						</picture>
 					</div>
 					<div class="adv-banner" id="adv-banner">
@@ -39,19 +39,19 @@
                     <div class="description">
                         <?= BaseController::getMessage('20') ?>
                     </div>
-                    <div class="image"><img src="/img/info/1.webp" alt="Незалежність"></div>
+                    <div class="image"><img src="/img/info/1.png" alt="Незалежність"></div>
                 </div>
                 <div class="info__list-item">
                     <h2 class="title"><span><span> <?= BaseController::getMessage('21') ?></span></span></h2>
                     <div class="description"><?= BaseController::getMessage('22') ?>
                     </div>
-                    <div class="image"><img data-src="/img/info/2.webp" alt="Заробіток"></div>
+                    <div class="image"><img data-src="/img/info/2.png" alt="Заробіток"></div>
                 </div>
                 <div class="info__list-item">
                     <h2 class="title"><span><span><?= BaseController::getMessage('23') ?></span></span></h2>
                     <div class="description"><?= BaseController::getMessage('24') ?>
                     </div>
-                    <div class="image"><img data-src="/img/info/3.webp" alt="Іноваційність"></div>
+                    <div class="image"><img data-src="/img/info/3.png" alt="Іноваційність"></div>
                 </div>
             </div>
         </section>
@@ -122,8 +122,8 @@
         <!-- start rate -->
         <section class="section rate">
             <div class="rate__content">
-                <div class="rate__content-image"><img data-srcset="/img/m_green.webp 1024w, /img/green.webp 1366w"
-                                                      data-src="/img/green.webp" alt="Зелений тариф"></div>
+                <div class="rate__content-image"><img data-srcset="/img/m_green.png 1024w, /img/green.png 1366w"
+                                                      data-src="/img/green.png" alt="Зелений тариф"></div>
                 <div class="rate__content-info">
                     <h2 class="title"><?= BaseController::getMessage('54') ?></h2>
                     <div class="description"><?= BaseController::getMessage('55') ?>
