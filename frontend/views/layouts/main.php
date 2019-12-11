@@ -269,7 +269,7 @@ $contacts = \backend\models\Contact::getContact();
 						</strong>
 						<div class="copyright">
 							<p><?= BaseController::getMessage('15') ?></p>
-							<a href="<?= \yii\helpers\Url::to(['/']); ?>">&copy; SUNSAY Energy 2019</a>
+							<a href="<?= \yii\helpers\Url::to(['/']); ?>">&copy; SUNSAY Energy <?= date('Y'); ?></a>
 						</div>
 					</div>
 					<div class="footer__nav-menu">
@@ -323,7 +323,7 @@ $contacts = \backend\models\Contact::getContact();
 			<div class="container">
 				<a href="#footer-newsletter" class="button newsletter-opener"><?= BaseController::getMessage('410') ?></a>
 				<div class="copyright">
-					<p><?= BaseController::getMessage('15') ?> &copy; SUNSAY Energy 2019</p>
+					<p><?= BaseController::getMessage('15') ?> &copy; SUNSAY Energy <?= date('Y'); ?></p>
 				</div>
 			</div>
 		</div>
