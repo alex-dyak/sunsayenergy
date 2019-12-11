@@ -67,11 +67,31 @@ $(document).ready(function(){
         return false;
     })
 
+    $(document).on('click', '.to_contact a', function () {
+        event.preventDefault();
+        var block = $(this).attr('href');
+        if ($(window).width() <= '1279') {
+            $('html,body').scrollTop($(block).offset().top);
+            $('body').removeClass("nav-active");
+        } else {
+            $('html,body').animate({scrollTop:$(block).offset().top - 100},500);
+        }
+    });
+
     $(document).on('click', '#order-form', function () {
         event.preventDefault();
         if ($(window).width() <= '1279') {
             $('html,body').scrollTop($('#connect').offset().top);
             $('body').removeClass("nav-active");
+        } else {
+            $('html,body').animate({scrollTop:$('#connect').offset().top - 60},500);
+        }
+    });
+
+    $(document).on('click', '.electrostation-section .button', function () {
+        event.preventDefault();
+        if ($(window).width() <= '1279') {
+            $('html,body').scrollTop($('#connect').offset().top);
         } else {
             $('html,body').animate({scrollTop:$('#connect').offset().top - 60},500);
         }
