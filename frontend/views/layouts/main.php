@@ -357,7 +357,7 @@ $contacts = \backend\models\Contact::getContact();
         <div class="request-content-image">
             <?php if ( !BaseController::is_mobile()  ): ?>
                 <picture>
-                    <source data-srcset="/img/connect.webp" type="image/webp">
+                    <source data-srcset="/img/connect.jpg" type="image/jpg">
                     <img data-src="/img/connect.jpg" alt="">
                 </picture>                
             <?php endif; ?>

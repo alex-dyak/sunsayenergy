@@ -102,8 +102,8 @@
                 </div>
                 <div class="work__content-info__item-image">
                     <picture>
-<!--                        <source media="(min-width: 800px)" data-srcset="/img/work/5.jpg" type="image/jpg">-->
-<!--                        <source media="(max-width: 799px)" data-srcset="/img/work/m_5.jpg" type="image/jpg">-->
+                        <source media="(min-width: 800px)" data-srcset="/img/work/5.jpg" type="image/jpg">
+                        <source media="(max-width: 799px)" data-srcset="/img/work/m_5.jpg" type="image/jpg">
                         <source media="(min-width: 800px)" data-srcset="/img/work/5.webp" type="image/webp">
                         <source media="(max-width: 799px)" data-srcset="/img/work/m_5.webp" type="image/webp">
                         <img data-src="/img/work/5.jpg" alt="">
@@ -119,8 +119,8 @@
                 </div>
                 <div class="work__content-info__item-image">
                     <picture>
-<!--                        <source media="(min-width: 800px)" data-srcset="/img/work/6.jpg" type="image/jpg">-->
-<!--                        <source media="(max-width: 799px)" data-srcset="/img/work/m_6.jpg" type="image/jpg">-->
+                        <source media="(min-width: 800px)" data-srcset="/img/work/6.jpg" type="image/jpg">
+                        <source media="(max-width: 799px)" data-srcset="/img/work/m_6.jpg" type="image/jpg">
                         <source media="(min-width: 800px)" data-srcset="/img/work/6.webp" type="image/webp">
                         <source media="(max-width: 799px)" data-srcset="/img/work/m_6.webp" type="image/webp">
                         <img data-src="/img/work/1.jpg" alt="">
@@ -136,8 +136,8 @@
                 </div>
                 <div class="work__content-info__item-image">
                     <picture>
-<!--                        <source media="(min-width: 800px)" data-srcset="/img/work/7.jpg" type="image/jpg">-->
-<!--                        <source media="(max-width: 799px)" data-srcset="/img/work/m_7.jpg" type="image/jpg">-->
+                        <source media="(min-width: 800px)" data-srcset="/img/work/7.jpg" type="image/jpg">
+                        <source media="(max-width: 799px)" data-srcset="/img/work/m_7.jpg" type="image/jpg">
                         <source media="(min-width: 800px)" data-srcset="/img/work/7.webp" type="image/webp">
                         <source media="(max-width: 799px)" data-srcset="/img/work/m_7.webp" type="image/webp">
                         <img data-src="/img/work/7.jpg" alt="">
