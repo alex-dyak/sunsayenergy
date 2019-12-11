@@ -16,9 +16,9 @@
             <div class="example__content-list__item">
                 <a href="<?= \yii\helpers\Url::to(['project/detailed', 'symbol' => $item->symbol]) ?>">
                   <picture>
-                    <source media="(min-width: 800px)" srcset="<?= $item->getFirstImg(650); ?>" type="image/jpg">
-                    <source media="(max-width: 799px)" srcset="<?= $item->getFirstImg(350); ?>" type="image/jpg">
-                    <img src="<?= $item->getFirstImg(650); ?>" alt="" class="check-slick">
+                    <source media="(min-width: 800px)" data-srcset="<?= $item->getFirstImg(650); ?>" type="image/jpg">
+                    <source media="(max-width: 799px)" data-srcset="<?= $item->getFirstImg(350); ?>" type="image/jpg">
+                    <img data-src="<?= $item->getFirstImg(650); ?>" alt="" class="check-slick">
                   </picture>
                 </a>
             </div>
