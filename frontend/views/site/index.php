@@ -13,9 +13,9 @@
 					</div>
 					<div class="img-block">
 						<picture>
-							<source media="(min-width: 1280px)" srcset="/img/house-desktop.png">
-							<source media="(min-width: 768px)" srcset="/img/house-tablet.png">
-							<img alt="Дом с панелями" src="/img/house-mobile-2.png">
+							<source media="(min-width: 1280px)" srcset="/img/house-desktop.webp">
+							<source media="(min-width: 768px)" srcset="/img/house-tablet.webp">
+							<img alt="Дом с панелями" src="/img/house-mobile-2.webp">
 						</picture>
 					</div>
 					<div class="adv-banner" id="adv-banner">
