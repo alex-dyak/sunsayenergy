@@ -147,7 +147,7 @@ $contacts = \backend\models\Contact::getContact();
 						<li class="<?= (Yii::$app->controller->route == 'site/about') ? 'active' : ''; ?>">
 							<a href="<?= \yii\helpers\Url::to(['/about']); ?>"><?= BaseController::getMessage('7') ?></a>
 						</li>
-						<li>
+						<li class="to_contact">
 							<a href="#contact"><?= BaseController::getMessage('8') ?></a>
 						</li>
 					</ul>
@@ -393,15 +393,17 @@ $contacts = \backend\models\Contact::getContact();
 <div class="backgroundfade" style="display:none;"></div>
 <!-- end fade dropdown -->
 
-<script>var cb = function() {
+<script>
+	// var cb = function() {
 	// var l = document.createElement('link'); l.rel = 'stylesheet';
 	// l.href = '/min/all.min.css';
 	// var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
 	// };
-	var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-	webkitRequestAnimationFrame || msRequestAnimationFrame;
-	if (raf) raf(cb);
-	else window.addEventListener('load', cb);</script>
+	// var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+	// webkitRequestAnimationFrame || msRequestAnimationFrame;
+	// if (raf) raf(cb);
+	// else window.addEventListener('load', cb);
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
 <?php if ( BaseController::is_mobile()  ): ?>
