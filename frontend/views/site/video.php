@@ -4,7 +4,7 @@ use yii\widgets\Breadcrumbs;
 
 $this->params['breadcrumbs'][] = [
 	'template' => "<li><b>{link}</b></li>\n",
-	'label' => BaseController::getMessage('7'),
+	'label' => BaseController::getMessage('414'),
 ];
 ?>
 <main class="page-container">
@@ -16,7 +16,8 @@ $this->params['breadcrumbs'][] = [
             <section class="section video">
                 <div class="video__content">
                     <div class="video__content-title">
-                        <h2><?= BaseController::getMessage('331') ?></h2><span class="mobile-count"><?= BaseController::getMessage('332') ?></span>
+                        <h2><?= BaseController::getMessage('412') ?></h2>
+                        <span class="video__content-description"><?= BaseController::getMessage('413') ?></span>
                     </div>
                     <div class="video__content-list">
 					    <?php foreach ($videos as $item): ?>
