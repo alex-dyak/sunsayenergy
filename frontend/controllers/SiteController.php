@@ -9,6 +9,7 @@ use backend\models\Request;
 use backend\models\Reviews;
 use backend\models\Subscribe;
 use backend\models\Project;
+use common\models\Video;
 use Yii;
 
 /**
@@ -34,6 +35,16 @@ class SiteController extends BaseController
         $this->setMeta(self::getTitle('index'), self::getDescription('index'));
         return $this->render('index', compact('contacts', 'reviews', 'project'));
     }
+
+	/**
+	 * Displays video page.
+	 */
+	public function actionVideo()
+	{
+	    $videos = Video::find()->all();
+
+		return $this->render('video',compact('videos'));
+	}
 
     public function actionGreen()
     {
@@ -154,6 +165,7 @@ class SiteController extends BaseController
             '/technology/faq-about-solar-energy',
             '/types-of-solar-power-plants',
             '/about',
+            '/video',
             '/project',
             '/project/category/network',
             '/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-martusivka',
@@ -231,7 +243,4 @@ class SiteController extends BaseController
         </urlset>
         <?php return ob_get_clean();
     }
-
-
 }
-

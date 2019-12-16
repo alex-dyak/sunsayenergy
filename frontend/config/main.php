@@ -77,6 +77,7 @@ return [
                 'technology/<symbol:[\w_-]+>' => 'technology/detailed',
                 '/types-of-solar-power-plants' => 'site/types',
                 '/about' => 'site/about',
+                '/video' => 'site/video',
                 '/success' => 'site/success',
                 '/project' => 'project/project',
                 '/project/<symbol:[\w_-]+>' => 'project/detailed',
