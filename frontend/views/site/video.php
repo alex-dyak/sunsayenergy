@@ -54,64 +54,64 @@ $this->params['breadcrumbs'][] = [
 
 					</div>
 				</div>
-                <?php if (in_array(1, $existed_categories)) : ?>
-					<div class="tab-box" id="finished">
-						<div class="load-more-wrap">
-							<div class="video-row ">
-                                <?php foreach ($videos as $item): ?>
+				<div class="tab-box" id="finished">
+					<div class="load-more-wrap">
+						<div class="video-row ">
+                            <?php foreach ($videos as $item): ?>
+                                <?php if($item->video_category == 1) : ?>
 									<div class="video-col">
 										<div class="embed-responsive">
 											<iframe src="https://www.youtube.com/embed/<?= $item->video_url ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 										</div>
 										<strong class="video-title"><?= $item->video_name ?></strong>
 									</div>
-                                <?php endforeach; ?>
-							</div>
-							<div class="btn-wrap load-more-btn load-finished">
-								<a href="#" class="button "><?= BaseController::getMessage('419') ?></a>
-							</div>
+								<?php endif ?>
+                            <?php endforeach; ?>
+						</div>
+						<div class="btn-wrap load-more-btn load-finished">
+							<a href="#" class="button "><?= BaseController::getMessage('419') ?></a>
+						</div>
 
-						</div>
 					</div>
-                <?php endif; ?>
-                <?php if (in_array(2, $existed_categories)) : ?>
-					<div class="tab-box" id="approach">
-						<div class="load-more-wrap">
-							<div class="video-row">
-                                <?php foreach ($videos as $item): ?>
+				</div>
+				<div class="tab-box" id="approach">
+					<div class="load-more-wrap">
+						<div class="video-row">
+                            <?php foreach ($videos as $item): ?>
+								<?php if($item->video_category == 2) : ?>
 									<div class="video-col">
 										<div class="embed-responsive">
 											<iframe src="https://www.youtube.com/embed/<?= $item->video_url ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 										</div>
 										<strong class="video-title"><?= $item->video_name ?></strong>
 									</div>
-                                <?php endforeach; ?>
-							</div>
-							<div class="btn-wrap load-more-btn load-approach">
-								<a href="#" class="button "><?= BaseController::getMessage('419') ?></a>
-							</div>
+								<?php endif; ?>
+                            <?php endforeach; ?>
+						</div>
+						<div class="btn-wrap load-more-btn load-approach">
+							<a href="#" class="button "><?= BaseController::getMessage('419') ?></a>
 						</div>
 					</div>
-                <?php endif; ?>
-                <?php if (in_array(3, $existed_categories)) : ?>
-					<div class="tab-box" id="technology">
-						<div class="load-more-wrap">
-							<div class="video-row">
-                                <?php foreach ($videos as $item): ?>
+				</div>
+				<div class="tab-box" id="technology">
+					<div class="load-more-wrap">
+						<div class="video-row">
+                            <?php foreach ($videos as $item): ?>
+								<?php if($item->video_category == 3) : ?>
 									<div class="video-col">
 										<div class="embed-responsive">
 											<iframe src="https://www.youtube.com/embed/<?= $item->video_url ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 										</div>
 										<strong class="video-title"><?= $item->video_name ?></strong>
 									</div>
-                                <?php endforeach; ?>
-							</div>
-							<div class="btn-wrap load-more-btn load-technology">
-								<a href="#" class="button "><?= BaseController::getMessage('419') ?></a>
-							</div>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+						</div>
+						<div class="btn-wrap load-more-btn load-technology">
+							<a href="#" class="button "><?= BaseController::getMessage('419') ?></a>
 						</div>
 					</div>
-                <?php endif; ?>
+				</div>
 			</div>
 		</div>
 	</section>
