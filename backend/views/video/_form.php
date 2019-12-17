@@ -1,7 +1,9 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
+use common\models\Video;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Video */
@@ -16,7 +18,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'video_url')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'video_category')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'video_category')->dropDownList([
+            '1' => 'Реалізовані проекти',
+            '2' => 'Наш підхід',
+            '3' => 'Про технологію',
+    ]); ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
