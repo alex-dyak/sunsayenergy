@@ -205,7 +205,9 @@ $contacts = \backend\models\Contact::getContact();
 				</li>
 			</ul>
 		</div>
+		<?php if(Yii::$app->controller->route == 'site/index'){ ?>
 		<div id="map"></div>
+		<?php } ?>
 	</div>
 	<!-- start footer -->
 	<footer class="footer">

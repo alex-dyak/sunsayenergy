@@ -120,6 +120,19 @@ $(document).ready(function(){
             $('.mobile-open-close').addClass('show');
         }
     });
+
+    initTabs($('.video-page .tab-navigation'), $('.video-page .tab-container'));
+    initLoadMore ($('.load-all'), 3, 3);
+    initLoadMore ($('.load-finished'), 3, 3);
+    initLoadMore ($('.load-approach'), 3, 3);
+    initLoadMore ($('.load-technology'), 3, 3);
+});
+
+$( window ).resize(function() {
+    initLoadMore ($('.load-all'), 3, 3);
+    initLoadMore ($('.load-finished'), 3, 3);
+    initLoadMore ($('.load-approach'), 3, 3);
+    initLoadMore ($('.load-technology'), 3, 3);
 });
 
 var height;
@@ -143,3 +156,50 @@ $(window).scroll(function() {
     }
     scrollPrev = scrolled;
 });
+
+function initTabs(tabNav, tabContainer) {
+    $(tabNav).find('a').on('click', function () {
+        event.preventDefault();
+        var tabID = $(this).attr('href');
+        $(tabNav).find('a').each(function () {
+            $(this).removeClass('active');
+        });
+        $(tabContainer).find('.tab-box').each(function () {
+            $(this).removeClass('active');
+            $(this).hide();
+        });
+        $(this).addClass('active');
+        $(tabID).show().addClass('active');
+    })
+}
+
+function initLoadMore (btnWrap, defVal, loadVal) {
+    var count = 0,
+        num = defVal - 1,
+        resValue = defVal,
+        btn = btnWrap.find('.button'),
+        wrap = btn.parents('.load-more-wrap'),
+        list = wrap.find('.video-row');
+    if($(window).width() < 1024) {
+        if (list.find('.video-col').length <= defVal) {
+            btnWrap.hide();
+        } else {
+            btnWrap.show();
+        }
+        list.find('.video-col:gt(' + num + ')').hide();
+        btn.on('click', function () {
+            count++;
+            resValue += loadVal;
+            list.find('.video-col').slice(0, resValue).show();
+            if (list.find('.video-col:hidden').length === 0) {
+                count = 0;
+                btnWrap.slideUp(400);
+                resValue = defVal;
+            }
+            return false;
+        });
+    } else {
+        list.find('.video-col').show();
+        btnWrap.hide();
+    }
+}

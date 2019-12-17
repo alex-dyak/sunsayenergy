@@ -1,7 +1,6 @@
 <?php use frontend\controllers\BaseController; ?>
 
     <main class="page-container">
-
         <!-- start top information -->
 		<section class="electrostation-section">
 			<div class="container">
@@ -30,7 +29,7 @@
 				<div class="bg-block"></div>
 			</div>
 		</section>
-
+        <?= $this->render('../section/_video.php', compact('videos')); ?>
         <!-- start info -->
         <section class="section info" id="info">
             <div class="info__list">
