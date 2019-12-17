@@ -12,7 +12,25 @@ $this->params['breadcrumbs'][] = [
 		'homeLink' => ['label' => BaseController::getMessage('404'), 'url' => Yii::$app->homeUrl],
 		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 	]); ?>
+
 	    <?php if (!empty($videos)): ?>
+            <?php  $existed_categories = [];
+		    foreach ($videos as $item) {
+			    $existed_categories[] = $item->video_category;
+		    }
+		    ?>
+            <ul>
+                <li><a href="#"><?= BaseController::getMessage('415') ?></a></li>
+                <?php if (in_array(1, $existed_categories)) : ?>
+                    <li><a href="#"><?= BaseController::getMessage('416') ?></a></li>
+                <?php endif; ?>
+	            <?php if (in_array(2, $existed_categories)) : ?>
+                    <li><a href="#"><?= BaseController::getMessage('417') ?></a></li>
+	            <?php endif; ?>
+	            <?php if (in_array(3, $existed_categories)) : ?>
+                    <li><a href="#"><?= BaseController::getMessage('418') ?></a></li>
+	            <?php endif; ?>
+		    </ul>
             <section class="section video">
                 <div class="video__content">
                     <div class="video__content-title">
