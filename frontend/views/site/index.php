@@ -20,12 +20,6 @@
 									</div>
 									<strong class="video-title">Назва відео 2020</strong>
 								</div>
-							<!--	<div class="video-col">
-									<div class="embed-responsive">
-										<iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-									</div>
-									<strong class="video-title">Назва відео 2020</strong>
-								</div>-->
 							</div>
 							<div class="btn-wrap load-more-btn load-all">
 								<a href="#" class="button "><?= BaseController::getMessage('419') ?></a>

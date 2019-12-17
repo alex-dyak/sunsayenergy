@@ -5590,7 +5590,7 @@ iframe {
 
 .breadcrumb {
 	list-style: none;
-	padding: 0 15px;
+	padding: 0;
 	margin: 10px 0 20px;
 	font-size: 14px
 }
@@ -5649,7 +5649,6 @@ iframe {
 @media screen and (min-width:1024px) {
 	.breadcrumb {
 		list-style: none;
-		padding: 0 30px;
 		margin: 20px 0 30px
 	}
 }
@@ -7985,6 +7984,27 @@ a:not([class]):hover {
 @media screen and (min-width:1280px) {
 	.video-row .video-col {
 		width: 25%;
+	}
+}
+
+.video-page h1 {
+	font-size: 38px;
+	line-height: 1.1;
+	text-transform: uppercase;
+	margin: 0 0 30px;
+	font-weight: 400;
+}
+
+@media screen and (min-width:768px) {
+	.video-page h1 {
+		font-size: 46px;
+	}
+}
+
+@media screen and (min-width:1024px) {
+	.video-page h1 {
+		font-size: 70px;
+		margin-bottom: 50px;
 	}
 }
 
