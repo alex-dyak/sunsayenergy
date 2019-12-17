@@ -18,7 +18,7 @@
             <?php $i++; endforeach; ?>
         </div>
         <div class="btn-wrap">
-            <a href="<?= \yii\helpers\Url::to(['/video']); ?>" class="button"><?= BaseController::getMessage('419') ?></a>
+            <a href="<?= \yii\helpers\Url::to(['/video']); ?>" class="button"><?= BaseController::getMessage('413') ?></a>
         </div>
     </div>
 </section>
