@@ -11,6 +11,7 @@ use Yii;
  * @property string $video_name
  * @property string $video_url
  * @property string $video_category
+ * @property int $on_home
  */
 class Video extends \yii\db\ActiveRecord
 {
@@ -28,7 +29,8 @@ class Video extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['video_name', 'video_url', 'video_category'], 'required'],
+            [['video_name', 'video_url', 'video_category', 'on_home'], 'required'],
+            [['on_home'], 'integer'],
             [['video_name', 'video_url', 'video_category'], 'string', 'max' => 255],
         ];
     }
@@ -43,6 +45,7 @@ class Video extends \yii\db\ActiveRecord
             'video_name' => 'Video Name',
             'video_url' => 'Video Url',
             'video_category' => 'Video Category',
+            'on_home' => 'On Home',
         ];
     }
 }

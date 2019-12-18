@@ -24,6 +24,8 @@ use common\models\Video;
             '3' => 'Про технологію',
     ]); ?>
 
+	<?= $form->field($model, 'on_home')->checkbox(); ?>
+
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>
