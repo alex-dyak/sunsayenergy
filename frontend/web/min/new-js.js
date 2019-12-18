@@ -127,12 +127,16 @@ $(document).ready(function(){
     initLoadMore ($('.load-approach'), 3, 3);
     initLoadMore ($('.load-technology'), 3, 3);
 });
+var lastWidth = $(window).width();
+$(window).resize(function() {
+    if($(window).width()!=lastWidth){
+        initLoadMore ($('.load-all'), 3, 3);
+        initLoadMore ($('.load-finished'), 3, 3);
+        initLoadMore ($('.load-approach'), 3, 3);
+        initLoadMore ($('.load-technology'), 3, 3);
 
-$( window ).resize(function() {
-    initLoadMore ($('.load-all'), 3, 3);
-    initLoadMore ($('.load-finished'), 3, 3);
-    initLoadMore ($('.load-approach'), 3, 3);
-    initLoadMore ($('.load-technology'), 3, 3);
+        lastWidth = $(window).width();
+    }
 });
 
 var height;
