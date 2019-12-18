@@ -13,10 +13,12 @@ $this->params['breadcrumbs'][] = [
 ];
 ?>
     <main class="page-container">
+		<div class="container">
         <?php echo Breadcrumbs::widget([
             'homeLink' => ['label' => BaseController::getMessage('404'), 'url' => Yii::$app->homeUrl],
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]); ?>
+		</div>
     <!-- start info -->
     <section class="section service-info">
         <div class="service-info__content">

@@ -45,6 +45,7 @@ $contacts = \backend\models\Contact::getContact();
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
 	<meta name="apple-mobile-web-app-capable" content="yes"/>
 	<meta name="apple-mobile-web-app-status-bar-style" content="white"/>
 	<link rel="shortcut icon" href="/img/favicon.ico">
@@ -63,11 +64,12 @@ $contacts = \backend\models\Contact::getContact();
     $lang_array = ['/ru', '/en'];
     $final_uri = str_replace($lang_array, '', $request_uri);
     ?>
+	<link rel="stylesheet" href="/min/all.min.css">
 
-    <link rel="alternate" hreflang="uk" href="https://sunsayenergy.com<?= $final_uri; ?>" />
+
+	<link rel="alternate" hreflang="uk" href="https://sunsayenergy.com<?= $final_uri; ?>" />
     <link rel="alternate" hreflang="ru" href="https://sunsayenergy.com/ru<?= $final_uri; ?>" />
     <link rel="alternate" hreflang="en" href="https://sunsayenergy.com/en<?= $final_uri; ?>" />
-	<link rel="stylesheet" href="/min/all.min.css">
 </head>
 
 <body style="opacity:1;" class="<?php if ( BaseController::is_mobile()  ): ?> mobile <?php endif; ?> <?= (Yii::$app->language=='ru')?'lang-ru':''?>">
