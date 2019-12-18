@@ -4,7 +4,7 @@ use yii\widgets\Breadcrumbs;
 
 $this->params['breadcrumbs'][] = [
 	'template' => "<li><b>{link}</b></li>\n",
-	'label' => BaseController::getMessage('414'),
+	'label' => BaseController::getMessage('412'),
 ];
 ?>
 <main class="page-container">

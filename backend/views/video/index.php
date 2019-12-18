@@ -26,6 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'video_name',
             'video_url:url',
             'video_category',
+            'on_home',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

@@ -14,10 +14,12 @@ $this->params['breadcrumbs'][] = [
 ?>
 
     <main class="page-container">
+		<div class="container">
         <?php echo Breadcrumbs::widget([
             'homeLink' => ['label' => BaseController::getMessage('404'), 'url' => Yii::$app->homeUrl],
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]); ?>
+		</div>
 	<section class="section question-page">
 		<div class="question-page__image" style="background-image:url('/img/blog/info.png')">
 			<div class="question-page__image-container">

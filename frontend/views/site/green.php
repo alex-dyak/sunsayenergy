@@ -8,10 +8,12 @@ $this->params['breadcrumbs'][] = [
 ];
 ?>
     <main class="page-container">
-        <?php echo Breadcrumbs::widget([
-            'homeLink' => ['label' => BaseController::getMessage('404'), 'url' => Yii::$app->homeUrl],
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]); ?>
+		<div class="container">
+            <?php echo Breadcrumbs::widget([
+                'homeLink' => ['label' => BaseController::getMessage('404'), 'url' => Yii::$app->homeUrl],
+                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+            ]); ?>
+		</div>
     <section class="section why">
       <div class="greenwhy__content">
         <div class="greenwhy__content-info">
