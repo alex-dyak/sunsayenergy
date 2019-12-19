@@ -24,7 +24,9 @@ use common\models\Video;
             '3' => 'Про технологію',
     ]); ?>
 
-	<?= $form->field($model, 'on_home')->checkbox(); ?>
+	<?= $form->field($model, 'on_home')->textInput([
+		'type' => 'number'
+	]); ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
