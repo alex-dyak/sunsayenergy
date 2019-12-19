@@ -6,16 +6,26 @@
         <div class="video-row">
             <?php
             $i = 0;
-            foreach ($videos as $item): ?>
+            $home_videos = [];
+            for ($i = 0; $i < count($videos); $i++) {
+	            if ($videos[$i]->on_home) {
+		            if (!$home_videos) {
+			            $home_videos[] = $videos[$i];
+		            } elseif ($videos[$i]->on_home < $home_videos[count($home_videos)-1]->on_home) {
+			            array_unshift($home_videos, $videos[$i]);
+		            } else {
+			            array_push($home_videos, $videos[$i]);
+                    }
+	            }
+            }
+            foreach ($home_videos as $item): ?>
                 <?php if($item->on_home) : ?>
-                    <?php if($i <= 3) : ?>
-                        <div class="video-col">
-                            <div class="embed-responsive">
-                                <iframe src="https://www.youtube.com/embed/<?= $item->video_url ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <strong class="video-title"><?= $item->video_name ?></strong>
+                    <div class="video-col">
+                        <div class="embed-responsive">
+                            <iframe src="https://www.youtube.com/embed/<?= $item->video_url ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
-                    <?php endif; $i++; ?>
+                        <strong class="video-title"><?= $item->video_name ?></strong>
+                    </div>
                 <?php endif; ?>
             <?php endforeach; ?>
         </div>
