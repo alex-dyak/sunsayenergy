@@ -26,7 +26,7 @@ use frontend\controllers\BaseController;
                     <div class="video-col">
                         <div class="embed-responsive">
                             <div class="progressive-media progressive-media-iframe progressive-media-unloaded" style="max-width: 500px; max-height: 408px;" data-src="https://www.youtube.com/embed/<?= $item->video_url ?>">
-                                <div class="progressive-media-aspect" style="padding-bottom: 55%;">
+                                <div class="progressive-media-aspect" style="padding-bottom: 56.25%;">
                                     <div class="progressive-media-aspect-inner">
                                         <noscript>
                                             <iframe src="https://www.youtube.com/embed/<?= $item->video_url ?>"
