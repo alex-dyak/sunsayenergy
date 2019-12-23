@@ -1,6 +1,7 @@
 <?php
 use frontend\controllers\BaseController;
 use yii\widgets\Breadcrumbs;
+\faboslav\progressivemedia\ProgressiveMediaAssetBundle::register($this);
 
 $this->params['breadcrumbs'][] = [
 	'template' => "<li><b>{link}</b></li>\n",
@@ -42,7 +43,19 @@ $this->params['breadcrumbs'][] = [
                             <?php foreach ($videos as $item): ?>
 							<div class="video-col">
 								<div class="embed-responsive">
-									<iframe src="https://www.youtube.com/embed/<?= $item->video_url ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="progressive-media progressive-media-iframe progressive-media-unloaded" style="max-width: 500px; max-height: 408px;" data-src="https://www.youtube.com/embed/<?= $item->video_url ?>">
+                                        <div class="progressive-media-aspect" style="padding-bottom: 56.25%;">
+                                            <div class="progressive-media-aspect-inner">
+                                                <noscript>
+                                                    <iframe src="https://www.youtube.com/embed/<?= $item->video_url ?>"
+                                                            frameborder="0"
+                                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                            allowfullscreen
+                                                            class="progressive-media-content"></iframe>
+                                                </noscript>
+                                            </div>
+                                        </div>
+                                    </div>
 								</div>
 								<strong class="video-title"><?= $item->video_name ?></strong>
 							</div>
@@ -61,7 +74,19 @@ $this->params['breadcrumbs'][] = [
                                 <?php if($item->video_category == 1) : ?>
 									<div class="video-col">
 										<div class="embed-responsive">
-											<iframe src="https://www.youtube.com/embed/<?= $item->video_url ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											<div class="progressive-media progressive-media-iframe progressive-media-unloaded" style="max-width: 500px; max-height: 408px;" data-src="https://www.youtube.com/embed/<?= $item->video_url ?>">
+												<div class="progressive-media-aspect" style="padding-bottom: 56.25%;">
+													<div class="progressive-media-aspect-inner">
+														<noscript>
+															<iframe src="https://www.youtube.com/embed/<?= $item->video_url ?>"
+																	frameborder="0"
+																	allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+																	allowfullscreen
+																	class="progressive-media-content"></iframe>
+														</noscript>
+													</div>
+												</div>
+											</div>
 										</div>
 										<strong class="video-title"><?= $item->video_name ?></strong>
 									</div>
@@ -81,7 +106,19 @@ $this->params['breadcrumbs'][] = [
 								<?php if($item->video_category == 2) : ?>
 									<div class="video-col">
 										<div class="embed-responsive">
-											<iframe src="https://www.youtube.com/embed/<?= $item->video_url ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											<div class="progressive-media progressive-media-iframe progressive-media-unloaded" style="max-width: 500px; max-height: 408px;" data-src="https://www.youtube.com/embed/<?= $item->video_url ?>">
+												<div class="progressive-media-aspect" style="padding-bottom: 56.25%;">
+													<div class="progressive-media-aspect-inner">
+														<noscript>
+															<iframe src="https://www.youtube.com/embed/<?= $item->video_url ?>"
+																	frameborder="0"
+																	allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+																	allowfullscreen
+																	class="progressive-media-content"></iframe>
+														</noscript>
+													</div>
+												</div>
+											</div>
 										</div>
 										<strong class="video-title"><?= $item->video_name ?></strong>
 									</div>
@@ -100,7 +137,19 @@ $this->params['breadcrumbs'][] = [
 								<?php if($item->video_category == 3) : ?>
 									<div class="video-col">
 										<div class="embed-responsive">
-											<iframe src="https://www.youtube.com/embed/<?= $item->video_url ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											<div class="progressive-media progressive-media-iframe progressive-media-unloaded" style="max-width: 500px; max-height: 408px;" data-src="https://www.youtube.com/embed/<?= $item->video_url ?>">
+												<div class="progressive-media-aspect" style="padding-bottom: 56.25%;">
+													<div class="progressive-media-aspect-inner">
+														<noscript>
+															<iframe src="https://www.youtube.com/embed/<?= $item->video_url ?>"
+																	frameborder="0"
+																	allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+																	allowfullscreen
+																	class="progressive-media-content"></iframe>
+														</noscript>
+													</div>
+												</div>
+											</div>
 										</div>
 										<strong class="video-title"><?= $item->video_name ?></strong>
 									</div>
