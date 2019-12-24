@@ -29,6 +29,8 @@
 				<div class="bg-block"></div>
 			</div>
 		</section>
+        <?= $this->render('../section/_advantages.php'); ?>
+        <?= $this->render('../section/_pros.php'); ?>
         <?= $this->render('../section/_video.php', compact('videos')); ?>
         <!-- start info -->
         <section class="section info" id="info">
