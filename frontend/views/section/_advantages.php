@@ -9,7 +9,7 @@
             </div>
             <div class="text-block">
                 <p><?= BaseController::getMessage('421') ?></p>
-                <a class="button btn-lg" href="#connect"><?= BaseController::getMessage('402') ?></a>
+                <a class="button btn-lg consult-btn" href="#connect"><?= BaseController::getMessage('402') ?></a>
             </div>
         </div>
         <ul class="advantages-list">
