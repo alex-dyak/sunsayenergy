@@ -8,7 +8,7 @@
 					<div class="text-block">
 						<h1 class="line-title"><span><?= BaseController::getMessage('16') ?></span></h1>
 						<p><?= BaseController::getMessage('17') ?></p>
-						<a class="button btn-lg" href="#connect"><?= BaseController::getMessage('402') ?></a>
+						<a class="button btn-lg consult-btn" href="#connect"><?= BaseController::getMessage('402') ?></a>
 					</div>
 					<div class="img-block">
 						<picture>
