@@ -3,7 +3,7 @@
 <section class="section complex">
     <div class="complex__content">
         <div class="complex__content-title">
-            <h2><?= BaseController::getMessage('325') ?></h2>
+            <h2 class="line-title"><?= BaseController::getMessage('325') ?></h2>
         </div>
         <div class="complex__content-list">
             <div class="complex__content-list__item">

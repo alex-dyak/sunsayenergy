@@ -2,7 +2,7 @@
 
 <section class="section work">
     <div class="type__content-title" style="opacity: 1;">
-        <h2><?= BaseController::getMessage('398') ?></h2>
+        <h2 class="line-title"><?= BaseController::getMessage('398') ?></h2>
     </div>
     <div class="work__content">
 
