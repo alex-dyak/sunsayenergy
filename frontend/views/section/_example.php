@@ -9,7 +9,7 @@
 <section class="section example">
     <div class="example__content">
         <div class="example__content-title">
-            <h2><?= BaseController::getMessage('330') ?></h2>
+            <h2 class="line-title"><?= BaseController::getMessage('330') ?></h2>
         </div>
         <div class="example__content-list example-carousel">
             <?php foreach ($projects as $item): ?>
