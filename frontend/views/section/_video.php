@@ -22,10 +22,14 @@
                 <?php if($item->on_home) : ?>
                     <div class="video-col">
                         <div class="embed-responsive">
-                            <a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>">
-                                <img src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
+                            <a href="https://youtu.be/rASOb0Kt5po" target="_blank">
+                                <img src="./img/video/video-img.png" alt="video">
                             </a>
-<!--                            <iframe src="https://www.youtube.com/embed/--><?php // echo $item->video_url ?><!--" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                         <!--   <a href="https://www.youtube.com/watch?v=<?/*= $item->video_url */?>">
+                                <img src="https://i1.ytimg.com/vi/<?/*= $item->video_url */?>/mqdefault.jpg">
+                            </a>
+                            <iframe src="https://www.youtube.com/embed/<?php /* echo $item->video_url */?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       -->
                         </div>
                         <strong class="video-title"><?= $item->video_name ?></strong>
                     </div>
