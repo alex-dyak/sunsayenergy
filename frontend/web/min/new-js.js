@@ -88,7 +88,7 @@ $(document).ready(function(){
         }
     });
 
-    $(document).on('click', '.electrostation-section .button', function () {
+    $(document).on('click', '.consult-btn', function () {
         event.preventDefault();
         if ($(window).width() <= '1279') {
             $('html,body').scrollTop($('#connect').offset().top);
