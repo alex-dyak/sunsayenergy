@@ -108,8 +108,8 @@ $contacts = \backend\models\Contact::getContact();
 						</a>
 						<ul class="header-contact-list">
 							<li><a class="binct-phone-number-1" href="tel:<?= $contacts->phone; ?>"><?= $contacts->phone; ?></a></li>
-							<li><a class="" href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a></li>
-							<li><a class="" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a></li>
+							<li><a class="binct-phone-number-3" href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a></li>
+							<li><a class="binct-phone-number-2" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a></li>
 							<li class="address-list">
 								<i class="icon-envelope"></i>
 								<a href="mailto:<?= $contacts->email ?>">
@@ -203,10 +203,10 @@ $contacts = \backend\models\Contact::getContact();
 							</span>
 						</li>
 						<li>
-							<a class="" href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a>
+							<a class="binct-phone-number-3" href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a>
 						</li>
 						<li>
-							<a class="" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a>
+							<a class="binct-phone-number-2" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a>
 						</li>
 					</ul>
 				</li>
@@ -329,8 +329,8 @@ $contacts = \backend\models\Contact::getContact();
 						<h4>Контакты</h4>
 						<ul class="footer-contact-list">
 							<li><a class="binct-phone-number-1" href="tel:<?= $contacts->phone; ?>"><?= $contacts->phone; ?></a></li>
-							<li><a class="" href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a></li>
-							<li><a class="" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a></li>
+							<li><a class="binct-phone-number-3" href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a></li>
+							<li><a class="binct-phone-number-2" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a></li>
 						</ul>
 					</div>
 				</div>
