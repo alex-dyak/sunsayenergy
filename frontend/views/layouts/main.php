@@ -38,7 +38,7 @@ $contacts = \backend\models\Contact::getContact();
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-PSSRL4V');</script>
     <!-- End Google Tag Manager -->
-    
+
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -77,6 +77,8 @@ $contacts = \backend\models\Contact::getContact();
 	<script>
         window.addEventListener('load', function () {document.querySelector(".preloader").style = "display:none;";});
 	</script>
+
+    <meta name="google-site-verification" content="xxxLG9Hae7rnxth_CLJ3SBLXRhnRpnEg-DV95cNNyxI" />
 
 </head>
 
