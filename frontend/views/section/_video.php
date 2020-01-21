@@ -23,7 +23,7 @@
                     <div class="video-col">
                         <div class="embed-responsive">
 							<a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank">
-								<img src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg" alt="<?= $item->video_name ?>">
+								<img data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg" alt="<?= $item->video_name ?>">
 							</a>
                         </div>
                         <strong class="video-title"><?= $item->video_name ?></strong>
