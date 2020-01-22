@@ -126,6 +126,8 @@ $(document).ready(function(){
     initLoadMore ($('.load-finished'), 3, 3);
     initLoadMore ($('.load-approach'), 3, 3);
     initLoadMore ($('.load-technology'), 3, 3);
+    initSlickCarousel();
+
 });
 var lastWidth = $(window).width();
 $(window).resize(function() {
@@ -206,4 +208,24 @@ function initLoadMore (btnWrap, defVal, loadVal) {
         list.find('.video-col').show();
         btnWrap.hide();
     }
+}
+
+function initSlickCarousel() {
+    $('.price-slider').slick({
+        slidesToScroll: 1,
+        rows: 0,
+        slidesToShow: 3,
+        arrows: false,
+        dots: false,
+        infinite: false,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 1,
+                dots: true,
+                dotsClass: 'slick-dots'
+            }
+        }]
+    });
 }
