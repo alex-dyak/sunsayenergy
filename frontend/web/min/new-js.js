@@ -1,13 +1,5 @@
-function showModal(id) {
-    $(id).fadeIn(300);
-    $('body').addClass('no-overflow');
-}
-function hideModal(id) {
-    $('.modal').fadeOut(300);
-    $('body').removeClass('no-overflow');
-}
-
 $(document).ready(function(){
+    var height;
     $(document).on('click', '[data-toggle="modal"]',  function(){
         event.preventDefault();
         var thisModal = $(this).data('modal-id');
@@ -126,8 +118,8 @@ $(document).ready(function(){
     initLoadMore ($('.load-finished'), 3, 3);
     initLoadMore ($('.load-approach'), 3, 3);
     initLoadMore ($('.load-technology'), 3, 3);
+    headerBg();
     initSlickCarousel();
-
 });
 var lastWidth = $(window).width();
 $(window).resize(function() {
@@ -141,15 +133,12 @@ $(window).resize(function() {
     }
 });
 
-var height;
+
 $(window).scroll(function() {
-    height = $(window).scrollTop();
-    if(height > 40){
-        $('.header').addClass('scrolled');
-    } else{
-        $('.header').removeClass('scrolled');
-    }
+    headerBg();
 });
+
+
 
 var scrollPrev = 0;
 $(window).scroll(function() {
@@ -207,6 +196,24 @@ function initLoadMore (btnWrap, defVal, loadVal) {
     } else {
         list.find('.video-col').show();
         btnWrap.hide();
+    }
+}
+
+function showModal(id) {
+    $(id).fadeIn(300);
+    $('body').addClass('no-overflow');
+}
+function hideModal(id) {
+    $('.modal').fadeOut(300);
+    $('body').removeClass('no-overflow');
+}
+
+function headerBg() {
+    height = $(window).scrollTop();
+    if (height > 40) {
+        $('.header').addClass('scrolled');
+    } else {
+        $('.header').removeClass('scrolled');
     }
 }
 
