@@ -119,6 +119,7 @@ $(document).ready(function(){
     initLoadMore ($('.load-approach'), 3, 3);
     initLoadMore ($('.load-technology'), 3, 3);
     headerBg();
+    initSlickCarousel();
 });
 var lastWidth = $(window).width();
 $(window).resize(function() {
@@ -209,9 +210,29 @@ function hideModal(id) {
 
 function headerBg() {
     height = $(window).scrollTop();
-    if(height > 40){
+    if (height > 40) {
         $('.header').addClass('scrolled');
-    } else{
+    } else {
         $('.header').removeClass('scrolled');
     }
+}
+
+function initSlickCarousel() {
+    $('.price-slider').slick({
+        slidesToScroll: 1,
+        rows: 0,
+        slidesToShow: 3,
+        arrows: false,
+        dots: false,
+        infinite: false,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 1,
+                dots: true,
+                dotsClass: 'slick-dots'
+            }
+        }]
+    });
 }

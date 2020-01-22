@@ -1,48 +1,93 @@
 <?php use frontend\controllers\BaseController; ?>
 
-<section class="section complex">
-    <div class="complex__content">
-        <div class="complex__content-title">
-            <h2 class="line-title"><?= BaseController::getMessage('325') ?></h2>
-        </div>
-        <div class="complex__content-list">
-            <div class="complex__content-list__item">
-                <div class="title"><a href="#"><span><?= BaseController::getMessage('384') ?></span></a></div>
-                <div class="description">
-                    <ul class="description__list">
-                        <li><span><?= BaseController::getMessage('326') ?></span></li>
-                        <li><span><?= BaseController::getMessage('327') ?></span></li>
-                        <li><span><?= BaseController::getMessage('328') ?></span></li>
-                    </ul>
-                </div>
-                <div class="price"><?= BaseController::getMessage('385') ?> <span><?= BaseController::getMessage('387') ?></span> <?= BaseController::getMessage('386') ?></div>
-                <div class="button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']); ?>"><?= BaseController::getMessage('100') ?></a></div>
-            </div>
-            <div class="complex__content-list__item">
-                <div class="title"><a href="#"><span><?= BaseController::getMessage('388') ?></span></a></div>
-                <div class="description">
-                    <ul class="description__list">
-                        <li><span><?= BaseController::getMessage('389') ?></span></li>
-                        <li><span><?= BaseController::getMessage('390') ?></span></li>
-                        <li><span><?= BaseController::getMessage('391') ?></span></li>
-                    </ul>
-                </div>
-                <div class="price"><?= BaseController::getMessage('385') ?> <span><?= BaseController::getMessage('392') ?></span> <?= BaseController::getMessage('386') ?></div>
-                <div class="button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"><?= BaseController::getMessage('100') ?></a></div>
-            </div>
-            <div class="complex__content-list__item">
-                <div class="title"><a href="#"><span><?= BaseController::getMessage('393') ?></span></a></div>
-                <div class="description">
-                    <ul class="description__list">
-                        <li><span><?= BaseController::getMessage('394') ?></span></li>
-                        <li><span><?= BaseController::getMessage('395') ?></span></li>
-                        <li><span><?= BaseController::getMessage('396') ?></span></li>
-                    </ul>
-                </div>
-                <div class="price"><?= BaseController::getMessage('385') ?> <span><?= BaseController::getMessage('397') ?></span> <?= BaseController::getMessage('386') ?></div>
-                <div class="button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>"><?= BaseController::getMessage('100') ?></a></div>
-            </div>
-        </div>
+
+<section class="price-section">
+    <div class="container">
+        <h2 class="line-title"><span><?= BaseController::getMessage('325') ?></span></h2>
+	</div>
+	<div class="slide-wrapper">
+		<div class="container">
+			<div class="price-slider">
+				<div class="slide">
+					<div class="slide-title">
+						<h3><?= BaseController::getMessage('325') ?></h3>
+						<strong class="price"><?= BaseController::getMessage('392') ?></strong>
+						<span class="unit"><?= BaseController::getMessage('386') ?></span>
+					</div>
+					<ul class="compare-list">
+						<li class="pros">
+							<img src="./img/complex/pros.svg" alt="pros" width="19">
+							<?= BaseController::getMessage('389') ?>
+						</li>
+						<li class="pros">
+							<img src="./img/complex/pros.svg" alt="pros" width="19">
+							<?= BaseController::getMessage('390') ?>
+						</li>
+						<li class="pros">
+							<img src="./img/complex/pros.svg" alt="pros" width="19">
+							<?= BaseController::getMessage('391') ?>
+						</li>
+						<li class="cons">
+							<img src="./img/complex/cons.svg" alt="cons" width="16">
+							<?= BaseController::getMessage('443') ?>
+						</li>
+					</ul>
+					<a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>" class="button"><?= BaseController::getMessage('100') ?></a>
+				</div>
+				<div class="slide">
+					<div class="slide-title">
+						<h3><?= BaseController::getMessage('384') ?></h3>
+						<strong class="price"><?= BaseController::getMessage('387') ?></strong>
+						<span class="unit"><?= BaseController::getMessage('386') ?></span>
+					</div>
+					<ul class="compare-list">
+						<li class="pros">
+							<img src="./img/complex/pros.svg" alt="pros" width="19">
+							<?= BaseController::getMessage('326') ?>
+						</li>
+						<li class="pros">
+							<img src="./img/complex/pros.svg" alt="pros" width="19">
+							<?= BaseController::getMessage('327') ?>
+						</li>
+						<li class="pros">
+							<img src="./img/complex/pros.svg" alt="pros" width="19">
+							<?= BaseController::getMessage('328') ?>
+						</li>
+						<li class="cons">
+							<img src="./img/complex/cons.svg" alt="cons" width="16">
+							<?= BaseController::getMessage('444') ?>
+						</li>
+					</ul>
+					<a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']); ?>" class="button"><?= BaseController::getMessage('100') ?></a>
+				</div>
+				<div class="slide">
+					<div class="slide-title">
+						<h3><?= BaseController::getMessage('393') ?></h3>
+						<strong class="price"><?= BaseController::getMessage('397') ?></strong>
+						<span class="unit"><?= BaseController::getMessage('386') ?></span>
+					</div>
+					<ul class="compare-list">
+						<li class="pros">
+							<img src="./img/complex/pros.svg" alt="pros" width="19">
+							<?= BaseController::getMessage('394') ?>
+						</li>
+						<li class="pros">
+							<img src="./img/complex/pros.svg" alt="pros" width="19">
+							<?= BaseController::getMessage('395') ?>
+						</li>
+						<li class="pros">
+							<img src="./img/complex/pros.svg" alt="pros" width="19">
+							<?= BaseController::getMessage('396') ?>
+						</li>
+						<li class="cons">
+							<img src="./img/complex/cons.svg" alt="cons" width="16">
+							<?= BaseController::getMessage('445') ?>
+						</li>
+					</ul>
+					<a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>" class="button"><?= BaseController::getMessage('100') ?></a>
+				</div>
+			</div>
+		</div>
     </div>
 </section>
 
