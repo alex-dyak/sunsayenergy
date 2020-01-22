@@ -10,7 +10,7 @@
 			<div class="price-slider">
 				<div class="slide">
 					<div class="slide-title">
-						<h3><?= BaseController::getMessage('325') ?></h3>
+						<h3><?= BaseController::getMessage('388') ?></h3>
 						<strong class="price"><?= BaseController::getMessage('392') ?></strong>
 						<span class="unit"><?= BaseController::getMessage('386') ?></span>
 					</div>
