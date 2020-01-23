@@ -11,8 +11,10 @@
 				<div class="slide">
 					<div class="slide-title">
 						<h3><?= BaseController::getMessage('384') ?></h3>
-						<strong class="price"><?= BaseController::getMessage('387') ?></strong>
-						<span class="unit"><?= BaseController::getMessage('386') ?></span>
+						<div class="price-block">
+							<strong class="price"><?= BaseController::getMessage('387') ?></strong>
+							<span class="unit"><?= BaseController::getMessage('386') ?></span>
+						</div>
 					</div>
 					<ul class="compare-list">
 						<li class="pros">
@@ -37,8 +39,10 @@
 				<div class="slide">
 					<div class="slide-title">
 						<h3><?= BaseController::getMessage('388') ?></h3>
-						<strong class="price"><?= BaseController::getMessage('392') ?></strong>
-						<span class="unit"><?= BaseController::getMessage('386') ?></span>
+						<div class="price-block">
+							<strong class="price"><?= BaseController::getMessage('392') ?></strong>
+							<span class="unit"><?= BaseController::getMessage('386') ?></span>
+						</div>
 					</div>
 					<ul class="compare-list">
 						<li class="pros">
@@ -63,8 +67,10 @@
 				<div class="slide">
 					<div class="slide-title">
 						<h3><?= BaseController::getMessage('393') ?></h3>
-						<strong class="price"><?= BaseController::getMessage('397') ?></strong>
-						<span class="unit"><?= BaseController::getMessage('386') ?></span>
+						<div class="price-block">
+							<strong class="price"><?= BaseController::getMessage('397') ?></strong>
+							<span class="unit"><?= BaseController::getMessage('386') ?></span>
+						</div>
 					</div>
 					<ul class="compare-list">
 						<li class="pros">
