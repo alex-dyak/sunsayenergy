@@ -23,10 +23,12 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'video_name',
+            'video_name_uk',
+            'video_name_ru',
+            'video_name_en',
             'video_url:url',
-            'video_category',
-            'on_home',
+            //'video_category',
+            //'on_home',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

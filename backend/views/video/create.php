@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Video */
+/* @var $model backend\models\Video */
 
 $this->title = 'Create Video';
 $this->params['breadcrumbs'][] = ['label' => 'Videos', 'url' => ['index']];
