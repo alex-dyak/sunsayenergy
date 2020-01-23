@@ -19,14 +19,24 @@
 	            }
             }
             foreach ($home_videos as $item): ?>
+                <?php
+                $lang = $_SERVER['REQUEST_URI'];
+                if (stripos($lang, 'ru') !== false && $item->video_name_ru) {
+                    $video_name = $item->video_name_ru;
+                } elseif (stripos($lang, 'en') !== false && $item->video_name_en) {
+                    $video_name = $item->video_name_en;
+                } else {
+                    $video_name = $item->video_name_uk;
+                }
+                ?>
                 <?php if($item->on_home) : ?>
                     <div class="video-col">
                         <div class="embed-responsive">
 							<a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank">
-								<img data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg" alt="<?= $item->video_name ?>">
+								<img data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg" alt="<?= $video_name ?>">
 							</a>
                         </div>
-                        <strong class="video-title"><?= $item->video_name ?></strong>
+                        <strong class="video-title"><?= $video_name ?></strong>
                     </div>
                 <?php endif; ?>
             <?php endforeach; ?>

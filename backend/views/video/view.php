@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Video */
+/* @var $model backend\models\Video */
 
 $this->title = $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Videos', 'url' => ['index']];
@@ -30,9 +30,12 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'video_name',
+            'video_name_uk',
+            'video_name_ru',
+            'video_name_en',
             'video_url:url',
             'video_category',
+            'on_home',
         ],
     ]) ?>
 
