@@ -230,9 +230,6 @@ function initSlickCarousel() {
             settings: {
                 slidesToScroll: 1,
                 slidesToShow: 1,
-                initialSlide: 1,
-                centerMode: true,
-                centerPadding: '0',
                 dots: true,
                 dotsClass: 'slick-dots'
             }

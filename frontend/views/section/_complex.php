@@ -10,9 +10,39 @@
 			<div class="price-slider">
 				<div class="slide">
 					<div class="slide-title">
+						<h3><?= BaseController::getMessage('384') ?></h3>
+						<div class="price-block">
+							<strong class="price"><?= BaseController::getMessage('387') ?></strong>
+							<span class="unit"><?= BaseController::getMessage('386') ?></span>
+						</div>
+					</div>
+					<ul class="compare-list">
+						<li class="pros">
+							<img src="/img/complex/pros.svg" alt="pros" width="19">
+                            <?= BaseController::getMessage('326') ?>
+						</li>
+						<li class="pros">
+							<img src="/img/complex/pros.svg" alt="pros" width="19">
+                            <?= BaseController::getMessage('327') ?>
+						</li>
+						<li class="pros">
+							<img src="/img/complex/pros.svg" alt="pros" width="19">
+                            <?= BaseController::getMessage('328') ?>
+						</li>
+						<li class="cons">
+							<img src="/img/complex/cons.svg" alt="cons" width="16">
+                            <?= BaseController::getMessage('444') ?>
+						</li>
+					</ul>
+					<a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']); ?>" class="button"><?= BaseController::getMessage('100') ?></a>
+				</div>
+				<div class="slide">
+					<div class="slide-title">
 						<h3><?= BaseController::getMessage('388') ?></h3>
-						<strong class="price"><?= BaseController::getMessage('392') ?></strong>
-						<span class="unit"><?= BaseController::getMessage('386') ?></span>
+						<div class="price-block">
+							<strong class="price"><?= BaseController::getMessage('392') ?></strong>
+							<span class="unit"><?= BaseController::getMessage('386') ?></span>
+						</div>
 					</div>
 					<ul class="compare-list">
 						<li class="pros">
@@ -36,35 +66,11 @@
 				</div>
 				<div class="slide">
 					<div class="slide-title">
-						<h3><?= BaseController::getMessage('384') ?></h3>
-						<strong class="price"><?= BaseController::getMessage('387') ?></strong>
-						<span class="unit"><?= BaseController::getMessage('386') ?></span>
-					</div>
-					<ul class="compare-list">
-						<li class="pros">
-							<img src="/img/complex/pros.svg" alt="pros" width="19">
-							<?= BaseController::getMessage('326') ?>
-						</li>
-						<li class="pros">
-							<img src="/img/complex/pros.svg" alt="pros" width="19">
-							<?= BaseController::getMessage('327') ?>
-						</li>
-						<li class="pros">
-							<img src="/img/complex/pros.svg" alt="pros" width="19">
-							<?= BaseController::getMessage('328') ?>
-						</li>
-						<li class="cons">
-							<img src="/img/complex/cons.svg" alt="cons" width="16">
-							<?= BaseController::getMessage('444') ?>
-						</li>
-					</ul>
-					<a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']); ?>" class="button"><?= BaseController::getMessage('100') ?></a>
-				</div>
-				<div class="slide">
-					<div class="slide-title">
 						<h3><?= BaseController::getMessage('393') ?></h3>
-						<strong class="price"><?= BaseController::getMessage('397') ?></strong>
-						<span class="unit"><?= BaseController::getMessage('386') ?></span>
+						<div class="price-block">
+							<strong class="price"><?= BaseController::getMessage('397') ?></strong>
+							<span class="unit"><?= BaseController::getMessage('386') ?></span>
+						</div>
 					</div>
 					<ul class="compare-list">
 						<li class="pros">

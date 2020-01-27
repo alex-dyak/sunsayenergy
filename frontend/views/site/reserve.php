@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = [
     <section class="section service-info">
         <div class="service-info__content">
             <div class="service-info__content-info">
-                <div class="complect"><?= BaseController::getMessage('73') ?></div>
+<!--                <div class="complect">--><?//= BaseController::getMessage('73') ?><!--</div>-->
                 <div class="title">
                     <h1><?= BaseController::getMessage('74') ?></h1>
                 </div>

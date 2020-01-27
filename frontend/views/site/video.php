@@ -6,6 +6,7 @@ $this->params['breadcrumbs'][] = [
 	'template' => "<li><b>{link}</b></li>\n",
 	'label' => BaseController::getMessage('412'),
 ];
+
 ?>
 <main class="page-container">
 	<div class="container">
@@ -40,14 +41,24 @@ $this->params['breadcrumbs'][] = [
 					<div class="load-more-wrap">
 						<div class="video-row ">
                             <?php foreach ($videos as $item): ?>
-							<div class="video-col">
-								<div class="embed-responsive">
-									<a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank">
-										<img data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
-									</a>
-								</div>
-								<strong class="video-title"><?= $item->video_name ?></strong>
-							</div>
+                                <?php
+                                $lang = $_SERVER['REQUEST_URI'];
+                                if (stripos($lang, 'ru') !== false && $item->video_name_ru) {
+                                    $video_name = $item->video_name_ru;
+                                } elseif (stripos($lang, 'en') !== false && $item->video_name_en) {
+                                    $video_name = $item->video_name_en;
+                                } else {
+                                    $video_name = $item->video_name_uk;
+                                }
+                                ?>
+                                <div class="video-col">
+                                    <div class="embed-responsive">
+                                        <a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank">
+                                            <img data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
+                                        </a>
+                                    </div>
+                                    <strong class="video-title"><?= $video_name ?></strong>
+                                </div>
                             <?php endforeach; ?>
 						</div>
 						<div class="btn-wrap load-more-btn load-all">
@@ -60,6 +71,16 @@ $this->params['breadcrumbs'][] = [
 					<div class="load-more-wrap">
 						<div class="video-row ">
                             <?php foreach ($videos as $item): ?>
+                                <?php
+                                $lang = $_SERVER['REQUEST_URI'];
+                                if (stripos($lang, 'ru') !== false && $item->video_name_ru) {
+                                    $video_name = $item->video_name_ru;
+                                } elseif (stripos($lang, 'en') !== false && $item->video_name_en) {
+                                    $video_name = $item->video_name_en;
+                                } else {
+                                    $video_name = $item->video_name_uk;
+                                }
+                                ?>
                                 <?php if($item->video_category == 1) : ?>
 									<div class="video-col">
 										<div class="embed-responsive">
@@ -67,7 +88,7 @@ $this->params['breadcrumbs'][] = [
                                                 <img data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
                                             </a>
 										</div>
-										<strong class="video-title"><?= $item->video_name ?></strong>
+										<strong class="video-title"><?= $video_name ?></strong>
 									</div>
 								<?php endif ?>
                             <?php endforeach; ?>
@@ -82,6 +103,16 @@ $this->params['breadcrumbs'][] = [
 					<div class="load-more-wrap">
 						<div class="video-row">
                             <?php foreach ($videos as $item): ?>
+                                <?php
+                                $lang = $_SERVER['REQUEST_URI'];
+                                if (stripos($lang, 'ru') !== false && $item->video_name_ru) {
+                                    $video_name = $item->video_name_ru;
+                                } elseif (stripos($lang, 'en') !== false && $item->video_name_en) {
+                                    $video_name = $item->video_name_en;
+                                } else {
+                                    $video_name = $item->video_name_uk;
+                                }
+                                ?>
 								<?php if($item->video_category == 2) : ?>
 									<div class="video-col">
 										<div class="embed-responsive">
@@ -89,7 +120,7 @@ $this->params['breadcrumbs'][] = [
                                                 <img data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
                                             </a>
 										</div>
-										<strong class="video-title"><?= $item->video_name ?></strong>
+										<strong class="video-title"><?= $video_name ?></strong>
 									</div>
 								<?php endif; ?>
                             <?php endforeach; ?>
@@ -103,6 +134,16 @@ $this->params['breadcrumbs'][] = [
 					<div class="load-more-wrap">
 						<div class="video-row">
                             <?php foreach ($videos as $item): ?>
+                                <?php
+                                $lang = $_SERVER['REQUEST_URI'];
+                                if (stripos($lang, 'ru') !== false && $item->video_name_ru) {
+                                    $video_name = $item->video_name_ru;
+                                } elseif (stripos($lang, 'en') !== false && $item->video_name_en) {
+                                    $video_name = $item->video_name_en;
+                                } else {
+                                    $video_name = $item->video_name_uk;
+                                }
+                                ?>
 								<?php if($item->video_category == 3) : ?>
 									<div class="video-col">
 										<div class="embed-responsive">
@@ -110,7 +151,7 @@ $this->params['breadcrumbs'][] = [
                                                 <img data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
                                             </a>
 										</div>
-										<strong class="video-title"><?= $item->video_name ?></strong>
+										<strong class="video-title"><?= $video_name ?></strong>
 									</div>
                                 <?php endif; ?>
                             <?php endforeach; ?>
