@@ -185,7 +185,7 @@ $contacts = \backend\models\Contact::getContact();
 				<img data-src="/img/logo.svg" alt="sunsay energy" width="120">
 			</a>
 		</div>
-		<a href="#" id="to-top-link"><i class="icon-angle-top"></i></a>
+		<span id="to-top-link"><i class="icon-angle-top"></i></span>
 	</div>
 
 <?= $content ?>
