@@ -35,8 +35,8 @@
                 </div>
                 <div class="work__content-info__item-image">
                     <picture>
-<!--                        <source media="(min-width: 800px)" data-srcset="/img/work/1.jpg" type="image/jpg">-->
-<!--                        <source media="(max-width: 799px)" data-srcset="/img/work/m_1.jpg" type="image/jpg">-->
+                        <source media="(min-width: 800px)" data-srcset="/img/work/1.jpg" type="image/jpg">
+                        <source media="(max-width: 799px)" data-srcset="/img/work/m_1.jpg" type="image/jpg">
                         <source media="(min-width: 800px)" data-srcset="/img/work/1.webp" type="image/webp">
                         <source media="(max-width: 799px)" data-srcset="/img/work/m_1.webp" type="image/webp">
                         <img src="/img/work/1.jpg" alt="">
@@ -85,8 +85,8 @@
                 </div>
                 <div class="work__content-info__item-image">
                     <picture>
-<!--                        <source media="(min-width: 800px)" data-srcset="/img/work/4.jpg" type="image/jpg">-->
-<!--                        <source media="(max-width: 799px)" data-srcset="/img/work/m_4.jpg" type="image/jpg">-->
+                        <source media="(min-width: 800px)" data-srcset="/img/work/4.jpg" type="image/jpg">
+                        <source media="(max-width: 799px)" data-srcset="/img/work/m_4.jpg" type="image/jpg">
                         <source media="(min-width: 800px)" data-srcset="/img/work/4.webp" type="image/webp">
                         <source media="(max-width: 799px)" data-srcset="/img/work/m_4.webp" type="image/webp">
                         <img data-src="/img/work/4.jpg" alt="">
