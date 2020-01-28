@@ -33,16 +33,18 @@
 	    <?= $this->render('../section/_advantages.php'); ?>
         <!-- start rate -->
         <section class="section rate">
-            <div class="rate__content">
-                <div class="rate__content-image"><img data-srcset="/img/m_green.png 1024w, /img/green.png 1366w"
-                                                      data-src="/img/green.png" alt="Зелений тариф"></div>
-                <div class="rate__content-info">
-                    <h2 class="line-title"><?= BaseController::getMessage('54') ?></h2>
-                    <div class="description"><?= BaseController::getMessage('55') ?>
-                    </div>
-                    <div class="button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><?= BaseController::getMessage('18') ?></a></div>
-                </div>
-            </div>
+			<div class="container">
+				<div class="rate__content">
+					<div class="rate__content-image"><img data-srcset="/img/m_green.png 1024w, /img/green.png 1366w"
+														  data-src="/img/green.png" alt="Зелений тариф"></div>
+					<div class="rate__content-info">
+						<h2 class="line-title"><?= BaseController::getMessage('54') ?></h2>
+						<div class="description"><?= BaseController::getMessage('55') ?>
+						</div>
+						<div class="button"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+					</div>
+				</div>
+			</div>
         </section>
         <!-- end rate -->
         <!-- start work -->
