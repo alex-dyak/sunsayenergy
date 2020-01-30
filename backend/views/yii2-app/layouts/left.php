@@ -8,7 +8,7 @@
                     (\Yii::$app->user->can('Користувачі'))?[
                         'label' => 'Користувачі',
                         'icon' => 'fa fa-users',
-                        'url' => '#',
+                        'url' => ['/user'],
                         'items' => [
                             ['label' => 'Користувачі', 'icon' => 'fa fa-user-plus', 'url' => ['/user']],
                             ['label' => 'Ролі', 'icon' => 'fa fa-user-secret', 'url' => ['/role']],
