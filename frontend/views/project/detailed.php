@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = [
     <section class="section project-info">
         <div class="project-info__content">
             <div class="project-info__content-title">
-                <h2><?= $model->header ?></h2>
+                <h1><?= $model->header ?></h1>
             </div>
             <div class="project-info__content-images">
                 <div class="project-info__slider-nav">
