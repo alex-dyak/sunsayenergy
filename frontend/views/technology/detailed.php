@@ -21,25 +21,28 @@ $this->params['breadcrumbs'][] = [
     ]); ?>
 	</div>
     <section class="section blog-page">
-        <div class="blog-page__image">
-            <picture>
-                <img data-src="/images/<?= $article->images->imagePreview ?>" alt="" class="blog-info__image--bg">
-            </picture>
-            <div class="blog-page__image-container">
-                <div class="blog-page__image-text">
+         <?php if(!BaseController::is_mobile()) : ?>
+            <div class="blog-page__image">
+                <picture>
+                    <img data-src="/images/<?= $article->images->imagePreview ?>" alt="" class="blog-info__image--bg">
+                </picture>
+                <div class="blog-page__image-container">
+                    <div class="blog-page__image-text">
+                        <h1><?= $article->header ?></h1>
+                        <div class="mini-description"><?= $article->description ?></div>
+                        <div class="publication"><?= $article->date ?></div>
+                    </div>
+                </div>
+            </div>
+        <?php else : ?>
+            <div class="blog-page__mobile-container">
+                <div class="blog-page__mobile-text">
                     <h1><?= $article->header ?></h1>
                     <div class="mini-description"><?= $article->description ?></div>
                     <div class="publication"><?= $article->date ?></div>
                 </div>
             </div>
-        </div>
-        <div class="blog-page__mobile-container">
-            <div class="blog-page__mobile-text">
-                <h1><?= $article->header ?></h1>
-                <div class="mini-description"><?= $article->description ?></div>
-                <div class="publication"><?= $article->date ?></div>
-            </div>
-        </div>
+        <?php endif; ?>
         <div class="blog-page__description">
             <div class="blog-page__description-text">
                 <?= $article->text ?>

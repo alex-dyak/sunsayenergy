@@ -43,7 +43,7 @@ class SiteController extends BaseController
 	public function actionVideo()
 	{
 	    $videos = Video::find()->all();
-
+        $this->setMeta(BaseController::getMessage('415'), BaseController::getMessage('414'));
 		return $this->render('video',compact('videos'));
 	}
 
