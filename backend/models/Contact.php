@@ -16,6 +16,7 @@ use Yii;
  * @property string $link_fb
  * @property string $link_linkedin
  * @property string $link_viber
+ * @property string $link_insta
  * @property string $link_mail
  * @property string $mobile_1
  * @property string $mobile_2
@@ -37,7 +38,7 @@ class Contact extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['phone', 'email', 'address', 'address_ru', 'address_en', 'link_fb', 'link_linkedin', 'link_viber', 'link_mail', 'mobile_1', 'mobile_2', 'mobile_3'], 'string', 'max' => 255],
+            [['phone', 'email', 'address', 'address_ru', 'address_en', 'link_fb', 'link_linkedin', 'link_viber', 'link_mail', 'link_insta', 'mobile_1', 'mobile_2', 'mobile_3'], 'string', 'max' => 255],
             [['phone', 'email', 'address', 'address_ru', 'address_en'], 'required'],
             [['email'], 'email'],
         ];
@@ -73,6 +74,7 @@ class Contact extends \yii\db\ActiveRecord
             'link_fb' => 'Посилання Fb',
             'link_linkedin' => 'Посилання Linkedin',
             'link_viber' => 'Посилання Viber',
+            'link_insta' => 'Посилання Instagram',
             'link_mail' => 'Посилання Mail',
             'mobile_1' => 'Моб. Телефон',
             'mobile_2' => 'Моб. Телефон',
