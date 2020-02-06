@@ -34,6 +34,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'link_viber')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'link_insta')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'link_mail')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
