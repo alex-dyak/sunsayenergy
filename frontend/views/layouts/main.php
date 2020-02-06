@@ -260,6 +260,13 @@ $contacts = \backend\models\Contact::getContact();
 								</a>
 							</li>
                         <?php endif; ?>
+                        <?php if (!empty($contacts->link_insta)): ?>
+						<li>
+							<a href="<?= $contacts->link_insta ?>" target="_blank">
+								<i class="icon-instagram"></i>
+							</a>
+						</li>
+                        <?php endif; ?>
 					</ul>
 					<div class="newsletter-wrap modal" id="footer-newsletter">
 						<span class="subscribe-close"><i class="icon-close-bold"></i></span>
