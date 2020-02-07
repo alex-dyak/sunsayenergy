@@ -52,73 +52,9 @@ $this->params['breadcrumbs'][] = [
         </div>
       </div>
     </section>
-    <section class="section greenwork">
-        <div class="type__content-title" style="opacity: 1;">
-            <h2><?= BaseController::getMessage('398') ?></h2>
-        </div>
-      <div class="work__content">
-        <div class="work__content-list">
-          <div class="work__content-list__item active" data-id="1"><span><span><?= BaseController::getMessage('107') ?></span></span></div>
-          <div class="work__content-list__item" data-id="2"><span><span><?= BaseController::getMessage('108') ?></span></span></div>
-          <div class="work__content-list__item" data-id="3"><span><span><?= BaseController::getMessage('109') ?></span></span></div>
-          <div class="work__content-list__item" data-id="4"><span><span><?= BaseController::getMessage('110') ?></span></span></div>
-          <div class="work__content-list__item" data-id="5"><span><span><?= BaseController::getMessage('111') ?></span></span></div>
-          <div class="work__content-list__item" data-id="6"><span><span><?= BaseController::getMessage('112') ?></span></span></div>
-        </div>
-        <div class="work__content-list-mobile">
-          <div class="work__content-list-mobile__item"><span><span><?= BaseController::getMessage('107') ?></span></span></div>
-          <div class="work__content-list-mobile__item"><span><span><?= BaseController::getMessage('108') ?></span></span></div>
-          <div class="work__content-list-mobile__item"><span><span><?= BaseController::getMessage('109') ?></span></span></div>
-          <div class="work__content-list-mobile__item"><span><span><?= BaseController::getMessage('110') ?></span></span></div>
-          <div class="work__content-list-mobile__item"><span><span><?= BaseController::getMessage('111') ?></span></span></div>
-          <div class="work__content-list-mobile__item"><span><span><?= BaseController::getMessage('112') ?></span></span></div>
-        </div>
-        <div class="work__content-info">
-          <div class="work__content-info__item active" data-id="1">
-            <div class="work__content-info__item-info">
-              <div class="message"><?= BaseController::getMessage('113') ?></div>
-            </div>
-            <div class="work__content-info__item-image"><img class="rate-maskdesc" data-src="/img/green/work/1.jpg" alt=""><img
-                class="rate-maskmobile" data-src="/img/green/work/m_1.jpg" alt=""></div>
-          </div>
-          <div class="work__content-info__item" data-id="2">
-            <div class="work__content-info__item-info">
-              <div class="message"><?= BaseController::getMessage('114') ?></div>
-            </div>
-            <div class="work__content-info__item-image"><img class="rate-maskdesc" data-src="/img/green/work/2.jpg" alt=""><img
-                class="rate-maskmobile" data-src="/img/green/work/m_2.jpg" alt=""></div>
-          </div>
-          <div class="work__content-info__item" data-id="3">
-            <div class="work__content-info__item-info">
-              <div class="message"><?= BaseController::getMessage('115') ?></div>
-            </div>
-            <div class="work__content-info__item-image"><img class="rate-maskdesc" data-src="/img/green/work/3.jpg" alt=""><img
-                class="rate-maskmobile" data-src="/img/green/work/m_3.jpg" alt=""></div>
-          </div>
-          <div class="work__content-info__item" data-id="4">
-            <div class="work__content-info__item-info">
-              <div class="message"><?= BaseController::getMessage('117') ?></div>
-            </div>
-            <div class="work__content-info__item-image"><img class="rate-maskdesc" data-src="/img/green/work/4.jpg" alt=""><img
-                class="rate-maskmobile" data-src="/img/green/work/m_4.jpg" alt=""></div>
-          </div>
-          <div class="work__content-info__item" data-id="5">
-            <div class="work__content-info__item-info">
-              <div class="message"><?= BaseController::getMessage('118') ?></div>
-            </div>
-            <div class="work__content-info__item-image"><img class="rate-maskdesc" data-src="/img/green/work/5.jpg" alt=""><img
-                class="rate-maskmobile" data-src="/img/green/work/m_5.jpg" alt=""></div>
-          </div>
-          <div class="work__content-info__item" data-id="6">
-            <div class="work__content-info__item-info">
-              <div class="message"><?= BaseController::getMessage('120') ?></div>
-            </div>
-            <div class="work__content-info__item-image"><img class="rate-maskdesc" data-src="/img/green/work/6.jpg" alt=""><img
-                class="rate-maskmobile" data-src="/img/green/work/m_6.jpg" alt=""></div>
-          </div>
-        </div>
-      </div>
-    </section>
+	<!-- start work -->
+	<?= $this->render('../section/_work.php'); ?>
+	<!-- end work -->
 
     <?= $this->render('../section/_complex.php'); ?>
     <?= $this->render('../section/_connect.php'); ?>
