@@ -246,13 +246,6 @@ function initSlickWork() {
         dots: false,
         infinite: false,
         responsive: [{
-            breakpoint: 767,
-            settings: {
-                slidesToScroll: 1,
-                slidesToShow: 1,
-                dots: true,
-                dotsClass: 'slick-dots'
-            },
             breakpoint: 1023,
             settings: {
                 slidesToScroll: 1,
@@ -260,6 +253,16 @@ function initSlickWork() {
                 dots: true,
                 dotsClass: 'slick-dots'
             }
+        },{
+            breakpoint: 767,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                dots: true,
+                dotsClass: 'slick-dots'
+            },
+
         }]
     });
 }
