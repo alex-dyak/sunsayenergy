@@ -119,7 +119,8 @@ $(document).ready(function(){
     initLoadMore ($('.load-approach'), 3, 3);
     initLoadMore ($('.load-technology'), 3, 3);
     headerBg();
-    initSlickCarousel();
+    initSlickPrice();
+    initSlickWork();
 });
 var lastWidth = $(window).width();
 $(window).resize(function() {
@@ -217,7 +218,7 @@ function headerBg() {
     }
 }
 
-function initSlickCarousel() {
+function initSlickPrice() {
     $('.price-slider').slick({
         slidesToScroll: 1,
         rows: 0,
@@ -230,6 +231,32 @@ function initSlickCarousel() {
             settings: {
                 slidesToScroll: 1,
                 slidesToShow: 1,
+                dots: true,
+                dotsClass: 'slick-dots'
+            }
+        }]
+    });
+}
+function initSlickWork() {
+    $('.work-stages-slider').slick({
+        slidesToScroll: 1,
+        rows: 0,
+        slidesToShow: 3,
+        arrows: false,
+        dots: false,
+        infinite: false,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 1,
+                dots: true,
+                dotsClass: 'slick-dots'
+            },
+            breakpoint: 1023,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 2,
                 dots: true,
                 dotsClass: 'slick-dots'
             }
