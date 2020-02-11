@@ -9,8 +9,11 @@ $this->params['breadcrumbs'][] = [
 ];
 $this->params['breadcrumbs'][] = [
     'template' => "<li><b>{link}</b></li>\n",
-    'label' => $article->title,
+    'label' => $article->header,
 ];
+
+$datetime = strtotime($article->date);
+$seo_date = date('y-m-d', $datetime);
 ?>
 
 <main class="page-container">
@@ -95,7 +98,7 @@ $this->registerJsFile('/js/onload/tech.js', ['position' => \yii\web\View::POS_EN
         },{
             "@type": "ListItem",
             "position": 3,
-            "name": "<?= $article->title ?>",
+            "name": "<?= $article->header ?>",
             "item": "https://sunsayenergy.com<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $article->symbol]); ?>"
         }]
     }
@@ -109,7 +112,7 @@ $this->registerJsFile('/js/onload/tech.js', ['position' => \yii\web\View::POS_EN
             "@type": "WebPage",
             "@id": "https://sunsayenergy.com<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $article->symbol]) ?>"
         },
-        "headline": "<?= $article->title ?>",
+        "headline": "<?= $article->header ?>",
         "description": "$article->description",
         "image": {
             "@type": "ImageObject",
@@ -131,7 +134,7 @@ $this->registerJsFile('/js/onload/tech.js', ['position' => \yii\web\View::POS_EN
                 "height": 35
             }
         },
-        "datePublished": "<?= $article->date ?>",
-        "dateModified": "<?= $article->date ?>"
+        "datePublished": "<?= $seo_date ?>",
+        "dateModified": "<?= $seo_date ?>"
     }
 </script>
