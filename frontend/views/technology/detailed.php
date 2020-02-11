@@ -77,3 +77,61 @@ $this->params['breadcrumbs'][] = [
 $this->registerJsFile('/js/onload/tech.js', ['position' => \yii\web\View::POS_END]);
 
 ?>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Sunsay Energy",
+            "item": "https://sunsayenergy.com"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "<?= BaseController::getMessage('6') ?>",
+            "item": "https://sunsayenergy.com<?= \yii\helpers\Url::to(['/technology']); ?>"
+        },{
+            "@type": "ListItem",
+            "position": 3,
+            "name": "<?= $article->title ?>",
+            "item": "https://sunsayenergy.com<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $article->symbol]); ?>"
+        }]
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://sunsayenergy.com<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $article->symbol]) ?>"
+        },
+        "headline": "<?= $article->title ?>",
+        "description": "$article->description",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://sunsayenergy.com/images/<?= $article->images->imagePreview ?>",
+            "width": 1920,
+            "height": 900
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "SUNSAY Energy"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "SUNSAY Energy",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://sunsayenergy.com/img/logo.svg",
+                "width": 180,
+                "height": 35
+            }
+        },
+        "datePublished": "<?= $article->date ?>",
+        "dateModified": "<?= $article->date ?>"
+    }
+</script>

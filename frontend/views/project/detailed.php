@@ -97,4 +97,25 @@ $this->params['breadcrumbs'][] = [
 	<!-- end connect -->
 </main>
 
-
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Sunsay Energy",
+            "item": "https://sunsayenergy.com"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "<?= BaseController::getMessage('320') ?>",
+            "item": "https://sunsayenergy.com<?= \yii\helpers\Url::to(['/project']); ?>"
+        },{
+            "@type": "ListItem",
+            "position": 3,
+            "name": "<?= $model->header ?>",
+            "item": "https://sunsayenergy.com<?= \yii\helpers\Url::to(['/project/', 'symbol' => $model->symbol]); ?>"
+        }]
+    }
+</script>

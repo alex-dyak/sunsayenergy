@@ -300,3 +300,26 @@ $this->registerJsFile('/js/lib/ion.rangeSlider.min.js', ['position' => \yii\web\
 $this->registerJsFile('/js/lib/Chart.min.js', ['position' => \yii\web\View::POS_END]); 
 $this->registerJsFile('/js/calc/comfort.js', ['position' => \yii\web\View::POS_END]); 
 ?>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Sunsay Energy",
+            "item": "https://sunsayenergy.com"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "<?= BaseController::getMessage('1') ?>",
+            "item": "https://sunsayenergy.com"
+        },{
+            "@type": "ListItem",
+            "position": 3,
+            "name": "<?= BaseController::getMessage('4') ?>",
+            "item": "https://sunsayenergy.com<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>"
+        }]
+    }
+</script>

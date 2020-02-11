@@ -71,3 +71,21 @@ $this->params['breadcrumbs'][] = [
     <?= $this->render('../section/_connect.php'); ?>
 	<!-- end connect -->
 </main>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Sunsay Energy",
+            "item": "https://sunsayenergy.com"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "<?= BaseController::getMessage('7') ?>",
+            "item": "https://sunsayenergy.com/about"
+        }]
+    }
+</script>

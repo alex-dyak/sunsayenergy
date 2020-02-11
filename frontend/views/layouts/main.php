@@ -100,25 +100,25 @@ $contacts = \backend\models\Contact::getContact();
 		<div class="container">
 			<div class="header-wrap">
 				<div class="mobile-top-block">
-					<div class="contact-block">
+					<div class="contact-block" itemscope itemtype="http://schema.org/PostalAddress">
 						<a class="contact-opener" href="#contact-opener">
 							<i class="icon-phone"></i>
 							<i class="icon-close"></i>
                             <?= BaseController::getMessage('8') ?>
 						</a>
 						<ul class="header-contact-list">
-							<li><a class="binct-phone-number-1" href="tel:<?= $contacts->phone; ?>"><?= $contacts->phone; ?></a></li>
-							<li><a class="binct-phone-number-3" href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a></li>
-							<li><a class="binct-phone-number-2" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a></li>
+							<li><a itemprop="telephone" class="binct-phone-number-1" href="tel:<?= $contacts->phone; ?>"><?= $contacts->phone; ?></a></li>
+							<li><a itemprop="telephone" class="binct-phone-number-3" href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a></li>
+							<li><a itemprop="telephone" class="binct-phone-number-2" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a></li>
 							<li class="address-list">
 								<i class="icon-envelope"></i>
-								<a href="mailto:<?= $contacts->email ?>">
+								<a itemprop="email" href="mailto:<?= $contacts->email ?>">
                                     <?= $contacts->email ?>
 								</a>
 							</li>
 							<li class="address-list">
 								<i class="icon-pin"></i>
-								<address><?= $contacts->address ?></address>
+								<address itemprop="streetAddress"><?= $contacts->address ?></address>
 							</li>
 						</ul>
 					</div>
@@ -190,35 +190,35 @@ $contacts = \backend\models\Contact::getContact();
 
 <?= $content ?>
 <?php if (Yii::$app->controller->route != 'site/error'): ?>
-	<div class="contact-block" id="contact">
+	<div class="contact-block" id="contact" itemscope itemtype="http://schema.org/PostalAddress">
 		<div class="container">
 			<ul class="bottom-contact-list">
 				<li>
 					<ul class="mobile-open-close">
 						<li>
 							<i class="icon-phone"></i>
-							<a class="binct-phone-number-1" href="tel:<?= $contacts->phone ?>"><?= $contacts->phone ?></a>
+							<a itemprop="telephone" class="binct-phone-number-1" href="tel:<?= $contacts->phone ?>"><?= $contacts->phone ?></a>
 							<span class="open-close-opener">
 								<i class="icon-angle-right"></i>
 							</span>
 						</li>
 						<li>
-							<a class="binct-phone-number-3" href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a>
+							<a itemprop="telephone" class="binct-phone-number-3" href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a>
 						</li>
 						<li>
-							<a class="binct-phone-number-2" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a>
+							<a itemprop="telephone" class="binct-phone-number-2" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a>
 						</li>
 					</ul>
 				</li>
 				<li class="border"></li>
 				<li class="address-item">
 					<i class="icon-envelope"></i>
-					<a href="mailto:<?= $contacts->email ?>"><?= $contacts->email ?></a>
+					<a itemprop="email" href="mailto:<?= $contacts->email ?>"><?= $contacts->email ?></a>
 				</li>
 				<li class="border"></li>
 				<li class="address-item">
 					<i class="icon-pin"></i>
-					<address><?= $contacts->address ?></address>
+					<address itemprop="streetAddress"><?= $contacts->address ?></address>
 				</li>
 			</ul>
 		</div>
@@ -482,6 +482,21 @@ $contacts = \backend\models\Contact::getContact();
         $( "#map" ).lazyLoadGoogleMaps({key: 'AIzaSyB35Exje6kOhzSsEsUTg3V09ot0HILL-Qk',callback: initMap});
     }, 1500);
 </script>
+
+<script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "Organization",
+        "name" : "SUNSAY Energy",
+        "url" : "https://sunsayenergy.com/",
+        "sameAs" : [
+            "<?= $contacts->link_fb ?>",
+            "<?= $contacts->link_linkedin ?>",
+            "<?= $contacts->link_insta ?>"
+        ]
+    }
+</script>
+
 
 <?php $this->endBody() ?>
 </body>
