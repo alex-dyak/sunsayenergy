@@ -53,3 +53,21 @@ $this->params['breadcrumbs'][] = [
 $this->registerJsFile('/js/onload/tech.js', ['position' => \yii\web\View::POS_END]);
 
 ?>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Sunsay Energy",
+            "item": "<?= \yii\helpers\Url::to(); ?>"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "<?= BaseController::getMessage('6') ?>",
+            "item": "<?= \yii\helpers\Url::to(['/technology']); ?>"
+        }]
+    }
+</script>

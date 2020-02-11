@@ -169,3 +169,21 @@ $this->params['breadcrumbs'][] = [
 	<?= $this->render('../section/_connect.php'); ?>
     <!-- end connect -->
 </main>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Sunsay Energy",
+            "item": "<?= \yii\helpers\Url::to(); ?>"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "<?= BaseController::getMessage('412') ?>",
+            "item": "<?= \yii\helpers\Url::to(['/video']); ?>"
+        }]
+    }
+</script>
