@@ -135,3 +135,75 @@ $this->registerJsFile('/js/onload/tech.js', ['position' => \yii\web\View::POS_EN
         }]
     }
 </script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "<?= BaseController::getMessage('344') ?>",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<?= BaseController::getMessage('345') ?>"
+            }
+        }, {
+            "@type": "Question",
+            "name": "<?= BaseController::getMessage('346') ?>",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<?= BaseController::getMessage('347') ?>"
+            }
+        }, {
+            "@type": "Question",
+            "name": "<?= BaseController::getMessage('348') ?>",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<?= BaseController::getMessage('349') ?>"
+            }
+        }, {
+            "@type": "Question",
+            "name": "<?= BaseController::getMessage('350') ?>",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<?= BaseController::getMessage('351') ?>"
+            }
+        }, {
+            "@type": "Question",
+            "name": "<?= BaseController::getMessage('352') ?>",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<?= BaseController::getMessage('353') ?>"
+            }
+        },{
+            "@type": "Question",
+            "name": "<?= BaseController::getMessage('354') ?>",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<?= BaseController::getMessage('355') ?>"
+            }
+        },{
+            "@type": "Question",
+            "name": "<?= BaseController::getMessage('356') ?>",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<?= BaseController::getMessage('357') ?>"
+            }
+        },{
+            "@type": "Question",
+            "name": "<?= BaseController::getMessage('358') ?>",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<?= BaseController::getMessage('359') ?>"
+            }
+        }, {
+                "@type": "Question",
+                "name": "<?= BaseController::getMessage('360') ?>",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text":"<?= BaseController::getMessage('361') ?>"
+                    }
+            }]
+    }
+</script>
+
