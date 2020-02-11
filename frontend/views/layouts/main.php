@@ -476,6 +476,21 @@ $contacts = \backend\models\Contact::getContact();
     }, 1500);
 </script>
 
+<script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "Organization",
+        "name" : "SUNSAY Energy",
+        "url" : "https://sunsayenergy.com/",
+        "sameAs" : [
+            "<?= $contacts->link_fb ?>",
+            "<?= $contacts->link_linkedin ?>",
+            "<?= $contacts->link_insta ?>"
+        ]
+    }
+</script>
+
+
 <?php $this->endBody() ?>
 </body>
 </html>
