@@ -11,6 +11,9 @@ $this->params['breadcrumbs'][] = [
     'template' => "<li><b>{link}</b></li>\n",
     'label' => $article->header,
 ];
+
+$datetime = strtotime($article->date);
+$seo_date = date('y-m-d', $datetime);
 ?>
 
 <main class="page-container">
@@ -131,7 +134,7 @@ $this->registerJsFile('/js/onload/tech.js', ['position' => \yii\web\View::POS_EN
                 "height": 35
             }
         },
-        "datePublished": "<?= $article->date ?>",
-        "dateModified": "<?= $article->date ?>"
+        "datePublished": "<?= $seo_date ?>",
+        "dateModified": "<?= $seo_date ?>"
     }
 </script>
