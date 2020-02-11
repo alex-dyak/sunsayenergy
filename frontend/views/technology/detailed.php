@@ -13,7 +13,7 @@ $this->params['breadcrumbs'][] = [
 ];
 
 $datetime = strtotime($article->date);
-$seo_date = date('y-m-d', $datetime);
+$seo_date = date('Y-m-d', $datetime);
 ?>
 
 <main class="page-container">
@@ -129,7 +129,7 @@ $this->registerJsFile('/js/onload/tech.js', ['position' => \yii\web\View::POS_EN
             "name": "SUNSAY Energy",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://sunsayenergy.com/img/logo.svg",
+                "url": "https://sunsayenergy.com/img/logo.png",
                 "width": 180,
                 "height": 35
             }
