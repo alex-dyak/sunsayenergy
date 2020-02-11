@@ -270,7 +270,7 @@ $this->params['breadcrumbs'][] = [
 		<div class="container">
 			<div class="connect__content">
 				<div class="connect__content-title line-title">
-					<h2><span><?= BaseController::getMessage('364') ?></span></h2>
+					<strong class="h2"><span><?= BaseController::getMessage('364') ?></span></strong>
 				</div>
 				<form class="connect__content-question" data-post-url="index.html">
 					<div class="message">

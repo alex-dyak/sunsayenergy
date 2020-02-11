@@ -67,7 +67,7 @@ $this->params['breadcrumbs'][] = [
     <section class="section another">
         <div class="another__content">
             <div class="another__content-title">
-                <h2><?= BaseController::getMessage('317') ?></h2>
+                <strong class="h2"><?= BaseController::getMessage('317') ?></strong>
             </div>
             <div class="project__content-list">
                 <?php foreach ($other_project as $item): ?>
