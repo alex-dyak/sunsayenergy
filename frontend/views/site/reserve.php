@@ -324,17 +324,17 @@ $this->registerJsFile('/js/calc/reserve.js', ['position' => \yii\web\View::POS_E
             "@type": "ListItem",
             "position": 1,
             "name": "Sunsay Energy",
-            "item": "<?= \yii\helpers\Url::to(); ?>"
+            "item": "https://sunsayenergy.com"
         },{
             "@type": "ListItem",
             "position": 2,
             "name": "<?= BaseController::getMessage('1') ?>",
-            "item": "<?= \yii\helpers\Url::to(); ?>"
+            "item": "https://sunsayenergy.com"
         },{
             "@type": "ListItem",
             "position": 3,
             "name": "<?= BaseController::getMessage('3') ?>",
-            "item": "<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']) ?>"
+            "item": "https://sunsayenergy.com<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']) ?>"
         }]
     }
 </script>

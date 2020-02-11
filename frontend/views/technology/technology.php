@@ -62,12 +62,12 @@ $this->registerJsFile('/js/onload/tech.js', ['position' => \yii\web\View::POS_EN
             "@type": "ListItem",
             "position": 1,
             "name": "Sunsay Energy",
-            "item": "<?= \yii\helpers\Url::to(); ?>"
+            "item": "https://sunsayenergy.com/"
         },{
             "@type": "ListItem",
             "position": 2,
             "name": "<?= BaseController::getMessage('6') ?>",
-            "item": "<?= \yii\helpers\Url::to(['/technology']); ?>"
+            "item": "https://sunsayenergy.com<?= \yii\helpers\Url::to(['/technology']); ?>"
         }]
     }
 </script>

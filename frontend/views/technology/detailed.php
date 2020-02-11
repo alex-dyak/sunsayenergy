@@ -86,17 +86,17 @@ $this->registerJsFile('/js/onload/tech.js', ['position' => \yii\web\View::POS_EN
             "@type": "ListItem",
             "position": 1,
             "name": "Sunsay Energy",
-            "item": "<?= \yii\helpers\Url::to(); ?>"
+            "item": "https://sunsayenergy.com"
         },{
             "@type": "ListItem",
             "position": 2,
             "name": "<?= BaseController::getMessage('6') ?>",
-            "item": "<?= \yii\helpers\Url::to(['/technology']); ?>"
+            "item": "https://sunsayenergy.com<?= \yii\helpers\Url::to(['/technology']); ?>"
         },{
             "@type": "ListItem",
             "position": 3,
             "name": "<?= $article->title ?>",
-            "item": "<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $article->symbol]); ?>"
+            "item": "https://sunsayenergy.com<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $article->symbol]); ?>"
         }]
     }
 </script>
@@ -107,13 +107,13 @@ $this->registerJsFile('/js/onload/tech.js', ['position' => \yii\web\View::POS_EN
         "@type": "Article",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $article->symbol]) ?>"
+            "@id": "https://sunsayenergy.com<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $article->symbol]) ?>"
         },
         "headline": "<?= $article->title ?>",
         "description": "$article->description",
         "image": {
             "@type": "ImageObject",
-            "url": "/images/<?= $article->images->imagePreview ?>",
+            "url": "https://sunsayenergy.com/images/<?= $article->images->imagePreview ?>",
             "width": 1920,
             "height": 900
         },
@@ -126,7 +126,7 @@ $this->registerJsFile('/js/onload/tech.js', ['position' => \yii\web\View::POS_EN
             "name": "SUNSAY Energy",
             "logo": {
                 "@type": "ImageObject",
-                "url": "/img/logo.svg",
+                "url": "https://sunsayenergy.com/img/logo.svg",
                 "width": 180,
                 "height": 35
             }

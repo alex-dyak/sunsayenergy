@@ -178,12 +178,12 @@ $this->params['breadcrumbs'][] = [
             "@type": "ListItem",
             "position": 1,
             "name": "Sunsay Energy",
-            "item": "<?= \yii\helpers\Url::to(); ?>"
+            "item": "https://sunsayenergy.com"
         },{
             "@type": "ListItem",
             "position": 2,
             "name": "<?= BaseController::getMessage('412') ?>",
-            "item": "<?= \yii\helpers\Url::to(['/video']); ?>"
+            "item": "https://sunsayenergy.com<?= \yii\helpers\Url::to(['/video']); ?>"
         }]
     }
 </script>
