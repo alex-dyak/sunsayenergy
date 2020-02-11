@@ -100,3 +100,38 @@ $this->registerJsFile('/js/onload/tech.js', ['position' => \yii\web\View::POS_EN
         }]
     }
 </script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $article->symbol]) ?>"
+        },
+        "headline": "<?= $article->title ?>",
+        "description": "$article->description",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/images/<?= $article->images->imagePreview ?>",
+            "width": 1920,
+            "height": 900
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "SUNSAY Energy"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "SUNSAY Energy",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "/img/logo.svg",
+                "width": 180,
+                "height": 35
+            }
+        },
+        "datePublished": "<?= $article->date ?>",
+        "dateModified": "<?= $article->date ?>"
+    }
+</script>
