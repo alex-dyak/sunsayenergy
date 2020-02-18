@@ -41,9 +41,9 @@ RewriteRule .* - [E=HTTP_IF_NONE_MATCH:%{HTTP:If-None-Match}]
 
 
     #правки по СЕО
-    Redirect 301 /en/site /en/
-    Redirect 301 /ru/site /ru/
-    Redirect 301 /site /
+#    Redirect 301 /en/site /en/
+#    Redirect 301 /ru/site /ru/
+#    Redirect 301 /site /
 
     Redirect 301 /en/reserve /en/solar-power-for-backup-power
     Redirect 301 /ru/reserve /ru/solar-power-for-backup-power
