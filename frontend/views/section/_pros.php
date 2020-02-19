@@ -52,5 +52,7 @@
                 <p><?= BaseController::getMessage('442') ?></p>
             </li>
         </ul>
+
+        <a href="#" class="button load-pros-button"><?= BaseController::getMessage('469') ?></a>
     </div>
 </section>
