@@ -121,6 +121,7 @@ $(document).ready(function(){
     headerBg();
     initSlickPrice();
     initSlickWork();
+    loadPros();
 });
 var lastWidth = $(window).width();
 $(window).resize(function() {
@@ -132,6 +133,8 @@ $(window).resize(function() {
 
         lastWidth = $(window).width();
     }
+    loadPros();
+
 });
 
 
@@ -152,6 +155,7 @@ $(window).scroll(function() {
     }
     scrollPrev = scrolled;
 });
+
 
 function initTabs(tabNav, tabContainer) {
     $(tabNav).find('a').on('click', function () {
@@ -265,4 +269,19 @@ function initSlickWork() {
 
         }]
     });
+}
+
+function loadPros() {
+    if($('.pros-list').length && window.matchMedia("(max-width: 767px)").matches) {
+        $('.pros-list li:gt(2)').hide();
+        $('.load-pros-button').show(300);
+        $(document).on('click', '.load-pros-button', function(){
+            $('.pros-list li').show(300);
+            $(this).hide();
+            return false;
+        })
+    } else {
+        $('.load-pros-button').hide();
+        $('.pros-list li').show(300);
+    }
 }
