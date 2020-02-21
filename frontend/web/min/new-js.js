@@ -132,8 +132,8 @@ $(window).resize(function() {
         initLoadMore ($('.load-technology'), 3, 3);
 
         lastWidth = $(window).width();
+        loadPros();
     }
-    loadPros();
 
 });
 
