@@ -206,6 +206,9 @@ $contacts = \backend\models\Contact::getContact();
 						<li class="<?= (Yii::$app->controller->route == 'technology/technology') ? 'active' : ''; ?>">
 							<a href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('6') ?></a>
 						</li>
+                        <li class="<?= (Yii::$app->controller->route == 'site/video') ? 'active' : ''; ?>">
+                            <a href="<?= \yii\helpers\Url::to(['/video']); ?>"><?= BaseController::getMessage('412') ?></a>
+                        </li>
 						<li class="subnav"><?= BaseController::getMessage('11') ?></li>
 						<li class="<?= (Yii::$app->controller->route == 'project/project') ? 'active' : ''; ?>">
 							<a href="<?= \yii\helpers\Url::to(['/project']); ?>"><?= BaseController::getMessage('320') ?></a>
