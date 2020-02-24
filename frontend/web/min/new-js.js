@@ -80,7 +80,7 @@ $(document).ready(function(){
         }
     });
 
-    $(document).on('click', '.consult-btn', function () {
+    $(document).on('click', '.consult-btn , .order-btn', function () {
         event.preventDefault();
         if ($(window).width() <= '1279') {
             $('html,body').scrollTop($('#connect').offset().top);
