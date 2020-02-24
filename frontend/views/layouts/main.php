@@ -122,6 +122,46 @@ $contacts = \backend\models\Contact::getContact();
 								<i class="icon-pin"></i>
 								<address itemprop="streetAddress"><?= $contacts->address ?></address>
 							</li>
+
+							<li class="social-media">
+								<ul class="social-list">
+                                    <?php if (!empty($contacts->link_fb)): ?>
+										<li class="facebook">
+											<a href="<?= $contacts->link_fb ?>" target="_blank">
+												<i class="icon-facebook"></i>
+											</a>
+										</li>
+                                    <?php endif; ?>
+                                    <?php if (!empty($contacts->link_linkedin)): ?>
+										<li class="linkedin">
+											<a href="<?= $contacts->link_linkedin ?>" target="_blank">
+												<i class="icon-linkedin"></i>
+											</a>
+										</li>
+                                    <?php endif; ?>
+                                    <?php if (!empty($contacts->link_viber)): ?>
+										<li>
+											<a href="<?= $contacts->link_viber ?>" target="_blank">
+												<i class="icon-viber"></i>
+											</a>
+										</li>
+                                    <?php endif; ?>
+                                    <?php if (!empty($contacts->link_mail)): ?>
+										<li>
+											<a href="<?= $contacts->link_mail ?>" target="_blank">
+												<i class="icon-envelope"></i>
+											</a>
+										</li>
+                                    <?php endif; ?>
+                                    <?php if (!empty($contacts->link_insta)): ?>
+										<li>
+											<a href="<?= $contacts->link_insta ?>" target="_blank">
+												<i class="icon-instagram"></i>
+											</a>
+										</li>
+                                    <?php endif; ?>
+								</ul>
+							</li>
 						</ul>
 					</div>
 					<div id="nav-opener">
@@ -261,6 +301,13 @@ $contacts = \backend\models\Contact::getContact();
 									<i class="icon-envelope"></i>
 								</a>
 							</li>
+                        <?php endif; ?>
+                        <?php if (!empty($contacts->link_insta)): ?>
+						<li>
+							<a href="<?= $contacts->link_insta ?>" target="_blank">
+								<i class="icon-instagram"></i>
+							</a>
+						</li>
                         <?php endif; ?>
 					</ul>
 					<div class="newsletter-wrap modal" id="footer-newsletter">
