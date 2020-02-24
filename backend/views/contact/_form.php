@@ -36,6 +36,10 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'link_insta')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'link_telegram')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'link_youtube')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'link_mail')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
