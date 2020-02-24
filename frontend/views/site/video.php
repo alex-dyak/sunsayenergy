@@ -53,7 +53,7 @@ $this->params['breadcrumbs'][] = [
                                 ?>
                                 <div class="video-col">
                                     <div class="embed-responsive">
-                                        <a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank">
+                                        <a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank" rel="nofollow">
                                             <img data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
                                         </a>
                                     </div>
@@ -84,7 +84,7 @@ $this->params['breadcrumbs'][] = [
                                 <?php if($item->video_category == 1) : ?>
 									<div class="video-col">
 										<div class="embed-responsive">
-                                            <a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank">
+                                            <a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank" rel="nofollow">
                                                 <img data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
                                             </a>
 										</div>
@@ -116,7 +116,7 @@ $this->params['breadcrumbs'][] = [
 								<?php if($item->video_category == 2) : ?>
 									<div class="video-col">
 										<div class="embed-responsive">
-                                            <a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank">
+                                            <a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank" rel="nofollow">
                                                 <img data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
                                             </a>
 										</div>
@@ -147,7 +147,7 @@ $this->params['breadcrumbs'][] = [
 								<?php if($item->video_category == 3) : ?>
 									<div class="video-col">
 										<div class="embed-responsive">
-                                            <a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank">
+                                            <a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank" rel="nofollow">
                                                 <img data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
                                             </a>
 										</div>
