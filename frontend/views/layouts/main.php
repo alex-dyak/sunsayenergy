@@ -23,21 +23,7 @@ $contacts = \backend\models\Contact::getContact();
 
 <head>
 <?php //Critical CSS ?>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PSSRL4V');</script>
-    <!-- End Google Tag Manager -->
+
 
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
@@ -50,12 +36,28 @@ $contacts = \backend\models\Contact::getContact();
 	<meta name="apple-mobile-web-app-status-bar-style" content="white"/>
 	<link rel="shortcut icon" href="/img/favicon.ico">
 
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PSSRL4V');</script>
+	<!-- End Google Tag Manager -->
+
     <!--  Preconnecting  -->
-    <meta rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <meta rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta rel="preconnect" href="https://maps.googleapis.com" crossorigin>
-    <meta rel="preconnect" href="https://connect.facebook.net" crossorigin>
-    <meta rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://maps.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <!--  End Preconnecting  -->
     <link rel="canonical" href="https://sunsayenergy.com<?= \yii\helpers\Url::to(); ?>" />
 
@@ -107,9 +109,9 @@ $contacts = \backend\models\Contact::getContact();
                             <?= BaseController::getMessage('8') ?>
 						</a>
 						<ul class="header-contact-list">
-							<li><a itemprop="telephone" class="binct-phone-number-1" href="tel:<?= $contacts->phone; ?>"><?= $contacts->phone; ?></a></li>
-							<li><a itemprop="telephone" class="binct-phone-number-3" href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a></li>
-							<li><a itemprop="telephone" class="binct-phone-number-2" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a></li>
+							<li><a itemprop="telephone" class="binct-phone-number-1" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
+							<li><a itemprop="telephone" class="binct-phone-number-3" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
+							<li><a itemprop="telephone" class="binct-phone-number-2" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
 							<li class="address-list">
 								<i class="icon-envelope"></i>
 								<a itemprop="email" href="mailto:<?= $contacts->email ?>">
@@ -237,16 +239,16 @@ $contacts = \backend\models\Contact::getContact();
 					<ul class="mobile-open-close">
 						<li>
 							<i class="icon-phone"></i>
-							<a itemprop="telephone" class="binct-phone-number-1" href="tel:<?= $contacts->phone ?>"><?= $contacts->phone ?></a>
+							<a itemprop="telephone" class="binct-phone-number-1" href="tel:<?= str_replace(' ', '', $contacts->phone) ?>"><?= $contacts->phone ?></a>
 							<span class="open-close-opener">
 								<i class="icon-angle-right"></i>
 							</span>
 						</li>
 						<li>
-							<a itemprop="telephone" class="binct-phone-number-3" href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a>
+							<a itemprop="telephone" class="binct-phone-number-3" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a>
 						</li>
 						<li>
-							<a itemprop="telephone" class="binct-phone-number-2" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a>
+							<a itemprop="telephone" class="binct-phone-number-2" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a>
 						</li>
 					</ul>
 				</li>
@@ -375,9 +377,9 @@ $contacts = \backend\models\Contact::getContact();
 					<div class="footer-contact-wrap">
 						<h4>Контакты</h4>
 						<ul class="footer-contact-list">
-							<li><a class="binct-phone-number-1" href="tel:<?= $contacts->phone; ?>"><?= $contacts->phone; ?></a></li>
-							<li><a class="binct-phone-number-3" href="tel:<?= $contacts->mobile_1; ?>"><?= $contacts->mobile_1; ?></a></li>
-							<li><a class="binct-phone-number-2" href="tel:<?= $contacts->mobile_2; ?>"><?= $contacts->mobile_2; ?></a></li>
+							<li><a class="binct-phone-number-1" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
+							<li><a class="binct-phone-number-3" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
+							<li><a class="binct-phone-number-2" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
 						</ul>
 					</div>
 				</div>
@@ -399,37 +401,37 @@ $contacts = \backend\models\Contact::getContact();
 <div class="overlay"></div>
 <!-- end modal overlay-->
 <!-- start request popup -->
-<div class="request-popup modal" id="modal-order">
+<!--<div class="request-popup modal" id="modal-order">
 	<span class="modal-close"><i class="icon-close"></i></span>
     <div class="request-popup__container">
         <div class="request-content">
             <div class="request-title line-title">
-                <h2><span><?= BaseController::getMessage('364') ?></span></h2>
+                <h2><span><?/*= BaseController::getMessage('364') */?></span></h2>
             </div>
             <form class="request-question" data-post-url="index.html">
 
-                <input class="custom-field" type="text" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
+                <input class="custom-field" type="text" name="fullname" placeholder="<?/*= BaseController::getMessage('366') */?>">
 
                 <input class="custom-field" type="text" name="phone" placeholder="+380">
 
                 <input class="custom-field" type="text" name="email" placeholder="youremail@mail.com">
-				<textarea class="custom-field" name="question" id="question" rows="5" placeholder="<?= BaseController::getMessage('403') ?>"></textarea>
+				<textarea class="custom-field" name="question" id="question" rows="5" placeholder="<?/*= BaseController::getMessage('403') */?>"></textarea>
                 <div class="request-button">
-                    <button class="btn btn-primary request-popup-btn"><?= BaseController::getMessage('14') ?></button>
-                    <div class="form-compelete"><?= BaseController::getMessage('374') ?></div>
+                    <button class="btn btn-primary request-popup-btn"><?/*= BaseController::getMessage('14') */?></button>
+                    <div class="form-compelete"><?/*= BaseController::getMessage('374') */?></div>
                 </div>
             </form>
         </div>
         <div class="request-content-image">
-            <?php if ( !BaseController::is_mobile()  ): ?>
+            <?php /*if ( !BaseController::is_mobile()  ): */?>
                 <picture>
                     <source data-srcset="/img/connect.jpg" type="image/jpg">
                     <img data-src="/img/connect.jpg" alt="">
                 </picture>                
-            <?php endif; ?>
+            <?php /*endif; */?>
         </div>
     </div>
-</div>
+</div>-->
 <!-- end request popup -->
 
 <?php if ( 0 && Yii::$app->controller->route != 'site/green' && Yii::$app->controller->route != 'site/types' && Yii::$app->controller->route != 'technology/technology' && Yii::$app->controller->route != 'technology/nine' && Yii::$app->controller->route != 'technology/detailed'): ?>
