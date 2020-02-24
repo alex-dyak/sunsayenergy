@@ -119,7 +119,9 @@ $(document).ready(function(){
     initLoadMore ($('.load-approach'), 3, 3);
     initLoadMore ($('.load-technology'), 3, 3);
     headerBg();
-    initSlickCarousel();
+    initSlickPrice();
+    initSlickWork();
+    loadPros();
 });
 var lastWidth = $(window).width();
 $(window).resize(function() {
@@ -130,7 +132,9 @@ $(window).resize(function() {
         initLoadMore ($('.load-technology'), 3, 3);
 
         lastWidth = $(window).width();
+        loadPros();
     }
+
 });
 
 
@@ -151,6 +155,7 @@ $(window).scroll(function() {
     }
     scrollPrev = scrolled;
 });
+
 
 function initTabs(tabNav, tabContainer) {
     $(tabNav).find('a').on('click', function () {
@@ -217,7 +222,7 @@ function headerBg() {
     }
 }
 
-function initSlickCarousel() {
+function initSlickPrice() {
     $('.price-slider').slick({
         slidesToScroll: 1,
         rows: 0,
@@ -235,4 +240,48 @@ function initSlickCarousel() {
             }
         }]
     });
+}
+function initSlickWork() {
+    $('.work-stages-slider').slick({
+        slidesToScroll: 1,
+        rows: 0,
+        slidesToShow: 3,
+        arrows: false,
+        dots: false,
+        infinite: false,
+        responsive: [{
+            breakpoint: 1023,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 2,
+                dots: true,
+                dotsClass: 'slick-dots'
+            }
+        },{
+            breakpoint: 767,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                dots: true,
+                dotsClass: 'slick-dots'
+            },
+
+        }]
+    });
+}
+
+function loadPros() {
+    if($('.pros-list').length && window.matchMedia("(max-width: 767px)").matches) {
+        $('.pros-list li:gt(2)').hide();
+        $('.load-pros-button').show(300);
+        $(document).on('click', '.load-pros-button', function(){
+            $('.pros-list li').show(300);
+            $(this).hide();
+            return false;
+        })
+    } else {
+        $('.load-pros-button').hide();
+        $('.pros-list li').show(300);
+    }
 }
