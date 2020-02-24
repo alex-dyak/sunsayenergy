@@ -132,10 +132,17 @@ $contacts = \backend\models\Contact::getContact();
 											</a>
 										</li>
                                     <?php endif; ?>
-                                    <?php if (!empty($contacts->link_linkedin)): ?>
-										<li class="linkedin">
-											<a href="<?= $contacts->link_linkedin ?>" target="_blank">
-												<i class="icon-linkedin"></i>
+                                    <?php if (!empty($contacts->link_youtube)): ?>
+										<li>
+											<a href="<?= $contacts->link_youtube ?>" target="_blank">
+												<i class="icon-youtube"></i>
+											</a>
+										</li>
+                                    <?php endif; ?>
+                                    <?php if (!empty($contacts->link_telegram)): ?>
+										<li>
+											<a href="<?= $contacts->link_telegram ?>" target="_blank">
+												<i class="icon-telegram"></i>
 											</a>
 										</li>
                                     <?php endif; ?>
@@ -232,7 +239,7 @@ $contacts = \backend\models\Contact::getContact();
 
 <?= $content ?>
 <?php if (Yii::$app->controller->route != 'site/error'): ?>
-	<div class="contact-block" id="contact" itemscope itemtype="http://schema.org/PostalAddress">
+	<div class="bottom-contact-block" id="contact" itemscope itemtype="http://schema.org/PostalAddress">
 		<div class="container">
 			<ul class="bottom-contact-list">
 				<li>
@@ -263,66 +270,58 @@ $contacts = \backend\models\Contact::getContact();
 					<address itemprop="streetAddress"><?= $contacts->address ?></address>
 				</li>
 			</ul>
+			<ul class="social-list">
+                <?php if (!empty($contacts->link_fb)): ?>
+					<li class="facebook">
+						<a href="<?= $contacts->link_fb ?>" target="_blank">
+							<i class="icon-facebook"></i>
+						</a>
+					</li>
+                <?php endif; ?>
+                <?php if (!empty($contacts->link_youtube)): ?>
+					<li>
+						<a href="<?= $contacts->link_youtube ?>" target="_blank">
+							<i class="icon-youtube"></i>
+						</a>
+					</li>
+                <?php endif; ?>
+				<?php if (!empty($contacts->link_telegram)): ?>
+					<li>
+						<a href="<?= $contacts->link_telegram ?>" target="_blank">
+							<i class="icon-telegram"></i>
+						</a>
+					</li>
+                <?php endif; ?>
+                <?php if (!empty($contacts->link_viber)): ?>
+					<li>
+						<a href="<?= $contacts->link_viber ?>" target="_blank">
+							<i class="icon-viber"></i>
+						</a>
+					</li>
+                <?php endif; ?>
+                <?php if (!empty($contacts->link_mail)): ?>
+					<li>
+						<a href="<?= $contacts->link_mail ?>" target="_blank">
+							<i class="icon-envelope"></i>
+						</a>
+					</li>
+                <?php endif; ?>
+                <?php if (!empty($contacts->link_insta)): ?>
+					<li>
+						<a href="<?= $contacts->link_insta ?>" target="_blank">
+							<i class="icon-instagram"></i>
+						</a>
+					</li>
+                <?php endif; ?>
+			</ul>
 		</div>
+
 		<?php if(Yii::$app->controller->route == 'site/index'){ ?>
 		<div id="map"></div>
 		<?php } ?>
 	</div>
 	<!-- start footer -->
 	<footer class="footer">
-		<div class="footer-social-nav">
-			<div class="container">
-				<div class="footer-social-wrap">
-					<ul class="social-list">
-                        <?php if (!empty($contacts->link_fb)): ?>
-							<li class="facebook">
-								<a href="<?= $contacts->link_fb ?>" target="_blank">
-									<i class="icon-facebook"></i>
-								</a>
-							</li>
-                        <?php endif; ?>
-                        <?php if (!empty($contacts->link_linkedin)): ?>
-							<li class="linkedin">
-								<a href="<?= $contacts->link_linkedin ?>" target="_blank">
-									<i class="icon-linkedin"></i>
-								</a>
-							</li>
-                        <?php endif; ?>
-                        <?php if (!empty($contacts->link_viber)): ?>
-							<li>
-								<a href="<?= $contacts->link_viber ?>" target="_blank">
-									<i class="icon-viber"></i>
-								</a>
-							</li>
-                        <?php endif; ?>
-                        <?php if (!empty($contacts->link_mail)): ?>
-							<li>
-								<a href="<?= $contacts->link_mail ?>" target="_blank">
-									<i class="icon-envelope"></i>
-								</a>
-							</li>
-                        <?php endif; ?>
-                        <?php if (!empty($contacts->link_insta)): ?>
-						<li>
-							<a href="<?= $contacts->link_insta ?>" target="_blank">
-								<i class="icon-instagram"></i>
-							</a>
-						</li>
-                        <?php endif; ?>
-					</ul>
-					<div class="newsletter-wrap modal" id="footer-newsletter">
-						<span class="subscribe-close"><i class="icon-close-bold"></i></span>
-						<strong class="title-mobile"><?= BaseController::getMessage('13') ?></strong>
-						<strong class="title"><?= BaseController::getMessage('410') ?></strong>
-						<form class="form subscribe" method="post">
-							<input class="custom-field" type="email" name="email" placeholder="youremail@mail.com">
-							<button class="button btn-subscribe"><?= BaseController::getMessage('14') ?></button>
-						</form>
-						<div class="success-msg"><?= BaseController::getMessage('411') ?></div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="footer__nav">
 			<div class="container">
 				<div class="footer__nav-info">
@@ -385,6 +384,22 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 			</div>
         </div>
+		<div class="footer-social-nav">
+			<div class="container">
+				<div class="footer-social-wrap">
+					<div class="newsletter-wrap modal" id="footer-newsletter">
+						<span class="subscribe-close"><i class="icon-close-bold"></i></span>
+						<strong class="title-mobile"><?= BaseController::getMessage('13') ?></strong>
+						<strong class="title"><?= BaseController::getMessage('410') ?></strong>
+						<form class="form subscribe" method="post">
+							<input class="custom-field" type="email" name="email" placeholder="youremail@mail.com">
+							<button class="button btn-subscribe"><?= BaseController::getMessage('14') ?></button>
+						</form>
+						<div class="success-msg"><?= BaseController::getMessage('411') ?></div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="footer-mobile-bottom">
 			<div class="container">
 				<a href="#footer-newsletter" class="button newsletter-opener"><?= BaseController::getMessage('410') ?></a>
