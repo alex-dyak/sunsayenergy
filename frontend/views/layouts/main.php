@@ -18,7 +18,7 @@ $contacts = \backend\models\Contact::getContact();
 
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
+<html lang="<?= (Yii::$app->language=='ua') ? 'uk': Yii::$app->language ?>">
 
 
 <head>
