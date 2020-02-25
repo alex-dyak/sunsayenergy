@@ -19,7 +19,18 @@ use app\components\Language;
 class BaseController extends Controller
 {
 
-
+    public function beforeaction($action){
+        $absoluteUrl = Yii::$app->request->absoluteUrl;
+        if ((strpos($absoluteUrl, '/site') !== false) && (strpos($absoluteUrl, '/request') === false)
+            && (strpos($absoluteUrl, '/subscribe') === false)
+            && (strpos($absoluteUrl, '/calculator') === false)
+            && (strpos($absoluteUrl, '/sitemap') === false)) {
+            $scriptUrl = '/site';
+            $new_url = str_replace($scriptUrl, "", $absoluteUrl);
+            $this->redirect($new_url, 301);
+        }
+        return true;
+    }
 
     public function init()
     {
