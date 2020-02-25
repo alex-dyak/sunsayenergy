@@ -52,7 +52,7 @@
             </div>
         </div>
 		<div class="btn-wrap">
-            <a class="button order-btn" href="#" id="order-form"><?= BaseController::getMessage('468') ?></a>
+            <a class="button order-btn" href="#"><?= BaseController::getMessage('468') ?></a>
         </div>
     </div>
 </section>
