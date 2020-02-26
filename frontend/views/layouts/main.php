@@ -154,13 +154,6 @@ $contacts = \backend\models\Contact::getContact();
 											</a>
 										</li>
                                     <?php endif; ?>
-                                    <?php if (!empty($contacts->link_mail)): ?>
-										<li>
-											<a href="<?= $contacts->link_mail ?>" target="_blank">
-												<i class="icon-envelope"></i>
-											</a>
-										</li>
-                                    <?php endif; ?>
                                     <?php if (!empty($contacts->link_insta)): ?>
 										<li>
 											<a href="<?= $contacts->link_insta ?>" target="_blank">
@@ -300,13 +293,6 @@ $contacts = \backend\models\Contact::getContact();
 					<li>
 						<a href="<?= $contacts->link_viber ?>" target="_blank">
 							<i class="icon-viber"></i>
-						</a>
-					</li>
-                <?php endif; ?>
-                <?php if (!empty($contacts->link_mail)): ?>
-					<li>
-						<a href="<?= $contacts->link_mail ?>" target="_blank">
-							<i class="icon-envelope"></i>
 						</a>
 					</li>
                 <?php endif; ?>
