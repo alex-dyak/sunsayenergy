@@ -224,10 +224,10 @@ $this->params['breadcrumbs'][] = [
                             <button class="btn connect-btn btn-primary" id="submit_button">
                                 <?= BaseController::getMessage('14') ?>
                             </button>
-                            <div class="form-compelete"><?= BaseController::getMessage('374') ?></div>
                         </div>
-                    </div>
-                </form>
+					</div>
+					<div class="form-compelete"><?= BaseController::getMessage('374') ?></div>
+				</form>
 			</div>
 		</div>
 	</section>
