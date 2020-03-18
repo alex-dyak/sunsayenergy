@@ -19,60 +19,88 @@ $this->params['breadcrumbs'][] = [
         'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
     ]); ?>
 	</div>
-	<section class="section service-info">
-		<div class="service-info__content">
-			<div class="service-info__content-info">
-<!--				<div class="complect">--><?//= BaseController::getMessage('196') ?><!--</div>-->
-				<div class="title">
-					<h1><?= BaseController::getMessage('197') ?></h1>
+	<section class="service-section">
+		<div class="hero-block">
+			<div class="container">
+				<div class="service-section-info">
+					<div class="title">
+						<h1><?= BaseController::getMessage('197') ?></h1>
+					</div>
+					<div class="service-section-image">
+						<img src="/img/header_house.png" alt="<?= BaseController::getMessage('197') ?>" srcset="/img/deskhouse.png 1024w, /img/header_house.png 1366w">
+					</div>
+					<div class="description"><?= BaseController::getMessage('200') ?></div>
+					<span class="hero-yellow-circle"></span>
 				</div>
-				<div class="description"><?= BaseController::getMessage('200') ?></div>
-				<div class="more"><a class="btn btn-primary" href="#equipment"><?= BaseController::getMessage('18') ?></a></div>
 			</div>
-			<div class="service-info__content-image"><img data-src="/img/services/1.jpg" alt="Комплект Дохід" data-srcset="/img/services/1_m.jpg 1024w, /img/services/1.jpg 1366w"></div>
+		</div>
+		<div class="container">
+			<div class="service-pros-block">
+				<ol class="service-pros-list">
+					<li>
+						<strong><?= BaseController::getMessage('471') ?></strong>
+						<p><?= BaseController::getMessage('472') ?></p>
+					</li>
+					<li>
+						<strong><?= BaseController::getMessage('473') ?></strong>
+						<p><?= BaseController::getMessage('474') ?></p>
+					</li>
+				</ol>
+				<div class="service-pros-text">
+					<p><b><?= BaseController::getMessage('475') ?></b></p>
+					<div class="more">
+						<a href="#equipment" class="button"><?= BaseController::getMessage('18') ?></a>
+					</div>
+
+				</div>
+			</div>
 		</div>
 	</section>
 
+
     <section class="section service-miscount">
-        <div class="service-miscount__content">
-            <div class="service-miscount__content-calculation">
-                <div class="title">
-                    <h2><?= BaseController::getMessage('254') ?></h2>
-                </div>
-                <div class="description"><?= BaseController::getMessage('257') ?></div>
-                <div class="calculation-form">
-                    <div class="form-group">
-                        <label for="house"><?= BaseController::getMessage('258') ?>
-                            <div>
-                                <input class="js-range-slider" id="income-house" type="text" name="house" data-min="0" data-max="5000"
-                                       data-step="100" data-hide-min-max="true" data-from="200" data-thumbwidth="20">
-                            </div>
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="power"><?= BaseController::getMessage('260') ?>
-                            <div>
-                                <input class="js-range-slider" id="income-power" type="text" name="power" data-min="5" data-max="35"
-                                       data-step="2.5" data-hide-min-max="true" data-from="30" data-thumbwidth="20">
-                            </div>
-                        </label>
-                    </div>
-                </div>
-                <div class="result">
-                    <?= BaseController::getMessage('261') ?>
-                    <span><span class="result-value"></span></span>
-                </div>
-                <div class="income">
-                    <?= BaseController::getMessage('262') ?>
-                    <span class="income-value"></span>
-                    <?= BaseController::getMessage('264') ?>
-                </div>
-            </div>
-            <div class="service-miscount__content-graphic">
-                <span class="service-miscount__content-graphic__title"><?= BaseController::getMessage('265') ?><p><?= BaseController::getMessage('267') ?></p></span>
-                <canvas id="income-graphic"></canvas>
-            </div>
-        </div>
+		<div class="container">
+			<div class="service-miscount__content">
+				<div class="service-miscount__content-calculation">
+					<div class="title">
+						<h2><?= BaseController::getMessage('254') ?></h2>
+					</div>
+					<div class="description"><?= BaseController::getMessage('257') ?></div>
+					<div class="calculation-form">
+						<div class="form-group">
+							<label for="house"><?= BaseController::getMessage('258') ?>
+								<div>
+									<input class="js-range-slider" id="income-house" type="text" name="house" data-min="0" data-max="5000"
+										   data-step="100" data-hide-min-max="true" data-from="200" data-thumbwidth="20">
+								</div>
+							</label>
+						</div>
+						<div class="form-group">
+							<label for="power"><?= BaseController::getMessage('260') ?>
+								<div>
+									<input class="js-range-slider" id="income-power" type="text" name="power" data-min="5" data-max="35"
+										   data-step="2.5" data-hide-min-max="true" data-from="30" data-thumbwidth="20">
+								</div>
+							</label>
+						</div>
+					</div>
+					<div class="result">
+                        <?= BaseController::getMessage('261') ?>
+						<span><span class="result-value"></span></span>
+					</div>
+					<div class="income">
+                        <?= BaseController::getMessage('262') ?>
+						<span class="income-value"></span>
+                        <?= BaseController::getMessage('264') ?>
+					</div>
+				</div>
+				<div class="service-miscount__content-graphic">
+					<span class="service-miscount__content-graphic__title"><?= BaseController::getMessage('265') ?><p><?= BaseController::getMessage('267') ?></p></span>
+					<canvas id="income-graphic"></canvas>
+				</div>
+			</div>
+		</div>
+
     </section>
 
 	<section class="section service-equipment" id="equipment">

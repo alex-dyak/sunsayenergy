@@ -20,115 +20,139 @@ $this->params['breadcrumbs'][] = [
         ]); ?>
 		</div>
     <!-- start info -->
-    <section class="section service-info">
-        <div class="service-info__content">
-            <div class="service-info__content-info">
-<!--                <div class="complect">--><?//= BaseController::getMessage('73') ?><!--</div>-->
-                <div class="title">
-                    <h1><?= BaseController::getMessage('74') ?></h1>
+    <section class="service-section">
+        <div class="hero-block">
+            <div class="container">
+                <div class="service-section-info">
+                    <div class="title">
+                        <h1><?= BaseController::getMessage('74') ?></h1>
+                    </div>
+                    <div class="service-section-image square-img">
+                        <img src="/img/house-2.png" alt="<?= BaseController::getMessage('74') ?>" srcset="/img/house-2-mob.png 1024w, /img/house-2.png 1366w">
+                    </div>
+                    <div class="description"><?= BaseController::getMessage('75') ?></div>
+                    <span class="hero-yellow-circle"></span>
                 </div>
-                <div class="description"><?= BaseController::getMessage('75') ?></div>
-                <div class="more"><a class="btn btn-primary" href="#equipment"><?= BaseController::getMessage('18') ?></a></div>
             </div>
-            <div class="service-info__content-image">
-                <img data-src="/img/reserve/1.jpg" alt="Комплект Дохід" data-srcset="/img/reserve/1_m.jpg 1024w, /img/reserve/1.jpg 1366w">
+        </div>
+        <div class="container">
+            <div class="service-pros-block">
+                <ol class="service-pros-list">
+                    <li>
+                        <strong><?= BaseController::getMessage('476') ?></strong>
+                        <p><?= BaseController::getMessage('477') ?></p>
+                    </li>
+                    <li>
+                        <strong><?= BaseController::getMessage('478') ?></strong>
+                        <p><?= BaseController::getMessage('479') ?></p>
+                    </li>
+                </ol>
+                <div class="service-pros-text">
+                    <p><b><?= BaseController::getMessage('480') ?></b></p>
+                    <div class="more">
+                        <a href="#equipment" class="button"><?= BaseController::getMessage('18') ?></a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
     <!-- end info -->
     <!-- start miscount -->
     <section class="section service-miscount">
-        <div class="service-miscount__content">
-            <div class="service-miscount__content-calculation">
-                <div class="title">
-                    <h2><?= BaseController::getMessage('116') ?></h2>
-                </div>
-                <div class="description"><?= BaseController::getMessage('121') ?></div>
-                <div class="calculation-form">
-                    <div class="form-group">
-                        <label for="houseEnergy"><?= BaseController::getMessage('122') ?>
-                            <div>
-                                <input class="js-range-slider" id="reserve-houseEnergy" type="text" name="houseEnergy" data-min="0" data-max="5000" data-step="100" data-hide-min-max="true" data-from="2000" data-thumbwidth="20">
-                            </div>
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="timeReserv"><?= BaseController::getMessage('124') ?>
-                            <div>
-                                <input class="js-range-slider" id="reserve-timeReserv" type="text" name="timeReserv" data-min="1" data-max="12" data-step="1" data-hide-min-max="true" data-from="2" data-thumbwidth="20">
-                            </div>
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="powerSes"><?= BaseController::getMessage('125') ?>
-                            <div>
-                                <input class="js-range-slider" id="reserve-powerSes" type="text" name="powerSes" data-min="5" data-max="35" data-step="2.5" data-hide-min-max="true" data-from="10" data-thumbwidth="20">
-                            </div>
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="powerReserv"><?= BaseController::getMessage('127') ?>
-                            <div>
-                                <input class="js-range-slider" id="reserve-powerReserv" type="text" name="powerReserv" data-min="3" data-max="15" data-hide-min-max="true" data-values="3,5,8,10,15" data-thumbwidth="20">
-                            </div>
-                        </label>
-                    </div>
-                </div>
-                <div class="result">
-                    <?= BaseController::getMessage('129') ?> <span><span class="result-value"></span></span>
-                </div>
-                <div class="income">
-                    <?= BaseController::getMessage('137') ?><span class="income-value"></span> <?= BaseController::getMessage('144') ?>
-                </div>
-            </div>
-            <div class="service-miscount__content-icons">
-                <div class="service-miscount__content-icons__title"><?= BaseController::getMessage('146') ?></div>
-                <div class="service-miscount__content-icons__list">
-                    <div class="service-miscount__content-icons__list-item" data-icon="1">
-                        <img data-src="/img/reserve/icons/1.svg" alt="">
-                    </div>
-                    <div class="service-miscount__content-icons__list-item" data-icon="2">
-                        <img data-src="/img/reserve/icons/2.svg" alt="">
-                    </div>
-                    <div class="service-miscount__content-icons__list-item" data-icon="3">
-                        <img data-src="/img/reserve/icons/3.svg" alt="">
-                    </div>
-                    <div class="service-miscount__content-icons__list-item" data-icon="4">
-                        <img data-src="/img/reserve/icons/4.svg" alt="">
-                    </div>
-                    <div class="service-miscount__content-icons__list-item" data-icon="5">
-                        <img data-src="/img/reserve/icons/5.svg" alt="">
-                    </div>
-                    <div class="service-miscount__content-icons__list-item" data-icon="6">
-                        <img data-src="/img/reserve/icons/6.svg" alt="">
-                    </div>
-                    <div class="service-miscount__content-icons__list-item" data-icon="7">
-                        <img data-src="/img/reserve/icons/7.svg" alt="">
-                    </div>
-                    <div class="service-miscount__content-icons__list-item" data-icon="8">
-                        <img data-src="/img/reserve/icons/8.svg" alt="">
-                    </div>
-                    <div class="service-miscount__content-icons__list-item" data-icon="9">
-                        <img data-src="/img/reserve/icons/9.svg" alt="">
-                    </div>
-                    <div class="service-miscount__content-icons__list-item" data-icon="10">
-                        <img data-src="/img/reserve/icons/10.svg" alt="">
-                    </div>
-                    <div class="service-miscount__content-icons__list-item" data-icon="11">
-                        <img data-src="/img/reserve/icons/11.svg" alt="">
-                    </div>
-                    <div class="service-miscount__content-icons__list-item" data-icon="12">
-                        <img data-src="/img/reserve/icons/12.svg" alt="">
-                    </div>
-                    <div class="service-miscount__content-icons__list-item" data-icon="13">
-                        <img data-src="/img/reserve/icons/13.svg" alt="">
-                    </div>
-                    <div class="service-miscount__content-icons__list-item" data-icon="14">
-                        <img data-src="/img/reserve/icons/14.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
+		<div class="container">
+			<div class="service-miscount__content">
+				<div class="service-miscount__content-calculation">
+					<div class="title">
+						<h2><?= BaseController::getMessage('116') ?></h2>
+					</div>
+					<div class="description"><?= BaseController::getMessage('121') ?></div>
+					<div class="calculation-form">
+						<div class="form-group">
+							<label for="houseEnergy"><?= BaseController::getMessage('122') ?>
+								<div>
+									<input class="js-range-slider" id="reserve-houseEnergy" type="text" name="houseEnergy" data-min="0" data-max="5000" data-step="100" data-hide-min-max="true" data-from="2000" data-thumbwidth="20">
+								</div>
+							</label>
+						</div>
+						<div class="form-group">
+							<label for="timeReserv"><?= BaseController::getMessage('124') ?>
+								<div>
+									<input class="js-range-slider" id="reserve-timeReserv" type="text" name="timeReserv" data-min="1" data-max="12" data-step="1" data-hide-min-max="true" data-from="2" data-thumbwidth="20">
+								</div>
+							</label>
+						</div>
+						<div class="form-group">
+							<label for="powerSes"><?= BaseController::getMessage('125') ?>
+								<div>
+									<input class="js-range-slider" id="reserve-powerSes" type="text" name="powerSes" data-min="5" data-max="35" data-step="2.5" data-hide-min-max="true" data-from="10" data-thumbwidth="20">
+								</div>
+							</label>
+						</div>
+						<div class="form-group">
+							<label for="powerReserv"><?= BaseController::getMessage('127') ?>
+								<div>
+									<input class="js-range-slider" id="reserve-powerReserv" type="text" name="powerReserv" data-min="3" data-max="15" data-hide-min-max="true" data-values="3,5,8,10,15" data-thumbwidth="20">
+								</div>
+							</label>
+						</div>
+					</div>
+					<div class="result">
+                        <?= BaseController::getMessage('129') ?> <span><span class="result-value"></span></span>
+					</div>
+					<div class="income">
+                        <?= BaseController::getMessage('137') ?><span class="income-value"></span> <?= BaseController::getMessage('144') ?>
+					</div>
+				</div>
+				<div class="service-miscount__content-icons">
+					<div class="service-miscount__content-icons__title"><?= BaseController::getMessage('146') ?></div>
+					<div class="service-miscount__content-icons__list">
+						<div class="service-miscount__content-icons__list-item" data-icon="1">
+							<img data-src="/img/reserve/icons/1.svg" alt="">
+						</div>
+						<div class="service-miscount__content-icons__list-item" data-icon="2">
+							<img data-src="/img/reserve/icons/2.svg" alt="">
+						</div>
+						<div class="service-miscount__content-icons__list-item" data-icon="3">
+							<img data-src="/img/reserve/icons/3.svg" alt="">
+						</div>
+						<div class="service-miscount__content-icons__list-item" data-icon="4">
+							<img data-src="/img/reserve/icons/4.svg" alt="">
+						</div>
+						<div class="service-miscount__content-icons__list-item" data-icon="5">
+							<img data-src="/img/reserve/icons/5.svg" alt="">
+						</div>
+						<div class="service-miscount__content-icons__list-item" data-icon="6">
+							<img data-src="/img/reserve/icons/6.svg" alt="">
+						</div>
+						<div class="service-miscount__content-icons__list-item" data-icon="7">
+							<img data-src="/img/reserve/icons/7.svg" alt="">
+						</div>
+						<div class="service-miscount__content-icons__list-item" data-icon="8">
+							<img data-src="/img/reserve/icons/8.svg" alt="">
+						</div>
+						<div class="service-miscount__content-icons__list-item" data-icon="9">
+							<img data-src="/img/reserve/icons/9.svg" alt="">
+						</div>
+						<div class="service-miscount__content-icons__list-item" data-icon="10">
+							<img data-src="/img/reserve/icons/10.svg" alt="">
+						</div>
+						<div class="service-miscount__content-icons__list-item" data-icon="11">
+							<img data-src="/img/reserve/icons/11.svg" alt="">
+						</div>
+						<div class="service-miscount__content-icons__list-item" data-icon="12">
+							<img data-src="/img/reserve/icons/12.svg" alt="">
+						</div>
+						<div class="service-miscount__content-icons__list-item" data-icon="13">
+							<img data-src="/img/reserve/icons/13.svg" alt="">
+						</div>
+						<div class="service-miscount__content-icons__list-item" data-icon="14">
+							<img data-src="/img/reserve/icons/14.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     </section>
     <!-- end miscount -->
     <!-- start equipments -->

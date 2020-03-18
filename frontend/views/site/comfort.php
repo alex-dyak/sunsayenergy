@@ -20,65 +20,88 @@ $this->params['breadcrumbs'][] = [
         ]); ?>
 		</div>
     <!-- start info -->
-    <section class="section service-info">
-        <div class="service-info__content">
-            <div class="service-info__content-info">
-<!--                <div class="complect">--><?//= BaseController::getMessage('86') ?><!--</div>-->
-                <div class="title">
-                    <h1><?= BaseController::getMessage('87') ?></h1>
+    <section class="service-section">
+        <div class="hero-block">
+            <div class="container">
+                <div class="service-section-info">
+                    <div class="title">
+                        <h1><?= BaseController::getMessage('87') ?></h1>
+                    </div>
+                    <div class="service-section-image square-img">
+                        <img src="/img/house-3.png" alt="<?= BaseController::getMessage('87') ?>" srcset="/img/house-3-mob.png 1024w, /img/house-3.png 1366w">
+                    </div>
+                    <div class="description"><?= BaseController::getMessage('132') ?></div>
+                    <span class="hero-yellow-circle"></span>
                 </div>
-                <div class="description"><?= BaseController::getMessage('132') ?>
-                </div>
-                <div class="more"><a class="btn btn-primary" href="#equipment"><?= BaseController::getMessage('18') ?></a></div>
             </div>
-            <div class="service-info__content-image">
-                <img data-src="/img/comfort/1.jpg" alt="Комплект Дохід"
-                     data-srcset="/img/comfort/1_m.jpg 1024w, /img/comfort/1.jpg 1366w">
+        </div>
+        <div class="container">
+            <div class="service-pros-block">
+                <ol class="service-pros-list">
+                    <li>
+                        <strong><?= BaseController::getMessage('481') ?></strong>
+                        <p><?= BaseController::getMessage('482') ?></p>
+                    </li>
+                    <li>
+                        <strong><?= BaseController::getMessage('483') ?></strong>
+                        <p><?= BaseController::getMessage('484') ?></p>
+                    </li>
+                </ol>
+                <div class="service-pros-text">
+                    <p><b><?= BaseController::getMessage('485') ?></b></p>
+                    <div class="more">
+                        <a href="#equipment" class="button"><?= BaseController::getMessage('18') ?></a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
     <!-- end info -->
     <!-- start miscount -->
     <section class="section service-miscount">
-        <div class="service-miscount__content">
-            <div class="service-miscount__content-calculation">
-                <div class="title">
-                    <h2><?= BaseController::getMessage('116') ?></h2>
-                </div>
-                <div class="description"><?= BaseController::getMessage('233') ?>
-                </div>
-                <div class="calculation-form">
-                    <div class="form-group">
-                        <label for="houseEnergy"><?= BaseController::getMessage('239') ?>
-                            <div>
-                                <input class="js-range-slider" id="comfort-houseEnergy" type="text" name="houseEnergy"
-                                       data-min="150" data-max="1000" data-step="50" data-hide-min-max="true"
-                                       data-from="400" data-thumbwidth="20">
-                            </div>
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="days"><?= BaseController::getMessage('242') ?>
-                            <div>
-                                <input class="js-range-slider" id="comfort-days" type="text" name="days" data-min="1"
-                                       data-max="10" data-step="1" data-hide-min-max="true" data-from="3"
-                                       data-thumbwidth="20">
-                            </div>
-                        </label>
-                    </div>
-                </div>
-                <div class="result">
-                    <?= BaseController::getMessage('248') ?> <span><span class="result-value"></span></span>
-                </div>
-                <div class="income">
-                    <?= BaseController::getMessage('251') ?> <span class="power-value"></span> <?= BaseController::getMessage('376') ?>
-                </div>
-            </div>
-            <div class="service-miscount__content-graphic">
-                <span class="service-miscount__content-graphic__title"><?= BaseController::getMessage('255') ?><p><?= BaseController::getMessage('256') ?></p></span>
-                <canvas id="comfort-graphic"></canvas>
-            </div>
-        </div>
+		<div class="container">
+			<div class="service-miscount__content">
+				<div class="service-miscount__content-calculation">
+					<div class="title">
+						<h2><?= BaseController::getMessage('116') ?></h2>
+					</div>
+					<div class="description"><?= BaseController::getMessage('233') ?>
+					</div>
+					<div class="calculation-form">
+						<div class="form-group">
+							<label for="houseEnergy"><?= BaseController::getMessage('239') ?>
+								<div>
+									<input class="js-range-slider" id="comfort-houseEnergy" type="text" name="houseEnergy"
+										   data-min="150" data-max="1000" data-step="50" data-hide-min-max="true"
+										   data-from="400" data-thumbwidth="20">
+								</div>
+							</label>
+						</div>
+						<div class="form-group">
+							<label for="days"><?= BaseController::getMessage('242') ?>
+								<div>
+									<input class="js-range-slider" id="comfort-days" type="text" name="days" data-min="1"
+										   data-max="10" data-step="1" data-hide-min-max="true" data-from="3"
+										   data-thumbwidth="20">
+								</div>
+							</label>
+						</div>
+					</div>
+					<div class="result">
+                        <?= BaseController::getMessage('248') ?> <span><span class="result-value"></span></span>
+					</div>
+					<div class="income">
+                        <?= BaseController::getMessage('251') ?> <span class="power-value"></span> <?= BaseController::getMessage('376') ?>
+					</div>
+				</div>
+				<div class="service-miscount__content-graphic">
+					<span class="service-miscount__content-graphic__title"><?= BaseController::getMessage('255') ?><p><?= BaseController::getMessage('256') ?></p></span>
+					<canvas id="comfort-graphic"></canvas>
+				</div>
+			</div>
+		</div>
+
     </section>
     <!-- end miscount -->
     <!-- start equipments -->
