@@ -22,16 +22,14 @@ $this->params['breadcrumbs'][] = [
 	<section class="service-section">
 		<div class="hero-block">
 			<div class="container">
-				<div class="service-section-info">
-					<div class="title">
-						<h1><?= BaseController::getMessage('197') ?></h1>
-					</div>
-					<div class="service-section-image">
-						<img src="/img/house-1.png" alt="<?= BaseController::getMessage('197') ?>" srcset="/img/house-1-mob.png 1024w, /img/house-1.png 1366w">
-					</div>
-					<div class="description"><?= BaseController::getMessage('200') ?></div>
-					<span class="hero-yellow-circle"></span>
+				<div class="title">
+					<h1><?= BaseController::getMessage('197') ?></h1>
 				</div>
+				<div class="service-section-image">
+					<img src="/img/house-1.png" alt="<?= BaseController::getMessage('197') ?>" srcset="/img/house-1-mob.png 1024w, /img/house-1.png 1366w">
+				</div>
+				<div class="description"><?= BaseController::getMessage('200') ?></div>
+				<span class="hero-yellow-circle"></span>
 			</div>
 		</div>
 		<div class="container">
