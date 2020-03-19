@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = [
                         <h1><?= BaseController::getMessage('87') ?></h1>
                     </div>
                     <div class="service-section-image square-img">
-                        <img src="/img/house-3.png" alt="<?= BaseController::getMessage('87') ?>" srcset="/img/house-3-mob.png 1024w, /img/house-3.png 1366w">
+                        <img src="/img/house-2.png" alt="<?= BaseController::getMessage('87') ?>" srcset="/img/house-2-mob.png 1024w, /img/house-2.png 1366w">
                     </div>
                     <div class="description"><?= BaseController::getMessage('132') ?></div>
                     <span class="hero-yellow-circle"></span>
