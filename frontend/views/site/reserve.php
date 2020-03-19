@@ -62,7 +62,7 @@ $this->params['breadcrumbs'][] = [
 			<div class="service-miscount__content">
 				<div class="service-miscount__content-calculation">
 					<div class="title">
-						<h2><?= BaseController::getMessage('116') ?></h2>
+						<h2 class="line-title"><?= BaseController::getMessage('116') ?></h2>
 					</div>
 					<div class="description"><?= BaseController::getMessage('121') ?></div>
 					<div class="calculation-form">
