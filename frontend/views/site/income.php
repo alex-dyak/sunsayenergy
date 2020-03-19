@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = [
 						<h1><?= BaseController::getMessage('197') ?></h1>
 					</div>
 					<div class="service-section-image">
-						<img src="/img/header_house.png" alt="<?= BaseController::getMessage('197') ?>" srcset="/img/deskhouse.png 1024w, /img/header_house.png 1366w">
+						<img src="/img/house-1.png" alt="<?= BaseController::getMessage('197') ?>" srcset="/img/house-1-mob.png 1024w, /img/house-1.png 1366w">
 					</div>
 					<div class="description"><?= BaseController::getMessage('200') ?></div>
 					<span class="hero-yellow-circle"></span>
@@ -84,19 +84,21 @@ $this->params['breadcrumbs'][] = [
 							</label>
 						</div>
 					</div>
-					<div class="result">
-                        <?= BaseController::getMessage('261') ?>
-						<span><span class="result-value"></span></span>
-					</div>
-					<div class="income">
-                        <?= BaseController::getMessage('262') ?>
-						<span class="income-value"></span>
-                        <?= BaseController::getMessage('264') ?>
-					</div>
 				</div>
 				<div class="service-miscount__content-graphic">
 					<span class="service-miscount__content-graphic__title"><?= BaseController::getMessage('265') ?><p><?= BaseController::getMessage('267') ?></p></span>
 					<canvas id="income-graphic"></canvas>
+				</div>
+			</div>
+			<div class="grafic-info">
+				<div class="result">
+                    <?= BaseController::getMessage('261') ?>
+					<span><span class="result-value"></span></span>
+				</div>
+				<div class="income">
+                    <?= BaseController::getMessage('262') ?>
+					<span class="income-value"></span>
+                    <?= BaseController::getMessage('264') ?>
 				</div>
 			</div>
 		</div>
