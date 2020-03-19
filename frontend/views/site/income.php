@@ -61,7 +61,7 @@ $this->params['breadcrumbs'][] = [
 			<div class="service-miscount__content">
 				<div class="service-miscount__content-calculation">
 					<div class="title">
-						<h2><?= BaseController::getMessage('254') ?></h2>
+						<h2 class="line-title"><?= BaseController::getMessage('254') ?></h2>
 					</div>
 					<div class="description"><?= BaseController::getMessage('257') ?></div>
 					<div class="calculation-form">
@@ -82,25 +82,22 @@ $this->params['breadcrumbs'][] = [
 							</label>
 						</div>
 					</div>
+					<div class="result">
+                        <?= BaseController::getMessage('261') ?>
+						<span><span class="result-value"></span></span>
+					</div>
+					<div class="income">
+                        <?= BaseController::getMessage('262') ?>
+						<span class="income-value"></span>
+                        <?= BaseController::getMessage('264') ?>
+					</div>
 				</div>
 				<div class="service-miscount__content-graphic">
 					<span class="service-miscount__content-graphic__title"><?= BaseController::getMessage('265') ?><p><?= BaseController::getMessage('267') ?></p></span>
 					<canvas id="income-graphic"></canvas>
 				</div>
 			</div>
-			<div class="grafic-info">
-				<div class="result">
-                    <?= BaseController::getMessage('261') ?>
-					<span><span class="result-value"></span></span>
-				</div>
-				<div class="income">
-                    <?= BaseController::getMessage('262') ?>
-					<span class="income-value"></span>
-                    <?= BaseController::getMessage('264') ?>
-				</div>
-			</div>
 		</div>
-
     </section>
 
 	<section class="section service-equipment" id="equipment">
