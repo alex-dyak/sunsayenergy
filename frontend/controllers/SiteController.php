@@ -32,6 +32,10 @@ class SiteController extends BaseController
         $contacts = Contact::getContact();
         $reviews = Reviews::getReviews();
         $project = Project::find()->all();
+        usort($project, function($a, $b)
+        {
+            return strcmp($a->project_order, $b->project_order);
+        });
         $videos = Video::find()->all();
         $this->setMeta(self::getTitle('index'), self::getDescription('index'));
         return $this->render('index', compact('contacts', 'reviews', 'project', 'videos'));
