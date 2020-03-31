@@ -47,6 +47,7 @@ class Project extends \yii\db\ActiveRecord
         return [
             [['title','title_ru','title_en','description','description_ru','description_en','text', 'text_ru', 'text_en'], 'string'],
             [['header', 'header_ru', 'header_en', 'category', 'symbol'], 'string', 'max' => 500],
+            [['on_home'], 'integer'],
         ];
     }
 
@@ -66,6 +67,7 @@ class Project extends \yii\db\ActiveRecord
             'category' => 'Category',
 
             'symbol' => 'Символьный код страницы (Можно не заполнять)',
+            'on_home' => 'On Home',
         ];
     }
 
