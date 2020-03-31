@@ -1,19 +1,13 @@
 <?php use frontend\controllers\BaseController; ?>
 
-
-<?php $projects = \backend\models\Project::find()->all();
-
-
-?>
-
 <section class="section example">
     <div class="example__content">
         <div class="example__content-title">
             <h2 class="line-title"><?= BaseController::getMessage('330') ?></h2>
         </div>
         <div class="example__content-list example-carousel">
-            <?php foreach ($projects as $item): ?>
-            <div class="example__content-list__item">
+            <?php foreach ($project as $item): ?>
+            <div class="example__content-list__item" data-order="<?= $item->project_order; ?>">
                 <a href="<?= \yii\helpers\Url::to(['project/detailed', 'symbol' => $item->symbol]) ?>">
                   <picture>
                     <source media="(min-width: 800px)" data-srcset="<?= $item->getFirstImg(650); ?>" type="image/jpg">
