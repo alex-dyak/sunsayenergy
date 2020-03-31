@@ -55,7 +55,7 @@
         <!-- start complex -->
         <?= $this->render('../section/_complex.php'); ?>
         <!-- end complex -->
-        <?= $this->render('../section/_example.php'); ?>
+        <?= $this->render('../section/_example.php', compact('project')); ?>
         <!-- start review -->
         <?= $this->render('../section/_review.php', compact('reviews')); ?>
         <!-- end review -->
