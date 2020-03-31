@@ -31,7 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
            // 'text_ru:ntext',
             // 'text_en:ntext',
              'category',
-             'on_home',
+             'project_order',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

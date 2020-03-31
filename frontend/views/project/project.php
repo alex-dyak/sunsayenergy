@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = [
             </div>
             <div class="project__content-list">
                 <?php foreach ($model as $item): ?>
-                <div class="project__content-list__item">
+                <div class="project__content-list__item" data-order="<?= $item->project_order ?>">
                     <a href="<?= \yii\helpers\Url::to(['project/detailed', 'symbol' => $item->symbol]) ?>">
                         <div class="image">
                             <img data-src="<?= $item->getFirstImg(550) ?>" alt="<?= $item->header ?>">

@@ -52,7 +52,7 @@ use mihaildev\elfinder\ElFinder;
         ]
     ); ?>
 
-    <?= $form->field($model, 'on_home')->textInput() ?>
+    <?= $form->field($model, 'project_order')->textInput() ?>
 
 
     <div class="form-group">
