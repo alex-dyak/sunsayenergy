@@ -27,7 +27,12 @@ class ProjectController extends BaseController
     public function actionProject()
     {
         $model = Project::find()->all();
+        usort($model, function($a, $b)
+        {
+            return strcmp($a->project_order, $b->project_order);
+        });
         $this->setMeta(self::getTitle('project'), self::getDescription('project'));
+
         return $this->render('project', compact('model'));
     }
 

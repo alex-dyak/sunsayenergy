@@ -52,6 +52,8 @@ use mihaildev\elfinder\ElFinder;
         ]
     ); ?>
 
+    <?= $form->field($model, 'project_order')->textInput() ?>
+
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
