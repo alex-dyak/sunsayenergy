@@ -61,6 +61,10 @@ class SiteController extends BaseController
     {
         $reviews = Reviews::getReviews();
         $project = Project::find()->all();
+        usort($project, function($a, $b)
+        {
+            return strcmp($a->project_order, $b->project_order);
+        });
         $this->setMeta(self::getTitle('comfort'), self::getDescription('comfort'));
         return $this->render('comfort', compact('reviews','project'));
     }
@@ -69,6 +73,10 @@ class SiteController extends BaseController
     {
         $reviews = Reviews::getReviews();
         $project = Project::find()->all();
+        usort($project, function($a, $b)
+        {
+            return strcmp($a->project_order, $b->project_order);
+        });
         $this->setMeta(self::getTitle('income'), self::getDescription('income'));
         return $this->render('income', compact('reviews','project'));
     }
@@ -77,6 +85,10 @@ class SiteController extends BaseController
     {
         $reviews = Reviews::getReviews();
         $project = Project::find()->all();
+        usort($project, function($a, $b)
+        {
+            return strcmp($a->project_order, $b->project_order);
+        });
         $this->setMeta(self::getTitle('reserve'), self::getDescription('reserve'));
         return $this->render('reserve', compact('reviews','project'));
     }
