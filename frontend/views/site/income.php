@@ -228,7 +228,7 @@ $this->params['breadcrumbs'][] = [
 		</div>
 	</section>
 	<!-- start example -->
-    <?= $this->render('../section/_example.php');?>
+    <?= $this->render('../section/_example.php', compact('project'));?>
 	<!-- end example -->
     <!-- start review -->
     <?= $this->render('../section/_review.php', compact('reviews')); ?>
