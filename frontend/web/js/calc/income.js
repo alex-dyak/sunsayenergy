@@ -89,9 +89,9 @@ var F           = null,
     chartOption = {
 		layout: {
 			padding: {
-				left : 10,
-				right: 10,
-				top  : 50
+				left : 0,
+				right: 0,
+				top  : 0
 			}
 		},
 		legend: {
@@ -129,7 +129,7 @@ var F           = null,
 				ctx.moveTo(x, yPoint);
 				ctx.lineTo(x, bottomY);
 				ctx.lineWidth   = 3;
-				ctx.strokeStyle = '#808080';
+				ctx.strokeStyle = '#B7D3F7';
 				ctx.stroke();
 				ctx.restore();
 			}
@@ -137,7 +137,7 @@ var F           = null,
 	}],
 	chartDataSetStyle = [
 		{
-			backgroundColor: ['#c7c9c7'],
+			backgroundColor: ['#B7D3F7'],
 			borderColor    : ['transparent'],
 			borderWidth    : 0,
 			pointRadius    : 0,
@@ -355,7 +355,7 @@ const createGraphic = (canvas, house, power) => {
 
 Chart.elements.Line.prototype.draw = function () {
 	this._chart.ctx.save();
-	this._chart.ctx.strokeStyle = '#808080';
+	this._chart.ctx.strokeStyle = '#B7D3F7';
 
 	let points  = this._chart.getDatasetMeta(0).data,
 	    point_x = points[points.length - 1]._model.x,
@@ -369,7 +369,7 @@ Chart.elements.Line.prototype.draw = function () {
 	this._chart.ctx.moveTo(point_x, point_y);
 	this._chart.ctx.lineTo(point_x, bottom);
 
-	this._chart.ctx.fillStyle = '#808080';
+	this._chart.ctx.fillStyle = '#393939';
 
 	if ($(window).width() < 420) {
 		this._chart.ctx.font = '500 12px "Montserrat", sans-serif';
@@ -406,10 +406,10 @@ const updateChart = (chart, paybackYears, chartIncomes, toolTipIncomes) => {
 		backgroundColor: 'transparent',
 		titleFontFamily: '"Montserrat", sans-serif',
 		titleFontSize: 16,
-		titleFontColor: '#808080',
+		titleFontColor: '#393939',
 		bodyFontFamily: '"Montserrat", sans-serif',
 		bodyFontSize: 16,
-		bodyFontColor: '#808080',
+		bodyFontColor: '#393939',
 		yAlign: 'bottom',
 		yPadding: 0,
 		callbacks: {

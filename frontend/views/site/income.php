@@ -20,8 +20,8 @@ $this->params['breadcrumbs'][] = [
     ]); ?>
 	</div>
 	<section class="service-section">
-		<div class="hero-block">
-			<div class="container">
+		<div class="container">
+			<div class="hero-block">
 				<div class="title">
 					<h1><?= BaseController::getMessage('197') ?></h1>
 				</div>
@@ -29,8 +29,8 @@ $this->params['breadcrumbs'][] = [
 					<img src="/img/house-1.png" alt="<?= BaseController::getMessage('197') ?>" srcset="/img/house-1-mob.png 1024w, /img/house-1.png 1366w">
 				</div>
 				<div class="description"><?= BaseController::getMessage('200') ?></div>
-				<span class="hero-yellow-circle"></span>
 			</div>
+			<span class="hero-yellow-circle"></span>
 		</div>
 		<div class="container">
 			<div class="service-pros-block">
@@ -55,14 +55,11 @@ $this->params['breadcrumbs'][] = [
 		</div>
 	</section>
 
-
     <section class="section service-miscount">
 		<div class="container">
+			<h2 class="line-title"><?= BaseController::getMessage('254') ?></h2>
 			<div class="service-miscount__content">
 				<div class="service-miscount__content-calculation">
-					<div class="title">
-						<h2 class="line-title"><?= BaseController::getMessage('254') ?></h2>
-					</div>
 					<div class="description"><?= BaseController::getMessage('257') ?></div>
 					<div class="calculation-form">
 						<div class="form-group">
@@ -83,24 +80,143 @@ $this->params['breadcrumbs'][] = [
 						</div>
 					</div>
 					<div class="result">
-                        <?= BaseController::getMessage('261') ?>
-						<span><span class="result-value"></span></span>
+                        <b>
+							<?= BaseController::getMessage('261') ?>
+							<span class="result-value"></span>
+						</b>
 					</div>
 					<div class="income">
-                        <?= BaseController::getMessage('262') ?>
+						<span><?= BaseController::getMessage('262') ?></span>
 						<span class="income-value"></span>
-                        <?= BaseController::getMessage('264') ?>
+						<span><?= BaseController::getMessage('264') ?></span>
 					</div>
 				</div>
 				<div class="service-miscount__content-graphic">
-					<span class="service-miscount__content-graphic__title"><?= BaseController::getMessage('265') ?><p><?= BaseController::getMessage('267') ?></p></span>
+					<div class="service-miscount__content-graphic__title">
+						<strong><?= BaseController::getMessage('265') ?></strong>
+						<p><?= BaseController::getMessage('267') ?></p>
+					</div>
 					<canvas id="income-graphic"></canvas>
 				</div>
 			</div>
 		</div>
     </section>
 
-	<section class="section service-equipment" id="equipment">
+	<div class="service-banner">
+		<div class="left-banner-img">
+			<img src="/img/services/man-1.png" alt="">
+		</div>
+		<div class="right-banner-img">
+			<img src="/img/services/dron.png" alt="">
+		</div>
+		<div class="text-wrap">
+			<p><?= BaseController::getMessage('486') ?></p>
+			<a href="#connect" class="button consult-btn"><?= BaseController::getMessage('487') ?></a>
+		</div>
+	</div>
+	<section class="equipment-section" id="equipment">
+		<div class="container">
+			<h2 class="line-title"><?= BaseController::getMessage('203') ?></h2>
+			<div class="equipment-wrap">
+				<div class="equipment-nav">
+					<div class="nav-slide">
+						<span><?= BaseController::getMessage('204') ?></span>
+					</div>
+					<div class="nav-slide" >
+						<span><?= BaseController::getMessage('205') ?></span>
+					</div>
+					<div class="nav-slide">
+						<span><?= BaseController::getMessage('206') ?></span>
+					</div>
+				</div>
+				<div class="equipment-slider">
+					<div class="equipment-slide">
+						<div class="equipment-text">
+							<p><?= BaseController::getMessage('208') ?></p>
+						</div>
+						<div class="equipment-carousel equipment-slick">
+							<div class="equipment-carousel-item">
+								<div class="image-background">
+									<div class="image" style="background-image: url('/img/types/SolarEdge.png')"></div>
+									<div class="text">
+										<?= BaseController::getMessage('189') ?>
+									</div>
+								</div>
+							</div>
+							<div class="equipment-carousel-item">
+								<div class="image-background">
+									<div class="image" style="background-image: url('/img/types/Huawei.png')"></div>
+									<div class="text">
+										<?= BaseController::getMessage('191') ?>
+									</div>
+								</div>
+							</div>
+							<div class="equipment-carousel-item">
+								<div class="image-background">
+									<div class="image" style="background-image: url('/img/types/Fronius.png')"></div>
+									<div class="text">
+										<?= BaseController::getMessage('193') ?>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="equipment-slide">
+						<div class="equipment-text">
+							<p><?= BaseController::getMessage('210') ?></p>
+						</div>
+						<div class="equipment-carousel pannel-slick">
+							<div class="equipment-carousel-item">
+								<div class="image-background">
+									<div class="image" style="background-image: url('/img/types/Jinko.png')"></div>
+									<div class="text">
+										<?= BaseController::getMessage('194') ?>
+									</div>
+								</div>
+							</div>
+							<div class="equipment-carousel-item">
+								<div class="image-background">
+									<div class="image" style="background-image: url('/img/types/Qcell.png')"></div>
+									<div class="text">
+										<?= BaseController::getMessage('195') ?>
+									</div>
+								</div>
+							</div>
+							<div class="equipment-carousel-item">
+								<div class="image-background">
+									<div class="image" style="background-image: url('/img/types/Longi.png')"></div>
+									<div class="text">
+										<?= BaseController::getMessage('198') ?>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="equipment-slide">
+						<div class="equipment-text">
+							<p><?= BaseController::getMessage('212') ?></p>
+						</div>
+						<div class="equipment-carousel equipment-slick">
+							<div class="equipment-carousel-item">
+								<div class="image-background">
+									<div class="image" style="background-image: url('/img/services/2_3.png')"></div>
+									<div class="text">
+                                        <?= BaseController::getMessage('189') ?>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+
+
+<!--	<section class="section service-equipment" >
 		<div class="service-equipment__content">
 			<div class="service-equipment__content-image service-image">
 				<img data-src="/img/services/2_1.jpg" alt="Обладнання"
@@ -108,61 +224,61 @@ $this->params['breadcrumbs'][] = [
 			</div>
 			<div class="service-equipment__content-info">
 				<div class="title">
-					<h2><?= BaseController::getMessage('203') ?></h2>
+					<h2><?/*= BaseController::getMessage('203') */?></h2>
 				</div>
 				<div class="tabs tabs-equipment">
 					<div class="tabs__list">
 						<div class="tabs__list-item active" data-tab="1" data-image-desktop="/img/services/2_1.jpg" data-image-srcset="/img/services/2_1_m.jpg 1024w, /img/services/2_1.jpg 1366w">
-							<span><?= BaseController::getMessage('204') ?></span>
+							<span><?/*= BaseController::getMessage('204') */?></span>
 						</div>
 						<div class="tabs__list-item" data-tab="2" data-image-desktop="/img/services/2_2.jpg" data-image-srcset="/img/services/2_2_m.jpg 1024w, /img/services/2_2.jpg 1366w">
-							<span><?= BaseController::getMessage('205') ?></span>
+							<span><?/*= BaseController::getMessage('205') */?></span>
 						</div>
 						<div class="tabs__list-item" data-tab="3" data-image-desktop="/img/services/2_3.jpg" data-image-srcset="/img/services/2_3_m.jpg 1024w, /img/services/2_3.jpg 1366w">
-							<span><?= BaseController::getMessage('206') ?></span>
+							<span><?/*= BaseController::getMessage('206') */?></span>
 						</div>
 					</div>
 					<div class="tabs__content">
 						<div class="tabs__content-item active" data-id="1">
-							<div class="message"><?= BaseController::getMessage('208') ?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+							<div class="message"><?/*= BaseController::getMessage('208') */?></div>
+							<div class="more"><a class="btn btn-secondary" href="<?/*= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); */?>"><?/*= BaseController::getMessage('18') */?></a></div>
 						</div>
 						<div class="tabs__content-item" data-id="2">
-							<div class="message"><?= BaseController::getMessage('210') ?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+							<div class="message"><?/*= BaseController::getMessage('210') */?></div>
+							<div class="more"><a class="btn btn-secondary" href="<?/*= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); */?>"><?/*= BaseController::getMessage('18') */?></a></div>
 						</div>
 						<div class="tabs__content-item" data-id="3">
-							<div class="message"><?= BaseController::getMessage('212') ?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+							<div class="message"><?/*= BaseController::getMessage('212') */?></div>
+							<div class="more"><a class="btn btn-secondary" href="<?/*= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); */?>"><?/*= BaseController::getMessage('18') */?></a></div>
 						</div>
 					</div>
 				</div>
 				<div class="slider-equipment">
 					<div class="slider-equipment__list">
-						<div class="slider-equipment__list-item"><span><?= BaseController::getMessage('204') ?></span></div>
-						<div class="slider-equipment__list-item"><span><?= BaseController::getMessage('205') ?></span></div>
-						<div class="slider-equipment__list-item"><span><?= BaseController::getMessage('206') ?></span></div>
+						<div class="slider-equipment__list-item"><span><?/*= BaseController::getMessage('204') */?></span></div>
+						<div class="slider-equipment__list-item"><span><?/*= BaseController::getMessage('205') */?></span></div>
+						<div class="slider-equipment__list-item"><span><?/*= BaseController::getMessage('206') */?></span></div>
 					</div>
 					<div class="slider-equipment__content">
 						<div class="slider-equipment__content-item">
-							<div class="message"><?= BaseController::getMessage('208') ?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+							<div class="message"><?/*= BaseController::getMessage('208') */?></div>
+							<div class="more"><a class="btn btn-secondary" href="<?/*= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); */?>"><?/*= BaseController::getMessage('18') */?></a></div>
 							<div class="image">
 								<img data-src="/img/services/2_1.jpg" alt="Обладнання"
 								data-srcset="/img/services/2_1_m.jpg 1024w, /img/services/2_1.jpg 1366w">
 							</div>
 						</div>
 						<div class="slider-equipment__content-item">
-							<div class="message"><?= BaseController::getMessage('210') ?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+							<div class="message"><?/*= BaseController::getMessage('210') */?></div>
+							<div class="more"><a class="btn btn-secondary" href="<?/*= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); */?>"><?/*= BaseController::getMessage('18') */?></a></div>
 							<div class="image">
 								<img data-src="/img/services/2_2.jpg" alt="Обладнання"
 								data-srcset="/img/services/2_2_m.jpg 1024w, /img/services/2_2.jpg 1366w">
 							</div>
 						</div>
 						<div class="slider-equipment__content-item">
-							<div class="message"><?= BaseController::getMessage('212') ?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); ?>"><?= BaseController::getMessage('18') ?></a></div>
+							<div class="message"><?/*= BaseController::getMessage('212') */?></div>
+							<div class="more"><a class="btn btn-secondary" href="<?/*= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); */?>"><?/*= BaseController::getMessage('18') */?></a></div>
 							<div class="image">
 								<img data-src="/img/services/2_3.jpg" alt="Обладнання"
 								data-srcset="/img/services/2_3_m.jpg 1024w, /img/services/2_3.jpg 1366w">
@@ -172,51 +288,87 @@ $this->params['breadcrumbs'][] = [
 				</div>
 			</div>
 		</div>
-	</section>
+	</section>-->
     <!-- start work -->
     <?= $this->render('../section/_work.php'); ?>
     <!-- end work -->
 
-	<section class="section service-types">
+	<div class="service-types-section">
+		<div class="container">
+			<div class="service-types-wrap">
+				<div class="serice-nav-wrap">
+					<h2 class="line-title"><?= BaseController::getMessage('149') ?></h2>
+					<div class="service-types-nav">
+						<div class="nav-slide"><span><?= BaseController::getMessage('269') ?></span></div>
+						<div class="nav-slide"><span><?= BaseController::getMessage('270') ?></span></div>
+						<div class="nav-slide"><span><?= BaseController::getMessage('271') ?></span></div>
+					</div>
+				</div>
+
+				<div class="service-types-slider">
+					<div class="service-slide">
+						<div class="text-wrap">
+							<p class="text"><?= BaseController::getMessage('273') ?></p>
+						</div>
+						<div class="image" style="background-image: url('/img/services/3_1.png')"></div>
+					</div>
+					<div class="service-slide">
+						<div class="text-wrap">
+							<p class="text"><?= BaseController::getMessage('278') ?></p>
+						</div>
+						<div class="image" style="background-image: url('/img/services/3_2.png')"></div>
+					</div>
+					<div class="service-slide">
+						<div class="text-wrap">
+							<p class="text"><?= BaseController::getMessage('280') ?></p>
+						</div>
+						<div class="image" style="background-image: url('/img/services/3_3.png')"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--	<section class="section service-types">
 		<div class="service-types__content">
 			<div class="service-types__content-info">
 				<div class="title">
-					<h2><?= BaseController::getMessage('149') ?></h2>
+					<h2><?/*= BaseController::getMessage('149') */?></h2>
 				</div>
 				<div class="tabs tabs-types">
 					<div class="tabs__list">
 						<div class="tabs__list-item active" data-tab="1" data-image-desktop="/img/services/3_1.jpg"
-							data-image-srcset="/img/services/3_1_m.jpg 1024w, /img/services/3_1.jpg 1366w"><span><?= BaseController::getMessage('269') ?></span></div>
-						<div class="tabs__list-item" data-tab="2" data-image-desktop="/img/services/3_2.jpg" data-image-srcset="/img/services/3_2_m.jpg 1024w, /img/services/3_2.jpg 1366w"><span><?= BaseController::getMessage('270') ?></span></div>
-						<div class="tabs__list-item" data-tab="3" data-image-desktop="/img/services/3_3.jpg" data-image-srcset="/img/services/3_3_m.jpg 1024w, /img/services/3_3.jpg 1366w"><span><?= BaseController::getMessage('271') ?></span></div>
+							data-image-srcset="/img/services/3_1_m.jpg 1024w, /img/services/3_1.jpg 1366w"><span><?/*= BaseController::getMessage('269') */?></span></div>
+						<div class="tabs__list-item" data-tab="2" data-image-desktop="/img/services/3_2.jpg" data-image-srcset="/img/services/3_2_m.jpg 1024w, /img/services/3_2.jpg 1366w"><span><?/*= BaseController::getMessage('270') */?></span></div>
+						<div class="tabs__list-item" data-tab="3" data-image-desktop="/img/services/3_3.jpg" data-image-srcset="/img/services/3_3_m.jpg 1024w, /img/services/3_3.jpg 1366w"><span><?/*= BaseController::getMessage('271') */?></span></div>
 					</div>
 					<div class="tabs__content">
-						<div class="tabs__content-item active" data-id="1"><?= BaseController::getMessage('273') ?></div>
-						<div class="tabs__content-item" data-id="2"><?= BaseController::getMessage('278') ?></div>
-						<div class="tabs__content-item" data-id="3"><?= BaseController::getMessage('280') ?></div>
+						<div class="tabs__content-item active" data-id="1"><?/*= BaseController::getMessage('273') */?></div>
+						<div class="tabs__content-item" data-id="2"><?/*= BaseController::getMessage('278') */?></div>
+						<div class="tabs__content-item" data-id="3"><?/*= BaseController::getMessage('280') */?></div>
 					</div>
 				</div>
 				<div class="slider-types">
 					<div class="slider-types__list">
-						<div class="slider-types__list-item active" data-tab="1"><span><?= BaseController::getMessage('269') ?></span></div>
-						<div class="slider-types__list-item" data-tab="2"><span><?= BaseController::getMessage('270') ?></span></div>
-						<div class="slider-types__list-item" data-tab="3"><span><?= BaseController::getMessage('271') ?></span></div>
+						<div class="slider-types__list-item active" data-tab="1"><span><?/*= BaseController::getMessage('269') */?></span></div>
+						<div class="slider-types__list-item" data-tab="2"><span><?/*= BaseController::getMessage('270') */?></span></div>
+						<div class="slider-types__list-item" data-tab="3"><span><?/*= BaseController::getMessage('271') */?></span></div>
 					</div>
 					<div class="slider-types__content">
 						<div class="slider-types__content-item active" data-id="1">
-							<div class="message"><?= BaseController::getMessage('273') ?></div>
+							<div class="message"><?/*= BaseController::getMessage('273') */?></div>
 							<div class="image">
 								<img data-src="/img/services/3_1.jpg" alt="Сервіс" srcset="/img/services/3_1_m.jpg 1024w, /img/services/3_1.jpg 1366w">
 							</div>
 						</div>
 						<div class="slider-types__content-item" data-id="2">
-							<div class="message"><?= BaseController::getMessage('278') ?></div>
+							<div class="message"><?/*= BaseController::getMessage('278') */?></div>
 							<div class="image">
 								<img data-src="/img/services/3_2.jpg" alt="Сервіс" srcset="/img/services/3_2_m.jpg 1024w, /img/services/3_2.jpg 1366w">
 							</div>
 						</div>
 						<div class="slider-types__content-item" data-id="3">
-							<div class="message"><?= BaseController::getMessage('280') ?></div>
+							<div class="message"><?/*= BaseController::getMessage('280') */?></div>
 							<div class="image">
 								<img data-src="/img/services/3_3.jpg" alt="Сервіс" srcset="/img/services/3_3_m.jpg 1024w, /img/services/3_3.jpg 1366w">
 							</div>
@@ -226,10 +378,7 @@ $this->params['breadcrumbs'][] = [
 			</div>
 			<div class="service-types__content-image service-image"><img data-src="/img/services/3_1.jpg" alt="Сервіс" data-srcset="/img/services/3_1_m.jpg 1024w, /img/services/3_1.jpg 1366w"></div>
 		</div>
-	</section>
-	<!-- start example -->
-    <?= $this->render('../section/_example.php', compact('project'));?>
-	<!-- end example -->
+	</section>-->
     <!-- start review -->
     <?= $this->render('../section/_review.php', compact('reviews')); ?>
     <!-- end review -->

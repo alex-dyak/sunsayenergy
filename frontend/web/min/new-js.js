@@ -119,9 +119,173 @@ $(document).ready(function(){
     initLoadMore ($('.load-approach'), 3, 3);
     initLoadMore ($('.load-technology'), 3, 3);
     headerBg();
-    initSlickPrice();
-    initSlickWork();
     loadPros();
+
+    if($('.price-slider').length) {
+        $('.price-slider').slick({
+            slidesToScroll: 1,
+            rows: 0,
+            slidesToShow: 3,
+            arrows: false,
+            dots: false,
+            infinite: false,
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    dots: true,
+                    dotsClass: 'slick-dots'
+                }
+            }]
+        });
+    }
+    if($('.work-stages-slider').length) {
+        $('.work-stages-slider').slick({
+            slidesToScroll: 1,
+            rows: 0,
+            slidesToShow: 3,
+            arrows: false,
+            dots: false,
+            infinite: false,
+            responsive: [{
+                breakpoint: 1023,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 2,
+                    dots: true,
+                    dotsClass: 'slick-dots'
+                }
+            },{
+                breakpoint: 767,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    adaptiveHeight: true,
+                    dots: true,
+                    dotsClass: 'slick-dots'
+                },
+
+            }]
+        });
+    }
+    if($('.equipment-nav').length) {
+        $('.equipment-nav').slick({
+            slidesToScroll: 1,
+            slidesToShow: 3,
+            rows: 0,
+            arrows: false,
+            dots: false,
+            infinite: false,
+            variableWidth: true,
+            asNavFor: '.equipment-slider',
+            focusOnSelect: true,
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: "0",
+                },
+            }]
+        });
+    }
+    if($('.equipment-slider').length) {
+        $('.equipment-slider').slick({
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            rows: 0,
+            arrows: false,
+            dots: false,
+            infinite: false,
+            swipe: false,
+            touchMove: false,
+            focusOnSelect: true,
+            asNavFor: '.equipment-nav'
+        });
+    }
+    if($('.equipment-slick').length) {
+        $('.equipment-slick').slick({
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            rows: 0,
+            nextArrow: '<div class="next-arrow"><img src="/img/icon/Arrow.svg" alt="next" /></div>',
+            prevArrow: '<div class="prev-arrow"><img src="/img/icon/Arrow.svg" alt="prev" /></div>',
+            dots: false,
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    dotsClass: 'slick-dots'
+                },
+
+            }]
+        });
+    }
+    if($('.pannel-slick').length) {
+        $('.pannel-slick').slick({
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            rows: 0,
+            nextArrow: '<div class="next-arrow"><img src="/img/icon/Arrow.svg" alt="next" /></div>',
+            prevArrow: '<div class="prev-arrow"><img src="/img/icon/Arrow.svg" alt="prev" /></div>',
+            dots: false,
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    dotsClass: 'slick-dots'
+                },
+
+            }]
+        });
+    }
+    if($('.service-types-nav').length) {
+        $('.service-types-nav').slick({
+            slidesToScroll: 1,
+            slidesToShow: 3,
+            rows: 0,
+            arrows: false,
+            dots: false,
+            infinite: false,
+            variableWidth: true,
+            asNavFor: '.service-types-slider',
+            focusOnSelect: true,
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: "0",
+                },
+            }]
+        });
+    }
+    if($('.service-types-slider').length) {
+        $('.service-types-slider').slick({
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            rows: 0,
+            arrows: false,
+            dots: false,
+            swipe: false,
+            touchMove: false,
+            fade: true,
+            focusOnSelect: true,
+            asNavFor: '.service-types-nav',
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    arrows: false,
+                    adaptiveHeight: true,
+                    dots: true,
+                    dotsClass: 'slick-dots'
+                }
+            }]
+        });
+    }
 });
 var lastWidth = $(window).width();
 $(window).resize(function() {
@@ -135,14 +299,12 @@ $(window).resize(function() {
         loadPros();
     }
 
+    initSlickEquipmentList();
 });
-
 
 $(window).scroll(function() {
     headerBg();
 });
-
-
 
 var scrollPrev = 0;
 $(window).scroll(function() {
@@ -222,54 +384,7 @@ function headerBg() {
     }
 }
 
-function initSlickPrice() {
-    $('.price-slider').slick({
-        slidesToScroll: 1,
-        rows: 0,
-        slidesToShow: 3,
-        arrows: false,
-        dots: false,
-        infinite: false,
-        responsive: [{
-            breakpoint: 767,
-            settings: {
-                slidesToScroll: 1,
-                slidesToShow: 1,
-                dots: true,
-                dotsClass: 'slick-dots'
-            }
-        }]
-    });
-}
-function initSlickWork() {
-    $('.work-stages-slider').slick({
-        slidesToScroll: 1,
-        rows: 0,
-        slidesToShow: 3,
-        arrows: false,
-        dots: false,
-        infinite: false,
-        responsive: [{
-            breakpoint: 1023,
-            settings: {
-                slidesToScroll: 1,
-                slidesToShow: 2,
-                dots: true,
-                dotsClass: 'slick-dots'
-            }
-        },{
-            breakpoint: 767,
-            settings: {
-                slidesToScroll: 1,
-                slidesToShow: 1,
-                adaptiveHeight: true,
-                dots: true,
-                dotsClass: 'slick-dots'
-            },
 
-        }]
-    });
-}
 
 function loadPros() {
     if($('.pros-list').length && window.matchMedia("(max-width: 767px)").matches) {
