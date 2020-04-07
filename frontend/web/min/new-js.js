@@ -242,6 +242,25 @@ $(document).ready(function(){
             }]
         });
     }
+    if($('.mount-slick').length) {
+        $('.mount-slick').slick({
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            rows: 0,
+            nextArrow: '<div class="next-arrow"><img src="/img/icon/Arrow.svg" alt="next" /></div>',
+            prevArrow: '<div class="prev-arrow"><img src="/img/icon/Arrow.svg" alt="prev" /></div>',
+            dots: false,
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    dotsClass: 'slick-dots'
+                },
+
+            }]
+        });
+    }
     if($('.service-types-nav').length) {
         $('.service-types-nav').slick({
             slidesToScroll: 1,
@@ -287,6 +306,7 @@ $(document).ready(function(){
         });
     }
 });
+
 var lastWidth = $(window).width();
 $(window).resize(function() {
     if($(window).width()!=lastWidth){
@@ -298,8 +318,6 @@ $(window).resize(function() {
         lastWidth = $(window).width();
         loadPros();
     }
-
-    initSlickEquipmentList();
 });
 
 $(window).scroll(function() {
@@ -383,8 +401,6 @@ function headerBg() {
         $('.header').removeClass('scrolled');
     }
 }
-
-
 
 function loadPros() {
     if($('.pros-list').length && window.matchMedia("(max-width: 767px)").matches) {

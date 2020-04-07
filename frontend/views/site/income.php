@@ -196,7 +196,7 @@ $this->params['breadcrumbs'][] = [
 						<div class="equipment-text">
 							<p><?= BaseController::getMessage('212') ?></p>
 						</div>
-						<div class="equipment-carousel equipment-slick">
+						<div class="equipment-carousel mount-slick">
 							<div class="equipment-carousel-item">
 								<div class="image-background">
 									<div class="image" style="background-image: url('/img/services/2_3.png')"></div>
