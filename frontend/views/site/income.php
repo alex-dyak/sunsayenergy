@@ -199,7 +199,7 @@ $this->params['breadcrumbs'][] = [
 						<div class="equipment-carousel mount-slick">
 							<div class="equipment-carousel-item">
 								<div class="image-background">
-									<div class="image" style="background-image: url('/img/services/2_3.png')"></div>
+									<div class="image" style="background-image: url('/img/services/solar-panel.png')"></div>
 								</div>
 							</div>
 						</div>
@@ -208,84 +208,7 @@ $this->params['breadcrumbs'][] = [
 
 			</div>
 		</div>
-
 	</section>
-
-
-
-<!--	<section class="section service-equipment" >
-		<div class="service-equipment__content">
-			<div class="service-equipment__content-image service-image">
-				<img data-src="/img/services/2_1.jpg" alt="Обладнання"
-					data-srcset="/img/services/2_1_m.jpg 1024w, /img/services/2_1.jpg 1366w">
-			</div>
-			<div class="service-equipment__content-info">
-				<div class="title">
-					<h2><?/*= BaseController::getMessage('203') */?></h2>
-				</div>
-				<div class="tabs tabs-equipment">
-					<div class="tabs__list">
-						<div class="tabs__list-item active" data-tab="1" data-image-desktop="/img/services/2_1.jpg" data-image-srcset="/img/services/2_1_m.jpg 1024w, /img/services/2_1.jpg 1366w">
-							<span><?/*= BaseController::getMessage('204') */?></span>
-						</div>
-						<div class="tabs__list-item" data-tab="2" data-image-desktop="/img/services/2_2.jpg" data-image-srcset="/img/services/2_2_m.jpg 1024w, /img/services/2_2.jpg 1366w">
-							<span><?/*= BaseController::getMessage('205') */?></span>
-						</div>
-						<div class="tabs__list-item" data-tab="3" data-image-desktop="/img/services/2_3.jpg" data-image-srcset="/img/services/2_3_m.jpg 1024w, /img/services/2_3.jpg 1366w">
-							<span><?/*= BaseController::getMessage('206') */?></span>
-						</div>
-					</div>
-					<div class="tabs__content">
-						<div class="tabs__content-item active" data-id="1">
-							<div class="message"><?/*= BaseController::getMessage('208') */?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?/*= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); */?>"><?/*= BaseController::getMessage('18') */?></a></div>
-						</div>
-						<div class="tabs__content-item" data-id="2">
-							<div class="message"><?/*= BaseController::getMessage('210') */?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?/*= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); */?>"><?/*= BaseController::getMessage('18') */?></a></div>
-						</div>
-						<div class="tabs__content-item" data-id="3">
-							<div class="message"><?/*= BaseController::getMessage('212') */?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?/*= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); */?>"><?/*= BaseController::getMessage('18') */?></a></div>
-						</div>
-					</div>
-				</div>
-				<div class="slider-equipment">
-					<div class="slider-equipment__list">
-						<div class="slider-equipment__list-item"><span><?/*= BaseController::getMessage('204') */?></span></div>
-						<div class="slider-equipment__list-item"><span><?/*= BaseController::getMessage('205') */?></span></div>
-						<div class="slider-equipment__list-item"><span><?/*= BaseController::getMessage('206') */?></span></div>
-					</div>
-					<div class="slider-equipment__content">
-						<div class="slider-equipment__content-item">
-							<div class="message"><?/*= BaseController::getMessage('208') */?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?/*= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); */?>"><?/*= BaseController::getMessage('18') */?></a></div>
-							<div class="image">
-								<img data-src="/img/services/2_1.jpg" alt="Обладнання"
-								data-srcset="/img/services/2_1_m.jpg 1024w, /img/services/2_1.jpg 1366w">
-							</div>
-						</div>
-						<div class="slider-equipment__content-item">
-							<div class="message"><?/*= BaseController::getMessage('210') */?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?/*= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); */?>"><?/*= BaseController::getMessage('18') */?></a></div>
-							<div class="image">
-								<img data-src="/img/services/2_2.jpg" alt="Обладнання"
-								data-srcset="/img/services/2_2_m.jpg 1024w, /img/services/2_2.jpg 1366w">
-							</div>
-						</div>
-						<div class="slider-equipment__content-item">
-							<div class="message"><?/*= BaseController::getMessage('212') */?></div>
-							<div class="more"><a class="btn btn-secondary" href="<?/*= \yii\helpers\Url::to(['/types-of-solar-power-plants#network']); */?>"><?/*= BaseController::getMessage('18') */?></a></div>
-							<div class="image">
-								<img data-src="/img/services/2_3.jpg" alt="Обладнання"
-								data-srcset="/img/services/2_3_m.jpg 1024w, /img/services/2_3.jpg 1366w">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>-->
     <!-- start work -->
     <?= $this->render('../section/_work.php'); ?>
     <!-- end work -->
@@ -327,56 +250,6 @@ $this->params['breadcrumbs'][] = [
 		</div>
 	</div>
 
-<!--	<section class="section service-types">
-		<div class="service-types__content">
-			<div class="service-types__content-info">
-				<div class="title">
-					<h2><?/*= BaseController::getMessage('149') */?></h2>
-				</div>
-				<div class="tabs tabs-types">
-					<div class="tabs__list">
-						<div class="tabs__list-item active" data-tab="1" data-image-desktop="/img/services/3_1.jpg"
-							data-image-srcset="/img/services/3_1_m.jpg 1024w, /img/services/3_1.jpg 1366w"><span><?/*= BaseController::getMessage('269') */?></span></div>
-						<div class="tabs__list-item" data-tab="2" data-image-desktop="/img/services/3_2.jpg" data-image-srcset="/img/services/3_2_m.jpg 1024w, /img/services/3_2.jpg 1366w"><span><?/*= BaseController::getMessage('270') */?></span></div>
-						<div class="tabs__list-item" data-tab="3" data-image-desktop="/img/services/3_3.jpg" data-image-srcset="/img/services/3_3_m.jpg 1024w, /img/services/3_3.jpg 1366w"><span><?/*= BaseController::getMessage('271') */?></span></div>
-					</div>
-					<div class="tabs__content">
-						<div class="tabs__content-item active" data-id="1"><?/*= BaseController::getMessage('273') */?></div>
-						<div class="tabs__content-item" data-id="2"><?/*= BaseController::getMessage('278') */?></div>
-						<div class="tabs__content-item" data-id="3"><?/*= BaseController::getMessage('280') */?></div>
-					</div>
-				</div>
-				<div class="slider-types">
-					<div class="slider-types__list">
-						<div class="slider-types__list-item active" data-tab="1"><span><?/*= BaseController::getMessage('269') */?></span></div>
-						<div class="slider-types__list-item" data-tab="2"><span><?/*= BaseController::getMessage('270') */?></span></div>
-						<div class="slider-types__list-item" data-tab="3"><span><?/*= BaseController::getMessage('271') */?></span></div>
-					</div>
-					<div class="slider-types__content">
-						<div class="slider-types__content-item active" data-id="1">
-							<div class="message"><?/*= BaseController::getMessage('273') */?></div>
-							<div class="image">
-								<img data-src="/img/services/3_1.jpg" alt="Сервіс" srcset="/img/services/3_1_m.jpg 1024w, /img/services/3_1.jpg 1366w">
-							</div>
-						</div>
-						<div class="slider-types__content-item" data-id="2">
-							<div class="message"><?/*= BaseController::getMessage('278') */?></div>
-							<div class="image">
-								<img data-src="/img/services/3_2.jpg" alt="Сервіс" srcset="/img/services/3_2_m.jpg 1024w, /img/services/3_2.jpg 1366w">
-							</div>
-						</div>
-						<div class="slider-types__content-item" data-id="3">
-							<div class="message"><?/*= BaseController::getMessage('280') */?></div>
-							<div class="image">
-								<img data-src="/img/services/3_3.jpg" alt="Сервіс" srcset="/img/services/3_3_m.jpg 1024w, /img/services/3_3.jpg 1366w">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="service-types__content-image service-image"><img data-src="/img/services/3_1.jpg" alt="Сервіс" data-srcset="/img/services/3_1_m.jpg 1024w, /img/services/3_1.jpg 1366w"></div>
-		</div>
-	</section>-->
     <!-- start review -->
     <?= $this->render('../section/_review.php', compact('reviews')); ?>
     <!-- end review -->
