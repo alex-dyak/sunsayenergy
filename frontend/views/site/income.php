@@ -200,9 +200,6 @@ $this->params['breadcrumbs'][] = [
 							<div class="equipment-carousel-item">
 								<div class="image-background">
 									<div class="image" style="background-image: url('/img/services/2_3.png')"></div>
-									<div class="text">
-                                        <?= BaseController::getMessage('189') ?>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -294,6 +291,7 @@ $this->params['breadcrumbs'][] = [
     <!-- end work -->
 
 	<div class="service-types-section">
+		<span class="circle"></span>
 		<div class="container">
 			<div class="service-types-wrap">
 				<div class="serice-nav-wrap">
@@ -310,19 +308,19 @@ $this->params['breadcrumbs'][] = [
 						<div class="text-wrap">
 							<p class="text"><?= BaseController::getMessage('273') ?></p>
 						</div>
-						<div class="image" style="background-image: url('/img/services/3_1.png')"></div>
+						<div class="image" style="background-image: url('/img/services/service-1.jpg')"></div>
 					</div>
 					<div class="service-slide">
 						<div class="text-wrap">
 							<p class="text"><?= BaseController::getMessage('278') ?></p>
 						</div>
-						<div class="image" style="background-image: url('/img/services/3_2.png')"></div>
+						<div class="image" style="background-image: url('/img/services/service-2.jpg')"></div>
 					</div>
 					<div class="service-slide">
 						<div class="text-wrap">
 							<p class="text"><?= BaseController::getMessage('280') ?></p>
 						</div>
-						<div class="image" style="background-image: url('/img/services/3_3.png')"></div>
+						<div class="image" style="background-image: url('/img/services/service-3.jpg')"></div>
 					</div>
 				</div>
 			</div>

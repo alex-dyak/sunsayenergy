@@ -200,6 +200,7 @@ $(document).ready(function(){
             infinite: false,
             swipe: false,
             touchMove: false,
+            adaptiveHeight: true,
             focusOnSelect: true,
             asNavFor: '.equipment-nav'
         });
@@ -253,9 +254,7 @@ $(document).ready(function(){
             responsive: [{
                 breakpoint: 767,
                 settings: {
-                    arrows: false,
-                    dots: true,
-                    dotsClass: 'slick-dots'
+                    arrows: false
                 },
 
             }]
