@@ -288,8 +288,8 @@ $(document).ready(function(){
             rows: 0,
             arrows: false,
             dots: false,
-            // swipe: false,
-            // touchMove: false,
+            swipe: false,
+            touchMove: false,
             fade: true,
             focusOnSelect: true,
             asNavFor: '.service-types-nav',
@@ -298,6 +298,8 @@ $(document).ready(function(){
                 settings: {
                     arrows: false,
                     adaptiveHeight: true,
+                    swipe: true,
+                    touchMove: true,
                     dots: true,
                     dotsClass: 'slick-dots'
                 }
