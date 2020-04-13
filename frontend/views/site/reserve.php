@@ -168,10 +168,10 @@ $this->params['breadcrumbs'][] = [
 							<span><?= BaseController::getMessage('145') ?></span>
 						</div>
 						<div class="nav-slide">
-							<span><?= BaseController::getMessage('147') ?></span>
+							<span><?= BaseController::getMessage('148') ?></span>
 						</div>
 						<div class="nav-slide">
-							<span><?= BaseController::getMessage('148') ?></span>
+							<span><?= BaseController::getMessage('147') ?></span>
 						</div>
 					</div>
 					<div class="equipment-slider">
@@ -223,18 +223,6 @@ $this->params['breadcrumbs'][] = [
 						</div>
 						<div class="equipment-slide">
 							<div class="equipment-text">
-								<p><?= BaseController::getMessage('164') ?></p>
-							</div>
-							<div class="equipment-carousel mount-slick">
-								<div class="equipment-carousel-item">
-									<div class="image-background">
-										<div class="image" style="background-image: url('/img/services/solar-panel.png')"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="equipment-slide">
-							<div class="equipment-text">
 								<p><?= BaseController::getMessage('170') ?></p>
 							</div>
 							<div class="equipment-carousel battery-slick">
@@ -252,6 +240,18 @@ $this->params['breadcrumbs'][] = [
 										<div class="text">
                                             <?= BaseController::getMessage('243') ?>
 										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="equipment-slide">
+							<div class="equipment-text">
+								<p><?= BaseController::getMessage('164') ?></p>
+							</div>
+							<div class="equipment-carousel mount-slick">
+								<div class="equipment-carousel-item">
+									<div class="image-background">
+										<div class="image" style="background-image: url('/img/services/solar-panel.png')"></div>
 									</div>
 								</div>
 							</div>
