@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = [
                 <div class="title">
 					<h1><?= BaseController::getMessage('74') ?></h1>
 				</div>
-				<div class="service-section-image square-img">
+				<div class="service-section-image">
 					<img src="/img/house-3.png" alt="<?= BaseController::getMessage('74') ?>" srcset="/img/house-3-mob.png 1024w, /img/house-3.png 1366w">
 				</div>
 				<div class="description"><?= BaseController::getMessage('75') ?></div>
@@ -57,13 +57,11 @@ $this->params['breadcrumbs'][] = [
     </section>
     <!-- end info -->
     <!-- start miscount -->
-    <section class="section service-miscount">
+    <section class="service-miscount miscount-icon">
 		<div class="container">
+			<h2 class="line-title"><?= BaseController::getMessage('116') ?></h2>
 			<div class="service-miscount__content">
 				<div class="service-miscount__content-calculation">
-					<div class="title">
-						<h2 class="line-title"><?= BaseController::getMessage('116') ?></h2>
-					</div>
 					<div class="description"><?= BaseController::getMessage('121') ?></div>
 					<div class="calculation-form">
 						<div class="form-group">
@@ -103,49 +101,49 @@ $this->params['breadcrumbs'][] = [
 					</div>
 				</div>
 				<div class="service-miscount__content-icons">
-					<div class="service-miscount__content-icons__title"><?= BaseController::getMessage('146') ?></div>
+					<strong class="service-miscount__content-icons__title"><?= BaseController::getMessage('146') ?></strong>
 					<div class="service-miscount__content-icons__list">
 						<div class="service-miscount__content-icons__list-item" data-icon="1">
-							<img data-src="/img/reserve/icons/1.svg" alt="">
+							<i class="icon-1"></i>
 						</div>
 						<div class="service-miscount__content-icons__list-item" data-icon="2">
-							<img data-src="/img/reserve/icons/2.svg" alt="">
+							<i class="icon-2"></i>
 						</div>
 						<div class="service-miscount__content-icons__list-item" data-icon="3">
-							<img data-src="/img/reserve/icons/3.svg" alt="">
+							<i class="icon-3"></i>
 						</div>
 						<div class="service-miscount__content-icons__list-item" data-icon="4">
-							<img data-src="/img/reserve/icons/4.svg" alt="">
+							<i class="icon-4"></i>
 						</div>
 						<div class="service-miscount__content-icons__list-item" data-icon="5">
-							<img data-src="/img/reserve/icons/5.svg" alt="">
+							<i class="icon-5"></i>
 						</div>
 						<div class="service-miscount__content-icons__list-item" data-icon="6">
-							<img data-src="/img/reserve/icons/6.svg" alt="">
+							<i class="icon-6"></i>
 						</div>
 						<div class="service-miscount__content-icons__list-item" data-icon="7">
-							<img data-src="/img/reserve/icons/7.svg" alt="">
+							<i class="icon-7"></i>
 						</div>
 						<div class="service-miscount__content-icons__list-item" data-icon="8">
-							<img data-src="/img/reserve/icons/8.svg" alt="">
+							<i class="icon-8"></i>
 						</div>
 						<div class="service-miscount__content-icons__list-item" data-icon="9">
-							<img data-src="/img/reserve/icons/9.svg" alt="">
+							<i class="icon-9"></i>
 						</div>
 						<div class="service-miscount__content-icons__list-item" data-icon="10">
-							<img data-src="/img/reserve/icons/10.svg" alt="">
+							<i class="icon-10"></i>
 						</div>
 						<div class="service-miscount__content-icons__list-item" data-icon="11">
-							<img data-src="/img/reserve/icons/11.svg" alt="">
+							<i class="icon-11"></i>
 						</div>
 						<div class="service-miscount__content-icons__list-item" data-icon="12">
-							<img data-src="/img/reserve/icons/12.svg" alt="">
+							<i class="icon-12"></i>
 						</div>
 						<div class="service-miscount__content-icons__list-item" data-icon="13">
-							<img data-src="/img/reserve/icons/13.svg" alt="">
+							<i class="icon-13"></i>
 						</div>
 						<div class="service-miscount__content-icons__list-item" data-icon="14">
-							<img data-src="/img/reserve/icons/14.svg" alt="">
+							<i class="icon-14"></i>
 						</div>
 					</div>
 				</div>
@@ -153,159 +151,125 @@ $this->params['breadcrumbs'][] = [
 		</div>
     </section>
     <!-- end miscount -->
-    <!-- start equipments -->
-    <section class="section service-equipment" id="equipment">
-        <div class="service-equipment__content">
-            <div class="service-equipment__content-image service-image">
-                <img data-src="/img/reserve/2_1.jpg" alt="Обладнання" data-srcset="/img/reserve/2_1_m.jpg 1024w, /img/reserve/2_1.jpg 1366w">
-            </div>
-            <div class="service-equipment__content-info">
-                <div class="title">
-                    <h2><?= BaseController::getMessage('91') ?></h2>
-                </div>
-                <div class="tabs tabs-equipment">
-                    <div class="tabs__list">
-                        <div class="tabs__list-item active" data-tab="1" data-image-desktop="/img/reserve/2_1.jpg" data-image-srcset="/img/reserve/2_1_m.jpg 1024w, /img/reserve/2_1.jpg 1366w">
-                            <span><?= BaseController::getMessage('92') ?></span>
-                        </div>
-                        <div class="tabs__list-item" data-tab="2" data-image-desktop="/img/reserve/2_2.jpg" data-image-srcset="/img/reserve/2_2_m.jpg 1024w, /img/reserve/2_2.jpg 1366w">
-                            <span><?= BaseController::getMessage('93') ?></span>
-                        </div>
-                        <div class="tabs__list-item" data-tab="3" data-image-desktop="/img/reserve/2_3.jpg" data-image-srcset="/img/reserve/2_3_m.jpg 1024w, /img/reserve/2_3.jpg 1366w">
-                            <span><?= BaseController::getMessage('94') ?></span>
-                        </div>
-                        <div class="tabs__list-item" data-tab="4" data-image-desktop="/img/reserve/2_4.jpg" data-image-srcset="/img/reserve/2_4_m.jpg 1024w, /img/reserve/2_4.jpg 1366w">
-                            <span><?= BaseController::getMessage('95') ?></span>
-                        </div>
-                    </div>
-                    <div class="tabs__content">
-                        <div class="tabs__content-item active" data-id="1">
-                            <div class="message"><?= BaseController::getMessage('96') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
-                        </div>
-                        <div class="tabs__content-item" data-id="2">
-                            <div class="message"><?= BaseController::getMessage('99') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
-                        </div>
-                        <div class="tabs__content-item" data-id="3">
-                            <div class="message"><?= BaseController::getMessage('102') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
-                        </div>
-                        <div class="tabs__content-item" data-id="4">
-                            <div class="message"><?= BaseController::getMessage('103') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-equipment">
-                    <div class="slider-equipment__list">
-                        <div class="slider-equipment__list-item"><span><?= BaseController::getMessage('92') ?></span></div>
-                        <div class="slider-equipment__list-item"><span><?= BaseController::getMessage('93') ?></span></div>
-                        <div class="slider-equipment__list-item"><span><?= BaseController::getMessage('94') ?></span></div>
-                        <div class="slider-equipment__list-item"><span><?= BaseController::getMessage('95') ?></span></div>
-                    </div>
-                    <div class="slider-equipment__content">
-                        <div class="slider-equipment__content-item">
-                            <div class="message"><?= BaseController::getMessage('96') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
-                            <div class="image">
-                                <img data-src="/img/reserve/2_1.jpg" alt="Обладнання" data-srcset="/img/reserve/2_1_m.jpg 1024w, /img/reserve/2_1.jpg 1366w">
-                            </div>
-                        </div>
-                        <div class="slider-equipment__content-item">
-                            <div class="message"><?= BaseController::getMessage('99') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
-                            <div class="image">
-                                <img data-src="/img/reserve/2_2.jpg" alt="Обладнання" data-srcset="/img/reserve/2_2_m.jpg 1024w, /img/reserve/2_2.jpg 1366w">
-                            </div>
-                        </div>
-                        <div class="slider-equipment__content-item">
-                            <div class="message"><?= BaseController::getMessage('102') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
-                            <div class="image">
-                                <img data-src="/img/reserve/2_3.jpg" alt="Обладнання" data-srcset="/img/reserve/2_3_m.jpg 1024w, /img/reserve/2_3.jpg 1366w">
-                            </div>
-                        </div>
-                        <div class="slider-equipment__content-item">
-                            <div class="message"><?= BaseController::getMessage('103') ?></div>
-                            <div class="more"><a class="btn btn-secondary" href="<?= \yii\helpers\Url::to(['/types-of-solar-power-plants#hybrid']); ?>"><?= BaseController::getMessage('18') ?></a></div>
-                            <div class="image">
-                                <img data-src="/img/reserve/2_4.jpg" alt="Обладнання" data-srcset="/img/reserve/2_4_m.jpg 1024w, /img/reserve/2_4.jpg 1366w">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end equipments -->
-    <!-- start work -->
-    <?= $this->render('../section/_work.php'); ?>
-    <!-- end work -->
-    <!-- start service -->
-    <section class="section service-types">
-        <div class="service-types__content">
-            <div class="service-types__content-info">
-                <div class="title">
-                    <h2><?= BaseController::getMessage('149') ?></h2>
-                </div>
-                <!-- start desktop service -->
-                <div class="tabs tabs-types">
-                    <div class="tabs__list">
-                        <div class="tabs__list-item active" data-tab="1" data-image-desktop="/img/reserve/3_1.jpg"
-                            data-image-srcset="/img/reserve/3_1_m.jpg 1024w, /img/reserve/3_1.jpg 1366w"><span><?= BaseController::getMessage('151') ?></span></div>
-                        <div class="tabs__list-item" data-tab="2" data-image-desktop="/img/reserve/3_2.jpg"
-                            data-image-srcset="/img/reserve/3_2_m.jpg 1024w, /img/reserve/3_2.jpg 1366w"><span><?= BaseController::getMessage('154') ?></span></div>
-                        <div class="tabs__list-item" data-tab="3" data-image-desktop="/img/reserve/3_3.jpg"
-                            data-image-srcset="/img/reserve/3_3_m.jpg 1024w, /img/reserve/3_3.jpg 1366w"><span><?= BaseController::getMessage('158') ?></span></div>
-                    </div>
-                    <div class="tabs__content">
-                        <div class="tabs__content-item active" data-id="1"><?= BaseController::getMessage('166') ?></div>
-                        <div class="tabs__content-item" data-id="2"><?= BaseController::getMessage('169') ?></div>
-                        <div class="tabs__content-item" data-id="3"><?= BaseController::getMessage('172') ?></div>
-                    </div>
-                </div>
-                <!-- end desktop service -->
-                <!-- start mobile service -->
-                <div class="slider-types">
-					<div class="slider-types__list">
-						<div class="slider-types__list-item active" data-tab="1"><span><?= BaseController::getMessage('151') ?></span></div>
-						<div class="slider-types__list-item" data-tab="2"><span><?= BaseController::getMessage('154') ?></span></div>
-						<div class="slider-types__list-item" data-tab="3"><span><?= BaseController::getMessage('158') ?></span></div>
+		<!-- start banner-->
+        <?= $this->render('../section/_service-banner.php'); ?>
+		<!-- end banner -->
+
+		<!-- start equipments -->
+		<section class="equipment-section" id="equipment">
+			<div class="container">
+				<h2 class="line-title"><?= BaseController::getMessage('139') ?></h2>
+				<div class="equipment-wrap">
+					<div class="equipment-nav">
+						<div class="nav-slide">
+							<span><?= BaseController::getMessage('142') ?></span>
+						</div>
+						<div class="nav-slide" >
+							<span><?= BaseController::getMessage('145') ?></span>
+						</div>
+						<div class="nav-slide">
+							<span><?= BaseController::getMessage('147') ?></span>
+						</div>
+						<div class="nav-slide">
+							<span><?= BaseController::getMessage('148') ?></span>
+						</div>
 					</div>
-					<div class="slider-types__content">
-						<div class="slider-types__content-item active" data-id="1">
-							<div class="message"><?= BaseController::getMessage('166') ?></div>
-							<div class="image">
-								<img data-src="/img/services/3_1.jpg" alt="Сервіс" data-srcset="/img/services/3_1_m.jpg 1024w, /img/services/3_1.jpg 1366w">
+					<div class="equipment-slider">
+						<div class="equipment-slide">
+							<div class="equipment-text">
+								<p><?= BaseController::getMessage('150') ?></p>
+							</div>
+							<div class="equipment-carousel equipment-slick">
+								<div class="equipment-carousel-item">
+									<div class="image-background">
+										<div class="image" style="background-image: url('/img/types/inv.png')"></div>
+										<div class="text">
+                                            <?= BaseController::getMessage('226') ?>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="slider-types__content-item" data-id="2">
-							<div class="message"><?= BaseController::getMessage('169') ?></div>
-							<div class="image">
-								<img data-src="/img/services/3_2.jpg" alt="Сервіс" data-srcset="/img/services/3_2_m.jpg 1024w, /img/services/3_2.jpg 1366w">
+						<div class="equipment-slide">
+							<div class="equipment-text">
+								<p><?= BaseController::getMessage('156') ?></p>
+							</div>
+							<div class="equipment-carousel pannel-slick">
+								<div class="equipment-carousel-item">
+									<div class="image-background">
+										<div class="image" style="background-image: url('/img/types/Jinko.png')"></div>
+										<div class="text">
+                                            <?= BaseController::getMessage('194') ?>
+										</div>
+									</div>
+								</div>
+								<div class="equipment-carousel-item">
+									<div class="image-background">
+										<div class="image" style="background-image: url('/img/types/Qcell.png')"></div>
+										<div class="text">
+                                            <?= BaseController::getMessage('195') ?>
+										</div>
+									</div>
+								</div>
+								<div class="equipment-carousel-item">
+									<div class="image-background">
+										<div class="image" style="background-image: url('/img/types/Longi.png')"></div>
+										<div class="text">
+                                            <?= BaseController::getMessage('198') ?>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="slider-types__content-item" data-id="3">
-							<div class="message"><?= BaseController::getMessage('172') ?></div>
-							<div class="image">
-								<img data-src="/img/services/3_3.jpg" alt="Сервіс" data-srcset="/img/services/3_3_m.jpg 1024w, /img/services/3_3.jpg 1366w">
+						<div class="equipment-slide">
+							<div class="equipment-text">
+								<p><?= BaseController::getMessage('164') ?></p>
+							</div>
+							<div class="equipment-carousel mount-slick">
+								<div class="equipment-carousel-item">
+									<div class="image-background">
+										<div class="image" style="background-image: url('/img/services/solar-panel.png')"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="equipment-slide">
+							<div class="equipment-text">
+								<p><?= BaseController::getMessage('170') ?></p>
+							</div>
+							<div class="equipment-carousel battery-slick">
+								<div class="equipment-carousel-item">
+									<div class="image-background">
+										<div class="image" style="background-image: url('/img/types/Victron.png')"></div>
+										<div class="text">
+                                            <?= BaseController::getMessage('237') ?>
+										</div>
+									</div>
+								</div>
+								<div class="equipment-carousel-item">
+									<div class="image-background">
+										<div class="image" style="background-image: url('/img/types/EverExceed.png')"></div>
+										<div class="text">
+                                            <?= BaseController::getMessage('243') ?>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-                <!-- end mobile service -->
-            </div>
-            <div class="service-types__content-image service-image"><img data-src="/img/reserve/3_1.jpg" alt="Сервіс" data-srcset="/img/reserve/3_1_m.jpg 1024w, /img/reserve/3_1.jpg 1366w"></div>
-        </div>
-    </section>
-    <!-- end service -->
-    <!-- start example -->
-    <?= $this->render('../section/_example.php', compact('project'));?>
-    <!-- end example -->
-    <!-- start review -->
-    <?= $this->render('../section/_review.php', compact('reviews')); ?>
-    <!-- end review -->
+			</div>
+
+		</section>
+		<!-- end equipments -->
+
+		<!-- start work -->
+        <?= $this->render('../section/_work.php'); ?>
+		<!-- end work -->
+
+		<!-- start service slider -->
+        <?= $this->render('../section/_service-slider.php'); ?>
+		<!-- end service slider -->
     <!-- start connect -->
     <section class="section connect" id="connect">
 		<div class="container">
