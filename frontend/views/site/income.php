@@ -55,7 +55,7 @@ $this->params['breadcrumbs'][] = [
 		</div>
 	</section>
 
-    <section class="section service-miscount">
+    <section class="service-miscount">
 		<div class="container">
 			<h2 class="line-title"><?= BaseController::getMessage('254') ?></h2>
 			<div class="service-miscount__content">
@@ -101,19 +101,9 @@ $this->params['breadcrumbs'][] = [
 			</div>
 		</div>
     </section>
-
-	<div class="service-banner">
-		<div class="left-banner-img">
-			<img src="/img/services/man-1.png" alt="">
-		</div>
-		<div class="right-banner-img">
-			<img src="/img/services/dron.png" alt="">
-		</div>
-		<div class="text-wrap">
-			<p><?= BaseController::getMessage('486') ?></p>
-			<a href="#connect" class="button consult-btn"><?= BaseController::getMessage('487') ?></a>
-		</div>
-	</div>
+	<!-- start banner-->
+    <?= $this->render('../section/_service-banner.php'); ?>
+	<!-- end banner -->
 	<section class="equipment-section" id="equipment">
 		<div class="container">
 			<h2 class="line-title"><?= BaseController::getMessage('203') ?></h2>
@@ -205,7 +195,6 @@ $this->params['breadcrumbs'][] = [
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</section>
@@ -213,42 +202,9 @@ $this->params['breadcrumbs'][] = [
     <?= $this->render('../section/_work.php'); ?>
     <!-- end work -->
 
-	<div class="service-types-section">
-		<span class="circle"></span>
-		<div class="container">
-			<div class="service-types-wrap">
-				<div class="serice-nav-wrap">
-					<h2 class="line-title"><?= BaseController::getMessage('149') ?></h2>
-					<div class="service-types-nav">
-						<div class="nav-slide"><span><?= BaseController::getMessage('269') ?></span></div>
-						<div class="nav-slide"><span><?= BaseController::getMessage('270') ?></span></div>
-						<div class="nav-slide"><span><?= BaseController::getMessage('271') ?></span></div>
-					</div>
-				</div>
-
-				<div class="service-types-slider">
-					<div class="service-slide">
-						<div class="text-wrap">
-							<p class="text"><?= BaseController::getMessage('273') ?></p>
-						</div>
-						<div class="image" style="background-image: url('/img/services/service-1.jpg')"></div>
-					</div>
-					<div class="service-slide">
-						<div class="text-wrap">
-							<p class="text"><?= BaseController::getMessage('278') ?></p>
-						</div>
-						<div class="image" style="background-image: url('/img/services/service-2.jpg')"></div>
-					</div>
-					<div class="service-slide">
-						<div class="text-wrap">
-							<p class="text"><?= BaseController::getMessage('280') ?></p>
-						</div>
-						<div class="image" style="background-image: url('/img/services/service-3.jpg')"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<!-- start service slider -->
+    <?= $this->render('../section/_service-slider.php'); ?>
+    <!-- end service slider -->
 
     <!-- start review -->
     <?= $this->render('../section/_review.php', compact('reviews')); ?>

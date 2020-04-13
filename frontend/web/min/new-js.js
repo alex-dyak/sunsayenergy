@@ -197,20 +197,12 @@ $(document).ready(function(){
             rows: 0,
             arrows: false,
             dots: false,
-            fade: true,
             infinite: false,
             swipe: false,
             touchMove: false,
+            fade: true,
             adaptiveHeight: true,
-            focusOnSelect: true,
-            asNavFor: '.equipment-nav',
-            responsive: [{
-                breakpoint: 767,
-                settings: {
-                    swipe: true,
-                    touchMove: true
-                },
-            }]
+            asNavFor: '.equipment-nav'
         });
     }
     if($('.equipment-slick').length) {
@@ -221,17 +213,10 @@ $(document).ready(function(){
             nextArrow: '<div class="next-arrow"><img src="/img/icon/Arrow.svg" alt="next" /></div>',
             prevArrow: '<div class="prev-arrow"><img src="/img/icon/Arrow.svg" alt="prev" /></div>',
             dots: false,
-            swipe: true,
-            touchMove: true,
-            autoplay: false,
             responsive: [{
                 breakpoint: 767,
                 settings: {
-                    swipe: false,
-                    touchMove: false,
                     arrows: false,
-                    autoplay: true,
-                    speed: 600,
                     dots: true,
                     dotsClass: 'slick-dots'
                 },
@@ -247,17 +232,10 @@ $(document).ready(function(){
             nextArrow: '<div class="next-arrow"><img src="/img/icon/Arrow.svg" alt="next" /></div>',
             prevArrow: '<div class="prev-arrow"><img src="/img/icon/Arrow.svg" alt="prev" /></div>',
             dots: false,
-            swipe: true,
-            touchMove: true,
-            autoplay: false,
             responsive: [{
                 breakpoint: 767,
                 settings: {
-                    swipe: false,
-                    touchMove: false,
                     arrows: false,
-                    autoplay: true,
-                    speed: 600,
                     dots: true,
                     dotsClass: 'slick-dots'
                 },
@@ -273,16 +251,26 @@ $(document).ready(function(){
             nextArrow: '<div class="next-arrow"><img src="/img/icon/Arrow.svg" alt="next" /></div>',
             prevArrow: '<div class="prev-arrow"><img src="/img/icon/Arrow.svg" alt="prev" /></div>',
             dots: false,
-            swipe: true,
-            touchMove: true,
-            autoplay: false,
             responsive: [{
                 breakpoint: 767,
                 settings: {
-                    swipe: false,
-                    touchMove: false,
-                    autoplay: true,
-                    speed: 600,
+                    arrows: false
+                },
+
+            }]
+        });
+    }
+    if($('.battery-slick').length) {
+        $('.battery-slick').slick({
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            rows: 0,
+            nextArrow: '<div class="next-arrow"><img src="/img/icon/Arrow.svg" alt="next" /></div>',
+            prevArrow: '<div class="prev-arrow"><img src="/img/icon/Arrow.svg" alt="prev" /></div>',
+            dots: false,
+            responsive: [{
+                breakpoint: 767,
+                settings: {
                     arrows: false
                 },
 

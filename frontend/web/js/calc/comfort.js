@@ -94,15 +94,15 @@ const getActualCourse = (currency) => {
 			tmp = response[0].rate.toFixed(3);
 		},
 
-        //костыль start
-        error: function() {
-            if(currency == 'USD'){
-                tmp = 26;
-            }else{
-                tmp = 28;
-            }
+		//костыль start
+		error: function() {
+			if(currency == 'USD'){
+				tmp = 26;
+			}else{
+				tmp = 28;
+			}
 
-        }
+		}
 //Костыль end
 	});
 	return tmp;
@@ -121,19 +121,19 @@ var M = null,
 	USD = null,
 	EUR = null,
 	chart        = null,
-    canvas       = $('#comfort-graphic'),
-    chartOption  = {
+	canvas       = $('#comfort-graphic'),
+	chartOption  = {
 		layout: {
 			padding: {
-				left: 10,
-				right: 10,
+				left: 0,
+				right: 0,
 				top: 10,
 			}
 		},
 		legend: {
 			display: false,
 		},
-		responsive: false,
+		responsive: true,
 		hover: {
 			mode: 'nearest',
 			intersect: true
@@ -150,22 +150,22 @@ var M = null,
 	chartPlugins = [{
 		afterDatasetsDraw: function (chart) {
 			chart_type = chart.config.type;
-			
+
 			if (chart.tooltip._active && chart.tooltip._active.length && chart_type === 'line') {
 				var activePoint = chart.tooltip._active[0],
 					ctx = chart.chart.ctx,
 					y_axis = chart.scales['y-axis-0'],
 					x = activePoint.tooltipPosition().x,
 					yPoint = activePoint.tooltipPosition().y;
-					topY = y_axis.top,
-					bottomY = y_axis.bottom; 
+				topY = y_axis.top,
+					bottomY = y_axis.bottom;
 
 				ctx.save();
 				ctx.beginPath();
 				ctx.moveTo(x, yPoint);
 				ctx.lineTo(x, bottomY);
 				ctx.lineWidth = 3;
-				ctx.strokeStyle = '#808080';
+				ctx.strokeStyle = '#B7D3F7';
 				ctx.stroke();
 				ctx.restore();
 			}
@@ -174,7 +174,7 @@ var M = null,
 
 const getM = (x) => {
 	let y = null;
-	
+
 	if (x > 0 && x < 6) {
 		y = M.m1
 	} else if (x > 6 && x < 12) {
@@ -199,7 +199,7 @@ const getPrice = (v, d, h) => {
 }
 
 const getPriceReserve = (n, m) => {
-	let V = 0; 
+	let V = 0;
 	V = n * m;
 	return parseFloat(V);
 }
@@ -210,24 +210,24 @@ const getPower = (d) => {
 	return parseFloat(N.toFixed(1));
 }
 
-const declOfNum = (number, titles) => {  
-    cases = [2, 0, 1, 1, 1, 2];  
-    return titles[(number % 100 > 4 && number % 100 < 20) ? 2 : cases[(number % 10 < 5) ? number % 10 : 5]];
+const declOfNum = (number, titles) => {
+	cases = [2, 0, 1, 1, 1, 2];
+	return titles[(number % 100 > 4 && number % 100 < 20) ? 2 : cases[(number % 10 < 5) ? number % 10 : 5]];
 }
 
 const createChart = (canvas, house, days) => {
 	let daysCount = 10,
 		daysArr   = [1 + ' день'],
 		D              = parseInt(house),
-	    H              = parseInt(days),
-	    N              = getPower(D),
-	    M              = getM(N),
-	    V              = getPriceReserve(N, M),
+		H              = parseInt(days),
+		N              = getPower(D),
+		M              = getM(N),
+		V              = getPriceReserve(N, M),
 		Q              = getPrice(V, D, H),
 		inc 		   = 1.2,
 		chartPoint 	   = [],
 		chartData 	   = [];
-	
+
 	for (let i = 1; i <= daysCount; i++) {
 		Q = getPrice(V, D, i, L);
 		chartPoint.push(Q.toFixed(0) * inc);
@@ -268,10 +268,10 @@ const updateChart = (chart, chartData) => {
 		backgroundColor: 'transparent',
 		titleFontFamily: '"Montserrat", sans-serif',
 		titleFontSize: 16,
-		titleFontColor: '#808080',
+		titleFontColor: '#393939',
 		bodyFontFamily: '"Montserrat", sans-serif',
 		bodyFontSize: 16,
-		bodyFontColor: '#808080',
+		bodyFontColor: '#393939',
 		yAlign: 'bottom',
 		callbacks: {
 			label: function(tooltipItem, data) {
@@ -306,7 +306,7 @@ const updateChart = (chart, chartData) => {
 
 Chart.elements.Line.prototype.draw = function () {
 	this._chart.ctx.save();
-	this._chart.ctx.strokeStyle = '#808080';
+	this._chart.ctx.strokeStyle = '#B7D3F7';
 
 	var points = this._chart.getDatasetMeta(0).data,
 		point_x = points[parseInt($('input#comfort-days').val()) - 1]._model.x,
@@ -314,7 +314,7 @@ Chart.elements.Line.prototype.draw = function () {
 		bottom = this._chart.scales['y-axis-0'].bottom;
 
 	this._chart.ctx.beginPath();
-	this._chart.ctx.lineWidth = 3;
+	this._chart.ctx.lineWidth = 5;
 	if ($(window).width() < 420) {
 		if(parseInt($('input#comfort-days').val()) == 1) {
 			this._chart.ctx.moveTo(point_x + 1.5, point_y);
@@ -344,9 +344,9 @@ Chart.elements.Line.prototype.draw = function () {
 
 	if ($(window).width() < 420) {
 		this._chart.ctx.font = '500 12px "Montserrat", sans-serif';
-		this._chart.ctx.fillStyle = '#808080';
+		this._chart.ctx.fillStyle = '#393939';
 		this._chart.ctx.textBaseline = 'bottom';
-	
+
 		if(parseInt($('input#comfort-days').val()) == 10 || parseInt($('input#comfort-days').val()) == 9) {
 			this._chart.ctx.textAlign = 'right';
 			this._chart.ctx.fillText(day, point_x - 5, bottom);
@@ -356,7 +356,7 @@ Chart.elements.Line.prototype.draw = function () {
 		}
 	} else {
 		this._chart.ctx.font = '500 16px "Montserrat", sans-serif';
-		this._chart.ctx.fillStyle = '#808080';
+		this._chart.ctx.fillStyle = '#393939';
 		this._chart.ctx.textBaseline = 'bottom';
 
 		if(parseInt($('input#comfort-days').val()) == 10) {
@@ -367,23 +367,23 @@ Chart.elements.Line.prototype.draw = function () {
 			this._chart.ctx.fillText(day, point_x + 5, bottom);
 		}
 	}
-	
+
 	this._chart.ctx.stroke();
 	this._chart.ctx.restore();
 }
 
 const calculatuion = (house, days) => {
 	let D              = parseInt(house),
-	    H              = parseInt(days),
-	    N              = getPower(D),
-	    M              = getM(N),
-	    V              = getPriceReserve(N, M),
+		H              = parseInt(days),
+		N              = getPower(D),
+		M              = getM(N),
+		V              = getPriceReserve(N, M),
 		Q              = getPrice(V, D, H),
 		inc 		   = 1.2,
 		daysCount      = 10,
 		chartPoint 	   = [],
 		chartData 	   = [];
-	
+
 	pushToTemplate(Q, N.toFixed(0));
 
 	for (let i = 1; i <= daysCount; i++) {
@@ -411,7 +411,7 @@ const calculatuion = (house, days) => {
 		onFinish: function (data) {
 			if($(window).width() < 1024)
 				$('body').css('overflow-y', 'scroll');
-        }
+		}
 	});
 })();
 
