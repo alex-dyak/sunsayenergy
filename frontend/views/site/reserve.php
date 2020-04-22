@@ -301,7 +301,7 @@ $this->params['breadcrumbs'][] = [
 $this->registerCssFile('/style/lib/ion.rangeSlider.css', ['position' => \yii\web\View::POS_END]);
 $this->registerJsFile('/js/lib/ion.rangeSlider.min.js', ['position' => \yii\web\View::POS_END]);
 $this->registerJsFile('/js/lib/Chart.min.js', ['position' => \yii\web\View::POS_END]);
-$this->registerJsFile('/js/calc/reserve.js', ['position' => \yii\web\View::POS_END]);
+$this->registerJsFile('/js/calc/reserve.min.js', ['position' => \yii\web\View::POS_END]);
 ?>
 
 <script type="application/ld+json">
