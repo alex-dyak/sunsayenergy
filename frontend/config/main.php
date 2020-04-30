@@ -84,6 +84,7 @@ return [
                 'sitemap.xml' => 'site/sitemap',
                 '/project/category/<symbol:[\w_-]+>' => 'project/category',
                 '<controller:\w+>/<action:\w+>/*'=>'<controller>/<action>',
+                '/testform' => 'site/testform',
                 //'<language:(ru|ua|en)>/<controller:\w+>/<action:\w+>'=>'<controller>/<action>'
             ]
         ],

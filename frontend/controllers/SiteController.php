@@ -110,6 +110,11 @@ class SiteController extends BaseController
         return $this->render('success');
     }
 
+    public function actionTestform()
+    {
+        return $this->render('testform');
+    }
+
     //---------далее экшины которые приходят через ajax---------
 
     // Заявки с сайта
