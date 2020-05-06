@@ -23,16 +23,16 @@ class SiteController extends BaseController
         $session = Yii::$app->session;
         if (!$session->isActive) {
             $session->open();
-        } else {
-            if (!empty($_GET['utm_source'])) {
-                $session->set('utm_source', $_GET['utm_source']);
-            }
-            if (!empty($_GET['utm_medium'])) {
-                $session->set('utm_medium', $_GET['utm_medium']);
-            }
-            if (!empty($_GET['utm_campaign'])) {
-                $session->set('utm_campaign', $_GET['utm_campaign']);
-            }
+        }
+
+        if (!empty($_GET['utm_source'])) {
+            $session->set('utm_source', $_GET['utm_source']);
+        }
+        if (!empty($_GET['utm_medium'])) {
+            $session->set('utm_medium', $_GET['utm_medium']);
+        }
+        if (!empty($_GET['utm_campaign'])) {
+            $session->set('utm_campaign', $_GET['utm_campaign']);
         }
 
         return [
