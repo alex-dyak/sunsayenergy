@@ -36,11 +36,6 @@ $contacts = \backend\models\Contact::getContact();
 	<meta name="apple-mobile-web-app-status-bar-style" content="white"/>
 	<link rel="shortcut icon" href="/img/favicon.ico">
 
-    <?php if (stripos($_SERVER['REQUEST_URI'], '/testform') !== false) : ?>
-        <meta name="robots" content="noindex" />
-    <?php endif; ?>
-
-
 	<!-- Google Tag Manager -->
 	<script>(function (w, d, s, l, i) {
             w[l] = w[l] || [];
