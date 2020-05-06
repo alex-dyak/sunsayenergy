@@ -57,7 +57,7 @@ $this->params['breadcrumbs'][] = [
             <div class="service-info__content-info">
 <!--                <div class="complect">--><?//= BaseController::getMessage('196') ?><!--</div>-->
                 <div class="title">
-                    <h1><?= BaseController::getMessage('197') ?></h1>
+                    <h2><?= BaseController::getMessage('197') ?></h2>
                 </div>
                 <div class="description"><?= BaseController::getMessage('200') ?></div>
                 <div class="more"><a class="btn btn-primary" href="#equipment"><?= BaseController::getMessage('18') ?></a></div>
@@ -73,7 +73,7 @@ $this->params['breadcrumbs'][] = [
                 <div class="service-info__content-info">
 <!--                    <div class="complect">--><?//= BaseController::getMessage('86') ?><!--</div>-->
                     <div class="title">
-                        <h1><?= BaseController::getMessage('87') ?></h1>
+                        <h2><?= BaseController::getMessage('87') ?></h2>
                     </div>
                     <div class="description"><?= BaseController::getMessage('132') ?>
                     </div>
@@ -92,7 +92,7 @@ $this->params['breadcrumbs'][] = [
                 <div class="service-info__content-info">
 <!--                    <div class="complect">--><?//= BaseController::getMessage('73') ?><!--</div>-->
                     <div class="title">
-                        <h1><?= BaseController::getMessage('74') ?></h1>
+                        <h2><?= BaseController::getMessage('74') ?></h2>
                     </div>
                     <div class="description"><?= BaseController::getMessage('75') ?></div>
                     <div class="more"><a class="btn btn-primary" href="#equipment"><?= BaseController::getMessage('18') ?></a></div>

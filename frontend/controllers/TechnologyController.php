@@ -10,10 +10,34 @@ namespace frontend\controllers;
 
 
 use backend\models\Blog;
-use yii\web\HttpException;
+use Yii;
 
 class TechnologyController extends BaseController
 {
+    public function actions()
+    {
+        $session = Yii::$app->session;
+        if (!$session->isActive) {
+            $session->open();
+        } else {
+            if (!empty($_GET['utm_source'])) {
+                $session->set('utm_source', $_GET['utm_source']);
+            }
+            if (!empty($_GET['utm_medium'])) {
+                $session->set('utm_medium', $_GET['utm_medium']);
+            }
+            if (!empty($_GET['utm_campaign'])) {
+                $session->set('utm_campaign', $_GET['utm_campaign']);
+            }
+        }
+
+        return [
+            'error' => [
+                'class' => 'yii\web\ErrorAction',
+            ],
+        ];
+    }
+
     public function actionTechnology()
     {
         $articles = Blog::find()->orderBy(['id' => SORT_DESC, 'visible'=>1])->all();

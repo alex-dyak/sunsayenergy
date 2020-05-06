@@ -386,6 +386,9 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
             </div>
             <form class="request-question" data-post-url="index.html">
 
+                <input type="hidden" name="utm_source" <?php echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''?> >
+                <input type="hidden" name="utm_medium" <?php echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''?> >
+                <input type="hidden" name="utm_campaign" <?php echo !empty($_SESSION['utm_campaign']) ? ' value="' . $_SESSION['utm_campaign'] .'"': ''?> >
                 <input class="custom-field" type="text" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
 
                 <input class="custom-field" type="text" name="phone" placeholder="+380">

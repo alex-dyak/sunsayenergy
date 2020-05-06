@@ -279,6 +279,9 @@ $this->params['breadcrumbs'][] = [
 				</div>
                 <form class="connect__content-question" id="question_form" data-post-url="index.html">
                     <div class="message">
+                        <input type="hidden" name="utm_source" <?php echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''?> >
+                        <input type="hidden" name="utm_medium" <?php echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''?> >
+                        <input type="hidden" name="utm_campaign" <?php echo !empty($_SESSION['utm_campaign']) ? ' value="' . $_SESSION['utm_campaign'] .'"': ''?> >
                         <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
                         <input class="custom-field" type="text" id="phone" name="phone" placeholder="+380">
                         <input class="custom-field" type="text" id="email" name="email" placeholder="youremail@mail.com">

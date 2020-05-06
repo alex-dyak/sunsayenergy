@@ -407,39 +407,6 @@ $contacts = \backend\models\Contact::getContact();
 <!-- start modal overlay-->
 <div class="overlay"></div>
 <!-- end modal overlay-->
-<!-- start request popup -->
-<!--<div class="request-popup modal" id="modal-order">
-	<span class="modal-close"><i class="icon-close"></i></span>
-    <div class="request-popup__container">
-        <div class="request-content">
-            <div class="request-title line-title">
-                <h2><span><?/*= BaseController::getMessage('364') */?></span></h2>
-            </div>
-            <form class="request-question" data-post-url="index.html">
-
-                <input class="custom-field" type="text" name="fullname" placeholder="<?/*= BaseController::getMessage('366') */?>">
-
-                <input class="custom-field" type="text" name="phone" placeholder="+380">
-
-                <input class="custom-field" type="text" name="email" placeholder="youremail@mail.com">
-				<textarea class="custom-field" name="question" id="question" rows="5" placeholder="<?/*= BaseController::getMessage('403') */?>"></textarea>
-                <div class="request-button">
-                    <button class="btn btn-primary request-popup-btn"><?/*= BaseController::getMessage('14') */?></button>
-                    <div class="form-compelete"><?/*= BaseController::getMessage('374') */?></div>
-                </div>
-            </form>
-        </div>
-        <div class="request-content-image">
-            <?php /*if ( !BaseController::is_mobile()  ): */?>
-                <picture>
-                    <source data-srcset="/img/connect.jpg" type="image/jpg">
-                    <img data-src="/img/connect.jpg" alt="">
-                </picture>                
-            <?php /*endif; */?>
-        </div>
-    </div>
-</div>-->
-<!-- end request popup -->
 
 <?php if ( 0 && Yii::$app->controller->route != 'site/green' && Yii::$app->controller->route != 'site/types' && Yii::$app->controller->route != 'technology/technology' && Yii::$app->controller->route != 'technology/nine' && Yii::$app->controller->route != 'technology/detailed'): ?>
     <?php $projects = \backend\models\Project::find()->all(); ?>
