@@ -20,6 +20,21 @@ class SiteController extends BaseController
 
     public function actions()
     {
+        $session = Yii::$app->session;
+        if (!$session->isActive) {
+            $session->open();
+        } else {
+            if (!empty($_GET['utm_source'])) {
+                $session->set('utm_source', $_GET['utm_source']);
+            }
+            if (!empty($_GET['utm_medium'])) {
+                $session->set('utm_medium', $_GET['utm_medium']);
+            }
+            if (!empty($_GET['utm_campaign'])) {
+                $session->set('utm_campaign', $_GET['utm_campaign']);
+            }
+        }
+
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
@@ -118,7 +133,7 @@ class SiteController extends BaseController
         if (Yii::$app->request->isAjax) {
             $post = Yii::$app->request->post();
             $model = new Request();
-            $model->sendBitrix($post['name'], $post['phone'], $post['email'], $post['type']);
+            $model->sendBitrix($post['name'], $post['phone'], $post['email'], $post['type'], $post['utm_source'], $post['utm_medium'], $post['utm_campaign']);
             //TODO: переименовать метод
             Request::subscribeEsputnik($post['email'], "request_measurement", $post['name'], $post['phone']);
             //TODO: Вынести эту дрянь в модель

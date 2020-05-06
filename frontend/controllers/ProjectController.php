@@ -12,11 +12,27 @@ namespace frontend\controllers;
 use backend\models\Project;
 use backend\models\Reviews;
 use yii\web\NotFoundHttpException;
+use Yii;
 
 class ProjectController extends BaseController
 {
     public function actions()
     {
+        $session = Yii::$app->session;
+        if (!$session->isActive) {
+            $session->open();
+        } else {
+            if (!empty($_GET['utm_source'])) {
+                $session->set('utm_source', $_GET['utm_source']);
+            }
+            if (!empty($_GET['utm_medium'])) {
+                $session->set('utm_medium', $_GET['utm_medium']);
+            }
+            if (!empty($_GET['utm_campaign'])) {
+                $session->set('utm_campaign', $_GET['utm_campaign']);
+            }
+        }
+
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
