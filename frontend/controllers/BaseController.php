@@ -37,7 +37,7 @@ class BaseController extends Controller
         parent::init();
         Language::saveLang();
         $og = Og::findOne(1);
-        $this->setOg($og->title,$og->description,'/images/'.$og->images->imagePreview);
+        $this->setOg($og->title,$og->description);
     }
 
     /**
@@ -137,11 +137,14 @@ class BaseController extends Controller
         $this->view->registerMetaTag(['name'=>'description', 'content'=>"$description"]);
     }
 
-    protected function setOg($title, $desc, $img){
+    protected function setOg($title, $desc){
         $this->view->registerMetaTag(['property'=>'og:title', 'content'=>"{$title}"]);
         $this->view->registerMetaTag(['property'=>'og:description', 'content'=>"{$desc}"]);
-        $this->view->registerMetaTag(['property'=>'og:image', 'content'=>"{$img}"]);
         $this->view->registerMetaTag(['property'=>'og:url', 'content'=>Yii::$app->request->absoluteUrl]);
+    }
+
+    protected function setOgImage($img){
+        $this->view->registerMetaTag(['property'=>'og:image', 'content'=>"{$img}"]);
     }
 
 }
