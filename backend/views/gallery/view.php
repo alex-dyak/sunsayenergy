@@ -4,14 +4,14 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Galery */
+/* @var $model common\models\Gallery */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Galeries', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Galleries', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
-<div class="galery-view">
+<div class="gallery-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

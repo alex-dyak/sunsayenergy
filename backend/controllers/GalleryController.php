@@ -3,16 +3,16 @@
 namespace backend\controllers;
 
 use Yii;
-use common\models\Galery;
-use common\models\GalerySearch;
+use common\models\Gallery;
+use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * GaleryController implements the CRUD actions for Galery model.
+ * GalleryController implements the CRUD actions for Gallery model.
  */
-class GaleryController extends Controller
+class GalleryController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -30,22 +30,22 @@ class GaleryController extends Controller
     }
 
     /**
-     * Lists all Galery models.
+     * Lists all Gallery models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new GalerySearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider = new ActiveDataProvider([
+            'query' => Gallery::find(),
+        ]);
 
         return $this->render('index', [
-            'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
 
     /**
-     * Displays a single Galery model.
+     * Displays a single Gallery model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -58,13 +58,13 @@ class GaleryController extends Controller
     }
 
     /**
-     * Creates a new Galery model.
+     * Creates a new Gallery model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Galery();
+        $model = new Gallery();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -76,7 +76,7 @@ class GaleryController extends Controller
     }
 
     /**
-     * Updates an existing Galery model.
+     * Updates an existing Gallery model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -96,7 +96,7 @@ class GaleryController extends Controller
     }
 
     /**
-     * Deletes an existing Galery model.
+     * Deletes an existing Gallery model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -110,15 +110,15 @@ class GaleryController extends Controller
     }
 
     /**
-     * Finds the Galery model based on its primary key value.
+     * Finds the Gallery model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Galery the loaded model
+     * @return Gallery the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Galery::findOne($id)) !== null) {
+        if (($model = Gallery::findOne($id)) !== null) {
             return $model;
         }
 

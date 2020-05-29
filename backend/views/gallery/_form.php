@@ -4,11 +4,11 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Galery */
+/* @var $model common\models\Gallery */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="galery-form">
+<div class="gallery-form">
 
     <?php $form = ActiveForm::begin(); ?>
 

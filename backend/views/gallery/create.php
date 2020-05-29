@@ -3,13 +3,13 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Galery */
+/* @var $model common\models\Gallery */
 
-$this->title = 'Create Galery';
-$this->params['breadcrumbs'][] = ['label' => 'Galeries', 'url' => ['index']];
+$this->title = 'Create Gallery';
+$this->params['breadcrumbs'][] = ['label' => 'Galleries', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="galery-create">
+<div class="gallery-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

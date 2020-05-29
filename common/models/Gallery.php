@@ -6,7 +6,7 @@ use Yii;
 use yii\web\UploadedFile;
 
 /**
- * This is the model class for table "galery".
+ * This is the model class for table "gallery".
  *
  * @property int $id
  * @property string $images
@@ -15,14 +15,14 @@ use yii\web\UploadedFile;
  * @property string $alt_en
  * @property string $category
  */
-class Galery extends \yii\db\ActiveRecord
+class Gallery extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return 'galery';
+        return 'gallery';
     }
 
     /**
@@ -94,4 +94,5 @@ class Galery extends \yii\db\ActiveRecord
 
         parent::afterFind();
     }
+
 }
