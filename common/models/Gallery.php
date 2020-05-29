@@ -2,6 +2,7 @@
 
 namespace common\models;
 
+use backend\models\FileUpload;
 use Yii;
 use yii\web\UploadedFile;
 
@@ -13,10 +14,13 @@ use yii\web\UploadedFile;
  * @property string $alt
  * @property string $alt_ru
  * @property string $alt_en
- * @property string $category
+ * @property string $title
  */
-class Gallery extends \yii\db\ActiveRecord
+class Gallery extends FileUpload
 {
+
+    public $imagePreview;
+
     /**
      * {@inheritdoc}
      */
@@ -31,10 +35,9 @@ class Gallery extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['title'], 'string', 'max' => 255],
             [['imagePreview'], 'file', 'extensions' => 'png, jpg'],
             [['alt', 'alt_ru', 'alt_en'], 'string'],
-            [['category'], 'required'],
-            [['category'], 'string', 'max' => 256],
         ];
     }
 
@@ -45,11 +48,11 @@ class Gallery extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'images' => 'Images',
-            'alt' => 'Alt',
-            'alt_ru' => 'Alt Ru',
-            'alt_en' => 'Alt En',
-            'category' => 'Category',
+            'title' => 'Название',
+            'imagePreview' => 'Картинка',
+            'alt' => 'Текст',
+            'alt_ru' => 'Текст Ru',
+            'alt_en' => 'Текст En',
         ];
     }
 

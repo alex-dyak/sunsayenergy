@@ -9,6 +9,7 @@ use backend\models\Request;
 use backend\models\Reviews;
 use backend\models\Subscribe;
 use backend\models\Project;
+use common\models\Gallery;
 use common\models\Video;
 use Yii;
 
@@ -150,10 +151,12 @@ class SiteController extends BaseController
     {
         $this->layout = 'commercial';
 
+        $images = Gallery::find()->all();
+
         $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
         $this->setMeta(self::getTitle('commercial_stations'), self::getDescription('commercial_stations'));
 
-        return $this->render('commercial_stations');
+        return $this->render('commercial_stations', compact('images'));
     }
 
     //---------далее экшины которые приходят через ajax---------
