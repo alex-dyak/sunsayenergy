@@ -148,6 +148,8 @@ class SiteController extends BaseController
 
     public function actionCommercial()
     {
+        $this->layout = 'commercial';
+
         $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
         $this->setMeta(self::getTitle('commercial_stations'), self::getDescription('commercial_stations'));
 
