@@ -8974,3 +8974,54 @@ a:not([class]):hover {
 		height: 270px !important
 	}
 }
+
+
+/* commercial station page */
+
+.hero-section {
+	position: relative;
+}
+.hero-section:before,
+.hero-section:after {
+	content: '';
+	position: absolute;
+	display: block;
+	z-index: 1;
+}
+
+.hero-section:before {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 30%;
+	background: linear-gradient(173.38deg, #FFFFFF 32.46%, rgba(255, 255, 255, 0) 77.03%);
+}
+.hero-section:after {
+	top: 70%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(180deg, rgba(183, 211, 247, 0) 58.77%, #B7D3F7 80.99%);
+}
+
+@media (min-width: 768px) {
+	.hero-section:before,
+	.hero-section:after {
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+	.hero-section:before {
+		background: linear-gradient(137.34deg, #FFFFFF 16.21%, rgba(255, 255, 255, 0) 58.05%);
+	}
+	.hero-section:after {
+		background: linear-gradient(141.01deg, #E5E5E5 8.72%, rgba(255, 255, 255, 0) 69.19%), linear-gradient(91.32deg, rgba(183, 211, 247, 0) 64.43%, rgba(183, 211, 247, 0.342342) 77.88%, #B7D3F7 91.82%);
+	}
+}
+
+
+.hero-section .container {
+	position: relative;
+	z-index: 2;
+}
