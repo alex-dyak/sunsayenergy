@@ -12,7 +12,9 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'images')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
+
+    <?= \backend\controllers\FileUploadController::generateImageField('imagePreview', 'gallery', 2, $model, $form) ?>
 
     <?= $form->field($model, 'alt')->textarea(['rows' => 6]) ?>
 
@@ -20,10 +22,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'alt_en')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'category')->textInput(['maxlength' => true]) ?>
-
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

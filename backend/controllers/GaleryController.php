@@ -12,7 +12,7 @@ use yii\filters\VerbFilter;
 /**
  * GalleryController implements the CRUD actions for Gallery model.
  */
-class GalleryController extends Controller
+class GaleryController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -123,5 +123,16 @@ class GalleryController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+
+    public function actionDelimage($img)
+    {
+        $arr = explode("|", base64_decode($img));
+        $path = Yii::getAlias("@frontend") .'/web/images/' . $arr[0];
+        @unlink($path);
+        $model = $this->findModel($arr[1]);
+        if($arr[2]==2) $model->images->imagePreview = "";
+        $model->save();
+        return $this->redirect(['update', 'id' => $model->id]);
     }
 }

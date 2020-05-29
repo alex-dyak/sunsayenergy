@@ -9,3 +9,20 @@ $this->params['breadcrumbs'][] = [
 ?>
 <?php
 echo 111;
+?>
+<?php if (!empty($images)): ?>
+    <section class="section blog-more">
+        <div class="blog__list">
+            <?php foreach ($images as $item): ?>
+                <div class="blog__list-item">
+                    <div class="image">
+                        <img data-src="/images/<?= $item->images->imagePreview ?>" alt="<?= $item->title ?>">
+                    </div>
+                    <div class="description">
+                        <?= $item->alt ?>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </section>
+<?php endif; ?>
