@@ -78,6 +78,7 @@ return [
                 '/types-of-solar-power-plants' => 'site/types',
                 '/about' => 'site/about',
                 '/video' => 'site/video',
+                '/commercial_stations' => 'site/commercial',
                 '/success' => 'site/success',
                 '/project' => 'project/project',
                 '/project/<symbol:[\w_-]+>' => 'project/detailed',

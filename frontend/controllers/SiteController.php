@@ -146,6 +146,14 @@ class SiteController extends BaseController
         return $this->render('success');
     }
 
+    public function actionCommercial()
+    {
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
+        $this->setMeta(self::getTitle('commercial_stations'), self::getDescription('commercial_stations'));
+
+        return $this->render('commercial_stations');
+    }
+
     //---------далее экшины которые приходят через ajax---------
 
     // Заявки с сайта
