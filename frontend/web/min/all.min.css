@@ -8978,6 +8978,31 @@ a:not([class]):hover {
 
 /* commercial station page */
 
+body[class^='fp-viewing-'] .header {
+	background: #fff;
+}
+
+body.fp-viewing-0 .header {
+	background: none;
+}
+
+@media (max-width: 1279px) {
+	body[class^="fp-viewing-"]  {
+		background: #000;
+	}
+	body[class^="fp-viewing-"] .header {
+		display: none;
+	}
+
+	body.fp-viewing-0 .header {
+		display: block;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index: 9;
+	}
+}
+
 .hero-section {
 	position: relative;
 }
