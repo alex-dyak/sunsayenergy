@@ -40,7 +40,7 @@
                     (\Yii::$app->user->can('Файли'))?['label' => 'Файли', 'icon' => 'fa fa-file', 'url' => ['/files']]:"",
                     (\Yii::$app->user->can('Налаштування'))?['label' => 'Налаштування', 'icon' => 'fa fa-suitcase', 'url' => ['/settings']]:"",
                     (\Yii::$app->user->can('Файли'))?['label' => 'Вiдео', 'icon' => 'fa fa-video', 'url' => ['/video']]:"",
-                    (\Yii::$app->user->can('Файли'))?['label' => "Комерційні станції (Фото)", 'icon' => 'fa fa-camera', 'url' => ['/galery']]:"",
+                    (\Yii::$app->user->can('Файли'))?['label' => "Комерційні станції (Фото)", 'icon' => 'fa fa-camera', 'url' => ['/commercial']]:"",
                 ],
             ]
         ) ?>

@@ -4,14 +4,14 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Gallery */
+/* @var $model common\models\Commercial */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Galleries', 'url' => ['index']];
+$this->title = $model->title;
+$this->params['breadcrumbs'][] = ['label' => 'Commercials', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
-<div class="gallery-view">
+<div class="commercial-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -30,11 +30,11 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
+            'title',
             'images:ntext',
             'alt:ntext',
             'alt_ru:ntext',
             'alt_en:ntext',
-            'category',
         ],
     ]) ?>
 

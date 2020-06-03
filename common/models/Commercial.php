@@ -3,20 +3,20 @@
 namespace common\models;
 
 use backend\models\FileUpload;
-use Yii;
 use yii\web\UploadedFile;
+use Yii;
 
 /**
  * This is the model class for table "gallery".
  *
  * @property int $id
+ * @property string $title
  * @property string $images
  * @property string $alt
  * @property string $alt_ru
  * @property string $alt_en
- * @property string $title
  */
-class Gallery extends FileUpload
+class Commercial extends FileUpload
 {
 
     public $imagePreview;
@@ -97,5 +97,4 @@ class Gallery extends FileUpload
 
         parent::afterFind();
     }
-
 }

@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Gallery */
+/* @var $model common\models\Commercial */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -14,7 +14,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
-    <?= \backend\controllers\FileUploadController::generateImageField('imagePreview', 'gallery', 2, $model, $form) ?>
+    <?= \backend\controllers\FileUploadController::generateImageField('imagePreview', 'commercial', 2, $model, $form) ?>
 
     <?= $form->field($model, 'alt')->textarea(['rows' => 6]) ?>
 

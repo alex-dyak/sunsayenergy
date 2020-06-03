@@ -3,16 +3,16 @@
 namespace backend\controllers;
 
 use Yii;
-use common\models\Gallery;
+use common\models\Commercial;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * GalleryController implements the CRUD actions for Gallery model.
+ * CommercialController implements the CRUD actions for Commercial model.
  */
-class GaleryController extends Controller
+class CommercialController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -30,13 +30,13 @@ class GaleryController extends Controller
     }
 
     /**
-     * Lists all Gallery models.
+     * Lists all Commercial models.
      * @return mixed
      */
     public function actionIndex()
     {
         $dataProvider = new ActiveDataProvider([
-            'query' => Gallery::find(),
+            'query' => Commercial::find(),
         ]);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class GaleryController extends Controller
     }
 
     /**
-     * Displays a single Gallery model.
+     * Displays a single Commercial model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -58,13 +58,13 @@ class GaleryController extends Controller
     }
 
     /**
-     * Creates a new Gallery model.
+     * Creates a new Commercial model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Gallery();
+        $model = new Commercial();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -76,7 +76,7 @@ class GaleryController extends Controller
     }
 
     /**
-     * Updates an existing Gallery model.
+     * Updates an existing Commercial model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -96,7 +96,7 @@ class GaleryController extends Controller
     }
 
     /**
-     * Deletes an existing Gallery model.
+     * Deletes an existing Commercial model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -110,21 +110,27 @@ class GaleryController extends Controller
     }
 
     /**
-     * Finds the Gallery model based on its primary key value.
+     * Finds the Commercial model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Gallery the loaded model
+     * @return Commercial the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Gallery::findOne($id)) !== null) {
+        if (($model = Commercial::findOne($id)) !== null) {
             return $model;
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
     }
 
+    /**
+     * @param $img
+     *
+     * @return \yii\web\Response
+     * @throws NotFoundHttpException
+     */
     public function actionDelimage($img)
     {
         $arr = explode("|", base64_decode($img));
