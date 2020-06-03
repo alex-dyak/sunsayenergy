@@ -323,6 +323,23 @@ $(document).ready(function(){
             }]
         });
     }
+
+    if($('.reason-slider').length) {
+        $('.reason-slider').slick({
+            slidesToScroll: 1,
+            rows: 0,
+            slidesToShow: 1,
+            arrows: false,
+            dots: true,
+            infinite: false,
+            mobileFirst: true,
+            responsive: [{
+                breakpoint: 767,
+                settings: "unslick"
+            }]
+        });
+    }
+
 });
 
 var lastWidth = $(window).width();

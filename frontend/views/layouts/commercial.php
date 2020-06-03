@@ -74,8 +74,13 @@ $contacts = \backend\models\Contact::getContact();
 	<link rel="alternate" hreflang="en-ua" href="https://sunsayenergy.com/en<?= $final_uri; ?>" />
 
 	<link href="https://fonts.googleapis.com/css?family=Prompt:900&display=swap" rel="stylesheet">
+
+<!--	fullpage scroll -->
 	<link rel="stylesheet" type="text/css" href="/style/lib/fullpage.min.css" />
+	<script type="text/javascript" src="/js/lib/scrolloverflow.min.js"></script>
 	<script type="text/javascript" src="/js/lib/fullpage.min.js"></script>
+
+<!--	/ fullpage scroll -->
 	<style>
 		.preloader{display:flex;align-items:center;justify-content:center;position:fixed;top:0;bottom:0;left:0;right:0;z-index:9999;background:#fff}.sk-chasing-dots{width:90px;height:90px;position:relative;margin:auto;text-align:center;animation:sk-chasing-dots-rotate 2s infinite linear}.sk-child{width:calc(90px / 2);height:calc(90px / 2);display:inline-block;position:absolute;top:0;background-color:#ffd100;border-radius:100%;animation:sk-chasing-dots-bounce 2s infinite ease-in-out}.sk-dot-2{background-color:#dfedff;top:auto;bottom:0;animation-delay:calc(-2s / 2)}@keyframes sk-chasing-dots-rotate{100%{transform:rotate(360deg)}}@keyframes sk-chasing-dots-bounce{0%,100%{transform:scale(0)}50%{transform:scale(1)}}
 	</style>
@@ -101,11 +106,136 @@ $contacts = \backend\models\Contact::getContact();
     </div>
 </div>
 <?php $this->beginBody() ?>
+<header class="header" id="header">
+	<div class="container">
+		<div class="header-wrap">
+			<div class="mobile-top-block">
+				<div class="contact-block" itemscope itemtype="http://schema.org/PostalAddress">
+					<a class="contact-opener" href="#contact-opener">
+						<i class="icon-phone"></i>
+						<i class="icon-close"></i>
+                        <?= BaseController::getMessage('8') ?>
+					</a>
+					<ul class="header-contact-list">
+						<li><a itemprop="telephone" class="binct-phone-number-1" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
+						<li><a itemprop="telephone" class="binct-phone-number-3" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
+						<li><a itemprop="telephone" class="binct-phone-number-2" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
+						<li class="address-list">
+							<i class="icon-envelope"></i>
+							<a itemprop="email" href="mailto:<?= $contacts->email ?>">
+                                <?= $contacts->email ?>
+							</a>
+						</li>
+						<li class="address-list">
+							<i class="icon-pin"></i>
+							<address itemprop="streetAddress"><?= $contacts->address ?></address>
+						</li>
 
+						<li class="social-media">
+							<ul class="social-list">
+                                <?php if (!empty($contacts->link_fb)): ?>
+									<li class="facebook">
+										<a href="<?= $contacts->link_fb ?>" target="_blank">
+											<i class="icon-facebook"></i>
+										</a>
+									</li>
+                                <?php endif; ?>
+                                <?php if (!empty($contacts->link_youtube)): ?>
+									<li>
+										<a href="<?= $contacts->link_youtube ?>" target="_blank">
+											<i class="icon-youtube"></i>
+										</a>
+									</li>
+                                <?php endif; ?>
+                                <?php if (!empty($contacts->link_telegram)): ?>
+									<li>
+										<a href="<?= $contacts->link_telegram ?>" target="_blank">
+											<i class="icon-telegram"></i>
+										</a>
+									</li>
+                                <?php endif; ?>
+                                <?php if (!empty($contacts->link_viber)): ?>
+									<li>
+										<a href="<?= $contacts->link_viber ?>" target="_blank">
+											<i class="icon-viber"></i>
+										</a>
+									</li>
+                                <?php endif; ?>
+                                <?php if (!empty($contacts->link_insta)): ?>
+									<li>
+										<a href="<?= $contacts->link_insta ?>" target="_blank">
+											<i class="icon-instagram"></i>
+										</a>
+									</li>
+                                <?php endif; ?>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div id="nav-opener">
+					<span><?= BaseController::getMessage('405') ?></span>
+					<i class="icon-menu"></i>
+					<i class="icon-close"></i>
+				</div>
+			</div>
+			<strong class="main-logo">
+				<a href="<?= \yii\helpers\Url::to(['/']); ?>">
+					<img class="logo-def" src="/img/logo.svg" width="184" alt="sunsay energy">
+					<img class="logo-white" src="/img/logo-navbar.svg" width="184" alt="sunsay energy">
+					<span class="logo-text"><?= BaseController::getMessage('406') ?></span>
+				</a>
+			</strong>
+			<nav class="header-nav">
+				<strong class="nav-logo">
+					<a href="<?= \yii\helpers\Url::to(['/']); ?>">
+						<img src="/img/logo-navbar.svg" width="148" alt="sunsay energy">
+					</a>
+				</strong>
+				<ul class="nav-list">
+					<li class="dropdown-wrapper">
+						<span><?= BaseController::getMessage('1') ?> <i class="icon-angle-down"></i></span>
+						<ul class="dropdown header-drop-list">
+							<li class="<?= (Yii::$app->controller->route == 'site/income') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?>"><?= BaseController::getMessage('2') ?></a></li>
+							<li class="<?= (Yii::$app->controller->route == 'site/reserve') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"><?= BaseController::getMessage('3') ?></a></li>
+							<li class="<?= (Yii::$app->controller->route == 'site/comfort') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>"><?= BaseController::getMessage('4') ?></a></li>
+						</ul>
+					</li>
+					<li class="subnav"><?= BaseController::getMessage('12') ?></li>
+					<li class="<?= (Yii::$app->controller->route == 'site/green') ? 'active' : ''; ?>">
+						<a href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><?= BaseController::getMessage('5') ?></a>
+					</li>
+					<li class="<?= (Yii::$app->controller->route == 'technology/technology') ? 'active' : ''; ?>">
+						<a href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('6') ?></a>
+					</li>
+					<li class="<?= (Yii::$app->controller->route == 'site/video') ? 'active' : ''; ?>">
+						<a href="<?= \yii\helpers\Url::to(['/video']); ?>"><?= BaseController::getMessage('412') ?></a>
+					</li>
+					<li class="subnav"><?= BaseController::getMessage('11') ?></li>
+					<li class="<?= (Yii::$app->controller->route == 'project/project') ? 'active' : ''; ?>">
+						<a href="<?= \yii\helpers\Url::to(['/project']); ?>"><?= BaseController::getMessage('320') ?></a>
+					</li>
+					<li class="<?= (Yii::$app->controller->route == 'site/about') ? 'active' : ''; ?>">
+						<a href="<?= \yii\helpers\Url::to(['/about']); ?>"><?= BaseController::getMessage('7') ?></a>
+					</li>
+					<li class="to_contact">
+						<a href="#contact"><?= BaseController::getMessage('8') ?></a>
+					</li>
+				</ul>
+				<div class="btn-wrap">
+					<a class="button header-btn" href="#" id="order-form"><?= BaseController::getMessage('9') ?></a>
+				</div>
+				<ul class="language-switch">
+					<li><a <?= (Yii::$app->language=='ua')?'class="active"':''   ?>  href="/<?= \frontend\components\UrlTrimLang::widget() ?>">UA</a></li>
+					<li><a <?= (Yii::$app->language=='ru')?'class="active"':''   ?>  href="/ru/<?= \frontend\components\UrlTrimLang::widget() ?>">RU</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
 <div class="to-top-block" id="to_top_block">
     <div class="logo-block">
         <a href="<?= \yii\helpers\Url::to(['/']); ?>">
-            <img data-src="/img/logo.svg" alt="sunsay energy" width="120">
+            <img src="/img/logo.svg" alt="sunsay energy" width="120">
         </a>
     </div>
     <span id="to-top-link"><i class="icon-angle-top"></i></span>
@@ -158,18 +288,21 @@ $contacts = \backend\models\Contact::getContact();
 </script>
 
 <script>
-    new fullpage('#fullpage', {
-        //options here
-        licenseKey: '6700024D-E400429C-8E7E8D39-BC9F185B',
-        autoScrolling:true,
-        scrollHorizontally: true,
-        // fixedElements: '#header',
-        navigation: true,
-        navigationPosition: 'right',
-    });
+	new fullpage('#fullpage', {
+		//options here
+		licenseKey: '6700024D-E400429C-8E7E8D39-BC9F185B',
+		autoScrolling: false,
+		scrollHorizontally: false,
+		navigation: true,
+		navigationPosition: 'right',
+		scrollOverflow: true,
+		dragAndMove: true,
+		responsiveWidth: 1024,
+        verticalCentered: false
+	});
 
-    //methods
-    fullpage_api.setAllowScrolling(true);
+	//methods
+	fullpage_api.setAllowScrolling(true);
 </script>
 <?php $this->endBody() ?>
 

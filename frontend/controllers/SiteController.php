@@ -149,7 +149,7 @@ class SiteController extends BaseController
 
     public function actionCommercial()
     {
-        $this->layout = 'commercial';
+//        $this->layout = 'commercial';
 
         $images = Gallery::find()->all();
 

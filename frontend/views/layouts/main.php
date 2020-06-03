@@ -75,8 +75,6 @@ $contacts = \backend\models\Contact::getContact();
     <link rel="alternate" hreflang="en-ua" href="https://sunsayenergy.com/en<?= $final_uri; ?>" />
 
 	<link href="https://fonts.googleapis.com/css?family=Prompt:900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="/style/lib/fullpage.min.css" />
-	<script type="text/javascript" src="/js/lib/fullpage.min.js"></script>
 	<style>
 		.preloader{display:flex;align-items:center;justify-content:center;position:fixed;top:0;bottom:0;left:0;right:0;z-index:9999;background:#fff}.sk-chasing-dots{width:90px;height:90px;position:relative;margin:auto;text-align:center;animation:sk-chasing-dots-rotate 2s infinite linear}.sk-child{width:calc(90px / 2);height:calc(90px / 2);display:inline-block;position:absolute;top:0;background-color:#ffd100;border-radius:100%;animation:sk-chasing-dots-bounce 2s infinite ease-in-out}.sk-dot-2{background-color:#dfedff;top:auto;bottom:0;animation-delay:calc(-2s / 2)}@keyframes sk-chasing-dots-rotate{100%{transform:rotate(360deg)}}@keyframes sk-chasing-dots-bounce{0%,100%{transform:scale(0)}50%{transform:scale(1)}}
 	</style>
@@ -102,7 +100,7 @@ $contacts = \backend\models\Contact::getContact();
 	</div>
 </div>
 <?php $this->beginBody() ?>
-	<header class="header" id="header">
+	<header class="header <?php if(Yii::$app->controller->route == 'site/commercial'){ ?>transparent<?php } ?>" id="header">
 		<div class="container">
 			<div class="header-wrap">
 				<div class="mobile-top-block">
@@ -517,18 +515,6 @@ $contacts = \backend\models\Contact::getContact();
 
 <?php $this->endBody() ?>
 
-<script>
-    new fullpage('#fullpage', {
-        //options here
-        licenseKey: '6700024D-E400429C-8E7E8D39-BC9F185B',
-        autoScrolling:true,
-        scrollHorizontally: true,
-        fixedElements: '#header',
-    });
-
-    //methods
-    fullpage_api.setAllowScrolling(true);
-</script>
 </body>
 </html>
 <?php $this->endPage() ?>
