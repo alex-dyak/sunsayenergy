@@ -339,6 +339,24 @@ $(document).ready(function(){
             }]
         });
     }
+    if($('.clients-slider').length) {
+        $('.clients-slider').slick({
+            slidesToScroll: 1,
+            rows: 0,
+            slidesToShow: 1,
+            dots: false,
+            nextArrow: '<div class="next-arrow"><img src="/img/icon/Arrow.svg" alt="next" /></div>',
+            prevArrow: '<div class="prev-arrow"><img src="/img/icon/Arrow.svg" alt="prev" /></div>',
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    dotsClass: 'slick-dots'
+                },
+            }]
+        });
+    }
 
 });
 

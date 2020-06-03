@@ -256,12 +256,24 @@ $contacts = \backend\models\Contact::getContact();
 					<a href="#connect" class="button order-btn"><?= BaseController::getMessage('468') ?></a>
 				</div>
 			</div>
-
 		</div>
 	</section>
-	<section class="commercial-clients">
-
-	</section>
+    <?php if (!empty($images)): ?>
+		<section class="clients-section">
+			<div class="clients-slider">
+                <?php foreach ($images as $item): ?>
+					<div class="clients-slide" style="background-image: url('/images/<?= $item->images->imagePreview ?>')">
+					<!--	<div class="image">
+							<img data-src="/images/<?/*= $item->images->imagePreview */?>" alt="<?/*= $item->title */?>">
+						</div>-->
+							<div class="description">
+								<div><?= $item->alt ?></div>
+							</div>
+					</div>
+                <?php endforeach; ?>
+			</div>
+		</section>
+    <?php endif; ?>
 	<section class="connect" id="connect">
 		<div class="container">
 			<div class="connect-bg">
