@@ -244,7 +244,7 @@ $contacts = \backend\models\Contact::getContact();
 							<p><?= BaseController::getMessage('528') ?></p>
 						</div>
 					</div>
-					<div class="reason-slide">
+					<div class="reason-slide yellow">
 						<div class="reason-slide-img background-lazy" data-src="img/commercial-station/pr-support.jpg"></div>
 						<div class="slide-description">
 							<strong><?= BaseController::getMessage('529') ?></strong>
