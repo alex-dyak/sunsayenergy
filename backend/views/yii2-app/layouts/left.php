@@ -39,7 +39,8 @@
                     (\Yii::$app->user->can('OG: теги'))?['label' => 'OG: теги', 'icon' => 'fa fa-reply', 'url' => ['/og']]:"",
                     (\Yii::$app->user->can('Файли'))?['label' => 'Файли', 'icon' => 'fa fa-file', 'url' => ['/files']]:"",
                     (\Yii::$app->user->can('Налаштування'))?['label' => 'Налаштування', 'icon' => 'fa fa-suitcase', 'url' => ['/settings']]:"",
-                    (\Yii::$app->user->can('Налаштування'))?['label' => 'Вiдео', 'icon' => 'fa fa-suitcase', 'url' => ['/video']]:"",
+                    (\Yii::$app->user->can('Файли'))?['label' => 'Вiдео', 'icon' => 'fa fa-video', 'url' => ['/video']]:"",
+                    (\Yii::$app->user->can('Файли'))?['label' => "Комерційні станції (Фото)", 'icon' => 'fa fa-camera', 'url' => ['/commercial']]:"",
                 ],
             ]
         ) ?>

@@ -9,6 +9,7 @@ use backend\models\Request;
 use backend\models\Reviews;
 use backend\models\Subscribe;
 use backend\models\Project;
+use common\models\Commercial;
 use common\models\Video;
 use Yii;
 
@@ -144,6 +145,18 @@ class SiteController extends BaseController
     public function actionSuccess()
     {
         return $this->render('success');
+    }
+
+    public function actionCommercial()
+    {
+//        $this->layout = 'commercial';
+
+        $images = Commercial::find()->all();
+
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
+        $this->setMeta(self::getTitle('commercial_stations'), self::getDescription('commercial_stations'));
+
+        return $this->render('commercial_stations', compact('images'));
     }
 
     //---------далее экшины которые приходят через ajax---------

@@ -211,9 +211,10 @@ $this->params['breadcrumbs'][] = [
     <!-- end review -->
 	<section class="section connect" id="connect">
 		<div class="container">
-			<div class="connect__content">
+			<div class="connect-bg">
+				<div class="connect__content">
 				<div class="connect__content-title line-title">
-					<strong class="h2"><span><?= BaseController::getMessage('364') ?></span></strong>
+					<strong class="h2"><?= BaseController::getMessage('364') ?></strong>
 				</div>
                 <form class="connect__content-question" id="question_form" data-post-url="index.html">
                     <div class="message">
@@ -232,6 +233,7 @@ $this->params['breadcrumbs'][] = [
 					</div>
 					<div class="form-compelete"><?= BaseController::getMessage('374') ?></div>
 				</form>
+			</div>
 			</div>
 		</div>
 	</section>
