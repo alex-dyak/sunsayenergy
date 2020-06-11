@@ -54,22 +54,25 @@ $seo_date = date('Y-m-d', $datetime);
     </section>
     <?php if (!empty($other_articles)): ?>
         <section class="section blog-more">
-            <div class="blog-more__title">
-                <h2><?= BaseController::getMessage('343') ?></h2>
-            </div>
-            <div class="blog__list">
-                <?php foreach ($other_articles as $item): ?>
-                    <div class="blog__list-item">
-                        <div class="title">
-                            <a href="<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $item->symbol]) ?>"><?= $item->header ?></a>
-                        </div>
-                        <div class="date"><?= $item->date ?></div>
-                        <div class="image">
-                                 <img data-src="/images/<?= $item->images->imagePreview ?>" alt="<?= $item->header ?>">
-                             </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
+			<div class="container">
+				<div class="blog-more__title">
+					<strong class="h2"><?= BaseController::getMessage('343') ?></strong>
+				</div>
+				<div class="blog__list">
+                    <?php foreach ($other_articles as $item): ?>
+						<div class="blog__list-item">
+							<div class="title">
+								<a href="<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $item->symbol]) ?>"><?= $item->header ?></a>
+							</div>
+							<div class="date"><?= $item->date ?></div>
+							<div class="image">
+								<img data-src="/images/<?= $item->images->imagePreview ?>" alt="<?= $item->header ?>">
+							</div>
+						</div>
+                    <?php endforeach; ?>
+				</div>
+			</div>
+
         </section>
     <?php endif; ?>
     <?= $this->render('../section/_connect.php'); ?>
