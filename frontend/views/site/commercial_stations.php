@@ -11,7 +11,7 @@ $contacts = \backend\models\Contact::getContact();
 ?>
 
 <main>
-	<section class="hero-section" style="background-image: url('img/commercial-station/hero-commercial.jpg')">
+	<section class="hero-section" style="background-image: url('/img/commercial-station/hero-commercial.jpg')">
 		<span class="hero-yellow-circle"></span>
 		<div class="container">
 			<div class="hero-text">
@@ -69,13 +69,13 @@ $contacts = \backend\models\Contact::getContact();
 			<div class="profit-wrap">
 				<div class="profit-wrap-title">
 					<h2 class="line-title"><?= BaseController::getMessage('490') ?></h2>
-					<div class="title-img background-lazy" data-src="img/commercial-station/profit.jpg"></div>
+					<div class="title-img background-lazy" data-src="/img/commercial-station/profit.jpg"></div>
 				</div>
 				<ul class="profit-list">
 					<li>
 						<div class="profit-list-title">
 							<div class="profit-img">
-								<img data-src="img/commercial-station/icon/pig.svg" alt="<?= BaseController::getMessage('491') ?>">
+								<img data-src="/img/commercial-station/icon/pig.svg" alt="<?= BaseController::getMessage('491') ?>">
 							</div>
 							<strong><?= BaseController::getMessage('491') ?></strong>
 						</div>
@@ -84,7 +84,7 @@ $contacts = \backend\models\Contact::getContact();
 					<li>
 						<div class="profit-list-title">
 							<div class="profit-img">
-								<img data-src="img/commercial-station/icon/document.svg" alt="<?= BaseController::getMessage('493') ?>">
+								<img data-src="/img/commercial-station/icon/document.svg" alt="<?= BaseController::getMessage('493') ?>">
 							</div>
 							<strong><?= BaseController::getMessage('493') ?></strong>
 						</div>
@@ -93,7 +93,7 @@ $contacts = \backend\models\Contact::getContact();
 					<li>
 						<div class="profit-list-title">
 							<div class="profit-img">
-								<img data-src="img/commercial-station/icon/calendar.svg" alt="<?= BaseController::getMessage('495') ?>">
+								<img data-src="/img/commercial-station/icon/calendar.svg" alt="<?= BaseController::getMessage('495') ?>">
 							</div>
 							<strong><?= BaseController::getMessage('495') ?></strong>
 						</div>
@@ -102,7 +102,7 @@ $contacts = \backend\models\Contact::getContact();
 					<li>
 						<div class="profit-list-title">
 							<div class="profit-img">
-								<img data-src="img/commercial-station/icon/money.svg" alt="<?= BaseController::getMessage('497') ?>">
+								<img data-src="/img/commercial-station/icon/money.svg" alt="<?= BaseController::getMessage('497') ?>">
 							</div>
 							<strong><?= BaseController::getMessage('497') ?></strong>
 						</div>
@@ -111,7 +111,7 @@ $contacts = \backend\models\Contact::getContact();
 					<li>
 						<div class="profit-list-title">
 							<div class="profit-img">
-								<img data-src="img/commercial-station/icon/station.svg" alt="<?= BaseController::getMessage('499') ?>">
+								<img data-src="/img/commercial-station/icon/station.svg" alt="<?= BaseController::getMessage('499') ?>">
 							</div>
 							<strong><?= BaseController::getMessage('499') ?></strong>
 						</div>
@@ -162,7 +162,7 @@ $contacts = \backend\models\Contact::getContact();
 				<ul class="stage-list">
 					<li>
 						<div class="stage-img">
-							<img data-src="img/commercial-station/icon/dron.svg" width="90" alt="<?= BaseController::getMessage('511') ?>">
+							<img data-src="/img/commercial-station/icon/dron.svg" width="90" alt="<?= BaseController::getMessage('511') ?>">
 						</div>
 						<div class="stage-info">
 							<strong><?= BaseController::getMessage('511') ?></strong>
@@ -171,7 +171,7 @@ $contacts = \backend\models\Contact::getContact();
 					</li>
 					<li>
 						<div class="stage-img">
-							<img data-src="img/commercial-station/icon/analysis.svg" width="62" alt="<?= BaseController::getMessage('513') ?>">
+							<img data-src="/img/commercial-station/icon/analysis.svg" width="62" alt="<?= BaseController::getMessage('513') ?>">
 						</div>
 						<div class="stage-info">
 							<strong><?= BaseController::getMessage('513') ?></strong>
@@ -180,7 +180,7 @@ $contacts = \backend\models\Contact::getContact();
 					</li>
 					<li>
 						<div class="stage-img">
-							<img data-src="img/commercial-station/icon/development.svg" width="65" alt="<?= BaseController::getMessage('515') ?>">
+							<img data-src="/img/commercial-station/icon/development.svg" width="65" alt="<?= BaseController::getMessage('515') ?>">
 						</div>
 						<div class="stage-info">
 							<strong><?= BaseController::getMessage('515') ?></strong>
@@ -189,7 +189,7 @@ $contacts = \backend\models\Contact::getContact();
 					</li>
 					<li>
 						<div class="stage-img">
-							<img data-src="img/commercial-station/icon/logistic.svg" width="75" alt="<?= BaseController::getMessage('519') ?>">
+							<img data-src="/img/commercial-station/icon/logistic.svg" width="75" alt="<?= BaseController::getMessage('519') ?>">
 						</div>
 						<div class="stage-info">
 							<strong><?= BaseController::getMessage('519') ?></strong>
@@ -198,7 +198,7 @@ $contacts = \backend\models\Contact::getContact();
 					</li>
 					<li>
 						<div class="stage-img">
-							<img data-src="img/commercial-station/icon/instalation.svg" width="90" alt="<?= BaseController::getMessage('517') ?>">
+							<img data-src="/img/commercial-station/icon/instalation.svg" width="90" alt="<?= BaseController::getMessage('517') ?>">
 						</div>
 						<div class="stage-info">
 							<strong><?= BaseController::getMessage('517') ?></strong>
@@ -224,28 +224,28 @@ $contacts = \backend\models\Contact::getContact();
 			<div class="reason-wrapper"><h2 class="line-title"><?= BaseController::getMessage('522') ?></h2>
 				<div class="reason-slider">
 					<div class="reason-slide">
-						<div class="reason-slide-img background-lazy" data-src="img/commercial-station/service.jpg"></div>
+						<div class="reason-slide-img background-lazy" data-src="/img/commercial-station/service.jpg"></div>
 						<div class="slide-description">
 							<strong><?= BaseController::getMessage('523') ?></strong>
 							<p><?= BaseController::getMessage('524') ?></p>
 						</div>
 					</div>
 					<div class="reason-slide">
-						<div class="reason-slide-img background-lazy" data-src="img/commercial-station/warranty.jpg"></div>
+						<div class="reason-slide-img background-lazy" data-src="/img/commercial-station/warranty.jpg"></div>
 						<div class="slide-description">
 							<strong><?= BaseController::getMessage('525') ?></strong>
 							<p><?= BaseController::getMessage('526') ?></p>
 						</div>
 					</div>
 					<div class="reason-slide">
-						<div class="reason-slide-img background-lazy" data-src="img/commercial-station/efficient.jpg"></div>
+						<div class="reason-slide-img background-lazy" data-src="/img/commercial-station/efficient.jpg"></div>
 						<div class="slide-description">
 							<strong><?= BaseController::getMessage('527') ?></strong>
 							<p><?= BaseController::getMessage('528') ?></p>
 						</div>
 					</div>
-					<div class="reason-slide">
-						<div class="reason-slide-img background-lazy" data-src="img/commercial-station/pr-support.jpg"></div>
+					<div class="reason-slide yellow">
+						<div class="reason-slide-img background-lazy" data-src="/img/commercial-station/pr-support.jpg"></div>
 						<div class="slide-description">
 							<strong><?= BaseController::getMessage('529') ?></strong>
 							<p><?= BaseController::getMessage('530') ?></p>
