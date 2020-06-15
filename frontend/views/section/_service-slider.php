@@ -18,19 +18,19 @@
 					<div class="text-wrap">
 						<p class="text"><?= BaseController::getMessage('273') ?></p>
 					</div>
-					<div class="image" style="background-image: url('/img/services/service-1.jpg')"></div>
+					<div class="image background-lazy" data-src='/img/services/service-1.jpg'></div>
 				</div>
 				<div class="service-slide">
 					<div class="text-wrap">
 						<p class="text"><?= BaseController::getMessage('278') ?></p>
 					</div>
-					<div class="image" style="background-image: url('/img/services/service-2.jpg')"></div>
+					<div class="image background-lazy" data-src='/img/services/service-2.jpg'></div>
 				</div>
 				<div class="service-slide">
 					<div class="text-wrap">
 						<p class="text"><?= BaseController::getMessage('280') ?></p>
 					</div>
-					<div class="image" style="background-image: url('/img/services/service-3.jpg')"></div>
+					<div class="image background-lazy" data-src='/img/services/service-3.jpg'></div>
 				</div>
 			</div>
 		</div>

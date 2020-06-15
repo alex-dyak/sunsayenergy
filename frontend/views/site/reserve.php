@@ -27,7 +27,11 @@ $this->params['breadcrumbs'][] = [
 					<h1><?= BaseController::getMessage('74') ?></h1>
 				</div>
 				<div class="service-section-image">
-					<img src="/img/house-3.png" alt="<?= BaseController::getMessage('74') ?>" srcset="/img/house-3-mob.png 1024w, /img/house-3.png 1366w">
+					<picture>
+						<source media="(min-width: 768px)" srcset="/img/house-3.png">
+						<img alt="Дом с панелями" src="/img/house-3-mob.png">
+					</picture>
+<!--					<img src="/img/house-3.png" alt="--><?//= BaseController::getMessage('74') ?><!--" srcset="/img/house-3-mob.png 1024w, /img/house-3.png 1366w">-->
 				</div>
 				<div class="description"><?= BaseController::getMessage('75') ?></div>
 			</div>
@@ -182,7 +186,7 @@ $this->params['breadcrumbs'][] = [
 							<div class="equipment-carousel equipment-slick">
 								<div class="equipment-carousel-item">
 									<div class="image-background">
-										<div class="image" style="background-image: url('/img/types/inv.png')"></div>
+										<div class="image background-lazy" data-src='/img/types/inv.png'></div>
 										<div class="text">
                                             <?= BaseController::getMessage('226') ?>
 										</div>
@@ -197,7 +201,7 @@ $this->params['breadcrumbs'][] = [
 							<div class="equipment-carousel pannel-slick">
 								<div class="equipment-carousel-item">
 									<div class="image-background">
-										<div class="image" style="background-image: url('/img/types/Jinko.png')"></div>
+										<div class="image background-lazy" data-src='/img/types/Jinko.png'></div>
 										<div class="text">
                                             <?= BaseController::getMessage('194') ?>
 										</div>
@@ -205,7 +209,7 @@ $this->params['breadcrumbs'][] = [
 								</div>
 								<div class="equipment-carousel-item">
 									<div class="image-background">
-										<div class="image" style="background-image: url('/img/types/Qcell.png')"></div>
+										<div class="image background-lazy" data-src='/img/types/Qcell.png'></div>
 										<div class="text">
                                             <?= BaseController::getMessage('195') ?>
 										</div>
@@ -213,7 +217,7 @@ $this->params['breadcrumbs'][] = [
 								</div>
 								<div class="equipment-carousel-item">
 									<div class="image-background">
-										<div class="image" style="background-image: url('/img/types/Longi.png')"></div>
+										<div class="image background-lazy" data-src='/img/types/Longi.png'></div>
 										<div class="text">
                                             <?= BaseController::getMessage('198') ?>
 										</div>
@@ -228,7 +232,7 @@ $this->params['breadcrumbs'][] = [
 							<div class="equipment-carousel battery-slick">
 								<div class="equipment-carousel-item">
 									<div class="image-background">
-										<div class="image" style="background-image: url('/img/types/Victron.png')"></div>
+										<div class="image background-lazy" data-src='/img/types/Victron.png'></div>
 										<div class="text">
                                             <?= BaseController::getMessage('237') ?>
 										</div>
@@ -236,7 +240,7 @@ $this->params['breadcrumbs'][] = [
 								</div>
 								<div class="equipment-carousel-item">
 									<div class="image-background">
-										<div class="image" style="background-image: url('/img/types/EverExceed.png')"></div>
+										<div class="image background-lazy" data-src='/img/types/EverExceed.png'></div>
 										<div class="text">
                                             <?= BaseController::getMessage('243') ?>
 										</div>
@@ -251,7 +255,7 @@ $this->params['breadcrumbs'][] = [
 							<div class="equipment-carousel mount-slick">
 								<div class="equipment-carousel-item">
 									<div class="image-background">
-										<div class="image" style="background-image: url('/img/services/solar-panel.png')"></div>
+										<div class="image background-lazy" data-src='/img/services/solar-panel.png'></div>
 									</div>
 								</div>
 							</div>
