@@ -64,4 +64,4 @@
         <!-- end connect -->
     </main>
 
-<?php $this->registerJsFile('/js/onload/index.js', ['position' => \yii\web\View::POS_END]); ?>
+<?php //$this->registerJsFile('/js/onload/index.js', ['position' => \yii\web\View::POS_END]); ?>
