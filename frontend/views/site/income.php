@@ -260,7 +260,7 @@ $this->registerJsFile('/js/lib/Chart.min.js', ['position' => \yii\web\View::POS_
 $this->registerJsFile('/js/calc/income.min.js', ['position' => \yii\web\View::POS_END, 'async'=>true, 'defer'=>true]);
 ?>
 
-<script type="application/ld+json">
+<script type="application/ld+json" defer>
     {
         "@context": "http://schema.org",
         "@type": "BreadcrumbList",

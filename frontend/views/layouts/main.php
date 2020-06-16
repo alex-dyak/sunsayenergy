@@ -37,7 +37,7 @@ $contacts = \backend\models\Contact::getContact();
 	<link rel="shortcut icon" href="/img/favicon.ico">
 
 	<!-- Google Tag Manager -->
-	<script>(function (w, d, s, l, i) {
+	<script defer>(function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
                 'gtm.start':
@@ -371,7 +371,7 @@ $contacts = \backend\models\Contact::getContact();
 						</ul>
 					</div>
 					<div class="footer-contact-wrap">
-						<strong class="h4">Контакты</strong>
+						<strong class="h4"><?= BaseController::getMessage('8') ?></strong>
 						<ul class="footer-contact-list">
 							<li><a class="binct-phone-number-1" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
 							<li><a class="binct-phone-number-3" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
@@ -441,23 +441,12 @@ $contacts = \backend\models\Contact::getContact();
 <div class="backgroundfade" style="display:none;"></div>
 <!-- end fade dropdown -->
 
-<script>
-	// var cb = function() {
-	// var l = document.createElement('link'); l.rel = 'stylesheet';
-	// l.href = '/min/all.min.css';
-	// var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-	// };
-	// var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-	// webkitRequestAnimationFrame || msRequestAnimationFrame;
-	// if (raf) raf(cb);
-	// else window.addEventListener('load', cb);
-</script>
 
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
 <?php if ( BaseController::is_mobile()  ): ?>
-    <script src="/min/main-mob.js?v=3" defer="defer"></script>
+    <script src="/min/main-mob.js?v=3" ></script>
 <?php else: ?>
-    <script src="/min/main.js?v=3" defer="defer"></script>
+    <script src="/min/main.js?v=3"></script>
 <?php endif; ?>
 
 <script src="/min/new-js.js" defer="defer"></script>
@@ -539,7 +528,7 @@ $contacts = \backend\models\Contact::getContact();
     }, 2000);
 </script>
 
-<script>
+<script defer>
     defer(function() {
         $( "#map" ).lazyLoadGoogleMaps({key: 'AIzaSyB35Exje6kOhzSsEsUTg3V09ot0HILL-Qk',callback: initMap});
     }, 1500);
