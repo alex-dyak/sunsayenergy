@@ -252,9 +252,9 @@ $contacts = \backend\models\Contact::getContact();
 						</div>
 					</div>
 				</div>
-				<div class="btn-wrap">
-					<a href="#connect" class="button order-btn"><?= BaseController::getMessage('468') ?></a>
-				</div>
+				<!--<div class="btn-wrap">
+					<a href="#connect" class="button order-btn"><?/*= BaseController::getMessage('468') */?></a>
+				</div>-->
 			</div>
 		</div>
 	</section>

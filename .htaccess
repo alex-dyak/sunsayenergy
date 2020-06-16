@@ -6,8 +6,8 @@
 #RewriteCond %{HTTPS} !=on
 #RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
-#RewriteCond %{HTTP_HOST} ^www\.(.*)$
-#RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
 
 #RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*(default|index|main)\.(html|php|htm)\ HTTP/ [NC]
 #RewriteRule ^(([^/]+/)*)(default|main|index)\.(html|php|htm)$ https://sunsayenergy.com/$1 [L,R=301]
