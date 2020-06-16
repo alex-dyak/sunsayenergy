@@ -224,9 +224,13 @@ $this->params['breadcrumbs'][] = [
                         <input type="hidden" name="utm_source" <?php echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''?> >
                         <input type="hidden" name="utm_medium" <?php echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''?> >
                         <input type="hidden" name="utm_campaign" <?php echo !empty($_SESSION['utm_campaign']) ? ' value="' . $_SESSION['utm_campaign'] .'"': ''?> >
-                        <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
-                        <input class="custom-field" id="phone" type="text" id="phone" name="phone" placeholder="+380">
+						<label for="fullname" class="hidden"><?= BaseController::getMessage('366') ?></label>
+						<input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
+						<label for="phone" class="hidden">Телефон</label>
+						<input class="custom-field" id="phone" type="text" id="phone" name="phone" placeholder="+380">
+						<label for="email" class="hidden">email</label>
                         <input class="custom-field" type="text" id="email" name="email" placeholder="youremail@mail.com">
+						<label for="question" class="hidden"><?= BaseController::getMessage('403') ?></label>
                         <textarea class="custom-field" name="question" id="question" rows="5" placeholder="<?= BaseController::getMessage('403') ?>"></textarea>
                         <div class="connect__content-button">
                             <button class="btn connect-btn btn-primary" id="submit_button">
@@ -251,9 +255,9 @@ $this->params['breadcrumbs'][] = [
 
 <?php
 $this->registerCssFile('/style/lib/ion.rangeSlider.css', ['position' => \yii\web\View::POS_END]);
-$this->registerJsFile('/js/lib/ion.rangeSlider.min.js', ['position' => \yii\web\View::POS_END]);
-$this->registerJsFile('/js/lib/Chart.min.js', ['position' => \yii\web\View::POS_END]);
-$this->registerJsFile('/js/calc/income.min.js', ['position' => \yii\web\View::POS_END]);
+$this->registerJsFile('/js/lib/ion.rangeSlider.min.js', ['position' => \yii\web\View::POS_END, 'async'=>true, 'defer'=>true]);
+$this->registerJsFile('/js/lib/Chart.min.js', ['position' => \yii\web\View::POS_END, 'async'=>true, 'defer'=>true]);
+$this->registerJsFile('/js/calc/income.min.js', ['position' => \yii\web\View::POS_END, 'async'=>true, 'defer'=>true]);
 ?>
 
 <script type="application/ld+json">

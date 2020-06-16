@@ -30,7 +30,7 @@ $contacts = \backend\models\Contact::getContact();
     <?php $this->head() ?>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="apple-mobile-web-app-capable" content="yes"/>
 	<meta name="apple-mobile-web-app-status-bar-style" content="white"/>
@@ -89,9 +89,7 @@ $contacts = \backend\models\Contact::getContact();
 	<script>
         window.addEventListener('load', function () {document.querySelector(".preloader").style = "display:none;";});
 	</script>
-
     <meta name="google-site-verification" content="xxxLG9Hae7rnxth_CLJ3SBLXRhnRpnEg-DV95cNNyxI" />
-
 </head>
 
 <body style="opacity:1;" class="<?php if ( BaseController::is_mobile()  ): ?> mobile <?php endif; ?> <?= (Yii::$app->language=='ru')?'lang-ru':''?>">
@@ -338,7 +336,7 @@ $contacts = \backend\models\Contact::getContact();
 						</div>
 					</div>
 					<div class="footer__nav-menu">
-						<h4 class="title"><?= BaseController::getMessage('1') ?></h4>
+						<strong class="title h4"><?= BaseController::getMessage('1') ?></strong>
 						<ul>
 							<li class="<?= (Yii::$app->controller->route == 'site/income') ? 'active' : ''; ?>">
 								<a <?=  Yii::$app->request->url == \yii\helpers\Url::to(['/solar-power-station-for-income']) ? '' : 'href="' . \yii\helpers\Url::to(['/solar-power-station-for-income']) . '"' ?>>
@@ -352,7 +350,7 @@ $contacts = \backend\models\Contact::getContact();
 						</ul>
 					</div>
 					<div class="footer__nav-menu">
-						<h4><?= BaseController::getMessage('11') ?></h4>
+						<strong class="h4"><?= BaseController::getMessage('11') ?></strong>
 						<ul>
 							<li class="<?= (Yii::$app->controller->route == 'project/project') ? 'active' : ''; ?>">
 								<a <?=  Yii::$app->request->url == \yii\helpers\Url::to(['/project']) ? '' : 'href="' . \yii\helpers\Url::to(['/project']) . '"' ?>>
@@ -363,7 +361,7 @@ $contacts = \backend\models\Contact::getContact();
 						</ul>
 					</div>
 					<div class="footer__nav-menu">
-						<h4><?= BaseController::getMessage('12') ?></h4>
+						<strong class="h4"><?= BaseController::getMessage('12') ?></strong>
 						<ul>
 							<li class="<?= (Yii::$app->controller->route == 'site/green') ? 'active' : ''; ?>">
 								<a <?= Yii::$app->request->url == \yii\helpers\Url::to(['/green-tariff']) ? '' : 'href="' . \yii\helpers\Url::to(['/green-tariff']) . '"' ?>>
@@ -374,7 +372,7 @@ $contacts = \backend\models\Contact::getContact();
 						</ul>
 					</div>
 					<div class="footer-contact-wrap">
-						<h4>Контакты</h4>
+						<strong class="h4">Контакты</strong>
 						<ul class="footer-contact-list">
 							<li><a class="binct-phone-number-1" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
 							<li><a class="binct-phone-number-3" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
@@ -392,7 +390,8 @@ $contacts = \backend\models\Contact::getContact();
 						<strong class="title-mobile"><?= BaseController::getMessage('13') ?></strong>
 						<strong class="title"><?= BaseController::getMessage('410') ?></strong>
 						<form class="form subscribe" method="post">
-							<input class="custom-field" type="email" name="email" placeholder="youremail@mail.com">
+							<label for="subscribe-email" class="hidden">youremail@mail.com</label>
+							<input class="custom-field" type="email" name="email" id="subscribe-email" placeholder="youremail@mail.com">
 							<button class="button btn-subscribe"><?= BaseController::getMessage('14') ?></button>
 						</form>
 						<div class="success-msg"><?= BaseController::getMessage('411') ?></div>
@@ -457,12 +456,12 @@ $contacts = \backend\models\Contact::getContact();
 
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
 <?php if ( BaseController::is_mobile()  ): ?>
-    <script src="/min/main-mob.js?v=3"></script>
+    <script src="/min/main-mob.js?v=3" defer="defer"></script>
 <?php else: ?>
-    <script src="/min/main.js?v=3"></script>
+    <script src="/min/main.js?v=3" defer="defer"></script>
 <?php endif; ?>
 
-<script src="/min/new-js.js"></script>
+<script src="/min/new-js.js" defer="defer"></script>
 
 
 <script>deferimg('img[data-src],picture,video,audio', 100, 'lazied', function (img) {
