@@ -15,7 +15,7 @@
 						<label for="fullname" class="hidden"><?= BaseController::getMessage('366') ?></label>
 						<input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
 						<label for="phone" class="hidden">Телефон</label>
-						<input class="custom-field" id="phone" type="text" id="phone" name="phone" placeholder="+380">
+						<input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
 						<label for="email" class="hidden">email</label>
 						<input class="custom-field" type="text" id="email" name="email" placeholder="youremail@mail.com">
 						<label for="question" class="hidden"><?= BaseController::getMessage('403') ?></label>
