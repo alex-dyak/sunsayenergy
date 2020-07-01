@@ -37,7 +37,7 @@ $contacts = \backend\models\Contact::getContact();
 	<link rel="shortcut icon" href="/img/favicon.ico">
 
 	<!-- Google Tag Manager -->
-	<script defer>(function (w, d, s, l, i) {
+	<script>(function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
                 'gtm.start':
@@ -529,7 +529,7 @@ $contacts = \backend\models\Contact::getContact();
     }, 2000);
 </script>
 
-<script defer>
+<script>
     defer(function() {
         $( "#map" ).lazyLoadGoogleMaps({key: 'AIzaSyB35Exje6kOhzSsEsUTg3V09ot0HILL-Qk',callback: initMap});
     }, 1500);
