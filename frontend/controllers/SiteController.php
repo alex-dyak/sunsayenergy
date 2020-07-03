@@ -227,6 +227,7 @@ class SiteController extends BaseController
             '/solar-power-for-autonomous-power',
             '/solar-power-station-for-income',
             '/solar-power-for-backup-power',
+            '/commercial_stations',
             '/technology',
             '/technology/faq-about-solar-energy',
             '/types-of-solar-power-plants',
@@ -265,6 +266,11 @@ class SiteController extends BaseController
             </url>
             <url>
                 <loc>https://sunsayenergy.com/solar-power-for-backup-power</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.80</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/commercial_stations</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.80</priority>
             </url>
@@ -355,6 +361,11 @@ class SiteController extends BaseController
             </url>
             <url>
                 <loc>https://sunsayenergy.com/ru/solar-power-for-backup-power</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/ru/commercial_stations</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.64</priority>
             </url>
