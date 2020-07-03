@@ -193,6 +193,13 @@ $this->params['breadcrumbs'][] = [
 									</div>
 								</div>
 							</div>
+							<div class="logo-row">
+								<ul>
+									<li><img src="/img/logos/invertor/fronius.png" alt="fronius"></li>
+									<li><img data-src="/img/logos/invertor/huawei.png" alt="huawei"></li>
+									<li><img data-src="/img/logos/invertor/solar-edge.png" alt="solar edge"></li>
+								</ul>
+							</div>
 						</div>
 						<div class="equipment-slide">
 							<div class="equipment-text">
@@ -224,6 +231,16 @@ $this->params['breadcrumbs'][] = [
 									</div>
 								</div>
 							</div>
+							<div class="logo-row">
+								<ul>
+									<li><img src="/img/logos/pannel/ja-solar.png" alt="ja solar"></li>
+									<li><img data-src="/img/logos/pannel/longi-solar.png" alt="longi solar"></li>
+									<li><img src="/img/logos/pannel/canadian-solar.png" alt="canadian solar"></li>
+									<li><img data-src="/img/logos/pannel/sunpower.png" alt="sunpower"></li>
+									<li><img data-src="/img/logos/pannel/jinco-solar.png" alt="jinco solar"></li>
+									<li><img src="/img/logos/pannel/qcells.png" alt="qcells"></li>
+								</ul>
+							</div>
 						</div>
 						<div class="equipment-slide">
 							<div class="equipment-text">
@@ -246,6 +263,13 @@ $this->params['breadcrumbs'][] = [
 										</div>
 									</div>
 								</div>
+							</div>
+							<div class="logo-row">
+								<ul>
+									<li><img data-src="/img/logos/battery/lg.png" alt="LG"></li>
+									<li><img src="/img/logos/battery/byd.png" alt="BYD"></li>
+									<li><img data-src="/img/logos/battery/pylon-tech.png" alt="pylon tech"></li>
+								</ul>
 							</div>
 						</div>
 						<div class="equipment-slide">
@@ -275,42 +299,43 @@ $this->params['breadcrumbs'][] = [
         <?= $this->render('../section/_service-slider.php'); ?>
 		<!-- end service slider -->
     <!-- start connect -->
-    <section class="section connect" id="connect">
+        <?= $this->render('../section/_connect-blue.php'); ?>
+    <!--<section class="section connect" id="connect">
 		<div class="container">
 			<div class="connect-bg">
 				<div class="connect__content">
 					<div class="connect__content-title line-title">
-						<strong class="h2"><?= BaseController::getMessage('364') ?></strong>
+						<strong class="h2"><?/*= BaseController::getMessage('364') */?></strong>
 					</div>
 					<form class="connect__content-question" id="question_form" data-post-url="index.html">
 						<div class="message">
-							<input type="hidden" name="utm_source" <?php echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''?> >
-							<input type="hidden" name="utm_medium" <?php echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''?> >
-							<input type="hidden" name="utm_campaign" <?php echo !empty($_SESSION['utm_campaign']) ? ' value="' . $_SESSION['utm_campaign'] .'"': ''?> >
-							<input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
+							<input type="hidden" name="utm_source" <?php /*echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''*/?> >
+							<input type="hidden" name="utm_medium" <?php /*echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''*/?> >
+							<input type="hidden" name="utm_campaign" <?php /*echo !empty($_SESSION['utm_campaign']) ? ' value="' . $_SESSION['utm_campaign'] .'"': ''*/?> >
+							<input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?/*= BaseController::getMessage('366') */?>">
 							<input class="custom-field" type="text" id="phone" name="phone" placeholder="+380">
 							<input class="custom-field" type="text" id="email" name="email" placeholder="youremail@mail.com">
-							<textarea class="custom-field" id="question" name="question" rows="5" placeholder="<?= BaseController::getMessage('403') ?>"></textarea>
+							<textarea class="custom-field" id="question" name="question" rows="5" placeholder="<?/*= BaseController::getMessage('403') */?>"></textarea>
 							<div class="connect__content-button">
 								<button class="btn connect-btn btn-primary" id="submit_button">
-									<?= BaseController::getMessage('14') ?>
+									<?/*= BaseController::getMessage('14') */?>
 								</button>
 							</div>
 						</div>
-						<div class="form-compelete"><?= BaseController::getMessage('374') ?></div>
+						<div class="form-compelete"><?/*= BaseController::getMessage('374') */?></div>
 					</form>
 				</div>
 			</div>
 		</div>
-	</section>
+	</section>-->
     <!-- end connect -->
 </main>
 
 <?php
+$this->registerJsFile('/js/lib/ion.rangeSlider.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
+$this->registerJsFile('/js/lib/Chart.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
+$this->registerJsFile('/js/calc/reserve.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
 $this->registerCssFile('/style/lib/ion.rangeSlider.css', ['position' => \yii\web\View::POS_END]);
-$this->registerJsFile('/js/lib/ion.rangeSlider.min.js', ['position' => \yii\web\View::POS_END]);
-$this->registerJsFile('/js/lib/Chart.min.js', ['position' => \yii\web\View::POS_END]);
-$this->registerJsFile('/js/calc/reserve.min.js', ['position' => \yii\web\View::POS_END]);
 ?>
 
 <script type="application/ld+json">

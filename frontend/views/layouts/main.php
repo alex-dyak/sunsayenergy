@@ -89,9 +89,7 @@ $contacts = \backend\models\Contact::getContact();
 	<script>
         window.addEventListener('load', function () {document.querySelector(".preloader").style = "display:none;";});
 	</script>
-
     <meta name="google-site-verification" content="xxxLG9Hae7rnxth_CLJ3SBLXRhnRpnEg-DV95cNNyxI" />
-
 </head>
 
 <body style="opacity:1;" class="<?php if ( BaseController::is_mobile()  ): ?> mobile <?php endif; ?> <?= (Yii::$app->language=='ru')?'lang-ru':''?>">
@@ -108,7 +106,7 @@ $contacts = \backend\models\Contact::getContact();
 	</div>
 </div>
 <?php $this->beginBody() ?>
-	<header class="header <?php if(Yii::$app->controller->route == 'site/commercial'){ ?>transparent<?php } ?>" id="header">
+	<header class="header <?php if(Yii::$app->controller->route == 'site/commercial' || Yii::$app->controller->route == 'site/green'){ ?>transparent<?php } ?>" id="header">
 		<div class="container">
 			<div class="header-wrap">
 				<div class="mobile-top-block">
@@ -338,7 +336,7 @@ $contacts = \backend\models\Contact::getContact();
 						</div>
 					</div>
 					<div class="footer__nav-menu">
-						<h4 class="title"><?= BaseController::getMessage('1') ?></h4>
+						<strong class="title h4"><?= BaseController::getMessage('1') ?></strong>
 						<ul>
 							<li class="<?= (Yii::$app->controller->route == 'site/income') ? 'active' : ''; ?>">
 								<a <?=  Yii::$app->request->url == \yii\helpers\Url::to(['/solar-power-station-for-income']) ? '' : 'href="' . \yii\helpers\Url::to(['/solar-power-station-for-income']) . '"' ?>>
@@ -352,7 +350,7 @@ $contacts = \backend\models\Contact::getContact();
 						</ul>
 					</div>
 					<div class="footer__nav-menu">
-						<h4><?= BaseController::getMessage('11') ?></h4>
+						<strong class="h4"><?= BaseController::getMessage('11') ?></strong>
 						<ul>
 							<li class="<?= (Yii::$app->controller->route == 'project/project') ? 'active' : ''; ?>">
 								<a <?=  Yii::$app->request->url == \yii\helpers\Url::to(['/project']) ? '' : 'href="' . \yii\helpers\Url::to(['/project']) . '"' ?>>
@@ -363,7 +361,7 @@ $contacts = \backend\models\Contact::getContact();
 						</ul>
 					</div>
 					<div class="footer__nav-menu">
-						<h4><?= BaseController::getMessage('12') ?></h4>
+						<strong class="h4"><?= BaseController::getMessage('12') ?></strong>
 						<ul>
 							<li class="<?= (Yii::$app->controller->route == 'site/green') ? 'active' : ''; ?>">
 								<a <?= Yii::$app->request->url == \yii\helpers\Url::to(['/green-tariff']) ? '' : 'href="' . \yii\helpers\Url::to(['/green-tariff']) . '"' ?>>
@@ -374,7 +372,7 @@ $contacts = \backend\models\Contact::getContact();
 						</ul>
 					</div>
 					<div class="footer-contact-wrap">
-						<h4>Контакты</h4>
+						<strong class="h4"><?= BaseController::getMessage('8') ?></strong>
 						<ul class="footer-contact-list">
 							<li><a class="binct-phone-number-1" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
 							<li><a class="binct-phone-number-3" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
@@ -392,7 +390,8 @@ $contacts = \backend\models\Contact::getContact();
 						<strong class="title-mobile"><?= BaseController::getMessage('13') ?></strong>
 						<strong class="title"><?= BaseController::getMessage('410') ?></strong>
 						<form class="form subscribe" method="post">
-							<input class="custom-field" type="email" name="email" placeholder="youremail@mail.com">
+							<label for="subscribe-email" class="hidden">youremail@mail.com</label>
+							<input class="custom-field" type="email" name="email" id="subscribe-email" placeholder="youremail@mail.com">
 							<button class="button btn-subscribe"><?= BaseController::getMessage('14') ?></button>
 						</form>
 						<div class="success-msg"><?= BaseController::getMessage('411') ?></div>
@@ -443,26 +442,15 @@ $contacts = \backend\models\Contact::getContact();
 <div class="backgroundfade" style="display:none;"></div>
 <!-- end fade dropdown -->
 
-<script>
-	// var cb = function() {
-	// var l = document.createElement('link'); l.rel = 'stylesheet';
-	// l.href = '/min/all.min.css';
-	// var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-	// };
-	// var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-	// webkitRequestAnimationFrame || msRequestAnimationFrame;
-	// if (raf) raf(cb);
-	// else window.addEventListener('load', cb);
-</script>
 
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
 <?php if ( BaseController::is_mobile()  ): ?>
-    <script src="/min/main-mob.js?v=3"></script>
+    <script src="/min/main-mob.js?v=3" ></script>
 <?php else: ?>
     <script src="/min/main.js?v=3"></script>
 <?php endif; ?>
 
-<script src="/min/new-js.js"></script>
+<script src="/min/new-js.js" defer="defer"></script>
 
 
 <script>deferimg('img[data-src],picture,video,audio', 100, 'lazied', function (img) {
