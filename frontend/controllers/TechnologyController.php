@@ -50,7 +50,7 @@ class TechnologyController extends BaseController
     public function actionDetailed($symbol)
     {
         $article = Blog::findOne(['symbol'=>$symbol]);
-        $other_articles = Blog::find()->andWhere(['<>','symbol', $symbol])->limit(4)->all();
+        $other_articles = Blog::find()->where(['<>','symbol', $symbol])->orderBy(['id' => SORT_DESC])->limit(4)->all();
         $this->setOgImage('https://sunsayenergy.com/images/' . $article->images->imagePreview);
         $this->setMeta($article->title, $article->descriptionSEO);
 
