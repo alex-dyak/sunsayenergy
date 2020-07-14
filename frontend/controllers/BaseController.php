@@ -36,8 +36,11 @@ class BaseController extends Controller
     {
         parent::init();
         Language::saveLang();
-        $og = Og::findOne(1);
-        $this->setOg($og->title,$og->description);
+        $id = $this->id;
+        if ($id != 'technology') {
+            $og = Og::findOne(1);
+            $this->setOg($og->title,$og->description);
+        }
     }
 
     /**
@@ -145,6 +148,14 @@ class BaseController extends Controller
 
     protected function setOgImage($img){
         $this->view->registerMetaTag(['property'=>'og:image', 'content'=>"{$img}"]);
+    }
+
+    protected function setOgLang($lang){
+        $this->view->registerMetaTag(['property'=>'og:locale', 'content'=>$lang . "_UK"]);
+    }
+
+    protected function setOgSiteName(){
+        $this->view->registerMetaTag(['property'=>'og:site_name', 'content'=>'Sunsayenergy']);
     }
 
 }

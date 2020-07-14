@@ -88,6 +88,55 @@ return [
                 //'<language:(ru|ua|en)>/<controller:\w+>/<action:\w+>'=>'<controller>/<action>'
             ]
         ],
+        'socialShare' => [
+            'class' => \ymaker\social\share\configurators\Configurator::class,
+            'socialNetworks' => [
+                'facebook' => [
+                    'class' => \ymaker\social\share\drivers\Facebook::class,
+                    'label' => Yii::t('app', 'Facebook'),
+                    'options' => ['class' => 'fb'],
+                ],
+                'twitter' => [
+                    'class' => \ymaker\social\share\drivers\Twitter::class,
+                    'label' => Yii::t('app', 'Twitter'),
+                    'options' => ['class' => 'tw'],
+                    'config' => [
+                        'account' => $params['twitterAccount']
+                    ],
+                ],
+                'Viber' => [
+                    'class' => \ymaker\social\share\drivers\Viber::class,
+                    'label' => Yii::t('app', 'Viber'),
+                    'options' => ['class' => 'vb'],
+                ],
+                'Telegram' => [
+                    'class' => \ymaker\social\share\drivers\Telegram::class,
+                    'label' => Yii::t('app', 'Telegram'),
+                    'options' => ['class' => 'tm'],
+                ],
+                'Gmail' => [
+                    'class' => \ymaker\social\share\drivers\Gmail::class,
+                    'label' => Yii::t('app', 'Gmail'),
+                    'options' => ['class' => 'gmail'],
+                ],
+                'vkontakte' => [
+                    'class' => \ymaker\social\share\drivers\Vkontakte::class,
+                    'label' => Yii::t('app', 'Vkontakte'),
+                    'options' => ['class' => 'vk'],
+                ],
+
+                // ...
+            ],
+            'options' => [
+                'class' => 'social-network',
+            ],
+           // 'enableIcons' => true,
+           // 'enableSeoOptions' => false,
+//            'icons' => [
+//                \ymaker\social\share\drivers\Twitter::class => 'icon-twitter', // CSS класс
+//                \ymaker\social\share\drivers\Facebook::class => 'icon-facebook',  // CSS класс
+//            ],
+        ],
         //'on beforeAction' => ['\pjhl\multilanguage\Start', 'run'],
     ],
     'params' => $params,

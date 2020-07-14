@@ -1,6 +1,7 @@
 <?php
 use frontend\controllers\BaseController;
 use yii\widgets\Breadcrumbs;
+use ymaker\social\share\widgets\SocialShare;
 
 $this->params['breadcrumbs'][] = [
     'template' => "<li>{link}</li>\n",
@@ -51,6 +52,14 @@ $seo_date = date('Y-m-d', $datetime);
                 <?= $article->text ?>
             </div>
         </div>
+        <?= \ymaker\social\share\widgets\SocialShare::widget([
+             'configurator'  => 'socialShare',
+             'url'           => "https://sunsayenergy.com" . \yii\helpers\Url::to(['technology/detailed', 'symbol' => $article->symbol]),
+             'title'         => $article->title,
+             'description'   => $article->descriptionSEO,
+             'imageUrl'      => \yii\helpers\Url::to($img, true),
+        ]); ?>
+
     </section>
     <?php if (!empty($other_articles)): ?>
         <section class="section blog-more">

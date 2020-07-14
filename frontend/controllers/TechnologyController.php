@@ -51,10 +51,18 @@ class TechnologyController extends BaseController
     {
         $article = Blog::findOne(['symbol'=>$symbol]);
         $other_articles = Blog::find()->where(['<>','symbol', $symbol])->orderBy(['id' => SORT_DESC])->limit(4)->all();
-        $this->setOgImage('https://sunsayenergy.com/images/' . $article->images->imagePreview);
-        $this->setMeta($article->title, $article->descriptionSEO);
 
-        return $this->render('detailed', compact(['article','other_articles']));
+        if (stripos($_SERVER['REDIRECT_URL'], 'ru') === false) {
+            $lang = 'ua';
+        } else {
+            $lang = 'ru';
+        }
+
+        $this->setOgLang($lang);
+        $this->setOgSiteName();
+        $img = 'https://sunsayenergy.com/images/' . $article->images->imagePreview;
+
+        return $this->render('detailed', compact(['article','other_articles', 'img']));
     }
 
     public function actionNine()
