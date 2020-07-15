@@ -96,34 +96,34 @@ return [
                     'label' => Yii::t('app', 'Facebook'),
                     'options' => ['class' => 'fb'],
                 ],
-                'twitter' => [
-                    'class' => \ymaker\social\share\drivers\Twitter::class,
-                    'label' => Yii::t('app', 'Twitter'),
-                    'options' => ['class' => 'tw'],
-                    'config' => [
-                        'account' => $params['twitterAccount']
-                    ],
-                ],
-                'Viber' => [
-                    'class' => \ymaker\social\share\drivers\Viber::class,
-                    'label' => Yii::t('app', 'Viber'),
-                    'options' => ['class' => 'vb'],
-                ],
-                'Telegram' => [
-                    'class' => \ymaker\social\share\drivers\Telegram::class,
-                    'label' => Yii::t('app', 'Telegram'),
-                    'options' => ['class' => 'tm'],
-                ],
-                'Gmail' => [
-                    'class' => \ymaker\social\share\drivers\Gmail::class,
-                    'label' => Yii::t('app', 'Gmail'),
-                    'options' => ['class' => 'gmail'],
-                ],
-                'vkontakte' => [
-                    'class' => \ymaker\social\share\drivers\Vkontakte::class,
-                    'label' => Yii::t('app', 'Vkontakte'),
-                    'options' => ['class' => 'vk'],
-                ],
+//                'twitter' => [
+//                    'class' => \ymaker\social\share\drivers\Twitter::class,
+//                    'label' => Yii::t('app', 'Twitter'),
+//                    'options' => ['class' => 'tw'],
+//                    'config' => [
+//                        'account' => $params['twitterAccount']
+//                    ],
+//                ],
+//                'Viber' => [
+//                    'class' => \ymaker\social\share\drivers\Viber::class,
+//                    'label' => Yii::t('app', 'Viber'),
+//                    'options' => ['class' => 'vb'],
+//                ],
+//                'Telegram' => [
+//                    'class' => \ymaker\social\share\drivers\Telegram::class,
+//                    'label' => Yii::t('app', 'Telegram'),
+//                    'options' => ['class' => 'tm'],
+//                ],
+//                'Gmail' => [
+//                    'class' => \ymaker\social\share\drivers\Gmail::class,
+//                    'label' => Yii::t('app', 'Gmail'),
+//                    'options' => ['class' => 'gmail'],
+//                ],
+//                'vkontakte' => [
+//                    'class' => \ymaker\social\share\drivers\Vkontakte::class,
+//                    'label' => Yii::t('app', 'Vkontakte'),
+//                    'options' => ['class' => 'vk'],
+//                ],
 
                 // ...
             ],
