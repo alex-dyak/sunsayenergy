@@ -93,7 +93,7 @@ return [
             'socialNetworks' => [
                 'facebook' => [
                     'class' => \ymaker\social\share\drivers\Facebook::class,
-                    'label' => Yii::t('app', 'Facebook'),
+                    'label' => Yii::t('app', '<i class="icon-facebook"></i>'),
                     'options' => ['class' => 'fb'],
                 ],
 //                'twitter' => [
