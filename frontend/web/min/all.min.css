@@ -1849,14 +1849,7 @@ iframe {
 	color: #999
 }
 
-.blog-page__description {
-	max-width: 1200px;
-	width: 100%;
-	margin: auto
-}
-
 .blog-page__description-text {
-	margin: 100px;
 	line-height: 2
 }
 
@@ -1991,7 +1984,6 @@ iframe {
 	height: auto !important;
 	left: -50px !important
 }
-
 .blog-page__image-container {
 	display: block
 }
@@ -2001,6 +1993,7 @@ iframe {
 }
 
 @media (max-width: 768px) {
+
 	.blog-info__image--bg {
 		position: absolute;
 		width: auto;
@@ -2035,6 +2028,10 @@ iframe {
 		margin-top: 15px;
 		font-size: .875rem;
 		padding: 10px 25px
+	}
+
+	.blog__list-item {
+		margin-right: 0
 	}
 
 	.blog__list-item > .title {
@@ -2537,6 +2534,8 @@ iframe {
 		max-width: 50%
 	}
 }
+
+
 
 @media (max-width: 1023px) {
 	.blog-info h1 {
@@ -5319,21 +5318,6 @@ a:not([class]):hover {
 	color: #fff
 }
 
-.social-list li.facebook i {
-	font-size: 30px;
-	position: absolute;
-	bottom: 0;
-	right: 5%;
-	line-height: 1;
-	vertical-align: top
-}
-
-@media only screen and (min-width: 420px) {
-	.social-list li.facebook i {
-		font-size: 38px
-	}
-}
-
 .social-list li.linkedin {
 	font-size: 38px;
 	line-height: 1
@@ -7971,12 +7955,6 @@ a:not([class]):hover {
 	font-size: 19px
 }
 
-.social-list li.facebook i {
-	font-size: 24px;
-	bottom: -4px;
-	right: 5%
-}
-
 .hero-bottom-social .social-list a:hover {
 	background: #fff;
 	color: #ffd100
@@ -7996,12 +7974,6 @@ a:not([class]):hover {
 		width: 40px;
 		height: 40px;
 		font-size: 25px
-	}
-
-	.social-list li.facebook i {
-		font-size: 30px;
-		bottom: -5px;
-		right: 4%
 	}
 }
 
@@ -9606,4 +9578,81 @@ a:not([class]):hover {
 		height: 600px;
 		padding: 35px 50px 35px 110px
 	}
+}
+
+.social-share {
+	margin: 0;
+	padding: 35px 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between
+}
+
+@media only screen and (min-width: 1024px) {
+	.social-share {
+		padding: 20px 0;
+		justify-content: flex-end
+	}
+}
+
+.social-share li:last-of-type {
+	margin-right: 0
+}
+
+@media only screen and (min-width: 1024px) {
+	.social-share li {
+		margin-right: 25px
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.social-share li {
+		margin-right: 35px
+	}
+}
+
+.social-share li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	background: #ffd100;
+	color: #333;
+	border-radius: 2px;
+	font-size: 24px;
+	-webkit-transition: color .3s linear;
+	-o-transition: color .3s linear;
+	transition: color .3s linear
+}
+
+@media only screen and (min-width: 420px) {
+	.social-share li a {
+		width: 48px;
+		height: 48px;
+		font-size: 28px
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.social-share li a {
+		background: #b7d3f7
+	}
+}
+
+.social-share li a:hover {
+	color: #fff
+}
+
+.share-post-block {
+	text-align: right
+}
+
+.share-post-block > span {
+	font-size: 24px;
+	line-height: 1;
+	font-family: "Bebas Neue Cyrillic", sans-serif
+>>>>>>> create-social-share-button
 }

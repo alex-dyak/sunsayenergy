@@ -1,6 +1,7 @@
 <?php
 use frontend\controllers\BaseController;
 use yii\widgets\Breadcrumbs;
+use ymaker\social\share\widgets\SocialShare;
 
 $this->params['breadcrumbs'][] = [
     'template' => "<li>{link}</li>\n",
@@ -24,33 +25,45 @@ $seo_date = date('Y-m-d', $datetime);
     ]); ?>
 	</div>
     <section class="section blog-page">
-         <?php if(!BaseController::is_mobile()) : ?>
-            <div class="blog-page__image">
-                <picture>
-                    <img data-src="/images/<?= $article->images->imagePreview ?>" alt="" class="blog-info__image--bg">
-                </picture>
-                <div class="blog-page__image-container">
-                    <div class="blog-page__image-text">
-                        <h1><?= $article->header ?></h1>
-                        <div class="mini-description"><?= $article->description ?></div>
-                        <div class="publication"><?= $article->date ?></div>
-                    </div>
-                </div>
-            </div>
+        <?php if(!BaseController::is_mobile()) : ?>
+			<div class="blog-page__image">
+				<picture>
+					<img data-src="/images/<?= $article->images->imagePreview ?>" alt="" class="blog-info__image--bg">
+				</picture>
+				<div class="blog-page__image-container">
+					<div class="blog-page__image-text">
+						<h1><?= $article->header ?></h1>
+						<div class="mini-description"><?= $article->description ?></div>
+						<div class="publication"><?= $article->date ?></div>
+					</div>
+				</div>
+			</div>
         <?php else : ?>
-            <div class="blog-page__mobile-container">
-                <div class="blog-page__mobile-text">
-                    <h1><?= $article->header ?></h1>
-                    <div class="mini-description"><?= $article->description ?></div>
-                    <div class="publication"><?= $article->date ?></div>
-                </div>
-            </div>
+			<div class="blog-page__mobile-container">
+				<div class="blog-page__mobile-text">
+					<h1><?= $article->header ?></h1>
+					<div class="mini-description"><?= $article->description ?></div>
+					<div class="publication"><?= $article->date ?></div>
+				</div>
+			</div>
         <?php endif; ?>
-        <div class="blog-page__description">
-            <div class="blog-page__description-text">
-                <?= $article->text ?>
-            </div>
-        </div>
+		<div class="container">
+			<div class="blog-page__description">
+				<div class="blog-page__description-text">
+					<?= $article->text ?>
+				</div>
+			</div>
+			<div class="share-post-block">
+				<span><?= BaseController::getMessage('565') ?></span>
+                <?= \ymaker\social\share\widgets\SocialShare::widget([
+                    'configurator'  => 'socialShare',
+                    'url'           => "https://sunsayenergy.com" . \yii\helpers\Url::to(['technology/detailed', 'symbol' => $article->symbol]),
+                    'title'         => $article->title,
+                    'description'   => $article->descriptionSEO,
+                    'imageUrl'      => \yii\helpers\Url::to($img, true),
+                ]); ?>
+			</div>
+		</div>
     </section>
     <?php if (!empty($other_articles)): ?>
         <section class="section blog-more">
