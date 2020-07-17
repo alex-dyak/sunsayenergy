@@ -12,7 +12,6 @@ use backend\models\Project;
 use common\models\Commercial;
 use common\models\Video;
 use Yii;
-use backend\models\SendPulseChild;
 use Sendpulse\RestApi\ApiClient;
 use Sendpulse\RestApi\Storage\FileStorage;
 
