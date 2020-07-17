@@ -25,6 +25,10 @@ class SiteController extends BaseController
 
     private $user_secret = 'e7d910e040481b6ebd487a8cfd66197e';
 
+    private $form_book_id = 860197;
+
+    private $subscribe_book_id = 860194;
+
     public function actions()
     {
         $session = Yii::$app->session;
@@ -178,7 +182,6 @@ class SiteController extends BaseController
 
             $SPApiClient = new ApiClient($this->api_user_id, $this->user_secret, new FileStorage());
 
-            $bookID = 860197;
             $emails = array(
                 array(
                     'email' => $post['email'],
@@ -189,7 +192,7 @@ class SiteController extends BaseController
                 )
             );
 
-            $SPApiClient->addEmails($bookID, $emails);
+            $SPApiClient->addEmails($this->form_book_id, $emails);
 
             $model = new Request();
             $model->sendBitrix($post['name'], $post['phone'], $post['email'], $post['type'], $post['utm_source'], $post['utm_medium'], $post['utm_campaign']);
@@ -221,7 +224,6 @@ class SiteController extends BaseController
 
             $SPApiClient = new ApiClient($this->api_user_id, $this->user_secret, new FileStorage());
 
-            $bookID = 860194;
             $emails = array(
                 array(
                     'email' => $post['email'],
@@ -232,15 +234,13 @@ class SiteController extends BaseController
                 'sender_email' => $sender_email,
             );
 
-
-            $SPApiClient->addEmails($bookID, $emails, $additionalParams);
-
+            $SPApiClient->addEmails($this->subscribe_book_id, $emails, $additionalParams);
 
             //TODO: Вынести эту дрянь в модель
             $model = new Subscribe();
             $model->email = $post['email'];
             $model->time = date('d.m.Y H:i:s');
-            Request::subscribeEsputnik($post['email'], $post['esputnik']);
+           // Request::subscribeEsputnik($post['email'], $post['esputnik']);
             if ($model->save()) {
                 return true;
             }
