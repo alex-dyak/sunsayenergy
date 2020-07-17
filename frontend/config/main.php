@@ -89,14 +89,6 @@ return [
             ]
         ],
         //'on beforeAction' => ['\pjhl\multilanguage\Start', 'run'],
-        'sendpulse' => function(){
-            return Yii::createObject( [
-                                          'class' => \sevenfloor\sendpulse\SendPulse::class,
-                                          'userId' => '05fbad0fccf579a56996f17f54f3d1fe',
-                                          'secret' => 'e7d910e040481b6ebd487a8cfd66197e',
-                                          'storageType' => 'session'
-                                      ]);
-        },
     ],
     'params' => $params,
 ];
