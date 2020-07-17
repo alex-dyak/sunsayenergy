@@ -12,12 +12,18 @@ use backend\models\Project;
 use common\models\Commercial;
 use common\models\Video;
 use Yii;
+use backend\models\SendPulseChild;
+use Sendpulse\RestApi\ApiClient;
+use Sendpulse\RestApi\Storage\FileStorage;
 
 /**
  * Site controller
  */
 class SiteController extends BaseController
 {
+    private $api_user_id = '05fbad0fccf579a56996f17f54f3d1fe';
+
+    private $user_secret = 'e7d910e040481b6ebd487a8cfd66197e';
 
     public function actions()
     {
@@ -166,6 +172,25 @@ class SiteController extends BaseController
     {
         if (Yii::$app->request->isAjax) {
             $post = Yii::$app->request->post();
+
+            // API credentials from https://login.sendpulse.com/settings/#api
+            define('PATH_TO_ATTACH_FILE', __FILE__);
+
+            $SPApiClient = new ApiClient($this->api_user_id, $this->user_secret, new FileStorage());
+
+            $bookID = 860197;
+            $emails = array(
+                array(
+                    'email' => $post['email'],
+                    'variables' => array(
+                        'phone' => $post['phone'],
+                        'name' => $post['name'],
+                    )
+                )
+            );
+
+            $SPApiClient->addEmails($bookID, $emails);
+
             $model = new Request();
             $model->sendBitrix($post['name'], $post['phone'], $post['email'], $post['type'], $post['utm_source'], $post['utm_medium'], $post['utm_campaign']);
             //TODO: переименовать метод
@@ -186,7 +211,35 @@ class SiteController extends BaseController
     public function actionSubscribe()
     {
         if (Yii::$app->request->isAjax) {
+
             $post = Yii::$app->request->post();
+
+            $sender_email = 'o.boicheniuk@sunsayenergy.com';
+
+            // API credentials from https://login.sendpulse.com/settings/#api
+            define('PATH_TO_ATTACH_FILE', __FILE__);
+
+            $SPApiClient = new ApiClient($this->api_user_id, $this->user_secret, new FileStorage());
+
+            $bookID = 860194;
+            $emails = array(
+                array(
+                    'email' => $post['email'],
+                    'variables' => array(
+                        'phone' => '+12345678900',
+                        'name' => 'User Name',
+                    )
+                )
+            );
+            $additionalParams = array(
+                'confirmation' => 'force',
+                'sender_email' => $sender_email,
+            );
+
+
+            $SPApiClient->addEmails($bookID, $emails, $additionalParams);
+
+
             //TODO: Вынести эту дрянь в модель
             $model = new Subscribe();
             $model->email = $post['email'];
@@ -195,6 +248,7 @@ class SiteController extends BaseController
             if ($model->save()) {
                 return true;
             }
+
         }
     }
 
