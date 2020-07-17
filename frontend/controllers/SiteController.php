@@ -12,6 +12,7 @@ use backend\models\Project;
 use common\models\Commercial;
 use common\models\Video;
 use Yii;
+use backend\models\SendPulseChild;
 
 /**
  * Site controller
@@ -166,6 +167,10 @@ class SiteController extends BaseController
     {
         if (Yii::$app->request->isAjax) {
             $post = Yii::$app->request->post();
+
+            $sendpulse = Yii::$app->sendpulse;
+            $response = $sendpulse->addEmails('860197', [$post['email']]);
+
             $model = new Request();
             $model->sendBitrix($post['name'], $post['phone'], $post['email'], $post['type'], $post['utm_source'], $post['utm_medium'], $post['utm_campaign']);
             //TODO: переименовать метод
@@ -186,15 +191,22 @@ class SiteController extends BaseController
     public function actionSubscribe()
     {
         if (Yii::$app->request->isAjax) {
+
             $post = Yii::$app->request->post();
+// Дописать double-opt-in
+            $sendpulse = Yii::$app->sendpulse;
+            $sender_email = 'sender_email=o.boicheniuk@sunsayenergy.com';
+            $response = $sendpulse->addEmailsDoubleOptIn('860194', [$post['email']]);
+
             //TODO: Вынести эту дрянь в модель
-            $model = new Subscribe();
-            $model->email = $post['email'];
-            $model->time = date('d.m.Y H:i:s');
-            Request::subscribeEsputnik($post['email'], $post['esputnik']);
-            if ($model->save()) {
-                return true;
-            }
+//            $model = new Subscribe();
+//            $model->email = $post['email'];
+//            $model->time = date('d.m.Y H:i:s');
+//            Request::subscribeEsputnik($post['email'], $post['esputnik']);
+//            if ($model->save()) {
+//                return true;
+//            }
+
         }
     }
 

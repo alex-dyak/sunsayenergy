@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "915d36d977ae19f11249784e4d515667",
+    "content-hash": "a7f548eead3acb0d5ba7f5f862de2eea",
     "packages": [
         {
             "name": "abeautifulsite/simpleimage",
@@ -2146,6 +2146,47 @@
             "time": "2017-05-11T14:25:49+00:00"
         },
         {
+            "name": "sevenfloor/yii2-sendpulse",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SevenFloor/yii2-sendpulse.git",
+                "reference": "1e92373829e44ef1a42f0ea53f8ba06c35a0adba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SevenFloor/yii2-sendpulse/zipball/1e92373829e44ef1a42f0ea53f8ba06c35a0adba",
+                "reference": "1e92373829e44ef1a42f0ea53f8ba06c35a0adba",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "sevenfloor\\sendpulse\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ignatenkov Nikita",
+                    "email": "ignatenkov.n@gmail.com"
+                }
+            ],
+            "description": "Client for service sendpulse",
+            "keywords": [
+                "extension",
+                "sendpulse",
+                "yii2"
+            ],
+            "time": "2016-04-26T15:17:57+00:00"
+        },
+        {
             "name": "studio-42/elfinder",
             "version": "2.1.51",
             "source": {
@@ -2802,6 +2843,7 @@
                 "functional testing",
                 "unit testing"
             ],
+            "abandoned": true,
             "time": "2019-04-24T11:36:34+00:00"
         },
         {
