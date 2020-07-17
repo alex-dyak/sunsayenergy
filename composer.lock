@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6292c7c0b732bb5d94197751ebe93c72",
+    "content-hash": "55870257cc8c1d647df63e3eefa8d358",
     "packages": [
         {
             "name": "abeautifulsite/simpleimage",
@@ -2709,47 +2709,6 @@
                 "pdf"
             ],
             "time": "2020-04-28T12:40:35+00:00"
-        },
-        {
-            "name": "sevenfloor/yii2-sendpulse",
-            "version": "0.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/SevenFloor/yii2-sendpulse.git",
-                "reference": "1e92373829e44ef1a42f0ea53f8ba06c35a0adba"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/SevenFloor/yii2-sendpulse/zipball/1e92373829e44ef1a42f0ea53f8ba06c35a0adba",
-                "reference": "1e92373829e44ef1a42f0ea53f8ba06c35a0adba",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "sevenfloor\\sendpulse\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Ignatenkov Nikita",
-                    "email": "ignatenkov.n@gmail.com"
-                }
-            ],
-            "description": "Client for service sendpulse",
-            "keywords": [
-                "extension",
-                "sendpulse",
-                "yii2"
-            ],
-            "time": "2016-04-26T15:17:57+00:00"
         },
         {
             "name": "studio-42/elfinder",

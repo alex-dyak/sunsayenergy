@@ -27,8 +27,8 @@
         "dvizh/yii2-gallery": "@dev",
         "kartik-v/yii2-export": "@dev",
         "faboslav/yii2-progressive-media": "1.0.0",
-        "sendpulse/rest-api": "^10.0"
         "yiimaker/yii2-social-share": "^2.3",
+        "sendpulse/rest-api": "^10.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
