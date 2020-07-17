@@ -225,10 +225,6 @@ class SiteController extends BaseController
             $emails = array(
                 array(
                     'email' => $post['email'],
-                    'variables' => array(
-                        'phone' => '+12345678900',
-                        'name' => 'User Name',
-                    )
                 )
             );
             $additionalParams = array(
