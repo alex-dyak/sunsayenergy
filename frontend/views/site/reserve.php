@@ -28,10 +28,11 @@ $this->params['breadcrumbs'][] = [
 				</div>
 				<div class="service-section-image">
 					<picture>
-						<source media="(min-width: 768px)" srcset="/img/house-3.png">
-						<img alt="Дом с панелями" src="/img/house-3-mob.png">
+						<source media="(max-width: 767px)" srcset="/img/house-3-mob.webp" type="image/webp">
+						<source srcset="/img/house-3.webp" type="image/webp">
+						<source media="(max-width: 767px)" srcset="/img/house-3-mob.png">
+						<img src="/img/house-3.png" alt="Дом с панелями">
 					</picture>
-<!--					<img src="/img/house-3.png" alt="--><?//= BaseController::getMessage('74') ?><!--" srcset="/img/house-3-mob.png 1024w, /img/house-3.png 1366w">-->
 				</div>
 				<div class="description"><?= BaseController::getMessage('75') ?></div>
 			</div>
@@ -195,7 +196,7 @@ $this->params['breadcrumbs'][] = [
 							</div>
 							<div class="logo-row">
 								<ul>
-									<li><img src="/img/logos/invertor/fronius.png" alt="fronius"></li>
+									<li><img data-src="/img/logos/invertor/fronius.png" alt="fronius"></li>
 									<li><img data-src="/img/logos/invertor/huawei.png" alt="huawei"></li>
 									<li><img data-src="/img/logos/invertor/solar-edge.png" alt="solar edge"></li>
 								</ul>
@@ -233,12 +234,12 @@ $this->params['breadcrumbs'][] = [
 							</div>
 							<div class="logo-row">
 								<ul>
-									<li><img src="/img/logos/pannel/ja-solar.png" alt="ja solar"></li>
+									<li><img data-src="/img/logos/pannel/ja-solar.png" alt="ja solar"></li>
 									<li><img data-src="/img/logos/pannel/longi-solar.png" alt="longi solar"></li>
-									<li><img src="/img/logos/pannel/canadian-solar.png" alt="canadian solar"></li>
+									<li><img data-src="/img/logos/pannel/canadian-solar.png" alt="canadian solar"></li>
 									<li><img data-src="/img/logos/pannel/sunpower.png" alt="sunpower"></li>
 									<li><img data-src="/img/logos/pannel/jinco-solar.png" alt="jinco solar"></li>
-									<li><img src="/img/logos/pannel/qcells.png" alt="qcells"></li>
+									<li><img data-src="/img/logos/pannel/qcells.png" alt="qcells"></li>
 								</ul>
 							</div>
 						</div>
