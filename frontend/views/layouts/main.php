@@ -67,6 +67,13 @@ $contacts = \backend\models\Contact::getContact();
     $final_uri = str_replace($lang_array, '', $request_uri);
     ?>
 
+	<style>
+		.preloader{display:flex;align-items:center;justify-content:center;position:fixed;top:0;bottom:0;left:0;right:0;z-index:9999;background:#fff}.sk-chasing-dots{width:90px;height:90px;position:relative;margin:auto;text-align:center;animation:sk-chasing-dots-rotate 2s infinite linear}.sk-child{width:calc(90px / 2);height:calc(90px / 2);display:inline-block;position:absolute;top:0;background-color:#ffd100;border-radius:100%;animation:sk-chasing-dots-bounce 2s infinite ease-in-out}.sk-dot-2{background-color:#dfedff;top:auto;bottom:0;animation-delay:calc(-2s / 2)}@keyframes sk-chasing-dots-rotate{100%{transform:rotate(360deg)}}@keyframes sk-chasing-dots-bounce{0%,100%{transform:scale(0)}50%{transform:scale(1)}}
+	</style>
+	<script>
+        window.addEventListener('load', function () {document.querySelector(".preloader").style = "display:none;";});
+	</script>
+
 	<link rel="preload" href="/fonts/prompt/prompt-black.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="/fonts/Montserrat/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="/fonts/Montserrat/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
@@ -77,19 +84,15 @@ $contacts = \backend\models\Contact::getContact();
 
 	<link rel="stylesheet" href="/min/all.min.css">
 
-
 	<link rel="alternate" hreflang="x-default" href="https://sunsayenergy.com<?= $final_uri; ?>" />
 	<link rel="alternate" hreflang="uk-ua" href="https://sunsayenergy.com<?= $final_uri; ?>" />
     <link rel="alternate" hreflang="ru-ua" href="https://sunsayenergy.com/ru<?= $final_uri; ?>" />
     <link rel="alternate" hreflang="en-ua" href="https://sunsayenergy.com/en<?= $final_uri; ?>" />
 
-	<style>
-		.preloader{display:flex;align-items:center;justify-content:center;position:fixed;top:0;bottom:0;left:0;right:0;z-index:9999;background:#fff}.sk-chasing-dots{width:90px;height:90px;position:relative;margin:auto;text-align:center;animation:sk-chasing-dots-rotate 2s infinite linear}.sk-child{width:calc(90px / 2);height:calc(90px / 2);display:inline-block;position:absolute;top:0;background-color:#ffd100;border-radius:100%;animation:sk-chasing-dots-bounce 2s infinite ease-in-out}.sk-dot-2{background-color:#dfedff;top:auto;bottom:0;animation-delay:calc(-2s / 2)}@keyframes sk-chasing-dots-rotate{100%{transform:rotate(360deg)}}@keyframes sk-chasing-dots-bounce{0%,100%{transform:scale(0)}50%{transform:scale(1)}}
-	</style>
-	<script>
-        window.addEventListener('load', function () {document.querySelector(".preloader").style = "display:none;";});
-	</script>
     <meta name="google-site-verification" content="xxxLG9Hae7rnxth_CLJ3SBLXRhnRpnEg-DV95cNNyxI" />
+
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js" integrity="sha512-Nh/FthCqOFq56kGp1DsNb6GKK29iIv2ZJc7Fylln1WRrWpeE5LjSBWeAp61dkBASDxZT12aL9mZyIrhsAqgRpw==" crossorigin="anonymous" async></script>-->
+	<script src="/min/picturefill.min.js" async></script>
 </head>
 
 <body style="opacity:1;" class="<?php if ( BaseController::is_mobile()  ): ?> mobile <?php endif; ?> <?= (Yii::$app->language=='ru')?'lang-ru':''?>">
@@ -442,10 +445,10 @@ $contacts = \backend\models\Contact::getContact();
 <div class="backgroundfade" style="display:none;"></div>
 <!-- end fade dropdown -->
 
-
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+
 <?php if ( BaseController::is_mobile()  ): ?>
-    <script src="/min/main-mob.js?v=3" ></script>
+    <script src="/min/main-mob-optimized.js?v=3" ></script>
 <?php else: ?>
     <script src="/min/main.js?v=3"></script>
 <?php endif; ?>

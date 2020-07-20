@@ -28,8 +28,10 @@ $this->params['breadcrumbs'][] = [
                 </div>
                 <div class="service-section-image">
 					<picture>
-						<source media="(min-width: 768px)" srcset="/img/house-2.png">
-						<img alt="Дом с панелями" src="/img/house-2-mob.png">
+						<source media="(max-width: 767px)" srcset="/img/house-2-mob.webp" type="image/webp">
+						<source srcset="/img/house-2.webp" type="image/webp">
+						<source media="(max-width: 767px)" srcset="/img/house-2-mob.png">
+						<img src="/img/house-2.png" alt="Дом с панелями">
 					</picture>
                 </div>
                 <div class="description"><?= BaseController::getMessage('132') ?></div>
@@ -143,7 +145,7 @@ $this->params['breadcrumbs'][] = [
 						</div>
 						<div class="logo-row">
 							<ul>
-								<li><img src="/img/logos/invertor/fronius.png" alt="fronius"></li>
+								<li><img data-src="/img/logos/invertor/fronius.png" alt="fronius"></li>
 								<li><img data-src="/img/logos/invertor/huawei.png" alt="huawei"></li>
 								<li><img data-src="/img/logos/invertor/solar-edge.png" alt="solar edge"></li>
 							</ul>
@@ -181,12 +183,12 @@ $this->params['breadcrumbs'][] = [
 						</div>
 						<div class="logo-row">
 							<ul>
-								<li><img src="/img/logos/pannel/ja-solar.png" alt="ja solar"></li>
+								<li><img data-src="/img/logos/pannel/ja-solar.png" alt="ja solar"></li>
 								<li><img data-src="/img/logos/pannel/longi-solar.png" alt="longi solar"></li>
-								<li><img src="/img/logos/pannel/canadian-solar.png" alt="canadian solar"></li>
+								<li><img data-src="/img/logos/pannel/canadian-solar.png" alt="canadian solar"></li>
 								<li><img data-src="/img/logos/pannel/sunpower.png" alt="sunpower"></li>
 								<li><img data-src="/img/logos/pannel/jinco-solar.png" alt="jinco solar"></li>
-								<li><img src="/img/logos/pannel/qcells.png" alt="qcells"></li>
+								<li><img data-src="/img/logos/pannel/qcells.png" alt="qcells"></li>
 							</ul>
 						</div>
 					</div>
@@ -215,7 +217,7 @@ $this->params['breadcrumbs'][] = [
 						<div class="logo-row">
 							<ul>
 								<li><img data-src="/img/logos/battery/lg.png" alt="LG"></li>
-								<li><img src="/img/logos/battery/byd.png" alt="BYD"></li>
+								<li><img data-src="/img/logos/battery/byd.png" alt="BYD"></li>
 								<li><img data-src="/img/logos/battery/pylon-tech.png" alt="pylon tech"></li>
 							</ul>
 						</div>
