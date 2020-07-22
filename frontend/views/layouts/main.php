@@ -417,32 +417,6 @@ $contacts = \backend\models\Contact::getContact();
 <div class="overlay"></div>
 <!-- end modal overlay-->
 
-<?php if ( 0 && Yii::$app->controller->route != 'site/green' && Yii::$app->controller->route != 'site/types' && Yii::$app->controller->route != 'technology/technology' && Yii::$app->controller->route != 'technology/nine' && Yii::$app->controller->route != 'technology/detailed'): ?>
-    <?php $projects = \backend\models\Project::find()->all(); ?>
-
-    <!-- start example popup -->
-    <div class="popup">
-        <div class="popup__container">
-            <div class="popup-close"><img data-src="/img/icon/Close.svg" alt=""></div>
-            <div class="popup-example">
-                <?php foreach ($projects as $item): ?>
-                <div class="popup-example-item">
-                    <picture>
-                        <source media="(min-width: 800px)" data-srcset="<?= $item->getFirstImg(650); ?>" type="image/jpg">
-                        <source media="(max-width: 799px)" data-srcset="<?= $item->getFirstImg(220); ?>" type="image/jpg">
-                        <img data-src="<?= $item->getFirstImg(650); ?>" alt="">
-                    </picture>
-                </div>
-                <?php endforeach; ?>
-            </div>
-        </div>
-    </div>
-    <!-- end example popup -->
-<?php endif; ?>
-
-<!-- start fade dropdown -->
-<div class="backgroundfade" style="display:none;"></div>
-<!-- end fade dropdown -->
 
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
 
@@ -452,18 +426,13 @@ $contacts = \backend\models\Contact::getContact();
     <script src="/min/main.js?v=3"></script>
 <?php endif; ?>
 
-<script src="/min/new-js.js" defer="defer"></script>
+<script src="/min/new-js.min.js" defer="defer"></script>
 
 
 <script>deferimg('img[data-src],picture,video,audio', 100, 'lazied', function (img) {
     img.onload = function (e) {
         if ( img.className == 'check-slick lazied' ){
-            if ($('.equipment-slider.slick-slider').length ){
-                console.log($('.equipment-slider.slick-slider'));
-                $('.equipment-slider').slick("refresh");
-            }
             if ($('.example__content-list.slick-slider').length ){
-                console.log($('.example__content-list.slick-slider'));
                 $('.example__content-list').slick("refresh");
             }
             if ($('.project-info__slider-nav.slick-slider').length ){
@@ -477,61 +446,20 @@ $contacts = \backend\models\Contact::getContact();
 </script>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var lazyBackgrounds = [].slice.call(document.querySelectorAll(".background-lazy"));
-        var active = false;
-        if (lazyBackgrounds.length) {
-            var lazyLoadBg = function () {
-                if (active === false) {
-                    active = true;
-
-                    setTimeout(function () {
-
-                        lazyBackgrounds.forEach(function (lazyBackground) {
-                            if ((lazyBackground.getBoundingClientRect().top <= window.innerHeight && lazyBackground.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyBackground).display !== "none") {
-                                lazyBackground.style = "background-image: url(" + lazyBackground.dataset.src + ")";
-                                lazyBackground.classList.remove("background-lazy");
-
-                                lazyBackgrounds = lazyBackgrounds.filter(function (bg) {
-                                    return bg !== lazyBackground;
-                                });
-
-                                if (lazyBackgrounds.length === 0) {
-                                    document.removeEventListener("scroll", lazyLoadBg);
-                                    window.removeEventListener("resize", lazyLoadBg);
-                                    window.removeEventListener("orientationchange", lazyLoadBg);
-                                }
-                            }
-                        });
-
-                        active = false;
-                    }, 200);
-                }
-            };
-
-            document.addEventListener("scroll", lazyLoadBg);
-            window.addEventListener("resize", lazyLoadBg);
-            window.addEventListener("orientationchange", lazyLoadBg);
-        }
-    });
+    document.addEventListener("DOMContentLoaded",function(){var e=[].slice.call(document.querySelectorAll(".background-lazy")),n=!1;if(e.length){var t=function(){!1===n&&(n=!0,setTimeout(function(){e.forEach(function(n){n.getBoundingClientRect().top<=window.innerHeight&&n.getBoundingClientRect().bottom>=0&&"none"!==getComputedStyle(n).display&&(n.style="background-image: url("+n.dataset.src+")",n.classList.remove("background-lazy"),0===(e=e.filter(function(e){return e!==n})).length&&(document.removeEventListener("scroll",t),window.removeEventListener("resize",t),window.removeEventListener("orientationchange",t)))}),n=!1},200))};document.addEventListener("scroll",t),window.addEventListener("resize",t),window.addEventListener("orientationchange",t)}});
 </script>
 
 <script>
     defer(function() {
         (function(w,d,u){
-
             var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
-
             var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-
         })(window,document,'https://cdn.bitrix24.ua/b9504081/crm/site_button/loader_1_2svhj8.js');
-
         (function(d, w, s) {
           var widgetHash = 'sx43cntzz2qzbf66eje1', ctw = d.createElement(s); ctw.type = 'text/javascript'; ctw.async = true;
           ctw.src = '//widgets.binotel.com/calltracking/widgets/'+ widgetHash +'.js';
           var sn = d.getElementsByTagName(s)[0]; sn.parentNode.insertBefore(ctw, sn);
           })(document, window, 'script');
-
     }, 2000);
 </script>
 
