@@ -196,7 +196,7 @@ $this->params['breadcrumbs'][] = [
 							</div>
 							<div class="logo-row">
 								<ul>
-									<li><img data-src="/img/logos/invertor/fronius.png" alt="fronius"></li>
+									<li><img data-src="/img/logos/invertor/fronius.png" class="check-slick" alt="fronius"></li>
 									<li><img data-src="/img/logos/invertor/huawei.png" alt="huawei"></li>
 									<li><img data-src="/img/logos/invertor/solar-edge.png" alt="solar edge"></li>
 								</ul>

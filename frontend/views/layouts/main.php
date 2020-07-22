@@ -91,7 +91,6 @@ $contacts = \backend\models\Contact::getContact();
 
     <meta name="google-site-verification" content="xxxLG9Hae7rnxth_CLJ3SBLXRhnRpnEg-DV95cNNyxI" />
 
-	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js" integrity="sha512-Nh/FthCqOFq56kGp1DsNb6GKK29iIv2ZJc7Fylln1WRrWpeE5LjSBWeAp61dkBASDxZT12aL9mZyIrhsAqgRpw==" crossorigin="anonymous" async></script>-->
 	<script src="/min/picturefill.min.js" async></script>
 </head>
 
@@ -459,6 +458,10 @@ $contacts = \backend\models\Contact::getContact();
 <script>deferimg('img[data-src],picture,video,audio', 100, 'lazied', function (img) {
     img.onload = function (e) {
         if ( img.className == 'check-slick lazied' ){
+            if ($('.equipment-slider.slick-slider').length ){
+                console.log($('.equipment-slider.slick-slider'));
+                $('.equipment-slider').slick("refresh");
+            }
             if ($('.example__content-list.slick-slider').length ){
                 console.log($('.example__content-list.slick-slider'));
                 $('.example__content-list').slick("refresh");
