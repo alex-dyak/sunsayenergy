@@ -421,7 +421,11 @@ $contacts = \backend\models\Contact::getContact();
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
 
 <?php if ( BaseController::is_mobile()  ): ?>
-    <script src="/min/main-mob-optimized.js?v=3" ></script>
+	<?php if (Yii::$app->controller->route == 'site/income'): ?>
+		<script src="/min/main-mob-optimized.js" ></script>
+    <?php else: ?>
+    	<script src="/min/main-mob.js?v=3" ></script>
+	<?php endif; ?>
 <?php else: ?>
     <script src="/min/main.js?v=3"></script>
 <?php endif; ?>
