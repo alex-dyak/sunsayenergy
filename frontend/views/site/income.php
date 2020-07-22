@@ -157,7 +157,7 @@ $this->params['breadcrumbs'][] = [
 						</div>
 						<div class="logo-row">
 							<ul>
-								<li><img data-src="/img/logos/invertor/fronius.png" alt="fronius"></li>
+								<li><img data-src="/img/logos/invertor/fronius.png" class="check-slick" alt="fronius"></li>
 								<li><img data-src="/img/logos/invertor/huawei.png" alt="huawei"></li>
 								<li><img data-src="/img/logos/invertor/solar-edge.png" alt="solar edge"></li>
 							</ul>
@@ -237,19 +237,20 @@ $this->params['breadcrumbs'][] = [
 	<!-- end connect -->
 </main>
 
-
     <script type = "text/javascript">
         var okupn = '<?= BaseController::getMessage('378').' ' ?>';
         var rokiv = '<?= " ".BaseController::getMessage('379') ?>';
         var rik = '<?= " ".BaseController::getMessage('380') ?>';
     </script>
 
-<?php
-$this->registerJsFile('/js/lib/ion.rangeSlider.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
-$this->registerJsFile('/js/lib/Chart.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
-$this->registerJsFile('/js/calc/income.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
-$this->registerCssFile('/style/lib/ion.rangeSlider.css', ['position' => \yii\web\View::POS_END]);
-?>
+
+	<?php
+	$this->registerJsFile('/js/lib/ion.rangeSlider.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
+	$this->registerJsFile('/js/lib/Chart.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
+	$this->registerJsFile('/js/calc/income.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
+	$this->registerCssFile('/style/lib/ion.rangeSlider.css', ['position' => \yii\web\View::POS_END]);
+	?>
+
 
 <script type="application/ld+json" defer>
     {
