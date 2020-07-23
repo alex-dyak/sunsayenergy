@@ -468,9 +468,12 @@ $contacts = \backend\models\Contact::getContact();
 </script>
 
 <script>
-    defer(function() {
-        $( "#map" ).lazyLoadGoogleMaps({key: 'AIzaSyB35Exje6kOhzSsEsUTg3V09ot0HILL-Qk',callback: initMap});
-    }, 1500);
+	if ($( "#map" ).length) {
+        defer(function() {
+            $( "#map" ).lazyLoadGoogleMaps({key: 'AIzaSyB35Exje6kOhzSsEsUTg3V09ot0HILL-Qk',callback: initMap});
+        }, 1500);
+	}
+
 </script>
 
 <script type="application/ld+json">
