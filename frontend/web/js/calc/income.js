@@ -517,10 +517,6 @@ const calculatuion = (house, power) => {
 })();
 
 $(window).on('load', function() {
-	$('body').animate({
-		opacity: 1
-	});
-
 	if ($(window).width() <= 1024) {
 		$('.work__content-info__item').filter(function() {
 			return $(this).data('id') == '1';
@@ -530,8 +526,6 @@ $(window).on('load', function() {
 			return $(this).data('id') == '1';
 		}).addClass('active');
 	}
-
-	animateCss('.header', 'fadeInDown');
 
 	F = getArrayF();
 	Y = getArrayY();
