@@ -141,9 +141,10 @@ class BaseController extends Controller
     }
 
     protected function setOg($title, $desc){
+        $this->view->registerMetaTag(['property'=>'og:url', 'content'=>Yii::$app->request->absoluteUrl]);
+        $this->view->registerMetaTag(['property'=>'og:type', 'content'=>"website"]);
         $this->view->registerMetaTag(['property'=>'og:title', 'content'=>"{$title}"]);
         $this->view->registerMetaTag(['property'=>'og:description', 'content'=>"{$desc}"]);
-        $this->view->registerMetaTag(['property'=>'og:url', 'content'=>Yii::$app->request->absoluteUrl]);
     }
 
     protected function setOgImage($img){
