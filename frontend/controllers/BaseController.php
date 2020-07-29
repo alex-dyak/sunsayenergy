@@ -39,7 +39,7 @@ class BaseController extends Controller
         $id = $this->id;
         if ($id != 'technology') {
             $og = Og::findOne(1);
-            $this->setOg($og->title,$og->description);
+            $this->setOg($og->title);
         }
     }
 
@@ -140,10 +140,13 @@ class BaseController extends Controller
         $this->view->registerMetaTag(['name'=>'description', 'content'=>"$description"]);
     }
 
-    protected function setOg($title, $desc){
+    protected function setOg($title){
         $this->view->registerMetaTag(['property'=>'og:url', 'content'=>Yii::$app->request->absoluteUrl]);
         $this->view->registerMetaTag(['property'=>'og:type', 'content'=>"website"]);
         $this->view->registerMetaTag(['property'=>'og:title', 'content'=>"{$title}"]);
+    }
+
+    protected function setOgDescription($desc){
         $this->view->registerMetaTag(['property'=>'og:description', 'content'=>"{$desc}"]);
     }
 
