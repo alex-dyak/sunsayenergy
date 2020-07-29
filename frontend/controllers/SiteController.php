@@ -84,7 +84,7 @@ class SiteController extends BaseController
 
     public function actionGreen()
     {
-        $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
         $this->setMeta(self::getTitle('green'), self::getDescription('green'));
 
         return $this->render('green');
