@@ -145,7 +145,7 @@ class SiteController extends BaseController
 
     public function actionAbout()
     {
-        $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
         $this->setMeta(self::getTitle('about'), self::getDescription('about'));
 
         return $this->render('about');

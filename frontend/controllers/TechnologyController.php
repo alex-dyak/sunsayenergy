@@ -43,7 +43,7 @@ class TechnologyController extends BaseController
         $articles = Blog::find()->orderBy(['id' => SORT_DESC, 'visible'=>1])->all();
 
         $this->setOg(self::getTitle('technology'), self::getDescription('technology'));
-        $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
         $this->setMeta(self::getTitle('technology'), self::getDescription('technology'));
 
         return $this->render('technology', compact('articles'));
