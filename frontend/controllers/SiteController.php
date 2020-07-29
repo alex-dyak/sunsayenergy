@@ -84,7 +84,7 @@ class SiteController extends BaseController
 
     public function actionGreen()
     {
-        $this->setOgImage('https://sunsayenergy.com' . '/img/green/1.jpg');
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
         $this->setMeta(self::getTitle('green'), self::getDescription('green'));
 
         return $this->render('green');
@@ -145,7 +145,7 @@ class SiteController extends BaseController
 
     public function actionAbout()
     {
-        $this->setOgImage('https://sunsayenergy.com' . '/img/about/1.jpg');
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
         $this->setMeta(self::getTitle('about'), self::getDescription('about'));
 
         return $this->render('about');
@@ -162,7 +162,7 @@ class SiteController extends BaseController
 
         $images = Commercial::find()->all();
 
-        $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
+        $this->setOgImage('https://sunsayenergy.com' . '/img/AG_Mitter.png');
         $this->setMeta(self::getTitle('commercial_stations'), self::getDescription('commercial_stations'));
 
         return $this->render('commercial_stations', compact('images'));

@@ -41,7 +41,7 @@ class TechnologyController extends BaseController
     public function actionTechnology()
     {
         $articles = Blog::find()->orderBy(['id' => SORT_DESC, 'visible'=>1])->all();
-        $this->setOgImage('https://sunsayenergy.com' . '/img/blog/info.jpg');
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
         $this->setMeta(self::getTitle('technology'), self::getDescription('technology'));
 
         return $this->render('technology', compact('articles'));
@@ -68,7 +68,7 @@ class TechnologyController extends BaseController
     public function actionNine()
     {
         $other_articles = Blog::find()->where(['visible'=>1])->limit(4)->all();
-        $this->setOgImage('https://sunsayenergy.com' . '/img/blog/info.jpg');
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
         $this->setMeta(self::getTitle('nine'), self::getDescription('nine'));
 
         return $this->render('nine', compact(['other_articles']));

@@ -182,15 +182,15 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 				<strong class="main-logo">
 					<a href="<?= \yii\helpers\Url::to(['/']); ?>">
-						<img class="logo-def" src="/img/logo.svg" width="184" alt="sunsay energy">
-						<img class="logo-white" src="/img/logo-navbar.svg" width="184" alt="sunsay energy">
+						<img class="logo-def" src="/img/logo.svg" width="184" alt="SUNSAY Energy">
+						<img class="logo-white" src="/img/logo-navbar.svg" width="184" alt="SUNSAY Energy">
 						<span class="logo-text"><?= BaseController::getMessage('406') ?></span>
 					</a>
 				</strong>
 				<nav class="header-nav">
 					<strong class="nav-logo">
 						<a href="<?= \yii\helpers\Url::to(['/']); ?>">
-							<img src="/img/logo-navbar.svg" width="148" alt="sunsay energy">
+							<img src="/img/logo-navbar.svg" width="148" alt="SUNSAY Energy">
 						</a>
 					</strong>
 					<ul class="nav-list">
@@ -238,7 +238,7 @@ $contacts = \backend\models\Contact::getContact();
 	<div class="to-top-block" id="to_top_block">
 		<div class="logo-block">
 			<a href="<?= \yii\helpers\Url::to(['/']); ?>">
-				<img data-src="/img/logo.svg" alt="sunsay energy" width="120">
+				<img data-src="/img/logo.svg" alt="SUNSAY Energy" width="120">
 			</a>
 		</div>
 		<span id="to-top-link"><i class="icon-angle-top"></i></span>
@@ -328,7 +328,7 @@ $contacts = \backend\models\Contact::getContact();
 					<div class="company-info">
 						<strong class="footer-logo">
 							<a href="<?= \yii\helpers\Url::to(['/']); ?>">
-								<img src="/img/logo-navbar.svg" width="185" alt="sunsay energy">
+								<img src="/img/logo-navbar.svg" width="185" alt="SUNSAY Energy">
 								<span class="logo-text"><?= BaseController::getMessage('406') ?></span>
 							</a>
 						</strong>

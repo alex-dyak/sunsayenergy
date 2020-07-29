@@ -104,7 +104,7 @@ $this->registerJsFile('/js/onload/tech.js', ['position' => \yii\web\View::POS_EN
         "itemListElement": [{
             "@type": "ListItem",
             "position": 1,
-            "name": "Sunsay Energy",
+            "name": "SUNSAY Energy",
             "item": "https://sunsayenergy.com"
         },{
             "@type": "ListItem",

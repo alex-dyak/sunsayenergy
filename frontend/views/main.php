@@ -112,7 +112,7 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
 <?php $this->beginBody() ?>
 <header class="header <?= (Yii::$app->controller->route == 'site/index') ? '' : 'header__background' ?>">
     <div class="header__logotype">
-        <a href="<?= \yii\helpers\Url::to(['/']); ?>"><img class="img-responsive" src="/img/logo.svg" alt="sunsay energy"></a>
+        <a href="<?= \yii\helpers\Url::to(['/']); ?>"><img class="img-responsive" src="/img/logo.svg" alt="SUNSAY Energy"></a>
     </div>
     <div class="header__navbar">
         <nav class="navbar">

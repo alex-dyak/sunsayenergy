@@ -79,7 +79,7 @@ $this->params['breadcrumbs'][] = [
         "itemListElement": [{
             "@type": "ListItem",
             "position": 1,
-            "name": "Sunsay Energy",
+            "name": "SUNSAY Energy",
             "item": "https://sunsayenergy.com"
         },{
             "@type": "ListItem",

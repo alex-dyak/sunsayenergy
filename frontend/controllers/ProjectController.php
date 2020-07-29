@@ -48,7 +48,7 @@ class ProjectController extends BaseController
             return strcmp($a->project_order, $b->project_order);
         });
         $this->setMeta(self::getTitle('project'), self::getDescription('project'));
-        $this->setOgImage('https://sunsayenergy.com' . '/img/blog/info.jpg');
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
 
         return $this->render('project', compact('model'));
     }
@@ -75,13 +75,13 @@ class ProjectController extends BaseController
         $model = Project::find()->where(['category' => $symbol])->all();
 
         if ($symbol == 'network'):
-            $this->setOgImage('https://sunsayenergy.com' . '/img/blog/info.jpg');
+            $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
             $this->setMeta(self::getTitle('project_category_network'), self::getDescription('project_category_network'));
         elseif ($symbol == 'stand-alone'):
-            $this->setOgImage('https://sunsayenergy.com' . '/img/blog/info.jpg');
+            $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
             $this->setMeta(self::getTitle('project_category_stand-alone'), self::getDescription('project_category_stand-alone'));
         elseif ($symbol == 'hybrid'):
-            $this->setOgImage('https://sunsayenergy.com' . '/img/blog/info.jpg');
+            $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
             $this->setMeta(self::getTitle('project_category_hybrid'), self::getDescription('project_category_hybrid'));
         endif;
 
