@@ -162,7 +162,7 @@ class SiteController extends BaseController
 
         $images = Commercial::find()->all();
 
-        $this->setOgImage('https://sunsayenergy.com' . '/img/AG_Mitter.png');
+        $this->setOgImage('https://sunsayenergy.com' . '/img/commercial.png');
         $this->setMeta(self::getTitle('commercial_stations'), self::getDescription('commercial_stations'));
 
         return $this->render('commercial_stations', compact('images'));
