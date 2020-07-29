@@ -47,8 +47,9 @@ class ProjectController extends BaseController
         {
             return strcmp($a->project_order, $b->project_order);
         });
-        $this->setMeta(self::getTitle('project'), self::getDescription('project'));
+
         $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
+        $this->setMeta(self::getTitle('project'), self::getDescription('project'));
 
         return $this->render('project', compact('model'));
     }
