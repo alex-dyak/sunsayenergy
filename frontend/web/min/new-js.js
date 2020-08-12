@@ -113,6 +113,10 @@ $(document).ready(function(){
         }
     });
 
+    $(document).on('click', '.green-article-opener',  function(){
+       $('.green-article').toggleClass('collapsed');
+    });
+
     initTabs($('.video-page .tab-navigation'), $('.video-page .tab-container'));
     initLoadMore ($('.load-all'), 3, 3);
     initLoadMore ($('.load-finished'), 3, 3);

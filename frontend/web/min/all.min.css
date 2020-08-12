@@ -9620,6 +9620,83 @@ a:not([class]):hover {
 	}
 }
 
+.green-article {}
+.green-article strong {
+	display: block;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+
+.green-article-wrap {
+	position: relative;
+	margin-bottom: 20px;
+	max-height: 5000px;
+	overflow: hidden;
+	-webkit-transition: max-height .5s ease;
+	-o-transition: max-height .5s ease;
+	transition: max-height .5s ease;
+}
+
+.collapsed .green-article-wrap {
+	max-height: 185px;
+}
+
+.collapsed .green-article-wrap:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+.green-article-opener {
+	position: relative;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.green-article-opener:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	bottom: -2px;
+	left: 0;
+	right: 100%;
+	height: 10px;
+	background: #ffd100;
+	-webkit-transition: right .3s linear;
+	-o-transition: right .3s linear;
+	transition: right .3s linear;
+}
+
+.green-article-opener:hover:after {
+	right: 0;
+}
+
+.green-article-opener:before {
+	content: "Згорнути";
+}
+
+.lang-ru .green-article-opener:before {
+	content: "Свернуть";
+}
+.collapsed .green-article-opener:before {
+	content: "Читати повністю";
+}
+.lang-ru .collapsed .green-article-opener:before {
+	content: "Читать полностью";
+}
+
+@media screen and (min-width: 1024px) {
+	.green-article strong {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+}
+
 .social-share {
 	margin: 0;
 	padding: 35px 0;
