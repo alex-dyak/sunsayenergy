@@ -6,14 +6,86 @@ $this->params['breadcrumbs'][] = [
     'template' => "<li><b>{link}</b></li>\n",
     'label' => BaseController::getMessage('7'),
 ];
+
+$contacts = \backend\models\Contact::getContact();
 ?>
 <main class="page-container">
-	<div class="container">
-    <?php echo Breadcrumbs::widget([
-        'homeLink' => ['label' => BaseController::getMessage('404'), 'url' => Yii::$app->homeUrl],
-        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-    ]); ?>
+	<div class="breadcrumbs-wrap">
+		<div class="container">
+            <?php echo Breadcrumbs::widget([
+                'homeLink' => ['label' => BaseController::getMessage('404'), 'url' => Yii::$app->homeUrl],
+                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+            ]); ?>
+		</div>
 	</div>
+	<section class="about-hero-section">
+		<span class="hero-yellow-circle"></span>
+		<div class="container">
+			<div class="hero-text">
+				<h1 class="line-title"><?= BaseController::getMessage('76') ?></h1>
+				<div class="hero-description"><?= BaseController::getMessage('566') ?></div>
+			</div>
+		</div>
+		<div class="hero-bottom-social">
+			<div class="container">
+				<ul class="social-list">
+                    <?php if (!empty($contacts->link_fb)): ?>
+						<li class="facebook">
+							<a href="<?= $contacts->link_fb ?>" target="_blank">
+								<i class="icon-facebook"></i>
+							</a>
+						</li>
+                    <?php endif; ?>
+                    <?php if (!empty($contacts->link_youtube)): ?>
+						<li>
+							<a href="<?= $contacts->link_youtube ?>" target="_blank">
+								<i class="icon-youtube"></i>
+							</a>
+						</li>
+                    <?php endif; ?>
+                    <?php if (!empty($contacts->link_telegram)): ?>
+						<li>
+							<a href="<?= $contacts->link_telegram ?>" target="_blank">
+								<i class="icon-telegram"></i>
+							</a>
+						</li>
+                    <?php endif; ?>
+                    <?php if (!empty($contacts->link_viber)): ?>
+						<li>
+							<a href="<?= $contacts->link_viber ?>" target="_blank">
+								<i class="icon-viber"></i>
+							</a>
+						</li>
+                    <?php endif; ?>
+                    <?php if (!empty($contacts->link_insta)): ?>
+						<li>
+							<a href="<?= $contacts->link_insta ?>" target="_blank">
+								<i class="icon-instagram"></i>
+							</a>
+						</li>
+                    <?php endif; ?>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="our-steps-section">
+		<div class="container">
+			<strong class="title-h2"><?= BaseController::getMessage('567') ?></strong>
+			<ol class="steps-list">
+				<li>
+					<div class="img-part background-lazy" data-src="/img/about/step-1.jpg"></div>
+
+					<div class="yellow-part">
+						<span class="step-number"></span>
+						<strong class="title-h3"><?= BaseController::getMessage('568') ?></strong>
+						<p><?= BaseController::getMessage('569') ?></p>
+					</div>
+
+				</li>
+			</ol>
+		</div>
+	</section>
+
     <section class="section about">
         <div class="about__title">
             <h1><?= BaseController::getMessage('76') ?></h1>
@@ -65,7 +137,7 @@ $this->params['breadcrumbs'][] = [
         </div>
     </section>
     <!-- start review -->
-	<?= $this->render('../section/_review.php', compact('reviews'));?>
+   <? /* echo $this->render('../section/_review.php', compact('reviews')); */ ?>
 	<!-- end review -->
     <!-- start connect -->
     <?= $this->render('../section/_connect.php'); ?>
