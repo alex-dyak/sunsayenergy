@@ -113,8 +113,8 @@ $(document).ready(function(){
         }
     });
 
-    $(document).on('click', '.green-article-opener',  function(){
-       $('.green-article').toggleClass('collapsed');
+    $(document).on('click', '.seo-article-opener',  function(){
+       $('.seo-article').toggleClass('collapsed');
     });
 
     initTabs($('.video-page .tab-navigation'), $('.video-page .tab-container'));

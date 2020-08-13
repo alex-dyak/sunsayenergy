@@ -224,12 +224,12 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 			</div>
 		</section>
-		<div class="green-article collapsed">
+		<div class="seo-article collapsed">
 			<div class="container">
-				<div class="green-article-wrap">
+				<div class="seo-article-wrap">
                     <?= BaseController::getMessage('570') ?>
 				</div>
-				<span class="green-article-opener">
+				<span class="seo-article-opener">
 					<i class="icon-angle-right"></i>
 				</span>
 			</div>
