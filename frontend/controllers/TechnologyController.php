@@ -64,6 +64,7 @@ class TechnologyController extends BaseController
         $this->setOgLang($lang);
         $this->setOgSiteName();
         $img = 'https://sunsayenergy.com/images/' . $article->images->imagePreview;
+        $this->setMeta($article->title, $article->descriptionSEO);
 
         return $this->render('detailed', compact(['article','other_articles', 'img']));
     }
