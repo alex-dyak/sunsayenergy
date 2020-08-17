@@ -231,7 +231,16 @@ $this->params['breadcrumbs'][] = [
     <!-- start review -->
     <?= $this->render('../section/_review.php', compact('reviews')); ?>
     <!-- end review -->
-
+	<div class="seo-article collapsed">
+		<div class="container">
+			<div class="seo-article-wrap">
+                <?= BaseController::getMessage('571') ?>
+			</div>
+			<span class="seo-article-opener">
+					<i class="icon-angle-right"></i>
+				</span>
+		</div>
+	</div>
 	<!-- start connect -->
     <?= $this->render('../section/_connect-blue.php'); ?>
 	<!-- end connect -->
