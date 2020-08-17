@@ -74,13 +74,43 @@ $contacts = \backend\models\Contact::getContact();
 			<ol class="steps-list">
 				<li>
 					<div class="img-part background-lazy" data-src="/img/about/step-1.jpg"></div>
-
 					<div class="yellow-part">
-						<span class="step-number"></span>
-						<strong class="title-h3"><?= BaseController::getMessage('568') ?></strong>
-						<p><?= BaseController::getMessage('569') ?></p>
+						<div class="text-wrap">
+							<span class="step-number">1</span>
+							<strong class="title-h3"><?= BaseController::getMessage('568') ?></strong>
+							<p><?= BaseController::getMessage('569') ?></p>
+						</div>
 					</div>
-
+				</li>
+				<li>
+					<div class="img-part background-lazy" data-src="/img/about/step-2.jpg"></div>
+					<div class="yellow-part">
+						<div class="text-wrap">
+							<span class="step-number">2</span>
+							<strong class="title-h3"><?= BaseController::getMessage('572') ?></strong>
+							<p><?= BaseController::getMessage('573') ?></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="img-part background-lazy" data-src="/img/about/step-3.jpg"></div>
+					<div class="yellow-part">
+						<div class="text-wrap">
+							<span class="step-number">3</span>
+							<strong class="title-h3"><?= BaseController::getMessage('574') ?></strong>
+							<p><?= BaseController::getMessage('575') ?></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="img-part background-lazy" data-src="/img/about/step-4.jpg"></div>
+					<div class="yellow-part">
+						<div class="text-wrap">
+							<span class="step-number">4</span>
+							<strong class="title-h3"><?= BaseController::getMessage('576') ?></strong>
+							<p><?= BaseController::getMessage('577') ?></p>
+						</div>
+					</div>
 				</li>
 			</ol>
 		</div>
