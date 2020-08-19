@@ -70,6 +70,13 @@ $(document).ready(function(){
         }
     });
 
+    $(document).on('click', '.anchor-list a', function () {
+        event.preventDefault();
+        var block = $(this).attr('href');
+
+        $('html,body').animate({scrollTop:$(block).offset().top - 100},500);
+    });
+
     $(document).on('click', '#order-form', function () {
         event.preventDefault();
         if ($(window).width() <= '1279') {
@@ -114,7 +121,7 @@ $(document).ready(function(){
     });
 
     $(document).on('click', '.seo-article-opener',  function(){
-       $('.seo-article').toggleClass('collapsed');
+        $('.seo-article').toggleClass('collapsed');
     });
 
     initTabs($('.video-page .tab-navigation'), $('.video-page .tab-container'));
