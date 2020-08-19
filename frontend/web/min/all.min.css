@@ -9448,6 +9448,10 @@ a:not([class]):hover {
 	list-style: none
 }
 
+.green-payment-list:only-child {
+	border-bottom: 1px solid #EBEBEB;
+}
+
 .green-payment-item {
 	display: flex;
 	align-items: center;
@@ -9903,7 +9907,6 @@ a:not([class]):hover {
 	padding: 0;
 	margin: 0 0 20px;
 	font-size: 14px;
-	overflow: hidden;
 }
 
 .steps-list .title-h3 {
@@ -9970,6 +9973,7 @@ a:not([class]):hover {
 	.steps-list {
 		border-bottom: 1px solid #ebebeb;
 		font-size: 16px;
+		overflow: hidden;
 	}
 	.steps-list li {
 		display: flex;
@@ -10065,4 +10069,47 @@ a:not([class]):hover {
 		height: 650px;
 		width: 325px;
 	}
+}
+
+.about-us-section {
+
+}
+
+
+.staff-slider {
+}
+
+
+.staff-slider .slide {
+	transition: transform .3s linear, width .3s linear;
+}
+
+.staff-slider .img-block{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	overflow: hidden;
+
+}
+.staff-slider .slick-active .img-block{
+	transform: scale(0.8, 0.8);
+	margin: 0 auto;
+}
+.staff-slider .slick-active.slick-current .img-block{
+	transform: scale(1, 1);
+}
+
+
+.staff-slider .slick-active:nth-of-type(1) {
+	padding-bottom: 0px;
+}
+.staff-slider .slick-active:nth-of-type(2) {
+	padding-bottom: 40px;
+}
+}
+.staff-slider .slick-active:nth-of-type(3) {
+	padding-bottom: 80px;
 }
