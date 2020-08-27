@@ -132,6 +132,54 @@ $(document).ready(function(){
     headerBg();
     loadPros();
 
+    if($('.video-review-slider').length) {
+        $('.video-review-slider').slick({
+            slidesToScroll: 1,
+            rows: 0,
+            slidesToShow: 4,
+            arrows: false,
+            dots: true,
+            infinite: false,
+            responsive: [{
+                breakpoint: 1023,
+                settings: {
+                    slidesToShow: 3
+                }
+            },{
+                breakpoint: 479,
+                settings: {
+                    slidesToShow: 1
+                }
+            }]
+        });
+    }
+
+    if($('.staff-slider').length) {
+        $('.staff-slider').slick({
+            slidesToScroll: 1,
+            rows: 0,
+            slidesToShow: 5,
+            arrows: false,
+            dots: false,
+            infinite: true,
+            centerMode: true,
+            centerPadding: "10px",
+            autoplay: true,
+            autoplaySpeed: 3000,
+            responsive: [{
+                breakpoint: 1023,
+                settings: {
+                    slidesToShow: 3
+                }
+            },{
+                breakpoint: 479,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: true
+                }
+            }]
+        });
+    }
     if($('.price-slider').length) {
         $('.price-slider').slick({
             slidesToScroll: 1,
