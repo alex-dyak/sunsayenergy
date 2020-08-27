@@ -136,14 +136,14 @@ $(document).ready(function(){
         $('.video-review-slider').slick({
             slidesToScroll: 1,
             rows: 0,
-            slidesToShow: 4,
+            slidesToShow: 3,
             arrows: false,
             dots: true,
             infinite: false,
             responsive: [{
                 breakpoint: 1023,
                 settings: {
-                    slidesToShow: 3
+                    slidesToShow: 2
                 }
             },{
                 breakpoint: 479,
