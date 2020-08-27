@@ -11,6 +11,7 @@ use backend\models\Subscribe;
 use backend\models\Project;
 use common\models\Commercial;
 use common\models\Video;
+use common\models\VideoReview;
 use Yii;
 use Sendpulse\RestApi\ApiClient;
 use Sendpulse\RestApi\Storage\FileStorage;
@@ -62,12 +63,13 @@ class SiteController extends BaseController
             return strcmp($a->project_order, $b->project_order);
         });
         $videos = Video::find()->all();
+        $video_reviews = VideoReview::find()->all();
 
         $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
         $this->setOgDescription(self::getDescription('index'));
         $this->setMeta(self::getTitle('index'), self::getDescription('index'));
 
-        return $this->render('index', compact('contacts', 'reviews', 'project', 'videos'));
+        return $this->render('index', compact('contacts', 'reviews', 'project', 'videos', 'video_reviews'));
     }
 
 	/**
