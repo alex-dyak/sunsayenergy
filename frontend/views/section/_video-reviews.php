@@ -2,8 +2,8 @@
 
 <section class="video-section">
     <div class="container">
-        <h2><?= BaseController::getMessage('572') ?></h2>
-        <div class="video-row">
+        <h2 class="line-title"><?= BaseController::getMessage('572') ?></h2>
+        <div class="video-review-slider">
             <?php
             foreach ($video_reviews as $item): ?>
                 <?php
