@@ -132,6 +132,28 @@ $(document).ready(function(){
     headerBg();
     loadPros();
 
+    if($('.video-review-slider').length) {
+        $('.video-review-slider').slick({
+            slidesToScroll: 1,
+            rows: 0,
+            slidesToShow: 3,
+            arrows: false,
+            dots: true,
+            infinite: false,
+            responsive: [{
+                breakpoint: 1023,
+                settings: {
+                    slidesToShow: 2
+                }
+            },{
+                breakpoint: 479,
+                settings: {
+                    slidesToShow: 1
+                }
+            }]
+        });
+    }
+
     if($('.staff-slider').length) {
         $('.staff-slider').slick({
             slidesToScroll: 1,
