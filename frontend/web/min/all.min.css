@@ -2590,134 +2590,6 @@ iframe {
 	}
 }
 
-.about {
-	margin-top: 80px;
-	padding-left: 30px;
-	padding-right: 30px
-}
-
-.about__title {
-	text-align: center
-}
-
-.about__title h1 {
-	font: normal 4.25rem "Bebas Neue Cyrillic", sans-serif;
-	line-height: 1.2;
-	text-transform: uppercase;
-	margin: 0
-}
-
-.about__description {
-	position: relative;
-	max-width: 768px;
-	margin: auto;
-	font-size: 1.125rem;
-	line-height: 2
-}
-
-.about__description p {
-	margin-top: 30px;
-	margin-bottom: 30px
-}
-
-.about__description img {
-	position: relative;
-	left: -50px;
-	max-width: calc(100% + (50px * 2));
-	height: auto
-}
-
-.about__description ul {
-	margin-left: -20px;
-	margin-top: -15px;
-	list-style-position: outside;
-	list-style-image: url(../img/icon/list.svg)
-}
-
-.about__image-list {
-	display: flex;
-	flex-direction: row;
-	position: relative
-}
-
-.about__image-list > div {
-	flex: 1 50%;
-	max-width: 50%
-}
-
-.about__image-list > div img {
-	max-width: 100%;
-	height: auto
-}
-
-.about__image-list > div:first-child {
-	margin-right: 15px
-}
-
-.about__image-list > div:last-child {
-	margin-left: 15px
-}
-
-.about__image-description {
-	text-align: center;
-	color: #999;
-	margin-top: 15px !important;
-	margin-bottom: 15px !important
-}
-
-.about__center {
-	text-align: center
-}
-
-@media (max-width: 1023px) {
-	.about {
-		margin-top: 0
-	}
-}
-
-@media (max-width: 768px) {
-	.about {
-		padding-left: 15px;
-		padding-right: 15px
-	}
-
-	.about__title h1 {
-		font-size: 2.5rem
-	}
-
-	.about__description {
-		font-size: .875rem
-	}
-
-	.about__description p {
-		margin-top: 30px;
-		margin-bottom: 30px
-	}
-
-	.about__description img {
-		left: 0;
-		max-width: 100%
-	}
-
-	.about__image-list > div {
-		flex: 1 100%;
-		max-width: 100%
-	}
-
-	.about__image-list {
-		flex-direction: column
-	}
-
-	.about__image-list > div:first-child {
-		margin-right: 0;
-		margin-bottom: 30px
-	}
-
-	.about__image-list > div:last-child {
-		margin-left: 0
-	}
-}
-
 .project {
 	margin-top: 100px
 }
@@ -10107,6 +9979,14 @@ a:not([class]):hover {
 	padding: 30px 0
 }
 
+.staff-slider .slick-dots li button {
+	background: rgba(255, 209, 0, .5)
+}
+
+.staff-slider .slick-dots li.slick-active button {
+	background: #ffd100
+}
+
 .staff-slider .slick-slide {
 	outline: 0;
 	float: none;
@@ -10117,13 +9997,13 @@ a:not([class]):hover {
 }
 
 .staff-slider .slick-active.slick-current {
-	transform: scale(1.2, 1.2);
+	transform: scale(1.15, 1.15);
 	opacity: 1;
 	z-index: 3
 }
 
 .staff-slider .slick-active.slick-current .staff-info {
-	transform: scale(.8, .8);
+	transform: scale(.9, .9);
 	opacity: 1
 }
 
@@ -10133,7 +10013,7 @@ a:not([class]):hover {
 	justify-content: center;
 	width: 210px;
 	height: 210px;
-	margin: 0 auto;
+	margin: 0 auto 10px;
 	border-radius: 50%;
 	border: 15px solid rgba(255, 255, 255, .55);
 	overflow: hidden
@@ -10148,6 +10028,7 @@ a:not([class]):hover {
 	vertical-align: middle;
 	opacity: 0;
 	font-size: 14px;
+	line-height: 1.2;
 	transition: all .3s ease
 }
 
@@ -10186,7 +10067,7 @@ a:not([class]):hover {
 	}
 
 	.staff-slider .slick-track {
-		padding: 40px 0
+		padding: 50px 0
 	}
 
 	.staff-slider .img-block {
@@ -10217,22 +10098,17 @@ a:not([class]):hover {
 	}
 
 	.staff-slider .slick-active.slick-current .staff-info {
-		transform: scale(.7, .7)
+		transform: scale(.8, .8)
 	}
 }
 
 @media screen and (min-width: 1280px) {
 	.staff-slider .slick-track {
-		padding: 80px 0 40px
-	}
-
-	.staff-slider .img-block {
-		width: 169px;
-		height: 169px
+		padding: 80px 0 60px
 	}
 
 	.staff-slider .slick-active + .slick-active {
-		transform: scale(1.25, 1.25);
+		transform: scale(1.3, 1.3);
 		z-index: 3
 	}
 
@@ -10246,13 +10122,45 @@ a:not([class]):hover {
 		z-index: 4
 	}
 
-	.staff-slider .staff-info {
-		text-align: left;
-		border-left: 10px solid #b7d3f7;
-		padding: 10px
+	.staff-slider .slick-active.slick-current .staff-info {
+		transform: scale(.6, .6)
 	}
 
 	.staff-slider .staff-info strong {
 		font-size: 22px
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.staff-slider .slick-track {
+		padding: 100px 0 70px
+	}
+
+	.staff-slider .img-block {
+		width: 180px;
+		height: 180px
+	}
+
+	.staff-slider .slick-active + .slick-active {
+		transform: scale(1.2, 1.2);
+		z-index: 3
+	}
+
+	.staff-slider .slick-active.slick-current + .slick-active + .slick-active {
+		transform: scale(1, 1);
+		z-index: 2
+	}
+
+	.staff-slider .slick-active.slick-current {
+		transform: scale(1.5, 1.5);
+		z-index: 4
+	}
+
+	.staff-slider .slick-active.slick-current .staff-info {
+		transform: scale(.6, .6)
+	}
+
+	.staff-slider .staff-info strong {
+		font-size: 24px
 	}
 }
