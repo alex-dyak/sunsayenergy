@@ -49,7 +49,7 @@ class Request extends \yii\db\ActiveRecord
         ];
     }
 
-    public function sendBitrix($name, $phone, $email, $type, $utm_source, $utm_medium, $utm_campaign)
+    public function sendBitrix($name, $phone, $email, $type, $utm_source, $utm_medium, $utm_campaign, $utm_content, $utm_term)
     {
         $user_id = 53;
         $user_key = "5379jaa1kany8byg";
@@ -80,6 +80,8 @@ class Request extends \yii\db\ActiveRecord
                 'UTM_SOURCE' => $utm_source,
                 'UTM_MEDIUM' => $utm_medium,
                 'UTM_CAMPAIGN' => $utm_campaign,
+                'UTM_CONTENT' => $utm_content,
+                'UTM_TERM' => $utm_term,
                 "PHONE" => [
                     [
                         "VALUE" => $phone,

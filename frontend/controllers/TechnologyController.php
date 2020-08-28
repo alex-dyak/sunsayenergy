@@ -30,6 +30,12 @@ class TechnologyController extends BaseController
         if (!empty($_GET['utm_campaign'])) {
             $session->set('utm_campaign', $_GET['utm_campaign']);
         }
+        if (!empty($_GET['utm_content'])) {
+            $session->set('utm_content', $_GET['utm_content']);
+        }
+        if (!empty($_GET['utm_term'])) {
+            $session->set('utm_term', $_GET['utm_term']);
+        }
 
         return [
             'error' => [
@@ -64,6 +70,7 @@ class TechnologyController extends BaseController
         $this->setOgLang($lang);
         $this->setOgSiteName();
         $img = 'https://sunsayenergy.com/images/' . $article->images->imagePreview;
+        $this->setMeta($article->title, $article->descriptionSEO);
 
         return $this->render('detailed', compact(['article','other_articles', 'img']));
     }

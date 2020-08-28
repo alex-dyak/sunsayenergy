@@ -41,6 +41,7 @@
                     (\Yii::$app->user->can('Налаштування'))?['label' => 'Налаштування', 'icon' => 'fa fa-suitcase', 'url' => ['/settings']]:"",
                     (\Yii::$app->user->can('Файли'))?['label' => 'Вiдео', 'icon' => 'fa fa-video', 'url' => ['/video']]:"",
                     (\Yii::$app->user->can('Файли'))?['label' => "Комерційні станції (Фото)", 'icon' => 'fa fa-camera', 'url' => ['/commercial']]:"",
+                    (\Yii::$app->user->can('Файли'))?['label' => 'Вiдео Вiдгуки', 'icon' => 'fa fa-video', 'url' => ['/video-review']]:"",
                 ],
             ]
         ) ?>

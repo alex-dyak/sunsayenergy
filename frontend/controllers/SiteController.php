@@ -11,6 +11,7 @@ use backend\models\Subscribe;
 use backend\models\Project;
 use common\models\Commercial;
 use common\models\Video;
+use common\models\VideoReview;
 use Yii;
 use Sendpulse\RestApi\ApiClient;
 use Sendpulse\RestApi\Storage\FileStorage;
@@ -44,6 +45,12 @@ class SiteController extends BaseController
         if (!empty($_GET['utm_campaign'])) {
             $session->set('utm_campaign', $_GET['utm_campaign']);
         }
+        if (!empty($_GET['utm_content'])) {
+            $session->set('utm_content', $_GET['utm_content']);
+        }
+        if (!empty($_GET['utm_term'])) {
+            $session->set('utm_term', $_GET['utm_term']);
+        }
 
         return [
             'error' => [
@@ -62,12 +69,13 @@ class SiteController extends BaseController
             return strcmp($a->project_order, $b->project_order);
         });
         $videos = Video::find()->all();
+        $video_reviews = VideoReview::find()->all();
 
         $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
         $this->setOgDescription(self::getDescription('index'));
         $this->setMeta(self::getTitle('index'), self::getDescription('index'));
 
-        return $this->render('index', compact('contacts', 'reviews', 'project', 'videos'));
+        return $this->render('index', compact('contacts', 'reviews', 'project', 'videos', 'video_reviews'));
     }
 
 	/**
@@ -203,7 +211,17 @@ class SiteController extends BaseController
             $SPApiClient->addEmails($this->form_book_id, $emails);
 
             $model = new Request();
-            $model->sendBitrix($post['name'], $post['phone'], $post['email'], $post['type'], $post['utm_source'], $post['utm_medium'], $post['utm_campaign']);
+            $model->sendBitrix(
+                $post['name'],
+                $post['phone'],
+                $post['email'],
+                $post['type'],
+                $post['utm_source'],
+                $post['utm_medium'],
+                $post['utm_campaign'],
+                $post['utm_content'],
+                $post['utm_term']
+            );
             //TODO: переименовать метод
             Request::subscribeEsputnik($post['email'], "request_measurement", $post['name'], $post['phone']);
             //TODO: Вынести эту дрянь в модель

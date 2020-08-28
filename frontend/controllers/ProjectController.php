@@ -32,6 +32,12 @@ class ProjectController extends BaseController
         if (!empty($_GET['utm_campaign'])) {
             $session->set('utm_campaign', $_GET['utm_campaign']);
         }
+        if (!empty($_GET['utm_content'])) {
+            $session->set('utm_content', $_GET['utm_content']);
+        }
+        if (!empty($_GET['utm_term'])) {
+            $session->set('utm_term', $_GET['utm_term']);
+        }
 
         return [
             'error' => [
