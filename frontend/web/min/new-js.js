@@ -164,10 +164,14 @@ $(document).ready(function(){
             infinite: true,
             centerMode: true,
             centerPadding: "10px",
+            autoPlay: true,
+            autoplaySpeed: 4000,
             responsive: [{
                 breakpoint: 1023,
                 settings: {
-                    slidesToShow: 3
+                    slidesToShow: 3,
+                    autoPlay: false
+
                 }
             },{
                 breakpoint: 479,
