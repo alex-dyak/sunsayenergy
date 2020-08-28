@@ -160,12 +160,10 @@ $(document).ready(function(){
             rows: 0,
             slidesToShow: 5,
             arrows: false,
-            dots: false,
+            dots: true,
             infinite: true,
             centerMode: true,
             centerPadding: "10px",
-            autoplay: true,
-            autoplaySpeed: 3000,
             responsive: [{
                 breakpoint: 1023,
                 settings: {

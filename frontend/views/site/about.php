@@ -161,15 +161,15 @@ $contacts = \backend\models\Contact::getContact();
 						<p><?= BaseController::getMessage('586') ?></p>
 					</div>
 				</div>
-				<div class="slide">
+				<!--<div class="slide">
 					<div class="img-block">
-						<img data-src="/img/about/worker/4.jpg" alt="<?= BaseController::getMessage('587') ?>">
+						<img data-src="/img/about/worker/4.jpg" alt="<?/*= BaseController::getMessage('587') */?>">
 					</div>
 					<div class="staff-info">
-						<strong><?= BaseController::getMessage('587') ?></strong>
-						<p><?= BaseController::getMessage('588') ?></p>
+						<strong><?/*= BaseController::getMessage('587') */?></strong>
+						<p><?/*= BaseController::getMessage('588') */?></p>
 					</div>
-				</div>
+				</div>-->
 				<div class="slide">
 					<div class="img-block">
 						<img data-src="/img/about/worker/5.jpg" alt="<?= BaseController::getMessage('589') ?>">
@@ -215,33 +215,33 @@ $contacts = \backend\models\Contact::getContact();
 						<p><?= BaseController::getMessage('598') ?></p>
 					</div>
 				</div>
-				<div class="slide">
+				<!--<div class="slide">
 					<div class="img-block">
-						<img data-src="/img/about/worker/10.jpg" alt="<?= BaseController::getMessage('599') ?>">
+						<img data-src="/img/about/worker/10.jpg" alt="<?/*= BaseController::getMessage('599') */?>">
 					</div>
 					<div class="staff-info">
-						<strong><?= BaseController::getMessage('599') ?></strong>
-						<p><?= BaseController::getMessage('600') ?></p>
+						<strong><?/*= BaseController::getMessage('599') */?></strong>
+						<p><?/*= BaseController::getMessage('600') */?></p>
 					</div>
 				</div>
 				<div class="slide">
 					<div class="img-block">
-						<img data-src="/img/about/worker/11.jpg" alt="<?= BaseController::getMessage('601') ?>">
+						<img data-src="/img/about/worker/11.jpg" alt="<?/*= BaseController::getMessage('601') */?>">
 					</div>
 					<div class="staff-info">
-						<strong><?= BaseController::getMessage('601') ?></strong>
-						<p><?= BaseController::getMessage('602') ?></p>
+						<strong><?/*= BaseController::getMessage('601') */?></strong>
+						<p><?/*= BaseController::getMessage('602') */?></p>
 					</div>
 				</div>
 				<div class="slide">
 					<div class="img-block">
-						<img data-src="/img/about/worker/12.jpg" alt="<?= BaseController::getMessage('603') ?>">
+						<img data-src="/img/about/worker/12.jpg" alt="<?/*= BaseController::getMessage('603') */?>">
 					</div>
 					<div class="staff-info">
-						<strong><?= BaseController::getMessage('603') ?></strong>
-						<p><?= BaseController::getMessage('602') ?></p>
+						<strong><?/*= BaseController::getMessage('603') */?></strong>
+						<p><?/*= BaseController::getMessage('602') */?></p>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
     </section>
