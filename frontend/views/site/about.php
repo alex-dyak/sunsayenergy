@@ -161,15 +161,15 @@ $contacts = \backend\models\Contact::getContact();
 						<p><?= BaseController::getMessage('586') ?></p>
 					</div>
 				</div>
-				<!--<div class="slide">
+				<div class="slide">
 					<div class="img-block">
-						<img data-src="/img/about/worker/4.jpg" alt="<?/*= BaseController::getMessage('587') */?>">
+						<img data-src="/img/about/worker/4.jpg" alt="<?= BaseController::getMessage('587') ?>">
 					</div>
 					<div class="staff-info">
-						<strong><?/*= BaseController::getMessage('587') */?></strong>
-						<p><?/*= BaseController::getMessage('588') */?></p>
+						<strong><?= BaseController::getMessage('587') ?></strong>
+						<p><?= BaseController::getMessage('588') ?></p>
 					</div>
-				</div>-->
+				</div>
 				<div class="slide">
 					<div class="img-block">
 						<img data-src="/img/about/worker/5.jpg" alt="<?= BaseController::getMessage('589') ?>">
