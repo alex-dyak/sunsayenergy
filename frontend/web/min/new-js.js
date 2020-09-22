@@ -124,6 +124,11 @@ $(document).ready(function(){
         $('.seo-article').toggleClass('collapsed');
     });
 
+    $(document).on('click', '.staff-slider .slide',  function(){
+        var index = $(this).attr("data-slick-index");
+        $(".staff-slider").slick("slickGoTo", index);
+    });
+
     initTabs($('.video-page .tab-navigation'), $('.video-page .tab-container'));
     initLoadMore ($('.load-all'), 3, 3);
     initLoadMore ($('.load-finished'), 3, 3);
