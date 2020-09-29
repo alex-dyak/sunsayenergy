@@ -6,6 +6,7 @@ $this->params['breadcrumbs'][] = [
     'template' => "<li><b>{link}</b></li>\n",
     'label' => BaseController::getMessage('320'),
 ];
+$contacts = \backend\models\Contact::getContact();
 ?>
 
 <main class="page-container">
@@ -15,41 +16,76 @@ $this->params['breadcrumbs'][] = [
         'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
     ]); ?>
 	</div>
-    <section class="section project">
-        <div class="project__content">
-            <div class="project__content-title">
-                <h1><?= BaseController::getMessage('320') ?></h1>
-            </div>
-            <div class="project__content-description"><?= BaseController::getMessage('321') ?></div>
-            <div class="project__content-types">
-                <a href="<?= \yii\helpers\Url::to(['project/category', 'symbol' =>'network']) ?>">
-                    <button class="btn btn-primary"><?= BaseController::getMessage('322') ?></button>
-                </a>
-               <!-- <a href="<?/*= \yii\helpers\Url::to(['project/category', 'symbol' =>'stand-alone']) */?>">
-                    <button class="btn btn-primary"><?/*= BaseController::getMessage('323') */?></button>
-                </a>
-                <a href="<?/*= \yii\helpers\Url::to(['project/category', 'symbol' =>'hybrid']) */?>">
-                    <button class="btn btn-primary"><?/*= BaseController::getMessage('324') */?></button>
-                </a>-->
-            </div>
-            <div class="project__content-list">
+	<section class="project-hero-section">
+		<div class="container">
+			<div class="hero-block">
+				<div class="title">
+					<h1 class="line-title"><?= BaseController::getMessage('320') ?></h1>
+				</div>
+				<div class="hero-description"><?= BaseController::getMessage('321') ?></div>
+			</div>
+			<span class="hero-yellow-circle"></span>
+		</div>
+		<div class="hero-bottom-social">
+			<div class="container">
+				<ul class="social-list">
+                    <?php if (!empty($contacts->link_fb)): ?>
+						<li>
+							<a href="<?= $contacts->link_fb ?>" target="_blank">
+								<i class="icon-facebook"></i>
+							</a>
+						</li>
+                    <?php endif; ?>
+                    <?php if (!empty($contacts->link_youtube)): ?>
+						<li>
+							<a href="<?= $contacts->link_youtube ?>" target="_blank">
+								<i class="icon-youtube"></i>
+							</a>
+						</li>
+                    <?php endif; ?>
+                    <?php if (!empty($contacts->link_telegram)): ?>
+						<li>
+							<a href="<?= $contacts->link_telegram ?>" target="_blank">
+								<i class="icon-telegram"></i>
+							</a>
+						</li>
+                    <?php endif; ?>
+                    <?php if (!empty($contacts->link_viber)): ?>
+						<li>
+							<a href="<?= $contacts->link_viber ?>" target="_blank">
+								<i class="icon-viber"></i>
+							</a>
+						</li>
+                    <?php endif; ?>
+                    <?php if (!empty($contacts->link_insta)): ?>
+						<li>
+							<a href="<?= $contacts->link_insta ?>" target="_blank">
+								<i class="icon-instagram"></i>
+							</a>
+						</li>
+                    <?php endif; ?>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="project-section">
+		<div class="container">
+			<div class="project-list">
                 <?php foreach ($model as $item): ?>
-                <div class="project__content-list__item" data-order="<?= $item->project_order ?>">
-                    <a href="<?= \yii\helpers\Url::to(['project/detailed', 'symbol' => $item->symbol]) ?>">
-                        <div class="image">
-                            <img data-src="<?= $item->getFirstImg(550) ?>" alt="<?= $item->header ?>">
-                        </div>
-                        <div class="title"><?= $item->header ?></div>
-                    </a>
-                </div>
+					<div class="project-list-item" data-order="<?= $item->project_order ?>">
+						<a href="<?= \yii\helpers\Url::to(['project/detailed', 'symbol' => $item->symbol]) ?>" class="background-lazy" data-src="<?= $item->getFirstImg(550) ?>">
+							<div class="project-title"><strong><?= $item->header ?></strong></div>
+						</a>
+					</div>
                 <?php endforeach; ?>
-            </div>
-        </div>
-    </section>
+			</div>
+		</div>
+
+	</section>
     
-    <?= $this->render('../section/_complex.php'); ?>
+    <?= $this->render('../section/_complex-project.php'); ?>
     
-    <?= $this->render('../section/_connect.php'); ?>
+    <?= $this->render('../section/_connect-blue.php'); ?>
 </main>
 
 <script type="application/ld+json">

@@ -137,6 +137,30 @@ $(document).ready(function(){
     headerBg();
     loadPros();
 
+    if($('.hero-project-slider').length) {
+        var $status = $('.hero-slider-counter');
+        $('.hero-project-slider').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+            //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+            var i = (currentSlide ? currentSlide : 0) + 1;
+            $status.text(i + '/' + slick.slideCount);
+        });
+
+        $('.hero-project-slider').slick({
+            slidesToScroll: 1,
+            rows: 0,
+            slidesToShow: 1,
+            nextArrow: '<div class="next-arrow"><img src="/img/icon/Arrow.svg" alt="next" /></div>',
+            prevArrow: '<div class="prev-arrow"><img src="/img/icon/Arrow.svg" alt="prev" /></div>',
+            dots: false,
+            adaptiveHeight: true,
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    arrows: false
+                }
+            }]
+        });
+    }
     if($('.video-review-slider').length) {
         $('.video-review-slider').slick({
             slidesToScroll: 1,
@@ -201,6 +225,7 @@ $(document).ready(function(){
                     slidesToScroll: 1,
                     slidesToShow: 1,
                     dots: true,
+                    initialSlide: 1,
                     dotsClass: 'slick-dots'
                 }
             }]
