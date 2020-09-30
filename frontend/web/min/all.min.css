@@ -9910,11 +9910,11 @@ a:not([class]):hover {
 	color: #393939;
 }
 
-.project-list a:hover .project-title {
+.project-list a:hover .project-list-title {
 	opacity: 1;
 }
 
-.project-list .project-title {
+.project-list .project-list-title {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -9925,7 +9925,7 @@ a:not([class]):hover {
 	transition: opacity .3s linear;
 }
 
-.project-list .project-title strong {
+.project-list .project-list-title strong {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -9962,7 +9962,7 @@ a:not([class]):hover {
 		min-height: 320px;
 	}
 
-	.project-list .project-title strong {
+	.project-list .project-list-title strong {
 		width: 320px;
 		height: 320px;
 		padding: 40px;
@@ -9979,7 +9979,7 @@ a:not([class]):hover {
 		margin-bottom: 90px;
 	}
 
-	.project-list .project-title strong {
+	.project-list .project-list-title strong {
 		width: 440px;
 		height: 440px;
 		padding: 80px;
