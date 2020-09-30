@@ -25,11 +25,10 @@ $this->params['breadcrumbs'][] = [
                 <?php foreach($images as $img) : ?>
 				<div class="hero-slide">
 					<picture>
-						<source media="(min-width: 1400px)" data-srcset="<?= $img->getUrl(936); ?>" type="image/jpg">
-						<source media="(min-width: 1000px)" data-srcset="<?= $img->getUrl(800); ?>" type="image/jpg">
-						<source media="(max-width:  450px)" data-srcset="<?= $img->getUrl(275); ?>" type="image/jpg">
-						<source media="(max-width:  800px)" data-srcset="<?= $img->getUrl(570); ?>" type="image/jpg">
-						<img data-src="<?= $img->getUrl(800); ?>" alt="">
+						<source media="(min-width: 1400px)" srcset="<?= $img->getUrl(1440); ?>" type="image/jpg">
+						<source media="(min-width: 1000px)" srcset="<?= $img->getUrl(1000); ?>" type="image/jpg">
+						<source media="(min-width:  768px)" srcset="<?= $img->getUrl(700); ?>" type="image/jpg">
+						<img src="<?= $img->getUrl(600); ?>" alt="">
 					</picture>
 				</div>
                 <?php endforeach; ?>
