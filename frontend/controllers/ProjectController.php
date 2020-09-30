@@ -65,7 +65,12 @@ class ProjectController extends BaseController
     {
         $model = Project::findOne(['symbol' => $symbol]);
         if (isset($model)) {
-            $other_project = Project::find()->where(['!=', 'symbol', $symbol])->all();
+            $all_projects = Project::find()->where(['!=', 'symbol', $symbol])->all();
+            $rand_keys = array_rand($all_projects, 4);
+            $other_project = [];
+            foreach ($rand_keys as $key) {
+                $other_project[$key] = $all_projects[$key];
+            }
             $reviews = Reviews::find()->where(['=', 'project_id', $model->id])->all();
             $images = $model->getImages();
         } else {
