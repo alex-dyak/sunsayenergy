@@ -13,7 +13,7 @@ $this->params['breadcrumbs'][] = [
 ];
 ?>
 <main class="page-container">
-	<div class="container">
+	<div class="container white-breadcrumb">
     <?php echo Breadcrumbs::widget([
         'homeLink' => ['label' => BaseController::getMessage('404'), 'url' => Yii::$app->homeUrl],
         'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
@@ -24,12 +24,8 @@ $this->params['breadcrumbs'][] = [
 			<div class="hero-project-slider">
                 <?php foreach($images as $img) : ?>
 				<div class="hero-slide">
-					<picture>
-						<source media="(min-width: 1400px)" srcset="<?= $img->getUrl(1440); ?>" type="image/jpg">
-						<source media="(min-width: 1000px)" srcset="<?= $img->getUrl(1000); ?>" type="image/jpg">
-						<source media="(min-width:  768px)" srcset="<?= $img->getUrl(700); ?>" type="image/jpg">
-						<img src="<?= $img->getUrl(600); ?>" alt="">
-					</picture>
+					<div class="img-block-mobile" style="background-image: url('<?= $img->getUrl(700); ?>')"></div>
+					<div class="img-block" style="background-image: url('<?= $img->getUrl(1800); ?>')"></div>
 				</div>
                 <?php endforeach; ?>
 			</div>
@@ -57,7 +53,7 @@ $this->params['breadcrumbs'][] = [
             <div class="featured-project-list">
                 <?php foreach ($other_project as $item): ?>
 					<a href="<?= \yii\helpers\Url::to(['project/detailed', 'symbol' => $item->symbol]) ?>">
-						<img data-src="<?= $item->getFirstImg() ?>" alt="<?= $item->header ?>">
+						<img data-src="<?= $item->getFirstImg(350) ?>" alt="<?= $item->header ?>">
 					</a>
                 <?php endforeach; ?>
             </div>
