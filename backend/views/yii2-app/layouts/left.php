@@ -31,6 +31,7 @@
                     (\Yii::$app->user->can('Переклади текстів'))?['label' => 'Переклади текстів', 'icon' => 'fa fa-comment', 'url' => ['/message']]:"",
                     (\Yii::$app->user->can('Контакти'))?['label' => 'Контакти', 'icon' => 'fa fa-address-book   ', 'url' => ['/contact']]:"",
                     (\Yii::$app->user->can('Відгуки'))?['label' => 'Відгуки', 'icon' => 'fa  fa-comments', 'url' => ['/reviews']]:"",
+                    (\Yii::$app->user->can('Файли'))?['label' => 'Коментарi', 'icon' => 'fa  fa-comments', 'url' => ['/comment']]:"",
                     (\Yii::$app->user->can('Проекти'))?['label' => 'Проекти', 'icon' => 'fa  fa-camera-retro', 'url' => ['/project']]:"",
                     (\Yii::$app->user->can('Змінні в калькуляторах'))?['label' => 'Змінні в калькуляторах', 'icon' => 'fa fa-calculator', 'url' => ['/calculator']]:"",
                     (\Yii::$app->user->can('Заявки з сайту'))?['label' => 'Заявки з сайту', 'icon' => 'fa fa-bell', 'url' => ['/request']]:"",
