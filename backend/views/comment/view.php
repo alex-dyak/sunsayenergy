@@ -6,8 +6,8 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model common\models\Comment */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Коментарi', 'url' => ['index']];
+$this->title = $model->name;
+$this->params['breadcrumbs'][] = ['label' => 'Comments', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
@@ -30,9 +30,11 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
+            'name',
             'comment:ntext',
+            'comment_date',
             'response:ntext',
-            'date_published',
+            'response_date',
             'published',
             'article_id',
         ],

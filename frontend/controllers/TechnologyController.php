@@ -10,6 +10,7 @@ namespace frontend\controllers;
 
 
 use backend\models\Blog;
+use common\models\Comment;
 use Yii;
 
 class TechnologyController extends BaseController
@@ -61,6 +62,9 @@ class TechnologyController extends BaseController
         $article = Blog::findOne(['symbol'=>$symbol]);
         $other_articles = Blog::find()->where(['<>','symbol', $symbol])->orderBy(['id' => SORT_DESC])->limit(4)->all();
 
+        // Get comments for current article.
+        $comments = Comment::find()->where(['article_id' => $article->id, 'published' => 'yes'])->orderBy(['id' => SORT_DESC])->all();
+
         if (stripos($_SERVER['REDIRECT_URL'], 'ru') === false) {
             $lang = 'ua';
         } else {
@@ -72,7 +76,7 @@ class TechnologyController extends BaseController
         $img = 'https://sunsayenergy.com/images/' . $article->images->imagePreview;
         $this->setMeta($article->title, $article->descriptionSEO);
 
-        return $this->render('detailed', compact(['article','other_articles', 'img']));
+        return $this->render('detailed', compact(['article','other_articles', 'img', 'comments']));
     }
 
     public function actionNine()

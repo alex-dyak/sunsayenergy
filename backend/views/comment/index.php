@@ -6,7 +6,7 @@ use yii\grid\GridView;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Коментарi';
+$this->title = 'Comments';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="comment-index">
@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Додати Коментар', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Comment', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -23,11 +23,13 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'article_id',
+            'name',
             'comment:ntext',
+            'comment_date',
             'response:ntext',
-            'date_published',
+            //'response_date',
             'published',
+            //'article_id',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

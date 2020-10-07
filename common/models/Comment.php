@@ -3,14 +3,17 @@
 namespace common\models;
 
 use Yii;
+use kartik\date\DatePicker;
 
 /**
  * This is the model class for table "comment".
  *
  * @property int $id
+ * @property string $name
  * @property string $comment
+ * @property string $comment_date
  * @property string $response
- * @property string $date_published
+ * @property string $response_date
  * @property string $published
  * @property int $article_id
  */
@@ -30,10 +33,10 @@ class Comment extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['comment', 'response', 'date_published', 'published', 'article_id'], 'required'],
+            [['name', 'comment', 'comment_date', 'article_id'], 'required'],
             [['comment', 'response'], 'string'],
-            [['date_published'], 'safe'],
             [['article_id'], 'integer'],
+            [['name', 'comment_date', 'response_date'], 'string', 'max' => 255],
             [['published'], 'string', 'max' => 128],
         ];
     }
@@ -45,10 +48,12 @@ class Comment extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
+            'name' => 'Name',
             'comment' => 'Comment',
+            'comment_date' => 'Comment Date',
             'response' => 'Response',
-            'date_published' => 'Date Published',
-            'published' => 'Published',
+            'response_date' => 'Response Date',
+            'published' => 'Publish',
             'article_id' => 'Article ID',
         ];
     }

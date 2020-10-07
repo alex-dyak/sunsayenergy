@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use kartik\date\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Comment */
@@ -12,18 +13,29 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
+    <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'comment')->textarea(['rows' => 6]) ?>
+
+    <?= $form->field($model, 'comment_date')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'response')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'date_published')->textInput() ?>
+    <?= $form->field($model, 'response_date')->widget(DatePicker::classname(), [
+        'options' => ['placeholder' => 'Виберiть дату вiдповiдi ...'],
+        'pluginOptions' => [
+            'autoclose'=>true,
+            'format' => 'dd-m-yyyy',
+            'todayHighlight' => true
+        ]
+    ]); ?>
 
-    <?= $form->field($model, 'published')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'published')->dropDownList(['no' =>'no', 'yes' =>'yes']) ?>
 
     <?= $form->field($model, 'article_id')->textInput() ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Publish', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

@@ -9,6 +9,7 @@ use backend\models\Request;
 use backend\models\Reviews;
 use backend\models\Subscribe;
 use backend\models\Project;
+use common\models\Comment;
 use common\models\Commercial;
 use common\models\Video;
 use common\models\VideoReview;
@@ -272,6 +273,24 @@ class SiteController extends BaseController
             }
 
         }
+    }
+
+    public function actionComment()
+    {
+       // if (Yii::$app->request->isAjax) {
+            $post = Yii::$app->request->post();
+
+            $model = new Comment();
+            $model->article_id = $post['article_id'];
+            $model->comment_date = $post['comment_date'];
+            $model->name = $post['name'];
+            $model->comment = $post['comment'];
+            $model->published = $post['published'];
+
+        if ($model->save()) {
+            return true;
+        }
+      //  }
     }
 
     public function actionCalculator($type)

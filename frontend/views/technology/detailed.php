@@ -65,6 +65,7 @@ $seo_date = date('Y-m-d', $datetime);
 			</div>
 		</div>
     </section>
+    <?= $this->render('../section/_comment.php', ['article' => $article, 'comments' => $comments]); ?>
     <?php if (!empty($other_articles)): ?>
         <section class="section blog-more">
 			<div class="container">
