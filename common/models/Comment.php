@@ -48,12 +48,12 @@ class Comment extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'comment' => 'Comment',
-            'comment_date' => 'Comment Date',
-            'response' => 'Response',
-            'response_date' => 'Response Date',
-            'published' => 'Publish',
+            'name' => "Iм'я",
+            'comment' => 'Коментар',
+            'comment_date' => 'Дата коментаря',
+            'response' => 'Вiдповiдь',
+            'response_date' => 'Дата Вiдповiдi',
+            'published' => 'Опублiковано',
             'article_id' => 'Article ID',
         ];
     }

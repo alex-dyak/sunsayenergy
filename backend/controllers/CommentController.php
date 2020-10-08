@@ -124,4 +124,16 @@ class CommentController extends Controller
 
         throw new NotFoundHttpException('The requested page does not exist.');
     }
+
+    public function actionApprove()
+    {
+        $items = Comment::find()->where(['published' => 'no'])->all();
+
+        foreach ($items as $item) {
+            $item->published = 'yes';
+            $item->save();
+        }
+
+        return $this->redirect(['index']);
+    }
 }
