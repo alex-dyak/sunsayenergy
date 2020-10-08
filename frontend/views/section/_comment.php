@@ -23,29 +23,31 @@
                 <div class="form-compelete"><?= BaseController::getMessage('607') ?></div>
             </form>
         </div>
-        <div class="comments-list">
-			<strong class="h2 line-title"><?= BaseController::getMessage('609') ?></strong>
-            <?php foreach ($comments as $comment) : ?>
-            <div class="comment-item">
-				<div class="comment-item-question">
-					<div class="comment-item-head">
-						<strong class="comment-author"><?= $comment->name ?></strong>
-						<time datetime="<?= $comment->comment_date ?>" class="comment-date"><?= $comment->comment_date ?></time>
-					</div>
-					<p><?= $comment->comment ?></p>
-				</div>
+        <?php if($comments) : ?>
+            <div class="comments-list">
+                <strong class="h2 line-title"><?= BaseController::getMessage('609') ?></strong>
+                <?php foreach ($comments as $comment) : ?>
+                <div class="comment-item">
+                    <div class="comment-item-question">
+                        <div class="comment-item-head">
+                            <strong class="comment-author"><?= $comment->name ?></strong>
+                            <time datetime="<?= $comment->comment_date ?>" class="comment-date"><?= $comment->comment_date ?></time>
+                        </div>
+                        <p><?= $comment->comment ?></p>
+                    </div>
 
-                <?php if ($comment->response) : ?>
-					<div class="comment-item-answer">
-						<div class="comment-item-head">
-							<strong class="comment-author"><?= BaseController::getMessage('608') ?></strong>
-							<time datetime="<?= $comment->response_date ?>" class="comment-date"><?= $comment->response_date ?></time>
-						</div>
-						<p><?= $comment->response ?></p>
-					</div>
-                <?php endif; ?>
+                    <?php if ($comment->response) : ?>
+                        <div class="comment-item-answer">
+                            <div class="comment-item-head">
+                                <strong class="comment-author"><?= BaseController::getMessage('608') ?></strong>
+                                <time datetime="<?= $comment->response_date ?>" class="comment-date"><?= $comment->response_date ?></time>
+                            </div>
+                            <p><?= $comment->response ?></p>
+                        </div>
+                    <?php endif; ?>
+                </div>
+                <?php endforeach; ?>
             </div>
-            <?php endforeach; ?>
-        </div>
+        <?php endif; ?>
     </div>
 </section>
