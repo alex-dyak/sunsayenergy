@@ -13,7 +13,7 @@ $this->params['breadcrumbs'][] = [
 ];
 ?>
 <main class="page-container">
-	<div class="container white-breadcrumb">
+	<div class="container">
     <?php echo Breadcrumbs::widget([
         'homeLink' => ['label' => BaseController::getMessage('404'), 'url' => Yii::$app->homeUrl],
         'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
@@ -21,14 +21,17 @@ $this->params['breadcrumbs'][] = [
 	</div>
 
 	<section class="project-hero-section detail">
+		<div class="container">
 			<div class="hero-project-slider">
                 <?php foreach($images as $img) : ?>
-				<div class="hero-slide">
-					<div class="img-block-mobile" style="background-image: url('<?= $img->getUrl(700); ?>')"></div>
-					<div class="img-block" style="background-image: url('<?= $img->getUrl(1800); ?>')"></div>
-				</div>
+					<div class="hero-slide">
+						<div class="img-block-mobile" style="background-image: url('<?= $img->getUrl(600); ?>')"></div>
+						<div class="img-block" style="background-image: url('<?= $img->getUrl(1400); ?>')"></div>
+					</div>
                 <?php endforeach; ?>
 			</div>
+		</div>
+
 			<div class="hero-slider-counter"></div>
 			<span class="hero-yellow-circle"></span>
 	</section>

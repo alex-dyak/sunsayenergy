@@ -108,7 +108,7 @@ $contacts = \backend\models\Contact::getContact();
 	</div>
 </div>
 <?php $this->beginBody() ?>
-	<header class="header <?php if(Yii::$app->controller->route == 'project/project' || Yii::$app->controller->route == 'site/commercial' || Yii::$app->controller->route == 'site/green' || Yii::$app->controller->route == 'site/about'){ ?>transparent<?php } ?> <?php if(Yii::$app->controller->route == 'project/detailed'){ ?>white-header<?php } ?>" id="header">
+	<header class="header <?php if(Yii::$app->controller->route == 'project/project' || Yii::$app->controller->route == 'site/commercial' || Yii::$app->controller->route == 'site/green' || Yii::$app->controller->route == 'site/about' || Yii::$app->controller->route == 'project/detailed'){ ?>transparent<?php } ?> " id="header">
 		<div class="container">
 			<div class="header-wrap">
 				<div class="mobile-top-block">
@@ -182,9 +182,6 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 				<strong class="main-logo">
 					<a href="<?= \yii\helpers\Url::to(['/']); ?>">
-                        <?php if(Yii::$app->controller->route == 'project/detailed'){ ?>
-							<img class="logo-white" src="/img/logo-white.svg" width="184" alt="SUNSAY Energy">
-                        <?php } ?>
 						<img class="logo-def" src="/img/logo.svg" width="184" alt="SUNSAY Energy">
 						<img class="logo-navbar" src="/img/logo-navbar.svg" width="184" alt="SUNSAY Energy">
 						<span class="logo-text"><?= BaseController::getMessage('406') ?></span>
