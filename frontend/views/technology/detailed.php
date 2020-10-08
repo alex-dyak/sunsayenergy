@@ -92,11 +92,6 @@ $seo_date = date('Y-m-d', $datetime);
     <?= $this->render('../section/_connect.php'); ?>
 </main>
 
-<?php
-
-$this->registerJsFile('/js/onload/tech.js', ['position' => \yii\web\View::POS_END]);
-
-?>
 
 <script type="application/ld+json">
     {

@@ -107,12 +107,6 @@ $this->params['breadcrumbs'][] = [
     <?= $this->render('../section/_connect.php'); ?>
 </main>
 
-<?php
-
-$this->registerJsFile('/js/onload/tech.js', ['position' => \yii\web\View::POS_END]);
-
-?>
-
 <script type="application/ld+json">
     {
         "@context": "http://schema.org",
