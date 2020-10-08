@@ -91,7 +91,7 @@ $contacts = \backend\models\Contact::getContact();
 
     <meta name="google-site-verification" content="xxxLG9Hae7rnxth_CLJ3SBLXRhnRpnEg-DV95cNNyxI" />
 
-	<script src="/min/picturefill.min.js" async></script>
+<!--	<script src="/min/picturefill.min.js" async></script>-->
 </head>
 
 <body style="opacity:1;" class="<?php if ( BaseController::is_mobile()  ): ?> mobile <?php endif; ?> <?= (Yii::$app->language=='ru')?'lang-ru':''?>">
@@ -420,17 +420,8 @@ $contacts = \backend\models\Contact::getContact();
 
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
 
-<?php if ( BaseController::is_mobile()  ): ?>
-	<?php if (Yii::$app->controller->route == 'site/income'): ?>
-		<script src="/min/main-mob-optimized.js" ></script>
-    <?php else: ?>
-    	<script src="/min/main-mob.js?v=3" ></script>
-	<?php endif; ?>
-<?php else: ?>
-    <script src="/min/main.js?v=3"></script>
-<?php endif; ?>
-
-<script src="/min/new-js.min.js" defer="defer"></script>
+<script src="/min/all-plugins.min.js" ></script>
+<script src="/min/new-main.min.js" defer></script>
 
 
 <script>deferimg('img[data-src],picture,video,audio', 100, 'lazied', function (img) {
@@ -438,10 +429,6 @@ $contacts = \backend\models\Contact::getContact();
         if ( img.className == 'check-slick lazied' ){
             if ($('.example__content-list.slick-slider').length ){
                 $('.example__content-list').slick("refresh");
-            }
-            if ($('.project-info__slider-nav.slick-slider').length ){
-                $('.project-info__slider-nav').slick("refresh");
-                $('.project-info__slider-nav .slick-list').css('height',$('.project-info__slider-nav .slick-list').height()-3+'px');
             }
             $('.check-slick').removeClass('check-slick');
         }
@@ -473,7 +460,6 @@ $contacts = \backend\models\Contact::getContact();
             $( "#map" ).lazyLoadGoogleMaps({key: 'AIzaSyB35Exje6kOhzSsEsUTg3V09ot0HILL-Qk',callback: initMap});
         }, 1500);
 	}
-
 </script>
 
 <script type="application/ld+json">
