@@ -149,14 +149,13 @@ $(document).ready(function(){
             slidesToScroll: 1,
             rows: 0,
             slidesToShow: 1,
-            nextArrow: '<div class="next-arrow"><img src="/img/icon/Arrow.svg" alt="next" /></div>',
-            prevArrow: '<div class="prev-arrow"><img src="/img/icon/Arrow.svg" alt="prev" /></div>',
-            dots: false,
+            arrows: false,
+            dots: true,
             adaptiveHeight: true,
             responsive: [{
                 breakpoint: 767,
                 settings: {
-                    arrows: false
+                    dots: false
                 }
             }]
         });
