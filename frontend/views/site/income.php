@@ -109,32 +109,32 @@ $this->params['breadcrumbs'][] = [
 	<!-- start banner-->
     <?= $this->render('../section/_service-banner.php'); ?>
 	<!-- end banner -->
-	<!--<section class="equipment-section" id="equipment">
+	<section class="equipment-section" id="equipment">
 		<div class="container">
-			<h2 class="line-title"><?/*= BaseController::getMessage('203') */?></h2>
+			<h2 class="line-title"><?= BaseController::getMessage('203') ?></h2>
 			<div class="equipment-wrap">
 				<div class="equipment-nav">
 					<div class="nav-slide">
-						<span><?/*= BaseController::getMessage('204') */?></span>
+						<span><?= BaseController::getMessage('204') ?></span>
 					</div>
 					<div class="nav-slide" >
-						<span><?/*= BaseController::getMessage('205') */?></span>
+						<span><?= BaseController::getMessage('205') ?></span>
 					</div>
 					<div class="nav-slide">
-						<span><?/*= BaseController::getMessage('206') */?></span>
+						<span><?= BaseController::getMessage('206') ?></span>
 					</div>
 				</div>
 				<div class="equipment-slider">
 					<div class="equipment-slide">
 						<div class="equipment-text">
-							<p><?/*= BaseController::getMessage('208') */?></p>
+							<p><?= BaseController::getMessage('208') ?></p>
 						</div>
 						<div class="equipment-carousel equipment-slick">
 							<div class="equipment-carousel-item">
 								<div class="image-background">
 									<div class="image background-lazy" data-src='/img/types/SolarEdge.png'></div>
 									<div class="text">
-										<?/*= BaseController::getMessage('189') */?>
+										<?= BaseController::getMessage('189') ?>
 									</div>
 								</div>
 							</div>
@@ -142,7 +142,7 @@ $this->params['breadcrumbs'][] = [
 								<div class="image-background">
 									<div class="image background-lazy" data-src='/img/types/Huawei.png'></div>
 									<div class="text">
-										<?/*= BaseController::getMessage('191') */?>
+										<?= BaseController::getMessage('191') ?>
 									</div>
 								</div>
 							</div>
@@ -150,7 +150,7 @@ $this->params['breadcrumbs'][] = [
 								<div class="image-background">
 									<div class="image background-lazy" data-src='/img/types/Fronius.png'></div>
 									<div class="text">
-										<?/*= BaseController::getMessage('193') */?>
+										<?= BaseController::getMessage('193') ?>
 									</div>
 								</div>
 							</div>
@@ -165,14 +165,14 @@ $this->params['breadcrumbs'][] = [
 					</div>
 					<div class="equipment-slide">
 						<div class="equipment-text">
-							<p><?/*= BaseController::getMessage('210') */?></p>
+							<p><?= BaseController::getMessage('210') ?></p>
 						</div>
 						<div class="equipment-carousel pannel-slick">
 							<div class="equipment-carousel-item">
 								<div class="image-background">
 									<div class="image background-lazy" data-src='/img/types/Jinko.png'></div>
 									<div class="text">
-										<?/*= BaseController::getMessage('194') */?>
+										<?= BaseController::getMessage('194') ?>
 									</div>
 								</div>
 							</div>
@@ -180,7 +180,7 @@ $this->params['breadcrumbs'][] = [
 								<div class="image-background">
 									<div class="image background-lazy" data-src='/img/types/Qcell.png'></div>
 									<div class="text">
-										<?/*= BaseController::getMessage('195') */?>
+										<?= BaseController::getMessage('195') ?>
 									</div>
 								</div>
 							</div>
@@ -188,7 +188,7 @@ $this->params['breadcrumbs'][] = [
 								<div class="image-background">
 									<div class="image background-lazy" data-src='/img/types/Longi.png'></div>
 									<div class="text">
-										<?/*= BaseController::getMessage('198') */?>
+										<?= BaseController::getMessage('198') ?>
 									</div>
 								</div>
 							</div>
@@ -206,7 +206,7 @@ $this->params['breadcrumbs'][] = [
 					</div>
 					<div class="equipment-slide">
 						<div class="equipment-text">
-							<p><?/*= BaseController::getMessage('212') */?></p>
+							<p><?= BaseController::getMessage('212') ?></p>
 						</div>
 						<div class="equipment-carousel mount-slick">
 							<div class="equipment-carousel-item">
@@ -219,7 +219,7 @@ $this->params['breadcrumbs'][] = [
 				</div>
 			</div>
 		</div>
-	</section>-->
+	</section>
     <!-- start work -->
     <?= $this->render('../section/_work.php'); ?>
     <!-- end work -->
