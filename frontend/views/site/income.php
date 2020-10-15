@@ -60,52 +60,6 @@ $this->params['breadcrumbs'][] = [
 		</div>
 	</section>
 
-    <section class="service-miscount">
-		<div class="container">
-			<h2 class="line-title"><?= BaseController::getMessage('254') ?></h2>
-			<div class="service-miscount__content">
-				<div class="service-miscount__content-calculation">
-					<div class="description"><?= BaseController::getMessage('257') ?></div>
-					<div class="calculation-form">
-						<div class="form-group">
-							<label for="house"><?= BaseController::getMessage('258') ?>
-								<div>
-									<input class="js-range-slider" id="income-house" type="text" name="house" data-min="0" data-max="5000"
-										   data-step="100" data-hide-min-max="true" data-from="200" data-thumbwidth="20">
-								</div>
-							</label>
-						</div>
-						<div class="form-group">
-							<label for="power"><?= BaseController::getMessage('260') ?>
-								<div>
-									<input class="js-range-slider" id="income-power" type="text" name="power" data-min="5" data-max="35"
-										   data-step="2.5" data-hide-min-max="true" data-from="30" data-thumbwidth="20">
-								</div>
-							</label>
-						</div>
-					</div>
-					<div class="result">
-                        <b>
-							<?= BaseController::getMessage('261') ?>
-							<span class="result-value"></span>
-						</b>
-					</div>
-					<div class="income">
-						<span><?= BaseController::getMessage('262') ?></span>
-						<span class="income-value"></span>
-						<span><?= BaseController::getMessage('264') ?></span>
-					</div>
-				</div>
-				<div class="service-miscount__content-graphic">
-					<div class="service-miscount__content-graphic__title">
-						<strong><?= BaseController::getMessage('265') ?></strong>
-						<p><?= BaseController::getMessage('267') ?></p>
-					</div>
-					<canvas id="income-graphic"></canvas>
-				</div>
-			</div>
-		</div>
-    </section>
 	<!-- start banner-->
     <?= $this->render('../section/_service-banner.php'); ?>
 	<!-- end banner -->
@@ -246,19 +200,6 @@ $this->params['breadcrumbs'][] = [
 	<!-- end connect -->
 </main>
 
-    <script type = "text/javascript">
-        var okupn = '<?= BaseController::getMessage('378').' ' ?>';
-        var rokiv = '<?= " ".BaseController::getMessage('379') ?>';
-        var rik = '<?= " ".BaseController::getMessage('380') ?>';
-    </script>
-
-
-	<?php
-	$this->registerJsFile('/js/lib/ion.rangeSlider.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
-	$this->registerJsFile('/js/lib/Chart.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
-	$this->registerJsFile('/js/calc/income.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
-	$this->registerCssFile('/style/lib/ion.rangeSlider.css', ['position' => \yii\web\View::POS_END]);
-	?>
 
 
 <script type="application/ld+json" defer>
