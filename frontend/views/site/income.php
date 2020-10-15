@@ -60,35 +60,81 @@ $this->params['breadcrumbs'][] = [
 		</div>
 	</section>
 
+    <section class="service-miscount">
+		<div class="container">
+			<h2 class="line-title"><?= BaseController::getMessage('254') ?></h2>
+			<div class="service-miscount__content">
+				<div class="service-miscount__content-calculation">
+					<div class="description"><?= BaseController::getMessage('257') ?></div>
+					<div class="calculation-form">
+						<div class="form-group">
+							<label for="house"><?= BaseController::getMessage('258') ?>
+								<div>
+									<input class="js-range-slider" id="income-house" type="text" name="house" data-min="0" data-max="5000"
+										   data-step="100" data-hide-min-max="true" data-from="200" data-thumbwidth="20">
+								</div>
+							</label>
+						</div>
+						<div class="form-group">
+							<label for="power"><?= BaseController::getMessage('260') ?>
+								<div>
+									<input class="js-range-slider" id="income-power" type="text" name="power" data-min="5" data-max="35"
+										   data-step="2.5" data-hide-min-max="true" data-from="30" data-thumbwidth="20">
+								</div>
+							</label>
+						</div>
+					</div>
+					<div class="result">
+                        <b>
+							<?= BaseController::getMessage('261') ?>
+							<span class="result-value"></span>
+						</b>
+					</div>
+					<div class="income">
+						<span><?= BaseController::getMessage('262') ?></span>
+						<span class="income-value"></span>
+						<span><?= BaseController::getMessage('264') ?></span>
+					</div>
+				</div>
+				<div class="service-miscount__content-graphic">
+					<div class="service-miscount__content-graphic__title">
+						<strong><?= BaseController::getMessage('265') ?></strong>
+						<p><?= BaseController::getMessage('267') ?></p>
+					</div>
+					<canvas id="income-graphic"></canvas>
+				</div>
+			</div>
+		</div>
+    </section>
 	<!-- start banner-->
     <?= $this->render('../section/_service-banner.php'); ?>
 	<!-- end banner -->
-	<section class="equipment-section" id="equipment">
+	<!--<section class="equipment-section" id="equipment">
 		<div class="container">
-			<h2 class="line-title"><?= BaseController::getMessage('203') ?></h2>
+			<h2 class="line-title"><?/*= BaseController::getMessage('203') */?></h2>
 			<div class="equipment-wrap">
 				<div class="equipment-nav">
 					<div class="nav-slide">
-						<span><?= BaseController::getMessage('204') ?></span>
+						<span><?/*= BaseController::getMessage('204') */?></span>
 					</div>
 					<div class="nav-slide" >
-						<span><?= BaseController::getMessage('205') ?></span>
+						<span><?/*= BaseController::getMessage('205') */?></span>
 					</div>
 					<div class="nav-slide">
-						<span><?= BaseController::getMessage('206') ?></span>
+						<span><?/*= BaseController::getMessage('206') */?></span>
 					</div>
 				</div>
 				<div class="equipment-slider">
 					<div class="equipment-slide">
 						<div class="equipment-text">
-							<p><?= BaseController::getMessage('208') ?></p>
+							<p><?/*= BaseController::getMessage('208') */?></p>
 						</div>
 						<div class="equipment-carousel equipment-slick">
 							<div class="equipment-carousel-item">
 								<div class="image-background">
 									<div class="image background-lazy" data-src='/img/types/SolarEdge.png'></div>
 									<div class="text">
-										<?= BaseController::getMessage('189') ?>
+										<?/*= BaseController::getMessage('189') */?>
 									</div>
 								</div>
 							</div>
@@ -96,7 +142,7 @@ $this->params['breadcrumbs'][] = [
 								<div class="image-background">
 									<div class="image background-lazy" data-src='/img/types/Huawei.png'></div>
 									<div class="text">
-										<?= BaseController::getMessage('191') ?>
+										<?/*= BaseController::getMessage('191') */?>
 									</div>
 								</div>
 							</div>
@@ -104,7 +150,7 @@ $this->params['breadcrumbs'][] = [
 								<div class="image-background">
 									<div class="image background-lazy" data-src='/img/types/Fronius.png'></div>
 									<div class="text">
-										<?= BaseController::getMessage('193') ?>
+										<?/*= BaseController::getMessage('193') */?>
 									</div>
 								</div>
 							</div>
@@ -119,14 +165,14 @@ $this->params['breadcrumbs'][] = [
 					</div>
 					<div class="equipment-slide">
 						<div class="equipment-text">
-							<p><?= BaseController::getMessage('210') ?></p>
+							<p><?/*= BaseController::getMessage('210') */?></p>
 						</div>
 						<div class="equipment-carousel pannel-slick">
 							<div class="equipment-carousel-item">
 								<div class="image-background">
 									<div class="image background-lazy" data-src='/img/types/Jinko.png'></div>
 									<div class="text">
-										<?= BaseController::getMessage('194') ?>
+										<?/*= BaseController::getMessage('194') */?>
 									</div>
 								</div>
 							</div>
@@ -134,7 +180,7 @@ $this->params['breadcrumbs'][] = [
 								<div class="image-background">
 									<div class="image background-lazy" data-src='/img/types/Qcell.png'></div>
 									<div class="text">
-										<?= BaseController::getMessage('195') ?>
+										<?/*= BaseController::getMessage('195') */?>
 									</div>
 								</div>
 							</div>
@@ -142,7 +188,7 @@ $this->params['breadcrumbs'][] = [
 								<div class="image-background">
 									<div class="image background-lazy" data-src='/img/types/Longi.png'></div>
 									<div class="text">
-										<?= BaseController::getMessage('198') ?>
+										<?/*= BaseController::getMessage('198') */?>
 									</div>
 								</div>
 							</div>
@@ -160,7 +206,7 @@ $this->params['breadcrumbs'][] = [
 					</div>
 					<div class="equipment-slide">
 						<div class="equipment-text">
-							<p><?= BaseController::getMessage('212') ?></p>
+							<p><?/*= BaseController::getMessage('212') */?></p>
 						</div>
 						<div class="equipment-carousel mount-slick">
 							<div class="equipment-carousel-item">
@@ -173,7 +219,7 @@ $this->params['breadcrumbs'][] = [
 				</div>
 			</div>
 		</div>
-	</section>
+	</section>-->
     <!-- start work -->
     <?= $this->render('../section/_work.php'); ?>
     <!-- end work -->
@@ -200,6 +246,19 @@ $this->params['breadcrumbs'][] = [
 	<!-- end connect -->
 </main>
 
+    <script type = "text/javascript">
+        var okupn = '<?= BaseController::getMessage('378').' ' ?>';
+        var rokiv = '<?= " ".BaseController::getMessage('379') ?>';
+        var rik = '<?= " ".BaseController::getMessage('380') ?>';
+    </script>
+
+
+	<?php
+	$this->registerJsFile('/js/lib/ion.rangeSlider.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
+	$this->registerJsFile('/js/lib/Chart.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
+	$this->registerJsFile('/js/calc/income.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
+	$this->registerCssFile('/style/lib/ion.rangeSlider.css', ['position' => \yii\web\View::POS_END]);
+	?>
 
 
 <script type="application/ld+json" defer>
