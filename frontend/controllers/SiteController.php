@@ -292,6 +292,8 @@ class SiteController extends BaseController
 
         if ($model->save()) {
             return true;
+        } else {
+            echo $model->errors;
         }
       //  }
     }
