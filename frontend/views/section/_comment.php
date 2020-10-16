@@ -9,10 +9,12 @@ $model = new Comment();
     <div class="container">
         <div class="comment-wrap">
 			<strong class="h2 line-title"><?= BaseController::getMessage('604') ?></strong>
-            <?php $form = ActiveForm::begin(); ?>
             <form class="comment-content-question" id="comment_form">
                 <div class="comment">
-                    <?= $form->field($model, 'reCaptcha')->widget(\himiklab\yii2\recaptcha\ReCaptcha3::className())->label('')  ?>
+                    <?= \himiklab\yii2\recaptcha\ReCaptcha3::widget([
+                                                                        'name' => 'reCaptcha',
+                                                                        'action' => 'homepage',
+                                                                    ]) ?>
                     <input type="hidden" name="article_id" value="<?php echo $article->id; ?>" >
                     <input type="hidden" name="comment_date" value="<?php echo date('d-m-Y'); ?>" >
                     <input type="hidden" name="response_date" value="<?php echo date('d-m-Y'); ?>" >
@@ -29,7 +31,6 @@ $model = new Comment();
                 </div>
                 <div class="form-compelete"><?= BaseController::getMessage('607') ?></div>
             </form>
-            <?php ActiveForm::end(); ?>
         </div>
         <?php if($comments) : ?>
             <div class="comments-list">
