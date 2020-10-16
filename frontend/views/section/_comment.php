@@ -24,7 +24,7 @@ $model = new Comment();
                     <label for="question" class="hidden"><?= BaseController::getMessage('605') ?></label>
                     <textarea class="custom-field" id="comment" name="comment" rows="5" placeholder="<?= BaseController::getMessage('605') ?>"></textarea>
 					<div class="comment-button-wrap">
-						<button class="button comment-button" id="submit_button">
+						<button class="button comment-button">
                             <?= BaseController::getMessage('14') ?>
 						</button>
 					</div>

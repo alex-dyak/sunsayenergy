@@ -19,6 +19,8 @@ use kartik\date\DatePicker;
  */
 class Comment extends \yii\db\ActiveRecord
 {
+
+    public $reCaptcha;
     /**
      * {@inheritdoc}
      */
