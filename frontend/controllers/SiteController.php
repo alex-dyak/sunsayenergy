@@ -290,7 +290,7 @@ class SiteController extends BaseController
                 $model->reCaptcha = $post['reCaptcha'];
             }
 
-            var_dump($model->reCaptcha);die;
+            var_dump($post);die;
         if ($model->save()) {
             return true;
         } else {
