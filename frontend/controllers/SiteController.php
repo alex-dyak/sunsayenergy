@@ -286,11 +286,10 @@ class SiteController extends BaseController
             $model->name = $post['name'];
             $model->comment = $post['comment'];
             $model->published = $post['published'];
-            if (isset($post['reCaptcha'])) {
-                $model->reCaptcha = $post['reCaptcha'];
+            if (isset($post['captcha'])) {
+                $model->reCaptcha = $post['captcha'];
             }
 
-            var_dump($post);die;
         if ($model->save()) {
             return true;
         } else {
