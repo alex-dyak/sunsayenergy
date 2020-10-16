@@ -88,6 +88,11 @@ return [
                 //'<language:(ru|ua|en)>/<controller:\w+>/<action:\w+>'=>'<controller>/<action>'
             ]
         ],
+        'reCaptcha' => [
+            'class' => 'himiklab\yii2\recaptcha\ReCaptchaConfig',
+            'siteKeyV3' => '6LebEtgZAAAAAIBmO_N_JrRrS5Mt0h2UZGSlZCdi',
+            'secretV3' => '6LebEtgZAAAAAOgRhvUY128pU_Q1sp7yyuo61ucn',
+        ],
         'socialShare' => [
             'class' => \ymaker\social\share\configurators\Configurator::class,
             'socialNetworks' => [
