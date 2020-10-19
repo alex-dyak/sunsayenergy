@@ -11,7 +11,7 @@ $model = new Comment();
 			<strong class="h2 line-title"><?= BaseController::getMessage('604') ?></strong>
             <form class="comment-content-question" id="comment_form">
                 <div class="comment">
-                    <?= \himiklab\yii2\recaptcha\ReCaptcha3::widget(['name' => 'reCaptcha']) ?>
+                    <?php /* echo  \himiklab\yii2\recaptcha\ReCaptcha3::widget(['name' => 'reCaptcha']) */?>
                     <input type="hidden" name="article_id" value="<?php echo $article->id; ?>" >
                     <input type="hidden" name="comment_date" value="<?php echo date('d-m-Y'); ?>" >
                     <input type="hidden" name="response_date" value="<?php echo date('d-m-Y'); ?>" >

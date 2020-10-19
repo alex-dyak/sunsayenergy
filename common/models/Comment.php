@@ -20,7 +20,7 @@ use kartik\date\DatePicker;
 class Comment extends \yii\db\ActiveRecord
 {
 
-    public $reCaptcha;
+//    public $reCaptcha;
     /**
      * {@inheritdoc}
      */
@@ -40,7 +40,7 @@ class Comment extends \yii\db\ActiveRecord
             [['article_id'], 'integer'],
             [['name', 'comment_date', 'response_date'], 'string', 'max' => 255],
             [['published'], 'string', 'max' => 128],
-            [['reCaptcha'], \himiklab\yii2\recaptcha\ReCaptchaValidator3::className()],
+//            [['reCaptcha'], \himiklab\yii2\recaptcha\ReCaptchaValidator3::className()],
         ];
     }
 
