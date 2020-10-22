@@ -74,13 +74,19 @@ $contacts = \backend\models\Contact::getContact();
                 <?php $i = 0;
                 foreach ($model as $item): ?>
                 <?php if($i <= 2) : ?>
+					<div class="project-list-item" data-order="<?= $item->project_order ?>">
+						<a href="<?= \yii\helpers\Url::to(['project/detailed', 'symbol' => $item->symbol]) ?>"
+						   style="background-image: url('<?= $item->getFirstImg(550) ?>')">
+							<div class="project-list-title"><strong><?= $item->header ?></strong></div>
+						</a>
+					</div>
                 <?php else : ?>
-                <?php endif; ?>
 					<div class="project-list-item" data-order="<?= $item->project_order ?>">
 						<a href="<?= \yii\helpers\Url::to(['project/detailed', 'symbol' => $item->symbol]) ?>" style="background-image: url('./img/houses.jpg')" class="background-lazy" data-src="<?= $item->getFirstImg(550) ?>">
 							<div class="project-list-title"><strong><?= $item->header ?></strong></div>
 						</a>
 					</div>
+                <?php endif; ?>
                 <?php
                 $i++;
                 endforeach; ?>
