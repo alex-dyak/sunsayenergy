@@ -279,13 +279,6 @@ class SiteController extends BaseController
     {
         $post = Yii::$app->request->post();
 
-        if (!isset($_SESSION['comment'])) {
-            $_SESSION['comment']['article_id'] = $post['article_id'];
-            $_SESSION['comment']['article_title'] = $post['article_title'];
-            $_SESSION['comment']['name'] = $post['name'];
-            $_SESSION['comment']['comment'] = $post['comment'];
-        }
-
         if (
             ($_SESSION['comment']['article_id'] == $post['article_id']) &&
             ($_SESSION['comment']['article_title'] == $post['article_title']) &&
