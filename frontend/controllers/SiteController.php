@@ -282,6 +282,7 @@ class SiteController extends BaseController
 
             $model = new Comment();
             $model->article_id = $post['article_id'];
+            $model->article_title = $post['article_title'];
             $model->comment_date = $post['comment_date'];
             $model->name = $post['name'];
             $model->comment = $post['comment'];

@@ -16,6 +16,7 @@ use kartik\date\DatePicker;
  * @property string $response_date
  * @property string $published
  * @property int $article_id
+ * @property string $article_title
  */
 class Comment extends \yii\db\ActiveRecord
 {
@@ -35,10 +36,11 @@ class Comment extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'comment', 'comment_date', 'article_id'], 'required'],
-            [['comment', 'response'], 'string'],
+            [['name', 'comment', 'comment_date', 'article_id', 'article_title'], 'required'],
+            [['comment', 'response', 'article_title'], 'string'],
             [['article_id'], 'integer'],
             [['name', 'comment_date', 'response_date'], 'string', 'max' => 255],
+            [['article_title'], 'string', 'max' => 500],
             [['published'], 'string', 'max' => 128],
 //            [['reCaptcha'], \himiklab\yii2\recaptcha\ReCaptchaValidator3::className()],
         ];
@@ -58,6 +60,7 @@ class Comment extends \yii\db\ActiveRecord
             'response_date' => 'Дата Вiдповiдi',
             'published' => 'Опублiковано',
             'article_id' => 'Article ID',
+            'article_title' => 'Назва статтi',
         ];
     }
 }

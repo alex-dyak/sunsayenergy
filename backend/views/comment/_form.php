@@ -32,7 +32,7 @@ use kartik\date\DatePicker;
 
     <?= $form->field($model, 'published')->dropDownList(['no' =>'no', 'yes' =>'yes']) ?>
 
-    <?= $form->field($model, 'article_id')->textInput() ?>
+    <?= $form->field($model, 'article_title')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton('Publish', ['class' => 'btn btn-success']) ?>
