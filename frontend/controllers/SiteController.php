@@ -277,9 +277,23 @@ class SiteController extends BaseController
 
     public function actionComment()
     {
-       // if (Yii::$app->request->isAjax) {
-            $post = Yii::$app->request->post();
+        $post = Yii::$app->request->post();
 
+        if (!isset($_SESSION['comment'])) {
+            $_SESSION['comment']['article_id'] = $post['article_id'];
+            $_SESSION['comment']['article_title'] = $post['article_title'];
+            $_SESSION['comment']['name'] = $post['name'];
+            $_SESSION['comment']['comment'] = $post['comment'];
+        }
+
+        if (
+            ($_SESSION['comment']['article_id'] == $post['article_id']) &&
+            ($_SESSION['comment']['article_title'] == $post['article_title']) &&
+            ($_SESSION['comment']['name'] == $post['name']) &&
+            ($_SESSION['comment']['comment'] == $post['comment'])
+        ) {
+            echo 'Ваш коментар вже вiдiслано';
+        } else {
             $model = new Comment();
             $model->article_id = $post['article_id'];
             $model->article_title = $post['article_title'];
@@ -291,12 +305,17 @@ class SiteController extends BaseController
 //                $model->reCaptcha = $post['captcha'];
 //            }
 
-        if ($model->save()) {
-            return true;
-        } else {
-            echo $model->errors;
+            $_SESSION['comment']['article_id'] = $post['article_id'];
+            $_SESSION['comment']['article_title'] = $post['article_title'];
+            $_SESSION['comment']['name'] = $post['name'];
+            $_SESSION['comment']['comment'] = $post['comment'];
+
+            if ($model->save()) {
+                return true;
+            } else {
+                echo $model->errors;
+            }
         }
-      //  }
     }
 
     public function actionCalculator($type)
