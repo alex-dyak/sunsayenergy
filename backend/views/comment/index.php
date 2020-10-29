@@ -25,7 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'name',
             'comment:ntext',
-            'comment_date',
+            'article_title',
             'response:ntext',
             //'response_date',
             'published',
