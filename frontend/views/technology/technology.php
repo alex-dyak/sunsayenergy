@@ -38,11 +38,11 @@ $this->params['breadcrumbs'][] = [
                 <?php foreach ($articles as $item): ?>
 					<div class="blog__list-item">
 						<a href="<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $item->symbol]) ?>">
-							<div class="title"><?= $item->header ?></div>
-							<div class="date"><?= $item->date ?></div>
 							<div class="image">
 								<img data-src="/images/<?= $item->images->imagePreview ?>" alt="<?= $item->header ?>">
 							</div>
+							<div class="date"><?= $item->date ?></div>
+							<div class="title"><?= $item->header ?></div>
 						</a>
 					</div>
                 <?php endforeach; ?>
