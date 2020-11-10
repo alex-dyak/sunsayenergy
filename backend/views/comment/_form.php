@@ -35,7 +35,7 @@ use kartik\date\DatePicker;
     <?= $form->field($model, 'article_title')->textInput() ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Publish', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Зберегти', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
