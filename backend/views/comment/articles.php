@@ -19,6 +19,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= GridView::widget([
          'dataProvider' => $dataProvider,
+         'rowOptions' => function ($model) {
+             if ($model->admin == 0) {
+                 return ['class' => 'unread'];
+             }
+         },
          'columns' => [
              ['class' => 'yii\grid\SerialColumn'],
              'article_title',

@@ -13,6 +13,8 @@ use kartik\date\DatePicker;
 
     <?php $form = ActiveForm::begin(); ?>
 
+    <?= $form->field($model, 'admin')->hiddenInput(['value' => 1])->label(false); ?>
+
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'comment')->textarea(['rows' => 6]) ?>

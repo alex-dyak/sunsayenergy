@@ -144,7 +144,7 @@ class CommentController extends Controller
     {
         $dataProvider = new ActiveDataProvider(
             [
-                'query' => Comment::find()->addGroupBy('article_id'),
+                'query' => Comment::find()->addGroupBy('article_id')->orderBy('admin ASC'),
             ]
         );
 
@@ -160,7 +160,7 @@ class CommentController extends Controller
     {
         $dataProvider = new ActiveDataProvider(
             [
-                'query' => Comment::find()->where(['article_id' => $article_id]),
+                'query' => Comment::find()->where(['article_id' => $article_id])->orderBy('admin ASC, comment_date DESC'),
             ]
         );
 

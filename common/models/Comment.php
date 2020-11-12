@@ -38,7 +38,7 @@ class Comment extends \yii\db\ActiveRecord
         return [
             [['name', 'comment', 'comment_date', 'article_id', 'article_title'], 'required'],
             [['comment', 'response', 'article_title'], 'string'],
-            [['article_id'], 'integer'],
+            [['article_id', 'admin'], 'integer'],
             [['name', 'comment_date', 'response_date'], 'string', 'max' => 255],
             [['article_title'], 'string', 'max' => 500],
             [['published'], 'string', 'max' => 128],
@@ -61,6 +61,7 @@ class Comment extends \yii\db\ActiveRecord
             'published' => 'Опублiковано',
             'article_id' => 'Article ID',
             'article_title' => 'Назва статтi',
+            'admin' => 'Переглянуто',
         ];
     }
 }
