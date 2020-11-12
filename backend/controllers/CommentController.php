@@ -144,7 +144,7 @@ class CommentController extends Controller
     {
         $dataProvider = new ActiveDataProvider(
             [
-                'query' => Comment::find()->addGroupBy('article_id')->orderBy('admin ASC'),
+                'query' => Comment::find()->select(['article_id, article_title, min(admin) as admin'])->groupBy(['article_id'])->orderBy('admin ASC'),
             ]
         );
 
