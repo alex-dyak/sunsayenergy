@@ -132,7 +132,7 @@ $this->params['breadcrumbs'][] = [
 						<div class="equipment-carousel equipment-slick">
 							<div class="equipment-carousel-item">
 								<div class="image-background">
-									<div class="image background-lazy" data-src='/img/types/SolarEdge.png'></div>
+									<div class="image background-lazy" style="background-image: url('/img/loader.gif')" data-src='/img/types/SolarEdge.png'></div>
 									<div class="text">
 										<?= BaseController::getMessage('189') ?>
 									</div>
@@ -140,7 +140,7 @@ $this->params['breadcrumbs'][] = [
 							</div>
 							<div class="equipment-carousel-item">
 								<div class="image-background">
-									<div class="image background-lazy" data-src='/img/types/Huawei.png'></div>
+									<div class="image background-lazy" style="background-image: url('/img/loader.gif')" data-src='/img/types/Huawei.png'></div>
 									<div class="text">
 										<?= BaseController::getMessage('191') ?>
 									</div>
@@ -148,7 +148,7 @@ $this->params['breadcrumbs'][] = [
 							</div>
 							<div class="equipment-carousel-item">
 								<div class="image-background">
-									<div class="image background-lazy" data-src='/img/types/Fronius.png'></div>
+									<div class="image background-lazy" style="background-image: url('/img/loader.gif')" data-src='/img/types/Fronius.png'></div>
 									<div class="text">
 										<?= BaseController::getMessage('193') ?>
 									</div>
@@ -170,7 +170,7 @@ $this->params['breadcrumbs'][] = [
 						<div class="equipment-carousel pannel-slick">
 							<div class="equipment-carousel-item">
 								<div class="image-background">
-									<div class="image background-lazy" data-src='/img/types/Jinko.png'></div>
+									<div class="image background-lazy" style="background-image: url('/img/loader.gif')" data-src='/img/types/Jinko.png'></div>
 									<div class="text">
 										<?= BaseController::getMessage('194') ?>
 									</div>
@@ -178,7 +178,7 @@ $this->params['breadcrumbs'][] = [
 							</div>
 							<div class="equipment-carousel-item">
 								<div class="image-background">
-									<div class="image background-lazy" data-src='/img/types/Qcell.png'></div>
+									<div class="image background-lazy" style="background-image: url('/img/loader.gif')" data-src='/img/types/Qcell.png'></div>
 									<div class="text">
 										<?= BaseController::getMessage('195') ?>
 									</div>
@@ -186,7 +186,7 @@ $this->params['breadcrumbs'][] = [
 							</div>
 							<div class="equipment-carousel-item">
 								<div class="image-background">
-									<div class="image background-lazy" data-src='/img/types/Longi.png'></div>
+									<div class="image background-lazy" style="background-image: url('/img/loader.gif')" data-src='/img/types/Longi.png'></div>
 									<div class="text">
 										<?= BaseController::getMessage('198') ?>
 									</div>
@@ -211,7 +211,7 @@ $this->params['breadcrumbs'][] = [
 						<div class="equipment-carousel mount-slick">
 							<div class="equipment-carousel-item">
 								<div class="image-background">
-									<div class="image background-lazy" data-src='/img/services/solar-panel.png'></div>
+									<div class="image background-lazy" style="background-image: url('/img/loader.gif')" data-src='/img/services/solar-panel.png'></div>
 								</div>
 							</div>
 						</div>

@@ -56,7 +56,7 @@ $this->params['breadcrumbs'][] = [
             <div class="featured-project-list">
                 <?php foreach ($other_project as $item): ?>
 					<a href="<?= \yii\helpers\Url::to(['project/detailed', 'symbol' => $item->symbol]) ?>">
-						<img data-src="<?= $item->getFirstImg(350) ?>" alt="<?= $item->header ?>">
+						<img src="/img/loader.gif" data-src="<?= $item->getFirstImg(350) ?>" alt="<?= $item->header ?>">
 					</a>
                 <?php endforeach; ?>
             </div>

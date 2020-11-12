@@ -73,7 +73,7 @@ $contacts = \backend\models\Contact::getContact();
 			<strong class="title-h2"><?= BaseController::getMessage('567') ?></strong>
 			<ol class="steps-list">
 				<li>
-					<div class="img-part background-lazy" data-src="/img/about/step-1.jpg"></div>
+					<div class="img-part background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/about/step-1.jpg"></div>
 					<div class="yellow-part">
 						<div class="text-wrap">
 							<span class="step-number">1</span>
@@ -83,7 +83,7 @@ $contacts = \backend\models\Contact::getContact();
 					</div>
 				</li>
 				<li>
-					<div class="img-part background-lazy" data-src="/img/about/step-2.jpg"></div>
+					<div class="img-part background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/about/step-2.jpg"></div>
 					<div class="yellow-part">
 						<div class="text-wrap">
 							<span class="step-number">2</span>
@@ -93,7 +93,7 @@ $contacts = \backend\models\Contact::getContact();
 					</div>
 				</li>
 				<li>
-					<div class="img-part background-lazy" data-src="/img/about/step-3.jpg"></div>
+					<div class="img-part background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/about/step-3.jpg"></div>
 					<div class="yellow-part">
 						<div class="text-wrap">
 							<span class="step-number">3</span>
@@ -103,7 +103,7 @@ $contacts = \backend\models\Contact::getContact();
 					</div>
 				</li>
 				<li>
-					<div class="img-part background-lazy" data-src="/img/about/step-4.jpg"></div>
+					<div class="img-part background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/about/step-4.jpg"></div>
 					<div class="yellow-part">
 						<div class="text-wrap">
 							<span class="step-number">4</span>
@@ -118,7 +118,7 @@ $contacts = \backend\models\Contact::getContact();
 	<section class="green-payment">
 		<div class="container">
 			<ul class="green-payment-list">
-				<li class="green-payment-item background-lazy" data-src="/img/commercial-station/warranty.jpg"></li>
+				<li class="green-payment-item background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/commercial-station/warranty.jpg"></li>
 				<li class="green-payment-img">
 					<img data-src="/img/green/icon/check.svg" alt="<?= BaseController::getMessage('550') ?>" width="65">
 				</li>

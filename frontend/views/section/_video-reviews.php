@@ -19,7 +19,7 @@
                 <div class="video-col">
                     <div class="embed-responsive">
                         <a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank" rel="nofollow">
-                            <img data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg" alt="<?= $video_name ?>">
+                            <img src="/img/loader.gif" data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg" alt="<?= $video_name ?>">
                         </a>
                     </div>
                     <strong class="video-title"><?= $video_name ?></strong>
