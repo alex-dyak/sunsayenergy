@@ -82,7 +82,7 @@ $contacts = \backend\models\Contact::getContact();
 					</div>
                 <?php else : ?>
 					<div class="project-list-item" data-order="<?= $item->project_order ?>">
-						<a href="<?= \yii\helpers\Url::to(['project/detailed', 'symbol' => $item->symbol]) ?>" style="background-image: url('./img/houses.jpg')" class="background-lazy" data-src="<?= $item->getFirstImg(550) ?>">
+						<a href="<?= \yii\helpers\Url::to(['project/detailed', 'symbol' => $item->symbol]) ?>" style="background-image: url('/img/loader.gif')" class="background-lazy" data-src="<?= $item->getFirstImg(550) ?>">
 							<div class="project-list-title"><strong><?= $item->header ?></strong></div>
 						</a>
 					</div>

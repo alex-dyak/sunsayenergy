@@ -75,12 +75,12 @@ $seo_date = date('Y-m-d', $datetime);
 				<div class="blog__list">
                     <?php foreach ($other_articles as $item): ?>
 						<div class="blog__list-item">
-							<div class="title">
-								<a href="<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $item->symbol]) ?>"><?= $item->header ?></a>
+							<div class="image">
+								<img src="/img/loader.gif" data-src="/images/<?= $item->images->imagePreview ?>" alt="<?= $item->header ?>">
 							</div>
 							<div class="date"><?= $item->date ?></div>
-							<div class="image">
-								<img data-src="/images/<?= $item->images->imagePreview ?>" alt="<?= $item->header ?>">
+							<div class="title">
+								<a href="<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $item->symbol]) ?>"><?= $item->header ?></a>
 							</div>
 						</div>
                     <?php endforeach; ?>
