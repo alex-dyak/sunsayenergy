@@ -138,3 +138,7 @@ a.desc:after {
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     margin-bottom: 5px;
 }
+
+.table-striped> tbody tr.unread {
+    background: rgba(255,0,0, .1);
+}
