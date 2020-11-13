@@ -5,7 +5,7 @@
         <div class="title-block">
             <h2 class="line-title"><span><?= BaseController::getMessage('420') ?></span></h2>
             <div class="img-block">
-                <img data-src="/img/houses.jpg" alt="houses">
+                <img oncontextmenu="return false" data-src="get_image.php?img=img/houses.jpg" alt="houses">
             </div>
             <div class="text-block">
                 <p><?= BaseController::getMessage('421') ?></p>

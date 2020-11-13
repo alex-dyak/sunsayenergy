@@ -2,10 +2,10 @@
 
 <div class="service-banner">
 	<div class="left-banner-img">
-		<img data-src="/img/services/man-1.png" alt="worker">
+		<img oncontextmenu="return false" data-src="get_image.php?img=img/services/man-1.png" alt="worker">
 	</div>
 	<div class="right-banner-img">
-		<img data-src="/img/services/dron.png" alt="dron">
+		<img oncontextmenu="return false" data-src="get_image.php?img=img/services/dron.png" alt="dron">
 	</div>
 	<div class="text-wrap">
 		<p><?= BaseController::getMessage('486') ?></p>

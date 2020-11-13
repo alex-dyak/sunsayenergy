@@ -40,7 +40,7 @@ $this->params['breadcrumbs'][] = [
                     <div class="project__content-list__item">
                         <a href="<?= \yii\helpers\Url::to(['project/detailed', 'symbol' => $item->symbol]) ?>">
                             <div class="image">
-                                <img data-src="<?= $item->getFirstImg(550) ?>" alt="<?= $item->header ?>">
+                                <img oncontextmenu="return false" data-src="<?= $item->getFirstImg(550) ?>" alt="<?= $item->header ?>">
                             </div>
                             <div class="title"><?= $item->header ?></div>
                         </a>
@@ -62,7 +62,7 @@ $this->params['breadcrumbs'][] = [
                 <div class="description"><?= BaseController::getMessage('200') ?></div>
                 <div class="more"><a class="btn btn-primary" href="#equipment"><?= BaseController::getMessage('18') ?></a></div>
             </div>
-            <div class="service-info__content-image"><img data-src="/img/services/1.jpg" alt="Комплект Дохід" data-srcset="/img/services/1_m.jpg 1024w, /img/services/1.jpg 1366w"></div>
+            <div class="service-info__content-image"><img oncontextmenu="return false" data-src="/img/services/1.jpg" alt="Комплект Дохід" data-srcset="/img/services/1_m.jpg 1024w, /img/services/1.jpg 1366w"></div>
         </div>
     </section>
     <?php endif; ?>
@@ -80,7 +80,7 @@ $this->params['breadcrumbs'][] = [
                     <div class="more"><a class="btn btn-primary" href="#equipment"><?= BaseController::getMessage('18') ?></a></div>
                 </div>
                 <div class="service-info__content-image">
-                    <img data-src="/img/comfort/1.jpg" alt="Комплект Дохід"
+                    <img oncontextmenu="return false" data-src="/img/comfort/1.jpg" alt="Комплект Дохід"
                          data-srcset="/img/comfort/1_m.jpg 1024w, /img/comfort/1.jpg 1366w">
                 </div>
             </div>
@@ -98,7 +98,7 @@ $this->params['breadcrumbs'][] = [
                     <div class="more"><a class="btn btn-primary" href="#equipment"><?= BaseController::getMessage('18') ?></a></div>
                 </div>
                 <div class="service-info__content-image">
-                    <img data-src="/img/reserve/1.jpg" alt="Комплект Дохід" data-srcset="/img/reserve/1_m.jpg 1024w, /img/reserve/1.jpg 1366w">
+                    <img oncontextmenu="return false" data-src="/img/reserve/1.jpg" alt="Комплект Дохід" data-srcset="/img/reserve/1_m.jpg 1024w, /img/reserve/1.jpg 1366w">
                 </div>
             </div>
         </section>

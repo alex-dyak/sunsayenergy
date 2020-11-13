@@ -112,7 +112,7 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
 <?php $this->beginBody() ?>
 <header class="header <?= (Yii::$app->controller->route == 'site/index') ? '' : 'header__background' ?>">
     <div class="header__logotype">
-        <a href="<?= \yii\helpers\Url::to(['/']); ?>"><img class="img-responsive" src="/img/logo.svg" alt="SUNSAY Energy"></a>
+        <a href="<?= \yii\helpers\Url::to(['/']); ?>"><img oncontextmenu="return false" class="img-responsive" src="/img/logo.svg" alt="SUNSAY Energy"></a>
     </div>
     <div class="header__navbar">
         <nav class="navbar">
@@ -149,17 +149,17 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
         </svg>
         <a class="request-btn"
            href="#"><span><?= BaseController::getMessage('9') ?><br/><?= BaseController::getMessage('10') ?></span></a>
-        <div class="request-close"><img class="close" src="/img/icon/Close.svg" alt=""></div>
+        <div class="request-close"><img oncontextmenu="return false" class="close" src="/img/icon/Close.svg" alt=""></div>
     </div>
-    <div class="header-request-back"><img src="/img/icon/arrow-back.png" alt=""></div>
+    <div class="header-request-back"><img oncontextmenu="return false" src="get_image.php?img=img/icon/arrow-back.png" alt=""></div>
     <div class="header__button">
-        <div id="nav-icon"><img src="/img/icon/Menu.svg" alt=""></div>
+        <div id="nav-icon"><img oncontextmenu="return false" src="/img/icon/Menu.svg" alt=""></div>
     </div>
     <div class="navbar-mobile">
         <div class="navbar-mobile-container">
             <div class="navbar-list-top">
-                <div class="navbar-logotype"><a href="<?= \yii\helpers\Url::to(['/']); ?>"><img src="/img/logo.svg" alt=""></a></div>
-                <div class="navbar-close"><img src="/img/icon/Close.svg" alt=""></div>
+                <div class="navbar-logotype"><a href="<?= \yii\helpers\Url::to(['/']); ?>"><img oncontextmenu="return false" src="/img/logo.svg" alt=""></a></div>
+                <div class="navbar-close"><img oncontextmenu="return false" src="/img/icon/Close.svg" alt=""></div>
             </div>
             <div class="navbar-list">
                 <div class="navbar-item">
@@ -401,7 +401,7 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
                 </div>
             </form>
         </div>
-        <div class="request-content-image"><img src="/img/connect.png" alt=""></div>
+        <div class="request-content-image"><img oncontextmenu="return false" src="get_image.php?img=img/connect.png" alt=""></div>
     </div>
 </div>
 <!-- end request popup -->
@@ -410,7 +410,7 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
     <!-- start example popup -->
     <div class="popup">
         <div class="popup__container">
-            <div class="popup-close"><img src="/img/icon/Close.svg" alt=""></div>
+            <div class="popup-close"><img oncontextmenu="return false" src="/img/icon/Close.svg" alt=""></div>
             <div class="popup-example">
                 <div class="popup-example-item" style="background-image: url('../img/example/1.jpg');"></div>
                 <div class="popup-example-item" style="background-image: url('../img/example/2.jpg');"></div>

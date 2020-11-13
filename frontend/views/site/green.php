@@ -21,7 +21,7 @@ $contacts = \backend\models\Contact::getContact();
 
 		<section class="green-hero-section">
 			<span class="hero-yellow-circle"></span>
-			<div class="green-hero-img" style="background-image: url('/img/green/hero.jpg')"></div>
+			<div class="green-hero-img" style="background-image: url('get_image.php?img=img/green/hero.jpg')"></div>
 
 			<div class="container">
 				<div class="hero-text">
@@ -86,7 +86,7 @@ $contacts = \backend\models\Contact::getContact();
 				<div class="green-customer-wrap">
 					<div class="green-customer-item">
 						<div class="green-customer-top">
-							<img data-src="/img/green/icon/farm.svg" alt="plant" width="47">
+							<img oncontextmenu="return false" data-src="/img/green/icon/farm.svg" alt="plant" width="47">
 							<strong><?= BaseController::getMessage('538') ?></strong>
 						</div>
 						<div class="green-customer-info">
@@ -95,7 +95,7 @@ $contacts = \backend\models\Contact::getContact();
 					</div>
 					<div class="green-customer-item">
 						<div class="green-customer-top">
-							<img data-src="/img/green/icon/plant.svg" alt="plant" width="47">
+							<img oncontextmenu="return false" data-src="/img/green/icon/plant.svg" alt="plant" width="47">
 							<strong><?= BaseController::getMessage('540') ?></strong>
 						</div>
 						<div class="green-customer-info">
@@ -143,11 +143,11 @@ $contacts = \backend\models\Contact::getContact();
 		<section class="green-payment">
 			<div class="container">
 				<ul class="green-payment-list">
-					<li class="green-payment-item background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/green/green-bg.jpg">
+					<li class="green-payment-item background-lazy" style="background-image: url('get_image.php?img=img/loader.gif')" data-src="get_image.php?img=img/green/green-bg.jpg">
 						<strong><?= BaseController::getMessage('550') ?></strong>
 					</li>
 					<li class="green-payment-img">
-						<img data-src="/img/green/icon/money.svg" alt="<?= BaseController::getMessage('550') ?>" width="70">
+						<img oncontextmenu="return false" data-src="/img/green/icon/money.svg" alt="<?= BaseController::getMessage('550') ?>" width="70">
 					</li>
 					<li class="green-payment-info">
 						<?= BaseController::getMessage('551') ?>
@@ -176,7 +176,7 @@ $contacts = \backend\models\Contact::getContact();
 					<ul class="stage-list">
 						<li>
 							<div class="stage-img">
-								<img data-src="/img/green/icon/counter.svg" width="50" alt="<?= BaseController::getMessage('553') ?>">
+								<img oncontextmenu="return false" data-src="/img/green/icon/counter.svg" width="50" alt="<?= BaseController::getMessage('553') ?>">
 							</div>
 							<div class="stage-info">
 								<strong><?= BaseController::getMessage('553') ?></strong>
@@ -185,7 +185,7 @@ $contacts = \backend\models\Contact::getContact();
 						</li>
 						<li>
 							<div class="stage-img">
-								<img data-src="/img/green/icon/account.svg" width="52" alt="<?= BaseController::getMessage('555') ?>">
+								<img oncontextmenu="return false" data-src="/img/green/icon/account.svg" width="52" alt="<?= BaseController::getMessage('555') ?>">
 							</div>
 							<div class="stage-info">
 								<strong><?= BaseController::getMessage('555') ?></strong>
@@ -194,7 +194,7 @@ $contacts = \backend\models\Contact::getContact();
 						</li>
 						<li>
 							<div class="stage-img">
-								<img data-src="/img/green/icon/application.svg" width="52" alt="<?= BaseController::getMessage('557') ?>">
+								<img oncontextmenu="return false" data-src="/img/green/icon/application.svg" width="52" alt="<?= BaseController::getMessage('557') ?>">
 							</div>
 							<div class="stage-info">
 								<strong><?= BaseController::getMessage('557') ?></strong>
@@ -203,7 +203,7 @@ $contacts = \backend\models\Contact::getContact();
 						</li>
 						<li>
 							<div class="stage-img">
-								<img data-src="/img/green/icon/contract.svg" width="52" alt="<?= BaseController::getMessage('559') ?>">
+								<img oncontextmenu="return false" data-src="/img/green/icon/contract.svg" width="52" alt="<?= BaseController::getMessage('559') ?>">
 							</div>
 							<div class="stage-info">
 								<strong><?= BaseController::getMessage('559') ?></strong>
@@ -212,7 +212,7 @@ $contacts = \backend\models\Contact::getContact();
 						</li>
 						<li>
 							<div class="stage-img">
-								<img data-src="/img/green/icon/leaf.svg" width="52" alt="<?= BaseController::getMessage('561') ?>">
+								<img oncontextmenu="return false" data-src="/img/green/icon/leaf.svg" width="52" alt="<?= BaseController::getMessage('561') ?>">
 							</div>
 							<div class="stage-info">
 								<strong><?= BaseController::getMessage('561') ?></strong>

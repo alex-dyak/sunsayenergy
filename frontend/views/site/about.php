@@ -18,7 +18,7 @@ $contacts = \backend\models\Contact::getContact();
             ]); ?>
 		</div>
 	</div>
-	<section class="about-hero-section">
+	<section class="about-hero-section" style="background-image: url('get_image.php?img=img/about/hero-img-about.jpg')">
 		<span class="hero-yellow-circle"></span>
 		<div class="container">
 			<div class="hero-text">
@@ -73,7 +73,7 @@ $contacts = \backend\models\Contact::getContact();
 			<strong class="title-h2"><?= BaseController::getMessage('567') ?></strong>
 			<ol class="steps-list">
 				<li>
-					<div class="img-part background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/about/step-1.jpg"></div>
+					<div class="img-part background-lazy" style="background-image: url('get_image.php?img=img/loader.gif')" data-src="get_image.php?img=img/about/step-1.jpg"></div>
 					<div class="yellow-part">
 						<div class="text-wrap">
 							<span class="step-number">1</span>
@@ -83,7 +83,7 @@ $contacts = \backend\models\Contact::getContact();
 					</div>
 				</li>
 				<li>
-					<div class="img-part background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/about/step-2.jpg"></div>
+					<div class="img-part background-lazy" style="background-image: url('get_image.php?img=img/loader.gif')" data-src="get_image.php?img=img/about/step-2.jpg"></div>
 					<div class="yellow-part">
 						<div class="text-wrap">
 							<span class="step-number">2</span>
@@ -93,7 +93,7 @@ $contacts = \backend\models\Contact::getContact();
 					</div>
 				</li>
 				<li>
-					<div class="img-part background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/about/step-3.jpg"></div>
+					<div class="img-part background-lazy" style="background-image: url('get_image.php?img=img/loader.gif')" data-src="get_image.php?img=img/about/step-3.jpg"></div>
 					<div class="yellow-part">
 						<div class="text-wrap">
 							<span class="step-number">3</span>
@@ -103,7 +103,7 @@ $contacts = \backend\models\Contact::getContact();
 					</div>
 				</li>
 				<li>
-					<div class="img-part background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/about/step-4.jpg"></div>
+					<div class="img-part background-lazy" style="background-image: url('get_image.php?img=img/loader.gif')" data-src="get_image.php?img=img/about/step-4.jpg"></div>
 					<div class="yellow-part">
 						<div class="text-wrap">
 							<span class="step-number">4</span>
@@ -118,9 +118,9 @@ $contacts = \backend\models\Contact::getContact();
 	<section class="green-payment">
 		<div class="container">
 			<ul class="green-payment-list">
-				<li class="green-payment-item background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/commercial-station/warranty.jpg"></li>
+				<li class="green-payment-item background-lazy" style="background-image: url('get_image.php?img=img/loader.gif')" data-src="get_image.php?img=img/commercial-station/warranty.jpg"></li>
 				<li class="green-payment-img">
-					<img data-src="/img/green/icon/check.svg" alt="<?= BaseController::getMessage('550') ?>" width="65">
+					<img oncontextmenu="return false" data-src="/img/green/icon/check.svg" alt="<?= BaseController::getMessage('550') ?>" width="65">
 				</li>
 				<li class="green-payment-info">
                     <?= BaseController::getMessage('578') ?>
@@ -136,7 +136,7 @@ $contacts = \backend\models\Contact::getContact();
 			<div class="staff-slider">
 				<div class="slide">
 					<div class="img-block">
-						<img data-src="/img/about/worker/1.jpg" alt="<?= BaseController::getMessage('580') ?>">
+						<img oncontextmenu="return false" data-src="get_image.php?img=img/about/worker/1.jpg" alt="<?= BaseController::getMessage('580') ?>">
 					</div>
 					<div class="staff-info">
 						<strong><?= BaseController::getMessage('580') ?></strong>
@@ -145,7 +145,7 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 				<div class="slide">
 					<div class="img-block">
-						<img data-src="/img/about/worker/2.jpg" alt="<?= BaseController::getMessage('583') ?>">
+						<img oncontextmenu="return false" data-src="get_image.php?img=img/about/worker/2.jpg" alt="<?= BaseController::getMessage('583') ?>">
 					</div>
 					<div class="staff-info">
 						<strong><?= BaseController::getMessage('583') ?></strong>
@@ -154,7 +154,7 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 				<div class="slide">
 					<div class="img-block">
-						<img data-src="/img/about/worker/3.jpg" alt="<?= BaseController::getMessage('585') ?>">
+						<img oncontextmenu="return false" data-src="get_image.php?img=img/about/worker/3.jpg" alt="<?= BaseController::getMessage('585') ?>">
 					</div>
 					<div class="staff-info">
 						<strong><?= BaseController::getMessage('585') ?></strong>
@@ -163,7 +163,7 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 				<div class="slide">
 					<div class="img-block">
-						<img data-src="/img/about/worker/4.jpg" alt="<?= BaseController::getMessage('587') ?>">
+						<img oncontextmenu="return false" data-src="get_image.php?img=img/about/worker/4.jpg" alt="<?= BaseController::getMessage('587') ?>">
 					</div>
 					<div class="staff-info">
 						<strong><?= BaseController::getMessage('587') ?></strong>
@@ -172,7 +172,7 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 				<div class="slide">
 					<div class="img-block">
-						<img data-src="/img/about/worker/5.jpg" alt="<?= BaseController::getMessage('589') ?>">
+						<img oncontextmenu="return false" data-src="get_image.php?img=img/about/worker/5.jpg" alt="<?= BaseController::getMessage('589') ?>">
 					</div>
 					<div class="staff-info">
 						<strong><?= BaseController::getMessage('589') ?></strong>
@@ -181,7 +181,7 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 				<div class="slide">
 					<div class="img-block">
-						<img data-src="/img/about/worker/6.jpg" alt="<?= BaseController::getMessage('591') ?>">
+						<img oncontextmenu="return false" data-src="get_image.php?img=img/about/worker/6.jpg" alt="<?= BaseController::getMessage('591') ?>">
 					</div>
 					<div class="staff-info">
 						<strong><?= BaseController::getMessage('591') ?></strong>
@@ -190,7 +190,7 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 				<div class="slide">
 					<div class="img-block">
-						<img data-src="/img/about/worker/7.jpg" alt="<?= BaseController::getMessage('593') ?>">
+						<img oncontextmenu="return false" data-src="get_image.php?img=img/about/worker/7.jpg" alt="<?= BaseController::getMessage('593') ?>">
 					</div>
 					<div class="staff-info">
 						<strong><?= BaseController::getMessage('593') ?></strong>
@@ -199,7 +199,7 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 				<div class="slide">
 					<div class="img-block">
-						<img data-src="/img/about/worker/8.jpg" alt="<?= BaseController::getMessage('595') ?>">
+						<img oncontextmenu="return false" data-src="get_image.php?img=img/about/worker/8.jpg" alt="<?= BaseController::getMessage('595') ?>">
 					</div>
 					<div class="staff-info">
 						<strong><?= BaseController::getMessage('595') ?></strong>
@@ -208,7 +208,7 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 				<div class="slide">
 					<div class="img-block">
-						<img data-src="/img/about/worker/9.jpg" alt="<?= BaseController::getMessage('597') ?>">
+						<img oncontextmenu="return false" data-src="get_image.php?img=img/about/worker/9.jpg" alt="<?= BaseController::getMessage('597') ?>">
 					</div>
 					<div class="staff-info">
 						<strong><?= BaseController::getMessage('597') ?></strong>
@@ -217,7 +217,7 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 				<!--<div class="slide">
 					<div class="img-block">
-						<img data-src="/img/about/worker/10.jpg" alt="<?/*= BaseController::getMessage('599') */?>">
+						<img oncontextmenu="return false" data-src="/img/about/worker/10.jpg" alt="<?/*= BaseController::getMessage('599') */?>">
 					</div>
 					<div class="staff-info">
 						<strong><?/*= BaseController::getMessage('599') */?></strong>
@@ -226,7 +226,7 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 				<div class="slide">
 					<div class="img-block">
-						<img data-src="/img/about/worker/11.jpg" alt="<?/*= BaseController::getMessage('601') */?>">
+						<img oncontextmenu="return false" data-src="/img/about/worker/11.jpg" alt="<?/*= BaseController::getMessage('601') */?>">
 					</div>
 					<div class="staff-info">
 						<strong><?/*= BaseController::getMessage('601') */?></strong>
@@ -235,7 +235,7 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 				<div class="slide">
 					<div class="img-block">
-						<img data-src="/img/about/worker/12.jpg" alt="<?/*= BaseController::getMessage('603') */?>">
+						<img oncontextmenu="return false" data-src="/img/about/worker/12.jpg" alt="<?/*= BaseController::getMessage('603') */?>">
 					</div>
 					<div class="staff-info">
 						<strong><?/*= BaseController::getMessage('603') */?></strong>

@@ -18,19 +18,19 @@
 					</div>
 					<ul class="compare-list">
 						<li class="pros">
-							<img src="/img/complex/pros-circle.svg" alt="pros" width="28">
+							<img oncontextmenu="return false" src="/img/complex/pros-circle.svg" alt="pros" width="28">
                             <?= BaseController::getMessage('326') ?>
 						</li>
 						<li class="pros">
-							<img src="/img/complex/pros-circle.svg" alt="pros" width="28">
+							<img oncontextmenu="return false" src="/img/complex/pros-circle.svg" alt="pros" width="28">
                             <?= BaseController::getMessage('327') ?>
 						</li>
 						<li class="pros">
-							<img src="/img/complex/pros-circle.svg" alt="pros" width="28">
+							<img oncontextmenu="return false" src="/img/complex/pros-circle.svg" alt="pros" width="28">
                             <?= BaseController::getMessage('328') ?>
 						</li>
 						<li class="cons">
-							<img src="/img/complex/cons-circle.svg" alt="cons" width="28">
+							<img oncontextmenu="return false" src="/img/complex/cons-circle.svg" alt="cons" width="28">
                             <?= BaseController::getMessage('444') ?>
 						</li>
 					</ul>
@@ -46,19 +46,19 @@
 					</div>
 					<ul class="compare-list">
 						<li class="pros">
-							<img src="/img/complex/pros-circle-yellow.svg" alt="pros" width="28">
+							<img oncontextmenu="return false" src="/img/complex/pros-circle-yellow.svg" alt="pros" width="28">
 							<?= BaseController::getMessage('389') ?>
 						</li>
 						<li class="pros">
-							<img src="/img/complex/pros-circle-yellow.svg" alt="pros" width="28">
+							<img oncontextmenu="return false" src="/img/complex/pros-circle-yellow.svg" alt="pros" width="28">
 							<?= BaseController::getMessage('390') ?>
 						</li>
 						<li class="pros">
-							<img src="/img/complex/pros-circle-yellow.svg" alt="pros" width="28">
+							<img oncontextmenu="return false" src="/img/complex/pros-circle-yellow.svg" alt="pros" width="28">
 							<?= BaseController::getMessage('391') ?>
 						</li>
 						<li class="cons">
-							<img src="/img/complex/cons-circle-yellow.svg" alt="cons" width="28">
+							<img oncontextmenu="return false" src="/img/complex/cons-circle-yellow.svg" alt="cons" width="28">
 							<?= BaseController::getMessage('443') ?>
 						</li>
 					</ul>
@@ -74,19 +74,19 @@
 					</div>
 					<ul class="compare-list">
 						<li class="pros">
-							<img src="/img/complex/pros-circle.svg" alt="pros" width="28">
+							<img oncontextmenu="return false" src="/img/complex/pros-circle.svg" alt="pros" width="28">
 							<?= BaseController::getMessage('394') ?>
 						</li>
 						<li class="pros">
-							<img src="/img/complex/pros-circle.svg" alt="pros" width="28">
+							<img oncontextmenu="return false" src="/img/complex/pros-circle.svg" alt="pros" width="28">
 							<?= BaseController::getMessage('395') ?>
 						</li>
 						<li class="pros">
-							<img src="/img/complex/pros-circle.svg" alt="pros" width="28">
+							<img oncontextmenu="return false" src="/img/complex/pros-circle.svg" alt="pros" width="28">
 							<?= BaseController::getMessage('396') ?>
 						</li>
 						<li class="cons">
-							<img src="/img/complex/cons-circle.svg" alt="cons" width="28">
+							<img oncontextmenu="return false" src="/img/complex/cons-circle.svg" alt="cons" width="28">
 							<?= BaseController::getMessage('445') ?>
 						</li>
 					</ul>

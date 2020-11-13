@@ -28,7 +28,7 @@ $seo_date = date('Y-m-d', $datetime);
         <?php if(!BaseController::is_mobile()) : ?>
 			<div class="blog-page__image">
 				<picture>
-					<img data-src="/images/<?= $article->images->imagePreview ?>" alt="" class="blog-info__image--bg">
+					<img oncontextmenu="return false" data-src="/images/<?= $article->images->imagePreview ?>" alt="" class="blog-info__image--bg">
 				</picture>
 				<div class="blog-page__image-container">
 					<div class="blog-page__image-text">
@@ -76,7 +76,7 @@ $seo_date = date('Y-m-d', $datetime);
                     <?php foreach ($other_articles as $item): ?>
 						<div class="blog__list-item">
 							<div class="image">
-								<img src="/img/loader.gif" data-src="/images/<?= $item->images->imagePreview ?>" alt="<?= $item->header ?>">
+								<img oncontextmenu="return false" src="get_image.php?img=img/loader.gif" data-src="/images/<?= $item->images->imagePreview ?>" alt="<?= $item->header ?>">
 							</div>
 							<div class="date"><?= $item->date ?></div>
 							<div class="title">

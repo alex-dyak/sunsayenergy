@@ -10,9 +10,9 @@
             <div class="example__content-list__item" data-order="<?= $item->project_order; ?>">
                 <a href="<?= \yii\helpers\Url::to(['project/detailed', 'symbol' => $item->symbol]) ?>">
                   <picture>
-                    <source media="(min-width: 800px)" data-srcset="<?= $item->getFirstImg(650); ?>" type="image/jpg">
-                    <source media="(max-width: 799px)" data-srcset="<?= $item->getFirstImg(350); ?>" type="image/jpg">
-                    <img data-src="<?= $item->getFirstImg(650); ?>" alt="" class="check-slick">
+                      <source media="(min-width: 800px)" data-srcset="<?= $item->getFirstImg(650); ?>" type="image/jpg">
+                      <source media="(max-width: 799px)" data-srcset="<?= $item->getFirstImg(350); ?>" type="image/jpg">
+                    <img oncontextmenu="return false" data-src="<?= $item->getFirstImg(650); ?>" alt="" class="check-slick">
                   </picture>
                 </a>
             </div>
@@ -20,58 +20,58 @@
             <?php
               // <!-- <div class="example__content-list__item">
               //     <picture>
-              //       <source media="(min-width: 800px)" data-srcset="/img/example/2_650w.jpg" type="image/jpg">
-              //       <source media="(max-width: 799px)" data-srcset="/img/example/2_220w.jpg" type="image/jpg">
-              //       <img data-src="/img/example/2_650w.jpg" alt="">
+              //         <source media="(min-width: 800px)" data-srcset="/img/example/2_650w.jpg" type="image/jpg">
+              //         <source media="(max-width: 799px)" data-srcset="/img/example/2_220w.jpg" type="image/jpg">
+              //       <img oncontextmenu="return false" data-src="/img/example/2_650w.jpg" alt="">
               //     </picture>
               // </div>
               // <div class="example__content-list__item">
               //     <picture>
-              //       <source media="(min-width: 800px)" data-srcset="/img/example/3_650w.jpg" type="image/jpg">
-              //       <source media="(max-width: 799px)" data-srcset="/img/example/3_220w.jpg" type="image/jpg">
-              //       <img data-src="/img/example/3_650w.jpg" alt="">
+              //         <source media="(min-width: 800px)" data-srcset="/img/example/3_650w.jpg" type="image/jpg">
+              //         <source media="(max-width: 799px)" data-srcset="/img/example/3_220w.jpg" type="image/jpg">
+              //       <img oncontextmenu="return false" data-src="/img/example/3_650w.jpg" alt="">
               //     </picture>
               // </div>
               // <div class="example__content-list__item">
               //     <picture>
-              //       <source media="(min-width: 800px)" data-srcset="/img/example/4_650w.jpg" type="image/jpg">
-              //       <source media="(max-width: 799px)" data-srcset="/img/example/4_220w.jpg" type="image/jpg">
-              //       <img data-src="/img/example/4_650w.jpg" alt="">
+              //         <source media="(min-width: 800px)" data-srcset="/img/example/4_650w.jpg" type="image/jpg">
+              //         <source media="(max-width: 799px)" data-srcset="/img/example/4_220w.jpg" type="image/jpg">
+              //       <img oncontextmenu="return false" data-src="/img/example/4_650w.jpg" alt="">
               //     </picture>
               // </div>
               // <div class="example__content-list__item">
               //     <picture>
-              //       <source media="(min-width: 800px)" data-srcset="/img/example/5_650w.jpg" type="image/jpg">
-              //       <source media="(max-width: 799px)" data-srcset="/img/example/5_220w.jpg" type="image/jpg">
-              //       <img data-src="/img/example/5_650w.jpg" alt="">
+              //         <source media="(min-width: 800px)" data-srcset="/img/example/5_650w.jpg" type="image/jpg">
+              //         <source media="(max-width: 799px)" data-srcset="/img/example/5_220w.jpg" type="image/jpg">
+              //       <img oncontextmenu="return false" data-src="/img/example/5_650w.jpg" alt="">
               //     </picture>
               // </div>
               // <div class="example__content-list__item">
               //     <picture>
-              //       <source media="(min-width: 800px)" data-srcset="/img/example/6_650w.jpg" type="image/jpg">
-              //       <source media="(max-width: 799px)" data-srcset="/img/example/6_220w.jpg" type="image/jpg">
-              //       <img data-src="/img/example/6_650w.jpg" alt="">
+              //         <source media="(min-width: 800px)" data-srcset="/img/example/6_650w.jpg" type="image/jpg">
+              //         <source media="(max-width: 799px)" data-srcset="/img/example/6_220w.jpg" type="image/jpg">
+              //       <img oncontextmenu="return false" data-src="/img/example/6_650w.jpg" alt="">
               //     </picture>
               // </div>
               // <div class="example__content-list__item">
               //     <picture>
-              //       <source media="(min-width: 800px)" data-srcset="/img/example/7_650w.jpg" type="image/jpg">
-              //       <source media="(max-width: 799px)" data-srcset="/img/example/7_220w.jpg" type="image/jpg">
-              //       <img data-src="/img/example/7_650w.jpg" alt="">
+              //         <source media="(min-width: 800px)" data-srcset="/img/example/7_650w.jpg" type="image/jpg">
+              //         <source media="(max-width: 799px)" data-srcset="/img/example/7_220w.jpg" type="image/jpg">
+              //       <img oncontextmenu="return false" data-src="/img/example/7_650w.jpg" alt="">
               //     </picture>
               // </div>
               // <div class="example__content-list__item">
               //     <picture>
-              //       <source media="(min-width: 800px)" data-srcset="/img/example/8_650w.jpg" type="image/jpg">
-              //       <source media="(max-width: 799px)" data-srcset="/img/example/8_220w.jpg" type="image/jpg">
-              //       <img data-src="/img/example/8_650w.jpg" alt="">
+              //         <source media="(min-width: 800px)" data-srcset="/img/example/8_650w.jpg" type="image/jpg">
+              //         <source media="(max-width: 799px)" data-srcset="/img/example/8_220w.jpg" type="image/jpg">
+              //       <img oncontextmenu="return false" data-src="/img/example/8_650w.jpg" alt="">
               //     </picture>
               // </div>
               // <div class="example__content-list__item">
               //     <picture>
-              //       <source media="(min-width: 800px)" data-srcset="/img/example/9_650w.jpg" type="image/jpg">
-              //       <source media="(max-width: 799px)" data-srcset="/img/example/9_220w.jpg" type="image/jpg">
-              //       <img data-src="/img/example/9_650w.jpg" alt="">
+              //         <source media="(min-width: 800px)" data-srcset="/img/example/9_650w.jpg" type="image/jpg">
+              //         <source media="(max-width: 799px)" data-srcset="/img/example/9_220w.jpg" type="image/jpg">
+              //       <img oncontextmenu="return false" data-src="/img/example/9_650w.jpg" alt="">
               //     </picture>
               // </div> -->
             ?>

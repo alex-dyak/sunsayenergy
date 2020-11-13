@@ -11,9 +11,9 @@
                     <div class="review-item">
                         <div class="review__content-list__item">
                             <div class="review__content-list__item-image">
-                                <div class="review-image"><img src="/images/<?= $item->images->imagePreview ?>" alt="">
+                                <div class="review-image"><img oncontextmenu="return false" src="/images/<?= $item->images->imagePreview ?>" alt="">
                                     <?php if($item->images->avatar != ''): ?>
-                                    <div class="review-photo"><img src="/images/<?= $item->images->avatar ?>" alt=""></div>
+                                    <div class="review-photo"><img oncontextmenu="return false" src="/images/<?= $item->images->avatar ?>" alt=""></div>
                                     <?php endif; ?>
                                 </div>
                             </div>

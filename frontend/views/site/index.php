@@ -12,9 +12,9 @@
 					</div>
 					<div class="img-block">
 						<picture>
-							<source media="(min-width: 1280px)" srcset="/img/house-desktop.png">
-							<source media="(min-width: 768px)" srcset="/img/house-tablet.png">
-							<img alt="Дом с панелями" src="/img/house-mobile-2.png">
+							  <source media="(min-width: 1280px)" srcset="get_image.php?img=img/house-desktop.png">
+							  <source media="(min-width: 768px)" srcset="get_image.php?img=img/house-tablet.png">
+							<img oncontextmenu="return false" alt="Дом с панелями" src="get_image.php?img=img/house-mobile-2.png">
 						</picture>
 					</div>
 					<!--<div class="adv-banner" id="adv-banner">
@@ -35,7 +35,7 @@
 <!--        <section class="section rate">
 			<div class="container">
 				<div class="rate__content">
-					<div class="rate__content-image"><img data-srcset="/img/m_green.png 1024w, /img/green.png 1366w"
+					<div class="rate__content-image"><img oncontextmenu="return false" data-srcset="/img/m_green.png 1024w, /img/green.png 1366w"
 														  data-src="/img/green.png" alt="Зелений тариф"></div>
 					<div class="rate__content-info">
 						<h2 class="line-title"><?/*= BaseController::getMessage('54') */?></h2>
