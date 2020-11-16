@@ -11,7 +11,7 @@ $contacts = \backend\models\Contact::getContact();
 ?>
 
 <main>
-	<section class="hero-section" style="background-image: url('get_image.php?img=img/commercial-station/hero-commercial.jpg')">
+	<section class="hero-section" style="background-image: url('/img/commercial-station/hero-commercial.jpg')">
 		<span class="hero-yellow-circle"></span>
 		<div class="container">
 			<div class="hero-text">
@@ -69,7 +69,7 @@ $contacts = \backend\models\Contact::getContact();
 			<div class="profit-wrap">
 				<div class="profit-wrap-title">
 					<h2 class="line-title"><?= BaseController::getMessage('490') ?></h2>
-					<div class="title-img background-lazy" style="background-image: url('get_image.php?img=img/loader.gif')" data-src="get_image.php?img=img/commercial-station/profit.jpg"></div>
+					<div class="title-img background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/commercial-station/profit.jpg"></div>
 				</div>
 				<ul class="profit-list">
 					<li>
@@ -150,7 +150,7 @@ $contacts = \backend\models\Contact::getContact();
 					</li>
 				</ul>
 				<div class="station-work-img">
-					<img oncontextmenu="return false" src="get_image.php?img=img/loader.gif" data-src="/img/commercial-station/solar-station.svg" alt="<?= BaseController::getMessage('503') ?>">
+					<img oncontextmenu="return false" src="/img/loader.gif" data-src="/img/commercial-station/solar-station.svg" alt="<?= BaseController::getMessage('503') ?>">
 				</div>
 			</div>
 		</div>
@@ -162,7 +162,7 @@ $contacts = \backend\models\Contact::getContact();
 				<ul class="stage-list">
 					<li>
 						<div class="stage-img">
-							<img oncontextmenu="return false" data-src="get_image.php?img=img/commercial-station/icon/dron.svg" width="90" alt="<?= BaseController::getMessage('511') ?>">
+							<img oncontextmenu="return false" data-src="/img/commercial-station/icon/dron.svg" width="90" alt="<?= BaseController::getMessage('511') ?>">
 						</div>
 						<div class="stage-info">
 							<strong><?= BaseController::getMessage('511') ?></strong>
@@ -224,28 +224,28 @@ $contacts = \backend\models\Contact::getContact();
 			<div class="reason-wrapper"><h2 class="line-title"><?= BaseController::getMessage('522') ?></h2>
 				<div class="reason-slider">
 					<div class="reason-slide">
-						<div class="reason-slide-img background-lazy" style="background-image: url('get_image.php?img=img/loader.gif')" data-src="get_image.php?img=img/commercial-station/service.jpg"></div>
+						<div class="reason-slide-img background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/commercial-station/service.jpg"></div>
 						<div class="slide-description">
 							<strong><?= BaseController::getMessage('523') ?></strong>
 							<p><?= BaseController::getMessage('524') ?></p>
 						</div>
 					</div>
 					<div class="reason-slide">
-						<div class="reason-slide-img background-lazy" style="background-image: url('get_image.php?img=img/loader.gif')" data-src="get_image.php?img=img/commercial-station/warranty.jpg"></div>
+						<div class="reason-slide-img background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/commercial-station/warranty.jpg"></div>
 						<div class="slide-description">
 							<strong><?= BaseController::getMessage('525') ?></strong>
 							<p><?= BaseController::getMessage('526') ?></p>
 						</div>
 					</div>
 					<div class="reason-slide">
-						<div class="reason-slide-img background-lazy" style="background-image: url('get_image.php?img=img/loader.gif')" data-src="get_image.php?img=img/commercial-station/efficient.jpg"></div>
+						<div class="reason-slide-img background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/commercial-station/efficient.jpg"></div>
 						<div class="slide-description">
 							<strong><?= BaseController::getMessage('527') ?></strong>
 							<p><?= BaseController::getMessage('528') ?></p>
 						</div>
 					</div>
 					<div class="reason-slide yellow">
-						<div class="reason-slide-img background-lazy" style="background-image: url('get_image.php?img=img/loader.gif')" data-src="get_image.php?img=img/commercial-station/pr-support.jpg"></div>
+						<div class="reason-slide-img background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/commercial-station/pr-support.jpg"></div>
 						<div class="slide-description">
 							<strong><?= BaseController::getMessage('529') ?></strong>
 							<p><?= BaseController::getMessage('530') ?></p>
@@ -263,7 +263,7 @@ $contacts = \backend\models\Contact::getContact();
 			<div class="clients-slider">
                 <?php foreach ($images as $item): ?>
 					<div class="clients-slide">
-						<div class="image background-lazy" style="background-image: url('get_image.php?img=img/loader.gif')" data-src="/images/<?= $item->images->imagePreview ?>"></div>
+						<div class="image background-lazy" style="background-image: url('/img/loader.gif')" data-src="/images/<?= $item->images->imagePreview ?>"></div>
 						<div class="description">
 							<div><?= $item->alt ?></div>
 						</div>

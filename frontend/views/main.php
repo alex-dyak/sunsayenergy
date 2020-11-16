@@ -151,7 +151,7 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
            href="#"><span><?= BaseController::getMessage('9') ?><br/><?= BaseController::getMessage('10') ?></span></a>
         <div class="request-close"><img oncontextmenu="return false" class="close" src="/img/icon/Close.svg" alt=""></div>
     </div>
-    <div class="header-request-back"><img oncontextmenu="return false" src="get_image.php?img=img/icon/arrow-back.png" alt=""></div>
+    <div class="header-request-back"><img oncontextmenu="return false" src="/img/icon/arrow-back.png" alt=""></div>
     <div class="header__button">
         <div id="nav-icon"><img oncontextmenu="return false" src="/img/icon/Menu.svg" alt=""></div>
     </div>
@@ -401,7 +401,7 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
                 </div>
             </form>
         </div>
-        <div class="request-content-image"><img oncontextmenu="return false" src="get_image.php?img=img/connect.png" alt=""></div>
+        <div class="request-content-image"><img oncontextmenu="return false" src="/img/connect.png" alt=""></div>
     </div>
 </div>
 <!-- end request popup -->

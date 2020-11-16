@@ -27,10 +27,10 @@ $this->params['breadcrumbs'][] = [
 				</div>
 				<div class="service-section-image">
 					<picture>
-						  <source media="(max-width: 767px)" srcset="get_image.php?img=img/house-1-mob.webp" type="image/webp">
-						  <source srcset="get_image.php?img=img/house-1.webp" type="image/webp">
-						  <source media="(max-width: 767px)" srcset="get_image.php?img=img/house-1-mob.png">
-						<img oncontextmenu="return false" src="get_image.php?img=img/house-1.png" alt="Дом с панелями">
+						  <source media="(max-width: 767px)" srcset="/img/house-1-mob.webp" type="image/webp">
+						  <source srcset="/img/house-1.webp" type="image/webp">
+						  <source media="(max-width: 767px)" srcset="/img/house-1-mob.png">
+						<img oncontextmenu="return false" src="/img/house-1.png" alt="Дом с панелями">
 					</picture>
 				</div>
 				<div class="description"><?= BaseController::getMessage('200') ?></div>
@@ -132,7 +132,7 @@ $this->params['breadcrumbs'][] = [
 						<div class="equipment-carousel equipment-slick">
 							<div class="equipment-carousel-item">
 								<div class="image-background">
-									<div class="image background-lazy" style="background-image: url('/get_image.php?img=mg/loader.gif')" data-src='get_image.php?img=img/types/SolarEdge.png'></div>
+									<div class="image background-lazy" style="background-image: url('//mg/loader.gif')" data-src='/img/types/SolarEdge.png'></div>
 									<div class="text">
 										<?= BaseController::getMessage('189') ?>
 									</div>
@@ -140,7 +140,7 @@ $this->params['breadcrumbs'][] = [
 							</div>
 							<div class="equipment-carousel-item">
 								<div class="image-background">
-									<div class="image background-lazy" style="background-image: url('/img/loader.gif')" data-src='get_image.php?img=img/types/Huawei.png'></div>
+									<div class="image background-lazy" style="background-image: url('/img/loader.gif')" data-src='/img/types/Huawei.png'></div>
 									<div class="text">
 										<?= BaseController::getMessage('191') ?>
 									</div>
@@ -148,7 +148,7 @@ $this->params['breadcrumbs'][] = [
 							</div>
 							<div class="equipment-carousel-item">
 								<div class="image-background">
-									<div class="image background-lazy" style="background-image: url('get_image.php?img=img/loader.gif')" data-src='get_image.php?img=img/types/Fronius.png'></div>
+									<div class="image background-lazy" style="background-image: url('/img/loader.gif')" data-src='/img/types/Fronius.png'></div>
 									<div class="text">
 										<?= BaseController::getMessage('193') ?>
 									</div>
@@ -157,9 +157,9 @@ $this->params['breadcrumbs'][] = [
 						</div>
 						<div class="logo-row">
 							<ul>
-								<li><img oncontextmenu="return false" data-src="get_image.php?img=img/logos/invertor/fronius.png" class="check-slick" alt="fronius"></li>
-								<li><img oncontextmenu="return false" data-src="get_image.php?img=img/logos/invertor/huawei.png" alt="huawei"></li>
-								<li><img oncontextmenu="return false" data-src="get_image.php?img=img/logos/invertor/solar-edge.png" alt="solar edge"></li>
+								<li><img oncontextmenu="return false" data-src="/img/logos/invertor/fronius.png" class="check-slick" alt="fronius"></li>
+								<li><img oncontextmenu="return false" data-src="/img/logos/invertor/huawei.png" alt="huawei"></li>
+								<li><img oncontextmenu="return false" data-src="/img/logos/invertor/solar-edge.png" alt="solar edge"></li>
 							</ul>
 						</div>
 					</div>

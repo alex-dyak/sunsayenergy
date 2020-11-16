@@ -21,7 +21,7 @@ $this->params['breadcrumbs'][] = [
         ]); ?>
 		</div>
 	<section class="section question-page">
-		<div class="question-page__image" style="background-image:url('get_image.php?img=img/blog/info.png')">
+		<div class="question-page__image" style="background-image:url('/img/blog/info.png')">
 			<div class="question-page__image-container">
 				<div class="question-page__image-text">
 					<h1><?= BaseController::getMessage('333') ?></h1>

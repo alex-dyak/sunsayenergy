@@ -18,9 +18,9 @@ $this->params['breadcrumbs'][] = [
 		<div class="container">
         <div class="blog-info__image">
             <picture>
-                  <source media="(min-width: 800px)" data-srcset="get_image.php?img=img/blog/info.jpg" type="image/jpg">
-                  <source media="(max-width: 799px)" data-srcset="get_image.php?img=img/blog/info_350.jpg" type="image/jpg">
-                <img oncontextmenu="return false" data-src="get_image.php?img=img/blog/info.jpg" alt="" class="blog-info__image--bg">
+                  <source media="(min-width: 800px)" data-srcset="/img/blog/info.jpg" type="image/jpg">
+                  <source media="(max-width: 799px)" data-srcset="/img/blog/info_350.jpg" type="image/jpg">
+                <img oncontextmenu="return false" data-src="/img/blog/info.jpg" alt="" class="blog-info__image--bg">
             </picture>
             <div class="blog-info__image-text">
                 <h1><?= BaseController::getMessage('362') ?></h1>
@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = [
 					<div class="blog__list-item">
 						<a href="<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $item->symbol]) ?>">
 							<div class="image">
-								<img oncontextmenu="return false" src="get_image.php?img=img/loader.gif" data-src="/images/<?= $item->images->imagePreview ?>" alt="<?= $item->header ?>">
+								<img oncontextmenu="return false" src="/img/loader.gif" data-src="/images/<?= $item->images->imagePreview ?>" alt="<?= $item->header ?>">
 							</div>
 							<div class="date"><?= $item->date ?></div>
 							<div class="title"><?= $item->header ?></div>

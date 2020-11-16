@@ -16,7 +16,7 @@
                     </div>
                 </div>
                 <div class="type-info__content-image">
-                    <img oncontextmenu="return false" data-src="get_image.php?img=img/type-page/1.jpg" alt="Види сонячних електростанцій">
+                    <img oncontextmenu="return false" data-src="/img/type-page/1.jpg" alt="Види сонячних електростанцій">
                 </div>
             </div>
         </section>
@@ -49,8 +49,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/SolarEdge.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/SolarEdge.png" alt="SolarEdge">
+                                                      <source data-srcset="/img/types/SolarEdge.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/SolarEdge.png" alt="SolarEdge">
                                                 </picture>
                                             </div>
                                         </div>
@@ -64,8 +64,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Huawei.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Huawei.png" alt="Huawei">
+                                                      <source data-srcset="/img/types/Huawei.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Huawei.png" alt="Huawei">
                                                 </picture>
                                             </div>
                                         </div>
@@ -79,8 +79,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Fronius.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Fronius.png" alt="Fronius">
+                                                      <source data-srcset="/img/types/Fronius.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Fronius.png" alt="Fronius">
                                                 </picture>
                                             </div>
                                         </div>
@@ -98,8 +98,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Jinko.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Jinko.png" alt="Jinko">
+                                                      <source data-srcset="/img/types/Jinko.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Jinko.png" alt="Jinko">
                                                 </picture>
                                             </div>
                                         </div>
@@ -113,8 +113,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                  <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Qcell.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Qcell.png" alt="Qcell">
+                                                      <source data-srcset="/img/types/Qcell.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Qcell.png" alt="Qcell">
                                                 </picture>
                                             </div>
                                         </div>
@@ -128,8 +128,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Longi.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Longi.png" alt="Longi">
+                                                      <source data-srcset="/img/types/Longi.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Longi.png" alt="Longi">
                                                 </picture>
                                             </div>
                                         </div>
@@ -156,8 +156,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/SolarEdge.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/SolarEdge.png" alt="SolarEdge">
+                                                      <source data-srcset="/img/types/SolarEdge.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/SolarEdge.png" alt="SolarEdge">
                                                 </picture>
                                             </div>
                                         </div>
@@ -171,8 +171,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Huawei.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Huawei.png" alt="Huawei">
+                                                      <source data-srcset="/img/types/Huawei.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Huawei.png" alt="Huawei">
                                                 </picture>
                                             </div>
                                         </div>
@@ -186,8 +186,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Fronius.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Fronius.png" alt="Fronius">
+                                                      <source data-srcset="/img/types/Fronius.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Fronius.png" alt="Fronius">
                                                 </picture>
                                             </div>
                                         </div>
@@ -205,8 +205,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Jinko.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Jinko.png" alt="Jinko">
+                                                      <source data-srcset="/img/types/Jinko.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Jinko.png" alt="Jinko">
                                                 </picture>
                                             </div>
                                         </div>
@@ -220,8 +220,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Qcell.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Qcell.png" alt="Qcell">
+                                                      <source data-srcset="/img/types/Qcell.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Qcell.png" alt="Qcell">
                                                 </picture>
                                             </div>
                                         </div>
@@ -235,8 +235,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Longi.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Longi.png" alt="Longi">
+                                                      <source data-srcset="/img/types/Longi.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Longi.png" alt="Longi">
                                                 </picture>
                                             </div>
                                         </div>
@@ -280,8 +280,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/inv.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Longi.inv" alt="inv">
+                                                      <source data-srcset="/img/types/inv.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Longi.inv" alt="inv">
                                                 </picture>
                                             </div>
                                         </div>
@@ -299,8 +299,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Jinko.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Jinko.png" alt="Jinko">
+                                                      <source data-srcset="/img/types/Jinko.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Jinko.png" alt="Jinko">
                                                 </picture>
                                             </div>
                                         </div>
@@ -314,8 +314,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Qcell.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Qcell.png" alt="Qcell">
+                                                      <source data-srcset="/img/types/Qcell.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Qcell.png" alt="Qcell">
                                                 </picture>
                                             </div>
                                         </div>
@@ -329,8 +329,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Longi.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Longi.png" alt="Longi">
+                                                      <source data-srcset="/img/types/Longi.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Longi.png" alt="Longi">
                                                 </picture>
                                             </div>
                                         </div>
@@ -348,8 +348,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Victron.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Victron.png" alt="Victron">
+                                                      <source data-srcset="/img/types/Victron.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Victron.png" alt="Victron">
                                                 </picture>
                                             </div>
                                         </div>
@@ -363,8 +363,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/EverExceed.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/EverExceed.png" alt="EverExceed">
+                                                      <source data-srcset="/img/types/EverExceed.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/EverExceed.png" alt="EverExceed">
                                                 </picture>
                                             </div>
                                         </div>
@@ -392,8 +392,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/inv.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/inv.png" alt="inv">
+                                                      <source data-srcset="/img/types/inv.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/inv.png" alt="inv">
                                                 </picture>
                                             </div>
                                         </div>
@@ -411,8 +411,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Jinko.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Jinko.png" alt="Jinko">
+                                                      <source data-srcset="/img/types/Jinko.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Jinko.png" alt="Jinko">
                                                 </picture>
                                             </div>
                                         </div>
@@ -426,8 +426,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Qcell.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Qcell.png" alt="Qcell">
+                                                      <source data-srcset="/img/types/Qcell.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Qcell.png" alt="Qcell">
                                                 </picture>
                                             </div>
                                         </div>
@@ -441,8 +441,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Longi.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Longi.png" alt="Longi">
+                                                      <source data-srcset="/img/types/Longi.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Longi.png" alt="Longi">
                                                 </picture>
                                             </div>
                                         </div>
@@ -460,8 +460,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Victron.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Victron.png" alt="Victron">
+                                                      <source data-srcset="/img/types/Victron.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Victron.png" alt="Victron">
                                                 </picture>
                                             </div>
                                         </div>
@@ -475,8 +475,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/EverExceed.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/EverExceed.png" alt="EverExceed">
+                                                      <source data-srcset="/img/types/EverExceed.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/EverExceed.png" alt="EverExceed">
                                                 </picture>
                                             </div>
                                         </div>
@@ -523,8 +523,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/inv.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/inv.png" alt="inv">
+                                                      <source data-srcset="/img/types/inv.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/inv.png" alt="inv">
                                                 </picture>
                                             </div>
                                         </div>
@@ -542,8 +542,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Jinko.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Jinko.png" alt="Jinko">
+                                                      <source data-srcset="/img/types/Jinko.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Jinko.png" alt="Jinko">
                                                 </picture>
                                             </div>
                                         </div>
@@ -557,8 +557,8 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Qcell.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/Qcell.png" alt="Qcell">
+                                                      <source data-srcset="/img/types/Qcell.webp" type="image/webp">
+                                                    <img oncontextmenu="return false" data-src="/img/types/Qcell.png" alt="Qcell">
                                                 </picture>
                                             </div>
                                         </div>
@@ -572,7 +572,7 @@
                                         <div class="image">
                                             <div class="image-background">
                                                 <picture>
-                                                      <source data-srcset="get_image.php?img=img/types/Longi.webp" type="image/webp">
+                                                      <source data-srcset="/img/types/Longi.webp" type="image/webp">
                                                     <img oncontextmenu="return false" data-src="/img/types/Longi.png" alt="Longi">
                                                 </picture>
                                             </div>
@@ -636,7 +636,7 @@
                                             <div class="image-background">
                                                 <picture>
                                                       <source data-srcset="/img/types/inv.webp" type="image/webp">
-                                                    <img oncontextmenu="return false" data-src="get_image.php?img=img/types/inv.png" alt="inv">
+                                                    <img oncontextmenu="return false" data-src="/img/types/inv.png" alt="inv">
                                                 </picture>
                                             </div>
                                         </div>

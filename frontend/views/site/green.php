@@ -21,7 +21,7 @@ $contacts = \backend\models\Contact::getContact();
 
 		<section class="green-hero-section">
 			<span class="hero-yellow-circle"></span>
-			<div class="green-hero-img" style="background-image: url('get_image.php?img=img/green/hero.jpg')"></div>
+			<div class="green-hero-img" style="background-image: url('/img/green/hero.jpg')"></div>
 
 			<div class="container">
 				<div class="hero-text">
@@ -143,7 +143,7 @@ $contacts = \backend\models\Contact::getContact();
 		<section class="green-payment">
 			<div class="container">
 				<ul class="green-payment-list">
-					<li class="green-payment-item background-lazy" style="background-image: url('get_image.php?img=img/loader.gif')" data-src="get_image.php?img=img/green/green-bg.jpg">
+					<li class="green-payment-item background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/green/green-bg.jpg">
 						<strong><?= BaseController::getMessage('550') ?></strong>
 					</li>
 					<li class="green-payment-img">
