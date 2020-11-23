@@ -90,6 +90,21 @@ $contacts = \backend\models\Contact::getContact();
 
 	<meta name="google-site-verification" content="xxxLG9Hae7rnxth_CLJ3SBLXRhnRpnEg-DV95cNNyxI" />
 
+    <!-- Marquiz script start -->
+    <script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            Marquiz.init({
+                host: '//quiz.marquiz.ru',
+                id: '5fa185757b366e00441631e0',
+                autoOpen: 90,
+                autoOpenFreq: 'always',
+                openOnExit: true
+            });
+        });
+    </script>
+    <!-- Marquiz script end -->
+
 </head>
 
 <body style="opacity:1;" class="<?php if ( BaseController::is_mobile()  ): ?> mobile <?php endif; ?> <?= (Yii::$app->language=='ru')?'lang-ru':''?>">
