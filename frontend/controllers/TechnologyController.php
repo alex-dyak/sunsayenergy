@@ -49,12 +49,14 @@ class TechnologyController extends BaseController
     {
         $articles = Blog::find()->orderBy(['id' => SORT_DESC, 'visible'=>1])->all();
 
+        $last_article = $articles[0];
+
         $this->setOg(self::getTitle('technology'));
         $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
         $this->setOgDescription(self::getDescription('technology'));
         $this->setMeta(self::getTitle('technology'), self::getDescription('technology'));
 
-        return $this->render('technology', compact('articles'));
+        return $this->render('technology', compact('articles', 'last_article'));
     }
 
     public function actionDetailed($symbol)

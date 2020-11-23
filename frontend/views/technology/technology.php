@@ -16,19 +16,28 @@ $this->params['breadcrumbs'][] = [
 		</div>
     <section class="section blog-info">
 		<div class="container">
-        <div class="blog-info__image">
-            <picture>
-                  <source media="(min-width: 800px)" data-srcset="/img/blog/info.jpg" type="image/jpg">
-                  <source media="(max-width: 799px)" data-srcset="/img/blog/info_350.jpg" type="image/jpg">
-                <img oncontextmenu="return false" data-src="/img/blog/info.jpg" alt="" class="blog-info__image--bg">
-            </picture>
-            <div class="blog-info__image-text">
-                <h1><?= BaseController::getMessage('362') ?></h1>
-                <a href="<?= \yii\helpers\Url::to(['/technology/nine']); ?>">
-                    <button class="btn btn-primary"><?= BaseController::getMessage('363') ?></button>
-                </a>
+            <div class="blog-info__image">
+                    <picture>
+                        <img oncontextmenu="return false" data-src="/images/<?= $last_article->images->imagePreview ?>" alt="" class="blog-info__image--bg">
+                    </picture>
+                    <div class="blog-info__image-text">
+                        <h1 style="color: white"><?= $last_article->header ?></h1>
+                        <a href="<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $last_article->symbol]); ?>">
+                            <button class="btn btn-primary"><?= BaseController::getMessage('363') ?></button>
+                        </a>
+                    </div>
+<!--                <picture>-->
+<!--                      <source media="(min-width: 800px)" data-srcset="/img/blog/info.jpg" type="image/jpg">-->
+<!--                      <source media="(max-width: 799px)" data-srcset="/img/blog/info_350.jpg" type="image/jpg">-->
+<!--                    <img oncontextmenu="return false" data-src="/img/blog/info.jpg" alt="" class="blog-info__image--bg">-->
+<!--                </picture>-->
+<!--                <div class="blog-info__image-text">-->
+<!--                    <h1>--><?//= BaseController::getMessage('362') ?><!--</h1>-->
+<!--                    <a href="--><?//= \yii\helpers\Url::to(['/technology/nine']); ?><!--">-->
+<!--                        <button class="btn btn-primary">--><?//= BaseController::getMessage('363') ?><!--</button>-->
+<!--                    </a>-->
+<!--                </div>-->
             </div>
-        </div>
 		</div>
     </section>
 
