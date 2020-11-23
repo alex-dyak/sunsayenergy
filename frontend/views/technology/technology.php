@@ -21,7 +21,7 @@ $this->params['breadcrumbs'][] = [
                         <img oncontextmenu="return false" data-src="/images/<?= $last_article->images->imagePreview ?>" alt="" class="blog-info__image--bg">
                     </picture>
                     <div class="blog-info__image-text">
-                        <h1 style="color: white"><?= $last_article->header ?></h1>
+                        <h1><?= $last_article->header ?></h1>
                         <a href="<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $last_article->symbol]); ?>">
                             <button class="btn btn-primary"><?= BaseController::getMessage('363') ?></button>
                         </a>
