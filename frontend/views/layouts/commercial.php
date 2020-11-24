@@ -97,7 +97,7 @@ $contacts = \backend\models\Contact::getContact();
             Marquiz.init({
                 host: '//quiz.marquiz.ru',
                 id: '5fa185757b366e00441631e0',
-                autoOpen: 90,
+                autoOpen: 180,
                 autoOpenFreq: 'always',
                 openOnExit: true
             });
