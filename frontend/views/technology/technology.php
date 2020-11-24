@@ -22,8 +22,8 @@ $this->params['breadcrumbs'][] = [
                     </picture>
                     <div class="blog-info__image-text">
                         <h1><?= $last_article->header ?></h1>
-                        <a href="<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $last_article->symbol]); ?>">
-                            <button class="btn btn-primary"><?= BaseController::getMessage('363') ?></button>
+                        <a class="btn btn-primary" href="<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $last_article->symbol]); ?>">
+                            <?= BaseController::getMessage('363') ?>
                         </a>
                     </div>
 <!--                <picture>-->
