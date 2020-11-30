@@ -97,14 +97,25 @@ $contacts = \backend\models\Contact::getContact();
             Marquiz.init({
                 host: '//quiz.marquiz.ru',
                 id: '5fa185757b366e00441631e0',
-                autoOpen: 180,
+                autoOpen: 80,
                 autoOpenFreq: 'always',
-                openOnExit: true
+                openOnExit: false
             });
         });
     </script>
     <!-- Marquiz script end -->
 
+    <!-- Hotjar Tracking Code for https://sunsayenergy.com -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2120169,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 </head>
 
 <body style="opacity:1;" class="<?php if ( BaseController::is_mobile()  ): ?> mobile <?php endif; ?> <?= (Yii::$app->language=='ru')?'lang-ru':''?>">
