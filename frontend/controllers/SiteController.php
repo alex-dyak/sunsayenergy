@@ -194,24 +194,34 @@ class SiteController extends BaseController
         if (Yii::$app->request->isAjax) {
             $post = Yii::$app->request->post();
 
-            // API credentials from https://login.sendpulse.com/settings/#api
-            define('PATH_TO_ATTACH_FILE', __FILE__);
+            $phone = $post['phone'];
+            $phone_parts = explode(' ', $phone);
+            $country_code = str_replace(array( '(', ')' ), '', $phone_parts[1]);
+            $phone_codes = ['039', '044', '050', '063', '066', '067', '068', '073', '091', '092', '093', '094', '095', '096', '097', '098', '099'];
+            $send = false;
+            if (in_array($country_code, $phone_codes)) {
+                $send = true;
+            }
 
-            $SPApiClient = new ApiClient($this->api_user_id, $this->user_secret, new FileStorage());
+            if ($send) {
+                // API credentials from https://login.sendpulse.com/settings/#api
+                define('PATH_TO_ATTACH_FILE', __FILE__);
 
-            $emails = array(
-                array(
-                    'email' => $post['email'],
-                    'variables' => array(
-                        'phone' => $post['phone'],
-                        'name' => $post['name'],
+                $SPApiClient = new ApiClient($this->api_user_id, $this->user_secret, new FileStorage());
+
+                $emails = array(
+                    array(
+                        'email' => $post['email'],
+                        'variables' => array(
+                            'phone' => $post['phone'],
+                            'name' => $post['name'],
+                        )
                     )
-                )
-            );
+                );
 
             $SPApiClient->addEmails($this->form_book_id, $emails);
 
-            $model = new Request();
+                $model = new Request();
             $model->sendBitrix(
                 $post['name'],
                 $post['phone'],
@@ -223,17 +233,19 @@ class SiteController extends BaseController
                 $post['utm_content'],
                 $post['utm_term']
             );
-            //TODO: переименовать метод
+                //TODO: переименовать метод
             Request::subscribeEsputnik($post['email'], "request_measurement", $post['name'], $post['phone']);
-            //TODO: Вынести эту дрянь в модель
-            $model->name = $post['name'];
-            $model->email = $post['email'];
-            $model->phone = $post['phone'];
-            $model->type = $post['type'];
-            $model->date = date('d.m.Y H:i:s');
-            if ($model->save()) {
-                return true;
+                //TODO: Вынести эту дрянь в модель
+                $model->name = $post['name'];
+                $model->email = $post['email'];
+                $model->phone = $post['phone'];
+                $model->type = $post['type'];
+                $model->date = date('d.m.Y H:i:s');
+                if ($model->save()) {
+                    return true;
+                }
             }
+
         }
     }
 
