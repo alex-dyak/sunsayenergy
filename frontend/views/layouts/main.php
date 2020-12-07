@@ -99,7 +99,7 @@ $contacts = \backend\models\Contact::getContact();
                 host: '//quiz.marquiz.ru',
                 id: '5fa185757b366e00441631e0',
                 autoOpen: 80,
-                autoOpenFreq: 'always',
+                autoOpenFreq: '',
                 openOnExit: false
             });
         });
