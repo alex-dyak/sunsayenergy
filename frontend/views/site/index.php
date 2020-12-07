@@ -53,7 +53,7 @@
 	    <?= $this->render('../section/_pros.php'); ?>
 
         <!-- start complex -->
-        <?= $this->render('../section/_complex.php'); ?>
+        <?php // echo $this->render('../section/_complex.php'); ?>
         <!-- end complex -->
         <?= $this->render('../section/_example.php', compact('project')); ?>
         <!-- start video review -->
