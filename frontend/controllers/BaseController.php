@@ -41,6 +41,25 @@ class BaseController extends Controller
             $og = Og::findOne(1);
             $this->setOg($og->title);
         }
+
+        // Redirect from english site version.
+        $langs = $this->prefered_language();
+        $lang = '';
+        foreach ($langs as $key => $value) {
+            $lang = $key;
+            break;
+        }
+
+        if (stripos($_SERVER['REQUEST_URI'], '/en/') !== false) {
+            $goal_page = str_replace('/en/', '', $_SERVER['REQUEST_URI']);
+            if ($lang != 'uk') {
+                $lang = $lang . '/';
+            } else {
+                $lang = '';
+            }
+            header('Location: ' . $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/' . $lang . $goal_page);
+            die;
+        }
     }
 
     /**
@@ -160,6 +179,30 @@ class BaseController extends Controller
 
     protected function setOgSiteName(){
         $this->view->registerMetaTag(['property'=>'og:site_name', 'content'=>'SUNSAY Energy']);
+    }
+
+    private function prefered_language()
+    {
+        $http_accept_language = $_SERVER["HTTP_ACCEPT_LANGUAGE"];
+
+        $available_languages = array("en", "en-US", "uk", "ru", "ru-RU");
+        $available_languages = array_flip($available_languages);
+        $langs = [];
+        preg_match_all('~([\w-]+)(?:[^,\d]+([\d.]+))?~', strtolower($http_accept_language), $matches, PREG_SET_ORDER);
+        foreach ($matches as $match) {
+            list($a, $b) = explode('-', $match[1]) + array('', '');
+            $value = isset($match[2]) ? (float)$match[2] : 1.0;
+            if (isset($available_languages[$match[1]])) {
+                $langs[$match[1]] = $value;
+                continue;
+            }
+            if (isset($available_languages[$a])) {
+                $langs[$a] = $value - 0.1;
+            }
+        }
+        arsort($langs);
+
+        return $langs;
     }
 
 }
