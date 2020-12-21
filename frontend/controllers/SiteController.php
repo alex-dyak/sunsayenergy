@@ -255,6 +255,62 @@ class SiteController extends BaseController
         }
     }
 
+    // Quiz с сайта
+    public function actionQuiz()
+    {
+        if (Yii::$app->request->isAjax) {
+            $post = Yii::$app->request->post();
+
+            $phone = $post['phone'];
+            $country_code = substr($phone, 3, 3);
+
+            $description = 'Квiз:<br/>';
+            $description .= 'Тип встановлення: ' . $post['type'] . '<br/>';
+            $description .= 'Обленерго: ' . $post['oblenergo'] . '<br/>';
+            $description .= 'Потужнiсть: ' . $post['power'];
+
+            $phone_codes = [
+                '031', '032', '033', '034', '035', '036', '037', '038', '039',
+                '041', '043', '044', '045', '046', '047', '048',
+                '050', '051', '052', '053', '054', '055', '056', '057',
+                '061', '062', '063', '064', '065', '066', '067', '068', '069',
+                '073', '091', '092', '093', '094', '095', '096', '097', '098', '099'
+            ];
+            $send = false;
+            if (in_array($country_code, $phone_codes)) {
+                $send = true;
+            }
+
+            if ($send) {
+                // Send data to Bitrix.
+                $model = new Request();
+                $model->sendBitrix(
+                    $post['name'],
+                    $post['phone'],
+                    '',
+                    $description,
+                    '',
+                    '',
+                    '',
+                    '',
+                    ''
+                );
+
+                // Save data.
+                $model->name = $post['name'];
+                $model->email = '';
+                $model->phone = $post['phone'];
+                $model->type = $description;
+                $model->date = date('d.m.Y H:i:s');
+                var_dump($model);
+                if ($model->save()) {
+                    return true;
+                }
+            }
+
+        }
+    }
+
     //подписка с футера
     public function actionSubscribe()
     {

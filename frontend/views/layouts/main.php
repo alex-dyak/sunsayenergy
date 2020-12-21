@@ -92,18 +92,18 @@ $contacts = \backend\models\Contact::getContact();
     <meta name="google-site-verification" content="xxxLG9Hae7rnxth_CLJ3SBLXRhnRpnEg-DV95cNNyxI" />
 
     <!-- Marquiz script start -->
-    <script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            Marquiz.init({
-                host: '//quiz.marquiz.ru',
-                id: '5fa185757b366e00441631e0',
-                autoOpen: 80,
-                autoOpenFreq: 'once',
-                openOnExit: false
-            });
-        });
-    </script>
+<!--    <script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>-->
+<!--    <script>-->
+<!--        document.addEventListener("DOMContentLoaded", function() {-->
+<!--            Marquiz.init({-->
+<!--                host: '//quiz.marquiz.ru',-->
+<!--                id: '5fa185757b366e00441631e0',-->
+<!--                autoOpen: 80,-->
+<!--                autoOpenFreq: 'once',-->
+<!--                openOnExit: false-->
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
     <!-- Marquiz script end -->
 
     <!-- Hotjar Tracking Code for https://sunsayenergy.com -->
@@ -651,7 +651,7 @@ $contacts = \backend\models\Contact::getContact();
       if (name.val() != '' && phone.val() != '' && policy.is(':checked')) {
         let data = {
           'name': name.val(),
-          'phone': phone.val(),
+          'phone': '+380' + phone.val(),
           'type': type.val(),
           'oblenergo': oblenergo.val(),
           'power': power.val()
@@ -659,7 +659,7 @@ $contacts = \backend\models\Contact::getContact();
         console.log(data);
         $.ajax({
           type: "post",
-          // url: "/site/request",
+          url: "/site/quiz",
           data: data,
           dataType: "json",
           beforeSend: function (response) {
