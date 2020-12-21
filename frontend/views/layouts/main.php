@@ -92,18 +92,18 @@ $contacts = \backend\models\Contact::getContact();
     <meta name="google-site-verification" content="xxxLG9Hae7rnxth_CLJ3SBLXRhnRpnEg-DV95cNNyxI" />
 
     <!-- Marquiz script start -->
-    <script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            Marquiz.init({
-                host: '//quiz.marquiz.ru',
-                id: '5fa185757b366e00441631e0',
-                autoOpen: 80,
-                autoOpenFreq: 'once',
-                openOnExit: false
-            });
-        });
-    </script>
+<!--    <script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>-->
+<!--    <script>-->
+<!--        document.addEventListener("DOMContentLoaded", function() {-->
+<!--            Marquiz.init({-->
+<!--                host: '//quiz.marquiz.ru',-->
+<!--                id: '5fa185757b366e00441631e0',-->
+<!--                autoOpen: 80,-->
+<!--                autoOpenFreq: 'once',-->
+<!--                openOnExit: false-->
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
     <!-- Marquiz script end -->
 
     <!-- Hotjar Tracking Code for https://sunsayenergy.com -->
@@ -442,12 +442,241 @@ $contacts = \backend\models\Contact::getContact();
 <div class="overlay"></div>
 <!-- end modal overlay-->
 
+<div class="quiz-modal">
+	<div class="quiz-modal-close js_quiz_close">
+		<i class="icon-close"></i>
+	</div>
+	<div class="quiz-modal-container">
+		<form class="quiz-modal-form">
+			<div class="quiz-step quiz-intro-screen" style="display:block;">
+				<div class="bg-block"></div>
+				<div class="quiz-intro-content">
+					<strong class="quiz-title"><?= BaseController::getMessage('610') ?></strong>
+					<p><?= BaseController::getMessage('611') ?></p>
+					<span class="quiz-btn js_quiz_next" data-next="#quiz-question-1"><?= BaseController::getMessage('612') ?></span>
+					<span class="quiz-subtitle"><?= BaseController::getMessage('613') ?></span>
+					<ul class="quiz-bonus-list">
+						<li>
+							<div class="img-wrap">
+								<img src="/img/quiz/dron.svg" width="65" alt="<?= BaseController::getMessage('614') ?>">
+							</div>
+							<span><?= BaseController::getMessage('614') ?></span>
+
+						</li>
+						<li>
+							<div class="img-wrap">
+								<img src="/img/quiz/desk.svg" width="38" alt="<?= BaseController::getMessage('615') ?>">
+							</div>
+							<span><?= BaseController::getMessage('615') ?></span>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="quiz-step quiz-question-screen" id="quiz-question-1">
+				<strong class="quiz-title"><?= BaseController::getMessage('616') ?></strong>
+				<div class="quiz-radio-wrap">
+					<input type="radio" id="sunstaion-1" class="quiz-radio" name="radio-question-1" value="<?= BaseController::getMessage('617') ?>">
+					<label for="sunstaion-1"><?= BaseController::getMessage('617') ?></label>
+					<input type="radio" id="sunstaion-2" class="quiz-radio" name="radio-question-1" value="<?= BaseController::getMessage('618') ?>">
+					<label for="sunstaion-2"><?= BaseController::getMessage('618') ?></label>
+					<input type="radio" id="sunstaion-3" class="quiz-radio" name="radio-question-1" value="<?= BaseController::getMessage('619') ?>">
+					<label for="sunstaion-3"><?= BaseController::getMessage('619') ?></label>
+				</div>
+				<span class="skip-step"><?= BaseController::getMessage('633') ?></span>
+				<span class="quiz-btn js_quiz_next" data-next="#quiz-question-2"><?= BaseController::getMessage('634') ?></span>
+			</div>
+			<div class="quiz-step quiz-question-screen" id="quiz-question-2">
+				<strong class="quiz-title"><?= BaseController::getMessage('620') ?></strong>
+				<div class="quiz-radio-wrap">
+					<input type="radio" id="connect-1" class="quiz-radio" name="radio-question-2" value="<?= BaseController::getMessage('621') ?>">
+					<label for="connect-1"><?= BaseController::getMessage('621') ?></label>
+					<input type="radio" id="connect-2" class="quiz-radio" name="radio-question-2" value="<?= BaseController::getMessage('622') ?>">
+					<label for="connect-2"><?= BaseController::getMessage('622') ?></label>
+					<input type="radio" id="connect-3" class="quiz-radio" name="radio-question-2" value="<?= BaseController::getMessage('623') ?>">
+					<label for="connect-3"><?= BaseController::getMessage('623') ?></label>
+					<input type="radio" id="connect-4" class="quiz-radio" name="radio-question-2" value="<?= BaseController::getMessage('624') ?>">
+					<label for="connect-4"><?= BaseController::getMessage('624') ?></label>
+				</div>
+				<span class="skip-step"><?= BaseController::getMessage('633') ?></span>
+				<span class="quiz-btn js_quiz_next" data-next="#quiz-question-3"><?= BaseController::getMessage('634') ?></span>
+			</div>
+			<div class="quiz-step quiz-question-screen" id="quiz-question-3">
+				<strong class="quiz-title"><?= BaseController::getMessage('625') ?></strong>
+				<div class="quiz-radio-wrap">
+					<input type="radio" id="power-1" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('626') ?>">
+					<label for="power-1"><?= BaseController::getMessage('626') ?></label>
+					<input type="radio" id="power-2" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('627') ?>">
+					<label for="power-2"><?= BaseController::getMessage('627') ?></label>
+					<input type="radio" id="power-3" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('628') ?>">
+					<label for="power-3"><?= BaseController::getMessage('628') ?></label>
+					<input type="radio" id="power-4" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('629') ?>">
+					<label for="power-4"><?= BaseController::getMessage('629') ?></label>
+					<input type="radio" id="power-5" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('630') ?>">
+					<label for="power-5"><?= BaseController::getMessage('630') ?></label>
+					<input type="radio" id="power-6" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('631') ?>">
+					<label for="power-6"><?= BaseController::getMessage('631') ?></label>
+					<input type="radio" id="power-7" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('632') ?>">
+					<label for="power-7"><?= BaseController::getMessage('632') ?></label>
+				</div>
+				<span class="skip-step"><?= BaseController::getMessage('633') ?></span>
+				<span class="quiz-btn js_quiz_next" data-next="#quiz-bonus"><?= BaseController::getMessage('634') ?></span>
+			</div>
+			<div class="quiz-step quiz-bonus-screen" id="quiz-bonus">
+				<strong class="quiz-title"><?= BaseController::getMessage('635') ?></strong>
+				<p><?= BaseController::getMessage('636') ?></p>
+				<span class="quiz-subtitle"><?= BaseController::getMessage('613') ?></span>
+				<ul class="quiz-bonus-list">
+					<li>
+						<div class="img-wrap">
+							<img src="/img/quiz/dron.svg" width="65" alt="<?= BaseController::getMessage('614') ?>">
+						</div>
+						<span><?= BaseController::getMessage('614') ?></span>
+
+					</li>
+					<li>
+						<div class="img-wrap">
+							<img src="/img/quiz/desk.svg" width="38" alt="<?= BaseController::getMessage('615') ?>">
+						</div>
+						<span><?= BaseController::getMessage('615') ?></span>
+
+					</li>
+				</ul>
+				<div class="quiz-user-info">
+					<div class="input-row">
+						<div class="input-wrap input-wrap-name">
+							<input id="quiz-name"  name="quiz-name" type="text" placeholder="<?= BaseController::getMessage('637') ?>" required>
+						</div>
+						<div class="input-wrap input-wrap-phone">
+							<input id="quiz-phone" name="quiz-phone" type="text" placeholder="<?= BaseController::getMessage('638') ?>" required>
+						</div>
+					</div>
+
+					<span class="quiz-btn  js_quiz_submit"><?= BaseController::getMessage('639') ?></span>
+					<input type="checkbox" class="quiz-checkbox" id="quiz-policy" name="quiz-policy" required>
+					<label for="quiz-policy"><?= BaseController::getMessage('640') ?></label>
+				</div>
+			</div>
+			<div class="quiz-step quiz-final-screen">
+				<div class="quiz-final-content">
+					<div class="quiz-final-img">
+						<img src="/img/quiz/check-round.svg" width="150px" alt="final step">
+					</div>
+					<strong class="quiz-title"><?= BaseController::getMessage('641') ?></strong>
+					<span class="quiz-subtitle"><?= BaseController::getMessage('642') ?></span>
+					<div class="quiz-consult-info">
+						<div class="quiz-consult-img">
+							<img src="/img/quiz/consult.jpg"  alt="<?= BaseController::getMessage('643') ?>">
+						</div>
+						<strong class="quiz-consult-name"><?= BaseController::getMessage('643') ?></strong>
+						<p><?= BaseController::getMessage('644') ?></p>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
 
 <script src="/min/all-plugins.min.js" ></script>
 <script src="/min/new-main.min.js" defer></script>
 
+<script>
+  if (!sessionStorage.getItem('isVisibleQuiz')) {
+    sessionStorage.setItem('isVisibleQuiz', 'true');
+  }
+
+  if (sessionStorage.getItem('isVisibleQuiz') != "false") {
+    setTimeout(function(){
+      $('.quiz-modal').fadeIn(300);
+	}, 1000);
+
+    $(document).on("click", ".js_quiz_close", function (e) {
+      e.preventDefault();
+      $(this).parents('.quiz-modal').fadeOut();
+      sessionStorage.setItem('isVisibleQuiz', 'false');
+    })
+
+    $(document).on("click", ".quiz-modal", function (e) {
+      if (e.target !== this) {
+        return;
+      } else {
+        $(this).fadeOut();
+        sessionStorage.setItem('isVisibleQuiz', 'false');
+	  }
+    });
+
+    $(document).on("click", ".js_quiz_next", function (e) {
+      e.preventDefault();
+      let nextStep = $(this).data('next');
+      console.log(nextStep);
+      $(".quiz-step").hide();
+      $(nextStep).css("display", "flex").animate({opacity: '1'}, 300, "swing");
+    })
+    $(document).on("click", ".skip-step", function (e) {
+      e.preventDefault();
+      let thisStep = $(this).parents('.quiz-step');
+      let nextStep = thisStep.find('.js_quiz_next').data('next');
+      $(".quiz-step").hide();
+      $(nextStep).css("display", "flex").animate({opacity: '1'}, 300, "swing");
+    })
+
+    $(document).on("click", ".js_quiz_submit", function(e) {
+      e.preventDefault();
+      let name = $('.quiz-modal input[name="quiz-name"]'),
+        phone = $('.quiz-modal input[name="quiz-phone"]'),
+        type = $('.quiz-modal input[name="radio-question-1"]:checked'),
+        oblenergo = $('.quiz-modal input[name="radio-question-2"]:checked'),
+        power = $('.quiz-modal input[name="radio-question-3"]:checked'),
+        policy = $('.quiz-modal input[name="quiz-policy"]');
+
+      if (name.val() != '') {
+        name.css('border-color', '#c4c4c4')
+      } else {
+        name.css('border-color', 'red')
+      }
+      if (phone.val() != '') {
+        phone.css('border-color', '#c4c4c4')
+      } else {
+        phone.css('border-color', 'red')
+      }
+
+      if (policy.is(':checked')) {
+        $('.quiz-modal input[name="quiz-policy"] + label').css('color', '#393939')
+      } else {
+        $('.quiz-modal input[name="quiz-policy"] + label').css('color', 'red')
+      }
+
+      if (name.val() != '' && phone.val() != '' && policy.is(':checked')) {
+        let data = {
+          'name': name.val(),
+          'phone': '+380' + phone.val(),
+          'type': type.val(),
+          'oblenergo': oblenergo.val(),
+          'power': power.val()
+        }
+        console.log(data);
+        $.ajax({
+          type: "post",
+          url: "/site/quiz",
+          data: data,
+          dataType: "json",
+          beforeSend: function (response) {
+          },
+          complete: function (response) {
+            $(".quiz-step").hide();
+            $(".quiz-final-screen").css("display", "flex").animate({opacity: '1'}, 300, "swing");
+            setTimeout(function(){
+              $('.quiz-modal').fadeOut(300);
+              sessionStorage.setItem('isVisibleQuiz', 'false');
+            }, 5000);
+          }
+        });
+      }
+    });
+  }
+</script>
 
 <script>deferimg('img[data-src],picture,video,audio', 100, 'lazied', function (img) {
     img.onload = function (e) {
