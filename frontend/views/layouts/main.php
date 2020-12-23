@@ -68,7 +68,8 @@ $contacts = \backend\models\Contact::getContact();
     ?>
 
 	<style>
-		.preloader{display:flex;align-items:center;justify-content:center;position:fixed;top:0;bottom:0;left:0;right:0;z-index:9999;background:#fff}.sk-chasing-dots{width:90px;height:90px;position:relative;margin:auto;text-align:center;animation:sk-chasing-dots-rotate 2s infinite linear}.sk-child{width:calc(90px / 2);height:calc(90px / 2);display:inline-block;position:absolute;top:0;background-color:#ffd100;border-radius:100%;animation:sk-chasing-dots-bounce 2s infinite ease-in-out}.sk-dot-2{background-color:#dfedff;top:auto;bottom:0;animation-delay:calc(-2s / 2)}@keyframes sk-chasing-dots-rotate{100%{transform:rotate(360deg)}}@keyframes sk-chasing-dots-bounce{0%,100%{transform:scale(0)}50%{transform:scale(1)}}
+		.b24-widget-button-position-bottom-left{
+			left: 20px !important; b20}.preloader{display:flex;align-items:center;justify-content:center;position:fixed;top:0;bottom:0;left:0;right:0;z-index:9999;background:#fff}.sk-chasing-dots{width:90px;height:90px;position:relative;margin:auto;text-align:center;animation:sk-chasing-dots-rotate 2s infinite linear}.sk-child{width:calc(90px / 2);height:calc(90px / 2);display:inline-block;position:absolute;top:0;background-color:#ffd100;border-radius:100%;animation:sk-chasing-dots-bounce 2s infinite ease-in-out}.sk-dot-2{background-color:#dfedff;top:auto;bottom:0;animation-delay:calc(-2s / 2)}@keyframes sk-chasing-dots-rotate{100%{transform:rotate(360deg)}}@keyframes sk-chasing-dots-bounce{0%,100%{transform:scale(0)}50%{transform:scale(1)}}
 	</style>
 	<script>
         window.addEventListener('load', function () {document.querySelector(".preloader").style = "display:none;";});
@@ -553,7 +554,7 @@ $contacts = \backend\models\Contact::getContact();
 					</div>
 
 					<span class="quiz-btn  js_quiz_submit"><?= BaseController::getMessage('639') ?></span>
-					<input type="checkbox" class="quiz-checkbox" id="quiz-policy" name="quiz-policy" required>
+					<input type="checkbox" class="quiz-checkbox" id="quiz-policy" name="quiz-policy" checked required>
 					<label for="quiz-policy"><?= BaseController::getMessage('640') ?></label>
 				</div>
 			</div>
