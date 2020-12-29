@@ -649,7 +649,7 @@ $contacts = \backend\models\Contact::getContact();
         $('.quiz-modal input[name="quiz-policy"] + label').css('color', 'red')
       }
 
-      if (name.val() != '' && phone.val() != '' && policy.is(':checked')) {
+      if (name.val() != '' && phone.val() != '' && phone.val().length == 9 && policy.is(':checked')) {
         let data = {
           'name': name.val(),
           'phone': '+380' + phone.val(),
