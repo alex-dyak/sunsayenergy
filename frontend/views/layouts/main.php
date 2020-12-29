@@ -549,7 +549,7 @@ $contacts = \backend\models\Contact::getContact();
 							<input id="quiz-name"  name="quiz-name" type="text" placeholder="<?= BaseController::getMessage('637') ?>" required>
 						</div>
 						<div class="input-wrap input-wrap-phone">
-							<input id="quiz-phone" name="quiz-phone" type="text" placeholder="<?= BaseController::getMessage('638') ?>" required>
+							<input id="quiz-phone" name="quiz-phone" minlength="9" maxlength="9" type="text" placeholder="<?= BaseController::getMessage('638') ?>" required>
 						</div>
 					</div>
 
@@ -637,7 +637,7 @@ $contacts = \backend\models\Contact::getContact();
       } else {
         name.css('border-color', 'red')
       }
-      if (phone.val() != '') {
+      if (phone.val() != '' && phone.val().length != 9) {
         phone.css('border-color', '#c4c4c4')
       } else {
         phone.css('border-color', 'red')
