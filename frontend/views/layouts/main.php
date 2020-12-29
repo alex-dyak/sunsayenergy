@@ -592,7 +592,7 @@ $contacts = \backend\models\Contact::getContact();
   if (sessionStorage.getItem('isVisibleQuiz') != "false") {
     setTimeout(function(){
       $('.quiz-modal').fadeIn(300);
-	}, 10000);
+	}, 90000);
 
     $(document).on("click", ".js_quiz_close", function (e) {
       e.preventDefault();
