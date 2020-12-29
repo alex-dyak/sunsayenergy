@@ -550,6 +550,7 @@ $contacts = \backend\models\Contact::getContact();
 						</div>
 						<div class="input-wrap input-wrap-phone">
 							<input id="quiz-phone" name="quiz-phone" minlength="9" maxlength="9" type="text" placeholder="<?= BaseController::getMessage('638') ?>" required>
+							<span class="quiz-phone-error"><?= BaseController::getMessage('645') ?></span>
 						</div>
 					</div>
 
@@ -638,9 +639,11 @@ $contacts = \backend\models\Contact::getContact();
         name.css('border-color', 'red')
       }
       if (phone.val() != '' && phone.val().length == 9) {
-        phone.css('border-color', '#c4c4c4')
+        phone.css('border-color', '#c4c4c4');
+        $(".quiz-phone-error").hide();
       } else {
-        phone.css('border-color', 'red')
+        phone.css('border-color', 'red');
+        $(".quiz-phone-error").show();
       }
 
       if (policy.is(':checked')) {
