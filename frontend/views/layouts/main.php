@@ -637,7 +637,7 @@ $contacts = \backend\models\Contact::getContact();
       } else {
         name.css('border-color', 'red')
       }
-      if (phone.val() != '' && phone.val().length != 9) {
+      if (phone.val() != '' && phone.val().length == 9) {
         phone.css('border-color', '#c4c4c4')
       } else {
         phone.css('border-color', 'red')
