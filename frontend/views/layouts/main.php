@@ -590,9 +590,15 @@ $contacts = \backend\models\Contact::getContact();
   }
 
   if (sessionStorage.getItem('isVisibleQuiz') != "false") {
-    setTimeout(function(){
-      $('.quiz-modal').fadeIn(300);
-	}, 90000);
+    if ($('body').hasClass('mobile')) {
+      setTimeout(function(){
+        $('.quiz-modal').fadeIn(300);
+      }, 20000);
+	} else {
+      setTimeout(function(){
+        $('.quiz-modal').fadeIn(300);
+      }, 40000);
+	}
 
     $(document).on("click", ".js_quiz_close", function (e) {
       e.preventDefault();
