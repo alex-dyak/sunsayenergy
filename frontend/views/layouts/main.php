@@ -418,6 +418,11 @@ $contacts = \backend\models\Contact::getContact();
 						<strong class="title-mobile"><?= BaseController::getMessage('13') ?></strong>
 						<strong class="title"><?= BaseController::getMessage('410') ?></strong>
 						<form class="form subscribe" method="post">
+                            <input type="hidden" name="utm_source" <?php echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''?> >
+                            <input type="hidden" name="utm_medium" <?php echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''?> >
+                            <input type="hidden" name="utm_campaign" <?php echo !empty($_SESSION['utm_campaign']) ? ' value="' . $_SESSION['utm_campaign'] .'"': ''?> >
+                            <input type="hidden" name="utm_content" <?php echo !empty($_SESSION['utm_content']) ? ' value="' . $_SESSION['utm_content'] .'"': ''?> >
+                            <input type="hidden" name="utm_term" <?php echo !empty($_SESSION['utm_term']) ? ' value="' . $_SESSION['utm_term'] .'"': ''?> >
 							<label for="subscribe-email" class="hidden">youremail@mail.com</label>
 							<input class="custom-field" type="email" name="email" id="subscribe-email" placeholder="youremail@mail.com">
 							<button class="button btn-subscribe"><?= BaseController::getMessage('14') ?></button>
