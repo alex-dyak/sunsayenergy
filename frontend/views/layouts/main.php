@@ -454,6 +454,11 @@ $contacts = \backend\models\Contact::getContact();
 	</div>
 	<div class="quiz-modal-container">
 		<form class="quiz-modal-form">
+			<input type="hidden" name="utm_source" <?php echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''?> >
+			<input type="hidden" name="utm_medium" <?php echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''?> >
+			<input type="hidden" name="utm_campaign" <?php echo !empty($_SESSION['utm_campaign']) ? ' value="' . $_SESSION['utm_campaign'] .'"': ''?> >
+			<input type="hidden" name="utm_content" <?php echo !empty($_SESSION['utm_content']) ? ' value="' . $_SESSION['utm_content'] .'"': ''?> >
+			<input type="hidden" name="utm_term" <?php echo !empty($_SESSION['utm_term']) ? ' value="' . $_SESSION['utm_term'] .'"': ''?> >
 			<div class="quiz-step quiz-intro-screen" style="display:block;">
 				<div class="bg-block"></div>
 				<div class="quiz-intro-content">
@@ -642,7 +647,12 @@ $contacts = \backend\models\Contact::getContact();
         type = $('.quiz-modal input[name="radio-question-1"]:checked'),
         oblenergo = $('.quiz-modal input[name="radio-question-2"]:checked'),
         power = $('.quiz-modal input[name="radio-question-3"]:checked'),
-        policy = $('.quiz-modal input[name="quiz-policy"]');
+        policy = $('.quiz-modal input[name="quiz-policy"]'),
+        utm_source = $('.quiz-modal input[name="utm_source"]'),
+        utm_medium =  $('.quiz-modal input[name="utm_medium"]'),
+        utm_campaign = $('.quiz-modal input[name="utm_campaign"]'),
+        utm_content = $('.quiz-modal input[name="utm_content"]'),
+        utm_term = $('.quiz-modal input[name="utm_term"]');
 
       if (name.val() != '') {
         name.css('border-color', '#c4c4c4')
@@ -669,7 +679,12 @@ $contacts = \backend\models\Contact::getContact();
           'phone': '+380' + phone.val(),
           'type': type.val(),
           'oblenergo': oblenergo.val(),
-          'power': power.val()
+          'power': power.val(),
+          'utm_source': utm_source.val(),
+          'utm_medium': utm_medium.val(),
+          'utm_campaign': utm_campaign.val(),
+          'utm_content': utm_content.val(),
+          'utm_term': utm_term.val()
         }
         console.log(data);
         $.ajax({
