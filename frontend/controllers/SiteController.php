@@ -227,7 +227,7 @@ class SiteController extends BaseController
 
             $SPApiClient->addEmails($this->form_book_id, $emails);
 
-                $model = new Request();
+            $model = new Request();
             $model->sendBitrix(
                 $post['name'],
                 $post['phone'],
@@ -302,7 +302,6 @@ class SiteController extends BaseController
                 $model->phone = $post['phone'];
                 $model->type = $description;
                 $model->date = date('d.m.Y H:i:s');
-                var_dump($model);
                 if ($model->save()) {
                     return true;
                 }
