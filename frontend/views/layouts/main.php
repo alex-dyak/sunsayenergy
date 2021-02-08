@@ -697,6 +697,7 @@ $contacts = \backend\models\Contact::getContact();
           complete: function (response) {
             $(".quiz-step").hide();
             $(".quiz-final-screen").css("display", "flex").animate({opacity: '1'}, 300, "swing");
+            ga('send', 'event', 'quiz_form', 'submit', 'quiz');
             setTimeout(function(){
               $('.quiz-modal').fadeOut(300);
               sessionStorage.setItem('isVisibleQuiz', 'false');
