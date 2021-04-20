@@ -64,7 +64,7 @@ $this->params['breadcrumbs'][] = [
 		<div class="container">
 			<h2 class="line-title"><?= BaseController::getMessage('254') ?></h2>
 			<div class="service-miscount__content">
-				
+
 				<div class="uCalc_331490"></div>
 				<script> var widgetOptions331490 = { bg_color: "transparent" }; (function() { var a = document.createElement("script"), h = "head"; a.async = true; a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=331490&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })();</script>
 				<!--<div class="service-miscount__content-calculation">
