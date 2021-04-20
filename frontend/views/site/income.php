@@ -64,11 +64,14 @@ $this->params['breadcrumbs'][] = [
 		<div class="container">
 			<h2 class="line-title"><?= BaseController::getMessage('254') ?></h2>
 			<div class="service-miscount__content">
-				<div class="service-miscount__content-calculation">
-					<div class="description"><?= BaseController::getMessage('257') ?></div>
+				
+				<div class="uCalc_331490"></div>
+				<script> var widgetOptions331490 = { bg_color: "transparent" }; (function() { var a = document.createElement("script"), h = "head"; a.async = true; a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=331490&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })();</script>
+				<!--<div class="service-miscount__content-calculation">
+					<div class="description"><?/*= BaseController::getMessage('257') */?></div>
 					<div class="calculation-form">
 						<div class="form-group">
-							<label for="house"><?= BaseController::getMessage('258') ?>
+							<label for="house"><?/*= BaseController::getMessage('258') */?>
 								<div>
 									<input class="js-range-slider" id="income-house" type="text" name="house" data-min="0" data-max="5000"
 										   data-step="100" data-hide-min-max="true" data-from="200" data-thumbwidth="20">
@@ -76,7 +79,7 @@ $this->params['breadcrumbs'][] = [
 							</label>
 						</div>
 						<div class="form-group">
-							<label for="power"><?= BaseController::getMessage('260') ?>
+							<label for="power"><?/*= BaseController::getMessage('260') */?>
 								<div>
 									<input class="js-range-slider" id="income-power" type="text" name="power" data-min="5" data-max="35"
 										   data-step="2.5" data-hide-min-max="true" data-from="30" data-thumbwidth="20">
@@ -86,23 +89,23 @@ $this->params['breadcrumbs'][] = [
 					</div>
 					<div class="result">
                         <b>
-							<?= BaseController::getMessage('261') ?>
+							<?/*= BaseController::getMessage('261') */?>
 							<span class="result-value"></span>
 						</b>
 					</div>
 					<div class="income">
-						<span><?= BaseController::getMessage('262') ?></span>
+						<span><?/*= BaseController::getMessage('262') */?></span>
 						<span class="income-value"></span>
-						<span><?= BaseController::getMessage('264') ?></span>
+						<span><?/*= BaseController::getMessage('264') */?></span>
 					</div>
 				</div>
 				<div class="service-miscount__content-graphic">
 					<div class="service-miscount__content-graphic__title">
-						<strong><?= BaseController::getMessage('265') ?></strong>
-						<p><?= BaseController::getMessage('267') ?></p>
+						<strong><?/*= BaseController::getMessage('265') */?></strong>
+						<p><?/*= BaseController::getMessage('267') */?></p>
 					</div>
 					<canvas id="income-graphic"></canvas>
-				</div>
+				</div>-->
 			</div>
 		</div>
     </section>
@@ -253,12 +256,12 @@ $this->params['breadcrumbs'][] = [
     </script>
 
 
-	<?php
-	$this->registerJsFile('/js/lib/ion.rangeSlider.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
+<!--	--><?php
+/*	$this->registerJsFile('/js/lib/ion.rangeSlider.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
 	$this->registerJsFile('/js/lib/Chart.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
 	$this->registerJsFile('/js/calc/income.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
 	$this->registerCssFile('/style/lib/ion.rangeSlider.css', ['position' => \yii\web\View::POS_END]);
-	?>
+	*/?>
 
 
 <script type="application/ld+json" defer>
