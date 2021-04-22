@@ -143,7 +143,7 @@ $contacts = \backend\models\Contact::getContact();
 		<section class="green-payment">
 			<div class="container">
 				<ul class="green-payment-list">
-					<li class="green-payment-item background-lazy" style="background-image: url('/img/loader.gif')" data-src="/img/green/green-bg.jpg">
+					<li class="green-payment-item background-lazy" style="background-image: url('/img/logo.svg')" data-src="/img/green/green-bg.jpg">
 						<strong><?= BaseController::getMessage('550') ?></strong>
 					</li>
 					<li class="green-payment-img">

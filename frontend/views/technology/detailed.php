@@ -76,7 +76,7 @@ $seo_date = date('Y-m-d', $datetime);
                     <?php foreach ($other_articles as $item): ?>
 						<div class="blog__list-item">
 							<div class="image">
-								<img oncontextmenu="return false" src="/img/loader.gif" data-src="/images/<?= $item->images->imagePreview ?>" alt="<?= $item->header ?>">
+								<img oncontextmenu="return false" src="/img/logo.svg" data-src="/images/<?= $item->images->imagePreview ?>" alt="<?= $item->header ?>">
 							</div>
 							<div class="date"><?= $item->date ?></div>
 							<div class="title">
