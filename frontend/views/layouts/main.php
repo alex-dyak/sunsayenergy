@@ -75,9 +75,9 @@ $contacts = \backend\models\Contact::getContact();
         window.addEventListener('load', function () {document.querySelector(".preloader").style = "display:none;";});
 	</script>
 
-<!--	<link rel="preload" href="/fonts/prompt/prompt-black.woff2" as="font" type="font/woff2" crossorigin>-->
+	<link rel="preload" href="/fonts/prompt/prompt-black.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="/fonts/Montserrat/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<!--	<link rel="preload" href="/fonts/Montserrat/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>-->
+	<link rel="preload" href="/fonts/Montserrat/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="/fonts/Montserrat/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="/fonts/Montserrat/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="/fonts/Bebas/BebasNeueCyrillic.woff2" as="font" type="font/woff2" crossorigin>
