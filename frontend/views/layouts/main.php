@@ -75,9 +75,9 @@ $contacts = \backend\models\Contact::getContact();
         window.addEventListener('load', function () {document.querySelector(".preloader").style = "display:none;";});
 	</script>
 
-	<link rel="preload" href="/fonts/prompt/prompt-black.woff2" as="font" type="font/woff2" crossorigin>
+<!--	<link rel="preload" href="/fonts/prompt/prompt-black.woff2" as="font" type="font/woff2" crossorigin>-->
 	<link rel="preload" href="/fonts/Montserrat/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="/fonts/Montserrat/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+<!--	<link rel="preload" href="/fonts/Montserrat/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>-->
 	<link rel="preload" href="/fonts/Montserrat/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="/fonts/Montserrat/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="/fonts/Bebas/BebasNeueCyrillic.woff2" as="font" type="font/woff2" crossorigin>
@@ -469,14 +469,14 @@ $contacts = \backend\models\Contact::getContact();
 					<ul class="quiz-bonus-list">
 						<li>
 							<div class="img-wrap">
-								<img src="/img/quiz/dron.svg" width="65" alt="<?= BaseController::getMessage('614') ?>">
+								<img src="/img/quiz/dron.svg" width="65" loading="lazy" alt="<?= BaseController::getMessage('614') ?>">
 							</div>
 							<span><?= BaseController::getMessage('614') ?></span>
 
 						</li>
 						<li>
 							<div class="img-wrap">
-								<img src="/img/quiz/desk.svg" width="38" alt="<?= BaseController::getMessage('615') ?>">
+								<img src="/img/quiz/desk.svg" width="38" loading="lazy" alt="<?= BaseController::getMessage('615') ?>">
 							</div>
 							<span><?= BaseController::getMessage('615') ?></span>
 
@@ -540,14 +540,14 @@ $contacts = \backend\models\Contact::getContact();
 				<ul class="quiz-bonus-list">
 					<li>
 						<div class="img-wrap">
-							<img src="/img/quiz/dron.svg" width="65" alt="<?= BaseController::getMessage('614') ?>">
+							<img src="/img/quiz/dron.svg" width="65" loading="lazy" alt="<?= BaseController::getMessage('614') ?>">
 						</div>
 						<span><?= BaseController::getMessage('614') ?></span>
 
 					</li>
 					<li>
 						<div class="img-wrap">
-							<img src="/img/quiz/desk.svg" width="38" alt="<?= BaseController::getMessage('615') ?>">
+							<img src="/img/quiz/desk.svg" width="38" loading="lazy" alt="<?= BaseController::getMessage('615') ?>">
 						</div>
 						<span><?= BaseController::getMessage('615') ?></span>
 
@@ -572,13 +572,13 @@ $contacts = \backend\models\Contact::getContact();
 			<div class="quiz-step quiz-final-screen">
 				<div class="quiz-final-content">
 					<div class="quiz-final-img">
-						<img src="/img/quiz/check-round.svg" width="150px" alt="final step">
+						<img src="/img/quiz/check-round.svg" width="150px" loading="lazy" alt="final step">
 					</div>
 					<strong class="quiz-title"><?= BaseController::getMessage('641') ?></strong>
 					<span class="quiz-subtitle"><?= BaseController::getMessage('642') ?></span>
 					<div class="quiz-consult-info">
 						<div class="quiz-consult-img">
-							<img src="/img/quiz/consult.jpg"  alt="<?= BaseController::getMessage('643') ?>">
+							<img src="/img/quiz/consult.jpg" loading="lazy" alt="<?= BaseController::getMessage('643') ?>">
 						</div>
 						<strong class="quiz-consult-name"><?= BaseController::getMessage('643') ?></strong>
 						<p><?= BaseController::getMessage('644') ?></p>

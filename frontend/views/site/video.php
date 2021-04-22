@@ -54,7 +54,7 @@ $this->params['breadcrumbs'][] = [
                                 <div class="video-col">
                                     <div class="embed-responsive">
                                         <a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank" rel="nofollow">
-                                            <img oncontextmenu="return false" src="/img/loader.gif" data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
+                                            <img oncontextmenu="return false" src="/img/logo.svg" data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
                                         </a>
                                     </div>
                                     <strong class="video-title"><?= $video_name ?></strong>
@@ -85,7 +85,7 @@ $this->params['breadcrumbs'][] = [
 									<div class="video-col">
 										<div class="embed-responsive">
                                             <a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank" rel="nofollow">
-                                                <img oncontextmenu="return false" src="/img/loader.gif" data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
+                                                <img oncontextmenu="return false" src="/img/logo.svg" data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
                                             </a>
 										</div>
 										<strong class="video-title"><?= $video_name ?></strong>
@@ -117,7 +117,7 @@ $this->params['breadcrumbs'][] = [
 									<div class="video-col">
 										<div class="embed-responsive">
                                             <a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank" rel="nofollow">
-                                                <img oncontextmenu="return false" src="/img/loader.gif" data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
+                                                <img oncontextmenu="return false" src="/img/logo.svg" data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
                                             </a>
 										</div>
 										<strong class="video-title"><?= $video_name ?></strong>
@@ -148,7 +148,7 @@ $this->params['breadcrumbs'][] = [
 									<div class="video-col">
 										<div class="embed-responsive">
                                             <a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank" rel="nofollow">
-                                                <img oncontextmenu="return false" src="/img/loader.gif" data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
+                                                <img oncontextmenu="return false" src="/img/logo.svg" data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg">
                                             </a>
 										</div>
 										<strong class="video-title"><?= $video_name ?></strong>
