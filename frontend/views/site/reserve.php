@@ -62,36 +62,36 @@ $this->params['breadcrumbs'][] = [
     </section>
     <!-- end info -->
     <!-- start miscount -->
-    <section class="service-miscount miscount-icon">
+    <!--<section class="service-miscount miscount-icon">
 		<div class="container">
-			<h2 class="line-title"><?= BaseController::getMessage('116') ?></h2>
+			<h2 class="line-title"><?/*= BaseController::getMessage('116') */?></h2>
 			<div class="service-miscount__content">
 				<div class="service-miscount__content-calculation">
-					<div class="description"><?= BaseController::getMessage('121') ?></div>
+					<div class="description"><?/*= BaseController::getMessage('121') */?></div>
 					<div class="calculation-form">
 						<div class="form-group">
-							<label for="houseEnergy"><?= BaseController::getMessage('122') ?>
+							<label for="houseEnergy"><?/*= BaseController::getMessage('122') */?>
 								<div>
 									<input class="js-range-slider" id="reserve-houseEnergy" type="text" name="houseEnergy" data-min="0" data-max="5000" data-step="100" data-hide-min-max="true" data-from="2000" data-thumbwidth="20">
 								</div>
 							</label>
 						</div>
 						<div class="form-group">
-							<label for="timeReserv"><?= BaseController::getMessage('124') ?>
+							<label for="timeReserv"><?/*= BaseController::getMessage('124') */?>
 								<div>
 									<input class="js-range-slider" id="reserve-timeReserv" type="text" name="timeReserv" data-min="1" data-max="12" data-step="1" data-hide-min-max="true" data-from="2" data-thumbwidth="20">
 								</div>
 							</label>
 						</div>
 						<div class="form-group">
-							<label for="powerSes"><?= BaseController::getMessage('125') ?>
+							<label for="powerSes"><?/*= BaseController::getMessage('125') */?>
 								<div>
 									<input class="js-range-slider" id="reserve-powerSes" type="text" name="powerSes" data-min="5" data-max="35" data-step="2.5" data-hide-min-max="true" data-from="10" data-thumbwidth="20">
 								</div>
 							</label>
 						</div>
 						<div class="form-group">
-							<label for="powerReserv"><?= BaseController::getMessage('127') ?>
+							<label for="powerReserv"><?/*= BaseController::getMessage('127') */?>
 								<div>
 									<input class="js-range-slider" id="reserve-powerReserv" type="text" name="powerReserv" data-min="3" data-max="15" data-hide-min-max="true" data-values="3,5,8,10,15" data-thumbwidth="20">
 								</div>
@@ -99,14 +99,14 @@ $this->params['breadcrumbs'][] = [
 						</div>
 					</div>
 					<div class="result">
-                        <?= BaseController::getMessage('129') ?> <span><span class="result-value"></span></span>
+                        <?/*= BaseController::getMessage('129') */?> <span><span class="result-value"></span></span>
 					</div>
 					<div class="income">
-                        <?= BaseController::getMessage('137') ?><span class="income-value"></span> <?= BaseController::getMessage('144') ?>
+                        <?/*= BaseController::getMessage('137') */?><span class="income-value"></span> <?/*= BaseController::getMessage('144') */?>
 					</div>
 				</div>
 				<div class="service-miscount__content-icons">
-					<strong class="service-miscount__content-icons__title"><?= BaseController::getMessage('146') ?></strong>
+					<strong class="service-miscount__content-icons__title"><?/*= BaseController::getMessage('146') */?></strong>
 					<div class="service-miscount__content-icons__list">
 						<div class="service-miscount__content-icons__list-item" data-icon="1">
 							<i class="icon-1"></i>
@@ -154,7 +154,7 @@ $this->params['breadcrumbs'][] = [
 				</div>
 			</div>
 		</div>
-    </section>
+    </section>-->
     <!-- end miscount -->
 		<!-- start banner-->
         <?= $this->render('../section/_service-banner.php'); ?>
@@ -333,10 +333,10 @@ $this->params['breadcrumbs'][] = [
 </main>
 
 <?php
-$this->registerJsFile('/js/lib/ion.rangeSlider.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
+/*$this->registerJsFile('/js/lib/ion.rangeSlider.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
 $this->registerJsFile('/js/lib/Chart.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
 $this->registerJsFile('/js/calc/reserve.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
-$this->registerCssFile('/style/lib/ion.rangeSlider.css', ['position' => \yii\web\View::POS_END]);
+$this->registerCssFile('/style/lib/ion.rangeSlider.css', ['position' => \yii\web\View::POS_END]);*/
 ?>
 
 <script type="application/ld+json">

@@ -62,24 +62,24 @@ $this->params['breadcrumbs'][] = [
     </section>
     <!-- end info -->
     <!-- start miscount -->
-    <section class="service-miscount">
+<!--    <section class="service-miscount">
 		<div class="container">
-			<h2 class="line-title"><?= BaseController::getMessage('116') ?></h2>
+			<h2 class="line-title"><?/*= BaseController::getMessage('116') */?></h2>
 			<div class="service-miscount__content">
 				<div class="service-miscount__content-calculation">
 					<div class="description">
-						<p><?= BaseController::getMessage('233') ?></p>
+						<p><?/*= BaseController::getMessage('233') */?></p>
 					</div>
 					<div class="calculation-form">
 						<div class="form-group">
-							<label for="houseEnergy"><?= BaseController::getMessage('239') ?>
+							<label for="houseEnergy"><?/*= BaseController::getMessage('239') */?>
 								<div>
 									<input class="js-range-slider" id="comfort-houseEnergy" type="text" name="houseEnergy" data-min="150" data-max="1000" data-step="50" data-hide-min-max="true" data-from="400" data-thumbwidth="20">
 								</div>
 							</label>
 						</div>
 						<div class="form-group">
-							<label for="days"><?= BaseController::getMessage('242') ?>
+							<label for="days"><?/*= BaseController::getMessage('242') */?>
 								<div>
 									<input class="js-range-slider" id="comfort-days" type="text" name="days" data-min="1" data-max="10" data-step="1" data-hide-min-max="true" data-from="3" data-thumbwidth="20">
 								</div>
@@ -87,22 +87,22 @@ $this->params['breadcrumbs'][] = [
 						</div>
 					</div>
                     <div class="result">
-                        <p><?= BaseController::getMessage('248') ?> <span><span class="result-value"></span></span></p>
+                        <p><?/*= BaseController::getMessage('248') */?> <span><span class="result-value"></span></span></p>
                     </div>
                     <div class="income">
-                        <p><?= BaseController::getMessage('251') ?> <b class="power-value"></b> <?= BaseController::getMessage('376') ?></p>
+                        <p><?/*= BaseController::getMessage('251') */?> <b class="power-value"></b> <?/*= BaseController::getMessage('376') */?></p>
                     </div>
 				</div>
 				<div class="service-miscount__content-graphic">
 					<div class="service-miscount__content-graphic__title">
-						<strong><?= BaseController::getMessage('255') ?></strong>
-						<p><?= BaseController::getMessage('256') ?></p>
+						<strong><?/*= BaseController::getMessage('255') */?></strong>
+						<p><?/*= BaseController::getMessage('256') */?></p>
 					</div>
 					<canvas id="comfort-graphic"></canvas>
 				</div>
 			</div>
 		</div>
-    </section>
+    </section>-->
     <!-- end miscount -->
 
     <!-- start banner-->
@@ -291,10 +291,10 @@ $this->params['breadcrumbs'][] = [
         var den = '<?= " ".BaseController::getMessage('383') ?>';
     </script>
 <?php
-$this->registerJsFile('/js/lib/ion.rangeSlider.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
+/*$this->registerJsFile('/js/lib/ion.rangeSlider.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
 $this->registerJsFile('/js/lib/Chart.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
 $this->registerJsFile('/js/calc/comfort.min.js', ['position' => \yii\web\View::POS_END, 'async'=>false, 'defer'=>true]);
-$this->registerCssFile('/style/lib/ion.rangeSlider.css', ['position' => \yii\web\View::POS_END]);
+$this->registerCssFile('/style/lib/ion.rangeSlider.css', ['position' => \yii\web\View::POS_END]);*/
 ?>
 
 <script type="application/ld+json">
