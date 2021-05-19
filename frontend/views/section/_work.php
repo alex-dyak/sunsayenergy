@@ -12,7 +12,7 @@
                 <ul class="work-list">
                     <li><?= BaseController::getMessage('448') ?></li>
                     <li><?= BaseController::getMessage('449') ?></li>
-                    <li><?= BaseController::getMessage('450') ?>.</li>
+                    <li><?= BaseController::getMessage('450') ?></li>
                 </ul>
                 <strong class="subtitle"><?= BaseController::getMessage('451') ?></strong>
                 <ul class="work-list">
