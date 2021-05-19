@@ -143,9 +143,9 @@ $contacts = \backend\models\Contact::getContact();
                         <?= BaseController::getMessage('8') ?>
 					</a>
 					<ul class="header-contact-list">
-						<li><a itemprop="telephone" class="binct-phone-number-1" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
-						<li><a itemprop="telephone" class="binct-phone-number-3" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
-						<li><a itemprop="telephone" class="binct-phone-number-2" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
+						<li><a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
+						<li><a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
+						<li><a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
 						<li class="address-list">
 							<i class="icon-envelope"></i>
 							<a itemprop="email" href="mailto:<?= $contacts->email ?>">
@@ -289,13 +289,6 @@ $contacts = \backend\models\Contact::getContact();
             var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 
         })(window,document,'https://cdn.bitrix24.ua/b9504081/crm/site_button/loader_1_2svhj8.js');
-
-        (function(d, w, s) {
-            var widgetHash = 'sx43cntzz2qzbf66eje1', ctw = d.createElement(s); ctw.type = 'text/javascript'; ctw.async = true;
-            ctw.src = '//widgets.binotel.com/calltracking/widgets/'+ widgetHash +'.js';
-            var sn = d.getElementsByTagName(s)[0]; sn.parentNode.insertBefore(ctw, sn);
-        })(document, window, 'script');
-
     }, 2000);
 </script>
 
