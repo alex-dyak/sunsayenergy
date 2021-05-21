@@ -93,6 +93,17 @@ class SiteController extends BaseController
 		return $this->render('video',compact('videos'));
 	}
 
+    /**
+     * Display New Landing.
+     */
+    public function actionLanding()
+    {
+
+        $message = 'Hi, Ann :)';
+
+        return $this->render('landing',compact('message'));
+    }
+
     public function actionGreen()
     {
         $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
