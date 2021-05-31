@@ -24,31 +24,69 @@ $contacts = \backend\models\Contact::getContact();
 		</div>
  <!-- start info -->
    
-    <section class="dohod-zelyonyi-tarif-section" style="background-image: url('/img/dohod-zelyonyi-tarif/dohod-zelyonyi-bg.jpg')">
+    <section class="dohod-zelyonyi-section" style="background-image: url('/img/dohod-zelyonyi-tarif/dohod-zelyonyi-bg.jpg')">
+    <span class="mobile-title-bly"></span>
         <div class="container">
             <div class="dohod-zelyonyi-wrapper">
-                <div class="dohod-zelyonyi-inner">
-                    <h1 class="dohod-zelyonyi-title">
-                    СОЛНЕЧНЫЕ ЭЛЕКТРОСТАНЦИИ ПОД «ЗЕЛЕНЫЙ» ТАРИФ С ПРИБЫЛЬЮ ДО $6 500
-                    </h1>
-                    <p class="dohod-zelyonyi-advantages">
-                        Приносят стабильный доход от продажи сгенерированной электроэнергии
-                    </p>
-                    <p class="dohod-zelyonyi-advantages">
-                        Возвращают инвестиции от 4 лет, а дальше стабильно зарабатывают
-                    </p>
-                    <p class="dohod-zelyonyi-advantages">
-                        Работают 25 лет, поддерживаются SUNSAY Energy в течение всего срока
-                    </p>
 
+                <div class="dohod-zelyonyi-inner">
+                    <div class="title">
+                        <h1>СОЛНЕЧНЫЕ ЭЛЕКТРОСТАНЦИИ ПОД «ЗЕЛЕНЫЙ» ТАРИФ С ПРИБЫЛЬЮ ДО $6 500</h1>
+                    </div>                    
+                    <ul class="dohod-zelyonyi-list">
+                        <li>
+                            <p class="dohod-zelyonyi-advantages">Приносят стабильный доход от продажи сгенерированной электроэнергии</p>
+                        </li>
+                        <li>
+                            <p class="dohod-zelyonyi-advantages">Возвращают инвестиции от 4 лет, а дальше стабильно зарабатывают</p>
+                        </li>
+                        <li>
+                            <p class="dohod-zelyonyi-advantages">Работают 25 лет, поддерживаются SUNSAY Energy в течение всего срока</p>
+                        </li>
+				    </ul>
                 </div>
+                
                 <div class="dohod-zelyonyi-form">
 
                 </div>
+
             </div>
         </div>
 
     </section>
+    
+    <section class="dohod-private-hourse">
+        <div class="container">
+            <div class="dohod-private-wrapp">
+                <div class="privat-hourse-img">
+                    <img class="hourse-img" src="img/dohod-zelyonyi-tarif/hourse-icon.png" alt="hourse" >
+                </div> 
+                <div class="private-hourse-inner">
+                    <strong class="title-h2">Как это работает в частных домах</strong>
+                    <ul class="private-hourse-list">
+                        <li>
+                            <p class="private-hourse-text">
+                                Сетевая солнечная электростанция производит электроэнергию. Одна часть покрывает нужды вашего домохозяйства, а другая идет в сеть для для продажи под «зеленый» тариф
+                            </p>
+                        </li>
+                        <li>
+                            <p class="private-hourse-text">
+                                Государство покупает у вас электроэнергию по стабильному тарифу
+                            </p>
+                        </li>
+                        <li>
+                            <p class="private-hourse-text">
+                                Деньги ежемесячно приходят на ваш счет, а вложенные средства  работают на окупаемость станции
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+
+
 
    
 

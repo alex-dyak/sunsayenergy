@@ -582,7 +582,7 @@ a.button:hover{color:#fff}
 a{-webkit-transition:color .3s ease;-o-transition:color .3s ease;transition:color .3s ease}
 a:not([class]):hover{color:#ffd100}
 .header{position:relative;color:#393939;margin-bottom:20px}
-.header.transparent{z-index:9}
+.header.transparent{z-index:98}
 @media screen and (min-width:1280px){
 .header{position:fixed;top:0;right:0;left:0;z-index:99}
 }
@@ -1810,7 +1810,7 @@ a:not([class]):hover{color:#ffd100}
 .stage-img:after{content:'';position:absolute;top:calc(100% + 15px);left:50%;transform:translateX(-50%);width:30px;height:30px;background-image:url(../img/commercial-station/yellow-arrow.svg);background-size:contain;background-position:50% 50%;background-repeat:no-repeat}
 .stage-img img{max-width:100%}
 .stage-info{width:calc(100% - 115px);font-weight:500;font-size:13px;line-height:1.2}
-.stage-info strong{display:block;font-size:15x;margin-bottom:8px}
+.stage-info strong{display:block;font-size:15px;margin-bottom:8px}
 .stage-info p{margin-bottom:0}
 .stage-info b{position:relative;display:inline-block;vertical-align:middle;padding:0 6px}
 .stage-info b:after{content:'';position:absolute;z-index:-1;top:8px;height:10px;right:0;left:0;background:#ffd100}
@@ -1923,28 +1923,137 @@ a:not([class]):hover{color:#ffd100}
 @media screen and (min-width:1440px){
 .logo-row ul li{width:14%}
 }
-@media (min-width:1280px){
 
+/* start dohod-zelyonyi-tarif */
 
-.dohod-zelyonyi-tarif-section {
-    position:relative;
-    display:flex;
-    align-items:center;
+.dohod-zelyonyi-section {
     background-size:cover;
     background-position:50% 50%;
     background-repeat:no-repeat;
-    margin-top:-123px;
-    padding:130px 0 100px;
     min-height:100vh;
-    overflow:hidden;    }
+    margin-top:-170px;
+    /* background-image: url('../img/dohod-zelyonyi-tarif/dohod-zelyonyi-mobile-bg.jpg'); */
+    /* padding:180px 0 70px; */
+    overflow:hidden;
+    position: relative;
+    margin-bottom: 85px;
 }
+
+/* .dohod-zelyonyi-section:after,
+.dohod-zelyonyi-section:before {
+    content:'';
+    position:absolute;
+    display:block;
+    z-index:1}
+.dohod-zelyonyi-section:before {
+    top:0;
+    left:0;
+    right:0;
+    bottom:30%;
+    background:linear-gradient(173.38deg,#39B4E0 32.46%,rgba(255,255,255,0) 90.03%)}
+.dohod-zelyonyi-section:after {
+    top:50%;
+    left:0;
+    right:0;
+    bottom:0;
+    background:linear-gradient(180deg,rgba(183,211,247,0) 20%,#08090D 80.99%)} */
+
+
 
 .dohod-zelyonyi-wrapper {
-    width: 500px;
-    height: 600px;
-    background-color: green;
+    margin-top: 129px;
 }
 
+.dohod-zelyonyi-inner h1 {
+    margin:0 0 20px;
+    font-size:36px;
+    line-height:1;
+    text-transform:uppercase;
+    color: #fff;
+}
+
+@media screen and (max-width:767px){
+    .service-section h1 { 
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .dohod-zelyonyi-wrapper {
+        padding-top: 180px;
+    }
+}
+
+@media screen and (min-width:1024px){
+.dohod-zelyonyi-inner h1 {
+    font-size:60px;
+}
+}
+@media screen and (min-width:1280px){
+    .dohod-zelyonyi-inner {
+        max-width: 675px;
+    }
+    .dohod-zelyonyi-inner h1 {
+        font-size:70px;
+        margin-bottom:38px;
+    }
+
+}
+@media screen and (min-width:1440px){
+    .dohod-zelyonyi-inner h1{font-size:80px;}
+    .dohod-zelyonyi-section{ margin-top: -218px;}
+
+}
+
+@media screen and (min-width:1280px){
+
+.dohod-private-wrapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.privat-hourse-img {
+    padding-right: 37px;
+    width: 100%;
+    max-width: 100%;
+    height: auto; 
+}
+
+.private-hourse-inner .title-h2 {
+    font-family: "Bebas Neue Cyrillic",sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 43px;
+    color: #000;
+}
+
+.private-hourse-list {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.private-hourse-list li {
+    list-style-type: none;    
+}
+
+.private-hourse-text {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}    
+
+}
+
+
+
+
+/* end dohod-zelyonyi-tarif */
 
 .breadcrumbs-wrap{position:relative;z-index:3}
 .green-hero-section{position:relative;background:#b7d3f7;min-height:100vh;margin-top:-170px;padding:180px 0 80px;overflow:hidden}
@@ -2377,8 +2486,8 @@ a:not([class]):hover{color:#ffd100}
 .quiz-user-info{padding-top:10px}
 .quiz-user-info .input-wrap{position:relative;margin-bottom:20px}
 .quiz-user-info .input-wrap-name:after,.quiz-user-info .input-wrap-name:before{content:"";display:block;position:absolute;top:0;bottom:0;width:25px;background-size:contain;background-position:50% 50%;background-repeat:no-repeat}
-.quiz-user-info .input-wrap-name:before{left:13px;background-image:url(/img/quiz/user.svg)}
-.quiz-user-info .input-wrap-name:after{background-image:url(/img/quiz/user-black.svg);right:13px;width:26px}
+.quiz-user-info .input-wrap-name:before{left:13px;background-image:url('/img/quiz/user.svg')}
+.quiz-user-info .input-wrap-name:after{background-image:url('/img/quiz/user-black.svg');right:13px;width:26px}
 .quiz-user-info .input-wrap-phone:after{content:"+380";display:flex;align-items:center;justify-content:center;position:absolute;top:0;bottom:0;width:45px;font-size:14px;border-right:1px solid #c4c4c4}
 .quiz-user-info input{width:100%;font-size:12px;line-height:1;padding:12px 55px;border:1px solid #c4c4c4;border-radius:5px}
 .quiz-user-info input:focus{border-color:#ffd100;outline:0}
@@ -2386,7 +2495,7 @@ a:not([class]):hover{color:#ffd100}
 .quiz-final-screen{display:flex;flex-direction:column;justify-content:center;min-height:90vh;max-width:520px;padding:40px 30px;margin:0 auto}
 .quiz-final-img{margin-bottom:30px}
 .quiz-final-screen .quiz-subtitle{margin-bottom:30px}
-.quiz-consult-img{display:flex;align-items:center;justify-content:center;margin:0 auto 20px;width:150px;height:150px </style >;border-radius:50%;overflow:hidden}
+.quiz-consult-img{display:flex;align-items:center;justify-content:center;margin:0 auto 20px;width:150px;height:150px;border-radius:50%;overflow:hidden}
 .quiz-consult-img img{width:100%}
 .quiz-consult-name{font-size:16px;font-weight:700;text-transform:uppercase}
 @media screen and (min-width:420px){
