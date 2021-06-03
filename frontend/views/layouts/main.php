@@ -717,6 +717,11 @@ $contacts = \backend\models\Contact::getContact();
     });
   }
 </script>
+<script type="text/javascript">
+    (function (d,s,u,e,p) {
+        p=d.getElementsByTagName(s)[0],e=d.createElement(s),e.async=1,e.src=u,p.parentNode.insertBefore(e, p);
+    })(document, 'script', 'https://script.ringostat.com/v4/67/67c2072d18e2f557d896ab240102404ea1ccf69b.js');
+</script>
 
 <script>deferimg('img[data-src],picture,video,audio', 100, 'lazied', function (img) {
     img.onload = function (e) {
