@@ -291,6 +291,11 @@ $contacts = \backend\models\Contact::getContact();
         })(window,document,'https://cdn.bitrix24.ua/b9504081/crm/site_button/loader_1_2svhj8.js');
     }, 2000);
 </script>
+<script type="text/javascript">
+    (function (d,s,u,e,p) {
+        p=d.getElementsByTagName(s)[0],e=d.createElement(s),e.async=1,e.src=u,p.parentNode.insertBefore(e, p);
+    })(document, 'script', 'https://script.ringostat.com/v4/67/67c2072d18e2f557d896ab240102404ea1ccf69b.js');
+</script>
 
 <script type="application/ld+json">
     {
