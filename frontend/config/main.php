@@ -79,7 +79,7 @@ return [
                 '/about' => 'site/about',
                 '/video' => 'site/video',
                 '/commercial_stations' => 'site/commercial',
-                '/landing_new' => 'site/landing',
+                '/dohod-6000-zelyonyi-tarif' => 'site/landing',
                 '/success' => 'site/success',
                 '/project' => 'project/project',
                 '/project/<symbol:[\w_-]+>' => 'project/detailed',
