@@ -175,62 +175,83 @@ $contacts = \backend\models\Contact::getContact();
         </div>
     </section>
 
-    <section class="service-miscount">
+    <section class="service-miscount dohod-service-miscount">
 		<div class="container">
 			<h2 class="line-title">РАССЧИТАТЬ ДОХОД ОТ СЭС</h2>
             <strong class="integrated-subtitle">Этот калькулятор показывает стоимость всего проекта солнечной электростанции, его окупаемость и ваш потенциальный заработок </strong> 
 			<div class="service-miscount__content">
-
 				<div class="uCalc_331490"></div>
 				<script> var widgetOptions331490 = { bg_color: "transparent" }; (function() { var a = document.createElement("script"), h = "head"; a.async = true; a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=331490&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })();</script>
-				<!--<div class="service-miscount__content-calculation">
-					<div class="description"><?/*= BaseController::getMessage('257') */?></div>
-					<div class="calculation-form">
-						<div class="form-group">
-							<label for="house"><?/*= BaseController::getMessage('258') */?>
-								<div>
-									<input class="js-range-slider" id="income-house" type="text" name="house" data-min="0" data-max="5000"
-										   data-step="100" data-hide-min-max="true" data-from="200" data-thumbwidth="20">
-								</div>
-							</label>
-						</div>
-						<div class="form-group">
-							<label for="power"><?/*= BaseController::getMessage('260') */?>
-								<div>
-									<input class="js-range-slider" id="income-power" type="text" name="power" data-min="5" data-max="35"
-										   data-step="2.5" data-hide-min-max="true" data-from="30" data-thumbwidth="20">
-								</div>
-							</label>
-						</div>
-					</div>
-					<div class="result">
-                        <b>
-							<?/*= BaseController::getMessage('261') */?>
-							<span class="result-value"></span>
-						</b>
-					</div>
-					<div class="income">
-						<span><?/*= BaseController::getMessage('262') */?></span>
-						<span class="income-value"></span>
-						<span><?/*= BaseController::getMessage('264') */?></span>
-					</div>
-				</div>
-				<div class="service-miscount__content-graphic">
-					<div class="service-miscount__content-graphic__title">
-						<strong><?/*= BaseController::getMessage('265') */?></strong>
-						<p><?/*= BaseController::getMessage('267') */?></p>
-					</div>
-					<canvas id="income-graphic"></canvas>
-				</div>-->
 			</div>
 		</div>
     </section>
 
-    <section class="energy-for-veryone">
+    <section class="energy-for-everyone">
         <div class="container">
+            <div class="energy-wrapper">
+                <div class="energy-title">
+                    <strong class="title-h2 energy-h2">Мы хотим предоставить доступ к чистой «зеленой» энергии всем желающим, у кого есть свой дом</strong>
+                    <div class="energy-name-inner">
+                        <strong class="energy-name-title">
+                            Дмитрий Зинкевич 
+                        </strong>
+                        <p class="energy-position">
+                            СЕО «SUNSAY Energy» 
+                        </p>
+                    </div>
+                </div>
+                <div class="energy-img">
+                    <img class="energy-seo-sunsay" src="img/dohod-zelyonyi-tarif/ceo_1.png" alt="Dmitrij Zinkevich">
+                </div>
+                <div class="dohod-zelyonyi-form energy-form">
+                    <div class="zelyonyi-form-bg energy-bg">
+                        <strong class="dohod-zelyonyi-subtitle">Хотите максимально выгодно и эффективно использовать энергию солнца — обращайтесь к экспертам SUNSAY Energy</strong>
+                        <strong class="integrated-subtitle energy-subtitle">Закажите бесплатный замер крыши нашим инженерам </strong> 
+                        <form class="connect__content-question" id="question_form" data-post-url="index.html">
+                            <div class="message">
+                                <label for="fullname" class="hidden"><?= BaseController::getMessage('366') ?></label>
+                                <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
+                                <label for="phone" class="hidden">Телефон</label>
+                                <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+                                   
+                                <div class="connect__content-button zelyonyi-button">
+                                    <button class="btn connect-btn btn-primary zelyonyi-btn" id="submit_button">
+                                        <?= BaseController::getMessage('14') ?>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-compelete"><?= BaseController::getMessage('374') ?></div>
+                        </form>
+                    </div>
+                </div>
 
+            </div>
         </div>
     </section>
+
+    <!-- <section class="questions-form">
+        <div class="dohod-zelyonyi-form energy-form">
+            <div class="zelyonyi-form-bg energy-bg">
+                <strong class="dohod-zelyonyi-subtitle">Остались вопросы? </strong>
+                <strong class="integrated-subtitle energy-subtitle">Заполните форму и наши эксперты проконсультируют вас</strong> 
+                <form class="connect__content-question" id="question_form" data-post-url="index.html">
+                    <div class="message">
+                        <label for="fullname" class="hidden"><?= BaseController::getMessage('366') ?></label>
+                        <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
+                        <label for="phone" class="hidden">Телефон</label>
+                        <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+                           
+                        <div class="connect__content-button zelyonyi-button">
+                            <button class="btn connect-btn btn-primary zelyonyi-btn" id="submit_button">
+                                <?= BaseController::getMessage('14') ?>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-compelete"><?= BaseController::getMessage('374') ?></div>
+                </form>
+            </div>
+        </div>
+    </section> -->
 
 
 
