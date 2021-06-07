@@ -98,9 +98,7 @@ class SiteController extends BaseController
      */
     public function actionLanding()
     {
-
-        $message = 'Hi, Ann :)';
-
+        $this->layout = 'dohod-zelyonyi';
         return $this->render('landing',compact('message'));
     }
 

@@ -134,7 +134,7 @@ $contacts = \backend\models\Contact::getContact();
 	</div>
 </div>
 <?php $this->beginBody() ?>
-	<header class="header <?php if(Yii::$app->controller->route == 'project/project' || Yii::$app->controller->route == 'site/commercial' || Yii::$app->controller->route == 'site/green' || Yii::$app->controller->route == 'site/about' || Yii::$app->controller->route == 'project/detailed'  || Yii::$app->controller->route == 'site/landing'){ ?>transparent<?php } ?> " id="header">
+	<header class="header transparent header-color" id="header">
 		<div class="container">
 			<div class="header-wrap">
 				<div class="mobile-top-block">
