@@ -2374,7 +2374,136 @@ a.advantages-btn {
 .service-miscount .integrated-subtitle {
     text-align: center;
 }
+.dohod-service-miscount {
+    margin-bottom: 50px;
+}
 
+.energy-for-everyone {
+    background-color: #B9D5F5;
+    background-image: url('../img/dohod-zelyonyi-tarif/group-line.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: left;
+}
+.energy-h2{
+    padding-top: 40px;
+    text-align: left;
+}
+.energy-name-inner {
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+    max-width: 155px;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    margin-top: 190px;
+    margin-left: 168px;
+    z-index: 2;
+    position: relative;
+}
+.energy-name-title {
+    font-size: 13px;
+    line-height: 16px; 
+}
+.energy-position {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.energy-img {
+    margin-top: -245px;
+}
+
+.energy-form {
+    padding-bottom: 26px;
+    z-index: 1;
+    position: relative;
+    margin-top: -82px;
+    max-width: 90%;
+}
+.energy-bg {
+    background: #fff;
+}
+.energy-subtitle {
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width:768px){
+    .energy-wrapper {
+        display: flex;        
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .energy-name-inner {
+        margin-top: 230px;
+        margin-left: 168px;
+    }
+    .energy-h2 {
+        max-width: 100%;
+    }
+    .energy-img,
+    .energy-form {
+        max-width: 46%;
+    }
+    .energy-form {
+        margin-top: -268px;
+    }
+    .energy-img {
+        margin-top: -244px;
+    }
+}
+@media screen and (min-width:1024px){
+    .energy-for-everyone{
+        background-image: url('../img/dohod-zelyonyi-tarif/group_line_desktop.png');
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position: left;        
+    }
+    .energy-wrapper {  
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    .energy-title,
+    .energy-img,
+    .energy-form {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .energy-form {
+        max-width: 403px;
+        margin-top: 63px;
+    }
+    .energy-h2 {
+        max-width: 480px;
+        padding-top: 148px;
+    }
+    .energy-form {
+        margin-top: 63px;
+    }
+    .energy-img {
+        margin-top: 90px;
+        order: -1;
+    }
+    .energy-name-inner {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+.questions-form {
+    background-color: #B9D5F5;
+    background-image: url('../img/dohod-zelyonyi-tarif/group_line_desktop.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+}
+
+
+    
 
 
 /* end dohod-zelyonyi-tarif */

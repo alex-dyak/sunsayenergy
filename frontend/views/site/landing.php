@@ -197,13 +197,73 @@ $contacts = \backend\models\Contact::getContact();
         </div>
     </section>
 
-    <section class="energy-for-veryone">
+    <section class="energy-for-everyone">
         <div class="container">
+            <div class="energy-wrapper">
+                <div class="energy-title">
+                    <strong class="title-h2 energy-h2"><?= BaseController::getMessage('680') ?></strong>
+                    <div class="energy-name-inner">
+                        <strong class="energy-name-title">
+                            <?= BaseController::getMessage('583') ?>
+                        </strong>
+                        <p class="energy-position">
+                            СЕО «SUNSAY Energy» 
+                        </p>
+                    </div>
+                </div>
+                <div class="energy-img">
+                    <img class="energy-seo-sunsay" src="img/dohod-zelyonyi-tarif/ceo_1.png" alt="Dmitrij Zinkevich">
+                </div>
+                <div class="dohod-zelyonyi-form energy-form">
+                    <div class="zelyonyi-form-bg energy-bg">
+                        <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('681') ?></strong>
+                        <strong class="integrated-subtitle energy-subtitle"><?= BaseController::getMessage('682') ?></strong>
+                        <form class="connect__content-question" id="question_form" data-post-url="index.html">
+                            <div class="message">
+                                <label for="fullname" class="hidden"><?= BaseController::getMessage('366') ?></label>
+                                <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
+                                <label for="phone" class="hidden">Телефон</label>
+                                <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+                                   
+                                <div class="connect__content-button zelyonyi-button">
+                                    <button class="btn connect-btn btn-primary zelyonyi-btn" id="submit_button">
+                                        <?= BaseController::getMessage('14') ?>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-compelete"><?= BaseController::getMessage('374') ?></div>
+                        </form>
+                    </div>
+                </div>
 
+            </div>
         </div>
     </section>
 
-</main>
+    <!-- <section class="questions-form">
+        <div class="dohod-zelyonyi-form energy-form">
+            <div class="zelyonyi-form-bg energy-bg">
+                <strong class="dohod-zelyonyi-subtitle">Остались вопросы? </strong>
+                <strong class="integrated-subtitle energy-subtitle">Заполните форму и наши эксперты проконсультируют вас</strong> 
+                <form class="connect__content-question" id="question_form" data-post-url="index.html">
+                    <div class="message">
+                        <label for="fullname" class="hidden"><?= BaseController::getMessage('366') ?></label>
+                        <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
+                        <label for="phone" class="hidden">Телефон</label>
+                        <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+                           
+                        <div class="connect__content-button zelyonyi-button">
+                            <button class="btn connect-btn btn-primary zelyonyi-btn" id="submit_button">
+                                <?= BaseController::getMessage('14') ?>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-compelete"><?= BaseController::getMessage('374') ?></div>
+                </form>
+            </div>
+        </div>
+    </section> -->
+  </main>
 
 <script type="application/ld+json">
     {
