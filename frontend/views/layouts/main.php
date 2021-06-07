@@ -717,7 +717,29 @@ $contacts = \backend\models\Contact::getContact();
     });
   }
 </script>
-
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131310740-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-131310740-1', {'send_page_view': false});
+</script>
+<script>
+    function initRingostat(){
+        if (typeof(ga) !== 'undefined') {
+            ga('gtag_UA_131310740_1.require','ringostat');
+            gtag('event', 'page_view');
+            (function (d,s,u,e,p) {
+                p=d.getElementsByTagName(s)[0],e=d.createElement(s),e.async=1,e.src=u,p.parentNode.insertBefore(e, p);
+            })(document, 'script', 'https://script.ringostat.com/v4/67/67c2072d18e2f557d896ab240102404ea1ccf69b.js');
+        } else {
+            setTimeout(initRingostat,200);
+        }
+    }
+    initRingostat();
+</script>
 <script>deferimg('img[data-src],picture,video,audio', 100, 'lazied', function (img) {
     img.onload = function (e) {
         if ( img.className == 'check-slick lazied' ){
