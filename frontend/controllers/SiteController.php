@@ -99,7 +99,7 @@ class SiteController extends BaseController
     public function actionLanding()
     {
         $this->layout = 'dohod-zelyonyi';
-        return $this->render('landing',compact('message'));
+        return $this->render('landing');
     }
 
     public function actionGreen()
