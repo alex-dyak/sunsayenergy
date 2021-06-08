@@ -708,22 +708,7 @@ $contacts = \backend\models\Contact::getContact();
     });
   }
 </script>
-<!-- Ringostat -->
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-131310740-1', 'auto');
-    ga('require', 'ringostat');
-    ga('send', 'pageview');
-</script>
-<script type="text/javascript">
-    (function (d,s,u,e,p) {
-        p=d.getElementsByTagName(s)[0],e=d.createElement(s),e.async=1,e.src=u,p.parentNode.insertBefore(e, p);
-    })(document, 'script', 'https://script.ringostat.com/v4/67/67c2072d18e2f557d896ab240102404ea1ccf69b.js');
-</script>
-<!-- End Ringostat -->
+
 <script>deferimg('img[data-src],picture,video,audio', 100, 'lazied', function (img) {
     img.onload = function (e) {
         if ( img.className == 'check-slick lazied' ){
