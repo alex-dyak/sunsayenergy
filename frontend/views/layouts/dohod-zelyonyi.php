@@ -144,10 +144,10 @@ $contacts = \backend\models\Contact::getContact();
 							<i class="icon-close"></i>
                             <?= BaseController::getMessage('8') ?>
 						</a>
-						<ul class="header-contact-list">
-							<li><a itemprop="telephone" class="binct-phone-number-1" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
-							<li><a itemprop="telephone" class="binct-phone-number-3" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
-							<li><a itemprop="telephone" class="binct-phone-number-2" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
+						<ul class="header-contact-list white-color-list">
+							<li><a class="white-color-tell" itemprop="telephone" class="binct-phone-number-1" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
+							<li><a class="white-color-tell" itemprop="telephone" class="binct-phone-number-3" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
+							<li><a class="white-color-tell" itemprop="telephone" class="binct-phone-number-2" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
 							<li class="address-list">
 								<i class="icon-envelope"></i>
 								<a itemprop="email" href="mailto:<?= $contacts->email ?>">
@@ -210,7 +210,8 @@ $contacts = \backend\models\Contact::getContact();
 					<a href="<?= \yii\helpers\Url::to(['/']); ?>">
 						<img oncontextmenu="return false" class="logo-def" src="/img/logo.svg" width="184" alt="SUNSAY Energy">
 						<img oncontextmenu="return false" class="logo-white" src="/img/logo-navbar.svg" width="184" alt="SUNSAY Energy">
-						<span class="logo-text"><?= BaseController::getMessage('406') ?></span>
+						<img oncontextmenu="return false" class="logo-white-def" src="/img/dohod-zelyonyi-tarif/logo-white.svg" width="184" alt="SUNSAY Energy">
+						<span class="logo-text logo-text-white"><?= BaseController::getMessage('406') ?></span>
 					</a>
 				</strong>
 				<nav class="header-nav">
@@ -221,7 +222,7 @@ $contacts = \backend\models\Contact::getContact();
 					</strong>
 					<ul class="nav-list">
 						<li class="dropdown-wrapper">
-                  			<span><?= BaseController::getMessage('1') ?> <i class="icon-angle-down"></i></span>
+                  			<span class="white-color-menu"><?= BaseController::getMessage('1') ?> <i class="icon-angle-down"></i></span>
 							<ul class="dropdown header-drop-list">
 								<li class="<?= (Yii::$app->controller->route == 'site/income') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?>"><?= BaseController::getMessage('2') ?></a></li>
 								<li class="<?= (Yii::$app->controller->route == 'site/reserve') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"><?= BaseController::getMessage('3') ?></a></li>
@@ -232,31 +233,31 @@ $contacts = \backend\models\Contact::getContact();
 						</li>
 						<li class="subnav"><?= BaseController::getMessage('12') ?></li>
 						<li class="<?= (Yii::$app->controller->route == 'site/green') ? 'active' : ''; ?>">
-							<a href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><?= BaseController::getMessage('5') ?></a>
+							<a class="white-color-a" href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><?= BaseController::getMessage('5') ?></a>
 						</li>
 						<li class="<?= (Yii::$app->controller->route == 'technology/technology') ? 'active' : ''; ?>">
-							<a href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('6') ?></a>
+							<a class="white-color-a" href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('6') ?></a>
 						</li>
                         <li class="<?= (Yii::$app->controller->route == 'site/video') ? 'active' : ''; ?>">
-                            <a href="<?= \yii\helpers\Url::to(['/video']); ?>"><?= BaseController::getMessage('412') ?></a>
+                            <a class="white-color-a" href="<?= \yii\helpers\Url::to(['/video']); ?>"><?= BaseController::getMessage('412') ?></a>
                         </li>
 						<li class="subnav"><?= BaseController::getMessage('11') ?></li>
 						<li class="<?= (Yii::$app->controller->route == 'project/project') ? 'active' : ''; ?>">
-							<a href="<?= \yii\helpers\Url::to(['/project']); ?>"><?= BaseController::getMessage('320') ?></a>
+							<a class="white-color-a" href="<?= \yii\helpers\Url::to(['/project']); ?>"><?= BaseController::getMessage('320') ?></a>
 						</li>
 						<li class="<?= (Yii::$app->controller->route == 'site/about') ? 'active' : ''; ?>">
-							<a href="<?= \yii\helpers\Url::to(['/about']); ?>"><?= BaseController::getMessage('7') ?></a>
+							<a class="white-color-a" href="<?= \yii\helpers\Url::to(['/about']); ?>"><?= BaseController::getMessage('7') ?></a>
 						</li>
 						<li class="to_contact">
-							<a href="#contact"><?= BaseController::getMessage('8') ?></a>
+							<a class="white-color-a" href="#contact"><?= BaseController::getMessage('8') ?></a>
 						</li>
 					</ul>
 					<div class="btn-wrap">
 						<a class="button header-btn" href="#" id="order-form"><?= BaseController::getMessage('9') ?></a>
 					</div>
 					<ul class="language-switch">
-						<li><a <?= (Yii::$app->language=='ua')?'class="active"':''   ?>  href="/<?= \frontend\components\UrlTrimLang::widget() ?>">UA</a></li>
-						<li><a <?= (Yii::$app->language=='ru')?'class="active"':''   ?>  href="/ru/<?= \frontend\components\UrlTrimLang::widget() ?>">RU</a></li>
+						<li><a <?= (Yii::$app->language=='ua')?'class="active"':''   ?> class="language-switch-white" href="/<?= \frontend\components\UrlTrimLang::widget() ?>">UA</a></li>
+						<li><a <?= (Yii::$app->language=='ru')?'class="active"':''   ?> class="language-switch-white"  href="/ru/<?= \frontend\components\UrlTrimLang::widget() ?>">RU</a></li>
 					</ul>
 				</nav>
 			</div>

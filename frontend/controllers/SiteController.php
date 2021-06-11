@@ -98,8 +98,10 @@ class SiteController extends BaseController
      */
     public function actionLanding()
     {
+        $video_reviews = VideoReview::find()->all();
+
         $this->layout = 'dohod-zelyonyi';
-        return $this->render('landing');
+        return $this->render('landing', compact('video_reviews'));
     }
 
     public function actionGreen()
