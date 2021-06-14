@@ -254,7 +254,7 @@ $contacts = \backend\models\Contact::getContact();
 $contacts = \backend\models\Contact::getContact();
 ?>
     <main class="page-container">
-		<div class="breadcrumbs-wrap breadcrumbs-wrap-color">
+		<div class="breadcrumbs-wrap breadcrumbs-wrap-color dohod-zelyonyi-white">
 			<div class="container">
 
                 <?php echo Breadcrumbs::widget([
@@ -387,7 +387,7 @@ $contacts = \backend\models\Contact::getContact();
                 </div>
             </div>
             <div class="btn-wrap advantages-btn-wrap">
-                <a class="advantages-btn button order-btn" href="#">Хочу зарабатывать на «зеленом» тарифе</a>
+                <a class="advantages-btn button order-btn" href="#connect">Хочу зарабатывать на «зеленом» тарифе</a>
             </div>
         </div>
     </section>
@@ -793,7 +793,7 @@ $contacts = \backend\models\Contact::getContact();
         </div>
     </section>
 
-    <section class="last-questions-form">
+    <section class="last-questions-form" id="connect">
         <div class="container">
             <div class="questions-form">
                 <div class="questions-form-bg">

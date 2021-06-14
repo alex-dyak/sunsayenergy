@@ -472,6 +472,7 @@ iframe{max-width:100%}
 .breadcrumb li a{display:block;position:relative;z-index:2}
 .breadcrumb li b{font-weight:400}
 .breadcrumb li a:hover{color:#000}
+.dohod-zelyonyi-white li a:hover{color: #fff}
 .breadcrumb li a:after{content:'';display:block;position:absolute;z-index:-1;color:#000;height:10px;width:0;left:0;bottom:0;background-color:#ffe863;transition:width .5s ease-in-out}
 .breadcrumb li a:hover:after{width:100%}
 @media screen and (min-width:1024px){
@@ -623,23 +624,30 @@ a:not([class]):hover{color:#ffd100}
 .scrolled .header-wrap{padding:15px 0;border-color:transparent}
 }
 .main-logo{display:block;text-align:center}
+
 @media screen and (max-width:767px){
 .transparent .main-logo{text-align:left;max-width:140px}
+
 }
 .main-logo img{max-width:100%}
 .main-logo .logo-white{display:none}
+.main-logo .logo-white-def{display:none}
+.main-logo .logo-mob{display:block}
+
 @media screen and (min-width:768px){
 .main-logo{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
 .main-logo .logo-def{display:none}
 .main-logo .logo-white{display:block}
+.main-logo .logo-mob{display:none}
 }
 @media screen and (min-width:1280px){
 .main-logo{position:static;-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0);text-align:left;max-width:150px}
-.main-logo .logo-def{display:none}
+.main-logo .logo-def{display:block}
 .main-logo .logo-white{display:none}
-.main-logo .logo-white-def{display: block;}
+.main-logo .logo-white-def{display: block}
 .header.transparent.scrolled .main-logo .logo-white-def{display: none;}
 .header.transparent.scrolled .main-logo .logo-def{display: block;}
+.header.transparent.scrolled .main-logo .logo-mob{display: block;}
 }
 @media screen and (min-width:1440px){
 .main-logo{max-width:190px}
@@ -656,7 +664,7 @@ a:not([class]):hover{color:#ffd100}
 @media screen and (min-width:1440px){
 .main-logo .logo-text{letter-spacing:.22em}
 .main-logo .logo-text-white{color:#fff}
-.header.transparent.scrolled .logo-text-white{color:#393939}
+.header.transparent.scrolled .logo-text-white{color:#393939;}
 }
 .nav-logo{display:block;margin-bottom:15px}
 @media screen and (min-width:768px){
@@ -777,30 +785,35 @@ a:not([class]):hover{color:#ffd100}
 }
 .nav-list a:not([class]){display:inline-block;vertical-align:middle;text-transform:initial;white-space:nowrap;font-weight:500;font-size:15px;line-height:1.25;position:relative;color:#393939;z-index:2;border-bottom:3px solid transparent}
 .nav-list .white-color-a{display:inline-block;vertical-align:middle;text-transform:initial;white-space:nowrap;font-weight:500;font-size:15px;line-height:1.25;position:relative;color:#393939;z-index:2;border-bottom:3px solid transparent}
+
 @media screen and (min-width:1280px){
 .nav-list a:not([class]){text-transform:inherit;font-weight:600;font-size:14px}
 .nav-list .white-color-a{text-transform:inherit;font-weight:600;font-size:14px}
+
+.nav-list .white-color-a{color: #fff}
+.header.transparent.scrolled .white-color-a{color: #393939}
 }
 .nav-list a:not([class]):hover{color:#393939}
-.nav-list .white-color-a:hover{color:#fff}
+/* .nav-list .white-color-a:hover{color:#393939} */
 .nav-list a:not([class]):hover:before{right:0}
 .nav-list .white-color-a:hover:before{right:0}
 .nav-list a:not([class]):before{content:'';position:absolute;display:block;bottom:-3px;left:0;right:100%;height:3px;z-index:-1;background:#ffd100;-webkit-transition:right .3s linear;-o-transition:right .3s linear;transition:right .3s linear}
 .nav-list .white-color-a:before{content:'';position:absolute;display:block;bottom:-3px;left:0;right:100%;height:3px;z-index:-1;background:#ffd100;-webkit-transition:right .3s linear;-o-transition:right .3s linear;transition:right .3s linear}
-.nav-list .white-color-a{color: #fff}
-.header.transparent.scrolled .white-color-a{color: #393939}
+/* .nav-list .white-color-a{color: #fff}
+.header.transparent.scrolled .white-color-a{color: #393939} */
 .dropdown-wrapper{text-transform:uppercase;font-weight:700;font-size:18px;position:relative;z-index:5}
 @media screen and (min-width:1280px){
 .dropdown-wrapper{text-transform:inherit;font-weight:600;font-size:14px}
 }
 @media screen and (min-width:1280px){
 .dropdown-wrapper:hover .dropdown{opacity:1;visibility:visible;-webkit-transform:scale(1,1);-ms-transform:scale(1,1);transform:scale(1,1)}
+.dropdown-wrapper:hover .white-color-menu{color: #393939}
 }
 .dropdown-wrapper span{display:block;margin-bottom:15px;white-space:nowrap}
 @media screen and (min-width:1280px){
 .dropdown-wrapper span{margin-bottom:0}
 .dropdown-wrapper .white-color-menu{color: #fff}
-.dropdown-wrapper .white-color-menu:hover{color: #393939}
+/* .dropdown-wrapper .white-color-menu:hover{color: #393939} */
 .header.transparent.scrolled .white-color-menu{color: #393939}
 
 }
@@ -826,6 +839,7 @@ a:not([class]):hover{color:#ffd100}
 
 .language-switch a:hover{color:#393939}
 .language-switch .language-switch-white:hover{color:#393939}
+.header.transparent.scrolled .language-switch-white{color:#393939}
 .language-switch a.active{background:#dfedff;color:#393939;font-weight:700}
 .language-switch .language-switch-white.active{background:#dfedff;color:#393939;font-weight:700}
 @media screen and (min-width:1024px){
@@ -2654,6 +2668,7 @@ a.advantages-btn {
     display: block;
     margin: 0 auto;
     width: 100%;
+    max-height: 355px;
     border-radius: 5px;    
 }
 
@@ -2961,6 +2976,8 @@ a.advantages-btn {
 .accordion button {
         padding: 25px;
         font-weight: 600;
+        text-align: left;
+        max-width: 267px;
 }
 
 .accordion:after {
@@ -2983,6 +3000,12 @@ a.advantages-btn {
     text-align: left;
 }
 
+@media screen and (min-width:525px){
+    .accordion button {
+        max-width: 100%;
+    }
+}
+
 @media screen and (min-width:768px){
     .accordion .dohod-zelyonyi-text {
         font-weight: 600;
@@ -3001,6 +3024,8 @@ a.advantages-btn {
 
 .breadcrumbs-wrap{position:relative;z-index:3}
 .breadcrumbs-wrap-color{color: #fff}
+.dohod-zelyonyi-white li a {color: #fff}
+.dohod-zelyonyi-white li:after{color: #fff}
 .green-hero-section{position:relative;background:#b7d3f7;min-height:100vh;margin-top:-170px;padding:180px 0 80px;overflow:hidden}
 .green-hero-section .hero-text{position:relative;z-index:2;margin-bottom:50px}
 .green-hero-section .hero-description{max-width:100%}
