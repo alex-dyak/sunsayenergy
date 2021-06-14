@@ -145,9 +145,9 @@ $contacts = \backend\models\Contact::getContact();
                             <?= BaseController::getMessage('8') ?>
 						</a>
 						<ul class="header-contact-list">
-							<li><a itemprop="telephone" class="binct-phone-number-1" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
-							<li><a itemprop="telephone" class="binct-phone-number-3" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
-							<li><a itemprop="telephone" class="binct-phone-number-2" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
+							<li><a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
+							<li><a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
+							<li><a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
 							<li class="address-list">
 								<i class="icon-envelope"></i>
 								<a itemprop="email" href="mailto:<?= $contacts->email ?>">
@@ -280,16 +280,16 @@ $contacts = \backend\models\Contact::getContact();
 					<ul class="mobile-open-close">
 						<li>
 							<i class="icon-phone"></i>
-							<a itemprop="telephone" class="binct-phone-number-1" href="tel:<?= str_replace(' ', '', $contacts->phone) ?>"><?= $contacts->phone ?></a>
+							<a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->phone) ?>"><?= $contacts->phone ?></a>
 							<span class="open-close-opener">
 								<i class="icon-angle-right"></i>
 							</span>
 						</li>
 						<li>
-							<a itemprop="telephone" class="binct-phone-number-3" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a>
+							<a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a>
 						</li>
 						<li>
-							<a itemprop="telephone" class="binct-phone-number-2" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a>
+							<a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a>
 						</li>
 					</ul>
 				</li>
@@ -403,9 +403,9 @@ $contacts = \backend\models\Contact::getContact();
 					<div class="footer-contact-wrap">
 						<strong class="h4"><?= BaseController::getMessage('8') ?></strong>
 						<ul class="footer-contact-list">
-							<li><a class="binct-phone-number-1" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
-							<li><a class="binct-phone-number-3" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
-							<li><a class="binct-phone-number-2" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
+							<li><a class="" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
+							<li><a class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
+							<li><a class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
 						</ul>
 					</div>
 				</div>
@@ -698,15 +698,6 @@ $contacts = \backend\models\Contact::getContact();
           complete: function (response) {
             $(".quiz-step").hide();
             $(".quiz-final-screen").css("display", "flex").animate({opacity: '1'}, 300, "swing");
-              <!-- Google Analytics -->
-                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-              ga('create', ' UA-131310740-1', 'auto');
-              ga('send', 'event', 'quiz_form', 'submit', 'quiz');
-            <!-- End Google Analytics -->
 
             setTimeout(function(){
               $('.quiz-modal').fadeOut(300);
@@ -741,11 +732,6 @@ $contacts = \backend\models\Contact::getContact();
             var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
             var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
         })(window,document,'https://cdn.bitrix24.ua/b9504081/crm/site_button/loader_1_2svhj8.js');
-        (function(d, w, s) {
-          var widgetHash = 'sx43cntzz2qzbf66eje1', ctw = d.createElement(s); ctw.type = 'text/javascript'; ctw.async = true;
-          ctw.src = '//widgets.binotel.com/calltracking/widgets/'+ widgetHash +'.js';
-          var sn = d.getElementsByTagName(s)[0]; sn.parentNode.insertBefore(ctw, sn);
-          })(document, window, 'script');
     }, 2000);
 </script>
 
