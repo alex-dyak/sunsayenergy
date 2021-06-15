@@ -92,21 +92,6 @@ $contacts = \backend\models\Contact::getContact();
 
     <meta name="google-site-verification" content="xxxLG9Hae7rnxth_CLJ3SBLXRhnRpnEg-DV95cNNyxI" />
 
-    <!-- Marquiz script start -->
-<!--    <script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>-->
-<!--    <script>-->
-<!--        document.addEventListener("DOMContentLoaded", function() {-->
-<!--            Marquiz.init({-->
-<!--                host: '//quiz.marquiz.ru',-->
-<!--                id: '5fa185757b366e00441631e0',-->
-<!--                autoOpen: 80,-->
-<!--                autoOpenFreq: 'once',-->
-<!--                openOnExit: false-->
-<!--            });-->
-<!--        });-->
-<!--    </script>-->
-    <!-- Marquiz script end -->
-
     <!-- Hotjar Tracking Code for https://sunsayenergy.com -->
     <script>
         (function(h,o,t,j,a,r){
@@ -145,9 +130,9 @@ $contacts = \backend\models\Contact::getContact();
                             <?= BaseController::getMessage('8') ?>
 						</a>
 						<ul class="header-contact-list white-color-list">
-							<li><a class="white-color-tell" itemprop="telephone" class="binct-phone-number-1" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
-							<li><a class="white-color-tell" itemprop="telephone" class="binct-phone-number-3" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
-							<li><a class="white-color-tell" itemprop="telephone" class="binct-phone-number-2" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
+							<li><a class="white-color-tell" itemprop="telephone" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
+							<li><a class="white-color-tell" itemprop="telephone" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
+							<li><a class="white-color-tell" itemprop="telephone" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
 							<li class="address-list">
 								<i class="icon-envelope"></i>
 								<a itemprop="email" href="mailto:<?= $contacts->email ?>">
@@ -281,16 +266,16 @@ $contacts = \backend\models\Contact::getContact();
 					<ul class="mobile-open-close">
 						<li>
 							<i class="icon-phone"></i>
-							<a itemprop="telephone" class="binct-phone-number-1" href="tel:<?= str_replace(' ', '', $contacts->phone) ?>"><?= $contacts->phone ?></a>
+							<a itemprop="telephone" href="tel:<?= str_replace(' ', '', $contacts->phone) ?>"><?= $contacts->phone ?></a>
 							<span class="open-close-opener">
 								<i class="icon-angle-right"></i>
 							</span>
 						</li>
 						<li>
-							<a itemprop="telephone" class="binct-phone-number-3" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a>
+							<a itemprop="telephone" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a>
 						</li>
 						<li>
-							<a itemprop="telephone" class="binct-phone-number-2" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a>
+							<a itemprop="telephone" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a>
 						</li>
 					</ul>
 				</li>
@@ -404,9 +389,9 @@ $contacts = \backend\models\Contact::getContact();
 					<div class="footer-contact-wrap">
 						<strong class="h4"><?= BaseController::getMessage('8') ?></strong>
 						<ul class="footer-contact-list">
-							<li><a class="binct-phone-number-1" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
-							<li><a class="binct-phone-number-3" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
-							<li><a class="binct-phone-number-2" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
+							<li><a class="" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
+							<li><a class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
+							<li><a class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
 						</ul>
 					</div>
 				</div>
@@ -742,11 +727,6 @@ $contacts = \backend\models\Contact::getContact();
             var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
             var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
         })(window,document,'https://cdn.bitrix24.ua/b9504081/crm/site_button/loader_1_2svhj8.js');
-        (function(d, w, s) {
-          var widgetHash = 'sx43cntzz2qzbf66eje1', ctw = d.createElement(s); ctw.type = 'text/javascript'; ctw.async = true;
-          ctw.src = '//widgets.binotel.com/calltracking/widgets/'+ widgetHash +'.js';
-          var sn = d.getElementsByTagName(s)[0]; sn.parentNode.insertBefore(ctw, sn);
-          })(document, window, 'script');
     }, 2000);
 </script>
 
