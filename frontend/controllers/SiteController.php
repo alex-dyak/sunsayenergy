@@ -186,8 +186,6 @@ class SiteController extends BaseController
 
     public function actionCommercial()
     {
-//        $this->layout = 'commercial';
-
         $images = Commercial::find()->all();
 
         $this->setOgImage('https://sunsayenergy.com' . '/img/commercial.jpg');
