@@ -145,7 +145,7 @@ $contacts = \backend\models\Contact::getContact();
                 </div>
             </div>
             <div class="btn-wrap advantages-btn-wrap">
-                <a class="advantages-btn button" href="#"><?= BaseController::getMessage('669') ?></a>
+                <a class="advantages-btn button" href="#connect"><?= BaseController::getMessage('669') ?></a>
             </div>
         </div>
     </section>
