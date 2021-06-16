@@ -114,7 +114,7 @@ $contacts = \backend\models\Contact::getContact();
                     </ul>
                 </div>
                 <div class="privat-house-img">
-                    <img class="house-img" src="img/dohod-zelyonyi-tarif/house-icon.png" alt="house">
+                    <img class="house-img" src="/img/dohod-zelyonyi-tarif/house-icon.png" alt="house">
                 </div>
             </div>
         </div>
@@ -150,7 +150,7 @@ $contacts = \backend\models\Contact::getContact();
                 </div>
             </div>
             <div class="btn-wrap advantages-btn-wrap">
-                <a class="advantages-btn button order-btn" href="#"><?= BaseController::getMessage('669') ?></a>
+                <a class="advantages-btn button" href="#"><?= BaseController::getMessage('669') ?></a>
             </div>
         </div>
     </section>
@@ -161,18 +161,18 @@ $contacts = \backend\models\Contact::getContact();
             <strong class="integrated-subtitle"><?= BaseController::getMessage('671') ?></strong>
             <div class="integrated-approach-items">
                 <div class="integrated-approach-item">
-                    <img class="integrated-approach-img" src="img/dohod-zelyonyi-tarif/dron.jpg" alt="дрон">
+                    <img class="integrated-approach-img" src="/img/dohod-zelyonyi-tarif/dron.jpg" alt="дрон">
                     <strong class="integrated-subtitle"><?= BaseController::getMessage('672') ?></strong>
                     <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('673') ?></p>
                 </div>
                 <div class="integrated-approach-item">
-                    <img class="integrated-approach-img" src="img/dohod-zelyonyi-tarif/installation.jpg"
+                    <img class="integrated-approach-img" src="/img/dohod-zelyonyi-tarif/installation.jpg"
                          alt="монтаж солнечных панелей">
                     <strong class="integrated-subtitle"><?= BaseController::getMessage('674') ?></strong>
                     <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('675') ?></p>
                 </div>
                 <div class="integrated-approach-item">
-                    <img class="integrated-approach-img" src="img/dohod-zelyonyi-tarif/house_with_panels.jpg"
+                    <img class="integrated-approach-img" src="/img/dohod-zelyonyi-tarif/house_with_panels.jpg"
                          alt="дом с солнечными панелями">
                     <strong class="integrated-subtitle"><?= BaseController::getMessage('676') ?></strong>
                     <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('677') ?></p>
@@ -214,7 +214,7 @@ $contacts = \backend\models\Contact::getContact();
                     </div>
                 </div>
                 <div class="energy-img">
-                    <img class="energy-seo-sunsay" src="img/dohod-zelyonyi-tarif/ceo_1.png" alt="Dmitrij Zinkevich">
+                    <img class="energy-seo-sunsay" src="/img/dohod-zelyonyi-tarif/ceo_1.png" alt="Dmitrij Zinkevich">
                 </div>
                 <div class="dohod-zelyonyi-form energy-form">
                     <div class="zelyonyi-form-bg energy-bg">
@@ -351,7 +351,7 @@ $contacts = \backend\models\Contact::getContact();
                     </ul>
                 </div>
                 <div class="privat-house-img">
-                    <img class="house-img" src="img/dohod-zelyonyi-tarif/house-icon.png" alt="house" >
+                    <img class="house-img" src="/img/dohod-zelyonyi-tarif/house-icon.png" alt="house" >
                 </div>
             </div>
         </div>
@@ -387,7 +387,7 @@ $contacts = \backend\models\Contact::getContact();
                 </div>
             </div>
             <div class="btn-wrap advantages-btn-wrap">
-                <a class="advantages-btn button order-btn" href="#connect">Хочу зарабатывать на «зеленом» тарифе</a>
+                <a class="advantages-btn button" href="#connect">Хочу зарабатывать на «зеленом» тарифе</a>
             </div>
         </div>
     </section>
@@ -398,17 +398,17 @@ $contacts = \backend\models\Contact::getContact();
             <strong class="integrated-subtitle">От анализа и монтажа оборудования до подключения «зеленого» тарифа</strong>
                 <div class="integrated-approach-items">
                     <div class="integrated-approach-item">
-                        <img class="integrated-approach-img" src="img/dohod-zelyonyi-tarif/dron.jpg" alt="дрон">
+                        <img class="integrated-approach-img" src="/img/dohod-zelyonyi-tarif/dron.jpg" alt="дрон">
                         <strong class="integrated-subtitle">Измеряем объект с помощью дрона</strong>
                         <p class="dohod-zelyonyi-text">Мы проводим замер с помощью дронов и делаем проект 3D-модели в специализированном ПО, чтобы точно спрогнозировать будущую эффективность электростанции</p>
                     </div>
                     <div class="integrated-approach-item">
-                        <img class="integrated-approach-img" src="img/dohod-zelyonyi-tarif/installation.jpg" alt="монтаж солнечных панелей">
+                        <img class="integrated-approach-img" src="/img/dohod-zelyonyi-tarif/installation.jpg" alt="монтаж солнечных панелей">
                         <strong class="integrated-subtitle">Используем оборудование нового поколения</strong>
                         <p class="dohod-zelyonyi-text">Мы выбираем сертифицированные комплектующие от официальных производителей. Чтобы использовать самое современное оборудование, каждый год наши специалисты проходят более 10 обучающих тренингов</p>
                     </div>
                     <div class="integrated-approach-item">
-                        <img class="integrated-approach-img" src="img/dohod-zelyonyi-tarif/house_with_panels.jpg" alt="дом с солнечными панелями">
+                        <img class="integrated-approach-img" src="/img/dohod-zelyonyi-tarif/house_with_panels.jpg" alt="дом с солнечными панелями">
                         <strong class="integrated-subtitle">Помогаем оформить «зеленый» тариф</strong>
                         <p class="dohod-zelyonyi-text">Мы знаем о «зеленом» тарифе все и помогаем оформить программу на каждом этапе.  С нами вы избавитесь от длительной бюрократической волокиты</p>
                     </div>
@@ -449,7 +449,7 @@ $contacts = \backend\models\Contact::getContact();
                     </div>
                 </div>
                 <div class="energy-img">
-                    <img class="energy-seo-sunsay" src="img/dohod-zelyonyi-tarif/ceo_1.png" alt="Dmitrij Zinkevich">
+                    <img class="energy-seo-sunsay" src="/img/dohod-zelyonyi-tarif/ceo_1.png" alt="Dmitrij Zinkevich">
                 </div>
                 <div class="dohod-zelyonyi-form energy-form">
                     <div class="zelyonyi-form-bg energy-bg">
@@ -492,7 +492,8 @@ $contacts = \backend\models\Contact::getContact();
                     </div>
                 </div>
                 <div class="energy-img">
-                    <img class="energy-seo-sunsay" src="img/dohod-zelyonyi-tarif/ceo_1.png" alt="Dmitrij Zinkevich">
+                    <img class="energy-seo-mob" src="/img/dohod-zelyonyi-tarif/ceo_1.png" alt="Dmitrij Zinkevich">
+                    <img class="energy-seo-desk" src="/img/dohod-zelyonyi-tarif/ceo_2.png" alt="Dmitrij Zinkevich">
                 </div>
                 <div class="dohod-zelyonyi-form energy-form">
                     <div class="zelyonyi-form-bg energy-bg">
@@ -529,19 +530,19 @@ $contacts = \backend\models\Contact::getContact();
                     <div class="solar-station-slider">
 
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/dmytrivka_1.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_1.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/dmytrivka_2.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_2.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/dmytrivka_3.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_3.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/dmytrivka_4.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_4.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/dmytrivka_5.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_5.jpg" alt="house with solar panels">
                         </div>
 
                     </div>
@@ -575,37 +576,37 @@ $contacts = \backend\models\Contact::getContact();
                     <div class="solar-station-slider">
 
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/pluty_1.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_1.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/pluty_2.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_2.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/pluty_3.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_3.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/pluty_4.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_4.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/pluty_5.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_5.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/pluty_6.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_6.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/pluty_7.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_7.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/pluty_8.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_8.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/pluty_9.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_9.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/pluty_10.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_10.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/pluty_11.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_11.jpg" alt="house with solar panels">
                         </div>
 
                     </div>
@@ -639,43 +640,43 @@ $contacts = \backend\models\Contact::getContact();
                     <div class="solar-station-slider">
 
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/bortnichi_1.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_1.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/bortnichi_2.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_2.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/bortnichi_3.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_3.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/bortnichi_4.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_4.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/bortnichi_5.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_5.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/bortnichi_6.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_6.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/bortnichi_7.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_7.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/bortnichi_8.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_8.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/bortnichi_9.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_9.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/bortnichi_10.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_10.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/bortnichi_11.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_11.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/bortnichi_12.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_12.jpg" alt="house with solar panels">
                         </div>
                         <div class="solar-station-item">
-                            <img src="img/dohod-zelyonyi-tarif/slider/bortnichi_13.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_13.jpg" alt="house with solar panels">
                         </div>
 
                     </div>
@@ -704,7 +705,7 @@ $contacts = \backend\models\Contact::getContact();
 
                 </div>
                 <div class="btn-wrap advantages-btn-wrap">
-                    <a class="advantages-btn button order-btn" href="#">Больше проектов</a>
+                    <a class="advantages-btn button" href="#">Больше проектов</a>
                 </div>
                 
         </div>
@@ -869,7 +870,7 @@ $contacts = \backend\models\Contact::getContact();
 
             </div>
             <div class="btn-wrap advantages-btn-wrap">
-                <a class="advantages-btn button order-btn" href="#">Больше о солнечных электростанциях</a>
+                <a class="advantages-btn button" href="#">Больше о солнечных электростанциях</a>
             </div>
         </div>
     </section>
