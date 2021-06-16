@@ -2543,6 +2543,9 @@ a.advantages-btn {
     font-size: 12px;
     line-height: 15px;
 }
+.energy-seo-desk {
+    display: none;
+}
 
 .energy-img {
     margin-top: -245px;
@@ -2573,8 +2576,8 @@ a.advantages-btn {
     .energy-wrapper {
         display: flex;        
         flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: center;
+        justify-content: space-around;
+        align-items: center;
     }
     .energy-name-inner {
         margin-top: 230px;
@@ -2583,29 +2586,47 @@ a.advantages-btn {
     .energy-h2 {
         max-width: 100%;
     }
-    .energy-img,
+    
     .energy-form {
-        max-width: 46%;
+        max-width: 310px;
     }
     .energy-form {
         margin-top: -268px;
     }
-    .energy-img {
-        margin-top: -244px;
-    }
 }
 @media screen and (min-width:1024px){
+    .energy-wrapper {
+        justify-content: space-between;
+    }
+    .energy-name-inner {
+        margin-top: 150px;
+        margin-left: 265px;
+    }
     .energy-form .integrated-subtitle {
         font-size: 16px;
         line-height: 20px;
     }
+    .energy-form {
+        max-width: 403px;
+    }
+    .energy-img .energy-seo-mob {
+        display: none;
+    }
+
+    .energy-img .energy-seo-desk {
+        display: block;
+    }
+    .energy-img {
+        margin-top: -205px;
+    }
+
 } 
 @media screen and (min-width:1280px){
     .energy-wrapper {  
         flex-wrap: nowrap;
         justify-content: space-around;
+        align-items: center;
         margin-top: 10px;
-        position: relative;
     }
     .energy-title,
     .energy-img,
@@ -2619,34 +2640,15 @@ a.advantages-btn {
     }
     .energy-h2 {
         max-width: 480px;
-        padding-top: 148px;
     }
-    .energy-form {
-        margin-top: 63px;
-    }
+
     .energy-img {
-        margin-top: 90px;
+        margin-top: 10px;
         order: -1;
     }
     .energy-name-inner {
         margin-top: 20px;
         margin-left: 0;
-    }
-
-    .energy-for-everyone{
-        padding-top: 44px;        
-    }
-    .energy-wrapper {  
-        justify-content: flex-end;
-    }
-    .energy-img .energy-seo-sunsay {
-        display: none;
-    }
-    .energy-img::before {
-        content: url('../img/dohod-zelyonyi-tarif/ceo_2.svg');
-        position: absolute;
-        bottom: -7px;
-        left: 0;
     }
 }
 
@@ -2772,8 +2774,8 @@ a.advantages-btn {
     font-family: "Bebas Neue Cyrillic",sans-serif;
     font-weight: bold;
     width: 50%;
-    margin-right: 5px;
-    margin-left: 5px;
+    max-width: 250px;
+    margin-right: 30px;
 }
 
 .company-project-item strong {
@@ -2805,8 +2807,8 @@ a.advantages-btn {
     .about-company-sansay,
     .about-company-inner {
         width: 50%;
-        margin-right: 5px;
-        margin-left: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
         max-width: 560px;
     }
     .about-company {
@@ -2817,19 +2819,11 @@ a.advantages-btn {
     }
 }
 @media screen and (min-width:1024px){
-    .company-project-text {
-        display: flex;        
-        justify-content: flex-start;
-    }
-    .company-project-text .dohod-zelyonyi-text {
-        width: 50%;
-        margin-right: 5px;
-        margin-left: 5px;
-        max-width: 330px;
-    }
     .about-company-sansay .integrated-subtitle{
         font-size: 22px;
         line-height: 27px;
+        padding-right: 15px;
+        max-width: 560px;
     }
     .company-project-text .dohod-zelyonyi-text{
         font-weight: 600;
@@ -2855,6 +2849,16 @@ a.advantages-btn {
     }
 }
 @media screen and (min-width:1280px){
+    .company-project-text {
+        display: flex;        
+        justify-content: flex-start;
+    }
+    .company-project-text .dohod-zelyonyi-text {
+        width: 50%;
+        margin-right: 30px;
+        max-width: 330px;
+        padding-bottom: 10px;
+    }
     .company-project-item strong {
         font-size: 155px;
         line-height: 155px;

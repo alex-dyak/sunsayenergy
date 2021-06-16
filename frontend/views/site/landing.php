@@ -145,7 +145,7 @@ $contacts = \backend\models\Contact::getContact();
                 </div>
             </div>
             <div class="btn-wrap advantages-btn-wrap">
-                <a class="advantages-btn button order-btn" href="#"><?= BaseController::getMessage('669') ?></a>
+                <a class="advantages-btn button" href="#"><?= BaseController::getMessage('669') ?></a>
             </div>
         </div>
     </section>
@@ -221,7 +221,6 @@ $contacts = \backend\models\Contact::getContact();
                                 <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
                                 <label for="phone" class="hidden">Телефон</label>
                                 <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
-
                                 <div class="connect__content-button zelyonyi-button">
                                     <button class="btn connect-btn btn-primary zelyonyi-btn" id="submit_button">
                                         <?= BaseController::getMessage('14') ?>
@@ -421,7 +420,7 @@ $contacts = \backend\models\Contact::getContact();
 
                 </div>
                 <div class="btn-wrap advantages-btn-wrap">
-                    <a class="advantages-btn button order-btn" target="_blank" href="<?= \yii\helpers\Url::to(['/project']); ?>"><?= BaseController::getMessage('694') ?></a>
+                    <a class="advantages-btn button" target="_blank" href="<?= \yii\helpers\Url::to(['/project']); ?>"><?= BaseController::getMessage('694') ?></a>
                 </div>
                 
         </div>
@@ -586,7 +585,7 @@ $contacts = \backend\models\Contact::getContact();
 
             </div>
             <div class="btn-wrap advantages-btn-wrap">
-                <a class="advantages-btn button order-btn" target="_blank" href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('727') ?></a>
+                <a class="advantages-btn button" target="_blank" href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('727') ?></a>
             </div>
         </div>
     </section>
