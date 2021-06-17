@@ -421,7 +421,7 @@ $contacts = \backend\models\Contact::getContact();
 
                 </div>
                 <div class="btn-wrap advantages-btn-wrap">
-                    <a class="advantages-btn button" target="_blank" href="<?= \yii\helpers\Url::to(['/project']); ?>"><?= BaseController::getMessage('694') ?></a>
+                    <a class="advantages-btn button" href="<?= \yii\helpers\Url::to(['/project']); ?>"><?= BaseController::getMessage('694') ?></a>
                 </div>
                 
         </div>
@@ -586,7 +586,7 @@ $contacts = \backend\models\Contact::getContact();
 
             </div>
             <div class="btn-wrap advantages-btn-wrap">
-                <a class="advantages-btn button" target="_blank" href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('727') ?></a>
+                <a class="advantages-btn button" href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('727') ?></a>
             </div>
         </div>
     </section>
