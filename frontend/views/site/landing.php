@@ -201,7 +201,7 @@ $contacts = \backend\models\Contact::getContact();
                     <strong class="dohod-zelyonyi-h2 energy-h2"><?= BaseController::getMessage('680') ?></strong>
                     <div class="energy-name-inner">
                         <strong class="energy-name-title">
-                            <?= BaseController::getMessage('583') ?>
+                            <?= BaseController::getMessage('580') ?>
                         </strong>
                         <p class="energy-position">
                             СЕО «SUNSAY Energy»
