@@ -210,6 +210,7 @@ $contacts = \backend\models\Contact::getContact();
                 </div>
                 <div class="energy-img">
                     <img class="energy-seo-sunsay" data-src="/img/dohod-zelyonyi-tarif/ceo_1.png" alt="Dmitrij Zinkevich">
+                    <img class="energy-seo-desk" data-src="/img/dohod-zelyonyi-tarif/ceo_2.png" alt="Dmitrij Zinkevich">
                 </div>
                 <div class="dohod-zelyonyi-form energy-form">
                     <div class="zelyonyi-form-bg energy-bg">
