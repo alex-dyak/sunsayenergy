@@ -213,7 +213,6 @@ $contacts = \backend\models\Contact::getContact();
 								<li class="<?= (Yii::$app->controller->route == 'site/reserve') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"><?= BaseController::getMessage('3') ?></a></li>
 								<li class="<?= (Yii::$app->controller->route == 'site/comfort') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>"><?= BaseController::getMessage('4') ?></a></li>
 								<li class="<?= (Yii::$app->controller->route == 'site/commercial') ? 'active' : ''; ?> new"><a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>"><?= BaseController::getMessage('531') ?></a></li>
-								<li class="<?= (Yii::$app->controller->route == 'site/landing_new') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/dohod-6000-zelyonyi-tarif']); ?>"><?= BaseController::getMessage('646') ?></a></li>
 							</ul>
 						</li>
 						<li class="subnav"><?= BaseController::getMessage('12') ?></li>
