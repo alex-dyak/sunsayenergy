@@ -275,8 +275,8 @@ $contacts = \backend\models\Contact::getContact();
                             </div>
                             <div class="station-content-item">
                                 <ul class="station-content-list station-content-price">
-                                    <li class="dohod-zelyonyi-text">17 750 <?= BaseController::getMessage('690') ?></li>
-                                    <li class="dohod-zelyonyi-text">$2 637</li>
+                                    <li class="dohod-zelyonyi-text">17 726 <?= BaseController::getMessage('690') ?></li>
+                                    <li class="dohod-zelyonyi-text">$2 764</li>
                                     <li class="dohod-zelyonyi-text">29,26 кВт</li>
                                     <li class="dohod-zelyonyi-text">5 <?= BaseController::getMessage('691') ?></li>
                                 </ul>
@@ -339,8 +339,8 @@ $contacts = \backend\models\Contact::getContact();
                             </div>
                             <div class="station-content-item">
                                 <ul class="station-content-list station-content-price">
-                                    <li class="dohod-zelyonyi-text">39 980 <?= BaseController::getMessage('690') ?></li>
-                                    <li class="dohod-zelyonyi-text">$5 941</li>
+                                    <li class="dohod-zelyonyi-text">39 630 <?= BaseController::getMessage('690') ?></li>
+                                    <li class="dohod-zelyonyi-text">$5 956</li>
                                     <li class="dohod-zelyonyi-text">28,21 кВт</li>
                                     <li class="dohod-zelyonyi-text">5 <?= BaseController::getMessage('691') ?></li>
                                 </ul>
@@ -409,8 +409,8 @@ $contacts = \backend\models\Contact::getContact();
                             </div>
                             <div class="station-content-item">
                                 <ul class="station-content-list station-content-price">
-                                    <li class="dohod-zelyonyi-text">21 161 <?= BaseController::getMessage('690') ?></li>
-                                    <li class="dohod-zelyonyi-text">$3 144</li>
+                                    <li class="dohod-zelyonyi-text">21 317 <?= BaseController::getMessage('690') ?></li>
+                                    <li class="dohod-zelyonyi-text">$3 427</li>
                                     <li class="dohod-zelyonyi-text">16,12 кВт</li>
                                     <li class="dohod-zelyonyi-text">3 <?= BaseController::getMessage('693') ?></li>
                                 </ul>
