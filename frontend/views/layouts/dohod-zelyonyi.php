@@ -124,7 +124,7 @@ $contacts = \backend\models\Contact::getContact();
 			<div class="header-wrap">
 				<div class="mobile-top-block">
 					<div class="contact-block" itemscope itemtype="http://schema.org/PostalAddress">
-						<a class="contact-opener" href="#contact-opener">
+						<a class="contact-opener contact-opener-white" href="#contact-opener">
 							<i class="icon-phone"></i>
 							<i class="icon-close"></i>
                             <?= BaseController::getMessage('8') ?>
@@ -185,7 +185,7 @@ $contacts = \backend\models\Contact::getContact();
 							</li>
 						</ul>
 					</div>
-					<div id="nav-opener">
+					<div id="nav-opener" class="nav-opener-white">
 						<span><?= BaseController::getMessage('405') ?></span>
 						<i class="icon-menu"></i>
 						<i class="icon-close"></i>
@@ -193,9 +193,8 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 				<strong class="main-logo">
 					<a href="<?= \yii\helpers\Url::to(['/']); ?>">
-						<img oncontextmenu="return false" class="logo-mob" src="/img/logo.svg" width="184" alt="SUNSAY Energy">
-						<img oncontextmenu="return false" class="logo-white" src="/img/logo-navbar.svg" width="184" alt="SUNSAY Energy">
-						<img oncontextmenu="return false" class="logo-white-def" src="/img/dohod-zelyonyi-tarif/logo-white.svg" width="184" alt="SUNSAY Energy">
+                        <img oncontextmenu="return false" class="logo-mob" src="/img/dohod-zelyonyi-tarif/logo-white.svg" width="184" alt="SUNSAY Energy">
+                        <img oncontextmenu="return false" class="logo-dark" src="/img/logo.svg" width="184" alt="SUNSAY Energy">
 						<span class="logo-text logo-text-white"><?= BaseController::getMessage('406') ?></span>
 					</a>
 				</strong>
