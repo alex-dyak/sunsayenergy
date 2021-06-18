@@ -46,13 +46,21 @@ $contacts = \backend\models\Contact::getContact();
                 <div class="dohod-zelyonyi-form">
                     <div class="zelyonyi-form-bg">
                         <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('651') ?></strong>
-                        <form class="connect__content-question" id="question_form" data-post-url="index.html">
+                        <form class="connect__content-question" id="question_form_1" data-post-url="index.html">
+                            <input type="hidden" name="utm_source" <?php echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''?> >
+                            <input type="hidden" name="utm_medium" <?php echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''?> >
+                            <input type="hidden" name="utm_campaign" <?php echo !empty($_SESSION['utm_campaign']) ? ' value="' . $_SESSION['utm_campaign'] .'"': ''?> >
+                            <input type="hidden" name="utm_content" <?php echo !empty($_SESSION['utm_content']) ? ' value="' . $_SESSION['utm_content'] .'"': ''?> >
+                            <input type="hidden" name="utm_term" <?php echo !empty($_SESSION['utm_term']) ? ' value="' . $_SESSION['utm_term'] .'"': ''?> >
                             <div class="message">
                                 <label for="fullname" class="hidden"><?= BaseController::getMessage('366') ?></label>
                                 <input class="custom-field" type="text" id="fullname" name="fullname"
                                        placeholder="<?= BaseController::getMessage('366') ?>">
                                 <label for="phone" class="hidden">Телефон</label>
                                 <input class="custom-field" id="phone" type="text" name="phone" placeholder="+380">
+
+                                <input type="hidden" name="email" value="new_landing_request@gmail.com" >
+                                <input type="hidden" name="question" value="new_landing_question" >
 
                                 <div class="connect__content-button zelyonyi-button">
                                     <button class="btn connect-btn btn-primary zelyonyi-btn" id="submit_button">
@@ -216,12 +224,21 @@ $contacts = \backend\models\Contact::getContact();
                     <div class="zelyonyi-form-bg energy-bg">
                         <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('681') ?></strong>
                         <strong class="integrated-subtitle energy-subtitle"><?= BaseController::getMessage('682') ?></strong>
-                        <form class="connect__content-question" id="question_form" data-post-url="index.html">
+                        <form class="connect__content-question" id="question_form_2" data-post-url="index.html">
                             <div class="message">
+                                <input type="hidden" name="utm_source" <?php echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''?> >
+                                <input type="hidden" name="utm_medium" <?php echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''?> >
+                                <input type="hidden" name="utm_campaign" <?php echo !empty($_SESSION['utm_campaign']) ? ' value="' . $_SESSION['utm_campaign'] .'"': ''?> >
+                                <input type="hidden" name="utm_content" <?php echo !empty($_SESSION['utm_content']) ? ' value="' . $_SESSION['utm_content'] .'"': ''?> >
+                                <input type="hidden" name="utm_term" <?php echo !empty($_SESSION['utm_term']) ? ' value="' . $_SESSION['utm_term'] .'"': ''?> >
                                 <label for="fullname" class="hidden"><?= BaseController::getMessage('366') ?></label>
                                 <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
                                 <label for="phone" class="hidden">Телефон</label>
                                 <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+
+                                <input type="hidden" name="email" value="new_landing_request@gmail.com" >
+                                <input type="hidden" name="question" value="new_landing_question" >
+
                                 <div class="connect__content-button zelyonyi-button">
                                     <button class="btn connect-btn btn-primary zelyonyi-btn" id="submit_button">
                                         <?= BaseController::getMessage('14') ?>
@@ -516,12 +533,20 @@ $contacts = \backend\models\Contact::getContact();
                 <div class="questions-form-bg">
                     <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('712') ?></strong>
                     <strong class="integrated-subtitle energy-subtitle"><?= BaseController::getMessage('713') ?></strong>
-                    <form class="connect__content-question" id="question_form" data-post-url="index.html">
+                    <form class="connect__content-question" id="question_form_3" data-post-url="index.html">
                         <div class="message">
+                            <input type="hidden" name="utm_source" <?php echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''?> >
+                            <input type="hidden" name="utm_medium" <?php echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''?> >
+                            <input type="hidden" name="utm_campaign" <?php echo !empty($_SESSION['utm_campaign']) ? ' value="' . $_SESSION['utm_campaign'] .'"': ''?> >
+                            <input type="hidden" name="utm_content" <?php echo !empty($_SESSION['utm_content']) ? ' value="' . $_SESSION['utm_content'] .'"': ''?> >
+                            <input type="hidden" name="utm_term" <?php echo !empty($_SESSION['utm_term']) ? ' value="' . $_SESSION['utm_term'] .'"': ''?> >
                             <label for="fullname" class="hidden"><?= BaseController::getMessage('366') ?></label>
                             <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
                             <label for="phone" class="hidden">Телефон</label>
                             <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+
+                            <input type="hidden" name="email" value="new_landing_request@gmail.com" >
+                            <input type="hidden" name="question" value="new_landing_question" >
                             
                             <div class="connect__content-button zelyonyi-button">
                                 <button class="btn connect-btn btn-primary zelyonyi-btn" id="submit_button">
