@@ -46,7 +46,7 @@ $contacts = \backend\models\Contact::getContact();
                 <div class="dohod-zelyonyi-form">
                     <div class="zelyonyi-form-bg">
                         <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('651') ?></strong>
-                        <form class="connect__content-question" id="question_form_1" data-post-url="index.html">
+                        <form class="connect__content-question-1" id="question_form_1" data-post-url="index.html">
                             <input type="hidden" name="utm_source" <?php echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''?> >
                             <input type="hidden" name="utm_medium" <?php echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''?> >
                             <input type="hidden" name="utm_campaign" <?php echo !empty($_SESSION['utm_campaign']) ? ' value="' . $_SESSION['utm_campaign'] .'"': ''?> >
@@ -63,7 +63,7 @@ $contacts = \backend\models\Contact::getContact();
                                 <input type="hidden" name="question" value="new_landing_question" >
 
                                 <div class="connect__content-button zelyonyi-button">
-                                    <button class="btn connect-btn btn-primary zelyonyi-btn" id="submit_button">
+                                    <button class="btn connect-btn-1 btn-primary zelyonyi-btn" id="submit_button">
                                         <?= BaseController::getMessage('14') ?>
                                     </button>
                                 </div>
@@ -224,7 +224,7 @@ $contacts = \backend\models\Contact::getContact();
                     <div class="zelyonyi-form-bg energy-bg">
                         <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('681') ?></strong>
                         <strong class="integrated-subtitle energy-subtitle"><?= BaseController::getMessage('682') ?></strong>
-                        <form class="connect__content-question" id="question_form_2" data-post-url="index.html">
+                        <form class="connect__content-question-2" id="question_form_2" data-post-url="index.html">
                             <div class="message">
                                 <input type="hidden" name="utm_source" <?php echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''?> >
                                 <input type="hidden" name="utm_medium" <?php echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''?> >
@@ -240,7 +240,7 @@ $contacts = \backend\models\Contact::getContact();
                                 <input type="hidden" name="question" value="new_landing_question" >
 
                                 <div class="connect__content-button zelyonyi-button">
-                                    <button class="btn connect-btn btn-primary zelyonyi-btn" id="submit_button">
+                                    <button class="btn connect-btn-2 btn-primary zelyonyi-btn" id="submit_button">
                                         <?= BaseController::getMessage('14') ?>
                                     </button>
                                 </div>
@@ -533,7 +533,7 @@ $contacts = \backend\models\Contact::getContact();
                 <div class="questions-form-bg">
                     <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('712') ?></strong>
                     <strong class="integrated-subtitle energy-subtitle"><?= BaseController::getMessage('713') ?></strong>
-                    <form class="connect__content-question" id="question_form_3" data-post-url="index.html">
+                    <form class="connect__content-question-3" id="question_form_3" data-post-url="index.html">
                         <div class="message">
                             <input type="hidden" name="utm_source" <?php echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''?> >
                             <input type="hidden" name="utm_medium" <?php echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''?> >
@@ -549,7 +549,7 @@ $contacts = \backend\models\Contact::getContact();
                             <input type="hidden" name="question" value="new_landing_question" >
                             
                             <div class="connect__content-button zelyonyi-button">
-                                <button class="btn connect-btn btn-primary zelyonyi-btn" id="submit_button">
+                                <button class="btn connect-btn-3 btn-primary zelyonyi-btn" id="submit_button">
                                     <?= BaseController::getMessage('14') ?>
                                 </button>
                             </div>
