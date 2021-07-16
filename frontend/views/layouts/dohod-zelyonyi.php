@@ -149,9 +149,9 @@ if ($res_1 !== false) {
 						</a>
 						<ul class="header-contact-list white-color-list">
 							<li><a class="white-color-tell" itemprop="telephone" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
-							<li><a class="white-color-tell" itemprop="telephone" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
-							<li><a class="white-color-tell" itemprop="telephone" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
-							<li class="address-list">
+                            <li><?= $sign_1 ?><a itemprop="telephone" class="white-color-tell" href="tel:<?= $sign_1 . str_replace(' ', '', $mob_1); ?>"><?= $mob_1; ?></a></li>
+                            <li><?= $sign_2 ?><a itemprop="telephone" class="white-color-tell" href="tel:<?= $sign_2 . str_replace(' ', '', $mob_2); ?>"><?= $mob_2; ?></a></li>
+                            <li class="address-list">
 								<i class="icon-envelope"></i>
 								<a itemprop="email" href="mailto:<?= $contacts->email ?>">
                                     <?= $contacts->email ?>
