@@ -131,7 +131,7 @@ $contacts = \backend\models\Contact::getContact();
 						</a>
 						<ul class="header-contact-list white-color-list">
 							<li><a class="white-color-tell" itemprop="telephone" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
-							<li><a class="white-color-tell" itemprop="telephone" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
+							<li>+<a class="white-color-tell" itemprop="telephone" href="tel:+<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
 							<li><a class="white-color-tell" itemprop="telephone" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
 							<li class="address-list">
 								<i class="icon-envelope"></i>
@@ -270,7 +270,7 @@ $contacts = \backend\models\Contact::getContact();
 							</span>
 						</li>
 						<li>
-							<a itemprop="telephone" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a>
+							+<a itemprop="telephone" href="tel:+<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a>
 						</li>
 						<li>
 							<a itemprop="telephone" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a>
