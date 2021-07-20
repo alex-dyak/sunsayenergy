@@ -87,7 +87,7 @@ if ($res_1 !== false) {
 
 	<style>
 		.b24-widget-button-position-bottom-left{
-			left: 20px !important; b20}.preloader{display:flex;align-items:center;justify-content:center;position:fixed;top:0;bottom:0;left:0;right:0;z-index:9999;background:#fff}.sk-chasing-dots{width:90px;height:90px;position:relative;margin:auto;text-align:center;animation:sk-chasing-dots-rotate 2s infinite linear}.sk-child{width:calc(90px / 2);height:calc(90px / 2);display:inline-block;position:absolute;top:0;background-color:#ffd100;border-radius:100%;animation:sk-chasing-dots-bounce 2s infinite ease-in-out}.sk-dot-2{background-color:#dfedff;top:auto;bottom:0;animation-delay:calc(-2s / 2)}@keyframes sk-chasing-dots-rotate{100%{transform:rotate(360deg)}}@keyframes sk-chasing-dots-bounce{0%,100%{transform:scale(0)}50%{transform:scale(1)}}
+			left: 20px !important; b20}.preloader{display:none;align-items:center;justify-content:center;position:fixed;top:0;bottom:0;left:0;right:0;z-index:9999;background:#fff}.sk-chasing-dots{width:90px;height:90px;position:relative;margin:auto;text-align:center;animation:sk-chasing-dots-rotate 2s infinite linear}.sk-child{width:calc(90px / 2);height:calc(90px / 2);display:inline-block;position:absolute;top:0;background-color:#ffd100;border-radius:100%;animation:sk-chasing-dots-bounce 2s infinite ease-in-out}.sk-dot-2{background-color:#dfedff;top:auto;bottom:0;animation-delay:calc(-2s / 2)}@keyframes sk-chasing-dots-rotate{100%{transform:rotate(360deg)}}@keyframes sk-chasing-dots-bounce{0%,100%{transform:scale(0)}50%{transform:scale(1)}}
 	</style>
 	<script>
         window.addEventListener('load', function () {document.querySelector(".preloader").style = "display:none;";});
@@ -739,14 +739,14 @@ if ($res_1 !== false) {
     document.addEventListener("DOMContentLoaded",function(){var e=[].slice.call(document.querySelectorAll(".background-lazy")),n=!1;if(e.length){var t=function(){!1===n&&(n=!0,setTimeout(function(){e.forEach(function(n){n.getBoundingClientRect().top<=window.innerHeight&&n.getBoundingClientRect().bottom>=0&&"none"!==getComputedStyle(n).display&&(n.style="background-image: url("+n.dataset.src+")",n.classList.remove("background-lazy"),0===(e=e.filter(function(e){return e!==n})).length&&(document.removeEventListener("scroll",t),window.removeEventListener("resize",t),window.removeEventListener("orientationchange",t)))}),n=!1},200))};document.addEventListener("scroll",t),window.addEventListener("resize",t),window.addEventListener("orientationchange",t)}});
 </script>
 
-<script>
-    defer(function() {
-        (function(w,d,u){
-            var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
-            var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-        })(window,document,'https://cdn.bitrix24.ua/b9504081/crm/site_button/loader_1_2svhj8.js');
-    }, 2000);
-</script>
+<!--<script>-->
+<!--    defer(function() {-->
+<!--        (function(w,d,u){-->
+<!--            var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);-->
+<!--            var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);-->
+<!--        })(window,document,'https://cdn.bitrix24.ua/b9504081/crm/site_button/loader_1_2svhj8.js');-->
+<!--    }, 2000);-->
+<!--</script>-->
 
 <script>
 	if ($( "#map" ).length) {
