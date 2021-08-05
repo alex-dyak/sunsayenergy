@@ -189,15 +189,7 @@ $contacts = \backend\models\Contact::getContact();
 			<strong class="dohod-zelyonyi-h2"><?= BaseController::getMessage('678') ?></strong>
             <strong class="integrated-subtitle"><?= BaseController::getMessage('679') ?></strong>
             <div class="service-miscount__content">
-
-                <div class="uCalc_331490"></div>
-                <script> var widgetOptions331490 = {bg_color: "transparent"};
-                    (function () {
-                        var a = document.createElement("script"), h = "head";
-                        a.async = true;
-                        a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=331490&t=" + Math.floor(new Date() / 18e5);
-                        document.getElementsByTagName(h)[0].appendChild(a)
-                    })();</script>
+                <?= BaseController::getMessage('728') ?>
             </div>
         </div>
     </section>
