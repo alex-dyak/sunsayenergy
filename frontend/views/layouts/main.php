@@ -14,26 +14,7 @@ use \frontend\controllers\BaseController;
 
 
 $contacts = \backend\models\Contact::getContact();
-
-$mob_1 = $contacts->mobile_1;
-$mob_2 = $contacts->mobile_2;
-$mob_3 = $contacts->mobile_3;
-$res_1 = stripos($mob_1, '38 067');
-$res_2 = stripos($mob_2, '38 067');
-$res_3 = stripos($mob_3, '38 067');
-$sign_1 = $sign_2 = $sign_3 = '';
-if ($res_1 !== false) {
-    $sign_1 = '+';
-    $mob_1 = ltrim( $mob_1, '+');
-} elseif ($res_2 !== false) {
-    $sign_2 = '+';
-    $mob_2 = ltrim( $mob_2, '+');
-} elseif ($res_3 !== false) {
-    $sign_3 = '+';
-    $mob_3 = ltrim( $mob_3, '+');
-}
 ?>
-
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= (Yii::$app->language=='ua') ? 'uk': Yii::$app->language ?>">
@@ -164,8 +145,8 @@ if ($res_1 !== false) {
 						</a>
 						<ul class="header-contact-list">
 							<li><a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
-							<li><?= $sign_1 ?><a itemprop="telephone" class="" href="tel:<?= $sign_1 . str_replace(' ', '', $mob_1); ?>"><?= $mob_1; ?></a></li>
-							<li><?= $sign_2 ?><a itemprop="telephone" class="" href="tel:<?= $sign_2 . str_replace(' ', '', $mob_2); ?>"><?= $mob_2; ?></a></li>
+							<li><a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
+							<li><a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
 							<li class="address-list">
 								<i class="icon-envelope"></i>
 								<a itemprop="email" href="mailto:<?= $contacts->email ?>">
@@ -302,8 +283,8 @@ if ($res_1 !== false) {
 								<i class="icon-angle-right"></i>
 							</span>
 						</li>
-                        <li><?= $sign_1 ?><a itemprop="telephone" class="" href="tel:<?= $sign_1 . str_replace(' ', '', $mob_1); ?>"><?= $mob_1; ?></a></li>
-                        <li><?= $sign_2 ?><a itemprop="telephone" class="" href="tel:<?= $sign_2 . str_replace(' ', '', $mob_2); ?>"><?= $mob_2; ?></a></li>
+                        <li><a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
+                        <li><a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
 					</ul>
 				</li>
 				<li class="border"></li>
@@ -417,8 +398,8 @@ if ($res_1 !== false) {
 						<strong class="h4"><?= BaseController::getMessage('8') ?></strong>
 						<ul class="footer-contact-list">
 							<li><a class="" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
-                            <li><?= $sign_1 ?><a itemprop="telephone" class="" href="tel:<?= $sign_1 . str_replace(' ', '', $mob_1); ?>"><?= $mob_1; ?></a></li>
-                            <li><?= $sign_2 ?><a itemprop="telephone" class="" href="tel:<?= $sign_2 . str_replace(' ', '', $mob_2); ?>"><?= $mob_2; ?></a></li>
+                            <li><a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
+                            <li><a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
 						</ul>
 					</div>
 				</div>
