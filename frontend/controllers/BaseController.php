@@ -37,7 +37,7 @@ class BaseController extends Controller
         parent::init();
         Language::saveLang();
         $id = $this->id;
-        if ($id != 'technology') {
+        if ($id != 'single-blog') {
             $og = Og::findOne(1);
             $this->setOg($og->title);
         }
