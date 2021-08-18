@@ -101,6 +101,8 @@ class SiteController extends BaseController
         $video_reviews = VideoReview::find()->all();
 
         $this->layout = 'dohod-zelyonyi';
+        $this->setMeta(self::getTitle('dohod_zelyonyi'), self::getDescription('dohod_zelyonyi'));
+
         return $this->render('landing', compact('video_reviews'));
     }
 
