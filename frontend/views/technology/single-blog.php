@@ -37,41 +37,53 @@ $seo_date = date('Y-m-d', $datetime);
             </div>
         </section>
 
-        <section class="history-panels">
+        <section class="history-panels history-panels__fixed">
             <div class="container">
-                <?= $article->text ?>
-            </div>
-        </section>
-
-        <section class="innovation">
-            <div class="container">
-                <div class="innovation__inner">
-                    <div class="innovation__form">
-
-                        <div class="innovation__bg-form">
-                            <strong class="single-blog__sub-title innovation__sub-title">Хотите максимально выгодно и эффективно использовать энергию солнца — обращайтесь к экспертам sunsay energy</strong>
-                            <strong class="single-blog__text innovation__text-form">Закажите бесплатный змер крыши нашим инженерам</strong> 
-                            <form class="connect__content-question" id="question_form" data-post-url="index.html">
-                                <div class="message">
-                                    <label for="fullname" class="hidden"><?= BaseController::getMessage('366') ?></label>
-                                    <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
-                                    <label for="phone" class="hidden">Телефон</label>
-                                    <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+                <div class="history-panels__inner">
+                    <div class="history-panels__content fixed__contact">
+                        <?= $article->text ?>   
+                    </div>
+                    <div class="innovation__bg-form bg-form__fixed">
+                        <strong class="single-blog__sub-title innovation__sub-title">Хотите максимально выгодно и эффективно использовать энергию солнца — обращайтесь к экспертам sunsay energy</strong>
+                        <strong class="single-blog__text innovation__text-form">Закажите бесплатный змер крыши нашим инженерам</strong> 
+                        <form class="connect__content-question" id="question_form" data-post-url="index.html">
+                            <div class="message">
+                                <label for="fullname" class="hidden"><?= BaseController::getMessage('366') ?></label>
+                                <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
+                                <label for="phone" class="hidden">Телефон</label>
+                                <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
                                     
-                                    <div class="connect__content-button">
-                                        <button class="btn connect-btn btn-primary" id="submit_button">
-                                            <?= BaseController::getMessage('14') ?>
-                                        </button>
-                                    </div>
+                                <div class="connect__content-button">
+                                    <button class="btn connect-btn btn-primary" id="submit_button">
+                                        <?= BaseController::getMessage('14') ?>
+                                    </button>
                                 </div>
-                                <div class="form-compelete"><?= BaseController::getMessage('374') ?></div>
-                            </form>
-                        </div>
+                            </div>
+                            <div class="form-compelete"><?= BaseController::getMessage('374') ?></div>
+                        </form>
+                    </div>
 
+                    <div class="form_test__static">
+                        <strong class="single-blog__sub-title innovation__sub-title">Хотите максимально выгодно и эффективно использовать энергию солнца — обращайтесь к экспертам sunsay energy</strong>
+                        <strong class="single-blog__text innovation__text-form">Закажите бесплатный змер крыши нашим инженерам</strong> 
+                        <form class="connect__content-question" id="question_form" data-post-url="index.html">
+                            <div class="message">
+                                <label for="fullname" class="hidden"><?= BaseController::getMessage('366') ?></label>
+                                <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
+                                <label for="phone" class="hidden">Телефон</label>
+                                <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+                                    
+                                <div class="connect__content-button">
+                                    <button class="btn connect-btn btn-primary" id="submit_button">
+                                        <?= BaseController::getMessage('14') ?>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-compelete"><?= BaseController::getMessage('374') ?></div>
+                        </form>
                     </div>
 
                 </div>
-                
             </div>
         </section>
 

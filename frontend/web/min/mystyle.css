@@ -331,190 +331,160 @@ iframe{max-width:100%}
 }
 
 /* **********start single-blog */
+
 .solar-modules {
-    background-image: url(../img/single-blog/solar_modules-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    width: 100%;
-    min-height: 100vh;
-    text-align: center;
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 80px;
+    margin-bottom: 20px;  
 }
+
 .solar-modules__inner {
-    height: 280px;
-    background: rgba(255, 255, 255, 0.8);
-
-}
-.solar-modules__title h1{
-    font-size: 68px;
-    line-height: 50px;
-    margin-bottom: 60px;
-    padding-top: 64px;
-}
-.solar-modules__data {
-    font-style: 16px;
-    font-weight: 400;
+    text-align: center;
 }
 
-@media screen and (max-width:768px) {
+.solar-modules__title h1 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
     .solar-modules__title h1 {
         font-size: 50px;
+        line-height: 50px;
         padding-top: 0;
     }
     .solar-modules {
         background-image: none;
         min-height: auto;
-        margin-bottom: 165px;  
-    }
-    .solar-modules__inner {
-        background: none;
-        height: 0;
-    
     }
 }
 
-@media screen and (max-width: 420px) {
-    .solar-modules__title h1 {
-        font-size: 36px;
-        line-height: 36px;
-        margin-bottom: 26px;
-    }
+@media screen and (min-width: 1024px) {
     .solar-modules {
-        margin-bottom: 95px;  
+        background-image: url(../img/single-blog/solar_modules-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        width: 100%;
+        min-height: 100vh;
+        text-align: center;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 80px;
+    }
+    .solar-modules__inner {
+        height: 280px;
+        background: rgba(255, 255, 255, 0.8);
+    
+    }
+    .solar-modules__title h1{
+        font-size: 50px;
+        line-height: 50px;
+        max-width: 800px;
+        margin: 0 auto;
+        padding-bottom: 60px;
+        padding-top: 64px;
+    }
+    .solar-modules__data {
+        font-style: 16px;
+        font-weight: 400;
     }
 }
 
 .history-panels {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
-.single-blog__text {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    padding-bottom: 8px;
-}
-
-.single-blog__text span{
-    font-weight: 700;
-}
-
-.innovation__text {
-    margin-bottom: 40px;
-}
-
-.history-panels__image {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    width: 100%;
-    margin: 20px 0 50px 0;
+.innovation__bg-form {
+    display: none;
 }
 
 .single-blog__sub-title {
     font-family: "Bebas Neue Cyrillic",sans-serif;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 24px;
+    line-height: 24px;
     text-transform: uppercase;
     margin-top: 0;
 }
-
-@media screen and (max-width: 420px) {
-    .history-panels {
-        margin-bottom: 20px;
-    }
-    .innovation__text {
-        margin-bottom: 20px;
-    }
-    .single-blog__sub-title {
-        font-size: 24px;
-        line-height: 24px;
-    }
-    .history-panels__image {
-        margin: 20px 0 30px 0;
-    }
-}
-
-
-
-.innovation {
-    margin-bottom: 50px;
-    border-bottom: 1px solid #ebebeb;
-}
-
-.innovation__inner {
-    display: flex;
-    justify-content: space-between;
-}
-.innovation__content {
-    max-width: 65%;
-    padding-right: 35px;
-}
-
-.innovation__author {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    padding-top: 10px;
-    padding-bottom: 43px;
-}
-
-.innovation__bg-form {
-    background: transparent;
-    padding: 74px 35px 80px 29px;
-    max-width: 449px;
-    border: 1px solid #B7D3F7;
-    border-radius: 15px;    
-}
-
 .innovation__sub-title {
+    font-size: 24px;
+    line-height: 24px;
     text-align: center;
     margin-bottom: 25px;
-    line-height: 32px;
     display: block;
 }
-
 .innovation__text-form {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 20px;
+    font-weight: 400;
     display: block;
-    margin-bottom: 10px;
 }
 
-@media screen and (max-width:1024px) {
-    .innovation__inner {
-        display: flex;
-        flex-wrap: wrap;
+.form_test__static {
+    width: 100%;
+    padding: 46px 20px 40px 23px;
+    background: transparent;
+    max-width: 449px;
+    max-height: 600px;
+    border: 1px solid #B7D3F7;
+    border-radius: 15px;  
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .history-panels {
+        margin-bottom: 55px;
     }
-    .innovation__content {
-        max-width: 100%;
-        margin-bottom: 20px;
+
+    .single-blog__sub-title {
+        font-size: 32px;
+        line-height: 32px;
     }
-    .innovation__form {
-        margin: 0 auto;
-        margin-bottom: 50px;
+
+    .form_test__static {
+        padding: 74px 35px 80px 29px;
     }
 }
-@media screen and (max-width: 420px){
+
+
+@media screen and (min-width: 1280px) { 
+    .form_test__static {
+        display: none;
+    }
+
     .innovation__bg-form {
-        padding: 46px 20px 40px 23px;
+        display: block;
+        width: 30%;
+        padding: 74px 35px 80px 29px;
+        background: transparent;
+        max-width: 449px;
+        max-height: 600px;
+        border: 1px solid #B7D3F7;
+        border-radius: 15px;  
+        margin: 0 auto;
     }
-    .innovation__text-form {
-        font-size: 14px;
-        line-height: 17px;
+
+    .history-panels__fixed {
+        position: relative;
     }
-    .innovation__author {
-        padding-bottom: 10px;
+
+    .fixed__contact {
+        width: 65%;
     }
-    .innovation__sub-title {
-        font-size: 24px;
-        line-height: 24px;
+
+    .bg-form__fixed {
+        position: absolute;
+        top: 0;
+        max-width: 414px;
+        width: 30%;
+        margin-left: 35px;
+        height: 600px;
+        right: 60px;
+        z-index: 10;
+        display: block;
     }
 }
-
 
 .single__blog-inner {
     display: flex;
@@ -557,7 +527,7 @@ iframe{max-width:100%}
     background: #E2EAEE !important;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
     .single__blog-inner {
         display: flex;
         flex-wrap: wrap;
