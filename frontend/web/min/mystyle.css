@@ -329,6 +329,227 @@ iframe{max-width:100%}
 .blog-page__image-container{display:none}
 .blog-page__mobile-container{display:block;margin-top:30px}
 }
+
+/* **********start single-blog */
+
+.solar-modules {
+    margin-bottom: 20px;  
+}
+
+.solar-modules__inner {
+    text-align: center;
+}
+
+.solar-modules__title h1 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .solar-modules__title h1 {
+        font-size: 50px;
+        line-height: 50px;
+        padding-top: 0;
+    }
+    .solar-modules {
+        background-image: none;
+        min-height: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .solar-modules {
+        background-image: url(../img/single-blog/solar_modules-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        width: 100%;
+        min-height: 100vh;
+        text-align: center;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 80px;
+    }
+    .solar-modules__inner {
+        height: 280px;
+        background: rgba(255, 255, 255, 0.8);
+    
+    }
+    .solar-modules__title h1{
+        font-size: 50px;
+        line-height: 50px;
+        max-width: 800px;
+        margin: 0 auto;
+        padding-bottom: 60px;
+        padding-top: 64px;
+    }
+    .solar-modules__data {
+        font-style: 16px;
+        font-weight: 400;
+    }
+}
+
+.history-panels {
+    margin-bottom: 45px;
+}
+
+.innovation__bg-form {
+    display: none;
+}
+
+.single-blog__sub-title {
+    font-family: "Bebas Neue Cyrillic",sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.innovation__sub-title {
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 25px;
+    display: block;
+}
+.innovation__text-form {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    display: block;
+}
+
+.form_test__static {
+    width: 100%;
+    padding: 46px 20px 40px 23px;
+    background: transparent;
+    max-width: 449px;
+    max-height: 600px;
+    border: 1px solid #B7D3F7;
+    border-radius: 15px;  
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .history-panels {
+        margin-bottom: 55px;
+    }
+
+    .single-blog__sub-title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .form_test__static {
+        padding: 74px 35px 80px 29px;
+    }
+}
+
+
+@media screen and (min-width: 1280px) { 
+    .form_test__static {
+        display: none;
+    }
+
+    .innovation__bg-form {
+        display: block;
+        width: 30%;
+        padding: 74px 35px 80px 29px;
+        background: transparent;
+        max-width: 449px;
+        max-height: 600px;
+        border: 1px solid #B7D3F7;
+        border-radius: 15px;  
+        margin: 0 auto;
+    }
+
+    .history-panels__fixed {
+        position: relative;
+    }
+
+    .fixed__contact {
+        width: 65%;
+    }
+
+    .bg-form__fixed {
+        position: absolute;
+        top: 0;
+        max-width: 414px;
+        width: 30%;
+        margin-left: 35px;
+        height: 600px;
+        right: 60px;
+        z-index: 10;
+        display: block;
+    }
+}
+
+.single__blog-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.single__blog-more {
+    width: 65%;
+}
+    
+.single__list-item {
+    width: 50%;
+}
+
+.single__comment-wrap {
+    padding: 58px 35px 57px 29px;
+    max-width: 449px;
+    width: 30%;
+    border: 1px solid #b7d3f7;
+    border-radius: 15px;
+    margin-left: 35px;
+    max-height: 485px;
+}
+
+.single__line-title {
+    text-align: center;
+    padding-bottom: 14px;
+}
+
+.single__custom-field {
+    width: 90%; 
+    height: 190px;
+    resize: none;
+}
+
+.single__comment-button {
+    width: 100%;
+}
+.single__comment-button{
+    background: #E2EAEE !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .single__blog-inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .single__blog-more {
+        width: 100%;
+    }
+        .single__comment-wrap {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .single__list-item {
+        width: 100%;
+    }
+}
+
+
+/* **********end single-blog */
+
 .type-info{padding:0 30px;height:100vh;display:flex;align-items:center}
 .type-info .type-info__content{display:flex;flex-direction:row}
 .type-info .type-info__content-info{flex:1 60%;max-width:60%;align-self:center}
@@ -631,23 +852,23 @@ a:not([class]):hover{color:#ffd100}
 }
 .main-logo img{max-width:100%}
 .main-logo .logo-white{display:none}
-.main-logo .logo-white-def{display:none}
 .main-logo .logo-mob{display:block}
+.main-logo .logo-dark{display:none}
 
 @media screen and (min-width:768px){
 .main-logo{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
 .main-logo .logo-def{display:none}
 .main-logo .logo-white{display:block}
-.main-logo .logo-mob{display:none}
+.main-logo .logo-dark{display:none}
+
 }
 @media screen and (min-width:1280px){
 .main-logo{position:static;-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0);text-align:left;max-width:150px}
 .main-logo .logo-def{display:block}
 .main-logo .logo-white{display:none}
-.main-logo .logo-white-def{display: block}
-.header.transparent.scrolled .main-logo .logo-white-def{display: none;}
-.header.transparent.scrolled .main-logo .logo-def{display: block;}
-.header.transparent.scrolled .main-logo .logo-mob{display: block;}
+.main-logo .logo-dark{display:none}
+.header.transparent.scrolled .main-logo .logo-mob{display: none;}
+.header.transparent.scrolled .main-logo .logo-dark{display: block;}
 }
 @media screen and (min-width:1440px){
 .main-logo{max-width:190px}
@@ -672,6 +893,7 @@ a:not([class]):hover{color:#ffd100}
 }
 .nav-logo a{display:inline-block;vertical-align:middle}
 .contact-block .contact-opener{position:relative;display:block;vertical-align:middle;color:#393939;text-transform:uppercase;font-weight:600;font-size:12px;padding-left:28px;cursor:pointer}
+.contact-block .contact-opener-white {color:#fff}
 @media screen and (min-width:768px){
 .contact-block .contact-opener{font-size:16px;padding-left:36px}
 }
@@ -679,6 +901,7 @@ a:not([class]):hover{color:#ffd100}
 .contact-block .contact-opener{display:none}
 }
 .contact-block .contact-opener:hover{color:#393939}
+.contact-block .contact-opener-white:hover{color:#fff}
 .contact-block .contact-opener i{position:absolute;top:50%;left:0;display:block;font-size:18px;-webkit-transform:scale(1,1) translateY(-50%);-ms-transform:scale(1,1) translateY(-50%);transform:scale(1,1) translateY(-50%);-webkit-transition:-webkit-transform .3s ease;transition:-webkit-transform .3s ease;-o-transition:transform .3s ease;transition:transform .3s ease;transition:transform .3s ease,-webkit-transform .3s ease}
 @media screen and (min-width:768px){
 .contact-block .contact-opener i{font-size:26px}
@@ -724,6 +947,7 @@ a:not([class]):hover{color:#ffd100}
 .contact-block.show-block .icon-close{-webkit-transform:scale(1,1) translateY(-50%);-ms-transform:scale(1,1) translateY(-50%);transform:scale(1,1) translateY(-50%)}
 .contact-block.show-block .header-contact-list{max-height:1000px;opacity:1;visibility:visible}
 #nav-opener{position:relative;color:#393939;text-transform:uppercase;font-weight:600;font-size:12px;padding:5px 28px 5px 5px;cursor:pointer}
+.nav-opener-white{color:#fff!important}
 @media screen and (min-width:768px){
 #nav-opener{font-size:16px;padding-right:36px}
 }
@@ -1972,16 +2196,16 @@ a:not([class]):hover{color:#ffd100}
 
 /* start dohod-zelyonyi-tarif */
 .dohod-zelyonyi-section {
-    background-image: url('../img/dohod-zelyonyi-tarif/test.jpg');
+    background-image: url('../img/dohod-zelyonyi-tarif/dohod-zelyonyi-mobile-bg.jpg');
     background-size:cover;
     background-repeat:no-repeat;
     background-position: center;
     overflow:hidden;
-    margin-top: -170px;
+    margin-top: -195px;
     margin-bottom: 42px;
 }
 .dohod-zelyonyi-wrapper {
-    margin-top: 155px;
+    margin-top: 180px;
     margin-bottom: 53px;
 }
 .dohod-zelyonyi-inner{
@@ -1996,6 +2220,7 @@ a:not([class]):hover{color:#ffd100}
     text-transform:uppercase;
     color: #fff;
     display: block;
+    max-width: 270px;
 }
 .dohod-zelyonyi-list {
     margin-left: 0;
@@ -2025,27 +2250,31 @@ a:not([class]):hover{color:#ffd100}
 .portmone-icon::before,
 .euro-icon::before,
 .year-icon::before{
+    content: "";
+    background: url('../img/dohod-zelyonyi-tarif/sprites_icon.png');
     position:absolute;
     display:block;
-    height: 40px;
 }
 
 .portmone-icon::before {
-    content: url('../img/dohod-zelyonyi-tarif/portmone_icon.svg');
-    width: 30px;
-    top: 0;
+    background-position: -244px -185px;
+    width: 31px;
+    height: 41px;
+    top: -4px;
     left: -50px;
 }
 .euro-icon::before {
-    content: url('../img/dohod-zelyonyi-tarif/euro-icon.svg');
-    width: 42px;
-    top: 4px;
+    background-position: -277px -153px;
+    width: 43px;
+    height: 39px;
+    top: 0px;
     left: -55px;
 }
 .year-icon::before {
-    content: url('../img/dohod-zelyonyi-tarif/year-icon.svg');
-    width: 39px;
-    top: 3px;
+    background-position: -277px -192px;
+    width: 41px;
+    height: 39px;
+    top: 0px;
     left: -53px;
 }
 
@@ -2099,24 +2328,36 @@ a:not([class]):hover{color:#ffd100}
 .guarantee-icon::before,
 .people-icon::before,
 .support-icon::before{
+    content: "";
+    background: url('../img/dohod-zelyonyi-tarif/sprites_icon.png');
     display:block;
     margin-bottom: 12px;
     position: absolute;
-    top: 0px;
+    width: 65px; 
+    height: 64px;
+    top: 0;
     left: 50px;
 }
 
 .calculation-icon::before {
-    content: url('../img/dohod-zelyonyi-tarif/calculation-icon-mob.png');
+    background-position: -65px -185px;
 }
 .guarantee-icon::before {
-    content: url('../img/dohod-zelyonyi-tarif/guarantee-icon-mob.png');
+    background-position: -171px -93px;
+    height: 66px;
 }
 .people-icon::before {
-    content: url('../img/dohod-zelyonyi-tarif/people-icon-mob.png');
+    background-position:  0px -185px;
+    height: 66px;
 }
 .support-icon::before {
-    content: url('../img/dohod-zelyonyi-tarif/support-icon-mob.png');
+    background-position: -130px -185px;
+}
+
+@media screen and (min-width:450px){
+    .dohod-zelyonyi-inner h1 {
+        max-width: 370px;
+    }
 }
 
 @media screen and (min-width:600px){
@@ -2143,17 +2384,17 @@ a:not([class]):hover{color:#ffd100}
         padding-left: 102px;
     }
     .portmone-icon::before {
-        content: url('../img/dohod-zelyonyi-tarif/portmone_icon.svg');
         left: -100px;
     }
     .euro-icon::before {
-        content: url('../img/dohod-zelyonyi-tarif/euro-icon.svg');
         left: -105px;
     }
     .year-icon::before {
-        content: url('../img/dohod-zelyonyi-tarif/year-icon.svg');
         left: -103px;
         top: 12px;
+    }
+    .dohod-zelyonyi-list .dohod-zelyonyi-text {
+        padding-top: 10px;
     }
 
 }
@@ -2183,7 +2424,12 @@ a:not([class]):hover{color:#ffd100}
     .dohod-zelyonyi-item {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+    }
+    .dohod-zelyonyi-list .dohod-zelyonyi-text {
+        padding-top: 0;
+    }
+    .portmone-icon::before {
+        top: 2px;
     }
 }
 @media screen and (min-width:1280px){
@@ -2210,29 +2456,35 @@ a:not([class]):hover{color:#ffd100}
     }
     .dohod-zelyonyi-item .dohod-zelyonyi-text {
         max-width: 336px;
-        padding-top: 0;
+        padding-top: 10px;
         padding-left: 125px;
         text-align: left;
     }
-    .calculation-icon::before {
-        content: url('../img/dohod-zelyonyi-tarif/calculation-icon.svg');    
-        top: -15px;
+
+    .calculation-icon::before,
+    .guarantee-icon::before,
+    .people-icon::before,
+    .support-icon::before {
+        width: 93px; 
+        height: 92px;
         left: 0;
+
+    }
+    .calculation-icon::before {
+        background-position: -184px -0;
     }
     .guarantee-icon::before {
-        content: url('../img/dohod-zelyonyi-tarif/guarantee-icon.svg');
-        top: -15px;
-        left: 0;
+        background-position: -0 -0;
+        width: 92px;
+        height: 93px;
     }
     .people-icon::before {
-        content: url('../img/dohod-zelyonyi-tarif/people-icon.svg');
-        top: -15px;
-        left: 0;
+        background-position: -92px -0;
+        width: 92px;
+        height: 93px;
     }
     .support-icon::before {
-        content: url('../img/dohod-zelyonyi-tarif/support-icon.svg');
-        top: -5px;
-        left: 0;
+        background-position: -0 -93px;
     }
 }
 
@@ -2358,7 +2610,8 @@ private-house-list .private-house-text {
     position: relative;
 } 
 .advantages-green-item::before {
-    content: url('../img/dohod-zelyonyi-tarif/Ellipse.svg');
+    content: "";
+    background: url('../img/dohod-zelyonyi-tarif/sprites_icon.png') -93px -93px;
     position:absolute;
     display:block;
     width: 78px;
@@ -2370,34 +2623,36 @@ private-house-list .private-house-text {
 .advantages-icon-group::after,
 .advantages-icon-vector2::after,
 .advantages-icon-group2::after{
+    content: "";
+    background: url('../img/dohod-zelyonyi-tarif/sprites_icon.png');
     position:absolute;
     display:block;
 }
 .advantages-icon-vector::after{
-    content: url('../img/dohod-zelyonyi-tarif/Vector.svg');
+    background-position: -277px -97px;
     width: 37px;
-    height: 55px;
+    height: 56px;
     top: 36px;
     left: 47px;
 }
 .advantages-icon-group::after{
-    content: url('../img/dohod-zelyonyi-tarif/Group.svg');
-    width: 48px;
-    height: 48px;
+    background-position: -195px -185px;
+    width: 49px;
+    height: 47px;
     top: 45px;
     left: 44px;
 }
 .advantages-icon-vector2::after{
-    content: url('../img/dohod-zelyonyi-tarif/Group2.svg');
-    width: 41px;
+    background-position: -277px -49px;
+    width: 44px;
     height: 48px;
     top: 40px;
     left: 44px;
 }
 .advantages-icon-group2::after{
-    content: url('../img/dohod-zelyonyi-tarif/Vector2.svg');
-    width: 43px;
-    height: 47px;
+    background-position: -277px -0;
+    width: 46px;
+    height: 49px;
     top: 44px;
     left: 43px;
 }
@@ -2537,6 +2792,7 @@ a.advantages-btn {
 .energy-name-title {
     font-size: 13px;
     line-height: 16px; 
+    font-weight: 600;
 }
 .energy-position {
     font-weight: 500;
@@ -2548,7 +2804,7 @@ a.advantages-btn {
 }
 
 .energy-img {
-    margin-top: -245px;
+    margin-top: -223px;
 }
 
 .energy-form {
@@ -2565,7 +2821,11 @@ a.advantages-btn {
     padding-bottom: 20px;
     text-align: left;
 }
-
+@media screen and (max-width:450px){
+    .energy-h2{
+    max-width: 325px;
+    }
+}
 @media screen and (min-width:768px){
     .energy-for-everyone{
         background-image: url('../img/dohod-zelyonyi-tarif/everyone-bg-desk.png');
@@ -2689,7 +2949,7 @@ a.advantages-btn {
     right: 15px;
 }
 .solar-station-content {
-    padding-right: 15px;
+    padding-right: 14px;
     padding-left: 15px;
 }
 
@@ -2717,8 +2977,17 @@ a.advantages-btn {
 }
 
 .station-content-price{
-    padding-left: 54px;
+    padding-left: 52px;
     padding-top: 18px;
+}
+
+@media screen and (max-width:435px){
+    .solar-station-income .dohod-zelyonyi-h2{
+        max-width: 340px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
 }
 
 @media screen and (min-width:573px){
@@ -2730,12 +2999,16 @@ a.advantages-btn {
 @media screen and (min-width:768px){
     .solar-station-inner {
         display: flex;        
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
     .solar-station-slider,
     .solar-station-content {
         width: 50%;
+    }
+    .solar-station-content {
+        max-width: 450px;
+        margin-top: 20px;
     }
     .solar-slider-revers {
         flex-direction: row-reverse;
@@ -2743,6 +3016,23 @@ a.advantages-btn {
     .solar-station-content strong {
         font-size: 20px;
         line-height: 24px;
+    }
+    .station-content-price{
+        padding-top: 18px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .solar-station-content {
+        margin-left: 45px;
+        margin-right: 40px;
+    }
+}
+
+@media screen and (min-width:1280px){
+    .solar-station-content {
+        margin-left: 95px;
+        margin-right: 105px;
     }
 }
 
@@ -2883,31 +3173,43 @@ a.advantages-btn {
 .stages-icon-letter::after,
 .stages-icon-contract::after,
 .stages-icon-income::after{
+    content: "";
+    background: url('../img/dohod-zelyonyi-tarif/sprites_icon.png');
     position:absolute;
     display:block;
 }
 .stages-icon-installation::after{
-    content: url('../img/dohod-zelyonyi-tarif/installation.svg');
+    background-position: -0 -291px;
+    width: 35px; 
+    height: 32px;
     top: 47px;
     left: 47px;
 }
 .stages-icon-bank::after{
-    content: url('../img/dohod-zelyonyi-tarif/bank_card.svg');
+    background-position: -88px -251px;
+    width: 39px; 
+    height: 27px;
     top: 50px;
     left: 45px;
 }
 .stages-icon-letter::after{
-    content: url('../img/dohod-zelyonyi-tarif/letter_icon.svg');
+    background-position: -39px -251px;
+    width: 49px; 
+    height: 29px;
     top: 50px;
     left: 44px;
 }
 .stages-icon-contract::after{
-    content: url('../img/dohod-zelyonyi-tarif/contract_icon.svg');
+    background-position: -323px -0;
+    width: 34px; 
+    height: 36px;
     top: 45px;
     left: 50px;
 }
 .stages-icon-income::after{
-    content: url('../img/dohod-zelyonyi-tarif/income_icon.svg');
+    background-position: -323px -36px;
+    width: 30px; 
+    height: 40px;
     top: 45px;
     left: 54px;
 }
@@ -2978,21 +3280,25 @@ a.advantages-btn {
 }
 
 .accordion button {
-        padding: 25px;
-        font-weight: 600;
-        text-align: left;
-        max-width: 267px;
+    padding: 25px;
+    font-weight: 600;
+    text-align: left;
+    max-width: 267px;
 }
 
 .accordion:after {
-    content: url('../img/dohod-zelyonyi-tarif/accordion-plys.png');
+    content: "";
+    background: url('../img/dohod-zelyonyi-tarif/sprites_icon.png') -323px -101px;
+    width: 25px; 
+    height: 25px;
     top: 25px;
     right: 15px;
     position: absolute;
 }
 
 .active1:after {
-    content: url('../img/dohod-zelyonyi-tarif/accordion-minys.png');
+    content: "";
+    background: url('../img/dohod-zelyonyi-tarif/sprites_icon.png') -323px -76px;
 }
 
 .panel {

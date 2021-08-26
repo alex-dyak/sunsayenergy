@@ -78,7 +78,7 @@ class TechnologyController extends BaseController
         $img = 'https://sunsayenergy.com/images/' . $article->images->imagePreview;
         $this->setMeta($article->title, $article->descriptionSEO);
 
-        return $this->render('detailed', compact(['article','other_articles', 'img', 'comments']));
+        return $this->render('single-blog', compact(['article','other_articles', 'img', 'comments']));
     }
 
     public function actionNine()
