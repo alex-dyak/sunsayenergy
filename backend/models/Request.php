@@ -60,7 +60,7 @@ class Request extends \yii\db\ActiveRecord
 
         if (!empty($phone)) {
             $phone = str_replace([
-                '+38',
+                '+',
                 '(',
                 ')',
                 '+',
