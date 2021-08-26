@@ -44,8 +44,8 @@ $seo_date = date('Y-m-d', $datetime);
                         <?= $article->text ?>   
                     </div>
                     <div class="innovation__bg-form bg-form__fixed">
-                        <strong class="single-blog__sub-title innovation__sub-title">Хотите максимально выгодно и эффективно использовать энергию солнца — обращайтесь к экспертам sunsay energy</strong>
-                        <strong class="single-blog__text innovation__text-form">Закажите бесплатный змер крыши нашим инженерам</strong> 
+                        <strong class="single-blog__sub-title innovation__sub-title"><?= BaseController::getMessage('729') ?></strong>
+                        <strong class="single-blog__text innovation__text-form"><?= BaseController::getMessage('730') ?></strong>
                         <form class="connect__content-question" id="question_form" data-post-url="index.html">
                             <div class="message">
                                 <label for="fullname" class="hidden"><?= BaseController::getMessage('366') ?></label>
