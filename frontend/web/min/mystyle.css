@@ -465,24 +465,32 @@ iframe{max-width:100%}
         margin: 0 auto;
     }
 
-    .history-panels__fixed {
+    /* .history-panels__fixed {
         position: relative;
+    } */
+
+    .history-panels__inner {
+        display: flex;
+        justify-content: space-between;
     }
 
     .fixed__contact {
         width: 65%;
     }
 
+    .form__fixed-inner {
+        position: relative;
+        width: 30%;
+        max-width: 449px;
+        margin-left: 35px;
+    }
+
     .bg-form__fixed {
         position: absolute;
         top: 0;
-        max-width: 390px;
-        width: 30%;
-        margin-left: 35px;
         height: 600px;
-        right: 60px;
-        z-index: 10;
         display: block;
+        width: 100%;
     }
 }
 
@@ -501,7 +509,7 @@ iframe{max-width:100%}
 
 .single__comment-wrap {
     padding: 58px 35px 57px 29px;
-    max-width: 390px;
+    max-width: 449px;
     width: 30%;
     border: 1px solid #b7d3f7;
     border-radius: 15px;
