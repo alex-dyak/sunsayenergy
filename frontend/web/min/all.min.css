@@ -343,7 +343,7 @@ iframe{max-width:100%}
 .solar-modules__data{font-style:16px;font-weight:400}
 }
 .history-panels{margin-bottom:45px}
-.innovation__bg-form{display:none}
+.bg-form__fixed{display:none}
 .single-blog__sub-title{font-family:"Bebas Neue Cyrillic",sans-serif;font-weight:400;font-size:24px;line-height:24px;text-transform:uppercase;margin-top:0}
 .innovation__sub-title{font-size:24px;line-height:24px;text-align:center;margin-bottom:25px;display:block}
 .innovation__text-form{font-size:14px;line-height:14px;margin-bottom:20px;font-weight:400;display:block}
@@ -355,16 +355,15 @@ iframe{max-width:100%}
 }
 @media screen and (min-width:1280px){
 .form_test__static{display:none}
-.innovation__bg-form{display:block;width:30%;padding:74px 35px 80px 29px;background:0 0;max-width:449px;max-height:600px;border:1px solid #b7d3f7;border-radius:15px;margin:0 auto}
 .history-panels__inner{display:flex;justify-content:space-between}
 .fixed__contact{width:65%}
-.form__fixed-inner{position:relative;width:30%;max-width:449px;margin-left:35px}
-.bg-form__fixed{position:absolute;top:0;height:600px;display:block;width:100%}
+.form__fixed-inner{position:relative;width:30%;max-width:390px;margin-left:25px}
+.bg-form__fixed{position:absolute;top:0;height:600px;display:block;padding:74px 35px 80px 29px;background:0 0;border:1px solid #b7d3f7;border-radius:15px}
 }
 .single__blog-inner{display:flex;justify-content:space-between}
 .single__blog-more{width:65%}
 .single__list-item{width:50%}
-.single__comment-wrap{padding:58px 35px 57px 29px;max-width:449px;width:30%;border:1px solid #b7d3f7;border-radius:15px;margin-left:35px;max-height:485px}
+.single__comment-wrap{padding:58px 35px 57px 29px;max-width:390px;width:30%;border:1px solid #b7d3f7;border-radius:15px;margin-left:25px;max-height:485px}
 .single__line-title{text-align:center;padding-bottom:14px}
 .single__custom-field{width:90%;height:190px;resize:none}
 .single__comment-button{width:100%}
