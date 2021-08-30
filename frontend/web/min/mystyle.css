@@ -476,7 +476,7 @@ iframe{max-width:100%}
     .bg-form__fixed {
         position: absolute;
         top: 0;
-        max-width: 414px;
+        max-width: 390px;
         width: 30%;
         margin-left: 35px;
         height: 600px;
@@ -501,7 +501,7 @@ iframe{max-width:100%}
 
 .single__comment-wrap {
     padding: 58px 35px 57px 29px;
-    max-width: 449px;
+    max-width: 390px;
     width: 30%;
     border: 1px solid #b7d3f7;
     border-radius: 15px;
@@ -523,9 +523,12 @@ iframe{max-width:100%}
 .single__comment-button {
     width: 100%;
 }
-.single__comment-button{
-    background: #E2EAEE !important;
+
+.single__comment-button.button {
+    font-size: 16px;
 }
+
+.single__comment-button:before{content:'';position:absolute;height:100%;width:100%;top:0;left:0;z-index:-1;background-color:#E2EAEE;border-radius:2px;transition:transform .2s ease}
 
 @media screen and (max-width: 1024px) {
     .single__blog-inner {
@@ -535,7 +538,7 @@ iframe{max-width:100%}
     .single__blog-more {
         width: 100%;
     }
-        .single__comment-wrap {
+    .single__comment-wrap {
         display: none;
     }
 

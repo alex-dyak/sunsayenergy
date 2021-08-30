@@ -97,7 +97,7 @@ $contacts = \backend\models\Contact::getContact();
         <div class="container">
             <div class="dohod-private-wrapp">
                 <div class="private-house-inner">
-                    <strong class="dohod-zelyonyi-h2"><?= BaseController::getMessage('656') ?></strong>
+                    <h2 class="dohod-zelyonyi-h2"><?= BaseController::getMessage('656') ?></h2>
                     <ul class="private-house-list">
                         <li>
                             <p class="dohod-zelyonyi-text">
