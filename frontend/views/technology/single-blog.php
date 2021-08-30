@@ -44,8 +44,8 @@ $seo_date = date('Y-m-d', $datetime);
                         <?= $article->text ?>   
                     </div>
                     <div class="innovation__bg-form bg-form__fixed">
-                        <strong class="single-blog__sub-title innovation__sub-title">Хотите максимально выгодно и эффективно использовать энергию солнца — обращайтесь к экспертам sunsay energy</strong>
-                        <strong class="single-blog__text innovation__text-form">Закажите бесплатный змер крыши нашим инженерам</strong> 
+                        <strong class="single-blog__sub-title innovation__sub-title"><?= BaseController::getMessage('729') ?></strong>
+                        <strong class="single-blog__text innovation__text-form"><?= BaseController::getMessage('730') ?></strong>
                         <form class="connect__content-question" id="question_form" data-post-url="index.html">
                             <div class="message">
                                 <label for="fullname" class="hidden"><?= BaseController::getMessage('366') ?></label>
@@ -66,15 +66,20 @@ $seo_date = date('Y-m-d', $datetime);
                     <div class="form_test__static">
                         <strong class="single-blog__sub-title innovation__sub-title">Хотите максимально выгодно и эффективно использовать энергию солнца — обращайтесь к экспертам sunsay energy</strong>
                         <strong class="single-blog__text innovation__text-form">Закажите бесплатный змер крыши нашим инженерам</strong> 
-                        <form class="connect__content-question" id="question_form" data-post-url="index.html">
+                        <form class="connect__content-measuring" id="measuring_form" data-post-url="index.html">
                             <div class="message">
+                                <input type="hidden" name="utm_source" <?php echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''?> >
+                                <input type="hidden" name="utm_medium" <?php echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''?> >
+                                <input type="hidden" name="utm_campaign" <?php echo !empty($_SESSION['utm_campaign']) ? ' value="' . $_SESSION['utm_campaign'] .'"': ''?> >
+                                <input type="hidden" name="utm_content" <?php echo !empty($_SESSION['utm_content']) ? ' value="' . $_SESSION['utm_content'] .'"': ''?> >
+                                <input type="hidden" name="utm_term" <?php echo !empty($_SESSION['utm_term']) ? ' value="' . $_SESSION['utm_term'] .'"': ''?> >
                                 <label for="fullname" class="hidden"><?= BaseController::getMessage('366') ?></label>
                                 <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
                                 <label for="phone" class="hidden">Телефон</label>
                                 <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
                                     
                                 <div class="connect__content-button">
-                                    <button class="btn connect-btn btn-primary" id="submit_button">
+                                    <button class="btn measuring-btn btn-primary" id="submit_button">
                                         <?= BaseController::getMessage('14') ?>
                                     </button>
                                 </div>
