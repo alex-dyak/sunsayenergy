@@ -103,7 +103,7 @@ $seo_date = date('Y-m-d', $datetime);
         </section>
 
         <?php if (!empty($other_articles)): ?>
-        <section class="section blog-more">
+        <section class="section blog-more blog-more__width">
 			<div class="container">
                 <div class="blog-more__title">
                     <strong class="h2"><?= BaseController::getMessage('343') ?></strong>

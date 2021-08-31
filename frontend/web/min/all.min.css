@@ -357,9 +357,10 @@ iframe{max-width:100%}
 .form_test__static{display:none}
 .history-panels__inner{display:flex;justify-content:space-between}
 .fixed__contact{width:65%}
-.form__fixed-inner{position:relative;width:30%;max-width:390px;margin-left:25px}
-.bg-form__fixed{position:absolute;top:0;height:600px;display:block;padding:74px 35px 80px 29px;background:0 0;border:1px solid #b7d3f7;border-radius:15px}
+.form__fixed-inner{position:relative;width:30%;max-width:390px}
+.bg-form__fixed{position:absolute;top:0;height:600px;display:block;padding:74px 35px 80px 29px;background:0 0;border:1px solid #b7d3f7;border-radius:15px;width:100%;max-width:390px}
 }
+.blog-more__width{padding-left:0;padding-right:0}
 .single__blog-inner{display:flex;justify-content:space-between}
 .single__blog-more{width:65%}
 .single__list-item{width:50%}
