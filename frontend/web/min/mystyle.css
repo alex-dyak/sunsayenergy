@@ -360,7 +360,6 @@ iframe{max-width:100%}
 
 @media screen and (min-width: 1024px) {
     .solar-modules {
-        background-image: url(../img/single-blog/solar_modules-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top center;
@@ -393,6 +392,8 @@ iframe{max-width:100%}
 .history-panels {
     margin-bottom: 45px;
 }
+
+.history-panels img {max-width:100%; height: auto !important;}
 
 .bg-form__fixed {
     display: none;
