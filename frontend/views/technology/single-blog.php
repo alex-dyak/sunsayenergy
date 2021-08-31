@@ -24,7 +24,7 @@ $seo_date = date('Y-m-d', $datetime);
         ]); ?>
 		</div>
 
-        <section class="solar-modules">
+        <section class="solar-modules" style="background-image: url('<?= '../images/' . $article->images->imagePreview ?>');">
             <div class="container">
                 <div class="solar-modules__inner">
                     <div class="solar-modules__title">

@@ -337,7 +337,8 @@ iframe{max-width:100%}
 .solar-modules{background-image:none;min-height:auto}
 }
 @media screen and (min-width:1024px){
-.solar-modules{background-image:url(../img/single-blog/solar_modules-bg.jpg);background-repeat:no-repeat;background-size:cover;background-position:top center;width:100%;min-height:100vh;text-align:center;display:flex;align-items:flex-end;margin-bottom:80px}
+/*.solar-modules{background-image:url(../img/single-blog/solar_modules-bg.jpg);*/
+    background-repeat:no-repeat;background-size:cover;background-position:top center;width:100%;min-height:100vh;text-align:center;display:flex;align-items:flex-end;margin-bottom:80px}
 .solar-modules__inner{height:280px;background:rgba(255,255,255,.8)}
 .solar-modules__title h1{font-size:50px;line-height:50px;max-width:800px;margin:0 auto;padding-bottom:60px;padding-top:64px}
 .solar-modules__data{font-style:16px;font-weight:400}
