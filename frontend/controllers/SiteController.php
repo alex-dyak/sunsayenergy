@@ -76,6 +76,7 @@ class SiteController extends BaseController
         $this->setOgDescription(self::getDescription('index'));
         $this->setMeta(self::getTitle('index'), self::getDescription('index'));
 
+        $this->layout = 'new_homepage';
         return $this->render('homepage', compact('contacts', 'reviews', 'project', 'videos', 'video_reviews'));
 //        return $this->render('index', compact('contacts', 'reviews', 'project', 'videos', 'video_reviews'));
     }
