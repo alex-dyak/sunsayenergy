@@ -133,20 +133,20 @@ $contacts = \backend\models\Contact::getContact();
 	</div>
 </div>
 <?php $this->beginBody() ?>
-	<header class="header <?php if(Yii::$app->controller->route == 'project/project' || Yii::$app->controller->route == 'site/commercial' || Yii::$app->controller->route == 'site/green' || Yii::$app->controller->route == 'site/about' || Yii::$app->controller->route == 'project/detailed'  || Yii::$app->controller->route == 'site/landing'){ ?>transparent<?php } ?> " id="header">
+	<header class="header transparent header-color" id="header">
 		<div class="container">
 			<div class="header-wrap">
-				<div class="mobile-top-block">
+				<div class="mobile-top-block new-mobile-top-block">
 					<div class="contact-block" itemscope itemtype="http://schema.org/PostalAddress">
 						<a class="contact-opener" href="#contact-opener">
 							<i class="icon-phone"></i>
 							<i class="icon-close"></i>
                             <?= BaseController::getMessage('8') ?>
 						</a>
-						<ul class="header-contact-list">
-							<li><a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
-							<li><a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
-							<li><a itemprop="telephone" class="" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
+						<ul class="header-contact-list white-color-list">
+							<li><a itemprop="telephone" class="white-color-tell" href="tel:<?= str_replace(' ', '', $contacts->phone); ?>"><?= $contacts->phone; ?></a></li>
+							<li><a itemprop="telephone" class="white-color-tell" href="tel:<?= str_replace(' ', '', $contacts->mobile_1); ?>"><?= $contacts->mobile_1; ?></a></li>
+							<li><a itemprop="telephone" class="white-color-tell" href="tel:<?= str_replace(' ', '', $contacts->mobile_2); ?>"><?= $contacts->mobile_2; ?></a></li>
 							<li class="address-list">
 								<i class="icon-envelope"></i>
 								<a itemprop="email" href="mailto:<?= $contacts->email ?>">
@@ -205,7 +205,7 @@ $contacts = \backend\models\Contact::getContact();
 						<i class="icon-close"></i>
 					</div>
 				</div>
-				<strong class="main-logo">
+				<strong class="main-logo new-main-logo">
 					<a href="<?= \yii\helpers\Url::to(['/']); ?>">
 						<img oncontextmenu="return false" class="logo-def" src="/img/logo.svg" width="184" alt="SUNSAY Energy">
 						<img oncontextmenu="return false" class="logo-white" src="/img/logo-navbar.svg" width="184" alt="SUNSAY Energy">
@@ -250,11 +250,11 @@ $contacts = \backend\models\Contact::getContact();
 						</li>
 					</ul>
 					<div class="btn-wrap">
-						<a class="button header-btn" href="#" id="order-form"><?= BaseController::getMessage('9') ?></a>
+						<a class="button header-btn header-btn-color" href="#" id="order-form"><?= BaseController::getMessage('9') ?></a>
 					</div>
 					<ul class="language-switch">
-						<li><a <?= (Yii::$app->language=='ua')?'class="active"':''   ?>  href="/<?= \frontend\components\UrlTrimLang::widget() ?>">UA</a></li>
-						<li><a <?= (Yii::$app->language=='ru')?'class="active"':''   ?>  href="/ru/<?= \frontend\components\UrlTrimLang::widget() ?>">RU</a></li>
+						<li><a <?= (Yii::$app->language=='ua')?'class="active active-color"':''   ?>  href="/<?= \frontend\components\UrlTrimLang::widget() ?>">UA</a></li>
+						<li><a <?= (Yii::$app->language=='ru')?'class="active active-color"':''   ?>  href="/ru/<?= \frontend\components\UrlTrimLang::widget() ?>">RU</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -587,7 +587,8 @@ $contacts = \backend\models\Contact::getContact();
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
 
 <script src="/min/all-plugins.min.js" ></script>
-<script src="/min/new-main.min.js" defer></script>
+<!-- <script src="/min/new-main.min.js" defer></script> -->
+<script src="/min/new-js.js" defer></script>
 
 <script>
   if (!sessionStorage.getItem('isVisibleQuiz')) {
