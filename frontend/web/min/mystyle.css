@@ -1872,11 +1872,11 @@ a:not([class]):hover{color:#ffd100}
     font-size: 14px;
     line-height: 17px;
     background: rgba(183,211,247,1);
-    padding: 12px 15px;
+    padding: 12px 5px;
     display: block;
     border-radius: 5px;
     text-align: center;
-    max-width: 170px;
+    max-width: 165px;
     width: 100%;
     margin-bottom: 11px;
     cursor: pointer;
@@ -1893,7 +1893,7 @@ a:not([class]):hover{color:#ffd100}
     position: absolute;
     display: block;
     top: -7px;
-    right: 0px;
+    right: -10px;
     width: 170px;
     height: 389px;
 }
@@ -1921,6 +1921,11 @@ a:not([class]):hover{color:#ffd100}
 
     .station-types__inner {
         margin-bottom: 30px;
+    }
+
+    .station-types__content::before {
+        content: "";
+        right: 0px;
     }
 }
 
