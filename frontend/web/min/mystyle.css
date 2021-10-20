@@ -1889,7 +1889,7 @@ a:not([class]):hover{color:#ffd100}
 
 .station-types__content::before {
     content: "";
-    background: url(../img/homepage/new-home.png);
+    background: url(../img/homepage/mob-panels.png);
     position: absolute;
     display: block;
     top: -7px;

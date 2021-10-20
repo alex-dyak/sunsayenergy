@@ -1243,7 +1243,7 @@ a:not([class]):hover{color:#ffd100}
 .station-types__text{font-family:Montserrat,sans-serif;font-weight:700;text-transform:uppercase;font-size:14px;line-height:17px;max-width:220px;padding-top:15px;padding-bottom:22px}
 .station-types__item{font-family:Montserrat,sans-serif;font-weight:700;font-size:14px;line-height:17px;background:rgba(183,211,247,1);padding:12px 5px;display:block;border-radius:5px;text-align:center;max-width:165px;width:100%;margin-bottom:11px;cursor:pointer;transition:.3s all}
 .station-types__item:hover{color:#fff}
-.station-types__content::before{content:"";background:url(../img/homepage/new-home.png);position:absolute;display:block;top:-7px;right:-10px;width:170px;height:389px}
+.station-types__content::before{content:"";background:url(../img/homepage/mob-panels.png);position:absolute;display:block;top:-7px;right:-10px;width:170px;height:389px}
 .button__center .new-consult-btn{text-align:center;width:100%}
 .station-types__img{display:none}
 @media screen and (min-width:450px){
