@@ -277,6 +277,7 @@ $(document).ready(function(){
                     settings: {
                         slidesToScroll: 1,
                         slidesToShow: 3,
+                        adaptiveHeight: true,
                         dots: true,
                         dotsClass: 'slick-dots'
                     }
@@ -303,50 +304,6 @@ $(document).ready(function(){
             ]
         });
     }
-
-    // var width = $(window).width();
-    // $(window).resize(function(){
-    //     if( width < 1191) {
-    //         $(".pros-list-slider").slick({
-    //             slidesToScroll: 1,
-    //             rows: 0,
-    //             slidesToShow: 3,
-    //             arrows: false,
-    //             dots: false,
-    //             infinite: false,
-    //             responsive: [
-    //                 {
-    //                     breakpoint: 1190,
-    //                     settings: {
-    //                         slidesToScroll: 1,
-    //                         slidesToShow: 3,
-    //                         dots: true,
-    //                         dotsClass: 'slick-dots'
-    //                     }
-    //                 },
-    //                 {
-    //                     breakpoint: 1023,
-    //                     settings: {
-    //                         slidesToScroll: 1,
-    //                         slidesToShow: 2,
-    //                         dots: true,
-    //                         dotsClass: 'slick-dots'
-    //                     }
-    //                 },
-    //                 {
-    //                     breakpoint: 760,
-    //                     settings: {
-    //                         slidesToScroll: 1,
-    //                         slidesToShow: 1,
-    //                         adaptiveHeight: true,
-    //                         dots: true,
-    //                         dotsClass: 'slick-dots'
-    //                     }
-    //                 },
-    //             ]
-    //         });
-    //     } else { $('.pros-list-sliderr').slick('unslick'); }
-    // });
 
     if($('.pros-list-slider').length) {
         $('.pros-list-slider').slick({

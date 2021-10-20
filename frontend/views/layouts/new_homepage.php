@@ -588,7 +588,7 @@ $contacts = \backend\models\Contact::getContact();
 
 <script src="/min/all-plugins.min.js" ></script>
 <!-- <script src="/min/new-main.min.js" defer></script> -->
-<script src="/min/new-js.js" defer></script>
+<script src="/min/new-main.min.js" defer></script>
 
 <script>
   if (!sessionStorage.getItem('isVisibleQuiz')) {
