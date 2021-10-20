@@ -100,7 +100,7 @@
                         
                     </div>
                     <div class="station-types__img">
-                        <img oncontextmenu="return false" data-src="/img/homepage/new-home1.png" alt="">
+                        <img oncontextmenu="return false" data-src="/img/homepage/panels.img" alt="">
                     </div>
                 </div>
             </div>
