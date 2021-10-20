@@ -6,13 +6,13 @@
             <div class="container">
 
                 <h3 class="new-subtitle">
-                    МЫ СТРОИМ СОЛНЕЧНЫЕ СТАНЦИИ, ЧТОБЫ ВЫ ПОЛУЧИЛИ ДОСТУП К ЧИСТОЙ НЕИСЧЕРПАЕМОЙ ЭНЕРГИИ
+                    <?= strtoupper(BaseController::getMessage('731')) ?>
                 </h3>
                 <div class="new-bg-block-right"></div>
                 <div class="new-title-blok">
                     <h1 class="new-title">
-                        СОЛНЕЧНЫЕ СТАНЦИИ ДЛЯ ВАШЕГО БИЗНЕСА
-                        <span class="new-title-span">СОЛНЕЧНЫЕ СТАНЦИИ ДЛЯ ВАШЕГО ДОМА</span>
+                        <?= strtoupper(BaseController::getMessage('732')) ?>
+                        <span class="new-title-span"><?= strtoupper(BaseController::getMessage('733')) ?></span>
                     </h1>
                 </div>
                 <div class="new-bg-block-left"></div>
@@ -25,12 +25,12 @@
         <section class="new-possibilities">
             <div class="container">
                 <div class="title-block title-block__possibility">
-                    <h2 class="line-title">ПОЧЕМУ ВАМ НУЖНА СОЛНЕЧНАЯ СТАНЦИЯ?</h2>
+                    <h2 class="line-title"><?= strtoupper(BaseController::getMessage('734')) ?></h2>
                     <div class="subtitle subtitle__possibility">
-                        <p>Солнечная энергетика переживает бум развития во всем мире. У нее есть свои преимущества перед традиционным потреблением электроэнергии</p>
+                        <p><?= BaseController::getMessage('735') ?></p>
                     </div>
                     <div class="subtitle__slider">
-                        <p>С НЕЙ ВЫ СМОЖЕТЕ:</p>
+                        <p><?= strtoupper(BaseController::getMessage('736')) ?>:</p>
                     </div>
                 </div>
                 <ul class="possibility-list-slider">
@@ -40,7 +40,7 @@
                                 <div class="possibility-img">
                                     <img oncontextmenu="return false" data-src="/img/homepage/investments.svg" alt="">
                                 </div>
-                                <p class="possibility-text">Сделать выгодную инвестицию и зарабатывать на зеленом тарифе до $7 000</p>                                
+                                <p class="possibility-text"><?= BaseController::getMessage('737') ?></p>
                             </div>
                         </li>
                     </div>
@@ -50,7 +50,7 @@
                                 <div class="possibility-img">
                                     <img oncontextmenu="return false" data-src="/img/homepage/profit.svg" alt="">
                                 </div>
-                                <p class="possibility-text">Получать прибыль выше на 1 000 000 грн и не зависеть от роста тарифов энергорынка</p>
+                                <p class="possibility-text"><?= BaseController::getMessage('738') ?></p>
                             </div>
                         </li>                        
                     </div>
@@ -60,7 +60,7 @@
                                 <div class="possibility-img">
                                     <img oncontextmenu="return false" data-src="/img/homepage/voltage.svg" alt="">
                                 </div>
-                                <p class="possibility-text">Повысить качество напряжения для своих нужд при минимальном обслуживании</p>
+                                <p class="possibility-text"><?= BaseController::getMessage('739') ?></p>
                             </div>
                         </li>                        
                     </div>
@@ -70,7 +70,7 @@
                                 <div class="possibility-img">
                                     <img oncontextmenu="return false" data-src="/img/homepage/status.svg" alt="">
                                 </div>
-                                <p class="possibility-text">Получить статус инновационной экологичной  компании и прогрессивного хозяина</p>
+                                <p class="possibility-text"><?= BaseController::getMessage('740') ?></p>
                             </div>
                         </li>                        
                     </div>
@@ -84,15 +84,15 @@
                 <div class="station-types__wrap">
                     <div class="station-types__content">
                         <div class="station-types__text">
-                            <p>Солнечную СТАНЦИЮ ЛЕГКО ВСТРОИТЬ В ВАШУ ЭЛЕКТРОСИСТЕМУ. ВЫБЕРИТЕ ТИП СТАНЦИИ, КОТОРАЯ ВАМ НУЖНА </p>
+                            <p><?= strtoupper(BaseController::getMessage('741')) ?></p>
                         </div>
                         <div class="station-types__inner">
-                            <a class="station-types__item">Для заработка</a>
-                            <a class="station-types__item">Для автономии</a>
-                            <a class="station-types__item">Для підприємства</a>
+                            <a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?>" class="station-types__item"><?= BaseController::getMessage('742') ?>Для заработка</a>
+                            <a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>" class="station-types__item"><?= BaseController::getMessage('743') ?>Для автономии</a>
+                            <a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>" class="station-types__item"><?= BaseController::getMessage('744') ?>Для підприємства</a>
                         </div>
                         <div class="station-types__text">
-                            <p>ИЛИ РАССКАЖИТЕ НАМ ДЕТАЛИ И МЫ ВАМ РАССЧИТАЕМ ПРАВИЛЬНУЮ СТАНЦИЮ</p>
+                            <p><?= strtoupper(BaseController::getMessage('745')) ?></p>
                         </div>
                         <div class="button__center">
                             <a class="button btn-lg consult-btn station-types__button new-consult-btn" href="#connect"><?= BaseController::getMessage('402') ?></a>
@@ -245,9 +245,8 @@
             <div class="new-seo-article new-collapsed ">
                 <div class="container">
                     <div class="seo-article-inner">
-                        <strong>ТЕКСТ СЕО</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, recusandae sunt illo facilis tempora deleniti beatae eum quas? Officia voluptatibus ad corrupti ipsam qui repellendus quidem soluta quas aperiam excepturi?
-                        Quod voluptate sed labore doloribus atque doloremque inventore magnam modi! Cum incidunt molestiae quis dolorem quos, pariatur ducimus soluta laborum sint illum, dicta eveniet officia atque distinctio eos, voluptatum commodi.</p>
+                        <strong><?= strtoupper(BaseController::getMessage('746')) ?></strong>
+                        <p><?= BaseController::getMessage('747') ?></p>
                     </div>
                     <span class="seo-article-opened"></span>
                 </div>
