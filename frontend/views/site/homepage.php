@@ -87,9 +87,9 @@
                             <p><?= strtoupper(BaseController::getMessage('741')) ?></p>
                         </div>
                         <div class="station-types__inner">
-                            <a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?>" class="station-types__item"><?= BaseController::getMessage('742') ?>Для заработка</a>
-                            <a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>" class="station-types__item"><?= BaseController::getMessage('743') ?>Для автономии</a>
-                            <a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>" class="station-types__item"><?= BaseController::getMessage('744') ?>Для підприємства</a>
+                            <a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?>" class="station-types__item"><?= BaseController::getMessage('742') ?></a>
+                            <a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>" class="station-types__item"><?= BaseController::getMessage('743') ?></a>
+                            <a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>" class="station-types__item"><?= BaseController::getMessage('744') ?></a>
                         </div>
                         <div class="station-types__text">
                             <p><?= strtoupper(BaseController::getMessage('745')) ?></p>
