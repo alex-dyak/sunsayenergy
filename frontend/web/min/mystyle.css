@@ -1434,7 +1434,21 @@ a:not([class]):hover{color:#ffd100}
 .new-button__center .new-consult-btn {
     background: #B7D3F7;
     padding: 15px;
-    max-width: 160px;
+    max-width: 138px;
+}
+
+.button__center .new-consult-btn {
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 400px){
+    .new-button__center .new-consult-btn {
+        max-width: 160px;
+    }
+
+    .button__center .new-consult-btn {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (min-width: 460px){
@@ -1872,7 +1886,7 @@ a:not([class]):hover{color:#ffd100}
     font-size: 14px;
     line-height: 17px;
     background: rgba(183,211,247,1);
-    padding: 12px 5px;
+    padding: 12px 12px;
     display: block;
     border-radius: 5px;
     text-align: center;
@@ -1889,13 +1903,17 @@ a:not([class]):hover{color:#ffd100}
 
 .station-types__content::before {
     content: "";
+<<<<<<< Updated upstream
     background: url(../img/homepage/mob-panels.png);
+=======
+    background: url(../img/homepage/mob-panels3.png);
+>>>>>>> Stashed changes
     position: absolute;
     display: block;
-    top: -7px;
-    right: -10px;
+    top: 15px;
+    right: -50px;
     width: 170px;
-    height: 389px;
+    height: 358px;
 }
 .button__center .new-consult-btn {
     text-align: center;
@@ -1904,6 +1922,16 @@ a:not([class]):hover{color:#ffd100}
 
 .station-types__img {
     display: none;
+}
+
+@media screen and (min-width:400px){
+
+    .station-types__content::before {
+        content: "";
+        right: 0px;
+        top: 10px;
+        height: 354px;
+    }
 }
 
 
@@ -1921,11 +1949,6 @@ a:not([class]):hover{color:#ffd100}
 
     .station-types__inner {
         margin-bottom: 30px;
-    }
-
-    .station-types__content::before {
-        content: "";
-        right: 0px;
     }
 }
 

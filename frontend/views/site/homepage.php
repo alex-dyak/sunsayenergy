@@ -100,7 +100,11 @@
                         
                     </div>
                     <div class="station-types__img">
+<<<<<<< Updated upstream
                         <img oncontextmenu="return false" data-src="/img/homepage/n-panels.png" alt="">
+=======
+                        <img oncontextmenu="return false" data-src="/img/homepage/n-panels3.png" alt="">
+>>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
