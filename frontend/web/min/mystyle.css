@@ -1903,11 +1903,7 @@ a:not([class]):hover{color:#ffd100}
 
 .station-types__content::before {
     content: "";
-<<<<<<< Updated upstream
-    background: url(../img/homepage/mob-panels.png);
-=======
     background: url(../img/homepage/mob-panels3.png);
->>>>>>> Stashed changes
     position: absolute;
     display: block;
     top: 15px;
