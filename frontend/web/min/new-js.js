@@ -277,7 +277,6 @@ $(document).ready(function(){
                     settings: {
                         slidesToScroll: 1,
                         slidesToShow: 3,
-                        adaptiveHeight: true,
                         dots: true,
                         dotsClass: 'slick-dots'
                     }
@@ -296,7 +295,6 @@ $(document).ready(function(){
                     settings: {
                         slidesToScroll: 1,
                         slidesToShow: 1,
-                        adaptiveHeight: true,
                         dots: true,
                         dotsClass: 'slick-dots'
                     }
@@ -341,7 +339,6 @@ $(document).ready(function(){
                     settings: {
                         slidesToScroll: 1,
                         slidesToShow: 1,
-                        adaptiveHeight: true,
                         dots: true,
                         dotsClass: 'slick-dots'
                     }

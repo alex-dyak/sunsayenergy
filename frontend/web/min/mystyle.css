@@ -1758,14 +1758,14 @@ a:not([class]):hover{color:#ffd100}
 .possibility-item {
     list-style-type: none;
     max-width: 331px;
-    min-height: 438px;
+    min-height: 382px;
     background: #FFFFFF;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
     border-radius: 35px;
     text-align: center;
     margin-bottom: 62px;
     margin-top: 10px;
-    padding: 58px 55px 70px;
+    padding: 57px 36px 20px;
 }
 
 .possibility-img {
@@ -1841,7 +1841,7 @@ a:not([class]):hover{color:#ffd100}
 @media screen and (min-width:1024px){
 
     .title-block__possibility {
-        max-width: 640px;
+        max-width: 615px;
     }
     
     .title-block__possibility .line-title{
@@ -1862,8 +1862,6 @@ a:not([class]):hover{color:#ffd100}
 
 }
 
-/* блок с картинкой */
-
 .station-types {
     position: relative;
     margin-bottom: 50px;
@@ -1875,7 +1873,7 @@ a:not([class]):hover{color:#ffd100}
     text-transform: uppercase;
     font-size: 14px;
     line-height: 17px;
-    max-width: 220px;
+    max-width: 215px;
     padding-top: 15px;
     padding-bottom: 22px;
 }
@@ -1886,11 +1884,11 @@ a:not([class]):hover{color:#ffd100}
     font-size: 14px;
     line-height: 17px;
     background: rgba(183,211,247,1);
-    padding: 12px 12px;
+    padding: 12px 8px;
     display: block;
     border-radius: 5px;
     text-align: center;
-    max-width: 165px;
+    max-width: 159px;
     width: 100%;
     margin-bottom: 11px;
     cursor: pointer;
@@ -1901,16 +1899,20 @@ a:not([class]):hover{color:#ffd100}
     color: #fff;
 }
 
-.station-types__content::before {
-    content: "";
-    background: url(../img/homepage/mob-panels3.png);
+.station-types__img-mob {
     position: absolute;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;
     display: block;
-    top: 15px;
-    right: -50px;
-    width: 170px;
-    height: 358px;
+    background-image: url(../img/homepage/mob-panels4.png);
+    -webkit-background-size: contain;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
 }
+
 .button__center .new-consult-btn {
     text-align: center;
     width: 100%;
@@ -1920,16 +1922,10 @@ a:not([class]):hover{color:#ffd100}
     display: none;
 }
 
-@media screen and (min-width:400px){
-
-    .station-types__content::before {
-        content: "";
-        right: 0px;
-        top: 10px;
-        height: 354px;
-    }
+@media screen and (min-width:375px){
+    .station-types__img-mob {
+        background-image: url(../img/homepage/mob-panels3.png);
 }
-
 
 @media screen and (min-width:450px){
 
@@ -1984,11 +1980,6 @@ a:not([class]):hover{color:#ffd100}
         padding-bottom: 30px;
     }
 
-    .station-types__content::before {
-        content: "";
-        background: none;
-    }
-
     .station-types__wrap {
         display: flex;
         justify-content: space-between;
@@ -2004,6 +1995,10 @@ a:not([class]):hover{color:#ffd100}
         
     }
 
+    .station-types__img-mob {
+        display: none;
+    }
+
     .button__center .new-consult-btn {
         font-size: 16px;
     }
@@ -2012,8 +2007,6 @@ a:not([class]):hover{color:#ffd100}
         text-align: start;
     }
 }
-
-/* конец блок с картинкой */
 
 .new-pros-section {
     margin-top: 50px;
