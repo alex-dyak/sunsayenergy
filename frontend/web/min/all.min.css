@@ -1253,6 +1253,7 @@ a:not([class]):hover{color:#ffd100}
 .station-types__img{display:none}
 @media screen and (min-width:375px){
 .station-types__img-mob{background-image:url(../img/homepage/mob-panels3.png)}
+}
 @media screen and (min-width:450px){
 .station-types__text{max-width:290px;padding-bottom:40px}
 .button__center{text-align:center}
@@ -2911,5 +2912,4 @@ a.advantages-btn{font-size:20px;line-height:24px}
 .quiz-modal-container p{font-size:18px}
 .quiz-intro-content .quiz-btn{margin-bottom:30px}
 .quiz-radio:checked+label,.quiz-radio:not(:checked)+label{font-size:18px}
-}
 }

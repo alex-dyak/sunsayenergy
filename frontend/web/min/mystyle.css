@@ -1925,8 +1925,8 @@ a:not([class]):hover{color:#ffd100}
 @media screen and (min-width:375px){
     .station-types__img-mob {
         background-image: url(../img/homepage/mob-panels3.png);
+    }
 }
-
 @media screen and (min-width:450px){
 
     .station-types__text {
