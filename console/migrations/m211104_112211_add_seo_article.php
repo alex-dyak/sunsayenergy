@@ -12,7 +12,7 @@ class m211104_112211_add_seo_article extends Migration
      */
     public function safeUp()
     {
-        $this->addColumn('seo','article_title', $this->string(255));
+        $this->addColumn('seo','article_title', $this->text());
         $this->addColumn('seo','article_body', $this->text());
     }
 

@@ -31,8 +31,8 @@ class Seo extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'description', 'article_body'], 'string'],
-            [['name_page', 'sumbol_id', 'article_title'], 'string', 'max' => 255],
+            [['title', 'description', 'article_body', 'article_title'], 'string'],
+            [['name_page', 'sumbol_id'], 'string', 'max' => 255],
         ];
     }
 

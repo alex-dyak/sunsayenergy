@@ -72,7 +72,7 @@ foreach (Yii::$app->params['languages'] as $lang) {
     $fieldsArticleBody .= '
 <div class="form-group field-seo-article-body ' . $col_md . '">
     <label class="control-label" for="seo-article-body">' . $field . '</label>
-    <textarea id="seo-article-body" class="form-control" name="' . $field_name . '" maxlength="512" rows="10" aria-invalid="false">' . $value . '</textarea>
+    <textarea id="seo-article-body" class="form-control" name="' . $field_name . '" rows="10" aria-invalid="false">' . $value . '</textarea>
 </div>';
 }
 ?>
