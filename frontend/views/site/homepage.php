@@ -242,17 +242,7 @@
         <?= $this->render('../section/_video-reviews.php', compact('video_reviews')); ?>
         <!-- end video review -->
 
-        <?php if ($seo_data['article_body'][Yii::$app->language]) : ?>
-            <div class="new-seo-article new-collapsed ">
-                <div class="container">
-                    <div class="seo-article-inner">
-                        <strong><?= strtoupper($seo_data['article_title'][Yii::$app->language]) ?></strong>
-                        <p><?= $seo_data['article_body'][Yii::$app->language] ?></p>
-                    </div>
-                    <span class="seo-article-opened"></span>
-                </div>
-            </div>
-        <?php endif; ?>
+        <?= $this->render('../section/_seo_article.php', compact('seo_data')); ?>
 
         <!-- start connect -->
         <?= $this->render('../section/_connect-blue.php'); ?>
