@@ -79,8 +79,8 @@ class SiteController extends BaseController
         $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
 
         $this->layout = 'new_homepage';
-//        return $this->render('homepage', compact('contacts', 'reviews', 'project', 'videos', 'video_reviews', 'seo_data'));
-        return $this->render('index', compact('contacts', 'reviews', 'project', 'videos', 'video_reviews', 'seo_data'));
+        return $this->render('homepage', compact('contacts', 'reviews', 'project', 'videos', 'video_reviews', 'seo_data'));
+//        return $this->render('index', compact('contacts', 'reviews', 'project', 'videos', 'video_reviews', 'seo_data'));
     }
 
 	/**
