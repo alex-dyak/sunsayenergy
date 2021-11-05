@@ -156,6 +156,8 @@ $seo_date = date('Y-m-d', $datetime);
     
         <?php endif; ?>
 
+        <?= $this->render('../section/_seo_article.php'); ?>
+
         <?= $this->render('../section/_connect-blue.php'); ?>
 </main>
 

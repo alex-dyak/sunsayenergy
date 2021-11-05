@@ -234,6 +234,9 @@ $contacts = \backend\models\Contact::getContact();
 				</span>
 			</div>
 		</div>
+
+        <?= $this->render('../section/_seo_article.php'); ?>
+
 		<!-- start connect -->
         <?= $this->render('../section/_connect-blue.php'); ?>
 		<!-- end connect -->

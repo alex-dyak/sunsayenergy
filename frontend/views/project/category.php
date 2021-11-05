@@ -103,7 +103,11 @@ $this->params['breadcrumbs'][] = [
             </div>
         </section>
     <?php endif; ?>
+
+    <?= $this->render('../section/_seo_article.php'); ?>
+
     <?= $this->render('../section/_connect.php'); ?>
+
 </main>
 <script type="application/ld+json">
     {

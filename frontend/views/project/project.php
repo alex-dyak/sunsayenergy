@@ -96,6 +96,8 @@ $contacts = \backend\models\Contact::getContact();
 	</section>
     
     <?= $this->render('../section/_complex-project.php'); ?>
+
+    <?= $this->render('../section/_seo_article.php'); ?>
     
     <?= $this->render('../section/_connect-blue.php'); ?>
 </main>

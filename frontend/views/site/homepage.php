@@ -238,22 +238,24 @@
             </div>
         </section>
             
-            <!-- start video review -->
-            <?= $this->render('../section/_video-reviews.php', compact('video_reviews')); ?>
-            <!-- end video review -->
+        <!-- start video review -->
+        <?= $this->render('../section/_video-reviews.php', compact('video_reviews')); ?>
+        <!-- end video review -->
 
+        <?php if ($seo_data['article_body'][Yii::$app->language]) : ?>
             <div class="new-seo-article new-collapsed ">
                 <div class="container">
                     <div class="seo-article-inner">
-                        <strong><?= strtoupper(BaseController::getMessage('746')) ?></strong>
-                        <p><?= BaseController::getMessage('747') ?></p>
+                        <strong><?= strtoupper($seo_data['article_title'][Yii::$app->language]) ?></strong>
+                        <p><?= $seo_data['article_body'][Yii::$app->language] ?></p>
                     </div>
                     <span class="seo-article-opened"></span>
                 </div>
             </div>
+        <?php endif; ?>
 
-            <!-- start connect -->
-            <?= $this->render('../section/_connect-blue.php'); ?>
-            <!-- end connect -->
+        <!-- start connect -->
+        <?= $this->render('../section/_connect-blue.php'); ?>
+        <!-- end connect -->
     </main>
 

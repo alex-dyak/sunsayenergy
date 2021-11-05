@@ -519,6 +519,8 @@ $contacts = \backend\models\Contact::getContact();
         </div>
     </section>
 
+    <?= $this->render('../section/_seo_article.php'); ?>
+
     <section class="last-questions-form" id="connect">
         <div class="container">
             <div class="questions-form">

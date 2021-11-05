@@ -273,34 +273,8 @@ $contacts = \backend\models\Contact::getContact();
 		</section>
     <?php endif; ?>
 
+    <?= $this->render('../section/_seo_article.php'); ?>
+
     <?= $this->render('../section/_connect-blue.php'); ?>
 
-	<!--<section class="connect" id="connect">
-		<div class="container">
-			<div class="connect-bg">
-				<div class="connect__content">
-					<div class="connect__content-title line-title">
-						<strong class="h2"><?/*= BaseController::getMessage('364') */?></strong>
-					</div>
-					<form class="connect__content-question" id="question_form" data-post-url="index.html">
-						<div class="message">
-							<input type="hidden" name="utm_source" <?php /*echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''*/?> >
-							<input type="hidden" name="utm_medium" <?php /*echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''*/?> >
-							<input type="hidden" name="utm_campaign" <?php /*echo !empty($_SESSION['utm_campaign']) ? ' value="' . $_SESSION['utm_campaign'] .'"': ''*/?> >
-							<input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?/*= BaseController::getMessage('366') */?>">
-							<input class="custom-field" id="phone" type="text" id="phone" name="phone" placeholder="+380">
-							<input class="custom-field" type="text" id="email" name="email" placeholder="youremail@mail.com">
-							<textarea class="custom-field" name="question" id="question" rows="5" placeholder="<?/*= BaseController::getMessage('403') */?>"></textarea>
-							<div class="connect__content-button">
-								<button class="btn connect-btn btn-primary" id="submit_button">
-                                    <?/*= BaseController::getMessage('14') */?>
-								</button>
-							</div>
-						</div>
-						<div class="form-compelete"><?/*= BaseController::getMessage('374') */?></div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>-->
 </main>

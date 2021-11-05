@@ -732,6 +732,9 @@
             </div>
         </section>
         <!-- end standalone -->
+
+        <?= $this->render('../section/_seo_article.php'); ?>
+
         <!-- start connect -->
         <?= $this->render('../section/_connect.php'); ?>
         <!-- end connect -->

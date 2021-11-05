@@ -47,22 +47,25 @@ $this->params['breadcrumbs'][] = [
 		</div>
 	</section>
 
-<?php if($other_project): ?>
-    <section class="featured-project-section">
-        <div class="container">
-            <div class="featured-project-title">
-                <strong class="h2"><?= BaseController::getMessage('317') ?></strong>
+    <?php if($other_project): ?>
+        <section class="featured-project-section">
+            <div class="container">
+                <div class="featured-project-title">
+                    <strong class="h2"><?= BaseController::getMessage('317') ?></strong>
+                </div>
+                <div class="featured-project-list">
+                    <?php foreach ($other_project as $item): ?>
+                        <a href="<?= \yii\helpers\Url::to(['project/detailed', 'symbol' => $item->symbol]) ?>">
+                            <img oncontextmenu="return false" src="/img/logo.svg" data-src="<?= $item->getFirstImg(350) ?>" alt="<?= $item->header ?>">
+                        </a>
+                    <?php endforeach; ?>
+                </div>
             </div>
-            <div class="featured-project-list">
-                <?php foreach ($other_project as $item): ?>
-					<a href="<?= \yii\helpers\Url::to(['project/detailed', 'symbol' => $item->symbol]) ?>">
-						<img oncontextmenu="return false" src="/img/logo.svg" data-src="<?= $item->getFirstImg(350) ?>" alt="<?= $item->header ?>">
-					</a>
-                <?php endforeach; ?>
-            </div>
-        </div>
-    </section>
-<?php endif; ?>
+        </section>
+    <?php endif; ?>
+
+    <?= $this->render('../section/_seo_article.php'); ?>
+
     <!-- start connect -->
     <?= $this->render('../section/_connect-blue.php'); ?>
 	<!-- end connect -->
