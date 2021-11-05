@@ -48,7 +48,7 @@ $this->params['breadcrumbs'][] = [
 		</div>
     </section>
 
-    <?= $this->render('../section/_seo_article.php'); ?>
+    <?= $this->render('../section/_seo_article.php', compact('seo_data')); ?>
 
     <?= $this->render('../section/_connect.php'); ?>
 </main>

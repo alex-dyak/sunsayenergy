@@ -206,7 +206,7 @@ $this->params['breadcrumbs'][] = [
     <?= $this->render('../section/_service-slider.php'); ?>
     <!-- end service slider -->
 
-    <?= $this->render('../section/_seo_article.php'); ?>
+    <?= $this->render('../section/_seo_article.php', compact('seo_data')); ?>
 
     <!-- start connect -->
     <?= $this->render('../section/_connect-blue.php'); ?>

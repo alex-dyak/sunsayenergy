@@ -64,7 +64,7 @@ $this->params['breadcrumbs'][] = [
         </section>
     <?php endif; ?>
 
-    <?= $this->render('../section/_seo_article.php'); ?>
+    <?php // echo $this->render('../section/_seo_article.php', compact('seo_data')); ?>
 
     <!-- start connect -->
     <?= $this->render('../section/_connect-blue.php'); ?>

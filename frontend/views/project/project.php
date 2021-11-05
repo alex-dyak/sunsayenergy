@@ -97,7 +97,7 @@ $contacts = \backend\models\Contact::getContact();
     
     <?= $this->render('../section/_complex-project.php'); ?>
 
-    <?= $this->render('../section/_seo_article.php'); ?>
+    <?= $this->render('../section/_seo_article.php', compact('seo_data')); ?>
     
     <?= $this->render('../section/_connect-blue.php'); ?>
 </main>

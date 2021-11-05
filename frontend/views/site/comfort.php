@@ -253,7 +253,7 @@ $this->params['breadcrumbs'][] = [
     <?= $this->render('../section/_review.php', compact('reviews')); ?>
     <!-- end review -->
 
-    <?= $this->render('../section/_seo_article.php'); ?>
+    <?= $this->render('../section/_seo_article.php', compact('seo_data')); ?>
 
     <!-- start connect -->
     <?= $this->render('../section/_connect-blue.php'); ?>
