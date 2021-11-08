@@ -19,7 +19,7 @@
                             </a>
                             <a href=" https://sunsayenergy.com/dohod-6000-zelyonyi-tarif">
                                 <h2 class="new-title-house">
-                                    <?= strtoupper(BaseController::getMessage('733')) ?>                        
+                                <?= strtoupper(BaseController::getMessage('733')) ?>                        
                                 </h2>
                             </a>
                         </div>

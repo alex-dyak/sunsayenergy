@@ -1229,6 +1229,7 @@ a:not([class]):hover{color:#ffd100}
 @media only screen and (min-width:1700px){
 .new-electrostation-section .new-bg-block-right{left:68%}
 .new-electrostation-section .new-bg-block-left{right:68%}
+.new-title-wrapper{margin-top:-40px}
 }
 .new-possibilities{background:radial-gradient(130.67% 62.03% at 50% -5.82%,#b7d3f7 0,rgba(183,211,247,0) 100%);padding-bottom:20px}
 .title-block__possibility{text-align:center;padding-top:65px;max-width:300px;margin:0 auto;width:100%}

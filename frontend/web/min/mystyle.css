@@ -1752,6 +1752,9 @@ a:not([class]):hover{color:#ffd100}
         right: 68%;
     }
 
+    .new-title-wrapper {
+        margin-top: -40px;
+    }
 } 
 
 
