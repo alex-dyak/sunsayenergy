@@ -1890,7 +1890,7 @@ a:not([class]):hover{color:#ffd100}
 
 .station-types {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .station-types__text {
@@ -1946,7 +1946,6 @@ a:not([class]):hover{color:#ffd100}
 .button__center .new-consult-btn {
     text-align: center;
     width: 100%;
-    margin-bottom: 85px;
 }
 
 .station-types__img {

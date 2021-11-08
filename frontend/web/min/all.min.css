@@ -1254,13 +1254,13 @@ a:not([class]):hover{color:#ffd100}
 .subtitle__possibility{font-size:18px;line-height:22px}
 .subtitle__slider{font-size:45px;line-height:45px}
 }
-.station-types{position:relative;margin-bottom:50px}
+.station-types{position:relative;margin-bottom:20px}
 .station-types__text{font-family:Montserrat,sans-serif;font-weight:700;text-transform:uppercase;font-size:12px;line-height:17px;max-width:180px;padding-top:15px;padding-bottom:22px}
 .station-types__item{font-family:Montserrat,sans-serif;font-weight:700;font-size:13px;line-height:17px;background:rgba(183,211,247,1);padding:12px 8px;display:block;border-radius:5px;text-align:center;max-width:146px;width:100%;margin-bottom:11px;cursor:pointer;transition:.3s all}
 .station-types__item-color{background:#ffe863}
 .station-types__item:hover{color:#fff}
 .station-types__img-mob{position:absolute;top:0;bottom:0;right:0;left:0;display:block;background-image:url(../img/homepage/mob-panels7.png);-webkit-background-size:contain;background-size:auto;background-repeat:no-repeat;background-position:100% 0}
-.button__center .new-consult-btn{text-align:center;width:100%;margin-bottom:85px}
+.button__center .new-consult-btn{text-align:center;width:100%}
 .station-types__img{display:none}
 @media screen and (min-width:375px){
 .station-types__img-mob{background-image:url(../img/homepage/mob-panels5.png)}
