@@ -1165,6 +1165,7 @@ a:not([class]):hover{color:#ffd100}
 .button__center.new-button__center{text-align:end}
 .new-button__center .new-consult-btn{background:#b7d3f7;padding:15px;max-width:138px}
 .button__center .new-consult-btn{font-size:12px}
+.new-electrostation-section .button__center .new-consult-btn{margin-bottom:85px}
 @media only screen and (min-width:400px){
 .new-button__center .new-consult-btn{max-width:160px}
 .button__center .new-consult-btn{font-size:14px}
@@ -1218,6 +1219,7 @@ a:not([class]):hover{color:#ffd100}
 .new-title-plant:hover{color:#fff}
 .new-title-house:hover{color:#fff}
 .button__center.new-button__center{text-align:end}
+.new-electrostation-section .button__center .new-consult-btn{margin-bottom:55px}
 }
 @media only screen and (min-width:1200px){
 .new-electrostation-section .new-bg-block-right{left:65%}
