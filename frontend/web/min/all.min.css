@@ -1207,9 +1207,10 @@ a:not([class]):hover{color:#ffd100}
 .new-electrostation-section .new-bg-block-left{right:72%}
 }
 @media only screen and (min-width:1024px){
-.new-electrostation-section .new-bg-block-right{position:absolute;top:-160px;bottom:0;right:0;left:58%;display:block;background-image:url(../img/homepage/electrical_panels1.png);-webkit-background-size:contain;background-size:contain;background-repeat:no-repeat;background-position:100% 0;z-index:-1}
+.new-subtitle{margin-top:55px;display:inline-block}
+.new-electrostation-section .new-bg-block-right{position:absolute;top:-143px;bottom:0;right:0;left:58%;display:block;background-image:url(../img/homepage/electrical_panels1.png);-webkit-background-size:contain;background-size:contain;background-repeat:no-repeat;background-position:100% 0;z-index:-1}
 .new-electrostation-section .new-bg-block-left{position:absolute;top:0;bottom:0;right:58%;left:0;display:block;background-image:url(../img/homepage/electrical_panels3.png);-webkit-background-size:contain;background-size:contain;background-repeat:no-repeat;background-position:0 100%;z-index:-1}
-.new-title-wrapper{margin-bottom:0}
+.new-title-wrapper{margin-bottom:0;margin-top:-95px}
 .new-title-blok{width:515px;height:515px;background:radial-gradient(circle,#ffd100 0,#ffd100 215px,rgba(57,57,57,.02) 216px,rgba(57,57,57,.1) 100%);position:relative}
 .new-title-plant::before{content:"";position:absolute;display:block;top:110px;right:-65px;width:156px;height:156px;background:radial-gradient(circle,#b7d3f7 0,#b7d3f7 56px,rgba(255,255,255,.8) 57px,rgba(255,255,255,.8) 100%);border-radius:50%}
 .new-title-plant::after{content:"";background:url(../img/homepage/your_business.svg);background-size:cover;background-repeat:no-repeat;background-position:center center;position:absolute;display:block;top:145px;right:-20px;width:66px;height:72px}
@@ -1219,7 +1220,7 @@ a:not([class]):hover{color:#ffd100}
 .new-title-plant:hover{color:#fff}
 .new-title-house:hover{color:#fff}
 .button__center.new-button__center{text-align:end}
-.new-electrostation-section .button__center .new-consult-btn{margin-bottom:55px}
+.new-electrostation-section .button__center .new-consult-btn{margin-bottom:90px}
 }
 @media only screen and (min-width:1200px){
 .new-electrostation-section .new-bg-block-right{left:65%}
@@ -1228,6 +1229,7 @@ a:not([class]):hover{color:#ffd100}
 @media only screen and (min-width:1700px){
 .new-electrostation-section .new-bg-block-right{left:68%}
 .new-electrostation-section .new-bg-block-left{right:68%}
+.new-title-wrapper{margin-top:-40px}
 }
 .new-possibilities{background:radial-gradient(130.67% 62.03% at 50% -5.82%,#b7d3f7 0,rgba(183,211,247,0) 100%);padding-bottom:20px}
 .title-block__possibility{text-align:center;padding-top:65px;max-width:300px;margin:0 auto;width:100%}

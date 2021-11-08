@@ -1603,9 +1603,14 @@ a:not([class]):hover{color:#ffd100}
 
 @media only screen and (min-width: 1024px){
 
+    .new-subtitle {
+        margin-top: 55px;
+        display: inline-block;
+    }
+
     .new-electrostation-section .new-bg-block-right {
         position: absolute;
-        top: -160px;
+        top: -143px;
         bottom: 0;
         right: 0;
         left: 58%;
@@ -1635,6 +1640,7 @@ a:not([class]):hover{color:#ffd100}
 
     .new-title-wrapper {
         margin-bottom: 0px;
+        margin-top: -95px;
     }
 
     .new-title-blok {
@@ -1720,7 +1726,7 @@ a:not([class]):hover{color:#ffd100}
     }
 
     .new-electrostation-section .button__center .new-consult-btn {
-        margin-bottom: 55px;
+        margin-bottom: 90px;
     }
 
     
@@ -1746,6 +1752,9 @@ a:not([class]):hover{color:#ffd100}
         right: 68%;
     }
 
+    .new-title-wrapper {
+        margin-top: -40px;
+    }
 } 
 
 
