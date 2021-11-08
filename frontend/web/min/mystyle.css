@@ -1367,20 +1367,21 @@ a:not([class]):hover{color:#ffd100}
     line-height: 13px;
     text-transform: uppercase;
     max-width: 150px;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .new-title-blok {
     width: 266px;
     height: 266px;
-    margin: 0 auto 100px;
+    margin: 0 auto 61px;
     padding-top: 60px;
     background: radial-gradient(circle,#FFD100 0,#FFD100 103px,rgba(255,255,255,.8) 104px,rgba(255,255,255,.8) 100%);
     border-radius: 50%;
     text-align: center;
 }
 
-.new-title {
+.new-title-plant,
+.new-title-house {
     font-family: "Bebas Neue Cyrillic",sans-serif;
     font-weight: 400;
     font-size: 23px;
@@ -1389,12 +1390,12 @@ a:not([class]):hover{color:#ffd100}
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #393939;
 }
 
-.new-title-blok .new-title-span {
-    margin-top: 31px;
-    display: inline-block;
-}
 
 .new-electrostation-section .new-bg-block-right {
     position: absolute;
@@ -1414,7 +1415,7 @@ a:not([class]):hover{color:#ffd100}
 .new-electrostation-section .new-bg-block-left {
     position: absolute;
     top: 0;
-    bottom: -60px;
+    bottom: 35px;
     right: 50%;
     left: 0;
     display: block;
@@ -1428,7 +1429,7 @@ a:not([class]):hover{color:#ffd100}
 
 .button__center.new-button__center {
     text-align: end;
-    margin-bottom: 110px;
+    /* margin-bottom: 110px; */
 }
 
 .new-button__center .new-consult-btn {
@@ -1451,7 +1452,7 @@ a:not([class]):hover{color:#ffd100}
     }
 }
 
-@media only screen and (min-width: 460px){
+@media only screen and (min-width: 440px){
     .new-title-blok {
         width: 300px;
         height: 300px;
@@ -1471,12 +1472,12 @@ a:not([class]):hover{color:#ffd100}
     }
     
     .new-electrostation-section .new-bg-block-left {
-        bottom: -60px;
+        /* bottom: 35px; */
         right: 60%;
     }
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 580px){
 
     .new-title-blok {
         width: 320px;
@@ -1496,7 +1497,7 @@ a:not([class]):hover{color:#ffd100}
     }
     
     .new-electrostation-section .new-bg-block-left {
-        bottom: -85px;
+        /* bottom: -85px; */
         right: 65%;
     }
     
@@ -1521,7 +1522,8 @@ a:not([class]):hover{color:#ffd100}
         max-width: 300px;
     }
 
-    .new-title {
+    .new-title-plant,
+    .new-title-house{
         font-size: 30px;
         line-height: 30px;
         max-width: 250px;
@@ -1549,7 +1551,7 @@ a:not([class]):hover{color:#ffd100}
     }
     
     .new-electrostation-section .new-bg-block-left {
-        bottom: -75px;
+        bottom: 20px;
         right: 66%;
     }
 
@@ -1564,7 +1566,8 @@ a:not([class]):hover{color:#ffd100}
         background: radial-gradient(circle,#ffd100 0,#ffd100 188px,rgba(255,255,255,.8) 189px,rgba(255,255,255,.8) 100%);
     }
 
-    .new-title {
+    .new-title-plant,
+    .new-title-house {
         font-size: 35px;
         line-height: 35px;
         max-width: 260px;
@@ -1576,7 +1579,7 @@ a:not([class]):hover{color:#ffd100}
     }
     
     .new-electrostation-section .new-bg-block-left {
-        bottom: -80px;
+        bottom: 20px;
         right: 67%;
     }
 
@@ -1616,11 +1619,11 @@ a:not([class]):hover{color:#ffd100}
     .new-electrostation-section .new-bg-block-left {
         position: absolute;
         top: 0;
-        bottom: -92px;
+        bottom: 0px;
         right: 64.9%;
         left: 0;
         display: block;
-        background-image: url(../img/homepage/electrical_panels2.png);
+        background-image: url(../img/homepage/electrical_panels3.png);
         -webkit-background-size: contain;
         background-size: contain;
         background-repeat: no-repeat;
@@ -1629,17 +1632,17 @@ a:not([class]):hover{color:#ffd100}
     }
 
     .new-title-blok {
-        width: 565px;
-        height: 565px;
-        margin: -70px auto 0;
+        width: 515px;
+        height: 515px;
+        margin: -85px auto 0;
         padding-top: 120px;
-        background: radial-gradient(circle,#ffd100 0,#ffd100 239px,rgba(57, 57, 57, 0.02) 240px,rgba(57, 57, 57, 0.1) 100%);
+        background: radial-gradient(circle,#ffd100 0,#ffd100 215px,rgba(57, 57, 57, 0.02) 216px,rgba(57, 57, 57, 0.1) 100%);
         border-radius: 50%;
         text-align: center;
         position: relative;
     }
 
-    .new-title-blok::before {
+    .new-title-plant::before {
         content:  "" ;
         position: absolute;
         display: block;
@@ -1651,7 +1654,7 @@ a:not([class]):hover{color:#ffd100}
         border-radius: 50%;
     }
 
-    .new-title-blok::after {
+    .new-title-plant::after {
         content:  "" ;
         background: url(../img/homepage/your_business.svg);
         background-size: cover;
@@ -1665,7 +1668,7 @@ a:not([class]):hover{color:#ffd100}
         height: 72px;
     } 
 
-    .new-title-span::before {
+    .new-title-house::before {
         content:  "" ;
         position: absolute;
         display: block;
@@ -1677,7 +1680,7 @@ a:not([class]):hover{color:#ffd100}
         border-radius: 50%;
     }
 
-    .new-title-span::after {
+    .new-title-house::after {
         content:  "" ;
         background: url(../img/homepage/your_house.svg);
         background-size: cover;
@@ -1690,21 +1693,28 @@ a:not([class]):hover{color:#ffd100}
         width: 66px;
         height: 45px;
     } 
-    
-    .new-title {
+
+    .new-title-plant,
+    .new-title-house {
         font-size: 45px;
         line-height: 45px;
         max-width: 335px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        transition: color .3s ease;
     }
 
-    .new-title-blok .new-title-span {
-        margin-top: 53px;
-        display: inline-block;
+    .new-title-plant:hover {
+        color: #fff;
     }
+
+    .new-title-house:hover {
+        color: #fff;
+    }
+
 
     .button__center.new-button__center {
         text-align: end;
-        margin-bottom: 92px;
     }
 
     .new-button__center .new-consult-btn {
@@ -1871,9 +1881,9 @@ a:not([class]):hover{color:#ffd100}
     font-family: Montserrat, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 17px;
-    max-width: 215px;
+    max-width: 180px;
     padding-top: 15px;
     padding-bottom: 22px;
 }
@@ -1881,18 +1891,22 @@ a:not([class]):hover{color:#ffd100}
 .station-types__item{
     font-family: Montserrat,sans-serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 17px;
     background: rgba(183,211,247,1);
     padding: 12px 8px;
     display: block;
     border-radius: 5px;
     text-align: center;
-    max-width: 159px;
+    max-width: 146px;
     width: 100%;
     margin-bottom: 11px;
     cursor: pointer;
     transition: .3s all;
+}
+
+.station-types__item-color {
+    background: rgb(255, 232, 99);
 }
 
 .station-types__item:hover {
@@ -1906,7 +1920,7 @@ a:not([class]):hover{color:#ffd100}
     right: 0;
     left: 0;
     display: block;
-    background-image: url(../img/homepage/mob-panels4.png);
+    background-image: url(../img/homepage/mob-panels7.png);
     -webkit-background-size: contain;
     background-size: auto;
     background-repeat: no-repeat;
@@ -1916,6 +1930,7 @@ a:not([class]):hover{color:#ffd100}
 .button__center .new-consult-btn {
     text-align: center;
     width: 100%;
+    margin-bottom: 85px;
 }
 
 .station-types__img {
@@ -1924,7 +1939,7 @@ a:not([class]):hover{color:#ffd100}
 
 @media screen and (min-width:375px){
     .station-types__img-mob {
-        background-image: url(../img/homepage/mob-panels3.png);
+        background-image: url(../img/homepage/mob-panels5.png);
     }
 }
 @media screen and (min-width:450px){
@@ -1932,6 +1947,12 @@ a:not([class]):hover{color:#ffd100}
     .station-types__text {
         max-width: 290px;
         padding-bottom: 40px;
+        font-size: 14px;
+    }
+
+    .station-types__item {
+        font-size: 14px;
+        max-width: 160px;
     }
 
     .button__center {
@@ -1955,10 +1976,8 @@ a:not([class]):hover{color:#ffd100}
     .button__center .new-consult-btn {
         max-width: 330px;
         width: 100%;
-        margin: 0 auto;
+        margin: 0 auto 75px;
     }
-
-
 }
 
 @media screen and (min-width:650px){
