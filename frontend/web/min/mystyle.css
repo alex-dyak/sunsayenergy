@@ -1449,6 +1449,10 @@ a:not([class]):hover{color:#ffd100}
     font-size: 12px;
 }
 
+.new-electrostation-section .button__center .new-consult-btn {
+    margin-bottom: 85px;
+}
+
 @media only screen and (min-width: 400px){
     .new-button__center .new-consult-btn {
         max-width: 160px;
@@ -1713,6 +1717,10 @@ a:not([class]):hover{color:#ffd100}
 
     .button__center.new-button__center {
         text-align: end;
+    }
+
+    .new-electrostation-section .button__center .new-consult-btn {
+        margin-bottom: 55px;
     }
 
     
