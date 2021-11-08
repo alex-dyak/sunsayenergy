@@ -9,24 +9,30 @@
                     <?= strtoupper(BaseController::getMessage('731')) ?>                
                 </h3>
                 <div class="new-bg-block-right"></div>
-                <div class="new-title-blok">
-                    <a href="https://sunsayenergy.com/commercial_stations">
-                        <h2 class="new-title-plant">
-                            <?= strtoupper(BaseController::getMessage('732')) ?>
-                        </h2>
-                    </a>
-                    <a href=" https://sunsayenergy.com/dohod-6000-zelyonyi-tarif">
-                        <h2 class="new-title-house">
-                            <?= strtoupper(BaseController::getMessage('733')) ?>
-                        </h2>
-                    </a>
+                <div class="new-title-wrapper">
+                    <div class="new-title-blok">
+                        <div class="new-title-inner">
+                            <a href="https://sunsayenergy.com/commercial_stations">
+                                <h2 class="new-title-plant">
+                                    <?= strtoupper(BaseController::getMessage('731')) ?>                         
+                                </h2>
+                            </a>
+                            <a href=" https://sunsayenergy.com/dohod-6000-zelyonyi-tarif">
+                                <h2 class="new-title-house">
+                                    <?= strtoupper(BaseController::getMessage('733')) ?>                    
+                                </h2>
+                            </a>
+                        </div>
+                    </div>                    
                 </div>
+
                 <div class="new-bg-block-left"></div>
                 <div class="button__center new-button__center">
                     <a class="button btn-lg consult-btn station-types__button new-consult-btn" href="#connect"><?= BaseController::getMessage('402') ?></a>
                 </div>
             </div>
         </section>
+
 
         <section class="new-possibilities">
             <div class="container">
@@ -95,7 +101,7 @@
                         <div class="station-types__inner">
                             <a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?>" class="station-types__item"><?= BaseController::getMessage('742') ?></a>
                             <a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>" class="station-types__item"><?= BaseController::getMessage('743') ?></a>
-                            <a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>" class="station-types__item"><?= BaseController::getMessage('744') ?></a>
+                            <a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>" class="station-types__item station-types__item-color"><?= BaseController::getMessage('744') ?></a>
                         </div>
                         <div class="station-types__text">
                             <p><?= strtoupper(BaseController::getMessage('745')) ?></p>
@@ -111,7 +117,7 @@
                 </div>
             </div>
         </section>
-        
+       
             <?= $this->render('../section/_video.php', compact('videos')); ?>
 
         <section class="new-pros-section pros-section">

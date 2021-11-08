@@ -1156,57 +1156,60 @@ a:not([class]):hover{color:#ffd100}
 .header .new-mobile-top-block{background:0 0}
 .new-main-logo{text-align:left}
 .new-electrostation-section{position:relative}
-.new-subtitle{font-family:Montserrat,sans-serif;font-weight:700;font-size:11px;line-height:13px;text-transform:uppercase;max-width:150px;padding-top:50px}
-.new-title-blok{width:266px;height:266px;margin:0 auto 61px;padding-top:60px;background:radial-gradient(circle,#ffd100 0,#ffd100 103px,rgba(255,255,255,.8) 104px,rgba(255,255,255,.8) 100%);border-radius:50%;text-align:center}
+.new-subtitle{font-family:Montserrat,sans-serif;font-weight:700;font-size:11px;line-height:13px;text-transform:uppercase;max-width:135px;padding-top:15px}
+.new-title-wrapper{display:flex;justify-content:center;align-items:center;margin-bottom:61px}
+.new-title-blok{width:266px;height:266px;background:radial-gradient(circle,#ffd100 0,#ffd100 103px,rgba(255,255,255,.8) 104px,rgba(255,255,255,.8) 100%);border-radius:50%;text-align:center;display:flex;justify-content:center;align-items:center}
 .new-title-house,.new-title-plant{font-family:"Bebas Neue Cyrillic",sans-serif;font-weight:400;font-size:23px;line-height:23px;max-width:185px;text-transform:uppercase;display:inline-block;text-align:center;cursor:pointer;margin-top:20px;margin-bottom:10px;color:#393939}
-.new-electrostation-section .new-bg-block-right{position:absolute;top:-50px;bottom:0;right:0;left:50%;display:block;background-image:url(../img/homepage/home1.png);-webkit-background-size:contain;background-size:contain;background-repeat:no-repeat;background-position:100% 0;z-index:-1}
-.new-electrostation-section .new-bg-block-left{position:absolute;top:0;bottom:35px;right:50%;left:0;display:block;background-image:url(../img/homepage/home2.png);-webkit-background-size:contain;background-size:contain;background-repeat:no-repeat;background-position:0 100%;z-index:-1}
+.new-electrostation-section .new-bg-block-right{position:absolute;top:-5%;bottom:0;right:0;left:50%;display:block;background-image:url(../img/homepage/home1.png);-webkit-background-size:contain;background-size:contain;background-repeat:no-repeat;background-position:100% 0;z-index:-1}
+.new-electrostation-section .new-bg-block-left{position:absolute;top:0;bottom:5%;right:50%;left:0;display:block;background-image:url(../img/homepage/home2.png);-webkit-background-size:contain;background-size:contain;background-repeat:no-repeat;background-position:0 100%;z-index:-1}
 .button__center.new-button__center{text-align:end}
 .new-button__center .new-consult-btn{background:#b7d3f7;padding:15px;max-width:138px}
 .button__center .new-consult-btn{font-size:12px}
 @media only screen and (min-width:400px){
 .new-button__center .new-consult-btn{max-width:160px}
 .button__center .new-consult-btn{font-size:14px}
+.new-electrostation-section .new-bg-block-right{left:55%}
+.new-electrostation-section .new-bg-block-left{right:55%}
 }
 @media only screen and (min-width:440px){
-.new-title-blok{width:300px;height:300px;padding-top:70px;background:radial-gradient(circle,#ffd100 0,#ffd100 114px,rgba(255,255,255,.8) 115px,rgba(255,255,255,.8) 100%)}
+.new-title-blok{width:300px;height:300px;background:radial-gradient(circle,#ffd100 0,#ffd100 114px,rgba(255,255,255,.8) 115px,rgba(255,255,255,.8) 100%)}
 .new-subtitle{font-size:12px;line-height:15px;max-width:230px}
-.new-electrostation-section .new-bg-block-right{top:-50px;left:60%}
+}
+@media only screen and (min-width:490px){
+.new-electrostation-section .new-bg-block-right{left:60%}
 .new-electrostation-section .new-bg-block-left{right:60%}
 }
-@media only screen and (min-width:580px){
+@media only screen and (min-width:570px){
 .new-title-blok{width:320px;height:320px;background:radial-gradient(circle,#ffd100 0,#ffd100 130px,rgba(255,255,255,.8) 131px,rgba(255,255,255,.8) 100%)}
 .new-subtitle{font-size:14px;line-height:17px;max-width:250px}
-.new-electrostation-section .new-bg-block-right{top:-20px;left:65%}
-.new-electrostation-section .new-bg-block-left{right:65%}
+.new-electrostation-section .new-bg-block-right{left:67%}
+.new-electrostation-section .new-bg-block-left{right:67%}
 .new-button__center .new-consult-btn{max-width:260px}
 }
 @media only screen and (min-width:700px){
-.new-title-blok{width:350px;height:350px;padding-top:84px;margin:70px auto 100px;background:radial-gradient(circle,#ffd100 0,#ffd100 145px,rgba(255,255,255,.8) 146px,rgba(255,255,255,.8) 100%)}
+.new-title-blok{width:350px;height:350px;background:radial-gradient(circle,#ffd100 0,#ffd100 145px,rgba(255,255,255,.8) 146px,rgba(255,255,255,.8) 100%)}
 .new-subtitle{font-size:16px;line-height:19px;max-width:300px}
 .new-title-house,.new-title-plant{font-size:30px;line-height:30px;max-width:250px}
+.new-electrostation-section .new-bg-block-right{left:68.5%}
+.new-electrostation-section .new-bg-block-left{right:68.5%}
 }
-@media only screen and (min-width:850px){
-.new-title-blok{width:400px;height:400px;padding-top:105px;background:radial-gradient(circle,#ffd100 0,#ffd100 165px,rgba(255,255,255,.8) 166px,rgba(255,255,255,.8) 100%)}
+@media only screen and (min-width:800px){
+.new-title-blok{width:400px;height:400px;background:radial-gradient(circle,#ffd100 0,#ffd100 165px,rgba(255,255,255,.8) 166px,rgba(255,255,255,.8) 100%)}
 .new-subtitle{font-size:18px;line-height:22px;max-width:420px}
-.new-electrostation-section .new-bg-block-right{top:0;left:67%}
-.new-electrostation-section .new-bg-block-left{bottom:20px;right:66%}
+.new-electrostation-section .new-bg-block-right{left:70%}
+.new-electrostation-section .new-bg-block-left{right:70%}
 }
-@media only screen and (min-width:950px){
-.new-title-blok{width:450px;height:450px;padding-top:120px;background:radial-gradient(circle,#ffd100 0,#ffd100 188px,rgba(255,255,255,.8) 189px,rgba(255,255,255,.8) 100%)}
+@media only screen and (min-width:870px){
+.new-title-blok{width:450px;height:450px;background:radial-gradient(circle,#ffd100 0,#ffd100 188px,rgba(255,255,255,.8) 189px,rgba(255,255,255,.8) 100%)}
 .new-title-house,.new-title-plant{font-size:35px;line-height:35px;max-width:260px}
-.new-electrostation-section .new-bg-block-right{top:5px;left:68%}
-.new-electrostation-section .new-bg-block-left{bottom:20px;right:67%}
+.new-electrostation-section .new-bg-block-right{left:72%}
+.new-electrostation-section .new-bg-block-left{right:72%}
 }
 @media only screen and (min-width:1024px){
-.new-title-blok{margin:70px auto 150px}
-.new-electrostation-section .new-bg-block-right{left:69%}
-.new-electrostation-section .new-bg-block-left{right:69%}
-}
-@media only screen and (min-width:1150px){
-.new-electrostation-section .new-bg-block-right{position:absolute;top:-160px;bottom:0;right:0;left:64.9%;display:block;background-image:url(../img/homepage/electrical_panels1.png);-webkit-background-size:contain;background-size:contain;background-repeat:no-repeat;background-position:100% 0;z-index:-1}
-.new-electrostation-section .new-bg-block-left{position:absolute;top:0;bottom:0;right:64.9%;left:0;display:block;background-image:url(../img/homepage/electrical_panels3.png);-webkit-background-size:contain;background-size:contain;background-repeat:no-repeat;background-position:0 100%;z-index:-1}
-.new-title-blok{width:515px;height:515px;margin:-85px auto 0;padding-top:120px;background:radial-gradient(circle,#ffd100 0,#ffd100 215px,rgba(57,57,57,.02) 216px,rgba(57,57,57,.1) 100%);border-radius:50%;text-align:center;position:relative}
+.new-electrostation-section .new-bg-block-right{position:absolute;top:-160px;bottom:0;right:0;left:58%;display:block;background-image:url(../img/homepage/electrical_panels1.png);-webkit-background-size:contain;background-size:contain;background-repeat:no-repeat;background-position:100% 0;z-index:-1}
+.new-electrostation-section .new-bg-block-left{position:absolute;top:0;bottom:0;right:58%;left:0;display:block;background-image:url(../img/homepage/electrical_panels3.png);-webkit-background-size:contain;background-size:contain;background-repeat:no-repeat;background-position:0 100%;z-index:-1}
+.new-title-wrapper{margin-bottom:0}
+.new-title-blok{width:515px;height:515px;background:radial-gradient(circle,#ffd100 0,#ffd100 215px,rgba(57,57,57,.02) 216px,rgba(57,57,57,.1) 100%);position:relative}
 .new-title-plant::before{content:"";position:absolute;display:block;top:110px;right:-65px;width:156px;height:156px;background:radial-gradient(circle,#b7d3f7 0,#b7d3f7 56px,rgba(255,255,255,.8) 57px,rgba(255,255,255,.8) 100%);border-radius:50%}
 .new-title-plant::after{content:"";background:url(../img/homepage/your_business.svg);background-size:cover;background-repeat:no-repeat;background-position:center center;position:absolute;display:block;top:145px;right:-20px;width:66px;height:72px}
 .new-title-house::before{content:"";position:absolute;display:block;bottom:100px;left:-65px;width:156px;height:156px;background:radial-gradient(circle,#b7d3f7 0,#b7d3f7 56px,rgba(255,255,255,.8) 57px,rgba(255,255,255,.8) 100%);border-radius:50%}
@@ -1215,7 +1218,14 @@ a:not([class]):hover{color:#ffd100}
 .new-title-plant:hover{color:#fff}
 .new-title-house:hover{color:#fff}
 .button__center.new-button__center{text-align:end}
-.new-button__center .new-consult-btn{background:#b7d3f7;padding:18px 15px;max-width:450px}
+}
+@media only screen and (min-width:1200px){
+.new-electrostation-section .new-bg-block-right{left:65%}
+.new-electrostation-section .new-bg-block-left{right:65%}
+}
+@media only screen and (min-width:1700px){
+.new-electrostation-section .new-bg-block-right{left:68%}
+.new-electrostation-section .new-bg-block-left{right:68%}
 }
 .new-possibilities{background:radial-gradient(130.67% 62.03% at 50% -5.82%,#b7d3f7 0,rgba(183,211,247,0) 100%);padding-bottom:20px}
 .title-block__possibility{text-align:center;padding-top:65px;max-width:300px;margin:0 auto;width:100%}
@@ -1273,6 +1283,9 @@ a:not([class]):hover{color:#ffd100}
 .station-types__img-mob{display:none}
 .button__center .new-consult-btn{font-size:16px}
 .button__center{text-align:start}
+}
+@media screen and (min-width:900px){
+.button__center .new-consult-btn{max-width:450px;width:100%;margin:0 auto 50px}
 }
 .new-pros-section{margin-top:50px}
 .new-line-title{font-size:36px}

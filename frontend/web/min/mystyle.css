@@ -1366,18 +1366,26 @@ a:not([class]):hover{color:#ffd100}
     font-size: 11px;
     line-height: 13px;
     text-transform: uppercase;
-    max-width: 150px;
-    padding-top: 50px;
+    max-width: 135px;
+    padding-top: 15px;
+}
+
+.new-title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 61px;
 }
 
 .new-title-blok {
     width: 266px;
     height: 266px;
-    margin: 0 auto 61px;
-    padding-top: 60px;
     background: radial-gradient(circle,#FFD100 0,#FFD100 103px,rgba(255,255,255,.8) 104px,rgba(255,255,255,.8) 100%);
     border-radius: 50%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .new-title-plant,
@@ -1399,7 +1407,7 @@ a:not([class]):hover{color:#ffd100}
 
 .new-electrostation-section .new-bg-block-right {
     position: absolute;
-    top: -50px;
+    top: -5%;
     bottom: 0;
     right: 0;
     left: 50%;
@@ -1415,7 +1423,7 @@ a:not([class]):hover{color:#ffd100}
 .new-electrostation-section .new-bg-block-left {
     position: absolute;
     top: 0;
-    bottom: 35px;
+    bottom: 5%;
     right: 50%;
     left: 0;
     display: block;
@@ -1429,7 +1437,6 @@ a:not([class]):hover{color:#ffd100}
 
 .button__center.new-button__center {
     text-align: end;
-    /* margin-bottom: 110px; */
 }
 
 .new-button__center .new-consult-btn {
@@ -1450,13 +1457,20 @@ a:not([class]):hover{color:#ffd100}
     .button__center .new-consult-btn {
         font-size: 14px;
     }
+
+    .new-electrostation-section .new-bg-block-right {
+        left: 55%;
+    }
+    
+    .new-electrostation-section .new-bg-block-left {
+        right: 55%;
+    }
 }
 
 @media only screen and (min-width: 440px){
     .new-title-blok {
         width: 300px;
         height: 300px;
-        padding-top: 70px;
         background: radial-gradient(circle,#FFD100 0,#FFD100 114px,rgba(255,255,255,.8) 115px,rgba(255,255,255,.8) 100%);
     }
 
@@ -1465,19 +1479,19 @@ a:not([class]):hover{color:#ffd100}
         line-height: 15px;
         max-width: 230px;
     }
+}
 
+@media only screen and (min-width: 490px){
     .new-electrostation-section .new-bg-block-right {
-        top: -50px;
         left: 60%;
     }
     
     .new-electrostation-section .new-bg-block-left {
-        /* bottom: 35px; */
         right: 60%;
     }
 }
 
-@media only screen and (min-width: 580px){
+@media only screen and (min-width: 570px){
 
     .new-title-blok {
         width: 320px;
@@ -1492,13 +1506,11 @@ a:not([class]):hover{color:#ffd100}
     }
 
     .new-electrostation-section .new-bg-block-right {
-        top: -20px;
-        left: 65%;
+        left: 67%;
     }
     
     .new-electrostation-section .new-bg-block-left {
-        /* bottom: -85px; */
-        right: 65%;
+        right: 67%;
     }
     
     .new-button__center .new-consult-btn {
@@ -1511,8 +1523,6 @@ a:not([class]):hover{color:#ffd100}
     .new-title-blok {
         width: 350px;
         height: 350px;
-        padding-top: 84px;
-        margin: 70px auto 100px;
         background: radial-gradient(circle,#FFD100 0,#FFD100 145px,rgba(255,255,255,.8) 146px,rgba(255,255,255,.8) 100%);
     }
 
@@ -1528,14 +1538,21 @@ a:not([class]):hover{color:#ffd100}
         line-height: 30px;
         max-width: 250px;
     }
+
+    .new-electrostation-section .new-bg-block-right {
+        left: 68.5%;
+    }
+    
+    .new-electrostation-section .new-bg-block-left {
+        right: 68.5%;
+    }
 }
 
-@media only screen and (min-width: 850px){
+@media only screen and (min-width: 800px){
 
     .new-title-blok {
         width: 400px;
         height: 400px;
-        padding-top: 105px;
         background: radial-gradient(circle,#FFD100 0,#FFD100 165px,rgba(255,255,255,.8) 166px,rgba(255,255,255,.8) 100%);
     }
 
@@ -1546,23 +1563,20 @@ a:not([class]):hover{color:#ffd100}
     }
 
     .new-electrostation-section .new-bg-block-right {
-        top: 0px;
-        left: 67%;
+        left: 70%;
     }
     
     .new-electrostation-section .new-bg-block-left {
-        bottom: 20px;
-        right: 66%;
+        right: 70%;
     }
 
 }
 
-@media only screen and (min-width: 950px){
+@media only screen and (min-width: 870px){
 
     .new-title-blok {
         width: 450px;
         height: 450px;
-        padding-top: 120px;
         background: radial-gradient(circle,#ffd100 0,#ffd100 188px,rgba(255,255,255,.8) 189px,rgba(255,255,255,.8) 100%);
     }
 
@@ -1574,39 +1588,23 @@ a:not([class]):hover{color:#ffd100}
     }
 
     .new-electrostation-section .new-bg-block-right {
-        top: 5px;
-        left: 68%;
+        left: 72%;
     }
     
     .new-electrostation-section .new-bg-block-left {
-        bottom: 20px;
-        right: 67%;
+        right: 72%;
     }
 
 }
 
 @media only screen and (min-width: 1024px){
 
-    .new-title-blok {
-        margin: 70px auto 150px;
-    }
-    .new-electrostation-section .new-bg-block-right {
-        left: 69%;
-    }
-    .new-electrostation-section .new-bg-block-left {
-        right: 69%;
-    }
-
-}
-
-@media only screen and (min-width: 1150px){
-
     .new-electrostation-section .new-bg-block-right {
         position: absolute;
         top: -160px;
         bottom: 0;
         right: 0;
-        left: 64.9%;
+        left: 58%;
         display: block;
         background-image: url(../img/homepage/electrical_panels1.png);
         -webkit-background-size: contain;
@@ -1620,7 +1618,7 @@ a:not([class]):hover{color:#ffd100}
         position: absolute;
         top: 0;
         bottom: 0px;
-        right: 64.9%;
+        right: 58%;
         left: 0;
         display: block;
         background-image: url(../img/homepage/electrical_panels3.png);
@@ -1631,14 +1629,14 @@ a:not([class]):hover{color:#ffd100}
         z-index: -1;
     }
 
+    .new-title-wrapper {
+        margin-bottom: 0px;
+    }
+
     .new-title-blok {
         width: 515px;
         height: 515px;
-        margin: -85px auto 0;
-        padding-top: 120px;
         background: radial-gradient(circle,#ffd100 0,#ffd100 215px,rgba(57, 57, 57, 0.02) 216px,rgba(57, 57, 57, 0.1) 100%);
-        border-radius: 50%;
-        text-align: center;
         position: relative;
     }
 
@@ -1717,13 +1715,31 @@ a:not([class]):hover{color:#ffd100}
         text-align: end;
     }
 
-    .new-button__center .new-consult-btn {
-        background: #B7D3F7;
-        padding: 18px 15px;
-        max-width: 450px;
-    }
     
 }
+
+@media only screen and (min-width: 1200px){
+    .new-electrostation-section .new-bg-block-right {
+        left: 65%;
+    }
+    
+    .new-electrostation-section .new-bg-block-left {
+        right: 65%;
+    }
+
+}
+
+@media only screen and (min-width: 1700px){
+    .new-electrostation-section .new-bg-block-right {
+        left: 68%;
+    }
+    
+    .new-electrostation-section .new-bg-block-left {
+        right: 68%;
+    }
+
+} 
+
 
 .new-possibilities {
     background: radial-gradient(130.67% 62.03% at 50% -5.82%, #B7D3F7 0%, rgba(183, 211, 247, 0) 100%);
@@ -2024,6 +2040,16 @@ a:not([class]):hover{color:#ffd100}
 
     .button__center {
         text-align: start;
+    }
+}
+
+@media screen and (min-width:900px){
+
+
+    .button__center .new-consult-btn {
+        max-width: 450px;
+        width: 100%;
+        margin: 0 auto 50px;
     }
 }
 
