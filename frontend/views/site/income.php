@@ -194,19 +194,7 @@ $this->params['breadcrumbs'][] = [
     <?= $this->render('../section/_review.php', compact('reviews')); ?>
     <!-- end review -->
 
-    <?php if ($seo_data['article_body']) : ?>
-        <div class="seo-article collapsed">
-            <div class="container">
-                <div class="seo-article-wrap">
-                    <strong><?= strtoupper($seo_data['article_title'][Yii::$app->language]) ?></strong>
-                    <?= $seo_data['article_body'][Yii::$app->language] ?>
-                </div>
-                <span class="seo-article-opener">
-                        <i class="icon-angle-right"></i>
-                    </span>
-            </div>
-        </div>
-    <?php endif; ?>
+    <?= $this->render('../section/_seo_article.php', compact('seo_data')); ?>
 
 	<!-- start connect -->
     <?= $this->render('../section/_connect-blue.php'); ?>

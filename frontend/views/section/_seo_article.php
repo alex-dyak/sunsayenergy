@@ -1,11 +1,14 @@
+
 <?php if ($seo_data['article_body']) : ?>
-    <div class="new-seo-article new-collapsed ">
+    <div class="seo-article collapsed">
         <div class="container">
-            <div class="seo-article-inner">
+            <div class="seo-article-wrap">
                 <strong><?= strtoupper($seo_data['article_title'][Yii::$app->language]) ?></strong>
-                <p><?= $seo_data['article_body'][Yii::$app->language] ?></p>
+                <?= $seo_data['article_body'][Yii::$app->language] ?>
             </div>
-            <span class="seo-article-opened"></span>
+            <span class="seo-article-opener">
+                        <i class="icon-angle-right"></i>
+                    </span>
         </div>
     </div>
 <?php endif; ?>
