@@ -5,9 +5,9 @@
         <section class="new-electrostation-section">
             <div class="container">
 
-                <h3 class="new-subtitle">
+                <h1 class="new-subtitle">
                     <?= strtoupper(BaseController::getMessage('731')) ?>                
-                </h3>
+                </h1>
                 <div class="new-bg-block-right"></div>
                 <div class="new-title-wrapper">
                     <div class="new-title-blok">
