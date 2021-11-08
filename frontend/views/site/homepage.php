@@ -6,14 +6,20 @@
             <div class="container">
 
                 <h3 class="new-subtitle">
-                    <?= strtoupper(BaseController::getMessage('731')) ?>
+                    <?= strtoupper(BaseController::getMessage('731')) ?>                
                 </h3>
                 <div class="new-bg-block-right"></div>
                 <div class="new-title-blok">
-                    <h1 class="new-title">
-                        <?= strtoupper(BaseController::getMessage('732')) ?>
-                        <span class="new-title-span"><?= strtoupper(BaseController::getMessage('733')) ?></span>
-                    </h1>
+                    <a href="https://sunsayenergy.com/commercial_stations">
+                        <h2 class="new-title-plant">
+                            <?= strtoupper(BaseController::getMessage('732')) ?>
+                        </h2>
+                    </a>
+                    <a href=" https://sunsayenergy.com/dohod-6000-zelyonyi-tarif">
+                        <h2 class="new-title-house">
+                            <?= strtoupper(BaseController::getMessage('733')) ?>
+                        </h2>
+                    </a>
                 </div>
                 <div class="new-bg-block-left"></div>
                 <div class="button__center new-button__center">
@@ -38,7 +44,7 @@
                         <li class="possibility-item">
                             <div class="possibility-item-inner">
                                 <div class="possibility-img">
-                                    <img oncontextmenu="return false" data-src="/img/homepage/investments.svg" alt="">
+                                    <img oncontextmenu="return false" data-src="/img/homepage/Vector1.png" alt="">
                                 </div>
                                 <p class="possibility-text"><?= BaseController::getMessage('737') ?></p>
                             </div>
@@ -48,7 +54,7 @@
                         <li class="possibility-item">
                             <div class="possibility-item-inner">
                                 <div class="possibility-img">
-                                    <img oncontextmenu="return false" data-src="/img/homepage/profit.svg" alt="">
+                                    <img oncontextmenu="return false" data-src="/img/homepage/Vector2.png" alt="">
                                 </div>
                                 <p class="possibility-text"><?= BaseController::getMessage('738') ?></p>
                             </div>
@@ -58,7 +64,7 @@
                         <li class="possibility-item">
                             <div class="possibility-item-inner">
                                 <div class="possibility-img">
-                                    <img oncontextmenu="return false" data-src="/img/homepage/voltage.svg" alt="">
+                                    <img oncontextmenu="return false" data-src="/img/homepage/Vector1.png" alt="">
                                 </div>
                                 <p class="possibility-text"><?= BaseController::getMessage('739') ?></p>
                             </div>
@@ -68,7 +74,7 @@
                         <li class="possibility-item">
                             <div class="possibility-item-inner">
                                 <div class="possibility-img">
-                                    <img oncontextmenu="return false" data-src="/img/homepage/status.svg" alt="">
+                                    <img oncontextmenu="return false" data-src="/img/homepage/Vector2.png" alt="">
                                 </div>
                                 <p class="possibility-text"><?= BaseController::getMessage('740') ?></p>
                             </div>
@@ -100,7 +106,7 @@
                     </div>
                     <div class="station-types__img-mob"></div>
                     <div class="station-types__img">
-                        <img oncontextmenu="return false" data-src="/img/homepage/n-panels3.png" alt="">
+                        <img oncontextmenu="return false" data-src="/img/homepage/n-panels4.png" alt="">
                     </div>
                 </div>
             </div>
