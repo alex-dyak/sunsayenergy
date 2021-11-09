@@ -1364,10 +1364,11 @@ a:not([class]):hover{color:#ffd100}
     font-family: Montserrat, sans-serif;
     font-weight: 700;
     font-size: 11px;
-    line-height: 13px;
+    line-height: 14px;
     text-transform: uppercase;
     max-width: 135px;
     padding-top: 15px;
+    letter-spacing: 0.5px;
 }
 
 .new-title-wrapper {
@@ -1393,15 +1394,16 @@ a:not([class]):hover{color:#ffd100}
     font-family: "Bebas Neue Cyrillic",sans-serif;
     font-weight: 400;
     font-size: 23px;
-    line-height: 23px;
+    line-height: 24px;
     max-width: 185px;
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 10px;
     color: #393939;
+    letter-spacing: 0.5px;
 }
 
 
@@ -1563,7 +1565,7 @@ a:not([class]):hover{color:#ffd100}
     .new-subtitle {
         font-size: 18px;
         line-height: 22px;
-        max-width: 420px;
+        max-width: 405px;
     }
 
     .new-electrostation-section .new-bg-block-right {

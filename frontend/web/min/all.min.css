@@ -1156,10 +1156,10 @@ a:not([class]):hover{color:#ffd100}
 .header .new-mobile-top-block{background:0 0}
 .new-main-logo{text-align:left}
 .new-electrostation-section{position:relative}
-.new-subtitle{font-family:Montserrat,sans-serif;font-weight:700;font-size:11px;line-height:13px;text-transform:uppercase;max-width:135px;padding-top:15px}
+.new-subtitle{font-family:Montserrat,sans-serif;font-weight:700;font-size:11px;line-height:14px;text-transform:uppercase;max-width:135px;padding-top:15px;letter-spacing:.5px}
 .new-title-wrapper{display:flex;justify-content:center;align-items:center;margin-bottom:61px}
 .new-title-blok{width:266px;height:266px;background:radial-gradient(circle,#ffd100 0,#ffd100 103px,rgba(255,255,255,.8) 104px,rgba(255,255,255,.8) 100%);border-radius:50%;text-align:center;display:flex;justify-content:center;align-items:center}
-.new-title-house,.new-title-plant{font-family:"Bebas Neue Cyrillic",sans-serif;font-weight:400;font-size:23px;line-height:23px;max-width:185px;text-transform:uppercase;display:inline-block;text-align:center;cursor:pointer;margin-top:20px;margin-bottom:10px;color:#393939}
+.new-title-house,.new-title-plant{font-family:"Bebas Neue Cyrillic",sans-serif;font-weight:400;font-size:23px;line-height:24px;max-width:185px;text-transform:uppercase;display:inline-block;text-align:center;cursor:pointer;margin-top:15px;margin-bottom:10px;color:#393939;letter-spacing:.5px}
 .new-electrostation-section .new-bg-block-right{position:absolute;top:-5%;bottom:0;right:0;left:50%;display:block;background-image:url(../img/homepage/home1.png);-webkit-background-size:contain;background-size:contain;background-repeat:no-repeat;background-position:100% 0;z-index:-1}
 .new-electrostation-section .new-bg-block-left{position:absolute;top:0;bottom:5%;right:50%;left:0;display:block;background-image:url(../img/homepage/home2.png);-webkit-background-size:contain;background-size:contain;background-repeat:no-repeat;background-position:0 100%;z-index:-1}
 .button__center.new-button__center{text-align:end}
@@ -1196,7 +1196,7 @@ a:not([class]):hover{color:#ffd100}
 }
 @media only screen and (min-width:800px){
 .new-title-blok{width:400px;height:400px;background:radial-gradient(circle,#ffd100 0,#ffd100 165px,rgba(255,255,255,.8) 166px,rgba(255,255,255,.8) 100%)}
-.new-subtitle{font-size:18px;line-height:22px;max-width:420px}
+.new-subtitle{font-size:18px;line-height:22px;max-width:405px}
 .new-electrostation-section .new-bg-block-right{left:70%}
 .new-electrostation-section .new-bg-block-left{right:70%}
 }
