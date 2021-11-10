@@ -5,19 +5,19 @@
         <section class="new-electrostation-section">
             <div class="container">
 
-                <h1 class="new-subtitle">
+                <h2 class="new-subtitle">
                     <?= strtoupper(BaseController::getMessage('731')) ?>                
-                </h1>
+                </h2>
                 <div class="new-bg-block-right"></div>
                 <div class="new-title-wrapper">
                     <div class="new-title-blok">
                         <div class="new-title-inner">
-                            <a href="https://sunsayenergy.com/commercial_stations">
+                            <a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>">
                                 <h2 class="new-title-plant">
                                     <?= strtoupper(BaseController::getMessage('732')) ?>                       
                                 </h2>
                             </a>
-                            <a href=" https://sunsayenergy.com/dohod-6000-zelyonyi-tarif">
+                            <a href="<?= \yii\helpers\Url::to(['/dohod-6000-zelyonyi-tarif']); ?>">
                                 <h2 class="new-title-house">
                                 <?= strtoupper(BaseController::getMessage('733')) ?>                        
                                 </h2>
