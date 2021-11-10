@@ -370,6 +370,9 @@ $contacts = \backend\models\Contact::getContact();
 							<li class="<?= (Yii::$app->controller->route == 'site/comfort') ? 'active' : ''; ?>">
 								<a <?=  Yii::$app->request->url == \yii\helpers\Url::to(['/solar-power-for-autonomous-power']) ? '' : 'href="' . \yii\helpers\Url::to(['/solar-power-for-autonomous-power']) . '"' ?>>
 									<span><?= BaseController::getMessage('4') ?></span></a></li>
+                            <li class="<?= (Yii::$app->controller->route == 'site/commercial') ? 'active' : ''; ?>">
+                                <a href="<?= Yii::$app->request->url == \yii\helpers\Url::to(['/commercial_stations']) ? '' : 'href="' . \yii\helpers\Url::to(['/commercial_stations']) . '"'; ?>">
+                                    <span><?= BaseController::getMessage('531') ?></span></a></li>
 						</ul>
 					</div>
 					<div class="footer__nav-menu">
