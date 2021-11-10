@@ -253,7 +253,7 @@
         <?= $this->render('../section/_video-reviews.php', compact('video_reviews')); ?>
         <!-- end video review -->
 
-        <?= $this->render('../section/_seo_article.php', compact('seo_data')); ?>
+        <?= $this->render('../section/_seo_article_homepage.php', compact('seo_data')); ?>
 
         <!-- start connect -->
         <?= $this->render('../section/_connect-blue.php'); ?>
