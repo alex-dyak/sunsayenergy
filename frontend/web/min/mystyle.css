@@ -2159,23 +2159,36 @@ a:not([class]):hover{color:#ffd100}
 
 
 .new-seo-article {
-    margin: 0 auto;
     width: 100%;
-    text-align: center;
     margin-bottom: 35px;
 }
 
-.new-seo-article strong {
+.new-seo-article h1 {
     font-family: "Bebas Neue Cyrillic",sans-serif;
     font-weight: 500;
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 36px;
+    line-height: 40px;
     text-transform: uppercase;
     margin-bottom: 24px;
     display: block;
+    text-align: center;
 }
 
-.new-seo-article strong{display:block;font-size:28px;line-height: 28px;margin-bottom:24px; text-transform: uppercase;}
+.new-seo-article strong {
+
+    /* font-family: "Bebas Neue Cyrillic",sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    display: block; */
+
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
 .seo-article-inner{position:relative;margin-bottom:40px;max-height:5000px;overflow:hidden;-webkit-transition:max-height .5s ease;-o-transition:max-height .5s ease;transition:max-height .5s ease}
 .new-collapsed .seo-article-inner{max-height: 185px;
     font-size: 35px;
@@ -2193,17 +2206,35 @@ a:not([class]):hover{color:#ffd100}
     width: 330px;
     max-width: 100%;
     margin: 0 auto;
-    transition: ease .3s all;}
+    transition: ease .3s all;
+    text-align: center;}
     .seo-article-opened:hover{ color: #fff;}
 .seo-article-opened:before{content:"Згорнути"}
 .lang-ru .seo-article-opened:before{content:"Свернуть"}
 .new-collapsed .seo-article-opened:before{content:"Читати повністю"}
 .lang-ru .new-collapsed .seo-article-opened:before{content:"Читать полностью"}
-@media screen and (min-width:1024px){
-.new-seo-article {
-    max-width: 925px;
+@media screen and (min-width:750px){
+    .new-seo-article h1 {
+        font-size: 50px;
+        line-height: 1.5;
+    }
 }
-.new-seo-article strong{font-size: 65px; line-height: 65px;;margin-bottom:15px}
+
+@media screen and (min-width:1024px){
+
+    .new-seo-article h1 {
+        font-size: 65px;
+        line-height: 1.5;
+    }
+
+    .new-seo-article strong{
+        /* font-size: 28px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px; */
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
 }
 
 .new-collapsed .seo-article-inner{max-height: 185px;

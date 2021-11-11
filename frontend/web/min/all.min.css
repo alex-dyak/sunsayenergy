@@ -1311,21 +1311,24 @@ a:not([class]):hover{color:#ffd100}
 .project_slider_overlay{display:none}
 .project_blok_overlay{display:block}
 }
-.new-seo-article{margin:0 auto;width:100%;text-align:center;margin-bottom:35px}
-.new-seo-article strong{font-family:"Bebas Neue Cyrillic",sans-serif;font-weight:500;font-size:28px;line-height:28px;text-transform:uppercase;margin-bottom:24px;display:block}
-.new-seo-article strong{display:block;font-size:28px;line-height:28px;margin-bottom:24px;text-transform:uppercase}
+.new-seo-article{width:100%;margin-bottom:35px}
+.new-seo-article h1{font-family:"Bebas Neue Cyrillic",sans-serif;font-weight:500;font-size:36px;line-height:40px;text-transform:uppercase;margin-bottom:24px;display:block;text-align:center}
+.new-seo-article strong{font-size:18px;margin-bottom:15px}
 .seo-article-inner{position:relative;margin-bottom:40px;max-height:5000px;overflow:hidden;-webkit-transition:max-height .5s ease;-o-transition:max-height .5s ease;transition:max-height .5s ease}
 .new-collapsed .seo-article-inner{max-height:185px;font-size:35px;line-height:35px}
 .new-collapsed .seo-article-inner:after{content:'';position:absolute;bottom:0;left:0;right:0;height:50px;background:linear-gradient(to top,#fff,rgba(255,255,255,0))}
-.seo-article-opened{position:relative;font-size:16px;font-weight:700;cursor:pointer;padding:18px 20px;text-transform:uppercase;background:#ffd100;border-radius:5px;display:block;width:330px;max-width:100%;margin:0 auto;transition:ease .3s all}
+.seo-article-opened{position:relative;font-size:16px;font-weight:700;cursor:pointer;padding:18px 20px;text-transform:uppercase;background:#ffd100;border-radius:5px;display:block;width:330px;max-width:100%;margin:0 auto;transition:ease .3s all;text-align:center}
 .seo-article-opened:hover{color:#fff}
 .seo-article-opened:before{content:"Згорнути"}
 .lang-ru .seo-article-opened:before{content:"Свернуть"}
 .new-collapsed .seo-article-opened:before{content:"Читати повністю"}
 .lang-ru .new-collapsed .seo-article-opened:before{content:"Читать полностью"}
+@media screen and (min-width:750px){
+.new-seo-article h1{font-size:50px;line-height:1.5}
+}
 @media screen and (min-width:1024px){
-.new-seo-article{max-width:925px}
-.new-seo-article strong{font-size:65px;line-height:65px;margin-bottom:15px}
+.new-seo-article h1{font-size:65px;line-height:1.5}
+.new-seo-article strong{font-size:24px;margin-bottom:15px}
 }
 .new-collapsed .seo-article-inner{max-height:185px;font-size:18px;line-height:22px}
 .newsletter-wrap .title-mobile{display:block;text-transform:uppercase;font-size:18px;line-height:1.4;font-weight:600;margin-bottom:22px;color:#393939}
