@@ -2159,11 +2159,11 @@ a:not([class]):hover{color:#ffd100}
 
 
 .new-seo-article {
-    margin: 0 auto;
     width: 100%;
-    text-align: center;
     margin-bottom: 35px;
 }
+
+
 
 .new-seo-article strong {
     font-family: "Bebas Neue Cyrillic",sans-serif;
@@ -2173,9 +2173,11 @@ a:not([class]):hover{color:#ffd100}
     text-transform: uppercase;
     margin-bottom: 24px;
     display: block;
+    text-align: center;
 }
 
-.new-seo-article strong{display:block;font-size:28px;line-height: 28px;margin-bottom:24px; text-transform: uppercase;}
+
+
 .seo-article-inner{position:relative;margin-bottom:40px;max-height:5000px;overflow:hidden;-webkit-transition:max-height .5s ease;-o-transition:max-height .5s ease;transition:max-height .5s ease}
 .new-collapsed .seo-article-inner{max-height: 185px;
     font-size: 35px;
@@ -2193,7 +2195,8 @@ a:not([class]):hover{color:#ffd100}
     width: 330px;
     max-width: 100%;
     margin: 0 auto;
-    transition: ease .3s all;}
+    transition: ease .3s all;
+    text-align: center;}
     .seo-article-opened:hover{ color: #fff;}
 .seo-article-opened:before{content:"Згорнути"}
 .lang-ru .seo-article-opened:before{content:"Свернуть"}
