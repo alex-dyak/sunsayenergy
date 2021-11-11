@@ -24,7 +24,7 @@ $seo_date = date('Y-m-d', $datetime);
         ]); ?>
 		</div>
 
-        <section class="solar-modules" style="background-image: url('<?= '../images/' . $article->images->imagePreview ?>');">
+        <section class="solar-modules" style="background-image: url('<?= '/images/' . $article->images->imagePreview ?>');">
             <div class="container">
                 <div class="solar-modules__inner">
                     <div class="solar-modules__title">
@@ -155,6 +155,8 @@ $seo_date = date('Y-m-d', $datetime);
         </section>
     
         <?php endif; ?>
+
+        <?php // echo $this->render('../section/_seo_article.php', compact('seo_data')); ?>
 
         <?= $this->render('../section/_connect-blue.php'); ?>
 </main>

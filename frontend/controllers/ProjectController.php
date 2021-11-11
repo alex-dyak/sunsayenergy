@@ -54,11 +54,13 @@ class ProjectController extends BaseController
             return strcmp($a->project_order, $b->project_order);
         });
 
-        $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
-        $this->setOgDescription(self::getDescription('project'));
-        $this->setMeta(self::getTitle('project'), self::getDescription('project'));
+        $seo_data = self::getSeo('project');
 
-        return $this->render('project', compact('model'));
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
+        $this->setOgDescription($seo_data['description'][Yii::$app->language]);
+        $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
+
+        return $this->render('project', compact('model', 'seo_data'));
     }
 
     public function actionDetailed($symbol)
@@ -88,20 +90,26 @@ class ProjectController extends BaseController
     {
         $model = Project::find()->where(['category' => $symbol])->all();
 
-        if ($symbol == 'network'):
+        if ($symbol == 'network') :
+            $seo_data = self::getSeo('project_category_network');
+
             $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
-            $this->setOgDescription(self::getDescription('project_category_network'));
-            $this->setMeta(self::getTitle('project_category_network'), self::getDescription('project_category_network'));
-        elseif ($symbol == 'stand-alone'):
+            $this->setOgDescription($seo_data['description'][Yii::$app->language]);
+            $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
+        elseif ($symbol == 'stand-alone') :
+            $seo_data = self::getSeo('project_category_stand-alone');
+
             $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
-            $this->setOgDescription(self::getDescription('project_category_stand'));
-            $this->setMeta(self::getTitle('project_category_stand-alone'), self::getDescription('project_category_stand-alone'));
-        elseif ($symbol == 'hybrid'):
+            $this->setOgDescription($seo_data['description'][Yii::$app->language]);
+            $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
+        elseif ($symbol == 'hybrid') :
+            $seo_data = self::getSeo('project_category_hybrid');
+
             $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
-            $this->setOgDescription(self::getDescription('project_category_hybrid'));
-            $this->setMeta(self::getTitle('project_category_hybrid'), self::getDescription('project_category_hybrid'));
+            $this->setOgDescription($seo_data['description'][Yii::$app->language]);
+            $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
         endif;
 
-        return $this->render('category', compact('model', 'symbol'));
+        return $this->render('category', compact('model', 'symbol', 'seo_data'));
     }
 }

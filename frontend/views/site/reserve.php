@@ -61,274 +61,155 @@ $this->params['breadcrumbs'][] = [
         </div>
     </section>
     <!-- end info -->
-    <!-- start miscount -->
-    <!--<section class="service-miscount miscount-icon">
-		<div class="container">
-			<h2 class="line-title"><?/*= BaseController::getMessage('116') */?></h2>
-			<div class="service-miscount__content">
-				<div class="service-miscount__content-calculation">
-					<div class="description"><?/*= BaseController::getMessage('121') */?></div>
-					<div class="calculation-form">
-						<div class="form-group">
-							<label for="houseEnergy"><?/*= BaseController::getMessage('122') */?>
-								<div>
-									<input class="js-range-slider" id="reserve-houseEnergy" type="text" name="houseEnergy" data-min="0" data-max="5000" data-step="100" data-hide-min-max="true" data-from="2000" data-thumbwidth="20">
-								</div>
-							</label>
-						</div>
-						<div class="form-group">
-							<label for="timeReserv"><?/*= BaseController::getMessage('124') */?>
-								<div>
-									<input class="js-range-slider" id="reserve-timeReserv" type="text" name="timeReserv" data-min="1" data-max="12" data-step="1" data-hide-min-max="true" data-from="2" data-thumbwidth="20">
-								</div>
-							</label>
-						</div>
-						<div class="form-group">
-							<label for="powerSes"><?/*= BaseController::getMessage('125') */?>
-								<div>
-									<input class="js-range-slider" id="reserve-powerSes" type="text" name="powerSes" data-min="5" data-max="35" data-step="2.5" data-hide-min-max="true" data-from="10" data-thumbwidth="20">
-								</div>
-							</label>
-						</div>
-						<div class="form-group">
-							<label for="powerReserv"><?/*= BaseController::getMessage('127') */?>
-								<div>
-									<input class="js-range-slider" id="reserve-powerReserv" type="text" name="powerReserv" data-min="3" data-max="15" data-hide-min-max="true" data-values="3,5,8,10,15" data-thumbwidth="20">
-								</div>
-							</label>
-						</div>
-					</div>
-					<div class="result">
-                        <?/*= BaseController::getMessage('129') */?> <span><span class="result-value"></span></span>
-					</div>
-					<div class="income">
-                        <?/*= BaseController::getMessage('137') */?><span class="income-value"></span> <?/*= BaseController::getMessage('144') */?>
-					</div>
-				</div>
-				<div class="service-miscount__content-icons">
-					<strong class="service-miscount__content-icons__title"><?/*= BaseController::getMessage('146') */?></strong>
-					<div class="service-miscount__content-icons__list">
-						<div class="service-miscount__content-icons__list-item" data-icon="1">
-							<i class="icon-1"></i>
-						</div>
-						<div class="service-miscount__content-icons__list-item" data-icon="2">
-							<i class="icon-2"></i>
-						</div>
-						<div class="service-miscount__content-icons__list-item" data-icon="3">
-							<i class="icon-3"></i>
-						</div>
-						<div class="service-miscount__content-icons__list-item" data-icon="4">
-							<i class="icon-4"></i>
-						</div>
-						<div class="service-miscount__content-icons__list-item" data-icon="5">
-							<i class="icon-5"></i>
-						</div>
-						<div class="service-miscount__content-icons__list-item" data-icon="6">
-							<i class="icon-6"></i>
-						</div>
-						<div class="service-miscount__content-icons__list-item" data-icon="7">
-							<i class="icon-7"></i>
-						</div>
-						<div class="service-miscount__content-icons__list-item" data-icon="8">
-							<i class="icon-8"></i>
-						</div>
-						<div class="service-miscount__content-icons__list-item" data-icon="9">
-							<i class="icon-9"></i>
-						</div>
-						<div class="service-miscount__content-icons__list-item" data-icon="10">
-							<i class="icon-10"></i>
-						</div>
-						<div class="service-miscount__content-icons__list-item" data-icon="11">
-							<i class="icon-11"></i>
-						</div>
-						<div class="service-miscount__content-icons__list-item" data-icon="12">
-							<i class="icon-12"></i>
-						</div>
-						<div class="service-miscount__content-icons__list-item" data-icon="13">
-							<i class="icon-13"></i>
-						</div>
-						<div class="service-miscount__content-icons__list-item" data-icon="14">
-							<i class="icon-14"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>-->
-    <!-- end miscount -->
-		<!-- start banner-->
-        <?= $this->render('../section/_service-banner.php'); ?>
-		<!-- end banner -->
 
-		<!-- start equipments -->
-		<section class="equipment-section" id="equipment">
-			<div class="container">
-				<h2 class="line-title"><?= BaseController::getMessage('139') ?></h2>
-				<div class="equipment-wrap">
-					<div class="equipment-nav">
-						<div class="nav-slide">
-							<span><?= BaseController::getMessage('142') ?></span>
-						</div>
-						<div class="nav-slide" >
-							<span><?= BaseController::getMessage('145') ?></span>
-						</div>
-						<div class="nav-slide">
-							<span><?= BaseController::getMessage('148') ?></span>
-						</div>
-						<div class="nav-slide">
-							<span><?= BaseController::getMessage('147') ?></span>
-						</div>
-					</div>
-					<div class="equipment-slider">
-						<div class="equipment-slide">
-							<div class="equipment-text">
-								<p><?= BaseController::getMessage('150') ?></p>
-							</div>
-							<div class="equipment-carousel equipment-slick">
-								<div class="equipment-carousel-item">
-									<div class="image-background">
-										<div class="image background-lazy" style="background-image: url('/img/logo.svg')" data-src='/img/types/inv.png'></div>
-										<div class="text">
-                                            <?= BaseController::getMessage('226') ?>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="logo-row">
-								<ul>
-									<li><img oncontextmenu="return false" data-src="/img/logos/invertor/fronius.png" class="check-slick" alt="fronius"></li>
-									<li><img oncontextmenu="return false" data-src="/img/logos/invertor/huawei.png" alt="huawei"></li>
-									<li><img oncontextmenu="return false" data-src="/img/logos/invertor/solar-edge.png" alt="solar edge"></li>
-								</ul>
-							</div>
-						</div>
-						<div class="equipment-slide">
-							<div class="equipment-text">
-								<p><?= BaseController::getMessage('156') ?></p>
-							</div>
-							<div class="equipment-carousel pannel-slick">
-								<div class="equipment-carousel-item">
-									<div class="image-background">
-										<div class="image background-lazy" style="background-image: url('/img/logo.svg')" data-src='/img/types/Jinko.png'></div>
-										<div class="text">
-                                            <?= BaseController::getMessage('194') ?>
-										</div>
-									</div>
-								</div>
-								<div class="equipment-carousel-item">
-									<div class="image-background">
-										<div class="image background-lazy" style="background-image: url('/img/logo.svg')" data-src='/img/types/Qcell.png'></div>
-										<div class="text">
-                                            <?= BaseController::getMessage('195') ?>
-										</div>
-									</div>
-								</div>
-								<div class="equipment-carousel-item">
-									<div class="image-background">
-										<div class="image background-lazy" style="background-image: url('/img/logo.svg')" data-src='/img/types/Longi.png'></div>
-										<div class="text">
-                                            <?= BaseController::getMessage('198') ?>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="logo-row">
-								<ul>
-									<li><img oncontextmenu="return false" data-src="/img/logos/pannel/ja-solar.png" alt="ja solar"></li>
-									<li><img oncontextmenu="return false" data-src="/img/logos/pannel/longi-solar.png" alt="longi solar"></li>
-									<li><img oncontextmenu="return false" data-src="/img/logos/pannel/canadian-solar.png" alt="canadian solar"></li>
-									<li><img oncontextmenu="return false" data-src="/img/logos/pannel/sunpower.png" alt="sunpower"></li>
-									<li><img oncontextmenu="return false" data-src="/img/logos/pannel/jinco-solar.png" alt="jinco solar"></li>
-									<li><img oncontextmenu="return false" data-src="/img/logos/pannel/qcells.png" alt="qcells"></li>
-								</ul>
-							</div>
-						</div>
-						<div class="equipment-slide">
-							<div class="equipment-text">
-								<p><?= BaseController::getMessage('170') ?></p>
-							</div>
-							<div class="equipment-carousel battery-slick">
-								<div class="equipment-carousel-item">
-									<div class="image-background">
-										<div class="image background-lazy" style="background-image: url('/img/logo.svg')" data-src='/img/types/Victron.png'></div>
-										<div class="text">
-                                            <?= BaseController::getMessage('237') ?>
-										</div>
-									</div>
-								</div>
-								<div class="equipment-carousel-item">
-									<div class="image-background">
-										<div class="image background-lazy" style="background-image: url('/img/logo.svg')" data-src='/img/types/EverExceed.png'></div>
-										<div class="text">
-                                            <?= BaseController::getMessage('243') ?>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="logo-row">
-								<ul>
-									<li><img oncontextmenu="return false" data-src="/img/logos/battery/lg.png" alt="LG"></li>
-									<li><img oncontextmenu="return false" src="/img/logos/battery/byd.png" alt="BYD"></li>
-									<li><img oncontextmenu="return false" data-src="/img/logos/battery/pylon-tech.png" alt="pylon tech"></li>
-								</ul>
-							</div>
-						</div>
-						<div class="equipment-slide">
-							<div class="equipment-text">
-								<p><?= BaseController::getMessage('164') ?></p>
-							</div>
-							<div class="equipment-carousel mount-slick">
-								<div class="equipment-carousel-item">
-									<div class="image-background">
-										<div class="image background-lazy" style="background-image: url('/img/logo.svg')" data-src='/img/services/solar-panel.png'></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+    <!-- start banner-->
+    <?= $this->render('../section/_service-banner.php'); ?>
+    <!-- end banner -->
 
-		</section>
-		<!-- end equipments -->
+    <!-- start equipments -->
+    <section class="equipment-section" id="equipment">
+        <div class="container">
+            <h2 class="line-title"><?= BaseController::getMessage('139') ?></h2>
+            <div class="equipment-wrap">
+                <div class="equipment-nav">
+                    <div class="nav-slide">
+                        <span><?= BaseController::getMessage('142') ?></span>
+                    </div>
+                    <div class="nav-slide" >
+                        <span><?= BaseController::getMessage('145') ?></span>
+                    </div>
+                    <div class="nav-slide">
+                        <span><?= BaseController::getMessage('148') ?></span>
+                    </div>
+                    <div class="nav-slide">
+                        <span><?= BaseController::getMessage('147') ?></span>
+                    </div>
+                </div>
+                <div class="equipment-slider">
+                    <div class="equipment-slide">
+                        <div class="equipment-text">
+                            <p><?= BaseController::getMessage('150') ?></p>
+                        </div>
+                        <div class="equipment-carousel equipment-slick">
+                            <div class="equipment-carousel-item">
+                                <div class="image-background">
+                                    <div class="image background-lazy" style="background-image: url('/img/logo.svg')" data-src='/img/types/inv.png'></div>
+                                    <div class="text">
+                                        <?= BaseController::getMessage('226') ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logo-row">
+                            <ul>
+                                <li><img oncontextmenu="return false" data-src="/img/logos/invertor/fronius.png" class="check-slick" alt="fronius"></li>
+                                <li><img oncontextmenu="return false" data-src="/img/logos/invertor/huawei.png" alt="huawei"></li>
+                                <li><img oncontextmenu="return false" data-src="/img/logos/invertor/solar-edge.png" alt="solar edge"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="equipment-slide">
+                        <div class="equipment-text">
+                            <p><?= BaseController::getMessage('156') ?></p>
+                        </div>
+                        <div class="equipment-carousel pannel-slick">
+                            <div class="equipment-carousel-item">
+                                <div class="image-background">
+                                    <div class="image background-lazy" style="background-image: url('/img/logo.svg')" data-src='/img/types/Jinko.png'></div>
+                                    <div class="text">
+                                        <?= BaseController::getMessage('194') ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="equipment-carousel-item">
+                                <div class="image-background">
+                                    <div class="image background-lazy" style="background-image: url('/img/logo.svg')" data-src='/img/types/Qcell.png'></div>
+                                    <div class="text">
+                                        <?= BaseController::getMessage('195') ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="equipment-carousel-item">
+                                <div class="image-background">
+                                    <div class="image background-lazy" style="background-image: url('/img/logo.svg')" data-src='/img/types/Longi.png'></div>
+                                    <div class="text">
+                                        <?= BaseController::getMessage('198') ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logo-row">
+                            <ul>
+                                <li><img oncontextmenu="return false" data-src="/img/logos/pannel/ja-solar.png" alt="ja solar"></li>
+                                <li><img oncontextmenu="return false" data-src="/img/logos/pannel/longi-solar.png" alt="longi solar"></li>
+                                <li><img oncontextmenu="return false" data-src="/img/logos/pannel/canadian-solar.png" alt="canadian solar"></li>
+                                <li><img oncontextmenu="return false" data-src="/img/logos/pannel/sunpower.png" alt="sunpower"></li>
+                                <li><img oncontextmenu="return false" data-src="/img/logos/pannel/jinco-solar.png" alt="jinco solar"></li>
+                                <li><img oncontextmenu="return false" data-src="/img/logos/pannel/qcells.png" alt="qcells"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="equipment-slide">
+                        <div class="equipment-text">
+                            <p><?= BaseController::getMessage('170') ?></p>
+                        </div>
+                        <div class="equipment-carousel battery-slick">
+                            <div class="equipment-carousel-item">
+                                <div class="image-background">
+                                    <div class="image background-lazy" style="background-image: url('/img/logo.svg')" data-src='/img/types/Victron.png'></div>
+                                    <div class="text">
+                                        <?= BaseController::getMessage('237') ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="equipment-carousel-item">
+                                <div class="image-background">
+                                    <div class="image background-lazy" style="background-image: url('/img/logo.svg')" data-src='/img/types/EverExceed.png'></div>
+                                    <div class="text">
+                                        <?= BaseController::getMessage('243') ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logo-row">
+                            <ul>
+                                <li><img oncontextmenu="return false" data-src="/img/logos/battery/lg.png" alt="LG"></li>
+                                <li><img oncontextmenu="return false" src="/img/logos/battery/byd.png" alt="BYD"></li>
+                                <li><img oncontextmenu="return false" data-src="/img/logos/battery/pylon-tech.png" alt="pylon tech"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="equipment-slide">
+                        <div class="equipment-text">
+                            <p><?= BaseController::getMessage('164') ?></p>
+                        </div>
+                        <div class="equipment-carousel mount-slick">
+                            <div class="equipment-carousel-item">
+                                <div class="image-background">
+                                    <div class="image background-lazy" style="background-image: url('/img/logo.svg')" data-src='/img/services/solar-panel.png'></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		<!-- start work -->
-        <?= $this->render('../section/_work.php'); ?>
-		<!-- end work -->
+    </section>
+    <!-- end equipments -->
 
-		<!-- start service slider -->
-        <?= $this->render('../section/_service-slider.php'); ?>
-		<!-- end service slider -->
+    <!-- start work -->
+    <?= $this->render('../section/_work.php'); ?>
+    <!-- end work -->
+
+    <!-- start service slider -->
+    <?= $this->render('../section/_service-slider.php'); ?>
+    <!-- end service slider -->
+
+    <?= $this->render('../section/_seo_article.php', compact('seo_data')); ?>
+
     <!-- start connect -->
-        <?= $this->render('../section/_connect-blue.php'); ?>
-    <!--<section class="section connect" id="connect">
-		<div class="container">
-			<div class="connect-bg">
-				<div class="connect__content">
-					<div class="connect__content-title line-title">
-						<strong class="h2"><?/*= BaseController::getMessage('364') */?></strong>
-					</div>
-					<form class="connect__content-question" id="question_form" data-post-url="index.html">
-						<div class="message">
-							<input type="hidden" name="utm_source" <?php /*echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''*/?> >
-							<input type="hidden" name="utm_medium" <?php /*echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''*/?> >
-							<input type="hidden" name="utm_campaign" <?php /*echo !empty($_SESSION['utm_campaign']) ? ' value="' . $_SESSION['utm_campaign'] .'"': ''*/?> >
-							<input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?/*= BaseController::getMessage('366') */?>">
-							<input class="custom-field" type="text" id="phone" name="phone" placeholder="+380">
-							<input class="custom-field" type="text" id="email" name="email" placeholder="youremail@mail.com">
-							<textarea class="custom-field" id="question" name="question" rows="5" placeholder="<?/*= BaseController::getMessage('403') */?>"></textarea>
-							<div class="connect__content-button">
-								<button class="btn connect-btn btn-primary" id="submit_button">
-									<?/*= BaseController::getMessage('14') */?>
-								</button>
-							</div>
-						</div>
-						<div class="form-compelete"><?/*= BaseController::getMessage('374') */?></div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>-->
+    <?= $this->render('../section/_connect-blue.php'); ?>
     <!-- end connect -->
 </main>
 

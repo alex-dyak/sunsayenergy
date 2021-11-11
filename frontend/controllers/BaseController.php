@@ -99,6 +99,11 @@ class BaseController extends Controller
         endif;
     }
 
+    public static function getSeo($symbol)
+    {
+        return Seo::findOne(['sumbol_id' => $symbol]);
+    }
+
     public static function getTitle($symbol)
     {
         $arMess = Seo::findOne(['sumbol_id' => $symbol]);

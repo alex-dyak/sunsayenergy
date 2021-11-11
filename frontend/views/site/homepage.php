@@ -249,22 +249,14 @@
             </div>
         </section>
             
-            <!-- start video review -->
-            <?= $this->render('../section/_video-reviews.php', compact('video_reviews')); ?>
-            <!-- end video review -->
+        <!-- start video review -->
+        <?= $this->render('../section/_video-reviews.php', compact('video_reviews')); ?>
+        <!-- end video review -->
 
-            <div class="new-seo-article new-collapsed ">
-                <div class="container">
-                    <div class="seo-article-inner">
-                        <strong><?= strtoupper(BaseController::getMessage('746')) ?></strong>
-                        <p><?= BaseController::getMessage('747') ?></p>
-                    </div>
-                    <span class="seo-article-opened"></span>
-                </div>
-            </div>
+        <?= $this->render('../section/_seo_article.php', compact('seo_data')); ?>
 
-            <!-- start connect -->
-            <?= $this->render('../section/_connect-blue.php'); ?>
-            <!-- end connect -->
+        <!-- start connect -->
+        <?= $this->render('../section/_connect-blue.php'); ?>
+        <!-- end connect -->
     </main>
 

@@ -65,22 +65,9 @@ class SeoController extends Controller
     {
         $model = new Seo();
         $post = Yii::$app->request->post();
+
         if ($model->load($post)) {
-            $model->title = $this->saveTitle($post);
-            $model->description = $this->saveDescription($post);
-
-            if($model->save()) {
-                Yii::$app->session->setFlash('success', "Сохраниение прошло успешно");
-            }else{
-                $errStr = "";
-                foreach ($model->getErrors() as $error){
-                    $errStr .= "{$error[0]}<br/>";
-                }
-                Yii::$app->session->setFlash('error', "Исправьте следующие ошибки:<br/>".$errStr);
-                return $this->redirect(Yii::$app->request->referrer);
-            }
-
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->extracted($model, $post);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -98,21 +85,9 @@ class SeoController extends Controller
     {
         $model = $this->findModel($id);
         $post = Yii::$app->request->post();
-        if ($model->load($post)) {
-            $model->title = $this->saveTitle($post);
-            $model->description = $this->saveDescription($post);
-            if($model->save()) {
-                Yii::$app->session->setFlash('success', "Сохраниение прошло успешно");
-            }else{
-                $errStr = "";
-                foreach ($model->getErrors() as $error){
-                    $errStr .= "{$error[0]}<br/>";
-                }
-                Yii::$app->session->setFlash('error', "Исправьте следующие ошибки:<br/>".$errStr);
-                return $this->redirect(Yii::$app->request->referrer);
-            }
 
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load($post)) {
+            return $this->extracted($model, $post);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -149,20 +124,33 @@ class SeoController extends Controller
         }
     }
 
-// TODO: Перенести в модель
-    protected function saveTitle($post){
-        $t = [];
-        foreach ($post['Title'] as $lang=>$item){
-            $t[$lang]=$item;
+    /**
+     * Extracted.
+     *
+     * @param Seo $model
+     * @param $post
+     *
+     * @return \yii\web\Response
+     */
+    public function extracted(Seo $model, $post)
+    {
+        $model->title         = $model->saveTitle($post);
+        $model->description   = $model->saveDescription($post);
+        $model->article_title = $model->saveArticleTitle($post);
+        $model->article_body  = $model->saveArticleBody($post);
+
+        if ($model->save()) {
+            Yii::$app->session->setFlash('success', "Сохраниение прошло успешно");
+        } else {
+            $errStr = "";
+            foreach ($model->getErrors() as $error) {
+                $errStr .= "{$error[0]}<br/>";
+            }
+            Yii::$app->session->setFlash('error', "Исправьте следующие ошибки:<br/>".$errStr);
+
+            return $this->redirect(Yii::$app->request->referrer);
         }
-        return json_encode($t, true);
-    }
-// TODO: Перенести в модель
-    protected function saveDescription($post){
-        $t = [];
-        foreach ($post['Description'] as $lang=>$item){
-            $t[$lang]=$item;
-        }
-        return json_encode($t,true);
+
+        return $this->redirect(['view', 'id' => $model->id]);
     }
 }

@@ -72,13 +72,15 @@ class SiteController extends BaseController
         $videos = Video::find()->all();
         $video_reviews = VideoReview::find()->all();
 
+        $seo_data = self::getSeo('index');
+
         $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
-        $this->setOgDescription(self::getDescription('index'));
-        $this->setMeta(self::getTitle('index'), self::getDescription('index'));
+        $this->setOgDescription($seo_data['description'][Yii::$app->language]);
+        $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
 
         $this->layout = 'new_homepage';
-        return $this->render('homepage', compact('contacts', 'reviews', 'project', 'videos', 'video_reviews'));
-//        return $this->render('index', compact('contacts', 'reviews', 'project', 'videos', 'video_reviews'));
+        return $this->render('homepage', compact('contacts', 'reviews', 'project', 'videos', 'video_reviews', 'seo_data'));
+//        return $this->render('index', compact('contacts', 'reviews', 'project', 'videos', 'video_reviews', 'seo_data'));
     }
 
 	/**
@@ -88,11 +90,13 @@ class SiteController extends BaseController
 	{
 	    $videos = Video::find()->all();
 
-        $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
-        $this->setOgDescription(self::getDescription('video'));
-        $this->setMeta(self::getTitle('video'), self::getDescription('video'));
+        $seo_data = self::getSeo('video');
 
-		return $this->render('video',compact('videos'));
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
+        $this->setOgDescription($seo_data['description'][Yii::$app->language]);
+        $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
+
+		return $this->render('video',compact('videos', 'seo_data'));
 	}
 
     /**
@@ -102,19 +106,23 @@ class SiteController extends BaseController
     {
         $video_reviews = VideoReview::find()->all();
 
-        $this->layout = 'dohod-zelyonyi';
-        $this->setMeta(self::getTitle('dohod_zelyonyi'), self::getDescription('dohod_zelyonyi'));
+        $seo_data = self::getSeo('dohod_zelyonyi');
 
-        return $this->render('landing', compact('video_reviews'));
+        $this->layout = 'dohod-zelyonyi';
+        $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
+
+        return $this->render('landing', compact('video_reviews', 'seo_data'));
     }
 
     public function actionGreen()
     {
-        $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
-        $this->setOgDescription(self::getDescription('green'));
-        $this->setMeta(self::getTitle('green'), self::getDescription('green'));
+        $seo_data = self::getSeo('green');
 
-        return $this->render('green');
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
+        $this->setOgDescription($seo_data['description'][Yii::$app->language]);
+        $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
+
+        return $this->render('green', compact('seo_data'));
     }
 
     public function actionComfort()
@@ -126,11 +134,13 @@ class SiteController extends BaseController
             return strcmp($a->project_order, $b->project_order);
         });
 
-        $this->setOgImage('https://sunsayenergy.com' . '/img/house-2.png');
-        $this->setOgDescription(self::getDescription('comfort'));
-        $this->setMeta(self::getTitle('comfort'), self::getDescription('comfort'));
+        $seo_data = self::getSeo('comfort');
 
-        return $this->render('comfort', compact('reviews','project'));
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-2.png');
+        $this->setOgDescription($seo_data['description'][Yii::$app->language]);
+        $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
+
+        return $this->render('comfort', compact('reviews','project', 'seo_data'));
     }
 
     public function actionIncome()
@@ -142,11 +152,13 @@ class SiteController extends BaseController
             return strcmp($a->project_order, $b->project_order);
         });
 
-        $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
-        $this->setOgDescription(self::getDescription('income'));
-        $this->setMeta(self::getTitle('income'), self::getDescription('income'));
+        $seo_data = self::getSeo('income');
 
-        return $this->render('income', compact('reviews','project'));
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
+        $this->setOgDescription($seo_data['description'][Yii::$app->language]);
+        $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
+
+        return $this->render('income', compact('reviews', 'seo_data'));
     }
 
     public function actionReserve()
@@ -158,29 +170,35 @@ class SiteController extends BaseController
             return strcmp($a->project_order, $b->project_order);
         });
 
-        $this->setOgImage('https://sunsayenergy.com' . '/img/house-3.png');
-        $this->setOgDescription(self::getDescription('reserve'));
-        $this->setMeta(self::getTitle('reserve'), self::getDescription('reserve'));
+        $seo_data = self::getSeo('reserve');
 
-        return $this->render('reserve', compact('reviews','project'));
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-3.png');
+        $this->setOgDescription($seo_data['description'][Yii::$app->language]);
+        $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
+
+        return $this->render('reserve', compact('reviews','project', 'seo_data'));
     }
 
     public function actionTypes()
     {
-        $this->setOgImage('https://sunsayenergy.com' . '/img/types/SolarEdge.png');
-        $this->setOgDescription(self::getDescription('types'));
-        $this->setMeta(self::getTitle('types'), self::getDescription('types'));
+        $seo_data = self::getSeo('types');
 
-        return $this->render('types');
+        $this->setOgImage('https://sunsayenergy.com' . '/img/types/SolarEdge.png');
+        $this->setOgDescription($seo_data['description'][Yii::$app->language]);
+        $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
+
+        return $this->render('types', compact('seo_data'));
     }
 
     public function actionAbout()
     {
-        $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
-        $this->setOgDescription(self::getDescription('about'));
-        $this->setMeta(self::getTitle('about'), self::getDescription('about'));
+        $seo_data = self::getSeo('about');
 
-        return $this->render('about');
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
+        $this->setOgDescription($seo_data['description'][Yii::$app->language]);
+        $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
+
+        return $this->render('about', compact('seo_data'));
     }
 
     public function actionSuccess()
@@ -192,11 +210,13 @@ class SiteController extends BaseController
     {
         $images = Commercial::find()->all();
 
-        $this->setOgImage('https://sunsayenergy.com' . '/img/commercial.jpg');
-        $this->setOgDescription(self::getDescription('commercial_stations'));
-        $this->setMeta(self::getTitle('commercial_stations'), self::getDescription('commercial_stations'));
+        $seo_data = self::getSeo('commercial_stations');
 
-        return $this->render('commercial_stations', compact('images'));
+        $this->setOgImage('https://sunsayenergy.com' . '/img/commercial.jpg');
+        $this->setOgDescription($seo_data['description'][Yii::$app->language]);
+        $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
+
+        return $this->render('commercial_stations', compact('images', 'seo_data'));
     }
 
     //---------далее экшины которые приходят через ajax---------
@@ -415,7 +435,6 @@ class SiteController extends BaseController
         Yii::$app->end();
 
     }
-
 
     public function getXml()
     {

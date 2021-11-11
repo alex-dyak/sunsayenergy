@@ -104,6 +104,8 @@ $this->params['breadcrumbs'][] = [
         </section>
     <?php endif; ?>
 
+    <?= $this->render('../section/_seo_article.php', compact('seo_data')); ?>
+
     <?= $this->render('../section/_connect.php'); ?>
 </main>
 

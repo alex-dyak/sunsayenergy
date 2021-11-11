@@ -246,6 +246,8 @@ $contacts = \backend\models\Contact::getContact();
 		</div>
     </section>
 
+    <?= $this->render('../section/_seo_article.php', compact('seo_data')); ?>
+
     <!-- start connect -->
     <?= $this->render('../section/_connect-blue.php'); ?>
 	<!-- end connect -->
