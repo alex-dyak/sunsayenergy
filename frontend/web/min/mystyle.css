@@ -4715,3 +4715,10 @@ a.advantages-btn {
 .quiz-intro-content .quiz-btn{margin-bottom:30px}
 .quiz-radio:checked+label,.quiz-radio:not(:checked)+label{font-size:18px}
 }
+
+@media screen and (max-width:400px){
+    .rngst_phone_button {
+        top: -2%!important;
+        right: 2%!important;
+    }
+}
