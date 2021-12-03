@@ -1948,14 +1948,12 @@ a:not([class]):hover{color:#ffd100}
     color: #fff;
 }
 
-.station-types__img-mob {
+.station-types__img-mob img{
     position: absolute;
     top: 0px;
     bottom: 0;
     right: 0;
-    left: 0;
     display: block;
-    background-image: url(../img/homepage/mob-panels7.png);
     -webkit-background-size: contain;
     background-size: auto;
     background-repeat: no-repeat;

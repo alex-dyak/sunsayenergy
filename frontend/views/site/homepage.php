@@ -109,7 +109,9 @@
                             <a class="button btn-lg consult-btn station-types__button new-consult-btn" href="#connect"><?= BaseController::getMessage('402') ?></a>
                         </div>
                     </div>
-                    <div class="station-types__img-mob"></div>
+                    <div class="station-types__img-mob">
+                        <img oncontextmenu="return false" data-src="/img/homepage/mob-panels7.png" alt="">
+                    </div>
                     <div class="station-types__img">
                         <img oncontextmenu="return false" data-src="/img/homepage/n-panels4.png" alt="">
                     </div>
