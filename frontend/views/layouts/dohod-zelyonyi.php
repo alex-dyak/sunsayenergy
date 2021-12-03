@@ -586,7 +586,7 @@ $contacts = \backend\models\Contact::getContact();
     if ($('body').hasClass('mobile')) {
       setTimeout(function(){
         $('.quiz-modal').fadeIn(300);
-      }, 40000);
+      }, 60000);
 	} else {
       setTimeout(function(){
         $('.quiz-modal').fadeIn(300);
