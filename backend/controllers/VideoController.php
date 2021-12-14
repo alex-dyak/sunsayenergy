@@ -36,7 +36,7 @@ class VideoController extends Controller
     public function actionIndex()
     {
         $dataProvider = new ActiveDataProvider([
-            'query' => Video::find(),
+            'query' => Video::find()->orderBy("id DESC"),
         ]);
 
         return $this->render('index', [
