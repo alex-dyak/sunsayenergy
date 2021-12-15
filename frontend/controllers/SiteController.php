@@ -88,7 +88,8 @@ class SiteController extends BaseController
 	 */
 	public function actionVideo()
 	{
-	    $videos = Video::find()->all();
+	    $videos_all = Video::find()->all();
+        $videos = array_reverse($videos_all);
 
         $seo_data = self::getSeo('video');
 
