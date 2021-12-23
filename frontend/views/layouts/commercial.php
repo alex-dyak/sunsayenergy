@@ -230,12 +230,16 @@ $contacts = \backend\models\Contact::getContact();
 					<li class="<?= (Yii::$app->controller->route == 'site/green') ? 'active' : ''; ?>">
 						<a href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><?= BaseController::getMessage('5') ?></a>
 					</li>
-                    <li class="dropdown-wrapper">
+                    <li class="dropdown-wrapper-blog-top">
                         <span><a href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('6') ?></a> <i class="icon-angle-down"></i></span>
-                        <ul class="dropdown header-drop-list">
-                            <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnyye-paneli-pod-klyuch']); ?>"><?= BaseController::getMessage('748') ?></a></li>
-                            <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnyye-paneli-15-kvt']); ?>"><?= BaseController::getMessage('749') ?></a></li>
-                            <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnaya-stantsiya-30-kvt']); ?>"><?= BaseController::getMessage('750') ?></a></li>
+                        <ul class="dropdown header-drop-list-top">
+                            <li class="dropdown-wrapper-blog-inner">
+                                <a href="<?= \yii\helpers\Url::to(['/technology/solnechnyye-paneli-pod-klyuch']); ?>"><?= BaseController::getMessage('748') ?></a>
+                                <ul class="dropdown header-drop-list-inner">
+                                    <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnyye-paneli-15-kvt']); ?>"><?= BaseController::getMessage('749') ?></a></li>
+                                    <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnaya-stantsiya-30-kvt']); ?>"><?= BaseController::getMessage('750') ?></a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
 					<li class="<?= (Yii::$app->controller->route == 'site/video') ? 'active' : ''; ?>">
