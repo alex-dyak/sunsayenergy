@@ -217,9 +217,14 @@ $contacts = \backend\models\Contact::getContact();
 						<li class="<?= (Yii::$app->controller->route == 'site/green') ? 'active' : ''; ?>">
 							<a class="white-color-a" href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><?= BaseController::getMessage('5') ?></a>
 						</li>
-						<li class="<?= (Yii::$app->controller->route == 'technology/technology') ? 'active' : ''; ?>">
-							<a class="white-color-a" href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('6') ?></a>
-						</li>
+                        <li class="dropdown-wrapper">
+                            <span><a href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('6') ?></a> <i class="icon-angle-down"></i></span>
+                            <ul class="dropdown header-drop-list">
+                                <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnyye-paneli-pod-klyuch']); ?>"><?= BaseController::getMessage('748') ?></a></li>
+                                <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnyye-paneli-15-kvt']); ?>"><?= BaseController::getMessage('749') ?></a></li>
+                                <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnaya-stantsiya-30-kvt']); ?>"><?= BaseController::getMessage('750') ?></a></li>
+                            </ul>
+                        </li>
                         <li class="<?= (Yii::$app->controller->route == 'site/video') ? 'active' : ''; ?>">
                             <a class="white-color-a" href="<?= \yii\helpers\Url::to(['/video']); ?>"><?= BaseController::getMessage('412') ?></a>
                         </li>
