@@ -71,7 +71,7 @@ $contacts = \backend\models\Contact::getContact();
 	<link rel="alternate" hreflang="x-default" href="https://sunsayenergy.com<?= $final_uri; ?>" />
 	<link rel="alternate" hreflang="uk-ua" href="https://sunsayenergy.com<?= $final_uri; ?>" />
 	<link rel="alternate" hreflang="ru-ua" href="https://sunsayenergy.com/ru<?= $final_uri; ?>" />
-	<link rel="alternate" hreflang="en-ua" href="https://sunsayenergy.com/en<?= $final_uri; ?>" />
+
 
 	<link href="https://fonts.googleapis.com/css?family=Prompt:900&display=swap" rel="stylesheet">
 
