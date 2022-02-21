@@ -144,43 +144,7 @@ $contacts = \backend\models\Contact::getContact();
 							</li>
 
 							<li class="social-media">
-								<ul class="social-list">
-                                    <?php if (!empty($contacts->link_fb)): ?>
-										<li class="facebook">
-											<a href="<?= $contacts->link_fb ?>" target="_blank">
-												<i class="icon-facebook"></i>
-											</a>
-										</li>
-                                    <?php endif; ?>
-                                    <?php if (!empty($contacts->link_youtube)): ?>
-										<li>
-											<a href="<?= $contacts->link_youtube ?>" target="_blank">
-												<i class="icon-youtube"></i>
-											</a>
-										</li>
-                                    <?php endif; ?>
-                                    <?php if (!empty($contacts->link_telegram)): ?>
-										<li>
-											<a href="<?= $contacts->link_telegram ?>" target="_blank">
-												<i class="icon-telegram"></i>
-											</a>
-										</li>
-                                    <?php endif; ?>
-                                    <?php if (!empty($contacts->link_viber)): ?>
-										<li>
-											<a href="<?= $contacts->link_viber ?>" target="_blank">
-												<i class="icon-viber"></i>
-											</a>
-										</li>
-                                    <?php endif; ?>
-                                    <?php if (!empty($contacts->link_insta)): ?>
-										<li>
-											<a href="<?= $contacts->link_insta ?>" target="_blank">
-												<i class="icon-instagram"></i>
-											</a>
-										</li>
-                                    <?php endif; ?>
-								</ul>
+                                <?= $this->render('../section/_social_links.php', compact('contacts')); ?>
 							</li>
 						</ul>
 					</div>
@@ -288,43 +252,7 @@ $contacts = \backend\models\Contact::getContact();
 					<address itemprop="streetAddress"><?= $contacts->address ?></address>
 				</li>
 			</ul>
-			<ul class="social-list">
-                <?php if (!empty($contacts->link_fb)): ?>
-					<li class="facebook">
-						<a href="<?= $contacts->link_fb ?>" target="_blank">
-							<i class="icon-facebook"></i>
-						</a>
-					</li>
-                <?php endif; ?>
-                <?php if (!empty($contacts->link_youtube)): ?>
-					<li>
-						<a href="<?= $contacts->link_youtube ?>" target="_blank">
-							<i class="icon-youtube"></i>
-						</a>
-					</li>
-                <?php endif; ?>
-				<?php if (!empty($contacts->link_telegram)): ?>
-					<li>
-						<a href="<?= $contacts->link_telegram ?>" target="_blank">
-							<i class="icon-telegram"></i>
-						</a>
-					</li>
-                <?php endif; ?>
-                <?php if (!empty($contacts->link_viber)): ?>
-					<li>
-						<a href="<?= $contacts->link_viber ?>" target="_blank">
-							<i class="icon-viber"></i>
-						</a>
-					</li>
-                <?php endif; ?>
-                <?php if (!empty($contacts->link_insta)): ?>
-					<li>
-						<a href="<?= $contacts->link_insta ?>" target="_blank">
-							<i class="icon-instagram"></i>
-						</a>
-					</li>
-                <?php endif; ?>
-			</ul>
+            <?= $this->render('../section/_social_links.php', compact('contacts')); ?>
 		</div>
 
 		<?php if(Yii::$app->controller->route == 'site/index'){ ?>
