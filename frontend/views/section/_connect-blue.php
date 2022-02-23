@@ -16,10 +16,13 @@
                         <input type="hidden" name="utm_term" <?php echo !empty($_SESSION['utm_term']) ? ' value="' . $_SESSION['utm_term'] .'"': ''?> >
 						<label for="fullname" class="hidden"><?= BaseController::getMessage('366') ?></label>
 						<input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
+						<span class="error-msg"><?= BaseController::getMessage('751') ?></span>
 						<label for="phone" class="hidden">Телефон</label>
 						<input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+						<span class="error-msg"><?= BaseController::getMessage('752') ?></span>
 						<label for="email" class="hidden">email</label>
 						<input class="custom-field" type="text" id="email" name="email" placeholder="youremail@mail.com">
+						<span class="error-msg"><?= BaseController::getMessage('753') ?></span>
 						<label for="question" class="hidden"><?= BaseController::getMessage('403') ?></label>
 						<textarea class="custom-field" name="question" id="question" rows="5" placeholder="<?= BaseController::getMessage('403') ?>"></textarea>
 						<div class="connect__content-button">

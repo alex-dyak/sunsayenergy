@@ -59,17 +59,20 @@ $seo_date = date('Y-m-d', $datetime);
                                     <input type="hidden" name="question" value="Форма Блога Десктоп" >
                                     <label for="fullname" class="hidden"><?= BaseController::getMessage('366') ?></label>
                                     <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
+									<span class="error-msg"><?= BaseController::getMessage('751') ?></span>
                                     <label for="phone" class="hidden">Телефон</label>
                                     <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+									<span class="error-msg"><?= BaseController::getMessage('752') ?></span>
 
                                     <div class="connect__content-button">
                                         <button class="btn measuring-btn-desk btn-primary" id="submit_button">
                                             <?= BaseController::getMessage('14') ?>
                                         </button>
                                     </div>
-                                    <div class="form-compelete"><?= BaseController::getMessage('374') ?></div>
-                                </form>
-                            </div>
+								</div>
+
+								<div class="form-compelete"><?= BaseController::getMessage('374') ?></div>
+							</form>
                         </div>
                         <div class="form_test__static">
                             <strong class="single-blog__sub-title innovation__sub-title"><?= BaseController::getMessage('729') ?></strong>
@@ -138,9 +141,11 @@ $seo_date = date('Y-m-d', $datetime);
                                 <input type="hidden" name="published" value="no" >
                                 <label for="name" class="hidden"><?= BaseController::getMessage('366') ?></label>
                                 <input class="custom-field" type="text" id="name" name="name" placeholder="<?= BaseController::getMessage('366') ?>">
+								<span class="error-msg"><?= BaseController::getMessage('751') ?></span>
                                 <label for="question" class="hidden"><?= BaseController::getMessage('605') ?></label>
                                 <textarea class="custom-field single__custom-field" id="comment" name="comment" rows="5" placeholder="<?= BaseController::getMessage('605') ?>"></textarea>
-                                <div class="comment-button-wrap">
+								<span class="error-msg"><?= BaseController::getMessage('754') ?></span>
+								<div class="comment-button-wrap">
                                     <button class="button comment-button single__comment-button">
                                         <?= BaseController::getMessage('14') ?>
                                     </button>
