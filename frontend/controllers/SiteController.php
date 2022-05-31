@@ -262,7 +262,7 @@ class SiteController extends BaseController
             $SPApiClient->addEmails($this->form_book_id, $emails);
 
             $model = new Request();
-            $model->sendBitrix(
+            $model->sendPipedrive(
                 $post['name'],
                 $post['phone'],
                 $post['email'],

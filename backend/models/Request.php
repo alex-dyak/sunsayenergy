@@ -142,6 +142,98 @@ class Request extends \yii\db\ActiveRecord
 
     }
 
+    public function sendPipedrive($name, $phone, $email, $type, $utm_source, $utm_medium, $utm_campaign, $utm_content, $utm_term)
+    {
+        // Pipedrive API token
+        $api_token = 'f18416732445a918da5b9962e7ed542c63daed0d';
+        // Pipedrive company domain
+        $company_domain = 'sunsayenergy';
+
+        $url = 'https://'.$company_domain . '.pipedrive.com/api/v1/persons?api_token=' . $api_token;
+
+        if (!empty($phone)) {
+            $phone = str_replace([
+                                     '+',
+                                     '(',
+                                     ')',
+                                     '+',
+                                     '-',
+                                 ], '', $phone);
+        }
+
+        // Data of the new user
+        $data = array(
+            'name' => $name,
+            'email' => $email,
+            'phone' => $phone,
+            'afcccfefc493637a0980ad41fc67409515ad0c9d' => 40,
+            'b4bc168aeb41c153327694ef611c8f9505692415' => '',
+            '84ef308cca3cb5c73bdc451501d9db66d78f1ef3' => $utm_campaign,
+            'ec97721c8bc1b42122cafee50f9d8107bd2b873c' => $utm_content,
+            'ad1babaafeaf78390b987222b0daca2cf04c8735' => $utm_medium,
+            'b9c4488527d990630ae43982ce8dc95b8fc4f4d0' => $utm_source,
+            '6c4a1998ed8ed26f0f71838dec7b5a79a934a590' => $utm_term,
+        );
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+
+        $output = curl_exec($ch);
+        curl_close($ch);
+
+        $result = json_decode($output, true);
+
+        if (empty($result['data'])) {
+            return false;
+        }
+
+        // Check if an Person ID came back, if did print it out
+        if (!empty($result['data']['id'])) {
+            // Data of the new Lead
+            $data_lead = array(
+                'title' => 'Лид ' . $name,
+                'person_id' => $result['data']['id'],
+                '0d0c7ad107065f03504695cce7bfa73f7296b933' => $type,
+                '965ef6475172cf8b1d094502b4a1cf58c83f855b' => 32,
+                '74b50ac12962b9eb6610a4028d0aadd11f076c4c' => '',
+                'a20830fec9dfc7f948d4a758cb5f8c6910da608a' => $utm_campaign,
+                'd3ea99ccda4724103dc02ceb4dc8660748443473' => $utm_content,
+                '59f34ca215ef52a59202b8f4977759a3bbb90000' => $utm_medium,
+                '90f58be1bbe25d567120a4a2278be778409cae62' => $utm_source,
+                '2a9b35a86635824f3178243899ee1f082a0cfc4f' => $utm_term,
+            );
+
+            $url = 'https://'.$company_domain . '.pipedrive.com/api/v1/leads?api_token=' . $api_token;
+            $data_json = json_encode($data_lead);
+            $headers = array(
+                "Content-Type: application/json",
+                "Accept: application/json",
+            );
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $url);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $data_json);
+
+            $output = curl_exec($ch);
+            curl_close($ch);
+
+            $result_lead = json_decode($output, true);
+
+            if (empty($result_lead['data'])) {
+                return false;
+            }
+
+            if (!empty($result_lead['data']['id'])) {
+                return true;
+            }
+        }
+    }
+
     public static function subscribeEsputnik($email, $type='', $first_name = '', $phone= '' )
     {
         $user = 'hostmaster@sunsayenergy.com';
