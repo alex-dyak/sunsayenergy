@@ -424,6 +424,7 @@ $contacts = \backend\models\Contact::getContact();
 					<label for="sunstaion-2"><?= BaseController::getMessage('618') ?></label>
 					<input type="radio" id="sunstaion-3" class="quiz-radio" name="radio-question-1" value="<?= BaseController::getMessage('619') ?>">
 					<label for="sunstaion-3"><?= BaseController::getMessage('619') ?></label>
+                    <input type="radio" id="sunstaion-4" class="quiz-radio" name="radio-question-1" value="Не знаю" checked>
 				</div>
 				<span class="skip-step"><?= BaseController::getMessage('633') ?></span>
 				<span class="quiz-btn js_quiz_next" data-next="#quiz-question-2"><?= BaseController::getMessage('634') ?></span>
@@ -439,6 +440,7 @@ $contacts = \backend\models\Contact::getContact();
 					<label for="connect-3"><?= BaseController::getMessage('623') ?></label>
 					<input type="radio" id="connect-4" class="quiz-radio" name="radio-question-2" value="<?= BaseController::getMessage('624') ?>">
 					<label for="connect-4"><?= BaseController::getMessage('624') ?></label>
+                    <input type="radio" id="connect-5" class="quiz-radio" name="radio-question-2" value="Не знаю" checked>
 				</div>
 				<span class="skip-step"><?= BaseController::getMessage('633') ?></span>
 				<span class="quiz-btn js_quiz_next" data-next="#quiz-question-3"><?= BaseController::getMessage('634') ?></span>
@@ -460,6 +462,7 @@ $contacts = \backend\models\Contact::getContact();
 					<label for="power-6"><?= BaseController::getMessage('631') ?></label>
 					<input type="radio" id="power-7" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('632') ?>">
 					<label for="power-7"><?= BaseController::getMessage('632') ?></label>
+                    <input type="radio" id="power-8" class="quiz-radio" name="radio-question-3" value="Не знаю" checked>
 				</div>
 				<span class="skip-step"><?= BaseController::getMessage('633') ?></span>
 				<span class="quiz-btn js_quiz_next" data-next="#quiz-bonus"><?= BaseController::getMessage('634') ?></span>

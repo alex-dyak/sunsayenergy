@@ -415,55 +415,58 @@ $contacts = \backend\models\Contact::getContact();
 					</ul>
 				</div>
 			</div>
-			<div class="quiz-step quiz-question-screen" id="quiz-question-1">
-				<strong class="quiz-title"><?= BaseController::getMessage('616') ?></strong>
-				<div class="quiz-radio-wrap">
-					<input type="radio" id="sunstaion-1" class="quiz-radio" name="radio-question-1" value="<?= BaseController::getMessage('617') ?>">
-					<label for="sunstaion-1"><?= BaseController::getMessage('617') ?></label>
-					<input type="radio" id="sunstaion-2" class="quiz-radio" name="radio-question-1" value="<?= BaseController::getMessage('618') ?>">
-					<label for="sunstaion-2"><?= BaseController::getMessage('618') ?></label>
-					<input type="radio" id="sunstaion-3" class="quiz-radio" name="radio-question-1" value="<?= BaseController::getMessage('619') ?>">
-					<label for="sunstaion-3"><?= BaseController::getMessage('619') ?></label>
-				</div>
-				<span class="skip-step"><?= BaseController::getMessage('633') ?></span>
-				<span class="quiz-btn js_quiz_next" data-next="#quiz-question-2"><?= BaseController::getMessage('634') ?></span>
-			</div>
-			<div class="quiz-step quiz-question-screen" id="quiz-question-2">
-				<strong class="quiz-title"><?= BaseController::getMessage('620') ?></strong>
-				<div class="quiz-radio-wrap">
-					<input type="radio" id="connect-1" class="quiz-radio" name="radio-question-2" value="<?= BaseController::getMessage('621') ?>">
-					<label for="connect-1"><?= BaseController::getMessage('621') ?></label>
-					<input type="radio" id="connect-2" class="quiz-radio" name="radio-question-2" value="<?= BaseController::getMessage('622') ?>">
-					<label for="connect-2"><?= BaseController::getMessage('622') ?></label>
-					<input type="radio" id="connect-3" class="quiz-radio" name="radio-question-2" value="<?= BaseController::getMessage('623') ?>">
-					<label for="connect-3"><?= BaseController::getMessage('623') ?></label>
-					<input type="radio" id="connect-4" class="quiz-radio" name="radio-question-2" value="<?= BaseController::getMessage('624') ?>">
-					<label for="connect-4"><?= BaseController::getMessage('624') ?></label>
-				</div>
-				<span class="skip-step"><?= BaseController::getMessage('633') ?></span>
-				<span class="quiz-btn js_quiz_next" data-next="#quiz-question-3"><?= BaseController::getMessage('634') ?></span>
-			</div>
-			<div class="quiz-step quiz-question-screen" id="quiz-question-3">
-				<strong class="quiz-title"><?= BaseController::getMessage('625') ?></strong>
-				<div class="quiz-radio-wrap">
-					<input type="radio" id="power-1" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('626') ?>">
-					<label for="power-1"><?= BaseController::getMessage('626') ?></label>
-					<input type="radio" id="power-2" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('627') ?>">
-					<label for="power-2"><?= BaseController::getMessage('627') ?></label>
-					<input type="radio" id="power-3" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('628') ?>">
-					<label for="power-3"><?= BaseController::getMessage('628') ?></label>
-					<input type="radio" id="power-4" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('629') ?>">
-					<label for="power-4"><?= BaseController::getMessage('629') ?></label>
-					<input type="radio" id="power-5" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('630') ?>">
-					<label for="power-5"><?= BaseController::getMessage('630') ?></label>
-					<input type="radio" id="power-6" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('631') ?>">
-					<label for="power-6"><?= BaseController::getMessage('631') ?></label>
-					<input type="radio" id="power-7" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('632') ?>">
-					<label for="power-7"><?= BaseController::getMessage('632') ?></label>
-				</div>
-				<span class="skip-step"><?= BaseController::getMessage('633') ?></span>
-				<span class="quiz-btn js_quiz_next" data-next="#quiz-bonus"><?= BaseController::getMessage('634') ?></span>
-			</div>
+            <div class="quiz-step quiz-question-screen" id="quiz-question-1">
+                <strong class="quiz-title"><?= BaseController::getMessage('616') ?></strong>
+                <div class="quiz-radio-wrap">
+                    <input type="radio" id="sunstaion-1" class="quiz-radio" name="radio-question-1" value="<?= BaseController::getMessage('617') ?>">
+                    <label for="sunstaion-1"><?= BaseController::getMessage('617') ?></label>
+                    <input type="radio" id="sunstaion-2" class="quiz-radio" name="radio-question-1" value="<?= BaseController::getMessage('618') ?>">
+                    <label for="sunstaion-2"><?= BaseController::getMessage('618') ?></label>
+                    <input type="radio" id="sunstaion-3" class="quiz-radio" name="radio-question-1" value="<?= BaseController::getMessage('619') ?>">
+                    <label for="sunstaion-3"><?= BaseController::getMessage('619') ?></label>
+                    <input type="radio" id="sunstaion-4" class="quiz-radio" name="radio-question-1" value="Не знаю" checked>
+                </div>
+                <span class="skip-step"><?= BaseController::getMessage('633') ?></span>
+                <span class="quiz-btn js_quiz_next" data-next="#quiz-question-2"><?= BaseController::getMessage('634') ?></span>
+            </div>
+            <div class="quiz-step quiz-question-screen" id="quiz-question-2">
+                <strong class="quiz-title"><?= BaseController::getMessage('620') ?></strong>
+                <div class="quiz-radio-wrap">
+                    <input type="radio" id="connect-1" class="quiz-radio" name="radio-question-2" value="<?= BaseController::getMessage('621') ?>">
+                    <label for="connect-1"><?= BaseController::getMessage('621') ?></label>
+                    <input type="radio" id="connect-2" class="quiz-radio" name="radio-question-2" value="<?= BaseController::getMessage('622') ?>">
+                    <label for="connect-2"><?= BaseController::getMessage('622') ?></label>
+                    <input type="radio" id="connect-3" class="quiz-radio" name="radio-question-2" value="<?= BaseController::getMessage('623') ?>">
+                    <label for="connect-3"><?= BaseController::getMessage('623') ?></label>
+                    <input type="radio" id="connect-4" class="quiz-radio" name="radio-question-2" value="<?= BaseController::getMessage('624') ?>">
+                    <label for="connect-4"><?= BaseController::getMessage('624') ?></label>
+                    <input type="radio" id="connect-5" class="quiz-radio" name="radio-question-2" value="Не знаю" checked>
+                </div>
+                <span class="skip-step"><?= BaseController::getMessage('633') ?></span>
+                <span class="quiz-btn js_quiz_next" data-next="#quiz-question-3"><?= BaseController::getMessage('634') ?></span>
+            </div>
+            <div class="quiz-step quiz-question-screen" id="quiz-question-3">
+                <strong class="quiz-title"><?= BaseController::getMessage('625') ?></strong>
+                <div class="quiz-radio-wrap">
+                    <input type="radio" id="power-1" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('626') ?>">
+                    <label for="power-1"><?= BaseController::getMessage('626') ?></label>
+                    <input type="radio" id="power-2" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('627') ?>">
+                    <label for="power-2"><?= BaseController::getMessage('627') ?></label>
+                    <input type="radio" id="power-3" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('628') ?>">
+                    <label for="power-3"><?= BaseController::getMessage('628') ?></label>
+                    <input type="radio" id="power-4" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('629') ?>">
+                    <label for="power-4"><?= BaseController::getMessage('629') ?></label>
+                    <input type="radio" id="power-5" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('630') ?>">
+                    <label for="power-5"><?= BaseController::getMessage('630') ?></label>
+                    <input type="radio" id="power-6" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('631') ?>">
+                    <label for="power-6"><?= BaseController::getMessage('631') ?></label>
+                    <input type="radio" id="power-7" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('632') ?>">
+                    <label for="power-7"><?= BaseController::getMessage('632') ?></label>
+                    <input type="radio" id="power-8" class="quiz-radio" name="radio-question-3" value="Не знаю" checked>
+                </div>
+                <span class="skip-step"><?= BaseController::getMessage('633') ?></span>
+                <span class="quiz-btn js_quiz_next" data-next="#quiz-bonus"><?= BaseController::getMessage('634') ?></span>
+            </div>
 			<div class="quiz-step quiz-bonus-screen" id="quiz-bonus">
 				<strong class="quiz-title"><?= BaseController::getMessage('635') ?></strong>
 				<p><?= BaseController::getMessage('636') ?></p>

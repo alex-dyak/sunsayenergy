@@ -227,7 +227,7 @@ class SiteController extends BaseController
     {
         if (Yii::$app->request->isAjax) {
             $post = Yii::$app->request->post();
-
+//var_dump($post);die;
             $phone = $post['phone'];
             $phone_parts = explode(' ', $phone);
             $country_code = str_replace(array( '(', ')' ), '', $phone_parts[1]);
@@ -241,6 +241,12 @@ class SiteController extends BaseController
             $send = false;
             if (in_array($country_code, $phone_codes)) {
                 $send = true;
+            }
+
+            if (!$post['type']) {
+                $message = 'Страница Доход';
+            } else {
+                $message = $post['type'];
             }
 
             if ($send) {
@@ -259,14 +265,14 @@ class SiteController extends BaseController
                     )
                 );
 
-            $SPApiClient->addEmails($this->form_book_id, $emails);
+//            $SPApiClient->addEmails($this->form_book_id, $emails);
 
             $model = new Request();
             $model->sendPipedrive(
                 $post['name'],
                 $post['phone'],
                 $post['email'],
-                $post['type'],
+                $message,
                 $post['utm_source'],
                 $post['utm_medium'],
                 $post['utm_campaign'],
@@ -274,7 +280,7 @@ class SiteController extends BaseController
                 $post['utm_term']
             );
                 //TODO: переименовать метод
-            Request::subscribeEsputnik($post['email'], "request_measurement", $post['name'], $post['phone']);
+//            Request::subscribeEsputnik($post['email'], "request_measurement", $post['name'], $post['phone']);
                 //TODO: Вынести эту дрянь в модель
                 $model->name = $post['name'];
                 $model->email = $post['email'];
@@ -318,7 +324,7 @@ class SiteController extends BaseController
             if ($send) {
                 // Send data to Bitrix.
                 $model = new Request();
-                $model->sendBitrix(
+                $model->sendPipedrive(
                     $post['name'],
                     $post['phone'],
                     '',
