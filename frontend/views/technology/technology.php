@@ -9,26 +9,14 @@ $this->params['breadcrumbs'][] = [
 ?>
     <main class="page-container">
 		<div class="container">
-        <?php echo Breadcrumbs::widget([
-            'homeLink' => ['label' => BaseController::getMessage('404'), 'url' => Yii::$app->homeUrl],
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]); ?>
+            <?php echo Breadcrumbs::widget([
+                'homeLink' => ['label' => BaseController::getMessage('404'), 'url' => Yii::$app->homeUrl],
+                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+            ]); ?>
+
+            <h1 class="line-title"><span><?= BaseController::getMessage('755') ?></span></h1>
 		</div>
-    <section class="section blog-info">
-		<div class="container">
-            <div class="blog-info__image">
-                <picture>
-                    <img oncontextmenu="return false" data-src="/images/<?= $last_article->images->imagePreview ?>" alt="" class="blog-info__image--bg">
-                </picture>
-                <div class="blog-info__image-text">
-                    <h1><?= $last_article->header ?></h1>
-                    <a class="btn btn-primary" href="<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $last_article->symbol]); ?>">
-                        <?= BaseController::getMessage('363') ?>
-                    </a>
-                </div>
-            </div>
-		</div>
-    </section>
+
 
     <section class="section blog">
 		<div class="container">
