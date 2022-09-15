@@ -86,6 +86,7 @@ return [
                 'sitemap.xml' => 'site/sitemap',
                 '/project/category/<symbol:[\w_-]+>' => 'project/category',
                 '<controller:\w+>/<action:\w+>/*'=>'<controller>/<action>',
+                '/gibridnaya-solnechnaya-stantsiya-dlya-avtonomnosti' => 'site/gibrid',
                 //'<language:(ru|ua|en)>/<controller:\w+>/<action:\w+>'=>'<controller>/<action>'
             ]
         ],

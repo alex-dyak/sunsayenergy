@@ -115,6 +115,21 @@ class SiteController extends BaseController
         return $this->render('landing', compact('video_reviews', 'seo_data'));
     }
 
+    /**
+     * Display Gibridnaya solnechnaya stantsiya dlya avtonomnosti.
+     */
+    public function actionGibrid()
+    {
+        $video_reviews = VideoReview::find()->all();
+
+        $seo_data = self::getSeo('gibridnaya_stantsiya');
+
+        $this->layout = 'dohod-zelyonyi';
+        $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
+
+        return $this->render('gibrid_station', compact('video_reviews', 'seo_data'));
+    }
+
     public function actionGreen()
     {
         $seo_data = self::getSeo('green');
