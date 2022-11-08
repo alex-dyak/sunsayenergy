@@ -2204,6 +2204,16 @@ a:not([class]):hover{color:#ffd100}
 .year-icon::before{background-position:-277px -192px;width:41px;height:39px;top:0;left:-53px}
 .dohod-zelyonyi-form{max-width:380px;margin:0 auto}
 .zelyonyi-form-bg{background:rgba(232,232,232,.75);border-radius:5px;padding:33px 25px 25px}
+.dohod-zelyonyi-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    width: 78px;
+    height: 78px;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;}
 .dohod-zelyonyi-subtitle{font-family:Montserrat,sans-serif;font-weight:600;font-size:20px;line-height:25px;margin-bottom:25px;display:block;color:#393939}
 .zelyonyi-button{max-width:60%;margin:0 auto}
 .connect__content-button .zelyonyi-btn{color:#fff;padding:10px 20px}
@@ -2286,13 +2296,7 @@ dohod-zelyonyi-h2{font-size:70px;line-height:70px}
 .advantages-green-tariff{margin-bottom:55px}
 .advantages-green-wrapper{margin-bottom:13px}
 .advantages-items{border-radius:5px;margin-bottom:26px;max-width:100%}
-.advantages-green-item{padding:137px 26px 26px 26px;font-family:Montserrat,sans-serif;background-color:#ffd100;color:#000;position:relative}
-.advantages-green-item::before{content:"";background:url(../img/dohod-zelyonyi-tarif/sprites_icon.png) -93px -93px;position:absolute;display:block;width:78px;height:78px;top:26px;left:26px}
-.advantages-icon-group2::after,.advantages-icon-group::after,.advantages-icon-vector2::after,.advantages-icon-vector::after{content:"";background:url(../img/dohod-zelyonyi-tarif/sprites_icon.png);position:absolute;display:block}
-.advantages-icon-vector::after{background-position:-277px -97px;width:37px;height:56px;top:36px;left:47px}
-.advantages-icon-group::after{background-position:-195px -185px;width:49px;height:47px;top:45px;left:44px}
-.advantages-icon-vector2::after{background-position:-277px -49px;width:44px;height:48px;top:40px;left:44px}
-.advantages-icon-group2::after{background-position:-277px 0;width:46px;height:49px;top:44px;left:43px}
+.advantages-green-item{padding:26px;font-family:Montserrat,sans-serif;background-color:#ffd100;color:#000;position:relative}
 .advantages-btn-wrap{text-align:center}
 .advantages-btn{width:100%;max-width:686px;border-radius:5px;margin:0 auto}
 a.advantages-btn{font-family:Montserrat,sans-serif;background:#b9d5f5;color:#393939;padding:15px 15px;font-size:16px;line-height:18px;font-weight:600}
@@ -2424,12 +2428,6 @@ a.advantages-btn{font-size:20px;line-height:24px}
 .stages-of-registration .stages-h2{padding-top:54px;padding-bottom:23px;text-align:center}
 .stages-subtitle{text-align:center;padding-bottom:26px}
 .stages-item{background:#b9d5f5;border-radius:5px;width:100%}
-.stages-icon-bank::after,.stages-icon-contract::after,.stages-icon-income::after,.stages-icon-installation::after,.stages-icon-letter::after{content:"";background:url(../img/dohod-zelyonyi-tarif/sprites_icon.png);position:absolute;display:block}
-.stages-icon-installation::after{background-position:0 -291px;width:35px;height:32px;top:47px;left:47px}
-.stages-icon-bank::after{background-position:-88px -251px;width:39px;height:27px;top:50px;left:45px}
-.stages-icon-letter::after{background-position:-39px -251px;width:49px;height:29px;top:50px;left:44px}
-.stages-icon-contract::after{background-position:-323px 0;width:34px;height:36px;top:45px;left:50px}
-.stages-icon-income::after{background-position:-323px -36px;width:30px;height:40px;top:45px;left:54px}
 @media screen and (min-width:1280px){
 .stages-items{max-width:19%}
 }

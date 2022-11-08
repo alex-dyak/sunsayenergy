@@ -129,24 +129,36 @@ $contacts = \backend\models\Contact::getContact();
             <div class="advantages-green-wrapper">
                 <div class="advantages-items">
                     <div class="advantages-green-item advantages-icon-vector">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/personal.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                        </div>
                         <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('771') ?></strong>
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('772') ?></p>
                     </div>
                 </div>
                 <div class="advantages-items">
                     <div class="advantages-green-item  advantages-icon-group">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/efficient.svg" width="58" height="58" alt="<?= BaseController::getMessage('773') ?>">
+                        </div>
                         <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('773') ?></strong>
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('774') ?></p>
                     </div>
                 </div>
                 <div class="advantages-items">
                     <div class="advantages-green-item  advantages-icon-vector2">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/reliable.svg" width="58" height="58" alt="<?= BaseController::getMessage('775') ?>">
+                        </div>
                         <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('775') ?></strong>
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('776') ?></p>
                     </div>
                 </div>
                 <div class="advantages-items">
                     <div class="advantages-green-item  advantages-icon-group2">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/comfort.svg" width="58" height="58" alt="<?= BaseController::getMessage('777') ?>">
+                        </div>
                         <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('777') ?></strong>
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('778') ?></p>
                     </div>
@@ -490,27 +502,42 @@ $contacts = \backend\models\Contact::getContact();
             <div class="advantages-green-wrapper">
 
                 <div class="advantages-items stages-items">
-                    <div class="advantages-green-item stages-item stages-icon-installation">
+                    <div class="advantages-green-item stages-item ">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/needs.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                        </div>
                        <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('817') ?></p>
                     </div>                 
                 </div>
                 <div class="advantages-items stages-items">
-                    <div class="advantages-green-item stages-item stages-icon-bank">
+                    <div class="advantages-green-item stages-item ">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/unique.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                        </div>
                        <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('818') ?></p>
                     </div>                 
                 </div>
                 <div class="advantages-items stages-items">
-                    <div class="advantages-green-item stages-item stages-icon-letter">
+                    <div class="advantages-green-item stages-item">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/install.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                        </div>
                        <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('819') ?></p>
                     </div>                 
                 </div>
                 <div class="advantages-items stages-items">
                     <div class="advantages-green-item stages-item stages-icon-contract">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/integration.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                        </div>
                        <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('820') ?></p>
                     </div>                 
                 </div>
                 <div class="advantages-items stages-items">
-                    <div class="advantages-green-item stages-item stages-icon-income">
+                    <div class="advantages-green-item stages-item ">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/connect.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                        </div>
                        <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('821') ?></p>
                     </div>                 
                 </div>
