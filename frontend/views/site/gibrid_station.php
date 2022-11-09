@@ -58,6 +58,7 @@ $contacts = \backend\models\Contact::getContact();
                                        placeholder="<?= BaseController::getMessage('366') ?>">
                                 <label for="phone" class="hidden">Телефон</label>
                                 <input class="custom-field" id="phone" type="text" name="phone" placeholder="+380">
+                                <span class="error-msg"><?= BaseController::getMessage('838') ?></span>
 
                                 <input type="hidden" name="email" value="new_landing_request@gmail.com" >
                                 <input type="hidden" name="question" value="new_landing_question" >
@@ -117,7 +118,7 @@ $contacts = \backend\models\Contact::getContact();
                     </ul>
                 </div>
                 <div class="privat-house-img">
-                    <img class="house-img" data-src="/img/dohod-zelyonyi-tarif/house-icon.png" alt="house">
+                    <img class="house-img" data-src="/img/landing/scheme-house.png" width="800" height="725" alt="house">
                 </div>
             </div>
         </div>
@@ -239,6 +240,7 @@ $contacts = \backend\models\Contact::getContact();
                                 <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
                                 <label for="phone" class="hidden">Телефон</label>
                                 <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+                                <span class="error-msg"><?= BaseController::getMessage('838') ?></span>
 
                                 <input type="hidden" name="email" value="new_landing_request@gmail.com" >
                                 <input type="hidden" name="question" value="new_landing_question" >
@@ -565,6 +567,7 @@ $contacts = \backend\models\Contact::getContact();
                             <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
                             <label for="phone" class="hidden">Телефон</label>
                             <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+                            <span class="error-msg"><?= BaseController::getMessage('838') ?></span>
 
                             <input type="hidden" name="email" value="new_landing_request@gmail.com" >
                             <input type="hidden" name="question" value="new_landing_question" >
@@ -590,44 +593,54 @@ $contacts = \backend\models\Contact::getContact();
                 <strong class="dohod-zelyonyi-h2"><?= BaseController::getMessage('824') ?></strong>
 
                 <div class="questions-accordion-menu">
-                    
+                    <?php if (BaseController::getMessage('825') && BaseController::getMessage('826')) : ?>
                     <div class="accordion">
                         <button class="dohod-zelyonyi-text"><?= BaseController::getMessage('825') ?></button>
                     </div>    
                     <div class="panel">
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('826') ?></p>
                     </div>
+                    <?php endif; ?>
+                    <?php if (BaseController::getMessage('827') && BaseController::getMessage('828')) : ?>
                     <div class="accordion">
                         <button class="dohod-zelyonyi-text"><?= BaseController::getMessage('827') ?></button>
-                    </div>    
+                    </div>
                     <div class="panel">
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('828') ?></p>
                     </div>
+                    <?php endif; ?>
+                    <?php if (BaseController::getMessage('829') && BaseController::getMessage('830')) : ?>
                     <div class="accordion">
                         <button class="dohod-zelyonyi-text"><?= BaseController::getMessage('829') ?></button>
-                    </div>    
+                    </div>
                     <div class="panel">
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('830') ?></p>
                     </div>
+                    <?php endif; ?>
+                    <?php if (BaseController::getMessage('831') && BaseController::getMessage('832')) : ?>
                     <div class="accordion">
                         <button class="dohod-zelyonyi-text"><?= BaseController::getMessage('831') ?></button>
-                    </div>    
+                    </div>
                     <div class="panel">
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('832') ?></p>
                     </div>
+                    <?php endif; ?>
+                    <?php if (BaseController::getMessage('833') && BaseController::getMessage('834')) : ?>
                     <div class="accordion">
                         <button class="dohod-zelyonyi-text"><?= BaseController::getMessage('833') ?></button>
                     </div>    
                     <div class="panel">
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('834') ?></p>
                     </div>
+                    <?php endif; ?>
+                    <?php if (BaseController::getMessage('835') && BaseController::getMessage('836')) : ?>
                     <div class="accordion">
                         <button class="dohod-zelyonyi-text"><?= BaseController::getMessage('835') ?></button>
                     </div>    
                     <div class="panel">
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('836') ?></p>
                     </div>
-
+                    <?php endif; ?>
                 </div>
 
             </div>

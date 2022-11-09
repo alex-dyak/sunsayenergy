@@ -61,6 +61,7 @@ $seo_date = date('Y-m-d', $datetime);
                                     <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
                                     <label for="phone" class="hidden">Телефон</label>
                                     <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+                                    <span class="error-msg"><?= BaseController::getMessage('838') ?></span>
 
                                     <div class="connect__content-button">
                                         <button class="btn measuring-btn-desk btn-primary" id="submit_button">
@@ -87,6 +88,7 @@ $seo_date = date('Y-m-d', $datetime);
                                     <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
                                     <label for="phone" class="hidden">Телефон</label>
                                     <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+                                    <span class="error-msg"><?= BaseController::getMessage('838') ?></span>
 
                                     <div class="connect__content-button">
                                         <button class="btn measuring-btn-mob btn-primary" id="submit_button">
