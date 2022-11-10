@@ -2315,7 +2315,8 @@ a.advantages-btn{font-size:20px;line-height:24px}
 .integrated-approach-item .integrated-subtitle{text-align:left}
 .integrated-approach-items{margin-top:19px}
 .integrated-approach-item{margin-bottom:36px}
-.integrated-approach-img{display:block;padding-bottom:23px;margin:0 auto;width:100%}
+.integrated-approach-img{display:block;width: 100%;height: 290px;margin:0 auto 25px;background-position: 50% 50%;background-size: cover;
+    border-radius:6px;}
 @media screen and (min-width:768px){
 .integrated-approach-items{display:flex;flex-wrap:wrap;justify-content:space-between;align-content:center}
 .integrated-approach-item{max-width:48%}
@@ -2366,13 +2367,14 @@ a.advantages-btn{font-size:20px;line-height:24px}
 .energy-name-inner{margin-top:20px;margin-left:0}
 }
 .solar-station-income{margin-bottom:55px}
-.solar-station-inner{background-color:#e8e8e8;border-radius:5px;margin-bottom:26px}
+.solar-station-inner{background-color:#e8e8e8;border-radius:5px;padding: 20px;margin-bottom:26px}
 .solar-station-slider{padding:15px 14px 12px}
-.solar-station-item img{display:block;margin:0 auto;width:100%;max-height:355px;border-radius:5px}
+.solar-station-item {display:block;margin-bottom: 20px;width:100%;border-radius:5px; overflow: hidden}
+.solar-station-item img{display:block;width:100%;height:auto;}
 .solar-station-slick-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:5;cursor:pointer}
 .solar-station-slick-prev{left:15px}
 .solar-station-slick-next{right:15px}
-.solar-station-content{padding-right:14px;padding-left:15px}
+.solar-station-content{padding: 0 15px;}
 .solar-station-content strong{font-weight:600}
 .station-content-items{display:flex;justify-content:space-between}
 .station-content-item{width:50%}
@@ -2387,17 +2389,15 @@ a.advantages-btn{font-size:20px;line-height:24px}
 }
 @media screen and (min-width:768px){
 .solar-station-inner{display:flex;justify-content:space-between;align-items:center}
+.solar-station-item {width: 50%;}
 .solar-station-content,.solar-station-slider{width:50%}
-.solar-station-content{max-width:450px;margin-top:20px}
+.solar-station-content{max-width:450px;}
 .solar-slider-revers{flex-direction:row-reverse}
-.solar-station-content strong{font-size:20px;line-height:24px}
+.solar-station-content strong{font-size:20px;line-height:1.2}
 .station-content-price{padding-top:18px}
 }
 @media screen and (min-width:1024px){
-.solar-station-content{margin-left:45px;margin-right:40px}
-}
-@media screen and (min-width:1280px){
-.solar-station-content{margin-left:95px;margin-right:105px}
+.solar-station-content{margin: 0 auto;}
 }
 .about-company{background-color:#ffd100;background-image:url(../img/dohod-zelyonyi-tarif/about-bg-mob.png);background-size:cover;background-repeat:no-repeat;background-position:50% 50%;margin-bottom:54px}
 .about-company-wrapper{padding-top:40px;padding-bottom:40px}

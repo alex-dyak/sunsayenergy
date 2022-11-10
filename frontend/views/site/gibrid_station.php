@@ -177,19 +177,17 @@ $contacts = \backend\models\Contact::getContact();
             <strong class="integrated-subtitle"><?= BaseController::getMessage('781') ?></strong>
             <div class="integrated-approach-items">
                 <div class="integrated-approach-item">
-                    <img class="integrated-approach-img" data-src="/img/dohod-zelyonyi-tarif/dron.jpg" alt="дрон">
+                    <div class="integrated-approach-img" style='background-image: url("/img/dohod-zelyonyi-tarif/dron.jpg")'></div>
                     <strong class="integrated-subtitle"><?= BaseController::getMessage('782') ?></strong>
                     <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('783') ?></p>
                 </div>
                 <div class="integrated-approach-item">
-                    <img class="integrated-approach-img" data-src="/img/dohod-zelyonyi-tarif/installation.jpg"
-                         alt="монтаж солнечных панелей">
+                    <div class="integrated-approach-img" style='background-image: url("/img/dohod-zelyonyi-tarif/installation.jpg")'></div>
                     <strong class="integrated-subtitle"><?= BaseController::getMessage('784') ?></strong>
                     <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('785') ?></p>
                 </div>
                 <div class="integrated-approach-item">
-                    <img class="integrated-approach-img" data-src="/img/dohod-zelyonyi-tarif/house_with_panels.jpg"
-                         alt="дом с солнечными панелями">
+                    <div class="integrated-approach-img" style='background-image: url("/img/landing/green-tarif.jpg")'></div>
                     <strong class="integrated-subtitle"><?= BaseController::getMessage('786') ?></strong>
                     <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('787') ?></p>
                 </div>
@@ -265,12 +263,12 @@ $contacts = \backend\models\Contact::getContact();
             <strong class="dohod-zelyonyi-h2"><?= BaseController::getMessage('793') ?></strong>
             <strong class="integrated-subtitle stages-subtitle"><?= BaseController::getMessage('794') ?></strong>
                 <div class="solar-station-inner">
+                    <div class="solar-station-item">
+                        <img data-src="/img/landing/first-slide.jpg" width="650" height="350" alt="house with solar panels">
+                    </div>
+                    <!--<div class="solar-station-slider">
 
-                    <div class="solar-station-slider">
 
-                        <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_1.jpg" alt="house with solar panels">
-                        </div>
                         <div class="solar-station-item">
                             <img data-src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_2.jpg" alt="house with solar panels">
                         </div>
@@ -284,7 +282,7 @@ $contacts = \backend\models\Contact::getContact();
                             <img data-src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_5.jpg" alt="house with solar panels">
                         </div>
 
-                    </div>
+                    </div>-->
 
                     <div class="solar-station-content">
                         <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('795') ?>  29,26 кВт</strong>
@@ -311,8 +309,10 @@ $contacts = \backend\models\Contact::getContact();
                 </div>
 <!-- 2 slider -->
                 <div class="solar-station-inner  solar-slider-revers">
-
-                    <div class="solar-station-slider">
+                    <div class="solar-station-item">
+                        <img data-src="/img/landing/second-slide.jpg" width="650" height="350" alt="house with solar panels">
+                    </div>
+                   <!-- <div class="solar-station-slider">
 
                         <div class="solar-station-item">
                             <img data-src="/img/dohod-zelyonyi-tarif/slider/pluty_1.jpg" alt="house with solar panels">
@@ -348,7 +348,7 @@ $contacts = \backend\models\Contact::getContact();
                             <img data-src="/img/dohod-zelyonyi-tarif/slider/pluty_11.jpg" alt="house with solar panels">
                         </div>
 
-                    </div>
+                    </div>-->
 
                     <div class="solar-station-content">
                         <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('685') ?> 28,21 кВт</strong>
@@ -375,8 +375,10 @@ $contacts = \backend\models\Contact::getContact();
                 </div>
 <!-- 3 slider -->
                 <div class="solar-station-inner">
-
-                    <div class="solar-station-slider">
+                    <div class="solar-station-item">
+                        <img data-src="/img/landing/third-slide.jpg" width="650" height="350" alt="house with solar panels">
+                    </div>
+                    <!--<div class="solar-station-slider">
 
                         <div class="solar-station-item">
                             <img data-src="/img/dohod-zelyonyi-tarif/slider/bortnichi_1.jpg" alt="house with solar panels">
@@ -418,7 +420,7 @@ $contacts = \backend\models\Contact::getContact();
                             <img data-src="/img/dohod-zelyonyi-tarif/slider/bortnichi_13.jpg" alt="house with solar panels">
                         </div>
 
-                    </div>
+                    </div>-->
 
                     <div class="solar-station-content">
                         <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('685') ?> 29,26 кВт</strong>
@@ -463,11 +465,11 @@ $contacts = \backend\models\Contact::getContact();
 
                     <div class="company-project-items">
                         <div class="company-project-item">
-                            <strong>4<span><?= BaseController::getMessage('808') ?></span></strong>
+                            <strong><?= BaseController::getMessage('839') ?><span><?= BaseController::getMessage('808') ?></span></strong>
                             <p class="integrated-subtitle"><?= BaseController::getMessage('809') ?></p>
                         </div>
                         <div class="company-project-item">
-                            <strong>165<span><?= BaseController::getMessage('810') ?></span></strong>
+                            <strong><?= BaseController::getMessage('840') ?><span><?= BaseController::getMessage('810') ?></span></strong>
                             <p class="integrated-subtitle">
                                 <?= BaseController::getMessage('811') ?>
                             </p>                                                                  
