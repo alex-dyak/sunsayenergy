@@ -58,7 +58,7 @@ $contacts = \backend\models\Contact::getContact();
                                        placeholder="<?= BaseController::getMessage('366') ?>">
                                 <label for="phone" class="hidden">Телефон</label>
                                 <input class="custom-field" id="phone" type="text" name="phone" placeholder="+380">
-                                <span class="error-msg"><?= BaseController::getMessage('838') ?></span>
+                                <span class="error-msg"><?= BaseController::getMessage('839') ?></span>
 
                                 <input type="hidden" name="email" value="new_landing_request@gmail.com" >
                                 <input type="hidden" name="question" value="new_landing_question" >
@@ -238,7 +238,7 @@ $contacts = \backend\models\Contact::getContact();
                                 <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
                                 <label for="phone" class="hidden">Телефон</label>
                                 <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
-                                <span class="error-msg"><?= BaseController::getMessage('838') ?></span>
+                                <span class="error-msg"><?= BaseController::getMessage('839') ?></span>
 
                                 <input type="hidden" name="email" value="new_landing_request@gmail.com" >
                                 <input type="hidden" name="question" value="new_landing_question" >
@@ -465,11 +465,11 @@ $contacts = \backend\models\Contact::getContact();
 
                     <div class="company-project-items">
                         <div class="company-project-item">
-                            <strong><?= BaseController::getMessage('839') ?><span><?= BaseController::getMessage('808') ?></span></strong>
+                            <strong><?= BaseController::getMessage('840') ?><span><?= BaseController::getMessage('808') ?></span></strong>
                             <p class="integrated-subtitle"><?= BaseController::getMessage('809') ?></p>
                         </div>
                         <div class="company-project-item">
-                            <strong><?= BaseController::getMessage('840') ?><span><?= BaseController::getMessage('810') ?></span></strong>
+                            <strong><?= BaseController::getMessage('841') ?><span><?= BaseController::getMessage('810') ?></span></strong>
                             <p class="integrated-subtitle">
                                 <?= BaseController::getMessage('811') ?>
                             </p>                                                                  
@@ -569,7 +569,7 @@ $contacts = \backend\models\Contact::getContact();
                             <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
                             <label for="phone" class="hidden">Телефон</label>
                             <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
-                            <span class="error-msg"><?= BaseController::getMessage('838') ?></span>
+                            <span class="error-msg"><?= BaseController::getMessage('839') ?></span>
 
                             <input type="hidden" name="email" value="new_landing_request@gmail.com" >
                             <input type="hidden" name="question" value="new_landing_question" >
