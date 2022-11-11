@@ -987,7 +987,10 @@ a:not([class]):hover{color:#ffd100}
 .connect__content-title>.h2,.connect__content-title>h2{font-size:65px}
 }
 .custom-field{display:block;border:1px solid #b7d3f7;border-radius:1px;background:#fff;color:#222;font-size:15px;line-height:1.5;font-weight:500;padding:10px 15px;margin-bottom:20px;width:100%;box-sizing:border-box;box-shadow:none;outline:0;color:#212121;font-family:Montserrat,sans-serif;outline:2px solid transparent;transition:outline .3s ease}
+.custom-field[name="phone"]{margin-bottom:0}
 .custom-field.input-error{border-color:red}
+.error-msg{position: relative;line-height: 20px; top: -2px;font-size: 12px;color:red;opacity: 0;}
+.custom-field.input-error + .error-msg {opacity: 1;}
 @media only screen and (min-width:1280px){
 .connect__content-question .custom-field:last-of-type,.request-question .custom-field:last-of-type{margin-bottom:40px}
 }
@@ -2189,9 +2192,10 @@ a:not([class]):hover{color:#ffd100}
 @media screen and (min-width:1440px){
 .logo-row ul li{width:14%}
 }
-.dohod-zelyonyi-section{background-image:url(../img/dohod-zelyonyi-tarif/dohod-zelyonyi-mobile-bg.jpg);background-size:cover;background-repeat:no-repeat;background-position:center;overflow:hidden;margin-top:-195px;margin-bottom:42px}
-.dohod-zelyonyi-wrapper{margin-top:180px;margin-bottom:53px}
-.dohod-zelyonyi-inner{margin-bottom:170px;margin-left:18px}
+.dohod-zelyonyi-section{position: relative;background-image:url(../img/landing/hero-img-mob.jpg);background-size:cover;background-repeat:no-repeat;background-position:center;overflow:hidden;margin-top:-218px;margin-bottom:42px}
+.dohod-zelyonyi-section:before{content: '';position: absolute;top: 0;bottom: 0;left: 0;right: 0;background-image: linear-gradient(145deg, rgba(0,0,0,.65), rgba(0,0,0,0));}
+.dohod-zelyonyi-wrapper{position: relative;margin-top:200px;margin-bottom:53px}
+.dohod-zelyonyi-inner{margin-bottom:50px}
 .dohod-zelyonyi-inner h1{font-family:"Bebas Neue Cyrillic",sans-serif;margin-bottom:32px;font-size:50px;line-height:50px;text-transform:uppercase;color:#fff;display:block;max-width:270px}
 .dohod-zelyonyi-list{margin-left:0;padding-left:52px;color:#fff}
 .dohod-zelyonyi-list li{list-style:none;position:relative;padding-bottom:22px}
@@ -2204,6 +2208,16 @@ a:not([class]):hover{color:#ffd100}
 .year-icon::before{background-position:-277px -192px;width:41px;height:39px;top:0;left:-53px}
 .dohod-zelyonyi-form{max-width:380px;margin:0 auto}
 .zelyonyi-form-bg{background:rgba(232,232,232,.75);border-radius:5px;padding:33px 25px 25px}
+.dohod-zelyonyi-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    width: 78px;
+    height: 78px;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;}
 .dohod-zelyonyi-subtitle{font-family:Montserrat,sans-serif;font-weight:600;font-size:20px;line-height:25px;margin-bottom:25px;display:block;color:#393939}
 .zelyonyi-button{max-width:60%;margin:0 auto}
 .connect__content-button .zelyonyi-btn{color:#fff;padding:10px 20px}
@@ -2222,7 +2236,7 @@ a:not([class]):hover{color:#ffd100}
 .dohod-zelyonyi-inner h1{max-width:485px}
 }
 @media screen and (min-width:768px){
-.dohod-zelyonyi-section{background-image:url(../img/dohod-zelyonyi-tarif/dohod-zelyonyi-bg.jpg);background-size:cover;background-repeat:no-repeat;background-position:50% 50%;margin-top:-165px}
+.dohod-zelyonyi-section{background-image:url(../img/landing/hero-img.jpg);background-size:cover;background-repeat:no-repeat;background-position:50% 50%;margin-top:-165px}
 .dohod-zelyonyi-inner h1{font-size:60px;line-height:60px;margin-top:0}
 .dohod-zelyonyi-list{padding-left:102px}
 .portmone-icon::before{left:-100px}
@@ -2231,8 +2245,7 @@ a:not([class]):hover{color:#ffd100}
 .dohod-zelyonyi-list .dohod-zelyonyi-text{padding-top:10px}
 }
 @media screen and (min-width:1024px){
-.dohod-zelyonyi-wrapper{display:flex;justify-content:space-between}
-.dohod-zelyonyi-wrapper{margin-bottom:40px}
+.dohod-zelyonyi-wrapper{display:flex;justify-content:space-between;margin-bottom:40px}
 .dohod-zelyonyi-inner{margin-left:0;margin-bottom:0}
 .dohod-zelyonyi-form{margin:0}
 .dohod-zelyonyi-advantages{margin-bottom:0}
@@ -2259,19 +2272,18 @@ a:not([class]):hover{color:#ffd100}
 .private-house-list{margin-left:0;padding-left:0;margin-bottom:5px}
 .private-house-list li{list-style-type:none}
 private-house-list .private-house-text{padding-bottom:10px}
-.house-img{width:100%;max-width:100%}
+.house-img{width:100%;max-width:100%;height:auto}
 @media screen and (min-width:768px){
 .dohod-private-house{margin-bottom:35px}
 .dohod-zelyonyi-h2{font-size:40px;line-height:40px}
 .private-house-text{font-size:15px;line-height:17px}
 .privat-house-img{text-align:center}
-.house-img{width:auto;max-width:600px}
 }
 @media screen and (min-width:1024px){
 .dohod-private-house{margin-bottom:45px}
 .dohod-private-wrapp{display:flex;justify-content:center;align-items:center;flex-direction:row-reverse}
-.privat-house-img{padding-right:37px;margin-bottom:25px}
-.house-img{max-width:555px}
+.privat-house-img{padding-right:36px;width:50%;}
+.private-house-inner {width:50%;}
 .dohod-zelyonyi-h2{font-size:50px;line-height:50px;margin-bottom:43px}
 .dohod-private-house .dohod-zelyonyi-h2{text-align:left}
 .private-house-text{font-size:16px;line-height:20px}
@@ -2279,20 +2291,13 @@ private-house-list .private-house-text{padding-bottom:10px}
 @media screen and (min-width:1280px){
 .dohod-private-house{margin-bottom:72px}
 .privat-house-img{padding-right:37px}
-.house-img{max-width:800px}
 dohod-zelyonyi-h2{font-size:70px;line-height:70px}
 .private-house-text{font-size:16px;line-height:20px}
 }
 .advantages-green-tariff{margin-bottom:55px}
 .advantages-green-wrapper{margin-bottom:13px}
 .advantages-items{border-radius:5px;margin-bottom:26px;max-width:100%}
-.advantages-green-item{padding:137px 26px 26px 26px;font-family:Montserrat,sans-serif;background-color:#ffd100;color:#000;position:relative}
-.advantages-green-item::before{content:"";background:url(../img/dohod-zelyonyi-tarif/sprites_icon.png) -93px -93px;position:absolute;display:block;width:78px;height:78px;top:26px;left:26px}
-.advantages-icon-group2::after,.advantages-icon-group::after,.advantages-icon-vector2::after,.advantages-icon-vector::after{content:"";background:url(../img/dohod-zelyonyi-tarif/sprites_icon.png);position:absolute;display:block}
-.advantages-icon-vector::after{background-position:-277px -97px;width:37px;height:56px;top:36px;left:47px}
-.advantages-icon-group::after{background-position:-195px -185px;width:49px;height:47px;top:45px;left:44px}
-.advantages-icon-vector2::after{background-position:-277px -49px;width:44px;height:48px;top:40px;left:44px}
-.advantages-icon-group2::after{background-position:-277px 0;width:46px;height:49px;top:44px;left:43px}
+.advantages-green-item{padding:26px;font-family:Montserrat,sans-serif;background-color:#ffd100;color:#000;position:relative}
 .advantages-btn-wrap{text-align:center}
 .advantages-btn{width:100%;max-width:686px;border-radius:5px;margin:0 auto}
 a.advantages-btn{font-family:Montserrat,sans-serif;background:#b9d5f5;color:#393939;padding:15px 15px;font-size:16px;line-height:18px;font-weight:600}
@@ -2310,7 +2315,8 @@ a.advantages-btn{font-size:20px;line-height:24px}
 .integrated-approach-item .integrated-subtitle{text-align:left}
 .integrated-approach-items{margin-top:19px}
 .integrated-approach-item{margin-bottom:36px}
-.integrated-approach-img{display:block;padding-bottom:23px;margin:0 auto;width:100%}
+.integrated-approach-img{display:block;width: 100%;height: 290px;margin:0 auto 25px;background-position: 50% 50%;background-size: cover;
+    border-radius:6px;}
 @media screen and (min-width:768px){
 .integrated-approach-items{display:flex;flex-wrap:wrap;justify-content:space-between;align-content:center}
 .integrated-approach-item{max-width:48%}
@@ -2361,13 +2367,14 @@ a.advantages-btn{font-size:20px;line-height:24px}
 .energy-name-inner{margin-top:20px;margin-left:0}
 }
 .solar-station-income{margin-bottom:55px}
-.solar-station-inner{background-color:#e8e8e8;border-radius:5px;margin-bottom:26px}
+.solar-station-inner{background-color:#e8e8e8;border-radius:5px;padding: 20px;margin-bottom:26px}
 .solar-station-slider{padding:15px 14px 12px}
-.solar-station-item img{display:block;margin:0 auto;width:100%;max-height:355px;border-radius:5px}
+.solar-station-item {display:block;margin-bottom: 20px;width:100%;border-radius:5px; overflow: hidden}
+.solar-station-item img{display:block;width:100%;height:auto;}
 .solar-station-slick-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:5;cursor:pointer}
 .solar-station-slick-prev{left:15px}
 .solar-station-slick-next{right:15px}
-.solar-station-content{padding-right:14px;padding-left:15px}
+.solar-station-content{padding: 0 15px;}
 .solar-station-content strong{font-weight:600}
 .station-content-items{display:flex;justify-content:space-between}
 .station-content-item{width:50%}
@@ -2382,24 +2389,22 @@ a.advantages-btn{font-size:20px;line-height:24px}
 }
 @media screen and (min-width:768px){
 .solar-station-inner{display:flex;justify-content:space-between;align-items:center}
+.solar-station-item {width: 50%;}
 .solar-station-content,.solar-station-slider{width:50%}
-.solar-station-content{max-width:450px;margin-top:20px}
+.solar-station-content{max-width:450px;}
 .solar-slider-revers{flex-direction:row-reverse}
-.solar-station-content strong{font-size:20px;line-height:24px}
+.solar-station-content strong{font-size:20px;line-height:1.2}
 .station-content-price{padding-top:18px}
 }
 @media screen and (min-width:1024px){
-.solar-station-content{margin-left:45px;margin-right:40px}
-}
-@media screen and (min-width:1280px){
-.solar-station-content{margin-left:95px;margin-right:105px}
+.solar-station-content{margin: 0 auto;}
 }
 .about-company{background-color:#ffd100;background-image:url(../img/dohod-zelyonyi-tarif/about-bg-mob.png);background-size:cover;background-repeat:no-repeat;background-position:50% 50%;margin-bottom:54px}
 .about-company-wrapper{padding-top:40px;padding-bottom:40px}
 .about-company-sansay .dohod-zelyonyi-h2,.about-company-sansay .integrated-subtitle{text-align:left}
 .company-project-items{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:20px}
 .company-project-item{font-family:"Bebas Neue Cyrillic",sans-serif;font-weight:700;width:50%;max-width:250px;margin-right:30px}
-.company-project-item strong{font-size:70px;line-height:70px;padding-bottom:22px;text-transform:uppercase;display:inline-block}
+.company-project-item strong{font-size:60px;line-height:1;padding-bottom:22px;text-transform:uppercase;display:inline-block}
 .company-project-item span{font-size:20px;line-height:20px;padding-left:8px}
 .company-project-item .integrated-subtitle{padding-bottom:0;text-align:left;font-weight:500}
 .company-project-text .dohod-zelyonyi-text{font-weight:600}
@@ -2412,24 +2417,18 @@ a.advantages-btn{font-size:20px;line-height:24px}
 .about-company-sansay .integrated-subtitle{font-size:22px;line-height:27px;padding-right:15px;max-width:560px}
 .company-project-text .dohod-zelyonyi-text{font-weight:600;font-size:18px;line-height:22px}
 .company-project-item .integrated-subtitle{font-weight:500;font-size:20px;line-height:24px}
-.company-project-item strong{font-size:100px;line-height:100px}
+.company-project-item strong{font-size:80px}
 .company-project-item span{font-size:50px;line-height:50px;padding-left:15px}
 .stages-of-registration{margin-bottom:30px}
 }
 @media screen and (min-width:1280px){
 .company-project-text{display:flex;justify-content:flex-start}
 .company-project-text .dohod-zelyonyi-text{width:50%;margin-right:30px;max-width:330px;padding-bottom:10px}
-.company-project-item strong{font-size:155px;line-height:155px}
+.company-project-item strong{font-size:120px}
 }
 .stages-of-registration .stages-h2{padding-top:54px;padding-bottom:23px;text-align:center}
 .stages-subtitle{text-align:center;padding-bottom:26px}
 .stages-item{background:#b9d5f5;border-radius:5px;width:100%}
-.stages-icon-bank::after,.stages-icon-contract::after,.stages-icon-income::after,.stages-icon-installation::after,.stages-icon-letter::after{content:"";background:url(../img/dohod-zelyonyi-tarif/sprites_icon.png);position:absolute;display:block}
-.stages-icon-installation::after{background-position:0 -291px;width:35px;height:32px;top:47px;left:47px}
-.stages-icon-bank::after{background-position:-88px -251px;width:39px;height:27px;top:50px;left:45px}
-.stages-icon-letter::after{background-position:-39px -251px;width:49px;height:29px;top:50px;left:44px}
-.stages-icon-contract::after{background-position:-323px 0;width:34px;height:36px;top:45px;left:50px}
-.stages-icon-income::after{background-position:-323px -36px;width:30px;height:40px;top:45px;left:54px}
 @media screen and (min-width:1280px){
 .stages-items{max-width:19%}
 }

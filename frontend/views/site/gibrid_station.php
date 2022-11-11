@@ -58,6 +58,7 @@ $contacts = \backend\models\Contact::getContact();
                                        placeholder="<?= BaseController::getMessage('366') ?>">
                                 <label for="phone" class="hidden">Телефон</label>
                                 <input class="custom-field" id="phone" type="text" name="phone" placeholder="+380">
+                                <span class="error-msg"><?= BaseController::getMessage('839') ?></span>
 
                                 <input type="hidden" name="email" value="new_landing_request@gmail.com" >
                                 <input type="hidden" name="question" value="new_landing_question" >
@@ -117,7 +118,7 @@ $contacts = \backend\models\Contact::getContact();
                     </ul>
                 </div>
                 <div class="privat-house-img">
-                    <img class="house-img" data-src="/img/dohod-zelyonyi-tarif/house-icon.png" alt="house">
+                    <img class="house-img" data-src="/img/landing/scheme-house.png" width="800" height="725" alt="house">
                 </div>
             </div>
         </div>
@@ -129,24 +130,36 @@ $contacts = \backend\models\Contact::getContact();
             <div class="advantages-green-wrapper">
                 <div class="advantages-items">
                     <div class="advantages-green-item advantages-icon-vector">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/personal.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                        </div>
                         <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('771') ?></strong>
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('772') ?></p>
                     </div>
                 </div>
                 <div class="advantages-items">
                     <div class="advantages-green-item  advantages-icon-group">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/efficient.svg" width="58" height="58" alt="<?= BaseController::getMessage('773') ?>">
+                        </div>
                         <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('773') ?></strong>
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('774') ?></p>
                     </div>
                 </div>
                 <div class="advantages-items">
                     <div class="advantages-green-item  advantages-icon-vector2">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/reliable.svg" width="58" height="58" alt="<?= BaseController::getMessage('775') ?>">
+                        </div>
                         <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('775') ?></strong>
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('776') ?></p>
                     </div>
                 </div>
                 <div class="advantages-items">
                     <div class="advantages-green-item  advantages-icon-group2">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/comfort.svg" width="58" height="58" alt="<?= BaseController::getMessage('777') ?>">
+                        </div>
                         <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('777') ?></strong>
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('778') ?></p>
                     </div>
@@ -164,19 +177,17 @@ $contacts = \backend\models\Contact::getContact();
             <strong class="integrated-subtitle"><?= BaseController::getMessage('781') ?></strong>
             <div class="integrated-approach-items">
                 <div class="integrated-approach-item">
-                    <img class="integrated-approach-img" data-src="/img/dohod-zelyonyi-tarif/dron.jpg" alt="дрон">
+                    <div class="integrated-approach-img" style='background-image: url("/img/dohod-zelyonyi-tarif/dron.jpg")'></div>
                     <strong class="integrated-subtitle"><?= BaseController::getMessage('782') ?></strong>
                     <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('783') ?></p>
                 </div>
                 <div class="integrated-approach-item">
-                    <img class="integrated-approach-img" data-src="/img/dohod-zelyonyi-tarif/installation.jpg"
-                         alt="монтаж солнечных панелей">
+                    <div class="integrated-approach-img" style='background-image: url("/img/dohod-zelyonyi-tarif/installation.jpg")'></div>
                     <strong class="integrated-subtitle"><?= BaseController::getMessage('784') ?></strong>
                     <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('785') ?></p>
                 </div>
                 <div class="integrated-approach-item">
-                    <img class="integrated-approach-img" data-src="/img/dohod-zelyonyi-tarif/house_with_panels.jpg"
-                         alt="дом с солнечными панелями">
+                    <div class="integrated-approach-img" style='background-image: url("/img/landing/green-tarif.jpg")'></div>
                     <strong class="integrated-subtitle"><?= BaseController::getMessage('786') ?></strong>
                     <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('787') ?></p>
                 </div>
@@ -227,6 +238,7 @@ $contacts = \backend\models\Contact::getContact();
                                 <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
                                 <label for="phone" class="hidden">Телефон</label>
                                 <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+                                <span class="error-msg"><?= BaseController::getMessage('839') ?></span>
 
                                 <input type="hidden" name="email" value="new_landing_request@gmail.com" >
                                 <input type="hidden" name="question" value="new_landing_question" >
@@ -251,12 +263,12 @@ $contacts = \backend\models\Contact::getContact();
             <strong class="dohod-zelyonyi-h2"><?= BaseController::getMessage('793') ?></strong>
             <strong class="integrated-subtitle stages-subtitle"><?= BaseController::getMessage('794') ?></strong>
                 <div class="solar-station-inner">
+                    <div class="solar-station-item">
+                        <img data-src="/img/landing/first-slide.jpg" width="650" height="350" alt="house with solar panels">
+                    </div>
+                    <!--<div class="solar-station-slider">
 
-                    <div class="solar-station-slider">
 
-                        <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_1.jpg" alt="house with solar panels">
-                        </div>
                         <div class="solar-station-item">
                             <img data-src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_2.jpg" alt="house with solar panels">
                         </div>
@@ -270,7 +282,7 @@ $contacts = \backend\models\Contact::getContact();
                             <img data-src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_5.jpg" alt="house with solar panels">
                         </div>
 
-                    </div>
+                    </div>-->
 
                     <div class="solar-station-content">
                         <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('795') ?>  29,26 кВт</strong>
@@ -297,8 +309,10 @@ $contacts = \backend\models\Contact::getContact();
                 </div>
 <!-- 2 slider -->
                 <div class="solar-station-inner  solar-slider-revers">
-
-                    <div class="solar-station-slider">
+                    <div class="solar-station-item">
+                        <img data-src="/img/landing/second-slide.jpg" width="650" height="350" alt="house with solar panels">
+                    </div>
+                   <!-- <div class="solar-station-slider">
 
                         <div class="solar-station-item">
                             <img data-src="/img/dohod-zelyonyi-tarif/slider/pluty_1.jpg" alt="house with solar panels">
@@ -334,7 +348,7 @@ $contacts = \backend\models\Contact::getContact();
                             <img data-src="/img/dohod-zelyonyi-tarif/slider/pluty_11.jpg" alt="house with solar panels">
                         </div>
 
-                    </div>
+                    </div>-->
 
                     <div class="solar-station-content">
                         <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('685') ?> 28,21 кВт</strong>
@@ -361,8 +375,10 @@ $contacts = \backend\models\Contact::getContact();
                 </div>
 <!-- 3 slider -->
                 <div class="solar-station-inner">
-
-                    <div class="solar-station-slider">
+                    <div class="solar-station-item">
+                        <img data-src="/img/landing/third-slide.jpg" width="650" height="350" alt="house with solar panels">
+                    </div>
+                    <!--<div class="solar-station-slider">
 
                         <div class="solar-station-item">
                             <img data-src="/img/dohod-zelyonyi-tarif/slider/bortnichi_1.jpg" alt="house with solar panels">
@@ -404,7 +420,7 @@ $contacts = \backend\models\Contact::getContact();
                             <img data-src="/img/dohod-zelyonyi-tarif/slider/bortnichi_13.jpg" alt="house with solar panels">
                         </div>
 
-                    </div>
+                    </div>-->
 
                     <div class="solar-station-content">
                         <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('685') ?> 29,26 кВт</strong>
@@ -449,11 +465,11 @@ $contacts = \backend\models\Contact::getContact();
 
                     <div class="company-project-items">
                         <div class="company-project-item">
-                            <strong>4<span><?= BaseController::getMessage('808') ?></span></strong>
+                            <strong><?= BaseController::getMessage('840') ?><span><?= BaseController::getMessage('808') ?></span></strong>
                             <p class="integrated-subtitle"><?= BaseController::getMessage('809') ?></p>
                         </div>
                         <div class="company-project-item">
-                            <strong>165<span><?= BaseController::getMessage('810') ?></span></strong>
+                            <strong><?= BaseController::getMessage('841') ?><span><?= BaseController::getMessage('810') ?></span></strong>
                             <p class="integrated-subtitle">
                                 <?= BaseController::getMessage('811') ?>
                             </p>                                                                  
@@ -490,27 +506,42 @@ $contacts = \backend\models\Contact::getContact();
             <div class="advantages-green-wrapper">
 
                 <div class="advantages-items stages-items">
-                    <div class="advantages-green-item stages-item stages-icon-installation">
+                    <div class="advantages-green-item stages-item ">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/needs.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                        </div>
                        <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('817') ?></p>
                     </div>                 
                 </div>
                 <div class="advantages-items stages-items">
-                    <div class="advantages-green-item stages-item stages-icon-bank">
+                    <div class="advantages-green-item stages-item ">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/unique.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                        </div>
                        <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('818') ?></p>
                     </div>                 
                 </div>
                 <div class="advantages-items stages-items">
-                    <div class="advantages-green-item stages-item stages-icon-letter">
+                    <div class="advantages-green-item stages-item">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/install.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                        </div>
                        <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('819') ?></p>
                     </div>                 
                 </div>
                 <div class="advantages-items stages-items">
                     <div class="advantages-green-item stages-item stages-icon-contract">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/integration.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                        </div>
                        <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('820') ?></p>
                     </div>                 
                 </div>
                 <div class="advantages-items stages-items">
-                    <div class="advantages-green-item stages-item stages-icon-income">
+                    <div class="advantages-green-item stages-item ">
+                        <div class="dohod-zelyonyi-icon">
+                            <img src="/img/landing/connect.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                        </div>
                        <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('821') ?></p>
                     </div>                 
                 </div>
@@ -538,6 +569,7 @@ $contacts = \backend\models\Contact::getContact();
                             <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
                             <label for="phone" class="hidden">Телефон</label>
                             <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+                            <span class="error-msg"><?= BaseController::getMessage('839') ?></span>
 
                             <input type="hidden" name="email" value="new_landing_request@gmail.com" >
                             <input type="hidden" name="question" value="new_landing_question" >
@@ -563,44 +595,54 @@ $contacts = \backend\models\Contact::getContact();
                 <strong class="dohod-zelyonyi-h2"><?= BaseController::getMessage('824') ?></strong>
 
                 <div class="questions-accordion-menu">
-                    
+                    <?php if (BaseController::getMessage('825') && BaseController::getMessage('826')) : ?>
                     <div class="accordion">
                         <button class="dohod-zelyonyi-text"><?= BaseController::getMessage('825') ?></button>
                     </div>    
                     <div class="panel">
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('826') ?></p>
                     </div>
+                    <?php endif; ?>
+                    <?php if (BaseController::getMessage('827') && BaseController::getMessage('828')) : ?>
                     <div class="accordion">
                         <button class="dohod-zelyonyi-text"><?= BaseController::getMessage('827') ?></button>
-                    </div>    
+                    </div>
                     <div class="panel">
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('828') ?></p>
                     </div>
+                    <?php endif; ?>
+                    <?php if (BaseController::getMessage('829') && BaseController::getMessage('830')) : ?>
                     <div class="accordion">
                         <button class="dohod-zelyonyi-text"><?= BaseController::getMessage('829') ?></button>
-                    </div>    
+                    </div>
                     <div class="panel">
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('830') ?></p>
                     </div>
+                    <?php endif; ?>
+                    <?php if (BaseController::getMessage('831') && BaseController::getMessage('832')) : ?>
                     <div class="accordion">
                         <button class="dohod-zelyonyi-text"><?= BaseController::getMessage('831') ?></button>
-                    </div>    
+                    </div>
                     <div class="panel">
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('832') ?></p>
                     </div>
+                    <?php endif; ?>
+                    <?php if (BaseController::getMessage('833') && BaseController::getMessage('834')) : ?>
                     <div class="accordion">
                         <button class="dohod-zelyonyi-text"><?= BaseController::getMessage('833') ?></button>
                     </div>    
                     <div class="panel">
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('834') ?></p>
                     </div>
+                    <?php endif; ?>
+                    <?php if (BaseController::getMessage('835') && BaseController::getMessage('836')) : ?>
                     <div class="accordion">
                         <button class="dohod-zelyonyi-text"><?= BaseController::getMessage('835') ?></button>
                     </div>    
                     <div class="panel">
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('836') ?></p>
                     </div>
-
+                    <?php endif; ?>
                 </div>
 
             </div>

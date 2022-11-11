@@ -5,9 +5,7 @@
             <div class="seo-article-wrap">
                 <?= $seo_data['article_body'][Yii::$app->language] ?>
             </div>
-            <span class="seo-article-opener">
-                        <i class="icon-angle-right"></i>
-                    </span>
+            <span class="seo-article-opener"><i class="icon-angle-right"></i></span>
         </div>
     </div>
 <?php endif; ?>
