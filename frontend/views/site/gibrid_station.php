@@ -182,7 +182,7 @@ $contacts = \backend\models\Contact::getContact();
                     <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('783') ?></p>
                 </div>
                 <div class="integrated-approach-item">
-                    <div class="integrated-approach-img" style='background-image: url("/img/dohod-zelyonyi-tarif/installation.jpg")'></div>
+                    <div class="integrated-approach-img" style='background-image: url("/img/landing/new-equipment.jpg")'></div>
                     <strong class="integrated-subtitle"><?= BaseController::getMessage('784') ?></strong>
                     <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('785') ?></p>
                 </div>
@@ -264,7 +264,7 @@ $contacts = \backend\models\Contact::getContact();
             <strong class="integrated-subtitle stages-subtitle"><?= BaseController::getMessage('794') ?></strong>
                 <div class="solar-station-inner">
                     <div class="solar-station-item">
-                        <img data-src="/img/landing/first-slide.jpg" width="650" height="350" alt="house with solar panels">
+                        <img data-src="/img/landing/equipment-slide-1.jpg" width="650" height="350" alt="house with solar panels">
                     </div>
                     <!--<div class="solar-station-slider">
 
@@ -285,24 +285,18 @@ $contacts = \backend\models\Contact::getContact();
                     </div>-->
 
                     <div class="solar-station-content">
-                        <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('795') ?>  29,26 кВт</strong>
+                        <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('795') ?></strong>
                         <div class="station-content-items">
-                            <div class="station-content-item">
-                                <ul class="station-content-list">
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('796') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('797') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('798') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('799') ?>:</li>
-                                </ul>
-                            </div>
-                            <div class="station-content-item">
-                                <ul class="station-content-list station-content-price">
-                                    <li class="dohod-zelyonyi-text">17 726 <?= BaseController::getMessage('800') ?></li>
-                                    <li class="dohod-zelyonyi-text">$2 764</li>
-                                    <li class="dohod-zelyonyi-text">29,26 кВт</li>
-                                    <li class="dohod-zelyonyi-text">5 <?= BaseController::getMessage('801') ?></li>
-                                </ul>
-                            </div>
+                            <ul class="station-content-list">
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('796') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('842') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('797') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('843') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('798') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('844') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('799') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('845') ?></li>
+                            </ul>
                         </div>
                     </div>
 
@@ -310,7 +304,7 @@ $contacts = \backend\models\Contact::getContact();
 <!-- 2 slider -->
                 <div class="solar-station-inner  solar-slider-revers">
                     <div class="solar-station-item">
-                        <img data-src="/img/landing/second-slide.jpg" width="650" height="350" alt="house with solar panels">
+                        <img data-src="/img/landing/equipment-slide-2.jpg" width="650" height="350" alt="house with solar panels">
                     </div>
                    <!-- <div class="solar-station-slider">
 
@@ -351,24 +345,18 @@ $contacts = \backend\models\Contact::getContact();
                     </div>-->
 
                     <div class="solar-station-content">
-                        <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('685') ?> 28,21 кВт</strong>
+                        <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('	858') ?></strong>
                         <div class="station-content-items">
-                            <div class="station-content-item">
-                                <ul class="station-content-list">
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('802') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('797') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('798') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('799') ?>:</li>
-                                </ul>
-                            </div>
-                            <div class="station-content-item">
-                                <ul class="station-content-list station-content-price">
-                                    <li class="dohod-zelyonyi-text">39 630 <?= BaseController::getMessage('800') ?></li>
-                                    <li class="dohod-zelyonyi-text">$5 956</li>
-                                    <li class="dohod-zelyonyi-text">28,21 кВт</li>
-                                    <li class="dohod-zelyonyi-text">5 <?= BaseController::getMessage('801') ?></li>
-                                </ul>
-                            </div>
+                            <ul class="station-content-list">
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('802') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('846') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('797') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('847') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('798') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('848') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('799') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('849') ?></li>
+                            </ul>
                         </div>
                     </div>
 
@@ -376,7 +364,7 @@ $contacts = \backend\models\Contact::getContact();
 <!-- 3 slider -->
                 <div class="solar-station-inner">
                     <div class="solar-station-item">
-                        <img data-src="/img/landing/third-slide.jpg" width="650" height="350" alt="house with solar panels">
+                        <img data-src="/img/landing/equipment-slide-3.jpg" width="650" height="350" alt="house with solar panels">
                     </div>
                     <!--<div class="solar-station-slider">
 
@@ -423,24 +411,18 @@ $contacts = \backend\models\Contact::getContact();
                     </div>-->
 
                     <div class="solar-station-content">
-                        <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('685') ?> 29,26 кВт</strong>
+                        <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('	859') ?></strong>
                         <div class="station-content-items">
-                            <div class="station-content-item">
-                                <ul class="station-content-list">
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('686') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('687') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('688') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('689') ?>:</li>
-                                </ul>
-                            </div>
-                            <div class="station-content-item">
-                                <ul class="station-content-list station-content-price">
-                                    <li class="dohod-zelyonyi-text">21 317 <?= BaseController::getMessage('800') ?></li>
-                                    <li class="dohod-zelyonyi-text">$3 427</li>
-                                    <li class="dohod-zelyonyi-text">16,12 кВт</li>
-                                    <li class="dohod-zelyonyi-text">3 <?= BaseController::getMessage('803') ?></li>
-                                </ul>
-                            </div>
+                            <ul class="station-content-list">
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('854') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('850') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('855') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('851') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('856') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('852') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('857') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('853') ?></li>
+                            </ul>
                         </div>
                     </div>
 

@@ -2377,9 +2377,9 @@ a.advantages-btn{font-size:20px;line-height:24px}
 .solar-station-content{padding: 0 15px;}
 .solar-station-content strong{font-weight:600}
 .station-content-items{display:flex;justify-content:space-between}
-.station-content-item{width:50%}
-.station-content-list{list-style-type:none;padding-left:0;margin-left:0;display:block}
-.station-content-list li{padding-bottom:20px;display:block}
+.station-content-list{list-style-type:none;padding:0;margin:0;display:flex;flex-wrap: wrap;width: 100%;}
+.station-content-list li{width:50%;padding-bottom:20px;display:block}
+.station-content-list li:nth-child(even){padding-left: 20px;}
 .station-content-price{padding-left:52px;padding-top:18px}
 @media screen and (max-width:435px){
 .solar-station-income .dohod-zelyonyi-h2{max-width:340px;width:100%;margin:0 auto;margin-bottom:25px}
@@ -2389,11 +2389,11 @@ a.advantages-btn{font-size:20px;line-height:24px}
 }
 @media screen and (min-width:768px){
 .solar-station-inner{display:flex;justify-content:space-between;align-items:center}
-.solar-station-item {width: 50%;}
+.solar-station-item {width: 50%;margin-bottom: 0}
 .solar-station-content,.solar-station-slider{width:50%}
 .solar-station-content{max-width:450px;}
 .solar-slider-revers{flex-direction:row-reverse}
-.solar-station-content strong{font-size:20px;line-height:1.2}
+.solar-station-content strong{display: block;font-size:20px;line-height:1.2;margin-bottom: 20px;}
 .station-content-price{padding-top:18px}
 }
 @media screen and (min-width:1024px){
