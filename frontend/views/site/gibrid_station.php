@@ -345,7 +345,7 @@ $contacts = \backend\models\Contact::getContact();
                     </div>-->
 
                     <div class="solar-station-content">
-                        <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('	858') ?></strong>
+                        <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('858') ?></strong>
                         <div class="station-content-items">
                             <ul class="station-content-list">
                                 <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('802') ?></li>
@@ -411,7 +411,7 @@ $contacts = \backend\models\Contact::getContact();
                     </div>-->
 
                     <div class="solar-station-content">
-                        <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('	859') ?></strong>
+                        <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('859') ?></strong>
                         <div class="station-content-items">
                             <ul class="station-content-list">
                                 <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('854') ?></li>
