@@ -271,10 +271,10 @@ $contacts = \backend\models\Contact::getContact();
 								<span class="logo-text"><?= BaseController::getMessage('406') ?></span>
 							</a>
 						</strong>
-						<div class="copyright">
-							<p><?= BaseController::getMessage('15') ?></p>
-							<a href="<?= \yii\helpers\Url::to(['/']); ?>">&copy; SUNSAY Energy <?= date('Y'); ?></a>
-						</div>
+                        <div class="copyright">
+                            <p><a href="<?= \yii\helpers\Url::to(['/']); ?>">&copy; SUNSAY Energy <?= date('Y'); ?></a></p>
+                            <p><?= BaseController::getMessage('15') ?> <a href="<?= (Yii::$app->language=='ua') ? 'https://inweb.ua/ua/ppc/' : 'https://inweb.ua/ppc/' ?>" target="_blank">Inweb</a></p>
+                        </div>
 					</div>
 					<div class="footer__nav-menu">
 						<strong class="title h4"><?= BaseController::getMessage('1') ?></strong>
@@ -351,9 +351,10 @@ $contacts = \backend\models\Contact::getContact();
 		<div class="footer-mobile-bottom">
 			<div class="container">
 				<a href="#footer-newsletter" class="button newsletter-opener"><?= BaseController::getMessage('410') ?></a>
-				<div class="copyright">
-					<p><?= BaseController::getMessage('15') ?> &copy; SUNSAY Energy <?= date('Y'); ?></p>
-				</div>
+                <div class="copyright">
+                    <p><a href="<?= \yii\helpers\Url::to(['/']); ?>">&copy; SUNSAY Energy <?= date('Y'); ?></a></p>
+                    <p><?= BaseController::getMessage('15') ?> <a href="<?= (Yii::$app->language=='ua') ? 'https://inweb.ua/ua/ppc/' : 'https://inweb.ua/ppc/' ?>" target="_blank">Inweb</a></p>
+                </div>
 			</div>
 		</div>
     </footer>
