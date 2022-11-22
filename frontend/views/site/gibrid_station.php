@@ -198,9 +198,15 @@ $contacts = \backend\models\Contact::getContact();
     <section class="service-miscount">
 		<div class="container">
 			<strong class="dohod-zelyonyi-h2"><?= BaseController::getMessage('788') ?></strong>
-            <strong class="integrated-subtitle"><?= BaseController::getMessage('789') ?></strong>
+<!--            <strong class="integrated-subtitle">--><?//= BaseController::getMessage('789') ?><!--</strong>-->
             <div class="service-miscount__content">
-                <?= BaseController::getMessage('728') ?>
+                <div class="iframe-wrap">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/H7JOiK_lBPw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+                <?/*= BaseController::getMessage('728') */?>
             </div>
         </div>
     </section>
