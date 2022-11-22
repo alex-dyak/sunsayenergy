@@ -288,7 +288,7 @@ $contacts = \backend\models\Contact::getContact();
 						</strong>
 						<div class="copyright">
 							<p><a href="<?= \yii\helpers\Url::to(['/']); ?>">&copy; SUNSAY Energy <?= date('Y'); ?></a></p>
-							<p><?= BaseController::getMessage('15') ?> <a href="<?= (Yii::$app->language=='ua') ? 'https://inweb.ua/ua/ppc/' : 'https://inweb.ua/ppc/' ?>" target="_blank">Inweb</a></p>
+							<p style="max-width: 115px;margin: 0 auto"><?= BaseController::getMessage('15') ?> <a href="<?= (Yii::$app->language=='ua') ? 'https://inweb.ua/ua/ppc/' : 'https://inweb.ua/ppc/' ?>" target="_blank">Inweb</a></p>
 						</div>
 					</div>
 					<div class="footer__nav-menu">
