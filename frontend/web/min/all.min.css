@@ -1085,7 +1085,7 @@ a:not([class]):hover{color:#ffd100}
 @media only screen and (min-width:1024px){
 .company-info{display:flex;flex-direction:column;justify-content:space-between;max-width:20%}
 }
-.company-info .copyright{font-size:16px;line-height:1.5;color:#393939}
+.company-info .copyright{text-align: center;font-size:16px;font-weight: 500;line-height:1.5;color:#393939}
 .company-info .copyright a{font-weight:500;color:#393939}
 .company-info .copyright a:hover{font-weight:500;color:#ababab}
 .footer__nav{background:#ffd100;padding:35px 0}
