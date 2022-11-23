@@ -1709,15 +1709,10 @@ a:not([class]):hover{color:#ffd100}
 .service-pros-text p:last-of-type{margin-bottom:60px}
 .service-pros-text .button{min-width:330px;padding:25px;font-size:16px}
 }
-.iframe-wrap{
-    position: relative;width: 100%;height: 0;}
+.iframe-wrap{position: relative;width: 100%;height: 0;padding-bottom: 56.25%;}
 .iframe-wrap iframe{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
 @media screen and (min-width:1024px){
-    .iframe-wrap{
-        width: 50%;
-        margin: 0 auto;
-        padding-bottom: 28.16%
-    }
+    .iframe-wrap{ width: 50%;margin: 0 auto;padding-bottom: 28.12%}
 }
 .service-miscount{margin:0 0 30px;z-index:2}
 .service-miscount .line-title{text-align:center;margin-bottom:30px}
@@ -2205,7 +2200,7 @@ a:not([class]):hover{color:#ffd100}
 .dohod-zelyonyi-section:before{content: '';position: absolute;top: 0;bottom: 0;left: 0;right: 0;background-image: linear-gradient(145deg, rgba(0,0,0,.65), rgba(0,0,0,0));}
 .dohod-zelyonyi-wrapper{position: relative;margin-top:200px;margin-bottom:53px}
 .dohod-zelyonyi-inner{margin-bottom:50px}
-.dohod-zelyonyi-inner h1{font-family:"Bebas Neue Cyrillic",sans-serif;margin-bottom:32px;font-size:50px;line-height:50px;text-transform:uppercase;color:#fff;display:block;max-width:270px}
+.dohod-zelyonyi-inner h1{font-family:"Bebas Neue Cyrillic",sans-serif;margin-bottom:32px;font-size:40px;line-height:1;text-transform:uppercase;color:#fff;display:block;max-width:270px}
 .dohod-zelyonyi-list{margin-left:0;padding-left:52px;color:#fff}
 .dohod-zelyonyi-list li{list-style:none;position:relative;padding-bottom:22px}
 .dohod-zelyonyi-list .dohod-zelyonyi-text{max-width:304px}
@@ -2239,14 +2234,14 @@ a:not([class]):hover{color:#ffd100}
 .people-icon::before{background-position:0 -185px;height:66px}
 .support-icon::before{background-position:-130px -185px}
 @media screen and (min-width:450px){
-.dohod-zelyonyi-inner h1{max-width:370px}
+.dohod-zelyonyi-inner h1{max-width:370px;font-size: 50px;}
 }
 @media screen and (min-width:600px){
 .dohod-zelyonyi-inner h1{max-width:485px}
 }
 @media screen and (min-width:768px){
 .dohod-zelyonyi-section{background-image:url(../img/landing/hero-img.jpg);background-size:cover;background-repeat:no-repeat;background-position:50% 50%;margin-top:-165px}
-.dohod-zelyonyi-inner h1{font-size:60px;line-height:60px;margin-top:0}
+.dohod-zelyonyi-inner h1{font-size:60px;margin-top:0}
 .dohod-zelyonyi-list{padding-left:102px}
 .portmone-icon::before{left:-100px}
 .euro-icon::before{left:-105px}
