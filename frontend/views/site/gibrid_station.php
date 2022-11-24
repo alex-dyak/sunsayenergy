@@ -22,7 +22,7 @@ $contacts = \backend\models\Contact::getContact();
 		</div>
  <!-- start info -->
 
-    <section class="dohod-zelyonyi-section">
+    <section class="dohod-zelyonyi-section landing">
         <div class="container">
             <div class="dohod-zelyonyi-wrapper">
 

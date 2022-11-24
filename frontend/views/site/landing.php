@@ -58,6 +58,7 @@ $contacts = \backend\models\Contact::getContact();
                                        placeholder="<?= BaseController::getMessage('366') ?>">
                                 <label for="phone" class="hidden">Телефон</label>
                                 <input class="custom-field" id="phone" type="text" name="phone" placeholder="+380">
+                                <span class="error-msg"><?= BaseController::getMessage('839') ?></span>
 
                                 <input type="hidden" name="email" value="new_landing_request@gmail.com" >
                                 <input type="hidden" name="question" value="new_landing_question" >
@@ -227,6 +228,7 @@ $contacts = \backend\models\Contact::getContact();
                                 <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
                                 <label for="phone" class="hidden">Телефон</label>
                                 <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+                                <span class="error-msg"><?= BaseController::getMessage('839') ?></span>
 
                                 <input type="hidden" name="email" value="new_landing_request@gmail.com" >
                                 <input type="hidden" name="question" value="new_landing_question" >
@@ -274,24 +276,20 @@ $contacts = \backend\models\Contact::getContact();
 
                     <div class="solar-station-content">
                         <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('685') ?>  29,26 кВт</strong>
+
                         <div class="station-content-items">
-                            <div class="station-content-item">
-                                <ul class="station-content-list">
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('686') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('687') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('688') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('689') ?>:</li>
-                                </ul>
-                            </div>
-                            <div class="station-content-item">
-                                <ul class="station-content-list station-content-price">
-                                    <li class="dohod-zelyonyi-text">17 726 <?= BaseController::getMessage('690') ?></li>
-                                    <li class="dohod-zelyonyi-text">$2 764</li>
-                                    <li class="dohod-zelyonyi-text">29,26 кВт</li>
-                                    <li class="dohod-zelyonyi-text">5 <?= BaseController::getMessage('691') ?></li>
-                                </ul>
-                            </div>
+                            <ul class="station-content-list">
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('686') ?>:</li>
+                                <li class="dohod-zelyonyi-text">17 726 <?= BaseController::getMessage('690') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('687') ?>:</li>
+                                <li class="dohod-zelyonyi-text">$2 764</li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('688') ?>:</li>
+                                <li class="dohod-zelyonyi-text">29,26 кВт</li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('689') ?>:</li>
+                                <li class="dohod-zelyonyi-text">5 <?= BaseController::getMessage('691') ?></li>
+                            </ul>
                         </div>
+
                     </div>
 
                 </div>
@@ -339,22 +337,16 @@ $contacts = \backend\models\Contact::getContact();
                     <div class="solar-station-content">
                         <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('685') ?> 28,21 кВт</strong>
                         <div class="station-content-items">
-                            <div class="station-content-item">
-                                <ul class="station-content-list">
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('692') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('687') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('688') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('689') ?>:</li>
-                                </ul>
-                            </div>
-                            <div class="station-content-item">
-                                <ul class="station-content-list station-content-price">
-                                    <li class="dohod-zelyonyi-text">39 630 <?= BaseController::getMessage('690') ?></li>
-                                    <li class="dohod-zelyonyi-text">$5 956</li>
-                                    <li class="dohod-zelyonyi-text">28,21 кВт</li>
-                                    <li class="dohod-zelyonyi-text">5 <?= BaseController::getMessage('691') ?></li>
-                                </ul>
-                            </div>
+                            <ul class="station-content-list">
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('692') ?>:</li>
+                                <li class="dohod-zelyonyi-text">39 630 <?= BaseController::getMessage('690') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('687') ?>:</li>
+                                <li class="dohod-zelyonyi-text">$5 956</li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('688') ?>:</li>
+                                <li class="dohod-zelyonyi-text">28,21 кВт</li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('689') ?>:</li>
+                                <li class="dohod-zelyonyi-text">5 <?= BaseController::getMessage('691') ?></li>
+                            </ul>
                         </div>
                     </div>
 
@@ -408,23 +400,18 @@ $contacts = \backend\models\Contact::getContact();
 
                     <div class="solar-station-content">
                         <strong class="dohod-zelyonyi-text"><?= BaseController::getMessage('685') ?> 29,26 кВт</strong>
+
                         <div class="station-content-items">
-                            <div class="station-content-item">
-                                <ul class="station-content-list">
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('686') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('687') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('688') ?>:</li>
-                                    <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('689') ?>:</li>
-                                </ul>
-                            </div>
-                            <div class="station-content-item">
-                                <ul class="station-content-list station-content-price">
-                                    <li class="dohod-zelyonyi-text">21 317 <?= BaseController::getMessage('690') ?></li>
-                                    <li class="dohod-zelyonyi-text">$3 427</li>
-                                    <li class="dohod-zelyonyi-text">16,12 кВт</li>
-                                    <li class="dohod-zelyonyi-text">3 <?= BaseController::getMessage('693') ?></li>
-                                </ul>
-                            </div>
+                            <ul class="station-content-list">
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('686') ?>:</li>
+                                <li class="dohod-zelyonyi-text">21 317 <?= BaseController::getMessage('690') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('687') ?>:</li>
+                                <li class="dohod-zelyonyi-text">$3 427</li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('688') ?>:</li>
+                                <li class="dohod-zelyonyi-text">16,12 кВт</li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('689') ?>:</li>
+                                <li class="dohod-zelyonyi-text">3 <?= BaseController::getMessage('693') ?></li>
+                            </ul>
                         </div>
                     </div>
 
@@ -538,6 +525,7 @@ $contacts = \backend\models\Contact::getContact();
                             <input class="custom-field" type="text" id="fullname" name="fullname" placeholder="<?= BaseController::getMessage('366') ?>">
                             <label for="phone" class="hidden">Телефон</label>
                             <input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
+                            <span class="error-msg"><?= BaseController::getMessage('839') ?></span>
 
                             <input type="hidden" name="email" value="new_landing_request@gmail.com" >
                             <input type="hidden" name="question" value="new_landing_question" >
