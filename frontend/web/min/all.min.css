@@ -2196,8 +2196,9 @@ a:not([class]):hover{color:#ffd100}
 @media screen and (min-width:1440px){
 .logo-row ul li{width:14%}
 }
-.dohod-zelyonyi-section{position: relative;background-image:url(../img/landing/hero-img-mob.jpg);background-size:cover;background-repeat:no-repeat;background-position:center;overflow:hidden;margin-top:-218px;margin-bottom:42px}
-.dohod-zelyonyi-section:before{content: '';position: absolute;top: 0;bottom: 0;left: 0;right: 0;background-image: linear-gradient(145deg, rgba(0,0,0,.65), rgba(0,0,0,0));}
+.dohod-zelyonyi-section{position: relative;background-image:url(../img/dohod-zelyonyi-tarif/dohod-zelyonyi-mobile-bg.jpg);background-size:cover;background-repeat:no-repeat;background-position:center;overflow:hidden;margin-top:-218px;margin-bottom:42px}
+.dohod-zelyonyi-section.landing{background-image:url(../img/landing/hero-img-mob.jpg);}
+.dohod-zelyonyi-section.landing:before{content: '';position: absolute;top: 0;bottom: 0;left: 0;right: 0;background-image: linear-gradient(145deg, rgba(0,0,0,.65), rgba(0,0,0,0));}
 .dohod-zelyonyi-wrapper{position: relative;margin-top:200px;margin-bottom:53px}
 .dohod-zelyonyi-inner{margin-bottom:50px}
 .dohod-zelyonyi-inner h1{font-family:"Bebas Neue Cyrillic",sans-serif;margin-bottom:32px;font-size:40px;line-height:1;text-transform:uppercase;color:#fff;display:block;max-width:270px}
@@ -2240,7 +2241,8 @@ a:not([class]):hover{color:#ffd100}
 .dohod-zelyonyi-inner h1{max-width:485px}
 }
 @media screen and (min-width:768px){
-.dohod-zelyonyi-section{background-image:url(../img/landing/hero-img.jpg);background-size:cover;background-repeat:no-repeat;background-position:50% 50%;margin-top:-165px}
+.dohod-zelyonyi-section{background-image:url(../img/dohod-zelyonyi-tarif/dohod-zelyonyi-bg.jpg);margin-top:-165px}
+.dohod-zelyonyi-section.landing{background-image:url(../img/landing/hero-img.jpg)}
 .dohod-zelyonyi-inner h1{font-size:60px;margin-top:0}
 .dohod-zelyonyi-list{padding-left:102px}
 .portmone-icon::before{left:-100px}
