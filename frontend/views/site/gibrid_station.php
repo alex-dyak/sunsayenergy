@@ -356,11 +356,11 @@ $contacts = \backend\models\Contact::getContact();
                             <ul class="station-content-list">
                                 <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('802') ?></li>
                                 <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('846') ?></li>
-                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('797') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('860') ?></li>
                                 <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('847') ?></li>
-                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('798') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('861') ?></li>
                                 <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('848') ?></li>
-                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('799') ?></li>
+                                <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('862') ?></li>
                                 <li class="dohod-zelyonyi-text"><?= BaseController::getMessage('849') ?></li>
                             </ul>
                         </div>
