@@ -1,6 +1,6 @@
 // Initial google maps
 function initMap() {
-	let myLatLng = { lat: 50.4495953, lng: 30.4200102 },
+	let myLatLng = { lat: 50.44494, lng: 30.41217 },
 		centerLatLng = myLatLng,
 		width = $(window).width();
 

@@ -1,30 +1,24 @@
 function initMap() {
     let myLatLng = {
-            lat: 50.4495953,
-            lng: 30.4200102
+            lat: 50.44494,
+            lng: 30.41217
         },
         centerLatLng = myLatLng,
         width = $(window).width();
     if (width <= 1024 || width >= 768)
         centerLatLng = {
-            lat: 50.449657,
-            lng: 30.410977
+            lat: 50.44494,
+            lng: 30.41217
         };
+    if ($(window).width() < 768) {
+        centerLatLng = {
+            lat: 50.44494,
+            lng: 30.41217
+        };
+     }
+     else {
 
-    
-                  
-        if ($(window).width() < 768) {
-
-
-    
-            centerLatLng = {
-                lat: 50.449736,
-                lng: 30.419983
-            };
-         }
-         else {
-           
-         }
+     }
           
      
 
