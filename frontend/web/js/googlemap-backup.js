@@ -5,7 +5,7 @@ function initMap() {
 		width = $(window).width();
 
 	if (width <= 1024 || width >= 768)
-		centerLatLng = { lat: 50.449657, lng: 30.410977 };
+		centerLatLng = { lat: 50.44494, lng: 30.41217 };
 
 	let image = {
 		url: '../img/icon/marker.png',
