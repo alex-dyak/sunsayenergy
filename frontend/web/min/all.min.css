@@ -2410,7 +2410,7 @@ a.advantages-btn{font-size:20px;line-height:24px}
 .about-company-sansay .dohod-zelyonyi-h2,.about-company-sansay .integrated-subtitle{text-align:left}
 .company-project-items{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:20px}
 .company-project-item{font-family:"Bebas Neue Cyrillic",sans-serif;font-weight:700;width:50%;max-width:250px;margin-right:30px}
-.company-project-item strong{font-size:60px;line-height:1;padding-bottom:22px;text-transform:uppercase;display:inline-block}
+.company-project-item strong{font-family:Montserrat,sans-serif;font-size:60px;line-height:1;padding-bottom:22px;text-transform:uppercase;display:inline-block}
 .company-project-item span{font-size:20px;line-height:20px;padding-left:8px}
 .company-project-item .integrated-subtitle{padding-bottom:0;text-align:left;font-weight:500}
 .company-project-text .dohod-zelyonyi-text{font-weight:600}
