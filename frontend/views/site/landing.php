@@ -436,11 +436,11 @@ $contacts = \backend\models\Contact::getContact();
 
                     <div class="company-project-items">
                         <div class="company-project-item">
-                            <strong>4<span><?= BaseController::getMessage('698') ?></span></strong>
+                            <strong><?= BaseController::getMessage('863') ?><span><?= BaseController::getMessage('698') ?></span></strong>
                             <p class="integrated-subtitle"><?= BaseController::getMessage('699') ?></p>
                         </div>
                         <div class="company-project-item">
-                            <strong>165<span><?= BaseController::getMessage('700') ?></span></strong>
+                            <strong><?= BaseController::getMessage('864') ?><span><?= BaseController::getMessage('700') ?></span></strong>
                             <p class="integrated-subtitle">
                                 <?= BaseController::getMessage('701') ?>
                             </p>                                                                  
