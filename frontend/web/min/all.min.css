@@ -2233,7 +2233,7 @@ a:not([class]):hover{color:#ffd100}
 .calculation-icon::before{background-position:-65px -185px}
 .guarantee-icon::before{background-position:-171px -93px;height:66px}
 .people-icon::before{background-position:0 -185px;height:66px}
-.support-icon::before{background-position:-130px -185px}
+.support-icon::before{background-image: url(../img/dohod-zelyonyi-tarif/support-img.png);background-position: 50% 50%;background-size: contain;background-repeat: no-repeat;}
 @media screen and (min-width:450px){
 .dohod-zelyonyi-inner h1{max-width:370px;font-size: 50px;}
 }
@@ -2271,7 +2271,7 @@ a:not([class]):hover{color:#ffd100}
 .calculation-icon::before{background-position:-184px 0}
 .guarantee-icon::before{background-position:0 0;width:92px;height:93px}
 .people-icon::before{background-position:-92px 0;width:92px;height:93px}
-.support-icon::before{background-position:0 -93px}
+/*.support-icon::before{background-position:0 -93px}*/
 }
 .dohod-private-house{margin-bottom:25px}
 .dohod-zelyonyi-h2{font-family:"Bebas Neue Cyrillic",sans-serif;font-weight:400;font-size:30px;line-height:30px;color:#393939;text-transform:uppercase;margin-bottom:25px;text-align:center;display:block}
