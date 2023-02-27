@@ -118,7 +118,7 @@ $contacts = \backend\models\Contact::getContact();
                     </ul>
                 </div>
                 <div class="privat-house-img">
-                    <img class="house-img" data-src="/img/dohod-zelyonyi-tarif/house-icon.png" alt="house">
+                    <img class="house-img" data-src="/img/dohod-zelyonyi-tarif/house-icon.png" width="335" height="305" alt="house" loading="lazy">
                 </div>
             </div>
         </div>
@@ -165,18 +165,18 @@ $contacts = \backend\models\Contact::getContact();
             <strong class="integrated-subtitle"><?= BaseController::getMessage('671') ?></strong>
             <div class="integrated-approach-items">
                 <div class="integrated-approach-item">
-                    <img class="integrated-approach-img" data-src="/img/dohod-zelyonyi-tarif/dron.jpg" alt="дрон">
+                    <img class="integrated-approach-img" width="385" height="230"src="/img/dohod-zelyonyi-tarif/dron.jpg" alt="дрон" loading="lazy">
                     <strong class="integrated-subtitle"><?= BaseController::getMessage('672') ?></strong>
                     <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('673') ?></p>
                 </div>
                 <div class="integrated-approach-item">
-                    <img class="integrated-approach-img" data-src="/img/dohod-zelyonyi-tarif/installation.jpg"
+                    <img class="integrated-approach-img" width="385" height="230"src="/img/dohod-zelyonyi-tarif/installation.jpg"  loading="lazy"
                          alt="монтаж солнечных панелей">
                     <strong class="integrated-subtitle"><?= BaseController::getMessage('674') ?></strong>
                     <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('675') ?></p>
                 </div>
                 <div class="integrated-approach-item">
-                    <img class="integrated-approach-img" data-src="/img/dohod-zelyonyi-tarif/house_with_panels.jpg"
+                    <img class="integrated-approach-img" width="385" height="230"src="/img/dohod-zelyonyi-tarif/house_with_panels.jpg"  loading="lazy"
                          alt="дом с солнечными панелями">
                     <strong class="integrated-subtitle"><?= BaseController::getMessage('676') ?></strong>
                     <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('677') ?></p>
@@ -210,8 +210,8 @@ $contacts = \backend\models\Contact::getContact();
                     </div>
                 </div>
                 <div class="energy-img">
-                    <img class="energy-seo-mob" data-src="/img/dohod-zelyonyi-tarif/ceo_1.png" alt="Dmitrij Zinkevich">
-                    <img class="energy-seo-desk" data-src="/img/dohod-zelyonyi-tarif/ceo_2.png" alt="Dmitrij Zinkevich">
+                    <img class="energy-seo-mob" src="/img/dohod-zelyonyi-tarif/ceo_1.png" width="290" height="468" alt="Dmitrij Zinkevich" loading="lazy">
+                    <img class="energy-seo-desk" src="/img/dohod-zelyonyi-tarif/ceo_2.png" width="370" height="600"  alt="Dmitrij Zinkevich" loading="lazy">
                 </div>
                 <div class="dohod-zelyonyi-form energy-form">
                     <div class="zelyonyi-form-bg energy-bg">
@@ -257,19 +257,19 @@ $contacts = \backend\models\Contact::getContact();
                     <div class="solar-station-slider">
 
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_1.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_1.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_2.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_2.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_3.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_3.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_4.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_4.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_5.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/dmytrivka_5.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
 
                     </div>
@@ -299,37 +299,37 @@ $contacts = \backend\models\Contact::getContact();
                     <div class="solar-station-slider">
 
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/pluty_1.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_1.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/pluty_2.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_2.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/pluty_3.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_3.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/pluty_4.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_4.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/pluty_5.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_5.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/pluty_6.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_6.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/pluty_7.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_7.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/pluty_8.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_8.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/pluty_9.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_9.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/pluty_10.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_10.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/pluty_11.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/pluty_11.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
 
                     </div>
@@ -357,43 +357,43 @@ $contacts = \backend\models\Contact::getContact();
                     <div class="solar-station-slider">
 
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/bortnichi_1.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_1.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/bortnichi_2.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_2.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/bortnichi_3.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_3.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/bortnichi_4.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_4.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/bortnichi_5.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_5.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/bortnichi_6.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_6.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/bortnichi_7.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_7.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/bortnichi_8.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_8.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/bortnichi_9.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_9.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/bortnichi_10.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_10.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/bortnichi_11.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_11.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/bortnichi_12.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_12.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
                         <div class="solar-station-item">
-                            <img data-src="/img/dohod-zelyonyi-tarif/slider/bortnichi_13.jpg" alt="house with solar panels">
+                            <img src="/img/dohod-zelyonyi-tarif/slider/bortnichi_13.jpg" alt="house with solar panels"  width="320" height="200" loading="lazy">
                         </div>
 
                     </div>
