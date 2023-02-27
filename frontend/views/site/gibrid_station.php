@@ -118,7 +118,7 @@ $contacts = \backend\models\Contact::getContact();
                     </ul>
                 </div>
                 <div class="privat-house-img">
-                    <img class="house-img" data-src="/img/landing/scheme-house.png" width="800" height="725" alt="house">
+                    <img class="house-img" data-src="/img/landing/scheme-house.png" width="800" height="725" alt="house" loading="lazy">
                 </div>
             </div>
         </div>
@@ -131,7 +131,7 @@ $contacts = \backend\models\Contact::getContact();
                 <div class="advantages-items">
                     <div class="advantages-green-item advantages-icon-vector">
                         <div class="dohod-zelyonyi-icon">
-                            <img src="/img/landing/personal.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                            <img src="/img/landing/personal.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>" loading="lazy">
                         </div>
                         <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('771') ?></strong>
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('772') ?></p>
@@ -140,7 +140,7 @@ $contacts = \backend\models\Contact::getContact();
                 <div class="advantages-items">
                     <div class="advantages-green-item  advantages-icon-group">
                         <div class="dohod-zelyonyi-icon">
-                            <img src="/img/landing/efficient.svg" width="58" height="58" alt="<?= BaseController::getMessage('773') ?>">
+                            <img src="/img/landing/efficient.svg" width="58" height="58" alt="<?= BaseController::getMessage('773') ?>" loading="lazy">
                         </div>
                         <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('773') ?></strong>
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('774') ?></p>
@@ -149,7 +149,7 @@ $contacts = \backend\models\Contact::getContact();
                 <div class="advantages-items">
                     <div class="advantages-green-item  advantages-icon-vector2">
                         <div class="dohod-zelyonyi-icon">
-                            <img src="/img/landing/reliable.svg" width="58" height="58" alt="<?= BaseController::getMessage('775') ?>">
+                            <img src="/img/landing/reliable.svg" width="58" height="58" alt="<?= BaseController::getMessage('775') ?>" loading="lazy">
                         </div>
                         <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('775') ?></strong>
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('776') ?></p>
@@ -158,7 +158,7 @@ $contacts = \backend\models\Contact::getContact();
                 <div class="advantages-items">
                     <div class="advantages-green-item  advantages-icon-group2">
                         <div class="dohod-zelyonyi-icon">
-                            <img src="/img/landing/comfort.svg" width="58" height="58" alt="<?= BaseController::getMessage('777') ?>">
+                            <img src="/img/landing/comfort.svg" width="58" height="58" alt="<?= BaseController::getMessage('777') ?>" loading="lazy">
                         </div>
                         <strong class="dohod-zelyonyi-subtitle"><?= BaseController::getMessage('777') ?></strong>
                         <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('778') ?></p>
@@ -177,17 +177,17 @@ $contacts = \backend\models\Contact::getContact();
             <strong class="integrated-subtitle"><?= BaseController::getMessage('781') ?></strong>
             <div class="integrated-approach-items">
                 <div class="integrated-approach-item">
-                    <div class="integrated-approach-img" style='background-image: url("/img/dohod-zelyonyi-tarif/dron.jpg")'></div>
+                    <div class="integrated-approach-img background-lazy" style="background-image: url('/img/logo.svg')" data-src="/img/dohod-zelyonyi-tarif/dron.jpg"></div>
                     <strong class="integrated-subtitle"><?= BaseController::getMessage('782') ?></strong>
                     <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('783') ?></p>
                 </div>
                 <div class="integrated-approach-item">
-                    <div class="integrated-approach-img" style='background-image: url("/img/landing/new-equipment.jpg")'></div>
+                    <div class="integrated-approach-img background-lazy" style="background-image: url('/img/logo.svg')" data-src="/img/landing/new-equipment.jpg"></div>
                     <strong class="integrated-subtitle"><?= BaseController::getMessage('784') ?></strong>
                     <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('785') ?></p>
                 </div>
                 <div class="integrated-approach-item">
-                    <div class="integrated-approach-img" style='background-image: url("/img/landing/green-tarif.jpg")'></div>
+                    <div class="integrated-approach-img background-lazy" style="background-image: url('/img/logo.svg')" data-src="/img/landing/green-tarif.jpg"></div>
                     <strong class="integrated-subtitle"><?= BaseController::getMessage('786') ?></strong>
                     <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('787') ?></p>
                 </div>
@@ -202,6 +202,7 @@ $contacts = \backend\models\Contact::getContact();
             <div class="service-miscount__content">
                 <div class="iframe-wrap">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/H7JOiK_lBPw"
+                            loading="lazy"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -226,8 +227,8 @@ $contacts = \backend\models\Contact::getContact();
                     </div>
                 </div>
                 <div class="energy-img">
-                    <img class="energy-seo-mob" data-src="/img/dohod-zelyonyi-tarif/ceo_1.png" alt="Dmitrij Zinkevich">
-                    <img class="energy-seo-desk" data-src="/img/dohod-zelyonyi-tarif/ceo_2.png" alt="Dmitrij Zinkevich">
+                    <img class="energy-seo-mob" src="/img/dohod-zelyonyi-tarif/ceo_1.png" width="290" height="468" alt="Dmitrij Zinkevich" loading="lazy">
+                    <img class="energy-seo-desk" src="/img/dohod-zelyonyi-tarif/ceo_2.png" width="370" height="600"  alt="Dmitrij Zinkevich" loading="lazy">
                 </div>
                 <div class="dohod-zelyonyi-form energy-form">
                     <div class="zelyonyi-form-bg energy-bg">
@@ -270,7 +271,7 @@ $contacts = \backend\models\Contact::getContact();
             <strong class="integrated-subtitle stages-subtitle"><?= BaseController::getMessage('794') ?></strong>
                 <div class="solar-station-inner">
                     <div class="solar-station-item">
-                        <img data-src="/img/landing/equipment-slide-1.jpg" width="650" height="350" alt="house with solar panels">
+                        <img loading="lazy" src="/img/landing/equipment-slide-1.jpg" width="650" height="350" alt="house with solar panels">
                     </div>
                     <!--<div class="solar-station-slider">
 
@@ -310,7 +311,7 @@ $contacts = \backend\models\Contact::getContact();
 <!-- 2 slider -->
                 <div class="solar-station-inner  solar-slider-revers">
                     <div class="solar-station-item">
-                        <img data-src="/img/landing/equipment-slide-2.jpg" width="650" height="350" alt="house with solar panels">
+                        <img loading="lazy" src="/img/landing/equipment-slide-2.jpg" width="650" height="350" alt="house with solar panels">
                     </div>
                    <!-- <div class="solar-station-slider">
 
@@ -370,7 +371,7 @@ $contacts = \backend\models\Contact::getContact();
 <!-- 3 slider -->
                 <div class="solar-station-inner">
                     <div class="solar-station-item">
-                        <img data-src="/img/landing/equipment-slide-3.jpg" width="650" height="350" alt="house with solar panels">
+                        <img loading="lazy" src="/img/landing/equipment-slide-3.jpg" width="650" height="350" alt="house with solar panels">
                     </div>
                     <!--<div class="solar-station-slider">
 
@@ -496,7 +497,7 @@ $contacts = \backend\models\Contact::getContact();
                 <div class="advantages-items stages-items">
                     <div class="advantages-green-item stages-item ">
                         <div class="dohod-zelyonyi-icon">
-                            <img src="/img/landing/needs.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                            <img loading="lazy" src="/img/landing/needs.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
                         </div>
                        <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('817') ?></p>
                     </div>                 
@@ -504,7 +505,7 @@ $contacts = \backend\models\Contact::getContact();
                 <div class="advantages-items stages-items">
                     <div class="advantages-green-item stages-item ">
                         <div class="dohod-zelyonyi-icon">
-                            <img src="/img/landing/unique.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                            <img loading="lazy" src="/img/landing/unique.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
                         </div>
                        <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('818') ?></p>
                     </div>                 
@@ -512,7 +513,7 @@ $contacts = \backend\models\Contact::getContact();
                 <div class="advantages-items stages-items">
                     <div class="advantages-green-item stages-item">
                         <div class="dohod-zelyonyi-icon">
-                            <img src="/img/landing/install.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                            <img loading="lazy" src="/img/landing/install.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
                         </div>
                        <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('819') ?></p>
                     </div>                 
@@ -520,7 +521,7 @@ $contacts = \backend\models\Contact::getContact();
                 <div class="advantages-items stages-items">
                     <div class="advantages-green-item stages-item stages-icon-contract">
                         <div class="dohod-zelyonyi-icon">
-                            <img src="/img/landing/integration.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                            <img loading="lazy" src="/img/landing/integration.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
                         </div>
                        <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('820') ?></p>
                     </div>                 
@@ -528,7 +529,7 @@ $contacts = \backend\models\Contact::getContact();
                 <div class="advantages-items stages-items">
                     <div class="advantages-green-item stages-item ">
                         <div class="dohod-zelyonyi-icon">
-                            <img src="/img/landing/connect.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
+                            <img loading="lazy" src="/img/landing/connect.svg" width="58" height="58" alt="<?= BaseController::getMessage('771') ?>">
                         </div>
                        <p class="dohod-zelyonyi-text"><?= BaseController::getMessage('821') ?></p>
                     </div>                 

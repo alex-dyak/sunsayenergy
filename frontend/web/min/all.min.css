@@ -2321,7 +2321,7 @@ a.advantages-btn{font-size:20px;line-height:24px}
 .integrated-approach-item .integrated-subtitle{text-align:left}
 .integrated-approach-items{margin-top:19px}
 .integrated-approach-item{margin-bottom:36px}
-.integrated-approach-img{display:block;width: 100%;height: 290px;margin:0 auto 25px;background-position: 50% 50%;background-size: cover;
+.integrated-approach-img{display:block;width: 100%;height:auto;margin:0 auto 25px;background-position: 50% 50%;background-size: cover;
     border-radius:6px;}
 @media screen and (min-width:768px){
 .integrated-approach-items{display:flex;flex-wrap:wrap;justify-content:space-between;align-content:center}
