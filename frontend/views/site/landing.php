@@ -185,15 +185,15 @@ $contacts = \backend\models\Contact::getContact();
         </div>
     </section>
 
-    <section class="service-miscount">
-		<div class="container">
-			<strong class="dohod-zelyonyi-h2"><?= BaseController::getMessage('678') ?></strong>
-            <strong class="integrated-subtitle"><?= BaseController::getMessage('679') ?></strong>
-            <div class="service-miscount__content">
+<!--    <section class="service-miscount">-->
+<!--		<div class="container">-->
+<!--			<strong class="dohod-zelyonyi-h2">--><?//= BaseController::getMessage('678') ?><!--</strong>-->
+<!--            <strong class="integrated-subtitle">--><?//= BaseController::getMessage('679') ?><!--</strong>-->
+<!--            <div class="service-miscount__content">-->
 <!--                --><?//= BaseController::getMessage('728') ?>
-            </div>
-        </div>
-    </section>
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
     <section class="energy-for-everyone">
         <div class="container">
