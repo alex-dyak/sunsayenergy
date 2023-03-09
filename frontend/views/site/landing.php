@@ -190,7 +190,7 @@ $contacts = \backend\models\Contact::getContact();
 			<strong class="dohod-zelyonyi-h2"><?= BaseController::getMessage('678') ?></strong>
             <strong class="integrated-subtitle"><?= BaseController::getMessage('679') ?></strong>
             <div class="service-miscount__content">
-                <?= BaseController::getMessage('728') ?>
+<!--                --><?//= BaseController::getMessage('728') ?>
             </div>
         </div>
     </section>
