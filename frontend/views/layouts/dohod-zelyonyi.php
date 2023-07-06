@@ -365,149 +365,149 @@ $contacts = \backend\models\Contact::getContact();
 <div class="overlay"></div>
 <!-- end modal overlay-->
 
-<div class="quiz-modal">
-	<div class="quiz-modal-close js_quiz_close">
-		<i class="icon-close"></i>
-	</div>
-	<div class="quiz-modal-container">
-		<form class="quiz-modal-form">
-			<input type="hidden" name="utm_source" <?php echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''?> >
-			<input type="hidden" name="utm_medium" <?php echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''?> >
-			<input type="hidden" name="utm_campaign" <?php echo !empty($_SESSION['utm_campaign']) ? ' value="' . $_SESSION['utm_campaign'] .'"': ''?> >
-			<input type="hidden" name="utm_content" <?php echo !empty($_SESSION['utm_content']) ? ' value="' . $_SESSION['utm_content'] .'"': ''?> >
-			<input type="hidden" name="utm_term" <?php echo !empty($_SESSION['utm_term']) ? ' value="' . $_SESSION['utm_term'] .'"': ''?> >
-			<div class="quiz-step quiz-intro-screen" style="display:block;">
-				<div class="bg-block"></div>
-				<div class="quiz-intro-content">
-					<strong class="quiz-title"><?= BaseController::getMessage('610') ?></strong>
-					<p><?= BaseController::getMessage('611') ?></p>
-					<span class="quiz-btn js_quiz_next" data-next="#quiz-question-1"><?= BaseController::getMessage('612') ?></span>
-					<span class="quiz-subtitle"><?= BaseController::getMessage('613') ?></span>
-					<ul class="quiz-bonus-list">
-						<li>
-							<div class="img-wrap">
-								<img src="/img/quiz/dron.svg" width="65" loading="lazy" alt="<?= BaseController::getMessage('614') ?>">
-							</div>
-							<span><?= BaseController::getMessage('614') ?></span>
-
-						</li>
-						<li>
-							<div class="img-wrap">
-								<img src="/img/quiz/desk.svg" width="38" loading="lazy" alt="<?= BaseController::getMessage('615') ?>">
-							</div>
-							<span><?= BaseController::getMessage('615') ?></span>
-
-						</li>
-					</ul>
-				</div>
-			</div>
-            <div class="quiz-step quiz-question-screen" id="quiz-question-1">
-                <strong class="quiz-title"><?= BaseController::getMessage('616') ?></strong>
-                <div class="quiz-radio-wrap">
-                    <input type="radio" id="sunstaion-1" class="quiz-radio" name="radio-question-1" value="<?= BaseController::getMessage('617') ?>">
-                    <label for="sunstaion-1"><?= BaseController::getMessage('617') ?></label>
-                    <input type="radio" id="sunstaion-2" class="quiz-radio" name="radio-question-1" value="<?= BaseController::getMessage('618') ?>">
-                    <label for="sunstaion-2"><?= BaseController::getMessage('618') ?></label>
-                    <input type="radio" id="sunstaion-3" class="quiz-radio" name="radio-question-1" value="<?= BaseController::getMessage('619') ?>">
-                    <label for="sunstaion-3"><?= BaseController::getMessage('619') ?></label>
-                    <input type="radio" id="sunstaion-4" class="quiz-radio" name="radio-question-1" value="Не знаю" checked>
-                </div>
-                <span class="skip-step"><?= BaseController::getMessage('633') ?></span>
-                <span class="quiz-btn js_quiz_next" data-next="#quiz-question-2"><?= BaseController::getMessage('634') ?></span>
-            </div>
-            <div class="quiz-step quiz-question-screen" id="quiz-question-2">
-                <strong class="quiz-title"><?= BaseController::getMessage('620') ?></strong>
-                <div class="quiz-radio-wrap">
-                    <input type="radio" id="connect-1" class="quiz-radio" name="radio-question-2" value="<?= BaseController::getMessage('621') ?>">
-                    <label for="connect-1"><?= BaseController::getMessage('621') ?></label>
-                    <input type="radio" id="connect-2" class="quiz-radio" name="radio-question-2" value="<?= BaseController::getMessage('622') ?>">
-                    <label for="connect-2"><?= BaseController::getMessage('622') ?></label>
-                    <input type="radio" id="connect-3" class="quiz-radio" name="radio-question-2" value="<?= BaseController::getMessage('623') ?>">
-                    <label for="connect-3"><?= BaseController::getMessage('623') ?></label>
-                    <input type="radio" id="connect-4" class="quiz-radio" name="radio-question-2" value="<?= BaseController::getMessage('624') ?>">
-                    <label for="connect-4"><?= BaseController::getMessage('624') ?></label>
-                    <input type="radio" id="connect-5" class="quiz-radio" name="radio-question-2" value="Не знаю" checked>
-                </div>
-                <span class="skip-step"><?= BaseController::getMessage('633') ?></span>
-                <span class="quiz-btn js_quiz_next" data-next="#quiz-question-3"><?= BaseController::getMessage('634') ?></span>
-            </div>
-            <div class="quiz-step quiz-question-screen" id="quiz-question-3">
-                <strong class="quiz-title"><?= BaseController::getMessage('625') ?></strong>
-                <div class="quiz-radio-wrap">
-                    <input type="radio" id="power-1" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('626') ?>">
-                    <label for="power-1"><?= BaseController::getMessage('626') ?></label>
-                    <input type="radio" id="power-2" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('627') ?>">
-                    <label for="power-2"><?= BaseController::getMessage('627') ?></label>
-                    <input type="radio" id="power-3" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('628') ?>">
-                    <label for="power-3"><?= BaseController::getMessage('628') ?></label>
-                    <input type="radio" id="power-4" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('629') ?>">
-                    <label for="power-4"><?= BaseController::getMessage('629') ?></label>
-                    <input type="radio" id="power-5" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('630') ?>">
-                    <label for="power-5"><?= BaseController::getMessage('630') ?></label>
-                    <input type="radio" id="power-6" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('631') ?>">
-                    <label for="power-6"><?= BaseController::getMessage('631') ?></label>
-                    <input type="radio" id="power-7" class="quiz-radio" name="radio-question-3" value="<?= BaseController::getMessage('632') ?>">
-                    <label for="power-7"><?= BaseController::getMessage('632') ?></label>
-                    <input type="radio" id="power-8" class="quiz-radio" name="radio-question-3" value="Не знаю" checked>
-                </div>
-                <span class="skip-step"><?= BaseController::getMessage('633') ?></span>
-                <span class="quiz-btn js_quiz_next" data-next="#quiz-bonus"><?= BaseController::getMessage('634') ?></span>
-            </div>
-			<div class="quiz-step quiz-bonus-screen" id="quiz-bonus">
-				<strong class="quiz-title"><?= BaseController::getMessage('635') ?></strong>
-				<p><?= BaseController::getMessage('636') ?></p>
-				<span class="quiz-subtitle"><?= BaseController::getMessage('613') ?></span>
-				<ul class="quiz-bonus-list">
-					<li>
-						<div class="img-wrap">
-							<img src="/img/quiz/dron.svg" width="65" loading="lazy" alt="<?= BaseController::getMessage('614') ?>">
-						</div>
-						<span><?= BaseController::getMessage('614') ?></span>
-
-					</li>
-					<li>
-						<div class="img-wrap">
-							<img src="/img/quiz/desk.svg" width="38" loading="lazy" alt="<?= BaseController::getMessage('615') ?>">
-						</div>
-						<span><?= BaseController::getMessage('615') ?></span>
-
-					</li>
-				</ul>
-				<div class="quiz-user-info">
-					<div class="input-row">
-						<div class="input-wrap input-wrap-name">
-							<input id="quiz-name"  name="quiz-name" type="text" placeholder="<?= BaseController::getMessage('637') ?>" required>
-						</div>
-						<div class="input-wrap input-wrap-phone">
-							<input id="quiz-phone" name="quiz-phone" minlength="9" maxlength="9" type="text" placeholder="<?= BaseController::getMessage('638') ?>" required>
-							<span class="quiz-phone-error"><?= BaseController::getMessage('645') ?></span>
-						</div>
-					</div>
-
-					<span class="quiz-btn  js_quiz_submit"><?= BaseController::getMessage('639') ?></span>
-					<input type="checkbox" class="quiz-checkbox" id="quiz-policy" name="quiz-policy" checked required>
-					<label for="quiz-policy"><?= BaseController::getMessage('640') ?></label>
-				</div>
-			</div>
-			<div class="quiz-step quiz-final-screen">
-				<div class="quiz-final-content">
-					<div class="quiz-final-img">
-						<img src="/img/quiz/check-round.svg" width="150px" loading="lazy" alt="final step">
-					</div>
-					<strong class="quiz-title"><?= BaseController::getMessage('641') ?></strong>
-					<span class="quiz-subtitle"><?= BaseController::getMessage('642') ?></span>
-					<div class="quiz-consult-info">
-						<div class="quiz-consult-img">
-							<img src="/img/quiz/consult.jpg" loading="lazy" alt="<?= BaseController::getMessage('643') ?>">
-						</div>
-						<strong class="quiz-consult-name"><?= BaseController::getMessage('643') ?></strong>
-						<p><?= BaseController::getMessage('644') ?></p>
-					</div>
-				</div>
-			</div>
-		</form>
-	</div>
-</div>
+<!--<div class="quiz-modal">-->
+<!--	<div class="quiz-modal-close js_quiz_close">-->
+<!--		<i class="icon-close"></i>-->
+<!--	</div>-->
+<!--	<div class="quiz-modal-container">-->
+<!--		<form class="quiz-modal-form">-->
+<!--			<input type="hidden" name="utm_source" --><?php //echo !empty($_SESSION['utm_source']) ? ' value="' . $_SESSION['utm_source'] .'"': ''?><!-- >-->
+<!--			<input type="hidden" name="utm_medium" --><?php //echo !empty($_SESSION['utm_medium']) ? ' value="' . $_SESSION['utm_medium'] .'"': ''?><!-- >-->
+<!--			<input type="hidden" name="utm_campaign" --><?php //echo !empty($_SESSION['utm_campaign']) ? ' value="' . $_SESSION['utm_campaign'] .'"': ''?><!-- >-->
+<!--			<input type="hidden" name="utm_content" --><?php //echo !empty($_SESSION['utm_content']) ? ' value="' . $_SESSION['utm_content'] .'"': ''?><!-- >-->
+<!--			<input type="hidden" name="utm_term" --><?php //echo !empty($_SESSION['utm_term']) ? ' value="' . $_SESSION['utm_term'] .'"': ''?><!-- >-->
+<!--			<div class="quiz-step quiz-intro-screen" style="display:block;">-->
+<!--				<div class="bg-block"></div>-->
+<!--				<div class="quiz-intro-content">-->
+<!--					<strong class="quiz-title">--><?//= BaseController::getMessage('610') ?><!--</strong>-->
+<!--					<p>--><?//= BaseController::getMessage('611') ?><!--</p>-->
+<!--					<span class="quiz-btn js_quiz_next" data-next="#quiz-question-1">--><?//= BaseController::getMessage('612') ?><!--</span>-->
+<!--					<span class="quiz-subtitle">--><?//= BaseController::getMessage('613') ?><!--</span>-->
+<!--					<ul class="quiz-bonus-list">-->
+<!--						<li>-->
+<!--							<div class="img-wrap">-->
+<!--								<img src="/img/quiz/dron.svg" width="65" loading="lazy" alt="--><?//= BaseController::getMessage('614') ?><!--">-->
+<!--							</div>-->
+<!--							<span>--><?//= BaseController::getMessage('614') ?><!--</span>-->
+<!---->
+<!--						</li>-->
+<!--						<li>-->
+<!--							<div class="img-wrap">-->
+<!--								<img src="/img/quiz/desk.svg" width="38" loading="lazy" alt="--><?//= BaseController::getMessage('615') ?><!--">-->
+<!--							</div>-->
+<!--							<span>--><?//= BaseController::getMessage('615') ?><!--</span>-->
+<!---->
+<!--						</li>-->
+<!--					</ul>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--            <div class="quiz-step quiz-question-screen" id="quiz-question-1">-->
+<!--                <strong class="quiz-title">--><?//= BaseController::getMessage('616') ?><!--</strong>-->
+<!--                <div class="quiz-radio-wrap">-->
+<!--                    <input type="radio" id="sunstaion-1" class="quiz-radio" name="radio-question-1" value="--><?//= BaseController::getMessage('617') ?><!--">-->
+<!--                    <label for="sunstaion-1">--><?//= BaseController::getMessage('617') ?><!--</label>-->
+<!--                    <input type="radio" id="sunstaion-2" class="quiz-radio" name="radio-question-1" value="--><?//= BaseController::getMessage('618') ?><!--">-->
+<!--                    <label for="sunstaion-2">--><?//= BaseController::getMessage('618') ?><!--</label>-->
+<!--                    <input type="radio" id="sunstaion-3" class="quiz-radio" name="radio-question-1" value="--><?//= BaseController::getMessage('619') ?><!--">-->
+<!--                    <label for="sunstaion-3">--><?//= BaseController::getMessage('619') ?><!--</label>-->
+<!--                    <input type="radio" id="sunstaion-4" class="quiz-radio" name="radio-question-1" value="Не знаю" checked>-->
+<!--                </div>-->
+<!--                <span class="skip-step">--><?//= BaseController::getMessage('633') ?><!--</span>-->
+<!--                <span class="quiz-btn js_quiz_next" data-next="#quiz-question-2">--><?//= BaseController::getMessage('634') ?><!--</span>-->
+<!--            </div>-->
+<!--            <div class="quiz-step quiz-question-screen" id="quiz-question-2">-->
+<!--                <strong class="quiz-title">--><?//= BaseController::getMessage('620') ?><!--</strong>-->
+<!--                <div class="quiz-radio-wrap">-->
+<!--                    <input type="radio" id="connect-1" class="quiz-radio" name="radio-question-2" value="--><?//= BaseController::getMessage('621') ?><!--">-->
+<!--                    <label for="connect-1">--><?//= BaseController::getMessage('621') ?><!--</label>-->
+<!--                    <input type="radio" id="connect-2" class="quiz-radio" name="radio-question-2" value="--><?//= BaseController::getMessage('622') ?><!--">-->
+<!--                    <label for="connect-2">--><?//= BaseController::getMessage('622') ?><!--</label>-->
+<!--                    <input type="radio" id="connect-3" class="quiz-radio" name="radio-question-2" value="--><?//= BaseController::getMessage('623') ?><!--">-->
+<!--                    <label for="connect-3">--><?//= BaseController::getMessage('623') ?><!--</label>-->
+<!--                    <input type="radio" id="connect-4" class="quiz-radio" name="radio-question-2" value="--><?//= BaseController::getMessage('624') ?><!--">-->
+<!--                    <label for="connect-4">--><?//= BaseController::getMessage('624') ?><!--</label>-->
+<!--                    <input type="radio" id="connect-5" class="quiz-radio" name="radio-question-2" value="Не знаю" checked>-->
+<!--                </div>-->
+<!--                <span class="skip-step">--><?//= BaseController::getMessage('633') ?><!--</span>-->
+<!--                <span class="quiz-btn js_quiz_next" data-next="#quiz-question-3">--><?//= BaseController::getMessage('634') ?><!--</span>-->
+<!--            </div>-->
+<!--            <div class="quiz-step quiz-question-screen" id="quiz-question-3">-->
+<!--                <strong class="quiz-title">--><?//= BaseController::getMessage('625') ?><!--</strong>-->
+<!--                <div class="quiz-radio-wrap">-->
+<!--                    <input type="radio" id="power-1" class="quiz-radio" name="radio-question-3" value="--><?//= BaseController::getMessage('626') ?><!--">-->
+<!--                    <label for="power-1">--><?//= BaseController::getMessage('626') ?><!--</label>-->
+<!--                    <input type="radio" id="power-2" class="quiz-radio" name="radio-question-3" value="--><?//= BaseController::getMessage('627') ?><!--">-->
+<!--                    <label for="power-2">--><?//= BaseController::getMessage('627') ?><!--</label>-->
+<!--                    <input type="radio" id="power-3" class="quiz-radio" name="radio-question-3" value="--><?//= BaseController::getMessage('628') ?><!--">-->
+<!--                    <label for="power-3">--><?//= BaseController::getMessage('628') ?><!--</label>-->
+<!--                    <input type="radio" id="power-4" class="quiz-radio" name="radio-question-3" value="--><?//= BaseController::getMessage('629') ?><!--">-->
+<!--                    <label for="power-4">--><?//= BaseController::getMessage('629') ?><!--</label>-->
+<!--                    <input type="radio" id="power-5" class="quiz-radio" name="radio-question-3" value="--><?//= BaseController::getMessage('630') ?><!--">-->
+<!--                    <label for="power-5">--><?//= BaseController::getMessage('630') ?><!--</label>-->
+<!--                    <input type="radio" id="power-6" class="quiz-radio" name="radio-question-3" value="--><?//= BaseController::getMessage('631') ?><!--">-->
+<!--                    <label for="power-6">--><?//= BaseController::getMessage('631') ?><!--</label>-->
+<!--                    <input type="radio" id="power-7" class="quiz-radio" name="radio-question-3" value="--><?//= BaseController::getMessage('632') ?><!--">-->
+<!--                    <label for="power-7">--><?//= BaseController::getMessage('632') ?><!--</label>-->
+<!--                    <input type="radio" id="power-8" class="quiz-radio" name="radio-question-3" value="Не знаю" checked>-->
+<!--                </div>-->
+<!--                <span class="skip-step">--><?//= BaseController::getMessage('633') ?><!--</span>-->
+<!--                <span class="quiz-btn js_quiz_next" data-next="#quiz-bonus">--><?//= BaseController::getMessage('634') ?><!--</span>-->
+<!--            </div>-->
+<!--			<div class="quiz-step quiz-bonus-screen" id="quiz-bonus">-->
+<!--				<strong class="quiz-title">--><?//= BaseController::getMessage('635') ?><!--</strong>-->
+<!--				<p>--><?//= BaseController::getMessage('636') ?><!--</p>-->
+<!--				<span class="quiz-subtitle">--><?//= BaseController::getMessage('613') ?><!--</span>-->
+<!--				<ul class="quiz-bonus-list">-->
+<!--					<li>-->
+<!--						<div class="img-wrap">-->
+<!--							<img src="/img/quiz/dron.svg" width="65" loading="lazy" alt="--><?//= BaseController::getMessage('614') ?><!--">-->
+<!--						</div>-->
+<!--						<span>--><?//= BaseController::getMessage('614') ?><!--</span>-->
+<!---->
+<!--					</li>-->
+<!--					<li>-->
+<!--						<div class="img-wrap">-->
+<!--							<img src="/img/quiz/desk.svg" width="38" loading="lazy" alt="--><?//= BaseController::getMessage('615') ?><!--">-->
+<!--						</div>-->
+<!--						<span>--><?//= BaseController::getMessage('615') ?><!--</span>-->
+<!---->
+<!--					</li>-->
+<!--				</ul>-->
+<!--				<div class="quiz-user-info">-->
+<!--					<div class="input-row">-->
+<!--						<div class="input-wrap input-wrap-name">-->
+<!--							<input id="quiz-name"  name="quiz-name" type="text" placeholder="--><?//= BaseController::getMessage('637') ?><!--" required>-->
+<!--						</div>-->
+<!--						<div class="input-wrap input-wrap-phone">-->
+<!--							<input id="quiz-phone" name="quiz-phone" minlength="9" maxlength="9" type="text" placeholder="--><?//= BaseController::getMessage('638') ?><!--" required>-->
+<!--							<span class="quiz-phone-error">--><?//= BaseController::getMessage('645') ?><!--</span>-->
+<!--						</div>-->
+<!--					</div>-->
+<!---->
+<!--					<span class="quiz-btn  js_quiz_submit">--><?//= BaseController::getMessage('639') ?><!--</span>-->
+<!--					<input type="checkbox" class="quiz-checkbox" id="quiz-policy" name="quiz-policy" checked required>-->
+<!--					<label for="quiz-policy">--><?//= BaseController::getMessage('640') ?><!--</label>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div class="quiz-step quiz-final-screen">-->
+<!--				<div class="quiz-final-content">-->
+<!--					<div class="quiz-final-img">-->
+<!--						<img src="/img/quiz/check-round.svg" width="150px" loading="lazy" alt="final step">-->
+<!--					</div>-->
+<!--					<strong class="quiz-title">--><?//= BaseController::getMessage('641') ?><!--</strong>-->
+<!--					<span class="quiz-subtitle">--><?//= BaseController::getMessage('642') ?><!--</span>-->
+<!--					<div class="quiz-consult-info">-->
+<!--						<div class="quiz-consult-img">-->
+<!--							<img src="/img/quiz/consult.jpg" loading="lazy" alt="--><?//= BaseController::getMessage('643') ?><!--">-->
+<!--						</div>-->
+<!--						<strong class="quiz-consult-name">--><?//= BaseController::getMessage('643') ?><!--</strong>-->
+<!--						<p>--><?//= BaseController::getMessage('644') ?><!--</p>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</form>-->
+<!--	</div>-->
+<!--</div>-->
 
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
 
