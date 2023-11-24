@@ -11,7 +11,7 @@ $contacts = \backend\models\Contact::getContact();
 ?>
 
 <main>
-	<section class="hero-section" style="background-image: url('/img/commercial-station/hero-commercial.jpg')">
+	<section class="hero-section" style="background-image: url('/img/commercial-station/hero-commercial-new.jpg')">
 		<span class="hero-yellow-circle"></span>
 		<div class="container">
 			<div class="hero-text">
@@ -187,20 +187,7 @@ $contacts = \backend\models\Contact::getContact();
 		<div class="container">
 			<div class="reason-wrapper"><h2 class="line-title"><?= BaseController::getMessage('522') ?></h2>
 				<div class="reason-slider">
-					<div class="reason-slide">
-						<div class="reason-slide-img background-lazy" style="background-image: url('/img/logo.svg')" data-src="/img/commercial-station/service.jpg"></div>
-						<div class="slide-description">
-							<strong><?= BaseController::getMessage('523') ?></strong>
-							<p><?= BaseController::getMessage('524') ?></p>
-						</div>
-					</div>
-					<div class="reason-slide">
-						<div class="reason-slide-img background-lazy" style="background-image: url('/img/logo.svg')" data-src="/img/commercial-station/warranty.jpg"></div>
-						<div class="slide-description">
-							<strong><?= BaseController::getMessage('525') ?></strong>
-							<p><?= BaseController::getMessage('526') ?></p>
-						</div>
-					</div>
+
 					<div class="reason-slide">
 						<div class="reason-slide-img background-lazy" style="background-image: url('/img/logo.svg')" data-src="/img/commercial-station/efficient.jpg"></div>
 						<div class="slide-description">
@@ -215,6 +202,20 @@ $contacts = \backend\models\Contact::getContact();
 							<p><?= BaseController::getMessage('530') ?></p>
 						</div>
 					</div>
+                    <div class="reason-slide">
+                        <div class="reason-slide-img background-lazy" style="background-image: url('/img/logo.svg')" data-src="/img/commercial-station/service.jpg"></div>
+                        <div class="slide-description">
+                            <strong><?= BaseController::getMessage('523') ?></strong>
+                            <p><?= BaseController::getMessage('524') ?></p>
+                        </div>
+                    </div>
+                    <div class="reason-slide">
+                        <div class="reason-slide-img background-lazy" style="background-image: url('/img/logo.svg')" data-src="/img/commercial-station/warranty.jpg"></div>
+                        <div class="slide-description">
+                            <strong><?= BaseController::getMessage('525') ?></strong>
+                            <p><?= BaseController::getMessage('526') ?></p>
+                        </div>
+                    </div>
 				</div>
 				<!--<div class="btn-wrap">
 					<a href="#connect" class="button order-btn"><?/*= BaseController::getMessage('468') */?></a>
