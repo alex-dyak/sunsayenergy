@@ -1932,7 +1932,7 @@ a:not([class]):hover{color:#ffd100}
 @media (min-width:1280px){
 .service-miscount__content-graphic #comfort-graphic{height:270px!important}
 }
-.hero-section{position:relative;display:flex;align-items:center;background-size:cover;background-position:50% 50%;background-repeat:no-repeat;margin-top:-123px;padding:130px 0 100px;min-height:100vh;overflow:hidden;background-color:#b7d3f7}
+.hero-section{position:relative;display:flex;align-items:center;background-size:cover;background-position:50% 50%;background-repeat:no-repeat;margin-top:-134px;padding:130px 0 100px;min-height:100vh;overflow:hidden;background-color:#b7d3f7}
 @media screen and (min-width:768px){
 .hero-section{margin-top:-109px;padding:130px 0 80px}
 }
