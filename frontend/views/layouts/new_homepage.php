@@ -173,7 +173,7 @@ $contacts = \backend\models\Contact::getContact();
 					<a href="<?= \yii\helpers\Url::to(['/']); ?>">
 						<img oncontextmenu="return false" class="logo-def" src="/img/logo.svg" width="184" height="44" alt="SUNSAY Energy">
 						<img oncontextmenu="return false" class="logo-white" src="/img/logo-navbar.svg" width="184" height="44" alt="SUNSAY Energy">
-						<span class="logo-text"><?= BaseController::getMessage('406') ?></span>
+<!--						<span class="logo-text">--><?//= BaseController::getMessage('406') ?><!--</span>-->
 					</a>
 				</strong>
 				<nav class="header-nav">
@@ -283,7 +283,7 @@ $contacts = \backend\models\Contact::getContact();
 						<strong class="footer-logo">
 							<a href="<?= \yii\helpers\Url::to(['/']); ?>">
 								<img oncontextmenu="return false" src="/img/logo-navbar.svg" width="185" alt="SUNSAY Energy">
-								<span class="logo-text"><?= BaseController::getMessage('406') ?></span>
+<!--								<span class="logo-text">--><?//= BaseController::getMessage('406') ?><!--</span>-->
 							</a>
 						</strong>
                         <div class="copyright">
