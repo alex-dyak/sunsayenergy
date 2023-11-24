@@ -189,7 +189,7 @@ $contacts = \backend\models\Contact::getContact();
 				<div class="reason-slider">
 
 					<div class="reason-slide">
-						<div class="reason-slide-img background-lazy" style="background-image: url('/img/logo.svg')" data-src="/img/commercial-station/efficient.jpg"></div>
+						<div class="reason-slide-img" style="background-image: url('/img/commercial-station/efficient.jpg')"></div>
 						<div class="slide-description">
 							<strong><?= BaseController::getMessage('527') ?></strong>
 							<p><?= BaseController::getMessage('528') ?></p>
@@ -228,7 +228,7 @@ $contacts = \backend\models\Contact::getContact();
 			<div class="clients-slider">
                 <?php foreach ($images as $item): ?>
 					<div class="clients-slide">
-						<div class="image background-lazy" style="background-image: url('/img/logo.svg')" data-src="/images/<?= $item->images->imagePreview ?>"></div>
+						<div class="image" style="background-image: url('<?= $item->images->imagePreview ?>')"></div>
 						<div class="description">
 							<div><?= $item->alt ?></div>
 						</div>
