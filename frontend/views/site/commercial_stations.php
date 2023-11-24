@@ -228,7 +228,7 @@ $contacts = \backend\models\Contact::getContact();
 			<div class="clients-slider">
                 <?php foreach ($images as $item): ?>
 					<div class="clients-slide">
-						<div class="image" style="background-image: url('/img/commercial-station/<?= $item->images->imagePreview ?>')"></div>
+						<div class="image" style="background-image: url('/images/<?= $item->images->imagePreview ?>')"></div>
 						<div class="description">
 							<div><?= $item->alt ?></div>
 						</div>
