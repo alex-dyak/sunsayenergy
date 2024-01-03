@@ -224,6 +224,7 @@ $contacts = \backend\models\Contact::getContact();
 					<ul class="language-switch">
 						<li><a <?= (Yii::$app->language=='ua')?'class="active"':''   ?>  href="/<?= \frontend\components\UrlTrimLang::widget() ?>">UA</a></li>
 						<li><a <?= (Yii::$app->language=='ru')?'class="active"':''   ?>  href="/ru/<?= \frontend\components\UrlTrimLang::widget() ?>">RU</a></li>
+						<li><a <?= (Yii::$app->language=='en')?'class="active"':''   ?>  href="/en/<?= \frontend\components\UrlTrimLang::widget() ?>">EN</a></li>
 					</ul>
 				</nav>
 			</div>

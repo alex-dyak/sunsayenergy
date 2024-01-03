@@ -545,6 +545,11 @@ class SiteController extends BaseController
                 <priority>0.80</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.80</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/video</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.80</priority>
