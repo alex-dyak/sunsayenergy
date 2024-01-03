@@ -87,6 +87,7 @@ $contacts = \backend\models\Contact::getContact();
 	<link rel="alternate" hreflang="x-default" href="https://sunsayenergy.com<?= $final_uri; ?>" />
 	<link rel="alternate" hreflang="uk-ua" href="https://sunsayenergy.com<?= $final_uri; ?>" />
     <link rel="alternate" hreflang="ru-ua" href="https://sunsayenergy.com/ru<?= $final_uri; ?>" />
+    <link rel="alternate" hreflang="en-us" href="https://sunsayenergy.com/en<?= $final_uri; ?>" />
 
 
     <meta name="google-site-verification" content="xxxLG9Hae7rnxth_CLJ3SBLXRhnRpnEg-DV95cNNyxI" />

@@ -600,6 +600,11 @@ class SiteController extends BaseController
                 <priority>0.64</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/solar-power-station-for-income</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/types-of-solar-power-plants</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.64</priority>
@@ -610,7 +615,17 @@ class SiteController extends BaseController
                 <priority>0.64</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/solar-power-for-backup-power</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/commercial_stations</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/commercial_stations</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.64</priority>
             </url>
@@ -620,7 +635,17 @@ class SiteController extends BaseController
                 <priority>0.64</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/solar-power-for-autonomous-power</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/green-tariff</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/green-tariff</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.64</priority>
             </url>
@@ -636,6 +661,11 @@ class SiteController extends BaseController
             </url>
             <url>
                 <loc>https://sunsayenergy.com/ru/technology</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/technology</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.64</priority>
             </url>
@@ -780,6 +810,11 @@ class SiteController extends BaseController
                 <priority>0.64</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/project</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/project/category/network</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.64</priority>
@@ -789,8 +824,18 @@ class SiteController extends BaseController
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.64</priority>
             </url>
+             <url>
+                <loc>https://sunsayenergy.com/en/about</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
             <url>
                 <loc>https://sunsayenergy.com/ru/video</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/video</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.64</priority>
             </url>
@@ -800,7 +845,17 @@ class SiteController extends BaseController
                 <priority>0.64</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-ivankiv</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-gatne</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-gatne</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.64</priority>
             </url>
@@ -810,7 +865,17 @@ class SiteController extends BaseController
                 <priority>0.64</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-marhalivka</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-plyuti</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-plyuti</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.64</priority>
             </url>
@@ -820,12 +885,27 @@ class SiteController extends BaseController
                 <priority>0.64</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-lebedivka</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-vishen-ki</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.64</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-vishen-ki</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-nove</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
+             <url>
+                <loc>https://sunsayenergy.com/en/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-nove</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.64</priority>
             </url>
@@ -835,7 +915,17 @@ class SiteController extends BaseController
                 <priority>0.64</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/project/ustanovka-merezhevoyi-sonyachnoyi-elektrostanciyi-s-martusivka</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.64</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/types-of-solar-power-plants</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+             <url>
+                <loc>https://sunsayenergy.com/en/types-of-solar-power-plants</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.51</priority>
             </url>
@@ -845,7 +935,17 @@ class SiteController extends BaseController
                 <priority>0.51</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/technology/faq-about-solar-energy</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/technology/efektivnist-sonyachnih-batarey-v-pohmuru-pogodu</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/technology/efektivnist-sonyachnih-batarey-v-pohmuru-pogodu</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.51</priority>
             </url>
@@ -855,7 +955,17 @@ class SiteController extends BaseController
                 <priority>0.51</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/technology/yaki-sonyachni-paneli-kraschi</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/technology/chi-pracyuyut-sonyachni-batareyi-vzimku</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/technology/chi-pracyuyut-sonyachni-batareyi-vzimku</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.51</priority>
             </url>
@@ -865,7 +975,17 @@ class SiteController extends BaseController
                 <priority>0.51</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/technology/okupnist-sonyachnih-batarey</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/technology/svitovi-innovaciyi-v-sonyachniy-energetici-za-2019-rik</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/technology/svitovi-innovaciyi-v-sonyachniy-energetici-za-2019-rik</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.51</priority>
             </url>
@@ -875,7 +995,17 @@ class SiteController extends BaseController
                 <priority>0.51</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/technology/scho-podibnogo-mizh-kaliforniys-koyu-kachkoyu-ta-strimkim-zletom-vde-v-ukrayini</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/technology/rezervna-ses-vs-palivniy-generator</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/technology/rezervna-ses-vs-palivniy-generator</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.51</priority>
             </url>
@@ -885,7 +1015,17 @@ class SiteController extends BaseController
                 <priority>0.51</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/technology/efektivnist-kkd-sonyachnih-batarey</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/technology/ochikuvannya-vs-real-nist-komplekt-sonyachnih-batarey-dlya-domu-razom-z-usima-komplektuyuchimi</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/technology/ochikuvannya-vs-real-nist-komplekt-sonyachnih-batarey-dlya-domu-razom-z-usima-komplektuyuchimi</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.51</priority>
             </url>
@@ -895,7 +1035,17 @@ class SiteController extends BaseController
                 <priority>0.51</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/technology/ne-pro-sonyachni-batareyi-zeleniy-tarif-ta-yogo-vpliv-na-sonyachnu-energetiku-v-ukrayini</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/technology/vstanovlennya-sonyachnih-paneley-na-dahu-yak-uniknuti-vtratu-generaciyi</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/technology/vstanovlennya-sonyachnih-paneley-na-dahu-yak-uniknuti-vtratu-generaciyi</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.51</priority>
             </url>
@@ -905,7 +1055,17 @@ class SiteController extends BaseController
                 <priority>0.51</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/technology/ogolosit-ves-spisok-bud-laska-tipi-sonyachnih-elektrostanciy</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/technology/sistemi-avtonomnogo-elektropostachannya-budinku</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/technology/sistemi-avtonomnogo-elektropostachannya-budinku</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.51</priority>
             </url>
@@ -915,7 +1075,17 @@ class SiteController extends BaseController
                 <priority>0.51</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/technology/amorfniy-kremniy-modifikuie-kristalichni-sonyachni-batareyi</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/technology/scho-vazhlivo-znati-persh-nizh-kupiti-sonyachni-batareyi</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/technology/scho-vazhlivo-znati-persh-nizh-kupiti-sonyachni-batareyi</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.51</priority>
             </url>
@@ -925,7 +1095,17 @@ class SiteController extends BaseController
                 <priority>0.51</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/technology/na-pochatku-buv-kremniy-virobnictvo-sonyachnih-batarey</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/technology/kontroler-zaryadu-dlya-sonyachnoyi-elektrostanciyi-yogo-funkciyi-ta-osnovni-tipi-pristroyiv</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/technology/kontroler-zaryadu-dlya-sonyachnoyi-elektrostanciyi-yogo-funkciyi-ta-osnovni-tipi-pristroyiv</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.51</priority>
             </url>
@@ -935,7 +1115,17 @@ class SiteController extends BaseController
                 <priority>0.51</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/technology/zakon-10357-vstupiv-u-silu-scho-dali</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/technology/dvonapravleniy-lichil-nik-dlya-zelenogo-tarifu</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/technology/dvonapravleniy-lichil-nik-dlya-zelenogo-tarifu</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.51</priority>
             </url>
@@ -945,7 +1135,17 @@ class SiteController extends BaseController
                 <priority>0.51</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/technology/znayomstvo-z-zelenim-tarifom-perevagi-vikoristannya-procedura-oformlennya-ta-yogo-koristuvachi</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/technology/bez-vitrat-yak-potuzhnist-sonyachnoyi-elektrostanciyi-1kvt-poetapno-zbil-shiti-do-30-kvt</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/technology/bez-vitrat-yak-potuzhnist-sonyachnoyi-elektrostanciyi-1kvt-poetapno-zbil-shiti-do-30-kvt</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.51</priority>
             </url>
@@ -955,7 +1155,17 @@ class SiteController extends BaseController
                 <priority>0.51</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/technology/3-vidtinki-tier-yak-klasifikuiet-sya-sonyachna-batareya</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/technology/zakonoproekt-10357-na-storoni-al-ternativnoyi-energetiki</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+             <url>
+                <loc>https://sunsayenergy.com/en/technology/zakonoproekt-10357-na-storoni-al-ternativnoyi-energetiki</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.51</priority>
             </url>
@@ -965,7 +1175,17 @@ class SiteController extends BaseController
                 <priority>0.51</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/technology/7-strahiv-investora-vse-pro-sonyachni-paneli</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/technology/hto-krutishiy-vidi-sonyachnih-batarey</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/technology/hto-krutishiy-vidi-sonyachnih-batarey</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.51</priority>
             </url>
@@ -975,7 +1195,17 @@ class SiteController extends BaseController
                 <priority>0.51</priority>
             </url>
             <url>
+                <loc>https://sunsayenergy.com/en/technology/magiya-tehnologiy-chomu-pri-zamiri-ne-vikoristovuiet-sya-ruletka</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
                 <loc>https://sunsayenergy.com/ru/project/category/network</loc>
+                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
+                <priority>0.51</priority>
+            </url>
+            <url>
+                <loc>https://sunsayenergy.com/en/project/category/network</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.51</priority>
             </url>
