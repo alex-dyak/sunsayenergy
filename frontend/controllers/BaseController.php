@@ -43,23 +43,23 @@ class BaseController extends Controller
         }
 
         // Redirect from english site version.
-        $langs = $this->prefered_language();
-        $lang = '';
-        foreach ($langs as $key => $value) {
-            $lang = $key;
-            break;
-        }
-
-        if (stripos($_SERVER['REQUEST_URI'], '/en/') !== false) {
-            $goal_page = str_replace('/en/', '', $_SERVER['REQUEST_URI']);
-            if ($lang != 'uk') {
-                $lang = $lang . '/';
-            } else {
-                $lang = '';
-            }
-            header('Location: ' . $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/' . $lang . $goal_page);
-            die;
-        }
+//        $langs = $this->prefered_language();
+//        $lang = '';
+//        foreach ($langs as $key => $value) {
+//            $lang = $key;
+//            break;
+//        }
+//
+//        if (stripos($_SERVER['REQUEST_URI'], '/en/') !== false) {
+//            $goal_page = str_replace('/en/', '', $_SERVER['REQUEST_URI']);
+//            if ($lang != 'uk') {
+//                $lang = $lang . '/';
+//            } else {
+//                $lang = '';
+//            }
+//            header('Location: ' . $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/' . $lang . $goal_page);
+//            die;
+//        }
     }
 
     /**
