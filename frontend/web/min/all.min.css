@@ -1322,10 +1322,7 @@ a:not([class]):hover{color:#ffd100}
 .new-collapsed .seo-article-inner:after{content:'';position:absolute;bottom:0;left:0;right:0;height:50px;background:linear-gradient(to top,#fff,rgba(255,255,255,0))}
 .seo-article-opened{position:relative;font-size:16px;font-weight:700;cursor:pointer;padding:18px 20px;text-transform:uppercase;background:#ffd100;border-radius:5px;display:block;width:330px;max-width:100%;margin:0 auto;transition:ease .3s all;text-align:center}
 .seo-article-opened:hover{color:#fff}
-.seo-article-opened:before{content:"Згорнути"}
-.lang-ru .seo-article-opened:before{content:"Свернуть"}
-.new-collapsed .seo-article-opened:before{content:"Читати повністю"}
-.lang-ru .new-collapsed .seo-article-opened:before{content:"Читать полностью"}
+
 @media screen and (min-width:750px){
 .new-seo-article h1{font-size:50px;line-height:1.5}
 }
@@ -2604,10 +2601,8 @@ a.advantages-btn{font-size:20px;line-height:24px}
 .seo-article-opener{position:relative;font-size:16px;font-weight:700;cursor:pointer}
 .seo-article-opener:after{content:'';position:absolute;z-index:-1;bottom:-2px;left:0;right:100%;height:10px;background:#ffd100;transition:right .3s linear}
 .seo-article-opener:hover:after{right:0}
-.seo-article-opener:before{content:"Згорнути"}
-.lang-ru .seo-article-opener:before{content:"Свернуть"}
-.collapsed .seo-article-opener:before{content:"Читати повністю"}
-.lang-ru .collapsed .seo-article-opener:before{content:"Читать полностью"}
+.seo-article-opened:before{content:attr(data-close)}
+.new-collapsed .seo-article-opened:before{content:attr(data-open)}
 @media screen and (min-width:1024px){
 .seo-article strong{font-size:24px;margin-bottom:15px}
 }
