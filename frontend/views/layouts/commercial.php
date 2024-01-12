@@ -183,6 +183,7 @@ $contacts = \backend\models\Contact::getContact();
 					</a>
 				</strong>
 				<ul class="nav-list">
+                    <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
 					<li class="dropdown-wrapper">
 						<span><?= BaseController::getMessage('1') ?> <i class="icon-angle-down"></i></span>
 						<ul class="dropdown header-drop-list">
@@ -203,16 +204,24 @@ $contacts = \backend\models\Contact::getContact();
                             <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnaya-stantsiya-30-kvt']); ?>"><?= BaseController::getMessage('750') ?></a></li>
                         </ul>
                     </li>
-					<li class="<?= (Yii::$app->controller->route == 'site/video') ? 'active' : ''; ?>">
-						<a href="<?= \yii\helpers\Url::to(['/video']); ?>"><?= BaseController::getMessage('412') ?></a>
-					</li>
-					<li class="subnav"><?= BaseController::getMessage('11') ?></li>
+                    <li class="<?= (Yii::$app->controller->route == 'site/video') ? 'active' : ''; ?>">
+                        <a href="<?= \yii\helpers\Url::to(['/video']); ?>"><?= BaseController::getMessage('412') ?></a>
+                    </li>
+                    <li class="subnav"><?= BaseController::getMessage('11') ?></li>
+                    <?php } ?>
+                    <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') !== false) { ?>
+                        <li class="<?= (Yii::$app->controller->route == 'site/about') ? 'active' : ''; ?>">
+                            <a href="<?= \yii\helpers\Url::to(['/about']); ?>"><?= BaseController::getMessage('7') ?></a>
+                        </li>
+                    <?php } ?>
 					<li class="<?= (Yii::$app->controller->route == 'project/project') ? 'active' : ''; ?>">
 						<a href="<?= \yii\helpers\Url::to(['/project']); ?>"><?= BaseController::getMessage('320') ?></a>
 					</li>
-					<li class="<?= (Yii::$app->controller->route == 'site/about') ? 'active' : ''; ?>">
-						<a href="<?= \yii\helpers\Url::to(['/about']); ?>"><?= BaseController::getMessage('7') ?></a>
-					</li>
+                    <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
+                        <li class="<?= (Yii::$app->controller->route == 'site/about') ? 'active' : ''; ?>">
+                            <a href="<?= \yii\helpers\Url::to(['/about']); ?>"><?= BaseController::getMessage('7') ?></a>
+                        </li>
+                    <?php } ?>
 					<li class="to_contact">
 						<a href="#contact"><?= BaseController::getMessage('8') ?></a>
 					</li>

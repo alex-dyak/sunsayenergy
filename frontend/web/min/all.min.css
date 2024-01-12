@@ -802,7 +802,7 @@ a:not([class]):hover{color:#ffd100}
 .nav-active .header-nav{max-height:none;opacity:1;visibility:visible}
 .nav-list{color:#393939;width:100%}
 @media screen and (min-width:1280px){
-.nav-list{display:flex;align-items:center;justify-content:space-between;width:calc(100% - 215px)}
+.nav-list{display:flex;align-items:center;justify-content:center;width:calc(100% - 215px)}
 }
 @media screen and (min-width:1440px){
 .nav-list{width:calc(100% - 260px)}

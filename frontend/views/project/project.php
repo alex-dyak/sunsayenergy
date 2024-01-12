@@ -58,9 +58,9 @@ $contacts = \backend\models\Contact::getContact();
 		</div>
 
 	</section>
-    
-    <?= $this->render('../section/_complex-project.php'); ?>
-
+    <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
+        <?= $this->render('../section/_complex-project.php'); ?>
+    <?php } ?>
     <?= $this->render('../section/_seo_article.php', compact('seo_data')); ?>
     
     <?= $this->render('../section/_connect-blue.php'); ?>

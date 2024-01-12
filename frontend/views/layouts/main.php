@@ -183,42 +183,50 @@ $contacts = \backend\models\Contact::getContact();
 							<img oncontextmenu="return false" src="/img/logo-navbar.svg" width="148" alt="SUNSAY Energy">
 						</a>
 					</strong>
-					<ul class="nav-list">
-						<li class="dropdown-wrapper">
-                  			<span><?= BaseController::getMessage('1') ?> <i class="icon-angle-down"></i></span>
-							<ul class="dropdown header-drop-list">
-								<li class="<?= (Yii::$app->controller->route == 'site/income') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?>"><?= BaseController::getMessage('2') ?></a></li>
-								<li class="<?= (Yii::$app->controller->route == 'site/reserve') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"><?= BaseController::getMessage('3') ?></a></li>
-								<li class="<?= (Yii::$app->controller->route == 'site/comfort') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>"><?= BaseController::getMessage('4') ?></a></li>
-								<li class="<?= (Yii::$app->controller->route == 'site/commercial') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>"><?= BaseController::getMessage('531') ?></a></li>
-							</ul>
-						</li>
-						<li class="subnav"><?= BaseController::getMessage('12') ?></li>
-						<li class="<?= (Yii::$app->controller->route == 'site/green') ? 'active' : ''; ?>">
-							<a href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><?= BaseController::getMessage('5') ?></a>
-						</li>
-						<li class="dropdown-wrapper">
-                            <span><a href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('6') ?></a> <i class="icon-angle-down"></i></span>
-                            <ul class="dropdown header-drop-list">
-                                <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnyye-paneli-pod-klyuch']); ?>"><?= BaseController::getMessage('748') ?></a></li>
-                                <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnyye-paneli-15-kvt']); ?>"><?= BaseController::getMessage('749') ?></a></li>
-                                <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnaya-stantsiya-30-kvt']); ?>"><?= BaseController::getMessage('750') ?></a></li>
-                            </ul>
-						</li>
-                        <li class="<?= (Yii::$app->controller->route == 'site/video') ? 'active' : ''; ?>">
-                            <a href="<?= \yii\helpers\Url::to(['/video']); ?>"><?= BaseController::getMessage('412') ?></a>
+                    <ul class="nav-list">
+                        <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
+                            <li class="dropdown-wrapper">
+                                <span><?= BaseController::getMessage('1') ?> <i class="icon-angle-down"></i></span>
+                                <ul class="dropdown header-drop-list">
+                                    <li class="<?= (Yii::$app->controller->route == 'site/income') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?>"><?= BaseController::getMessage('2') ?></a></li>
+                                    <li class="<?= (Yii::$app->controller->route == 'site/reserve') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"><?= BaseController::getMessage('3') ?></a></li>
+                                    <li class="<?= (Yii::$app->controller->route == 'site/comfort') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>"><?= BaseController::getMessage('4') ?></a></li>
+                                </ul>
+                            </li>
+                            <li class="subnav"><?= BaseController::getMessage('12') ?></li>
+                            <li class="<?= (Yii::$app->controller->route == 'site/green') ? 'active' : ''; ?>">
+                                <a href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><?= BaseController::getMessage('5') ?></a>
+                            </li>
+                            <li class="dropdown-wrapper">
+                                <span><a href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('6') ?></a> <i class="icon-angle-down"></i></span>
+                                <ul class="dropdown header-drop-list">
+                                    <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnyye-paneli-pod-klyuch']); ?>"><?= BaseController::getMessage('748') ?></a></li>
+                                    <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnyye-paneli-15-kvt']); ?>"><?= BaseController::getMessage('749') ?></a></li>
+                                    <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnaya-stantsiya-30-kvt']); ?>"><?= BaseController::getMessage('750') ?></a></li>
+                                </ul>
+                            </li>
+                            <li class="<?= (Yii::$app->controller->route == 'site/video') ? 'active' : ''; ?>">
+                                <a href="<?= \yii\helpers\Url::to(['/video']); ?>"><?= BaseController::getMessage('412') ?></a>
+                            </li>
+                            <li class="subnav"><?= BaseController::getMessage('11') ?></li>
+                        <?php } ?>
+                        <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') !== false) { ?>
+                            <li class="<?= (Yii::$app->controller->route == 'site/about') ? 'active' : ''; ?>">
+                                <a href="<?= \yii\helpers\Url::to(['/about']); ?>"><?= BaseController::getMessage('7') ?></a>
+                            </li>
+                        <?php } ?>
+                        <li class="<?= (Yii::$app->controller->route == 'project/project') ? 'active' : ''; ?>">
+                            <a href="<?= \yii\helpers\Url::to(['/project']); ?>"><?= BaseController::getMessage('320') ?></a>
                         </li>
-						<li class="subnav"><?= BaseController::getMessage('11') ?></li>
-						<li class="<?= (Yii::$app->controller->route == 'project/project') ? 'active' : ''; ?>">
-							<a href="<?= \yii\helpers\Url::to(['/project']); ?>"><?= BaseController::getMessage('320') ?></a>
-						</li>
-						<li class="<?= (Yii::$app->controller->route == 'site/about') ? 'active' : ''; ?>">
-							<a href="<?= \yii\helpers\Url::to(['/about']); ?>"><?= BaseController::getMessage('7') ?></a>
-						</li>
-						<li class="to_contact">
-							<a href="#contact"><?= BaseController::getMessage('8') ?></a>
-						</li>
-					</ul>
+                        <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
+                            <li class="<?= (Yii::$app->controller->route == 'site/about') ? 'active' : ''; ?>">
+                                <a href="<?= \yii\helpers\Url::to(['/about']); ?>"><?= BaseController::getMessage('7') ?></a>
+                            </li>
+                        <?php } ?>
+                        <li class="to_contact">
+                            <a href="#contact"><?= BaseController::getMessage('8') ?></a>
+                        </li>
+                    </ul>
 					<div class="btn-wrap">
 						<a class="button header-btn" href="#" id="order-form"><?= BaseController::getMessage('9') ?></a>
 					</div>
@@ -293,6 +301,7 @@ $contacts = \backend\models\Contact::getContact();
 							<p style="max-width: 115px;margin: 0 auto"><?= BaseController::getMessage('15') ?> <a href="<?= (Yii::$app->language=='ua') ? 'https://inweb.ua/ua/ppc/' : 'https://inweb.ua/ppc/' ?>" target="_blank">Inweb</a></p>
 						</div>
 					</div>
+                    <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
 					<div class="footer__nav-menu">
 						<strong class="title h4"><?= BaseController::getMessage('1') ?></strong>
 						<ul>
@@ -310,8 +319,11 @@ $contacts = \backend\models\Contact::getContact();
                                     <span><?= BaseController::getMessage('531') ?></span></a></li>
 						</ul>
 					</div>
+					<?php } ?>
 					<div class="footer__nav-menu">
+                        <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
 						<strong class="h4"><?= BaseController::getMessage('11') ?></strong>
+						<?php } ?>
 						<ul>
 							<li class="<?= (Yii::$app->controller->route == 'project/project') ? 'active' : ''; ?>">
 								<a <?=  Yii::$app->request->url == \yii\helpers\Url::to(['/project']) ? '' : 'href="' . \yii\helpers\Url::to(['/project']) . '"' ?>>
@@ -321,6 +333,7 @@ $contacts = \backend\models\Contact::getContact();
 									<span><?= BaseController::getMessage('7') ?></span></a></li>
 						</ul>
 					</div>
+					<?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
 					<div class="footer__nav-menu">
 						<strong class="h4"><?= BaseController::getMessage('12') ?></strong>
 						<ul>
@@ -332,6 +345,7 @@ $contacts = \backend\models\Contact::getContact();
 									<span><?= BaseController::getMessage('6') ?></span></a></li>
 						</ul>
 					</div>
+                    <?php } ?>
 					<div class="footer-contact-wrap">
 						<strong class="h4"><?= BaseController::getMessage('8') ?></strong>
 						<ul class="footer-contact-list">
@@ -343,6 +357,7 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 			</div>
         </div>
+        <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
 		<div class="footer-social-nav">
 			<div class="container">
 				<div class="footer-social-wrap">
@@ -365,9 +380,12 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 			</div>
 		</div>
+		<?php } ?>
 		<div class="footer-mobile-bottom">
 			<div class="container">
+			<?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
 				<a href="#footer-newsletter" class="button newsletter-opener"><?= BaseController::getMessage('410') ?></a>
+            <?php } ?>
                 <div class="copyright">
                     <p><a href="<?= \yii\helpers\Url::to(['/']); ?>">&copy; SUNSAY Energy <?= date('Y'); ?></a></p>
                     <p><?= BaseController::getMessage('15') ?> <a href="<?= (Yii::$app->language=='ua') ? 'https://inweb.ua/ua/ppc/' : 'https://inweb.ua/ppc/' ?>" target="_blank">Inweb</a></p>

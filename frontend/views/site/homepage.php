@@ -12,16 +12,24 @@
                 <div class="new-title-wrapper">
                     <div class="new-title-blok">
                         <div class="new-title-inner">
-                            <a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>">
+                            <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
+                                <a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>">
+                            <?php } ?>
                                 <h2 class="new-title-plant">
                                     <?= strtoupper(BaseController::getMessage('732')) ?>                       
                                 </h2>
-                            </a>
-                            <a href="<?= \yii\helpers\Url::to(['/dohod-6000-zelyonyi-tarif']); ?>">
+                            <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
+                                </a>
+                            <?php } ?>
+                            <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
+                                <a href="<?= \yii\helpers\Url::to(['/dohod-6000-zelyonyi-tarif']); ?>">
+                            <?php } ?>
                                 <h2 class="new-title-house">
                                 <?= strtoupper(BaseController::getMessage('733')) ?>                        
                                 </h2>
-                            </a>
+                            <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
+                                </a>
+                            <?php } ?>
                         </div>
                     </div>                    
                 </div>
@@ -32,94 +40,96 @@
                 </div>
             </div>
         </section>
-
-        <section class="new-possibilities">
-            <div class="container">
-                <div class="title-block title-block__possibility">
-                    <h2 class="line-title"><?= strtoupper(BaseController::getMessage('734')) ?></h2>
-                    <div class="subtitle subtitle__possibility">
-                        <p><?= BaseController::getMessage('735') ?></p>
+        <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
+            <section class="new-possibilities">
+                <div class="container">
+                    <div class="title-block title-block__possibility">
+                        <h2 class="line-title"><?= strtoupper(BaseController::getMessage('734')) ?></h2>
+                        <div class="subtitle subtitle__possibility">
+                            <p><?= BaseController::getMessage('735') ?></p>
+                        </div>
+                        <div class="subtitle__slider">
+                            <p><?= strtoupper(BaseController::getMessage('736')) ?>:</p>
+                        </div>
                     </div>
-                    <div class="subtitle__slider">
-                        <p><?= strtoupper(BaseController::getMessage('736')) ?>:</p>
+                    <ul class="possibility-list-slider">
+                        <div class="possibility-item-slider">
+                            <li class="possibility-item">
+                                <div class="possibility-item-inner">
+                                    <div class="possibility-img">
+                                        <img oncontextmenu="return false" data-src="/img/homepage/Vector1.png" alt="">
+                                    </div>
+                                    <p class="possibility-text"><?= BaseController::getMessage('737') ?></p>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="possibility-item-slider">
+                            <li class="possibility-item">
+                                <div class="possibility-item-inner">
+                                    <div class="possibility-img">
+                                        <img oncontextmenu="return false" data-src="/img/homepage/Vector2.png" alt="">
+                                    </div>
+                                    <p class="possibility-text"><?= BaseController::getMessage('738') ?></p>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="possibility-item-slider">
+                            <li class="possibility-item">
+                                <div class="possibility-item-inner">
+                                    <div class="possibility-img">
+                                        <img oncontextmenu="return false" data-src="/img/homepage/Vector1.png" alt="">
+                                    </div>
+                                    <p class="possibility-text"><?= BaseController::getMessage('739') ?></p>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="possibility-item-slider">
+                            <li class="possibility-item">
+                                <div class="possibility-item-inner">
+                                    <div class="possibility-img">
+                                        <img oncontextmenu="return false" data-src="/img/homepage/Vector2.png" alt="">
+                                    </div>
+                                    <p class="possibility-text"><?= BaseController::getMessage('740') ?></p>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section class="station-types">
+                <div class="container">
+                    <div class="station-types__wrap">
+                        <div class="station-types__content">
+                            <div class="station-types__text">
+                                <p><?= strtoupper(BaseController::getMessage('741')) ?></p>
+                            </div>
+                            <div class="station-types__inner">
+                                <a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?>" class="station-types__item"><?= BaseController::getMessage('742') ?></a>
+                                <a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>" class="station-types__item"><?= BaseController::getMessage('743') ?></a>
+                                <a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>" class="station-types__item station-types__item-color"><?= BaseController::getMessage('744') ?></a>
+                            </div>
+                            <div class="station-types__text">
+                                <p><?= strtoupper(BaseController::getMessage('745')) ?></p>
+                            </div>
+                            <div class="button__center">
+                                <a class="button btn-lg consult-btn station-types__button new-consult-btn" href="#connect"><?= BaseController::getMessage('402') ?></a>
+                            </div>
+                        </div>
+                        <div class="station-types__img-mob">
+                            <img oncontextmenu="return false" data-src="/img/homepage/mob-panels7.png" alt="">
+                        </div>
+                        <div class="station-types__img">
+                            <img oncontextmenu="return false" data-src="/img/homepage/n-panels4.png" alt="">
+                        </div>
                     </div>
                 </div>
-                <ul class="possibility-list-slider">
-                    <div class="possibility-item-slider">
-                        <li class="possibility-item">
-                            <div class="possibility-item-inner">
-                                <div class="possibility-img">
-                                    <img oncontextmenu="return false" data-src="/img/homepage/Vector1.png" alt="">
-                                </div>
-                                <p class="possibility-text"><?= BaseController::getMessage('737') ?></p>
-                            </div>
-                        </li>
-                    </div>
-                    <div class="possibility-item-slider">
-                        <li class="possibility-item">
-                            <div class="possibility-item-inner">
-                                <div class="possibility-img">
-                                    <img oncontextmenu="return false" data-src="/img/homepage/Vector2.png" alt="">
-                                </div>
-                                <p class="possibility-text"><?= BaseController::getMessage('738') ?></p>
-                            </div>
-                        </li>                        
-                    </div>
-                    <div class="possibility-item-slider">
-                        <li class="possibility-item">
-                            <div class="possibility-item-inner">
-                                <div class="possibility-img">
-                                    <img oncontextmenu="return false" data-src="/img/homepage/Vector1.png" alt="">
-                                </div>
-                                <p class="possibility-text"><?= BaseController::getMessage('739') ?></p>
-                            </div>
-                        </li>                        
-                    </div>
-                    <div class="possibility-item-slider">
-                        <li class="possibility-item">
-                            <div class="possibility-item-inner">
-                                <div class="possibility-img">
-                                    <img oncontextmenu="return false" data-src="/img/homepage/Vector2.png" alt="">
-                                </div>
-                                <p class="possibility-text"><?= BaseController::getMessage('740') ?></p>
-                            </div>
-                        </li>                        
-                    </div>
-                </ul>
+            </section>
 
-            </div>
-        </section>
-
-        <section class="station-types">
-            <div class="container">
-                <div class="station-types__wrap">
-                    <div class="station-types__content">
-                        <div class="station-types__text">
-                            <p><?= strtoupper(BaseController::getMessage('741')) ?></p>
-                        </div>
-                        <div class="station-types__inner">
-                            <a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?>" class="station-types__item"><?= BaseController::getMessage('742') ?></a>
-                            <a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>" class="station-types__item"><?= BaseController::getMessage('743') ?></a>
-                            <a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>" class="station-types__item station-types__item-color"><?= BaseController::getMessage('744') ?></a>
-                        </div>
-                        <div class="station-types__text">
-                            <p><?= strtoupper(BaseController::getMessage('745')) ?></p>
-                        </div>
-                        <div class="button__center">
-                            <a class="button btn-lg consult-btn station-types__button new-consult-btn" href="#connect"><?= BaseController::getMessage('402') ?></a>
-                        </div>
-                    </div>
-                    <div class="station-types__img-mob">
-                        <img oncontextmenu="return false" data-src="/img/homepage/mob-panels7.png" alt="">
-                    </div>
-                    <div class="station-types__img">
-                        <img oncontextmenu="return false" data-src="/img/homepage/n-panels4.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-       
             <?= $this->render('../section/_video.php', compact('videos')); ?>
+        <?php } ?>
+
 
         <section class="new-pros-section pros-section">
             <div class="container">
@@ -250,11 +260,11 @@
 
             </div>
         </section>
-            
+        <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
         <!-- start video review -->
         <?= $this->render('../section/_video-reviews.php', compact('video_reviews')); ?>
         <!-- end video review -->
-
+        <?php } ?>
         <?= $this->render('../section/_seo_article_homepage.php', compact('seo_data')); ?>
 
         <!-- start connect -->
