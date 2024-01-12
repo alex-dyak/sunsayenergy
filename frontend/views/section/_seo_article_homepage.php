@@ -1,3 +1,4 @@
+<?php use frontend\controllers\BaseController; ?>
 <?php if ($seo_data['article_body']) : ?>
     <div class="new-seo-article new-collapsed ">
         <div class="container">
