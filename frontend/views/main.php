@@ -354,7 +354,7 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
                 <div class="footer__content-info__subscribe">
                     <div class="title"><?= BaseController::getMessage('13') ?></div>
                     <div class="form subscribe">
-                        <input class="custom-field" type="text" name="email" placeholder="youremail@mail.com">
+                        <input class="custom-field" type="text" name="email" placeholder="your email@mail.com">
                         <button class="btn btn-subscribe btn-secondary"><?= BaseController::getMessage('14') ?></button>
                     </div>
                 </div>
@@ -395,7 +395,7 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
 
                 <input class="custom-field" type="text" name="phone" placeholder="+380">
 
-                <input class="custom-field" type="text" name="email" placeholder="youremail@mail.com">
+                <input class="custom-field" type="text" name="email" placeholder="your email@mail.com">
                 <textarea class="custom-field" name="question" id="question" rows="5" placeholder="<?= BaseController::getMessage('403') ?>"></textarea>
                 <div class="request-button">
                     <button class="btn btn-primary request-popup-btn"><?= BaseController::getMessage('14') ?></button>
