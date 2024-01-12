@@ -373,7 +373,7 @@ $contacts = \backend\models\Contact::getContact();
                                 <input type="hidden" name="utm_content" <?php echo !empty($_SESSION['utm_content']) ? ' value="' . $_SESSION['utm_content'] .'"': ''?> >
                                 <input type="hidden" name="utm_term" <?php echo !empty($_SESSION['utm_term']) ? ' value="' . $_SESSION['utm_term'] .'"': ''?> >
                                 <label for="subscribe-email" class="hidden">youremail@mail.com</label>
-                                <input class="custom-field" type="email" name="email" id="subscribe-email" placeholder="your email@mail.com">
+                                <input class="custom-field" type="email" name="email" id="subscribe-email" placeholder="E-mail">
                                 <button class="button btn-subscribe"><?= BaseController::getMessage('14') ?></button>
                             </form>
                             <div class="success-msg"><?= BaseController::getMessage('411') ?></div>
