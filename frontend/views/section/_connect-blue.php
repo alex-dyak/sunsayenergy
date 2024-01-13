@@ -20,7 +20,7 @@
 						<input class="custom-field" id="phone" type="text"  name="phone" placeholder="+380">
                         <span class="error-msg"><?= BaseController::getMessage('839') ?></span>
 						<label for="email" class="hidden">email</label>
-						<input class="custom-field" type="text" id="email" name="email" placeholder="E-mail">
+                        <input class="custom-field" type="text" id="email" name="email" placeholder="E-mail">
 						<label for="question" class="hidden"><?= BaseController::getMessage('403') ?></label>
 						<textarea class="custom-field" name="question" id="question" rows="5" placeholder="<?= BaseController::getMessage('403') ?>"></textarea>
 						<div class="connect__content-button">
