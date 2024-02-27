@@ -59,7 +59,7 @@ $this->params['breadcrumbs'][] = [
 			</div>
 		</div>
 	</section>
-
+    <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') !== false) { ?>
     <section class="service-miscount">
 		<div class="container">
 			<h2 class="line-title"><?= BaseController::getMessage('254') ?></h2>
@@ -68,6 +68,7 @@ $this->params['breadcrumbs'][] = [
 			</div>
 		</div>
     </section>
+    <?php } ?>
 	<!-- start banner-->
     <?= $this->render('../section/_service-banner.php'); ?>
 	<!-- end banner -->
