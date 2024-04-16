@@ -166,13 +166,13 @@ class Request extends \yii\db\ActiveRecord
             'name' => $name,
             'email' => $email,
             'phone' => $phone,
-            'afcccfefc493637a0980ad41fc67409515ad0c9d' => 40,
-            'b4bc168aeb41c153327694ef611c8f9505692415' => '',
-            '84ef308cca3cb5c73bdc451501d9db66d78f1ef3' => $utm_campaign,
-            'ec97721c8bc1b42122cafee50f9d8107bd2b873c' => $utm_content,
-            'ad1babaafeaf78390b987222b0daca2cf04c8735' => $utm_medium,
-            'b9c4488527d990630ae43982ce8dc95b8fc4f4d0' => $utm_source,
-            '6c4a1998ed8ed26f0f71838dec7b5a79a934a590' => $utm_term,
+//            'afcccfefc493637a0980ad41fc67409515ad0c9d' => 40,
+//            'b4bc168aeb41c153327694ef611c8f9505692415' => '',
+            '7204b1ce20a9be08525167a4998eb6f944e293e3' => $utm_campaign,
+            '385ca0f4322888157d8a1fe7898ef2373c30b29a' => $utm_content,
+            '02a0ea9d919fa498e78d38d74866e123e213e870' => $utm_medium,
+            '9b2076c97a9c1394325888bfb6f0a4817af9661a' => $utm_source,
+            'ccc8fdaa8f88313a653822590618089939057a34' => $utm_term,
         );
 
         $ch = curl_init();
@@ -196,14 +196,11 @@ class Request extends \yii\db\ActiveRecord
             $data_lead = array(
                 'title' => 'Лид ' . $name,
                 'person_id' => $result['data']['id'],
-                '0d0c7ad107065f03504695cce7bfa73f7296b933' => $type,
-                '965ef6475172cf8b1d094502b4a1cf58c83f855b' => 32,
-                '74b50ac12962b9eb6610a4028d0aadd11f076c4c' => '',
-                'a20830fec9dfc7f948d4a758cb5f8c6910da608a' => $utm_campaign,
-                'd3ea99ccda4724103dc02ceb4dc8660748443473' => $utm_content,
-                '59f34ca215ef52a59202b8f4977759a3bbb90000' => $utm_medium,
-                '90f58be1bbe25d567120a4a2278be778409cae62' => $utm_source,
-                '2a9b35a86635824f3178243899ee1f082a0cfc4f' => $utm_term,
+                'f2eaf58053a24bccfa41d8dbad863bd46ecd45bd' => $utm_campaign,
+                '912ab721e97b1d18963c6badc0dc3ce30c5fa824' => $utm_content,
+                'f2ff3c4ef688fd9fe7016c856329e7971ea68656' => $utm_medium,
+                'a2fcaa034e1ee41d17e0a0ef3452eb3563ecc297' => $utm_source,
+                'babeb20381a0f4ed55320ea0372b8c58409d95e8' => $utm_term,
             );
 
             $url = 'https://'.$company_domain . '.pipedrive.com/api/v1/leads?api_token=' . $api_token;
