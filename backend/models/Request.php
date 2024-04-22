@@ -166,7 +166,7 @@ class Request extends \yii\db\ActiveRecord
             'name' => $name,
             'email' => $email,
             'phone' => $phone,
-//            'afcccfefc493637a0980ad41fc67409515ad0c9d' => 40,
+            '4a31eb274ac791ccd212ef9398c8bbcfc00280e1' => 'Вебсайт',
 //            'b4bc168aeb41c153327694ef611c8f9505692415' => '',
             '7204b1ce20a9be08525167a4998eb6f944e293e3' => $utm_campaign,
             '385ca0f4322888157d8a1fe7898ef2373c30b29a' => $utm_content,
@@ -196,6 +196,8 @@ class Request extends \yii\db\ActiveRecord
             $data_lead = array(
                 'title' => 'Лид ' . $name,
                 'person_id' => $result['data']['id'],
+                '36cac44123dba1b55f87719c4883d687ca1e0871' => 'Вебсайт',
+                '0d0c7ad107065f03504695cce7bfa73f7296b933' => $type,
                 'f2eaf58053a24bccfa41d8dbad863bd46ecd45bd' => $utm_campaign,
                 '912ab721e97b1d18963c6badc0dc3ce30c5fa824' => $utm_content,
                 'f2ff3c4ef688fd9fe7016c856329e7971ea68656' => $utm_medium,
