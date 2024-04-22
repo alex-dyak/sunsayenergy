@@ -166,7 +166,7 @@ class Request extends \yii\db\ActiveRecord
             'name' => $name,
             'email' => $email,
             'phone' => $phone,
-            '4a31eb274ac791ccd212ef9398c8bbcfc00280e1' => 'Вебсайт',
+            '4a31eb274ac791ccd212ef9398c8bbcfc00280e1' => 102,
 //            'b4bc168aeb41c153327694ef611c8f9505692415' => '',
             '7204b1ce20a9be08525167a4998eb6f944e293e3' => $utm_campaign,
             '385ca0f4322888157d8a1fe7898ef2373c30b29a' => $utm_content,
@@ -194,9 +194,9 @@ class Request extends \yii\db\ActiveRecord
         if (!empty($result['data']['id'])) {
             // Data of the new Lead
             $data_lead = array(
-                'title' => 'Лид ' . $name,
+                'title' => $name,
                 'person_id' => $result['data']['id'],
-                '36cac44123dba1b55f87719c4883d687ca1e0871' => 'Вебсайт',
+                '36cac44123dba1b55f87719c4883d687ca1e0871' => 108,
                 '0d0c7ad107065f03504695cce7bfa73f7296b933' => $type,
                 'f2eaf58053a24bccfa41d8dbad863bd46ecd45bd' => $utm_campaign,
                 '912ab721e97b1d18963c6badc0dc3ce30c5fa824' => $utm_content,
@@ -222,7 +222,9 @@ class Request extends \yii\db\ActiveRecord
             curl_close($ch);
 
             $result_lead = json_decode($output, true);
-
+//            echo '<pre>';
+//            print_r($result_lead);
+//            echo '<pre>';die;
             if (empty($result_lead['data'])) {
                 return false;
             }
