@@ -107,6 +107,14 @@ $contacts = \backend\models\Contact::getContact();
 <!--    </script>-->
     <!-- Marquiz script end -->
 
+    <script type="text/javascript">
+        (function (d,s,u,e,p) {
+            p=d.getElementsByTagName(s)[0],e=d.createElement(s),e.async=1,e.src=u,p.parentNode.insertBefore(e, p);
+        })(document, 'script', 'https://script.ringostat.com/v4/67/67c2072d18e2f557d896ab240102404ea1ccf69b.js');
+        var pw = function() {if (typeof(ringostatAnalytics) === "undefined") {setTimeout(pw,100);} else {ringostatAnalytics.sendHit('pageview');}};
+        pw();
+    </script>
+
     <!--  Hotjar Tracking Code for https://sunsayenergy.com/ -->
     <script>
         (function(h,o,t,j,a,r){
