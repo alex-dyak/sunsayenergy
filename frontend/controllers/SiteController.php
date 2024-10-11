@@ -13,6 +13,7 @@ use common\models\Comment;
 use common\models\Commercial;
 use common\models\Video;
 use common\models\VideoReview;
+use frontend\models\ContactForm;
 use Yii;
 use Sendpulse\RestApi\ApiClient;
 use Sendpulse\RestApi\Storage\FileStorage;
@@ -280,20 +281,52 @@ class SiteController extends BaseController
                     )
                 );
 
-//            $SPApiClient->addEmails($this->form_book_id, $emails);
+                $body = 'Ім\'я: ' . $post['name'] . '<br>';
+                $body .= 'Телефон: ' . $post['phone'] . '<br>';
+                $body .= 'Email: ' . $post['email'] . '<br>';
+                $body .= 'Коментар: ' . $message . '<br>';
+                $body .= 'UTM мітки: ' . '<br>';
+                $body .= 'utm_source: ' . $post['utm_source'] . '<br>';
+                $body .= 'utm_medium: ' . $post['utm_medium'] . '<br>';
+                $body .= 'utm_campaign: ' . $post['utm_campaign'] . '<br>';
+                $body .= 'utm_content: ' . $post['utm_content'] . '<br>';
+                $body .= 'utm_term: ' . $post['utm_term'] . '<br>';
 
-            $model = new Request();
-            $model->sendPipedrive(
-                $post['name'],
-                $post['phone'],
-                $post['email'],
-                $message,
-                $post['utm_source'],
-                $post['utm_medium'],
-                $post['utm_campaign'],
-                $post['utm_content'],
-                $post['utm_term']
-            );
+                $sender_email = 'digital@sunsayenergy.com';
+                $receiver_email = 'Website@sunsaynrg.planfix.ua';
+
+                $emailParams = [
+                    'sender_email' => $sender_email,
+                    'subject' => 'Лід з сайту ' . $post['name'],
+                    'from' => [
+                        'email' => $sender_email,
+                        'name' => 'SUNSAY NRG'
+                    ],
+                    'to' => [
+                        [
+                            'email' => $receiver_email,
+                            'name' => $post['name']
+                        ]
+                    ],
+//                    'html' => '<p>Текст письма в формате HTML</p>',
+                    'text' => $body
+                ];
+
+                $response = $SPApiClient->smtpSendMail($emailParams);
+
+
+                $model = new Request();
+                $model->sendPipedrive(
+                    $post['name'],
+                    $post['phone'],
+                    $post['email'],
+                    $message,
+                    $post['utm_source'],
+                    $post['utm_medium'],
+                    $post['utm_campaign'],
+                    $post['utm_content'],
+                    $post['utm_term']
+                );
                 //TODO: переименовать метод
 //            Request::subscribeEsputnik($post['email'], "request_measurement", $post['name'], $post['phone']);
                 //TODO: Вынести эту дрянь в модель
@@ -372,7 +405,7 @@ class SiteController extends BaseController
 
             $post = Yii::$app->request->post();
 
-            $sender_email = 'o.boicheniuk@sunsayenergy.com';
+            $sender_email = 'digital@sunsayenergy.com';
 
             // API credentials from https://login.sendpulse.com/settings/#api
             define('PATH_TO_ATTACH_FILE', __FILE__);
@@ -389,7 +422,7 @@ class SiteController extends BaseController
                 'sender_email' => $sender_email,
             );
 
-            $SPApiClient->addEmails($this->subscribe_book_id, $emails, $additionalParams);
+            $response = $SPApiClient->addEmails($this->subscribe_book_id, $emails, $additionalParams);
 
             //TODO: Вынести эту дрянь в модель
             $model = new Subscribe();
