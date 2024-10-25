@@ -59,16 +59,16 @@ $this->params['breadcrumbs'][] = [
 			</div>
 		</div>
 	</section>
-    <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
-    <section class="service-miscount">
-		<div class="container">
-			<h2 class="line-title"><?= BaseController::getMessage('254') ?></h2>
-			<div class="service-miscount__content">
-                <?= BaseController::getMessage('728') ?>
-			</div>
-		</div>
-    </section>
-    <?php } ?>
+<!--    --><?php //if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
+<!--    <section class="service-miscount">-->
+<!--		<div class="container">-->
+<!--			<h2 class="line-title">--><?php //= BaseController::getMessage('254') ?><!--</h2>-->
+<!--			<div class="service-miscount__content">-->
+<!--                --><?php //= BaseController::getMessage('728') ?>
+<!--			</div>-->
+<!--		</div>-->
+<!--    </section>-->
+<!--    --><?php //} ?>
 	<!-- start banner-->
     <?= $this->render('../section/_service-banner.php'); ?>
 	<!-- end banner -->
