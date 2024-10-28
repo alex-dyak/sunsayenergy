@@ -294,6 +294,8 @@ class SiteController extends BaseController
 
                 $sender_email = 'digital@sunsayenergy.com';
                 $receiver_email = 'Website@sunsaynrg.planfix.ua';
+                $manager_email = 'i.laba@sunsayenergy.com';
+                $webhook_email = 'tpfge8o2fc4nyfwkb8q2fa8oiruaa75f@hook.eu2.make.com';
 
                 $emailParams = [
                     'sender_email' => $sender_email,
@@ -306,7 +308,15 @@ class SiteController extends BaseController
                         [
                             'email' => $receiver_email,
                             'name' => $post['name']
-                        ]
+                        ],
+                        [
+                            'email' => $manager_email,
+                            'name' => ''
+                        ],
+                        [
+                            'email' => $webhook_email,
+                            'name' => 'Webhook'
+                        ],
                     ],
 //                    'html' => '<p>Текст письма в формате HTML</p>',
                     'text' => $body
