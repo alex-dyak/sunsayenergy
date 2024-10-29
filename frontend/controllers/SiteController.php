@@ -17,6 +17,9 @@ use frontend\models\ContactForm;
 use Yii;
 use Sendpulse\RestApi\ApiClient;
 use Sendpulse\RestApi\Storage\FileStorage;
+use yii\base\InvalidConfigException;
+use yii\httpclient\Client;
+use yii\httpclient\Exception;
 
 /**
  * Site controller
@@ -26,6 +29,8 @@ class SiteController extends BaseController
     private $api_user_id = '05fbad0fccf579a56996f17f54f3d1fe';
 
     private $user_secret = 'e7d910e040481b6ebd487a8cfd66197e';
+
+    private $webhook_url = 'https://hook.eu2.make.com/trk0mewupx2ejbw1g3l99cw3tgxp09ap';
 
     private $form_book_id = 860197;
 
@@ -239,6 +244,10 @@ class SiteController extends BaseController
     //---------далее экшины которые приходят через ajax---------
 
     // Заявки с сайта
+    /**
+     * @throws Exception
+     * @throws InvalidConfigException
+     */
     public function actionRequest()
     {
         if (Yii::$app->request->isAjax) {
@@ -295,7 +304,7 @@ class SiteController extends BaseController
                 $sender_email = 'digital@sunsayenergy.com';
                 $receiver_email = 'Website@sunsaynrg.planfix.ua';
                 $manager_email = 'i.laba@sunsayenergy.com';
-                $webhook_email = 'tpfge8o2fc4nyfwkb8q2fa8oiruaa75f@hook.eu2.make.com';
+//                $webhook_email = 'tpfge8o2fc4nyfwkb8q2fa8oiruaa75f@hook.eu2.make.com';
 
                 $emailParams = [
                     'sender_email' => $sender_email,
@@ -313,10 +322,10 @@ class SiteController extends BaseController
                             'email' => $manager_email,
                             'name' => ''
                         ],
-                        [
-                            'email' => $webhook_email,
-                            'name' => 'Webhook'
-                        ],
+//                        [
+//                            'email' => $webhook_email,
+//                            'name' => 'Webhook'
+//                        ],
                     ],
 //                    'html' => '<p>Текст письма в формате HTML</p>',
                     'text' => $body
@@ -324,6 +333,26 @@ class SiteController extends BaseController
 
                 $response = $SPApiClient->smtpSendMail($emailParams);
 
+                $client = new Client();
+
+                $postData = [
+                    'date' => date('Y-m-d H:i:s'),
+                    'name' => $post['name'],
+                    'phone' => str_replace('+', '', $post['phone']),
+                    'email' => $post['email'],
+                    'message' => $message,
+                    'utm_source' => $post['utm_source'],
+                    'utm_medium' => $post['utm_medium'],
+                    'utm_campaign' => $post['utm_campaign'],
+                    'utm_content' => $post['utm_content'],
+                    'utm_term' => $post['utm_term'],
+                ];
+
+                $response = $client->createRequest()
+                    ->setMethod('POST')
+                    ->setUrl($this->webhook_url)
+                    ->setData($postData)
+                    ->send();
 
                 $model = new Request();
                 $model->sendPipedrive(
