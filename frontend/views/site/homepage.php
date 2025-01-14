@@ -21,15 +21,15 @@
                             <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
                                 </a>
                             <?php } ?>
-                            <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
-                                <a href="<?= \yii\helpers\Url::to(['/dohod-6000-zelyonyi-tarif']); ?>">
-                            <?php } ?>
-                                <h2 class="new-title-house">
-                                <?= strtoupper(BaseController::getMessage('733')) ?>                        
-                                </h2>
-                            <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
-                                </a>
-                            <?php } ?>
+<!--                            --><?php //if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
+<!--                                <a href="--><?php //= \yii\helpers\Url::to(['/dohod-6000-zelyonyi-tarif']); ?><!--">-->
+<!--                            --><?php //} ?>
+<!--                                <h2 class="new-title-house">-->
+<!--                                --><?php //= strtoupper(BaseController::getMessage('733')) ?><!--                        -->
+<!--                                </h2>-->
+<!--                            --><?php //if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
+<!--                                </a>-->
+<!--                            --><?php //} ?>
                         </div>
                     </div>                    
                 </div>
@@ -262,7 +262,7 @@
         </section>
         <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
         <!-- start video review -->
-        <?= $this->render('../section/_video-reviews.php', compact('video_reviews')); ?>
+        <?php // echo $this->render('../section/_video-reviews.php', compact('video_reviews')); ?>
         <!-- end video review -->
         <?php } ?>
         <?= $this->render('../section/_seo_article_homepage.php', compact('seo_data')); ?>

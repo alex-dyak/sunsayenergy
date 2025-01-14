@@ -130,8 +130,8 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
                     </div>
                 </div>
                  <a class="navbar__list-item" href="<?= \yii\helpers\Url::to(['/project']); ?>"><span><?= BaseController::getMessage('320') ?></span></a>
-                <a class="navbar__list-item <?= (Yii::$app->controller->route == 'site/green') ? 'active-menu' : ''; ?>"
-                   href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><span><?= BaseController::getMessage('5') ?></span></a>
+<!--                <a class="navbar__list-item --><?php //= (Yii::$app->controller->route == 'site/green') ? 'active-menu' : ''; ?><!--"-->
+<!--                   href="--><?php //= \yii\helpers\Url::to(['/green-tariff']); ?><!--"><span>--><?php //= BaseController::getMessage('5') ?><!--</span></a>-->
                 <a class="navbar__list-item <?= (Yii::$app->controller->route == 'technology/technology' || Yii::$app->controller->route == 'technology/nine' || Yii::$app->controller->route == 'technology/detailed') ? 'active-menu' : ''; ?>"
                    href="<?= \yii\helpers\Url::to(['/technology']); ?>"><span><?= BaseController::getMessage('6') ?></span></a>
                 <a class="navbar__list-item <?= (Yii::$app->controller->route == 'site/about') ? 'active-menu' : ''; ?>"
@@ -177,9 +177,9 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
                 </div>
                 
                 <div class="navbar-item"><a href="<?= \yii\helpers\Url::to(['/project']); ?>"><?= BaseController::getMessage('320') ?></a></div>
-                <div class="navbar-item"><a href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"
-                                            class="<?= (Yii::$app->controller->route == 'site/green') ? 'active-menu' : ''; ?>"><span><?= BaseController::getMessage('5') ?></span></a>
-                </div>
+<!--                <div class="navbar-item"><a href="--><?php //= \yii\helpers\Url::to(['/green-tariff']); ?><!--"-->
+<!--                                            class="--><?php //= (Yii::$app->controller->route == 'site/green') ? 'active-menu' : ''; ?><!--"><span>--><?php //= BaseController::getMessage('5') ?><!--</span></a>-->
+<!--                </div>-->
                 <div class="navbar-item"><a href="<?= \yii\helpers\Url::to(['/technology']); ?>"
                                             class="<?= (Yii::$app->controller->route == 'site/technology') ? 'active-menu' : ''; ?>"><span><?= BaseController::getMessage('6') ?></span></a>
                 </div>
@@ -345,7 +345,7 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
                     <div class="footer__content-info__item">
                         <div class="title"><?= BaseController::getMessage('12') ?></div>
                         <ul>
-                            <li><a href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><span><?= BaseController::getMessage('5') ?></span></a></li>
+<!--                            <li><a href="--><?php //= \yii\helpers\Url::to(['/green-tariff']); ?><!--"><span>--><?php //= BaseController::getMessage('5') ?><!--</span></a></li>-->
                             <!-- <li><a href="#"><span>Корисна інформація</span></a></li>-->
                             <li><a href="<?= \yii\helpers\Url::to(['/technology']); ?>"><span><?= BaseController::getMessage('6') ?></span></a></li>
                         </ul>

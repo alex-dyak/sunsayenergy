@@ -205,11 +205,8 @@ $contacts = \backend\models\Contact::getContact();
             "position": 1,
             "name": "SUNSAY Energy",
             "item": "https://sunsayenergy.com"
-        },{
-            "@type": "ListItem",
-            "position": 2,
-            "name": "<?= BaseController::getMessage('5') ?>",
-            "item": "https://sunsayenergy.com<?= \yii\helpers\Url::to(['/green-tariff']); ?>"
-        }]
+        }
+
+        ]
     }
 </script>

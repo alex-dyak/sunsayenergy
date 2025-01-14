@@ -203,9 +203,9 @@ $contacts = \backend\models\Contact::getContact();
                         </li>
                         <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
                             <li class="subnav"><?= BaseController::getMessage('12') ?></li>
-                            <li class="<?= (Yii::$app->controller->route == 'site/green') ? 'active' : ''; ?>">
-                                <a href="<?= \yii\helpers\Url::to(['/green-tariff']); ?>"><?= BaseController::getMessage('5') ?></a>
-                            </li>
+<!--                            <li class="--><?php //= (Yii::$app->controller->route == 'site/green') ? 'active' : ''; ?><!--">-->
+<!--                                <a href="--><?php //= \yii\helpers\Url::to(['/green-tariff']); ?><!--">--><?php //= BaseController::getMessage('5') ?><!--</a>-->
+<!--                            </li>-->
                             <li class="dropdown-wrapper">
                                 <span><a href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('6') ?></a> <i class="icon-angle-down"></i></span>
                                 <ul class="dropdown header-drop-list">
@@ -346,9 +346,9 @@ $contacts = \backend\models\Contact::getContact();
 					<div class="footer__nav-menu">
 						<strong class="h4"><?= BaseController::getMessage('12') ?></strong>
 						<ul>
-							<li class="<?= (Yii::$app->controller->route == 'site/green') ? 'active' : ''; ?>">
-								<a <?= Yii::$app->request->url == \yii\helpers\Url::to(['/green-tariff']) ? '' : 'href="' . \yii\helpers\Url::to(['/green-tariff']) . '"' ?>>
-									<span><?= BaseController::getMessage('5') ?></span></a></li>
+<!--							<li class="--><?php //= (Yii::$app->controller->route == 'site/green') ? 'active' : ''; ?><!--">-->
+<!--								<a --><?php //= Yii::$app->request->url == \yii\helpers\Url::to(['/green-tariff']) ? '' : 'href="' . \yii\helpers\Url::to(['/green-tariff']) . '"' ?><!-->-->
+<!--									<span>--><?php //= BaseController::getMessage('5') ?><!--</span></a></li>-->
 							<li class="<?= (Yii::$app->controller->route == 'technology/technology') ? 'active' : ''; ?>">
 								<a <?= Yii::$app->request->url == \yii\helpers\Url::to(['/technology']) ? '' : 'href="' . \yii\helpers\Url::to(['/technology']) . '"' ?>>
 									<span><?= BaseController::getMessage('6') ?></span></a></li>

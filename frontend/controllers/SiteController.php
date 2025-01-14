@@ -138,13 +138,15 @@ class SiteController extends BaseController
 
     public function actionGreen()
     {
-        $seo_data = self::getSeo('green');
+        return $this->redirect(['site/index']);
 
-        $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
-        $this->setOgDescription($seo_data['description'][Yii::$app->language]);
-        $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
-
-        return $this->render('green', compact('seo_data'));
+//        $seo_data = self::getSeo('green');
+//
+//        $this->setOgImage('https://sunsayenergy.com' . '/img/house-1.png');
+//        $this->setOgDescription($seo_data['description'][Yii::$app->language]);
+//        $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
+//
+//        return $this->render('green', compact('seo_data'));
     }
 
     public function actionComfort()
@@ -535,7 +537,7 @@ class SiteController extends BaseController
         $host = Yii::$app->request->hostInfo; // домен сайта
         $dinamimic_link = Blog::find()->select('symbol')->all();
         $static_link = [
-            '/green-tariff',
+//            '/green-tariff',
             '/solar-power-for-autonomous-power',
             '/solar-power-station-for-income',
             '/solar-power-for-backup-power',
@@ -591,11 +593,7 @@ class SiteController extends BaseController
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.80</priority>
             </url>
-            <url>
-                <loc>https://sunsayenergy.com/green-tariff</loc>
-                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
-                <priority>0.80</priority>
-            </url>
+           
             <url>
                 <loc>https://sunsayenergy.com/technology</loc>
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
@@ -711,16 +709,7 @@ class SiteController extends BaseController
                 <lastmod>2020-02-05T16:03:34+00:00</lastmod>
                 <priority>0.64</priority>
             </url>
-            <url>
-                <loc>https://sunsayenergy.com/ru/green-tariff</loc>
-                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
-                <priority>0.64</priority>
-            </url>
-            <url>
-                <loc>https://sunsayenergy.com/en/green-tariff</loc>
-                <lastmod>2020-02-05T16:03:34+00:00</lastmod>
-                <priority>0.64</priority>
-            </url>
+           
             <url>
                 <loc>https://sunsayenergy.com/pdf/law.pdf</loc>
                 <lastmod>2019-11-11T09:29:58+00:00</lastmod>
