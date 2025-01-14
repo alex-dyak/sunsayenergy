@@ -106,9 +106,9 @@
                                 <p><?= strtoupper(BaseController::getMessage('741')) ?></p>
                             </div>
                             <div class="station-types__inner">
-                                <a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?>" class="station-types__item"><?= BaseController::getMessage('742') ?></a>
-                                <a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>" class="station-types__item"><?= BaseController::getMessage('743') ?></a>
-                                <a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>" class="station-types__item station-types__item-color"><?= BaseController::getMessage('744') ?></a>
+<!--                                <a href="--><?php //= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?><!--" class="station-types__item">--><?php //= BaseController::getMessage('742') ?><!--</a>-->
+<!--                                <a href="--><?php //= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?><!--" class="station-types__item">--><?php //= BaseController::getMessage('743') ?><!--</a>-->
+                                <a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>" class="station-types__item"><?= BaseController::getMessage('744') ?></a>
                             </div>
                             <div class="station-types__text">
                                 <p><?= strtoupper(BaseController::getMessage('745')) ?></p>
@@ -262,7 +262,7 @@
         </section>
         <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
         <!-- start video review -->
-        <?php // echo $this->render('../section/_video-reviews.php', compact('video_reviews')); ?>
+        <?php echo $this->render('../section/_video-reviews.php', compact('video_reviews')); ?>
         <!-- end video review -->
         <?php } ?>
         <?= $this->render('../section/_seo_article_homepage.php', compact('seo_data')); ?>

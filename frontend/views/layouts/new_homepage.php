@@ -192,14 +192,8 @@ $contacts = \backend\models\Contact::getContact();
 						</a>
 					</strong>
                     <ul class="nav-list">
-                        <li class="dropdown-wrapper">
-                            <span><?= BaseController::getMessage('1') ?> <i class="icon-angle-down"></i></span>
-                            <ul class="dropdown header-drop-list">
-                                <li class="<?= (Yii::$app->controller->route == 'site/income') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-station-for-income']) ?>"><?= BaseController::getMessage('2') ?></a></li>
-                                <li class="<?= (Yii::$app->controller->route == 'site/reserve') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"><?= BaseController::getMessage('3') ?></a></li>
-                                <li class="<?= (Yii::$app->controller->route == 'site/comfort') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/solar-power-for-autonomous-power']); ?>"><?= BaseController::getMessage('4') ?></a></li>
-                                <li class="<?= (Yii::$app->controller->route == 'site/commercial') ? 'active' : ''; ?>"><a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>"><?= BaseController::getMessage('531') ?></a></li>
-                            </ul>
+                        <li class="<?= (Yii::$app->controller->route == 'site/commercial') ? 'active' : ''; ?>">
+                            <a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>"><?= BaseController::getMessage('531') ?></a>
                         </li>
                         <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
                             <li class="subnav"><?= BaseController::getMessage('12') ?></li>
@@ -210,8 +204,8 @@ $contacts = \backend\models\Contact::getContact();
                                 <span><a href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('6') ?></a> <i class="icon-angle-down"></i></span>
                                 <ul class="dropdown header-drop-list">
                                     <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnyye-paneli-pod-klyuch']); ?>"><?= BaseController::getMessage('748') ?></a></li>
-                                    <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnyye-paneli-15-kvt']); ?>"><?= BaseController::getMessage('749') ?></a></li>
-                                    <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnaya-stantsiya-30-kvt']); ?>"><?= BaseController::getMessage('750') ?></a></li>
+<!--                                    <li><a href="--><?php //= \yii\helpers\Url::to(['/technology/solnechnyye-paneli-15-kvt']); ?><!--">--><?php //= BaseController::getMessage('749') ?><!--</a></li>-->
+<!--                                    <li><a href="--><?php //= \yii\helpers\Url::to(['/technology/solnechnaya-stantsiya-30-kvt']); ?><!--">--><?php //= BaseController::getMessage('750') ?><!--</a></li>-->
                                 </ul>
                             </li>
                             <li class="<?= (Yii::$app->controller->route == 'site/video') ? 'active' : ''; ?>">

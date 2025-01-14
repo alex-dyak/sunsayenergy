@@ -59,7 +59,7 @@ $contacts = \backend\models\Contact::getContact();
 
 	</section>
     <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
-        <?= $this->render('../section/_complex-project.php'); ?>
+        <?php // echo $this->render('../section/_complex-project.php'); ?>
     <?php } ?>
     <?= $this->render('../section/_seo_article.php', compact('seo_data')); ?>
     
