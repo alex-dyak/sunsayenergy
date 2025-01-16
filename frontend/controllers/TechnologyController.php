@@ -12,6 +12,7 @@ namespace frontend\controllers;
 use backend\models\Blog;
 use common\models\Comment;
 use Yii;
+use yii\web\NotFoundHttpException;
 
 class TechnologyController extends BaseController
 {
@@ -64,6 +65,9 @@ class TechnologyController extends BaseController
     public function actionDetailed($symbol)
     {
         $article = Blog::findOne(['symbol'=>$symbol]);
+        if (! $article) {
+            throw new NotFoundHttpException('Page not found');
+        }
         $other_articles = Blog::find()->where(['<>','symbol', $symbol])->orderBy(['id' => SORT_DESC])->limit(4)->all();
 
         // Get comments for current article.

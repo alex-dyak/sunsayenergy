@@ -200,14 +200,14 @@ $contacts = \backend\models\Contact::getContact();
 <!--					<li class="--><?php //= (Yii::$app->controller->route == 'site/green') ? 'active' : ''; ?><!--">-->
 <!--						<a href="--><?php //= \yii\helpers\Url::to(['/green-tariff']); ?><!--">--><?php //= BaseController::getMessage('5') ?><!--</a>-->
 <!--					</li>-->
-                    <li class="dropdown-wrapper">
-                        <span><a href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('6') ?></a> <i class="icon-angle-down"></i></span>
-                        <ul class="dropdown header-drop-list">
-                            <li><a href="<?= \yii\helpers\Url::to(['/technology/solnechnyye-paneli-pod-klyuch']); ?>"><?= BaseController::getMessage('748') ?></a></li>
-<!--                            <li><a href="--><?php //= \yii\helpers\Url::to(['/technology/solnechnyye-paneli-15-kvt']); ?><!--">--><?php //= BaseController::getMessage('749') ?><!--</a></li>-->
-<!--                            <li><a href="--><?php //= \yii\helpers\Url::to(['/technology/solnechnaya-stantsiya-30-kvt']); ?><!--">--><?php //= BaseController::getMessage('750') ?><!--</a></li>-->
-                        </ul>
-                    </li>
+                        <li <?= (Yii::$app->controller->route == 'site/technology') ? 'active' : ''; ?>">
+                        <a href="<?= \yii\helpers\Url::to(['/technology']); ?>"><?= BaseController::getMessage('6') ?></a>
+                        <!--                                <ul class="dropdown header-drop-list">-->
+                        <!--                                    <li><a href="--><?php //= \yii\helpers\Url::to(['/technology/solnechnyye-paneli-pod-klyuch']); ?><!--">--><?php //= BaseController::getMessage('748') ?><!--</a></li>-->
+                        <!--                                    <li><a href="--><?php //= \yii\helpers\Url::to(['/technology/solnechnyye-paneli-15-kvt']); ?><!--">--><?php //= BaseController::getMessage('749') ?><!--</a></li>-->
+                        <!--                                    <li><a href="--><?php //= \yii\helpers\Url::to(['/technology/solnechnaya-stantsiya-30-kvt']); ?><!--">--><?php //= BaseController::getMessage('750') ?><!--</a></li>-->
+                        <!--                                </ul>-->
+                        </li>
                     <li class="<?= (Yii::$app->controller->route == 'site/video') ? 'active' : ''; ?>">
                         <a href="<?= \yii\helpers\Url::to(['/video']); ?>"><?= BaseController::getMessage('412') ?></a>
                     </li>

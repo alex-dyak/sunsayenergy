@@ -53,16 +53,16 @@
                         </div>
                     </div>
                     <ul class="possibility-list-slider">
-                        <div class="possibility-item-slider">
-                            <li class="possibility-item">
-                                <div class="possibility-item-inner">
-                                    <div class="possibility-img">
-                                        <img oncontextmenu="return false" data-src="/img/homepage/Vector1.png" alt="">
-                                    </div>
-                                    <p class="possibility-text"><?= BaseController::getMessage('737') ?></p>
-                                </div>
-                            </li>
-                        </div>
+<!--                        <div class="possibility-item-slider">-->
+<!--                            <li class="possibility-item">-->
+<!--                                <div class="possibility-item-inner">-->
+<!--                                    <div class="possibility-img">-->
+<!--                                        <img oncontextmenu="return false" data-src="/img/homepage/Vector1.png" alt="">-->
+<!--                                    </div>-->
+<!--                                    <p class="possibility-text">--><?php //= BaseController::getMessage('737') ?><!--</p>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                        </div>-->
                         <div class="possibility-item-slider">
                             <li class="possibility-item">
                                 <div class="possibility-item-inner">
