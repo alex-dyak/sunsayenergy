@@ -112,7 +112,7 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
 <?php $this->beginBody() ?>
 <header class="header <?= (Yii::$app->controller->route == 'site/index') ? '' : 'header__background' ?>">
     <div class="header__logotype">
-        <a href="<?= \yii\helpers\Url::to(['/']); ?>"><img oncontextmenu="return false" class="img-responsive" src="/img/logo.svg" alt="SUNSAY Energy"></a>
+        <a href="<?= \yii\helpers\Url::to(['/']); ?>"><img oncontextmenu="return false" class="img-responsive" src="/img/logo.svg" alt="SUNSAY NRG"></a>
     </div>
     <div class="header__navbar">
         <nav class="navbar">
@@ -369,7 +369,7 @@ if (!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer
                          <!--<li <?/*= (Yii::$app->language=='en')?'class="active"':''   */?> ><a href="/en/<?/*= \frontend\components\UrlTrimLang::widget() */?>">EN</a></li>-->
                          <li <?= (Yii::$app->language=='ru')?'class="active"':''   ?> ><a href="/ru/<?= \frontend\components\UrlTrimLang::widget() ?>">RU</a></li>
                      </ul>
-                    <div class="copyright"><?= BaseController::getMessage('15') ?><br/>© SUNSAY Energy 2019</div>
+                    <div class="copyright"><?= BaseController::getMessage('15') ?><br/>© SUNSAY NRG 2019</div>
                 </div>
             </div>
         </div>

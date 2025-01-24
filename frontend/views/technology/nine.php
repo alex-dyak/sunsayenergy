@@ -95,7 +95,7 @@ $this->params['breadcrumbs'][] = [
 							<div class="title">
 								<a href="<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $item->symbol]) ?>"><?= $item->header ?></a>
 							</div>
-							<div class="date"><?= $item->date ?></div>
+<!--							<div class="date">--><?php //= $item->date ?><!--</div>-->
 							<div class="image" style="background-image: url('/images/<?= $item->images->imagePreview ?>')"></div>
 						</a>
                     </div>
@@ -116,7 +116,7 @@ $this->params['breadcrumbs'][] = [
         "itemListElement": [{
             "@type": "ListItem",
             "position": 1,
-            "name": "SUNSAY Energy",
+            "name": "SUNSAY NRG",
             "item": "https://sunsayenergy.com/"
         },{
             "@type": "ListItem",

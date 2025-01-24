@@ -278,7 +278,7 @@ $this->registerCssFile('/style/lib/ion.rangeSlider.css', ['position' => \yii\web
         "itemListElement": [{
             "@type": "ListItem",
             "position": 1,
-            "name": "SUNSAY Energy",
+            "name": "SUNSAY NRG",
             "item": "https://sunsayenergy.com"
         },{
             "@type": "ListItem",

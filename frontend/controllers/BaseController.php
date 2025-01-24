@@ -183,7 +183,7 @@ class BaseController extends Controller
     }
 
     protected function setOgSiteName(){
-        $this->view->registerMetaTag(['property'=>'og:site_name', 'content'=>'SUNSAY Energy']);
+        $this->view->registerMetaTag(['property'=>'og:site_name', 'content'=>'SUNSAY NRG']);
     }
 
     private function prefered_language()

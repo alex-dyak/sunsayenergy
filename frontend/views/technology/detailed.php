@@ -78,7 +78,7 @@ $seo_date = date('Y-m-d', $datetime);
 							<div class="image">
 								<img oncontextmenu="return false" src="/img/logo.svg" data-src="/images/<?= $item->images->imagePreview ?>" alt="<?= $item->header ?>">
 							</div>
-							<div class="date"><?= $item->date ?></div>
+<!--							<div class="date">--><?php //= $item->date ?><!--</div>-->
 							<div class="title">
 								<a href="<?= \yii\helpers\Url::to(['technology/detailed', 'symbol' => $item->symbol]) ?>"><?= $item->header ?></a>
 							</div>
@@ -103,7 +103,7 @@ $seo_date = date('Y-m-d', $datetime);
         "itemListElement": [{
             "@type": "ListItem",
             "position": 1,
-            "name": "SUNSAY Energy",
+            "name": "SUNSAY NRG",
             "item": "https://sunsayenergy.com"
         },{
             "@type": "ListItem",
@@ -137,11 +137,11 @@ $seo_date = date('Y-m-d', $datetime);
         },
         "author": {
             "@type": "Organization",
-            "name": "SUNSAY Energy"
+            "name": "SUNSAY NRG"
         },
         "publisher": {
             "@type": "Organization",
-            "name": "SUNSAY Energy",
+            "name": "SUNSAY NRG",
             "logo": {
                 "@type": "ImageObject",
                 "url": "https://sunsayenergy.com/img/logo.png",

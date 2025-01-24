@@ -222,7 +222,7 @@ $contacts = \backend\models\Contact::getContact();
                             <?= BaseController::getMessage('580') ?>
                         </strong>
                         <p class="energy-position">
-                            СЕО «SUNSAY Energy»
+                            СЕО «SUNSAY NRG»
                         </p>
                     </div>
                 </div>
@@ -446,7 +446,7 @@ $contacts = \backend\models\Contact::getContact();
             <div class="about-company-wrapper">
 
                 <div class="about-company-sansay">
-                    <strong class="dohod-zelyonyi-h2"><?= BaseController::getMessage('806') ?> SUNSAY Energy</strong>
+                    <strong class="dohod-zelyonyi-h2"><?= BaseController::getMessage('806') ?> SUNSAY NRG</strong>
                     <p class="integrated-subtitle"><?= BaseController::getMessage('807') ?></p>
                 </div>
 
@@ -650,7 +650,7 @@ $contacts = \backend\models\Contact::getContact();
         "itemListElement": [{
             "@type": "ListItem",
             "position": 1,
-            "name": "SUNSAY Energy",
+            "name": "SUNSAY NRG",
             "item": "https://sunsayenergy.com"
         },{
             "@type": "ListItem",

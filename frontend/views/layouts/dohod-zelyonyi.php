@@ -166,15 +166,15 @@ $contacts = \backend\models\Contact::getContact();
 				</div>
 				<strong class="main-logo">
 					<a href="<?= \yii\helpers\Url::to(['/']); ?>">
-                        <img oncontextmenu="return false" class="logo-mob" src="/img/dohod-zelyonyi-tarif/logo-white.svg" width="184" height="44" alt="SUNSAY Energy">
-                        <img oncontextmenu="return false" class="logo-dark" src="/img/logo.svg" width="184" height="44" alt="SUNSAY Energy">
+                        <img oncontextmenu="return false" class="logo-mob" src="/img/dohod-zelyonyi-tarif/logo-white.svg" width="184" height="44" alt="SUNSAY NRG">
+                        <img oncontextmenu="return false" class="logo-dark" src="/img/logo.svg" width="184" height="44" alt="SUNSAY NRG">
 						<span class="logo-text logo-text-white"><?= BaseController::getMessage('406') ?></span>
 					</a>
 				</strong>
 				<nav class="header-nav">
 					<strong class="nav-logo">
 						<a href="<?= \yii\helpers\Url::to(['/']); ?>">
-							<img oncontextmenu="return false" src="/img/logo-navbar.svg" width="148" alt="SUNSAY Energy">
+							<img oncontextmenu="return false" src="/img/logo-navbar.svg" width="148" alt="SUNSAY NRG">
 						</a>
 					</strong>
                     <ul class="nav-list">
@@ -231,7 +231,7 @@ $contacts = \backend\models\Contact::getContact();
 	<div class="to-top-block" id="to_top_block">
 		<div class="logo-block">
 			<a href="<?= \yii\helpers\Url::to(['/']); ?>">
-				<img oncontextmenu="return false" data-src="/img/logo.svg" alt="SUNSAY Energy" width="120">
+				<img oncontextmenu="return false" data-src="/img/logo.svg" alt="SUNSAY NRG" width="120">
 			</a>
 		</div>
 		<span id="to-top-link"><i class="icon-angle-top"></i></span>
@@ -280,12 +280,12 @@ $contacts = \backend\models\Contact::getContact();
             <div class="company-info">
                 <strong class="footer-logo">
                     <a href="<?= \yii\helpers\Url::to(['/']); ?>">
-                        <img oncontextmenu="return false" src="/img/logo-navbar.svg" width="185" alt="SUNSAY Energy">
+                        <img oncontextmenu="return false" src="/img/logo-navbar.svg" width="185" alt="SUNSAY NRG">
                         <!--								<span class="logo-text">--><?//= BaseController::getMessage('406') ?><!--</span>-->
                     </a>
                 </strong>
                 <div class="copyright">
-                    <p><a href="<?= \yii\helpers\Url::to(['/']); ?>">&copy; SUNSAY Energy <?= date('Y'); ?></a></p>
+                    <p><a href="<?= \yii\helpers\Url::to(['/']); ?>">&copy; SUNSAY NRG <?= date('Y'); ?></a></p>
                     <p style="max-width: 115px;margin: 0 auto"><?= BaseController::getMessage('15') ?> <a href="<?= (Yii::$app->language=='ua') ? 'https://inweb.ua/ua/ppc/' : 'https://inweb.ua/ppc/' ?>" target="_blank">Inweb</a></p>
                 </div>
             </div>
@@ -361,7 +361,7 @@ $contacts = \backend\models\Contact::getContact();
                     <a href="#footer-newsletter" class="button newsletter-opener"><?= BaseController::getMessage('410') ?></a>
                 <?php } ?>
                 <div class="copyright">
-                    <p><a href="<?= \yii\helpers\Url::to(['/']); ?>">&copy; SUNSAY Energy <?= date('Y'); ?></a></p>
+                    <p><a href="<?= \yii\helpers\Url::to(['/']); ?>">&copy; SUNSAY NRG <?= date('Y'); ?></a></p>
                     <p><?= BaseController::getMessage('15') ?> <a href="<?= (Yii::$app->language=='ua') ? 'https://inweb.ua/ua/ppc/' : 'https://inweb.ua/ppc/' ?>" target="_blank">Inweb</a></p>
                 </div>
             </div>
@@ -684,7 +684,7 @@ $contacts = \backend\models\Contact::getContact();
     {
         "@context" : "http://schema.org",
         "@type" : "Organization",
-        "name" : "SUNSAY Energy",
+        "name" : "SUNSAY NRG",
         "url" : "https://sunsayenergy.com/",
         "sameAs" : [
             "<?= $contacts->link_fb ?>",

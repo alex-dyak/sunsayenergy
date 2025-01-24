@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = [
 							<div class="image">
 								<img oncontextmenu="return false" src="/img/logo.svg" data-src="/images/<?= $item->images->imagePreview ?>" alt="<?= $item->header ?>">
 							</div>
-							<div class="date"><?= $item->date ?></div>
+<!--							<div class="date">--><?php //= $item->date ?><!--</div>-->
 							<div class="title"><?= $item->header ?></div>
 						</a>
 					</div>
@@ -48,7 +48,7 @@ $this->params['breadcrumbs'][] = [
         "itemListElement": [{
             "@type": "ListItem",
             "position": 1,
-            "name": "SUNSAY Energy",
+            "name": "SUNSAY NRG",
             "item": "https://sunsayenergy.com/"
         },{
             "@type": "ListItem",
