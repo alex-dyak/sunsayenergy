@@ -1241,9 +1241,10 @@ a:not([class]):hover{color:#ffd100}
 .subtitle__slider{font-family:"Bebas Neue Cyrillic",sans-serif;font-size:20px;line-height:20px;font-weight:400;text-transform:uppercase;margin-bottom:30px}
 .possibility-list-slider{list-style:none;margin:0 0 30px;padding:0}
 .possibility-item-slider{margin-left:12px;margin-right:12px}
-.possibility-item{list-style-type:none;max-width:331px;min-height:390px;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.2);border-radius:35px;text-align:center;margin-bottom:62px;margin-top:10px;padding:57px 36px 20px}
-.possibility-img{display:flex;align-items:center;justify-content:center;width:90px;height:90px;padding:15px;border-radius:50%;background:#ffd100;margin:0 auto 42px}
+.possibility-item{list-style-type:none;max-width:331px;min-height:370px;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.2);border-radius:35px;text-align:center;margin-bottom:62px;margin-top:10px;padding:32px 18px 16px}
+.possibility-img{display:flex;align-items:center;justify-content:center;width:90px;height:90px;padding:15px;border-radius:50%;background:#ffd100;margin:0 auto 24px}
 .possibility-text{font-weight:700;font-size:20px;line-height:24px}
+.possibility-text-subtitle{font-size: 12px}
 .possibility-item-slider{display:flex;justify-content:center;align-items:stretch;height:100%}
 .possibility-item-slider.slick-slide.slick-current.slick-active{display:flex;justify-content:center;height:100%}
 @media screen and (min-width:600px){
@@ -1268,7 +1269,7 @@ a:not([class]):hover{color:#ffd100}
 .station-types__item-color{background:#ffe863}
 .station-types__item:hover{color:#fff}
 .station-types__img-mob img{position:absolute;top:0;bottom:0;right:0;display:block;-webkit-background-size:contain;background-size:auto;background-repeat:no-repeat;background-position:100% 0}
-.button__center .new-consult-btn{text-align:center;width:100%}
+.button__center .new-consult-btn{text-align:center;max-width: 60%}
 .station-types__img{display:none}
 @media screen and (min-width:375px){
 .station-types__img-mob{background-image:url(../img/homepage/mob-panels5.png)}
@@ -2709,6 +2710,9 @@ a.advantages-btn{font-size:20px;line-height:24px}
 .staff-slider .staff-info{display:inline-block;vertical-align:middle;opacity:0;font-size:14px;line-height:1.2;transition:all .3s ease}
 .staff-slider .staff-info strong{font-size:18px}
 .staff-slider .staff-info p{margin-bottom:0}
+@media screen and (min-width:479px){
+    .staff-slider .staff-info{opacity: 1;}
+}
 @media screen and (min-width:768px){
 .staff-slider .slick-list{overflow:hidden}
 .staff-slider .img-block{border:0}

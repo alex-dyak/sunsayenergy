@@ -190,7 +190,7 @@ $(document).ready(function(){
         $('.staff-slider').slick({
             slidesToScroll: 1,
             rows: 0,
-            slidesToShow: 5,
+            slidesToShow: 3,
             arrows: false,
             dots: true,
             infinite: true,

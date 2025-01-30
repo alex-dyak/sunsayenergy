@@ -67,8 +67,8 @@
                             <li class="possibility-item">
                                 <div class="possibility-item-inner">
                                     <div class="possibility-img">
-                                        <img oncontextmenu="return false" data-src="/img/homepage/Vector2.png" alt="">
-<!--                                        <img oncontextmenu="return false" data-src="/img/homepage/1_save-money.png" alt="">-->
+<!--                                        <img oncontextmenu="return false" data-src="/img/homepage/Vector2.png" alt="">-->
+                                        <img oncontextmenu="return false" data-src="/img/homepage/1_save-money.png"  width="45" height="45" alt="">
                                     </div>
                                     <p class="possibility-text"><?= BaseController::getMessage('738') ?></p>
                                     <p class="possibility-text-subtitle"><?= BaseController::getMessage('867') ?></p>
@@ -79,8 +79,8 @@
                             <li class="possibility-item">
                                 <div class="possibility-item-inner">
                                     <div class="possibility-img">
-                                        <img oncontextmenu="return false" data-src="/img/homepage/Vector1.png" alt="">
-<!--                                        <img oncontextmenu="return false" data-src="/img/homepage/2_eco-light.png" alt="">-->
+<!--                                        <img oncontextmenu="return false" data-src="/img/homepage/Vector1.png" alt="">-->
+                                        <img oncontextmenu="return false" data-src="/img/homepage/2_eco-light.png" width="45" height="45" alt="">
                                     </div>
                                     <p class="possibility-text"><?= BaseController::getMessage('739') ?></p>
                                     <p class="possibility-text-subtitle"><?= BaseController::getMessage('868') ?></p>
@@ -91,8 +91,8 @@
                             <li class="possibility-item">
                                 <div class="possibility-item-inner">
                                     <div class="possibility-img">
-                                        <img oncontextmenu="return false" data-src="/img/homepage/Vector2.png" alt="">
-<!--                                        <img oncontextmenu="return false" data-src="/img/homepage/3_financial-profit.png" alt="">-->
+<!--                                        <img oncontextmenu="return false" data-src="/img/homepage/Vector2.png" alt="">-->
+                                        <img oncontextmenu="return false" data-src="/img/homepage/3_financial-profit.png" width="45" height="45" alt="">
                                     </div>
                                     <p class="possibility-text"><?= BaseController::getMessage('740') ?></p>
                                     <p class="possibility-text-subtitle"><?= BaseController::getMessage('869') ?></p>
