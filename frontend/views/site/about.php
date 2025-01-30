@@ -98,51 +98,51 @@ $contacts = \backend\models\Contact::getContact();
 				<p><?= BaseController::getMessage('579') ?></p>
 			</div>
 			<div class="staff-slider">
-				<div class="slide">
-					<div class="img-block">
-						<img oncontextmenu="return false" data-src="/img/about/worker/1.jpg" alt="<?= BaseController::getMessage('580') ?>">
-					</div>
-					<div class="staff-info">
-						<strong><?= BaseController::getMessage('580') ?></strong>
-						<p><?= BaseController::getMessage('581') ?></p>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="img-block">
-						<img oncontextmenu="return false" data-src="/img/about/worker/2.jpg" alt="<?= BaseController::getMessage('583') ?>">
-					</div>
-					<div class="staff-info">
-						<strong><?= BaseController::getMessage('583') ?></strong>
-						<p><?= BaseController::getMessage('584') ?></p>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="img-block">
-						<img oncontextmenu="return false" data-src="/img/about/worker/3.jpg" alt="<?= BaseController::getMessage('585') ?>">
-					</div>
-					<div class="staff-info">
-						<strong><?= BaseController::getMessage('585') ?></strong>
-						<p><?= BaseController::getMessage('586') ?></p>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="img-block">
-						<img oncontextmenu="return false" data-src="/img/about/worker/4.jpg" alt="<?= BaseController::getMessage('587') ?>">
-					</div>
-					<div class="staff-info">
-						<strong><?= BaseController::getMessage('587') ?></strong>
-						<p><?= BaseController::getMessage('588') ?></p>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="img-block">
-						<img oncontextmenu="return false" data-src="/img/about/worker/5.jpg" alt="<?= BaseController::getMessage('589') ?>">
-					</div>
-					<div class="staff-info">
-						<strong><?= BaseController::getMessage('589') ?></strong>
-						<p><?= BaseController::getMessage('590') ?></p>
-					</div>
-				</div>
+                <div class="slide">
+                    <div class="img-block">
+                        <img oncontextmenu="return false" data-src="/img/about/worker/Dmitriy.png" alt="<?= BaseController::getMessage('580') ?>">
+                    </div>
+                    <div class="staff-info">
+                        <strong><?= BaseController::getMessage('580') ?></strong>
+                        <p><?= BaseController::getMessage('581') ?></p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="img-block">
+                        <img oncontextmenu="return false" data-src="/img/about/worker/Sergey.png" alt="<?= BaseController::getMessage('583') ?>">
+                    </div>
+                    <div class="staff-info">
+                        <strong><?= BaseController::getMessage('583') ?></strong>
+                        <p><?= BaseController::getMessage('584') ?></p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="img-block">
+                        <img oncontextmenu="return false" data-src="/img/about/worker/Alexandr.png" alt="<?= BaseController::getMessage('585') ?>">
+                    </div>
+                    <div class="staff-info">
+                        <strong><?= BaseController::getMessage('585') ?></strong>
+                        <p><?= BaseController::getMessage('586') ?></p>
+                    </div>
+                </div>
+<!--				<div class="slide">-->
+<!--					<div class="img-block">-->
+<!--						<img oncontextmenu="return false" data-src="/img/about/worker/4.jpg" alt="--><?php //= BaseController::getMessage('587') ?><!--">-->
+<!--					</div>-->
+<!--					<div class="staff-info">-->
+<!--						<strong>--><?php //= BaseController::getMessage('587') ?><!--</strong>-->
+<!--						<p>--><?php //= BaseController::getMessage('588') ?><!--</p>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="slide">-->
+<!--					<div class="img-block">-->
+<!--						<img oncontextmenu="return false" data-src="/img/about/worker/5.jpg" alt="--><?php //= BaseController::getMessage('589') ?><!--">-->
+<!--					</div>-->
+<!--					<div class="staff-info">-->
+<!--						<strong>--><?php //= BaseController::getMessage('589') ?><!--</strong>-->
+<!--						<p>--><?php //= BaseController::getMessage('590') ?><!--</p>-->
+<!--					</div>-->
+<!--				</div>-->
 				<!-- <div class="slide">
 					<div class="img-block">
 						<img oncontextmenu="return false" data-src="/img/about/worker/6.jpg" alt="<?= BaseController::getMessage('591') ?>">
@@ -152,24 +152,24 @@ $contacts = \backend\models\Contact::getContact();
 						<p><?= BaseController::getMessage('592') ?></p>
 					</div>
 				</div> -->
-				<div class="slide">
-					<div class="img-block">
-						<img oncontextmenu="return false" data-src="/img/about/worker/7.jpg" alt="<?= BaseController::getMessage('593') ?>">
-					</div>
-					<div class="staff-info">
-						<strong><?= BaseController::getMessage('593') ?></strong>
-						<p><?= BaseController::getMessage('594') ?></p>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="img-block">
-						<img oncontextmenu="return false" data-src="/img/about/worker/8.jpg" alt="<?= BaseController::getMessage('595') ?>">
-					</div>
-					<div class="staff-info">
-						<strong><?= BaseController::getMessage('595') ?></strong>
-						<p><?= BaseController::getMessage('596') ?></p>
-					</div>
-				</div>
+<!--				<div class="slide">-->
+<!--					<div class="img-block">-->
+<!--						<img oncontextmenu="return false" data-src="/img/about/worker/7.jpg" alt="--><?php //= BaseController::getMessage('593') ?><!--">-->
+<!--					</div>-->
+<!--					<div class="staff-info">-->
+<!--						<strong>--><?php //= BaseController::getMessage('593') ?><!--</strong>-->
+<!--						<p>--><?php //= BaseController::getMessage('594') ?><!--</p>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="slide">-->
+<!--					<div class="img-block">-->
+<!--						<img oncontextmenu="return false" data-src="/img/about/worker/8.jpg" alt="--><?php //= BaseController::getMessage('595') ?><!--">-->
+<!--					</div>-->
+<!--					<div class="staff-info">-->
+<!--						<strong>--><?php //= BaseController::getMessage('595') ?><!--</strong>-->
+<!--						<p>--><?php //= BaseController::getMessage('596') ?><!--</p>-->
+<!--					</div>-->
+<!--				</div>-->
 				<!-- <div class="slide">
 					<div class="img-block">
 						<img oncontextmenu="return false" data-src="/img/about/worker/9.jpg" alt="<?= BaseController::getMessage('597') ?>">

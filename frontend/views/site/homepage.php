@@ -68,6 +68,7 @@
                                 <div class="possibility-item-inner">
                                     <div class="possibility-img">
                                         <img oncontextmenu="return false" data-src="/img/homepage/Vector2.png" alt="">
+<!--                                        <img oncontextmenu="return false" data-src="/img/homepage/1_save-money.png" alt="">-->
                                     </div>
                                     <p class="possibility-text"><?= BaseController::getMessage('738') ?></p>
                                 </div>
@@ -78,6 +79,7 @@
                                 <div class="possibility-item-inner">
                                     <div class="possibility-img">
                                         <img oncontextmenu="return false" data-src="/img/homepage/Vector1.png" alt="">
+<!--                                        <img oncontextmenu="return false" data-src="/img/homepage/2_eco-light.png" alt="">-->
                                     </div>
                                     <p class="possibility-text"><?= BaseController::getMessage('739') ?></p>
                                 </div>
@@ -88,6 +90,7 @@
                                 <div class="possibility-item-inner">
                                     <div class="possibility-img">
                                         <img oncontextmenu="return false" data-src="/img/homepage/Vector2.png" alt="">
+<!--                                        <img oncontextmenu="return false" data-src="/img/homepage/3_financial-profit.png" alt="">-->
                                     </div>
                                     <p class="possibility-text"><?= BaseController::getMessage('740') ?></p>
                                 </div>
