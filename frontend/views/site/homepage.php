@@ -71,6 +71,7 @@
 <!--                                        <img oncontextmenu="return false" data-src="/img/homepage/1_save-money.png" alt="">-->
                                     </div>
                                     <p class="possibility-text"><?= BaseController::getMessage('738') ?></p>
+                                    <p class="possibility-text-subtitle"><?= BaseController::getMessage('867') ?></p>
                                 </div>
                             </li>
                         </div>
@@ -82,6 +83,7 @@
 <!--                                        <img oncontextmenu="return false" data-src="/img/homepage/2_eco-light.png" alt="">-->
                                     </div>
                                     <p class="possibility-text"><?= BaseController::getMessage('739') ?></p>
+                                    <p class="possibility-text-subtitle"><?= BaseController::getMessage('868') ?></p>
                                 </div>
                             </li>
                         </div>
@@ -93,6 +95,7 @@
 <!--                                        <img oncontextmenu="return false" data-src="/img/homepage/3_financial-profit.png" alt="">-->
                                     </div>
                                     <p class="possibility-text"><?= BaseController::getMessage('740') ?></p>
+                                    <p class="possibility-text-subtitle"><?= BaseController::getMessage('869') ?></p>
                                 </div>
                             </li>
                         </div>
