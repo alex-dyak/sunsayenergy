@@ -2710,7 +2710,7 @@ a.advantages-btn{font-size:20px;line-height:24px}
 .staff-slider .staff-info{display:inline-block;vertical-align:middle;opacity:0;font-size:14px;line-height:1.2;transition:all .3s ease}
 .staff-slider .staff-info strong{font-size:18px}
 .staff-slider .staff-info p{margin-bottom:0}
-@media screen and (min-width:479px){
+@media screen and (min-width:768px){
     .staff-slider .staff-info{opacity: 1;}
 }
 @media screen and (min-width:768px){
@@ -2722,11 +2722,11 @@ a.advantages-btn{font-size:20px;line-height:24px}
 @media screen and (min-width:1024px){
 .about-us-section{padding:60px 0}
 .staff-slider .slick-track{padding:50px 0}
-.staff-slider .img-block{width:150px;height:150px}
+.staff-slider .img-block{width:220px;height:220px}
 .staff-slider .slick-active+.slick-active{transform:scale(1.15,1.15);z-index:3}
 .staff-slider .slick-active.slick-current+.slick-active+.slick-active{transform:scale(1,1);z-index:2}
 .staff-slider .slick-active.slick-current{transform:scale(1.3,1.3);z-index:4}
-.staff-slider .staff-info{text-align:left;border-left:10px solid #b7d3f7;padding:10px;font-size:16px}
+.staff-slider .staff-info{padding:10px;font-size:16px}
 .staff-slider .slick-active.slick-current .staff-info{transform:scale(.8,.8)}
 }
 @media screen and (min-width:1280px){
@@ -2735,16 +2735,13 @@ a.advantages-btn{font-size:20px;line-height:24px}
 .staff-slider .slick-active.slick-current+.slick-active+.slick-active{transform:scale(1,1);z-index:2}
 .staff-slider .slick-active.slick-current{transform:scale(1.5,1.5);z-index:4}
 .staff-slider .slick-active.slick-current .staff-info{transform:scale(.6,.6)}
-.staff-slider .staff-info strong{font-size:22px}
 }
 @media screen and (min-width:1440px){
 .staff-slider .slick-track{padding:100px 0 70px}
-.staff-slider .img-block{width:180px;height:180px}
 .staff-slider .slick-active+.slick-active{transform:scale(1.2,1.2);z-index:3}
 .staff-slider .slick-active.slick-current+.slick-active+.slick-active{transform:scale(1,1);z-index:2}
 .staff-slider .slick-active.slick-current{transform:scale(1.5,1.5);z-index:4}
 .staff-slider .slick-active.slick-current .staff-info{transform:scale(.6,.6)}
-.staff-slider .staff-info strong{font-size:24px}
 }
 .project-hero-section{position:relative;margin-top:-170px;padding:180px 0 80px;overflow:hidden}
 @media screen and (max-width:767px){
