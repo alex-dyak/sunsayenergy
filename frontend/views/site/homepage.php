@@ -45,12 +45,12 @@
                 <div class="container">
                     <div class="title-block title-block__possibility">
                         <h2 class="line-title"><?= strtoupper(BaseController::getMessage('734')) ?></h2>
-                        <div class="subtitle subtitle__possibility">
-                            <p><?= BaseController::getMessage('735') ?></p>
-                        </div>
-                        <div class="subtitle__slider">
-                            <p><?= strtoupper(BaseController::getMessage('736')) ?>:</p>
-                        </div>
+<!--                        <div class="subtitle subtitle__possibility">-->
+<!--                            <p>--><?php //= BaseController::getMessage('735') ?><!--</p>-->
+<!--                        </div>-->
+<!--                        <div class="subtitle__slider">-->
+<!--                            <p>--><?php //= strtoupper(BaseController::getMessage('736')) ?><!--:</p>-->
+<!--                        </div>-->
                     </div>
                     <ul class="possibility-list-slider">
 <!--                        <div class="possibility-item-slider">-->
@@ -75,18 +75,7 @@
                                 </div>
                             </li>
                         </div>
-                        <div class="possibility-item-slider">
-                            <li class="possibility-item">
-                                <div class="possibility-item-inner">
-                                    <div class="possibility-img">
-<!--                                        <img oncontextmenu="return false" data-src="/img/homepage/Vector1.png" alt="">-->
-                                        <img oncontextmenu="return false" data-src="/img/homepage/2_eco-light.png" width="45" height="45" alt="">
-                                    </div>
-                                    <p class="possibility-text"><?= BaseController::getMessage('739') ?></p>
-                                    <p class="possibility-text-subtitle"><?= BaseController::getMessage('868') ?></p>
-                                </div>
-                            </li>
-                        </div>
+
                         <div class="possibility-item-slider">
                             <li class="possibility-item">
                                 <div class="possibility-item-inner">
@@ -96,6 +85,19 @@
                                     </div>
                                     <p class="possibility-text"><?= BaseController::getMessage('740') ?></p>
                                     <p class="possibility-text-subtitle"><?= BaseController::getMessage('869') ?></p>
+                                </div>
+                            </li>
+                        </div>
+
+                        <div class="possibility-item-slider">
+                            <li class="possibility-item">
+                                <div class="possibility-item-inner">
+                                    <div class="possibility-img">
+                                        <!--                                        <img oncontextmenu="return false" data-src="/img/homepage/Vector1.png" alt="">-->
+                                        <img oncontextmenu="return false" data-src="/img/homepage/2_eco-light.png" width="45" height="45" alt="">
+                                    </div>
+                                    <p class="possibility-text"><?= BaseController::getMessage('739') ?></p>
+                                    <p class="possibility-text-subtitle"><?= BaseController::getMessage('868') ?></p>
                                 </div>
                             </li>
                         </div>
