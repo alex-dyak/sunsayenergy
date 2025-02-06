@@ -196,7 +196,7 @@ $contacts = \backend\models\Contact::getContact();
 						</div>
 					</div>
 					<div class="reason-slide yellow">
-						<div class="reason-slide-img background-lazy" style="background-image: url('/img/logo.svg')" data-src="/img/commercial-station/pr-support.jpg"></div>
+						<div class="reason-slide-img background-lazy" style="background-image: url('/img/logo.svg')" data-src="/img/commercial-station/pr-support.png"></div>
 						<div class="slide-description">
 							<strong><?= BaseController::getMessage('529') ?></strong>
 							<p><?= BaseController::getMessage('530') ?></p>
