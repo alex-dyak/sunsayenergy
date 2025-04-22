@@ -144,27 +144,11 @@ $this->params['breadcrumbs'][] = [
             <div class="container">
                 <h2 class="line-title"><?= BaseController::getMessage('320') ?></h2>
                 <div class="video-row">
-                    <?php
-                    foreach ($video_reviews as $item): ?>
-                        <?php
-                        $lang = $_SERVER['REQUEST_URI'];
-                        if (stripos($lang, 'ru') !== false && $item->video_name_ru) {
-                            $video_name = $item->video_name_ru;
-                        } elseif (stripos($lang, 'en') !== false && $item->video_name_en) {
-                            $video_name = $item->video_name_en;
-                        } else {
-                            $video_name = $item->video_name_uk;
-                        }
-                        ?>
-                        <div class="video-col">
-                            <div class="embed-responsive">
-                                <a href="https://www.youtube.com/watch?v=<?= $item->video_url ?>" target="_blank" rel="nofollow">
-                                    <img oncontextmenu="return false" src="/img/logo.svg" data-src="https://i1.ytimg.com/vi/<?= $item->video_url ?>/mqdefault.jpg" alt="<?= $video_name ?>">
-                                </a>
-                            </div>
-                            <strong class="video-title"><?= $video_name ?></strong>
+                    <div class="video-col">
+                        <div class="embed-responsive iframe-wrap">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/2HB8As1vkIU?si=4-3UucclY8ZJxjwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                    <?php endforeach; ?>
+                    </div>
                 </div>
             </div>
         </section>

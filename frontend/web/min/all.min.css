@@ -1378,7 +1378,7 @@ a:not([class]):hover{color:#ffd100}
 @media only screen and (min-width:480px){
 .video-review-slider .video-col{padding:0 15px}
 }
-.video-section{text-align:center;padding:35px 0;margin-bottom:20px}
+.video-section{text-align:center;padding:35px 0;}
 .video-section h2{font:400 36px/1.15 "Bebas Neue Cyrillic",sans-serif;text-transform:uppercase;margin:0 0 10px}
 @media only screen and (min-width:768px){
 .video-section h2{font-size:50px;margin-bottom:20px}
@@ -1404,7 +1404,7 @@ a:not([class]):hover{color:#ffd100}
 .video-row{display:flex;flex-wrap:wrap;justify-content:center;margin:0 -14px 30px}
 }
 .video-row .video-col{margin-bottom:24px}
-.video-row .video-col:only-child{width: 90%;max-width: 800px;margin: 0 auto 24px;}
+.video-row .video-col:only-child{width: 90%;max-width: 800px;margin: 0;}
 @media screen and (min-width:768px){
 .video-row .video-col{width:50%;padding:0 14px}
 }
@@ -1713,6 +1713,7 @@ a:not([class]):hover{color:#ffd100}
 .iframe-wrap iframe{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
 @media screen and (min-width:1024px){
     .iframe-wrap{ width: 50%;margin: 0 auto;padding-bottom: 28.12%}
+    .embed-responsive.iframe-wrap{width: 100%;padding-bottom: 56.25%;}
 }
 .service-miscount{margin:0 0 30px;z-index:2}
 .service-miscount .line-title{text-align:center;margin-bottom:30px}
