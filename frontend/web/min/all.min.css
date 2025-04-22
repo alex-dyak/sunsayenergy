@@ -1404,6 +1404,7 @@ a:not([class]):hover{color:#ffd100}
 .video-row{display:flex;flex-wrap:wrap;justify-content:center;margin:0 -14px 30px}
 }
 .video-row .video-col{margin-bottom:24px}
+.video-row .video-col:only-child{width: 90%;max-width: 800px;margin: 0 auto 24px;}
 @media screen and (min-width:768px){
 .video-row .video-col{width:50%;padding:0 14px}
 }
