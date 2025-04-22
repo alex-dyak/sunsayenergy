@@ -27,12 +27,7 @@ $this->params['breadcrumbs'][] = [
 					<h1><?= BaseController::getMessage('74') ?></h1>
 				</div>
 				<div class="service-section-image">
-					<picture>
-						  <source media="(max-width: 767px)" srcset="/img/house-3-mob.webp" type="image/webp">
-						  <source srcset="/img/house-3.webp" type="image/webp">
-						  <source media="(max-width: 767px)" srcset="/img/house-3-mob.png">
-						<img oncontextmenu="return false" src="/img/bess-hero-img.png" alt="BESS">
-					</picture>
+                    <img src="/img/bess-hero-img.png" alt="BESS">
 				</div>
 				<div class="description"><?= BaseController::getMessage('75') ?></div>
 			</div>
@@ -53,9 +48,8 @@ $this->params['breadcrumbs'][] = [
                 <div class="service-pros-text">
                     <p><b><?= BaseController::getMessage('480') ?></b></p>
                     <div class="more">
-                        <a href="#equipment" class="button"><?= BaseController::getMessage('	402') ?></a>
+                        <a href="#equipment" class="button"><?= BaseController::getMessage('402') ?></a>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -63,11 +57,11 @@ $this->params['breadcrumbs'][] = [
     <!-- end info -->
 
     <!-- start banner-->
-    <?= $this->render('../section/_service-banner.php'); ?>
+    <?= $this->render('../section/_service-banner-bess.php'); ?>
     <!-- end banner -->
 
     <!-- start profit -->
-        <section class=" profit-section">
+        <section class="profit-section">
             <div class="container">
                 <div class="profit-wrap">
                     <div class="profit-wrap-title">
