@@ -66,7 +66,7 @@ $this->params['breadcrumbs'][] = [
                 <div class="profit-wrap">
                     <div class="profit-wrap-title">
                         <h2 class="line-title"><?= BaseController::getMessage('490') ?></h2>
-                        <div class="title-img background-lazy" style="background-image: url('/img/logo.svg')" data-src="/img/reserve/profit.jpg"></div>
+                        <div class="title-img background-lazy" style="background-image: url('/img/logo.svg')" data-src="/img/reserve/profit.png"></div>
                     </div>
                     <ul class="profit-list">
                         <li>
