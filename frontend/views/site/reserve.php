@@ -66,7 +66,7 @@ $this->params['breadcrumbs'][] = [
                 <div class="profit-wrap">
                     <div class="profit-wrap-title">
                         <h2 class="line-title"><?= BaseController::getMessage('490') ?></h2>
-                        <div class="title-img background-lazy" style="background-image: url('/img/logo.svg')" data-src="/img/commercial-station/profit.jpg"></div>
+                        <div class="title-img background-lazy" style="background-image: url('/img/logo.svg')" data-src="/img/reserve/profit.jpg"></div>
                     </div>
                     <ul class="profit-list">
                         <li>
@@ -129,7 +129,7 @@ $this->params['breadcrumbs'][] = [
             <div class="commercial-cta">
                 <div class="container">
                     <div class="cta-wrap">
-                        <div class="cta-text"><?= BaseController::getMessage('501') ?></div>
+                        <div class="cta-text"><?= BaseController::getMessage('895') ?></div>
                         <div class="btn-wrap">
                             <a href="#connect" class="button order-btn"><?= BaseController::getMessage('468') ?></a>
                         </div>
