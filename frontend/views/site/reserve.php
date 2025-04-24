@@ -9,10 +9,10 @@ $this->params['breadcrumbs'][] = [
 
 $this->params['breadcrumbs'][] = [
     'template' => "<li><b>{link}</b></li>\n",
-    'label' => BaseController::getMessage('3'),
+    'label' => BaseController::getMessage('896'),
 ];
 ?>
-    <main class="page-container">
+    <main class="page-container bess-page">
 		<div class="container">
         <?php echo Breadcrumbs::widget([
             'homeLink' => ['label' => BaseController::getMessage('404'), 'url' => Yii::$app->homeUrl],
@@ -379,7 +379,7 @@ $this->registerCssFile('/style/lib/ion.rangeSlider.css', ['position' => \yii\web
         },{
             "@type": "ListItem",
             "position": 3,
-            "name": "<?= BaseController::getMessage('3') ?>",
+            "name": "<?= BaseController::getMessage('896') ?>",
             "item": "https://sunsayenergy.com<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']) ?>"
         }]
     }
