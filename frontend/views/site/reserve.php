@@ -146,7 +146,11 @@ $this->params['breadcrumbs'][] = [
                 <div class="video-row">
                     <div class="video-col">
                         <div class="embed-responsive iframe-wrap">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/2HB8As1vkIU?si=4-3UucclY8ZJxjwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/ND56ozwaSJ0?si=8YVbGEokJxPYADwC"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
