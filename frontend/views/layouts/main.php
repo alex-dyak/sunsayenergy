@@ -195,6 +195,9 @@ $contacts = \backend\models\Contact::getContact();
                         <li class="<?= (Yii::$app->controller->route == 'site/commercial') ? 'active' : ''; ?>">
                             <a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>"><?= BaseController::getMessage('531') ?></a>
                         </li>
+                        <li class="<?= (Yii::$app->controller->route == 'site/reserve') ? 'active' : ''; ?>">
+                            <a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"><?= BaseController::getMessage('897') ?></a>
+                        </li>
                         <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
                             <li class="subnav"><?= BaseController::getMessage('12') ?></li>
 <!--                            <li class="--><?php //= (Yii::$app->controller->route == 'site/green') ? 'active' : ''; ?><!--">-->
@@ -311,6 +314,11 @@ $contacts = \backend\models\Contact::getContact();
                             <li class="<?= (Yii::$app->controller->route == 'site/commercial') ? 'active' : ''; ?>">
                                 <a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>">
                                     <span><?= BaseController::getMessage('531') ?></span></a></li>
+                            <li class="<?= (Yii::$app->controller->route == 'site/reserve') ? 'active' : ''; ?>">
+                                <a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>">
+                                    <span><?= BaseController::getMessage('898') ?></span>
+                                </a>
+                            </li>
 						</ul>
 					</div>
 					<?php } ?>
