@@ -196,7 +196,7 @@ class SiteController extends BaseController
 
         $seo_data = self::getSeo('reserve');
 
-        $this->setOgImage('https://sunsayenergy.com' . '/img/house-3.png');
+        $this->setOgImage('https://sunsayenergy.com' . '/img/bess-hero-img.png');
         $this->setOgDescription($seo_data['description'][Yii::$app->language]);
         $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
 
