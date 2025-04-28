@@ -636,7 +636,7 @@ h2.line-title span:after{height:24px;top:38px}
     z-index: 2;
     border-bottom: 3px solid transparent;
 }
-@media screen and (max-width:1280px) {
+@media screen and (max-width:1279px) {
     .header .hidden-mobile {
         display: none;
     }
