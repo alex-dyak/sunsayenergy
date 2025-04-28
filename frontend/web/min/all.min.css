@@ -623,6 +623,35 @@ h2.line-title span:after{height:24px;top:38px}
 @media screen and (min-width:1580px){
 .container{max-width:1440px}
 }
+.header .nav-link {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: initial;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.25;
+    position: relative;
+    color: #393939;
+    z-index: 2;
+    border-bottom: 3px solid transparent;
+}
+@media screen and (max-width:1280px) {
+    .header .hidden-mobile {
+        display: none;
+    }
+}
+@media screen and (min-width:1280px) {
+    .header .visible-mobile {
+        display: none;
+    }
+    .header .nav-link {
+        text-transform: inherit;
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
+
 header nav,header ul{padding:0;margin:0;list-style:none}
 [class^=icon-]{display:inline-block;vertical-align:middle;line-height:1;font-style:normal}
 body.no-overflow{overflow:hidden!important;position:relative}

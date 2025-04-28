@@ -196,7 +196,8 @@ $contacts = \backend\models\Contact::getContact();
                             <a href="<?= \yii\helpers\Url::to(['/commercial_stations']); ?>"><?= BaseController::getMessage('531') ?></a>
                         </li>
                         <li class="<?= (Yii::$app->controller->route == 'site/reserve') ? 'active' : ''; ?>">
-                            <a href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"><?= BaseController::getMessage('897') ?></a>
+                            <a class="hidden-mobile" href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"><?= BaseController::getMessage('897') ?></a>
+                            <a class="visible-mobile" href="<?= \yii\helpers\Url::to(['/solar-power-for-backup-power']); ?>"><?= BaseController::getMessage('898') ?></a>
                         </li>
                         <?php if (stripos($_SERVER['REQUEST_URI'], '/en/') === false) { ?>
                             <li class="subnav"><?= BaseController::getMessage('12') ?></li>
