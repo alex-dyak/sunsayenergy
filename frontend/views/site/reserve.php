@@ -48,7 +48,7 @@ $this->params['breadcrumbs'][] = [
                 <div class="service-pros-text">
                     <p><b><?= BaseController::getMessage('480') ?></b></p>
                     <div class="more">
-                        <a href="#equipment" class="button"><?= BaseController::getMessage('402') ?></a>
+                        <a href="#connect" class="button"><?= BaseController::getMessage('402') ?></a>
                     </div>
                 </div>
             </div>
