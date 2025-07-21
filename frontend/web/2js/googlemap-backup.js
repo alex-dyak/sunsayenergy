@@ -1,11 +1,11 @@
 // Initial google maps
 function initMap() {
-	let myLatLng = { lat: 50.4386074867855, lng:  30.355684446219684 },
+	let myLatLng = { lat: 50.43720, lng:  30.35796 },
 		centerLatLng = myLatLng,
 		width = $(window).width();
 
 	if (width <= 1024 || width >= 768)
-		centerLatLng = { lat: 50.4386074867855, lng:  30.355684446219684 };
+		centerLatLng = { lat: 50.43720, lng:  30.35796 };
 
 	let image = {
 		url: '../img/icon/marker.png',
