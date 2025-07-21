@@ -92,7 +92,7 @@ class TechnologyController extends BaseController
         $seo_data = self::getSeo('nine');
 
         $other_articles = Blog::find()->where(['visible'=>1])->limit(4)->all();
-        $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop.png');
+        $this->setOgImage('https://sunsayenergy.com' . '/img/house-desktop2.png');
         $this->setOgDescription($seo_data['description'][Yii::$app->language]);
         $this->setMeta($seo_data['title'][Yii::$app->language], $seo_data['description'][Yii::$app->language]);
 
