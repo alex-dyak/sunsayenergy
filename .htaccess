@@ -3,6 +3,14 @@
     RewriteEngine On
 </IfModule>
 
+# --- Block Russia by GeoIP ---
+<IfModule mod_geoip.c>
+    GeoIPEnable On
+    SetEnvIf GEOIP_COUNTRY_CODE RU BlockCountry
+    Deny from env=BlockCountry
+</IfModule>
+# --- End Block ---
+
 #RewriteCond %{HTTPS} !=on
 #RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
