@@ -35,6 +35,14 @@ $contacts = \backend\models\Contact::getContact();
 	<meta name="apple-mobile-web-app-status-bar-style" content="white"/>
 	<link rel="shortcut icon" href="/img/favicon.ico">
 
+    <!-- Google Tag Manager New -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P8NRTXQK');</script>
+    <!-- End Google Tag Manager New -->
+
 	<!-- Google Tag Manager -->
 	<script>(function (w, d, s, l, i) {
 			w[l] = w[l] || [];
@@ -128,6 +136,12 @@ $contacts = \backend\models\Contact::getContact();
 </head>
 
 <body style="opacity:1;" class="<?php if ( BaseController::is_mobile()  ): ?> mobile <?php endif; ?> <?= (Yii::$app->language=='ru')?'lang-ru':''?>">
+
+<!-- Google Tag Manager (noscript) New -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8NRTXQK"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) New -->
+
 <!-- Google Tag Manager (noscript) -->
 <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSSRL4V"
